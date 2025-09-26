@@ -32,7 +32,7 @@ Using interactive visualizations (maps, line charts, bar charts, etc.), users ca
    ```bash
    git clone https://github.com/Renato-Rodrigues/regional-carbon-policy-dashboard.git
    cd regional-carbon-policy-dashboard
-````
+   ```
 
 2. Run the R script to generate the dashboard assets:
 
