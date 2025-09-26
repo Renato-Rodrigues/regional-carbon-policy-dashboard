@@ -14,6 +14,7 @@ The dashboard provides interactive charts, maps, and tabular data for each domai
 ## Dashboard
 
 - Go to the link below to access the dashboard:  
+https://renato-rodrigues.github.io/regional-carbon-policy-dashboard/output/
 
 ## License
 
