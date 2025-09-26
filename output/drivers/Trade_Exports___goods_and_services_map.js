@@ -1,0 +1,1183 @@
+(function(){ 
+
+        window.PLOTLYENV={'BASE_URL': 'https://plotly.com'}; 
+
+        
+
+        var gd = document.getElementById('Trade_Exports___goods_and_services_map') 
+
+        var resizeDebounce = null; 
+
+
+        function resizePlot() { 
+
+          var bb = gd.getBoundingClientRect(); 
+
+          Plotly.relayout(gd, { 
+
+            width: bb.width, 
+
+              height: bb.height 
+
+            }); 
+
+          } 
+
+
+          Plotly.plot(gd,  
+
+              {
+  "visdat": {
+    "b55c4c96191b": ["function () ", "plotlyVisDat"]
+  },
+  "cur_data": "b55c4c96191b",
+  "attrs": {
+    "b55c4c96191b": {
+      "locations": {},
+      "z": {},
+      "text": {},
+      "colorscale": [
+        ["0", "#de5842"],
+        ["1e-05", "#188AF0"],
+        ["1", "#00D4B0"]
+      ],
+      "zmin": 0,
+      "zmax": 240,
+      "colorbar": {
+        "title": "Exports of goods and services"
+      },
+      "frame": {},
+      "alpha_stroke": 1,
+      "sizes": [10, 100],
+      "spans": [1, 20],
+      "type": "choropleth"
+    }
+  },
+  "layout": {
+    "margin": {
+      "b": 40,
+      "l": 60,
+      "t": 25,
+      "r": 10
+    },
+    "geo": {
+      "scope": "world",
+      "projection": {
+        "type": "miller"
+      },
+      "showframe": false,
+      "showcoastlines": false
+    },
+    "scene": {
+      "zaxis": {
+        "title": "currentDriver"
+      }
+    },
+    "hovermode": "closest",
+    "showlegend": false,
+    "sliders": [
+      {
+        "currentvalue": {
+          "prefix": "period: ",
+          "xanchor": "right",
+          "font": {
+            "size": 16,
+            "color": "rgba(204,204,204,1)"
+          }
+        },
+        "steps": [
+          {
+            "method": "animate",
+            "args": [
+              [
+                "2003"
+              ],
+              {
+                "transition": {
+                  "duration": 500,
+                  "easing": "linear"
+                },
+                "frame": {
+                  "duration": 500,
+                  "redraw": true
+                },
+                "mode": "immediate"
+              }
+            ],
+            "label": "2003",
+            "value": "2003"
+          },
+          {
+            "method": "animate",
+            "args": [
+              [
+                "2004"
+              ],
+              {
+                "transition": {
+                  "duration": 500,
+                  "easing": "linear"
+                },
+                "frame": {
+                  "duration": 500,
+                  "redraw": true
+                },
+                "mode": "immediate"
+              }
+            ],
+            "label": "2004",
+            "value": "2004"
+          },
+          {
+            "method": "animate",
+            "args": [
+              [
+                "2005"
+              ],
+              {
+                "transition": {
+                  "duration": 500,
+                  "easing": "linear"
+                },
+                "frame": {
+                  "duration": 500,
+                  "redraw": true
+                },
+                "mode": "immediate"
+              }
+            ],
+            "label": "2005",
+            "value": "2005"
+          },
+          {
+            "method": "animate",
+            "args": [
+              [
+                "2006"
+              ],
+              {
+                "transition": {
+                  "duration": 500,
+                  "easing": "linear"
+                },
+                "frame": {
+                  "duration": 500,
+                  "redraw": true
+                },
+                "mode": "immediate"
+              }
+            ],
+            "label": "2006",
+            "value": "2006"
+          },
+          {
+            "method": "animate",
+            "args": [
+              [
+                "2007"
+              ],
+              {
+                "transition": {
+                  "duration": 500,
+                  "easing": "linear"
+                },
+                "frame": {
+                  "duration": 500,
+                  "redraw": true
+                },
+                "mode": "immediate"
+              }
+            ],
+            "label": "2007",
+            "value": "2007"
+          },
+          {
+            "method": "animate",
+            "args": [
+              [
+                "2008"
+              ],
+              {
+                "transition": {
+                  "duration": 500,
+                  "easing": "linear"
+                },
+                "frame": {
+                  "duration": 500,
+                  "redraw": true
+                },
+                "mode": "immediate"
+              }
+            ],
+            "label": "2008",
+            "value": "2008"
+          },
+          {
+            "method": "animate",
+            "args": [
+              [
+                "2009"
+              ],
+              {
+                "transition": {
+                  "duration": 500,
+                  "easing": "linear"
+                },
+                "frame": {
+                  "duration": 500,
+                  "redraw": true
+                },
+                "mode": "immediate"
+              }
+            ],
+            "label": "2009",
+            "value": "2009"
+          },
+          {
+            "method": "animate",
+            "args": [
+              [
+                "2010"
+              ],
+              {
+                "transition": {
+                  "duration": 500,
+                  "easing": "linear"
+                },
+                "frame": {
+                  "duration": 500,
+                  "redraw": true
+                },
+                "mode": "immediate"
+              }
+            ],
+            "label": "2010",
+            "value": "2010"
+          },
+          {
+            "method": "animate",
+            "args": [
+              [
+                "2011"
+              ],
+              {
+                "transition": {
+                  "duration": 500,
+                  "easing": "linear"
+                },
+                "frame": {
+                  "duration": 500,
+                  "redraw": true
+                },
+                "mode": "immediate"
+              }
+            ],
+            "label": "2011",
+            "value": "2011"
+          },
+          {
+            "method": "animate",
+            "args": [
+              [
+                "2012"
+              ],
+              {
+                "transition": {
+                  "duration": 500,
+                  "easing": "linear"
+                },
+                "frame": {
+                  "duration": 500,
+                  "redraw": true
+                },
+                "mode": "immediate"
+              }
+            ],
+            "label": "2012",
+            "value": "2012"
+          },
+          {
+            "method": "animate",
+            "args": [
+              [
+                "2013"
+              ],
+              {
+                "transition": {
+                  "duration": 500,
+                  "easing": "linear"
+                },
+                "frame": {
+                  "duration": 500,
+                  "redraw": true
+                },
+                "mode": "immediate"
+              }
+            ],
+            "label": "2013",
+            "value": "2013"
+          },
+          {
+            "method": "animate",
+            "args": [
+              [
+                "2014"
+              ],
+              {
+                "transition": {
+                  "duration": 500,
+                  "easing": "linear"
+                },
+                "frame": {
+                  "duration": 500,
+                  "redraw": true
+                },
+                "mode": "immediate"
+              }
+            ],
+            "label": "2014",
+            "value": "2014"
+          },
+          {
+            "method": "animate",
+            "args": [
+              [
+                "2015"
+              ],
+              {
+                "transition": {
+                  "duration": 500,
+                  "easing": "linear"
+                },
+                "frame": {
+                  "duration": 500,
+                  "redraw": true
+                },
+                "mode": "immediate"
+              }
+            ],
+            "label": "2015",
+            "value": "2015"
+          },
+          {
+            "method": "animate",
+            "args": [
+              [
+                "2016"
+              ],
+              {
+                "transition": {
+                  "duration": 500,
+                  "easing": "linear"
+                },
+                "frame": {
+                  "duration": 500,
+                  "redraw": true
+                },
+                "mode": "immediate"
+              }
+            ],
+            "label": "2016",
+            "value": "2016"
+          },
+          {
+            "method": "animate",
+            "args": [
+              [
+                "2017"
+              ],
+              {
+                "transition": {
+                  "duration": 500,
+                  "easing": "linear"
+                },
+                "frame": {
+                  "duration": 500,
+                  "redraw": true
+                },
+                "mode": "immediate"
+              }
+            ],
+            "label": "2017",
+            "value": "2017"
+          },
+          {
+            "method": "animate",
+            "args": [
+              [
+                "2018"
+              ],
+              {
+                "transition": {
+                  "duration": 500,
+                  "easing": "linear"
+                },
+                "frame": {
+                  "duration": 500,
+                  "redraw": true
+                },
+                "mode": "immediate"
+              }
+            ],
+            "label": "2018",
+            "value": "2018"
+          },
+          {
+            "method": "animate",
+            "args": [
+              [
+                "2019"
+              ],
+              {
+                "transition": {
+                  "duration": 500,
+                  "easing": "linear"
+                },
+                "frame": {
+                  "duration": 500,
+                  "redraw": true
+                },
+                "mode": "immediate"
+              }
+            ],
+            "label": "2019",
+            "value": "2019"
+          },
+          {
+            "method": "animate",
+            "args": [
+              [
+                "2020"
+              ],
+              {
+                "transition": {
+                  "duration": 500,
+                  "easing": "linear"
+                },
+                "frame": {
+                  "duration": 500,
+                  "redraw": true
+                },
+                "mode": "immediate"
+              }
+            ],
+            "label": "2020",
+            "value": "2020"
+          },
+          {
+            "method": "animate",
+            "args": [
+              [
+                "2021"
+              ],
+              {
+                "transition": {
+                  "duration": 500,
+                  "easing": "linear"
+                },
+                "frame": {
+                  "duration": 500,
+                  "redraw": true
+                },
+                "mode": "immediate"
+              }
+            ],
+            "label": "2021",
+            "value": "2021"
+          }
+        ],
+        "visible": true,
+        "pad": {
+          "t": 40
+        }
+      }
+    ],
+    "updatemenus": [
+      {
+        "type": "buttons",
+        "direction": "right",
+        "showactive": false,
+        "y": 0,
+        "x": 0,
+        "yanchor": "top",
+        "xanchor": "right",
+        "pad": {
+          "t": 60,
+          "r": 5
+        },
+        "buttons": [
+          {
+            "label": "Play",
+            "method": "animate",
+            "args": [
+              null,
+              {
+                "fromcurrent": true,
+                "mode": "immediate",
+                "transition": {
+                  "duration": 500,
+                  "easing": "linear"
+                },
+                "frame": {
+                  "duration": 500,
+                  "redraw": true
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "legend": {
+      "yanchor": "top",
+      "y": 0.5
+    }
+  },
+  "source": "A",
+  "config": {
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  "data": [
+    {
+      "colorbar": {
+        "title": "Exports of goods and services",
+        "ticklen": 2,
+        "len": 0.5,
+        "lenmode": "fraction",
+        "y": 1,
+        "yanchor": "top"
+      },
+      "colorscale": [
+        ["0", "#de5842"],
+        ["1e-05", "#188AF0"],
+        ["1", "#00D4B0"]
+      ],
+      "showscale": true,
+      "locations": ["DEU", "FRA", "SPM", "ATF", "ITA", "MLT", "GRC", "CYP", "ESP", "PRT", "AUT", "NLD", "BEL", "LUX", "POL", "CZE", "SVK", "LTU", "LVA", "EST", "SWE", "DNK", "GRL", "FRO", "FIN", "ALA", "ROU", "HUN", "BGR", "HRV", "SVN", "IRL", "GBR", "JEY", "IMN", "GGY", "GIB", "IOT", "NOR", "SJM", "CHE", "LIE", "ISL", "UKR", "ALB", "SRB", "BIH", "GEO", "MDA", "MKD", "MNE", "AND", "MCO", "SMR", "VAT", "TUR", "RUS", "KAZ", "UZB", "PRK", "BLR", "AZE", "TJK", "KGZ", "TKM", "ARM", "MNG", "JPN", "CHN", "TWN", "HKG", "MAC", "IND", "IDN", "VNM", "PHL", "THA", "SGP", "MMR", "MYS", "LKA", "KHM", "PNG", "LAO", "TLS", "FJI", "SLB", "BRN", "MDV", "PYF", "NCL", "VUT", "WSM", "GUM", "FSM", "TON", "KIR", "MNP", "ASM", "MHL", "PLW", "COK", "WLF", "NRU", "TUV", "NFK", "NIU", "TKL", "UMI", "PCN", "KOR", "BGD", "PAK", "NPL", "AFG", "BTN", "IRN", "IRQ", "YEM", "SYR", "ISR", "JOR", "LBN", "ARE", "PSE", "OMN", "KWT", "BHR", "QAT", "SAU", "EGY", "DZA", "SDN", "MAR", "NER", "MLI", "TUN", "TCD", "LBY", "MRT", "ESH", "ZAF", "NGA", "COD", "ETH", "TZA", "KEN", "UGA", "GHA", "MOZ", "CIV", "MDG", "AGO", "CMR", "BFA", "ZWE", "MWI", "ZMB", "SEN", "SOM", "GIN", "RWA", "BEN", "BDI", "SSD", "TGO", "SLE", "CAF", "COG", "LBR", "ERI", "LSO", "NAM", "BWA", "GMB", "GAB", "GNB", "MUS", "SWZ", "GNQ", "REU", "DJI", "COM", "CPV", "MYT", "STP", "SYC", "SHN", "BRA", "MEX", "ARG", "CHL", "COL", "VEN", "URY", "PER", "ECU", "GTM", "CUB", "BOL", "DOM", "HTI", "HND", "SLV", "PRY", "NIC", "CRI", "PRI", "PAN", "JAM", "TTO", "GUY", "SUR", "MTQ", "GLP", "BHS", "BRB", "BLZ", "GUF", "LCA", "CUW", "VCT", "GRD", "VIR", "ABW", "ATG", "DMA", "BMU", "KNA", "CYM", "MAF", "SXM", "VGB", "TCA", "BES", "AIA", "BLM", "MSR", "FLK", "ATA", "SGS", "BVT", "USA", "CAN", "AUS", "CXR", "CCK", "HMD", "NZL"],
+      "z": [32.810000000000002, 26.109999999999999, 26.109999999999999, 26.109999999999999, 23.300000000000001, 107.52, 18.539999999999999, 57.759999999999998, 25.629999999999999, 27.370000000000001, 44.57, 59.280000000000001, 69.040000000000006, 132.84999999999999, 33.350000000000001, 46.729999999999997, 62.329999999999998, 46.219999999999999, 36.049999999999997, 57.159999999999997, 40.329999999999998, 43.840000000000003, 43.865876807402486, 46.770000000000003, 37.32, 37.32, 24.210000000000001, 56.340000000000003, 34.420000000000002, 35.539999999999999, 51, 80.840000000000003, 23.969999999999999, 23.969999999999995, 23.969999999999995, 23.969999999999995, 23.969999999999995, 14.949999999999999, 39.670000000000002, 39.670000000000002, 47.719999999999999, 47.719999999999999, 32.619999999999997, 52.539999999999999, 20.850000000000001, 23.149999999999999, 20.59, 31.460000000000001, 53.310000000000002, 27.66, 30.609999999999999, 28.697243748803707, 28.697243748803707, 174.44999999999999, 28.697243748803707, 23.010000000000002, 35.25, 48.420000000000002, 38.240000000000002, 45.075868036324593, 65.159999999999997, 42.009999999999998, 63.93, 38.68, 32.609999999999999, 30.48, 52.350000000000001, 11.470000000000001, 26.98, 27.645725880350835, 150.78, 92.859999999999999, 14.949999999999999, 30.48, 56.670000000000002, 42.310000000000002, 61.520000000000003, 202.59, 10.619999999999999, 106.94, 34.649999999999999, 56.520000000000003, 69.420000000000002, 23.5, 44.184443632118629, 60.270000000000003, 22, 69.290000000000006, 91.290000000000006, 44.184443632118629, 20.609999999999999, 43.280000000000001, 31.100000000000001, 44.184443632118629, 18.760000000000002, 19.390000000000001, 17.620000000000001, 44.184443632118629, 44.184443632118629, 44.184443632118629, 44.184443632118629, 44.184443632118629, 44.184443632118629, 44.184443632118629, 44.184443632118629, 44.184443632118629, 44.184443632118629, 44.184443632118629, 44.184443632118629, 44.184443632118629, 31.399999999999999, 11.43, 15.17, 15.699999999999999, 15.956504717067315, 26.289999999999999, 24.629999999999999, 77.390000000000001, 30, 32.210000000000001, 33.490000000000002, 47.369999999999997, 16.739999999999998, 55.920000000000002, 12.98, 56.979999999999997, 52.090000000000003, 72.060000000000002, 61.700000000000003, 45.850000000000001, 21.800000000000001, 38.25, 12.25, 24.68, 13.27, 25.77, 39.479999999999997, 24.629999999999999, 57.32, 19.120000000000001, 26.397740730032361, 23.920000000000002, 26.75, 24, 16.690000000000001, 15.09, 24.09, 11.390000000000001, 40.68, 22.43, 28.739999999999998, 13.69, 54.32, 19.440000000000001, 9.2200000000000006, 32.399999999999999, 24.313915433892483, 25.68, 18.219999999999999, 20.600000000000001, 25.960000000000001, 7.7800000000000002, 18.640000000000001, 6.3799999999999999, 24.313915433892483, 24.140000000000001, 14.09, 18.239999999999998, 80.810000000000002, 24.313915433892483, 6.4400000000000004, 51.799999999999997, 43.43, 48.829999999999998, 31.09, 51.93, 18.68, 56.009999999999998, 83.769999999999996, 87.420000000000002, 24.313915433892483, 156.53999999999999, 8.8399999999999999, 31.359999999999999, 24.313915433892483, 24.313915433892483, 87.530000000000001, 24.313915433892483, 15.18, 24.359999999999999, 25.93, 35.060000000000002, 16.579999999999998, 33.850000000000001, 27.43, 19.010000000000002, 22.600000000000001, 26.18, 30.088080330068799, 25.600000000000001, 42.149999999999999, 9.2699999999999996, 54.090000000000003, 25.920000000000002, 47.140000000000001, 20.699999999999999, 40.670000000000002, 73.739999999999995, 54.340000000000003, 36.609999999999999, 30.088080330068799, 89.680000000000007, 52.75, 30.088080330068799, 30.088080330068799, 35.810000000000002, 42.960000000000001, 44.920000000000002, 30.088080330068799, 30.088080330068799, 30.088080330068799, 30.088080330068799, 30.088080330068799, 30.088080330068799, 62.729999999999997, 94.280000000000001, 37.009999999999998, 50.789999999999999, 30.088080330068799, 30.088080330068799, 30.088080330068799, 30.088080330068799, 30.088080330068799, 30.088080330068799, 30.088080330068799, 30.088080330068799, 30.088080330068799, 30.088080330068799, 30.088080330068799, 30.088080330068799, 30.088080330068799, 30.088080330068799, 9.0399999999999991, 36.869999999999997, 19.07, 19.07, 19.07, 19.07, 29.84],
+      "text": ["Germany", "France", "Saint Pierre and Miquelon", "French Southern Territories", "Italy", "Malta", "Greece", "Cyprus", "Spain", "Portugal", "Austria", "Netherlands", "Belgium", "Luxembourg", "Poland", "Czech Republic", "Slovakia", "Lithuania", "Latvia", "Estonia", "Sweden", "Denmark", "Greenland", "Faroe Islands", "Finland", "Aland Islands", "Romania", "Hungary", "Bulgaria", "Croatia", "Slovenia", "Ireland", "United Kingdom", "Jersey", "Isle of Man", "Guernsey", "Gibraltar", "British Indian Ocean Territory", "Norway", "Svalbard and Jan Mayen", "Switzerland", "Liechtenstein", "Iceland", "Ukraine", "Albania", "Serbia", "Bosnia and Herzegovina", "Georgia", "Moldova, Republic of", "Macedonia, the former Yugoslav Republic of", "Montenegro", "Andorra", "Monaco", "San Marino", "Holy See (Vatican City State)", "Turkey", "Russian Federation", "Kazakhstan", "Uzbekistan", "Korea, Democratic People's Republic of", "Belarus", "Azerbaijan", "Tajikistan", "Kyrgyzstan", "Turkmenistan", "Armenia", "Mongolia", "Japan", "China", "Taiwan, Province of China", "Hong Kong", "Macao", "India", "Indonesia", "Viet Nam", "Philippines", "Thailand", "Singapore", "Myanmar", "Malaysia", "Sri Lanka", "Cambodia", "Papua New Guinea", "Lao People's Democratic Republic", "Timor-Leste", "Fiji", "Solomon Islands", "Brunei Darussalam", "Maldives", "French Polynesia", "New Caledonia", "Vanuatu", "Samoa", "Guam", "Micronesia, Federated States of", "Tonga", "Kiribati", "Northern Mariana Islands", "American Samoa", "Marshall Islands", "Palau", "Cook Islands", "Wallis and Futuna", "Nauru", "Tuvalu", "Norfolk Island", "Niue", "Tokelau", "United States Minor Outlying Islands", "Pitcairn", "Korea, Republic of", "Bangladesh", "Pakistan", "Nepal", "Afghanistan", "Bhutan", "Iran, Islamic Republic of", "Iraq", "Yemen", "Syrian Arab Republic", "Israel", "Jordan", "Lebanon", "United Arab Emirates", "Palestine, State of", "Oman", "Kuwait", "Bahrain", "Qatar", "Saudi Arabia", "Egypt", "Algeria", "Sudan", "Morocco", "Niger", "Mali", "Tunisia", "Chad", "Libya", "Mauritania", "Western Sahara", "South Africa", "Nigeria", "Congo, the Democratic Republic of the", "Ethiopia", "Tanzania, United Republic of", "Kenya", "Uganda", "Ghana", "Mozambique", "Cote d Ivoire", "Madagascar", "Angola", "Cameroon", "Burkina Faso", "Zimbabwe", "Malawi", "Zambia", "Senegal", "Somalia", "Guinea", "Rwanda", "Benin", "Burundi", "South Sudan", "Togo", "Sierra Leone", "Central African Republic", "Congo", "Liberia", "Eritrea", "Lesotho", "Namibia", "Botswana", "Gambia", "Gabon", "Guinea-Bissau", "Mauritius", "Swaziland", "Equatorial Guinea", "Reunion", "Djibouti", "Comoros", "Cape Verde", "Mayotte", "Sao Tome and Principe", "Seychelles", "Saint Helena, Ascension and Tristan da Cunha", "Brazil", "Mexico", "Argentina", "Chile", "Colombia", "Venezuela, Bolivarian Republic of", "Uruguay", "Peru", "Ecuador", "Guatemala", "Cuba", "Bolivia, Plurinational State of", "Dominican Republic", "Haiti", "Honduras", "El Salvador", "Paraguay", "Nicaragua", "Costa Rica", "Puerto Rico", "Panama", "Jamaica", "Trinidad and Tobago", "Guyana", "Suriname", "Martinique", "Guadeloupe", "Bahamas", "Barbados", "Belize", "French Guiana", "Saint Lucia", "Curacao", "Saint Vincent and the Grenadines", "Grenada", "Virgin Islands, U.S.", "Aruba", "Antigua and Barbuda", "Dominica", "Bermuda", "Saint Kitts and Nevis", "Cayman Islands", "Saint Martin (French part)", "Sint Maarten (Dutch part)", "Virgin Islands, British", "Turks and Caicos Islands", "Bonaire, Sint Eustatius and Saba", "Anguilla", "Saint Barthelemy", "Montserrat", "Falkland Islands (Malvinas)", "Antarctica", "South Georgia and the South Sandwich Islands", "Bouvet Island", "United States", "Canada", "Australia", "Christmas Island", "Cocos (Keeling) Islands", "Heard Island and McDonald Islands", "New Zealand"],
+      "zmin": 0,
+      "zmax": 240,
+      "frame": "2003",
+      "type": "choropleth",
+      "marker": {
+        "line": {
+          "color": "rgba(31,119,180,1)"
+        }
+      },
+      "visible": true
+    }
+  ],
+  "highlight": {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.20000000000000001,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  "frames": [
+    {
+      "name": "2003",
+      "data": [
+        {
+          "colorbar": {
+            "title": "Exports of goods and services",
+            "ticklen": 2
+          },
+          "colorscale": [
+            ["0", "#de5842"],
+            ["1e-05", "#188AF0"],
+            ["1", "#00D4B0"]
+          ],
+          "showscale": true,
+          "locations": ["DEU", "FRA", "SPM", "ATF", "ITA", "MLT", "GRC", "CYP", "ESP", "PRT", "AUT", "NLD", "BEL", "LUX", "POL", "CZE", "SVK", "LTU", "LVA", "EST", "SWE", "DNK", "GRL", "FRO", "FIN", "ALA", "ROU", "HUN", "BGR", "HRV", "SVN", "IRL", "GBR", "JEY", "IMN", "GGY", "GIB", "IOT", "NOR", "SJM", "CHE", "LIE", "ISL", "UKR", "ALB", "SRB", "BIH", "GEO", "MDA", "MKD", "MNE", "AND", "MCO", "SMR", "VAT", "TUR", "RUS", "KAZ", "UZB", "PRK", "BLR", "AZE", "TJK", "KGZ", "TKM", "ARM", "MNG", "JPN", "CHN", "TWN", "HKG", "MAC", "IND", "IDN", "VNM", "PHL", "THA", "SGP", "MMR", "MYS", "LKA", "KHM", "PNG", "LAO", "TLS", "FJI", "SLB", "BRN", "MDV", "PYF", "NCL", "VUT", "WSM", "GUM", "FSM", "TON", "KIR", "MNP", "ASM", "MHL", "PLW", "COK", "WLF", "NRU", "TUV", "NFK", "NIU", "TKL", "UMI", "PCN", "KOR", "BGD", "PAK", "NPL", "AFG", "BTN", "IRN", "IRQ", "YEM", "SYR", "ISR", "JOR", "LBN", "ARE", "PSE", "OMN", "KWT", "BHR", "QAT", "SAU", "EGY", "DZA", "SDN", "MAR", "NER", "MLI", "TUN", "TCD", "LBY", "MRT", "ESH", "ZAF", "NGA", "COD", "ETH", "TZA", "KEN", "UGA", "GHA", "MOZ", "CIV", "MDG", "AGO", "CMR", "BFA", "ZWE", "MWI", "ZMB", "SEN", "SOM", "GIN", "RWA", "BEN", "BDI", "SSD", "TGO", "SLE", "CAF", "COG", "LBR", "ERI", "LSO", "NAM", "BWA", "GMB", "GAB", "GNB", "MUS", "SWZ", "GNQ", "REU", "DJI", "COM", "CPV", "MYT", "STP", "SYC", "SHN", "BRA", "MEX", "ARG", "CHL", "COL", "VEN", "URY", "PER", "ECU", "GTM", "CUB", "BOL", "DOM", "HTI", "HND", "SLV", "PRY", "NIC", "CRI", "PRI", "PAN", "JAM", "TTO", "GUY", "SUR", "MTQ", "GLP", "BHS", "BRB", "BLZ", "GUF", "LCA", "CUW", "VCT", "GRD", "VIR", "ABW", "ATG", "DMA", "BMU", "KNA", "CYM", "MAF", "SXM", "VGB", "TCA", "BES", "AIA", "BLM", "MSR", "FLK", "ATA", "SGS", "BVT", "USA", "CAN", "AUS", "CXR", "CCK", "HMD", "NZL"],
+          "z": [32.810000000000002, 26.109999999999999, 26.109999999999999, 26.109999999999999, 23.300000000000001, 107.52, 18.539999999999999, 57.759999999999998, 25.629999999999999, 27.370000000000001, 44.57, 59.280000000000001, 69.040000000000006, 132.84999999999999, 33.350000000000001, 46.729999999999997, 62.329999999999998, 46.219999999999999, 36.049999999999997, 57.159999999999997, 40.329999999999998, 43.840000000000003, 43.865876807402486, 46.770000000000003, 37.32, 37.32, 24.210000000000001, 56.340000000000003, 34.420000000000002, 35.539999999999999, 51, 80.840000000000003, 23.969999999999999, 23.969999999999995, 23.969999999999995, 23.969999999999995, 23.969999999999995, 14.949999999999999, 39.670000000000002, 39.670000000000002, 47.719999999999999, 47.719999999999999, 32.619999999999997, 52.539999999999999, 20.850000000000001, 23.149999999999999, 20.59, 31.460000000000001, 53.310000000000002, 27.66, 30.609999999999999, 28.697243748803707, 28.697243748803707, 174.44999999999999, 28.697243748803707, 23.010000000000002, 35.25, 48.420000000000002, 38.240000000000002, 45.075868036324593, 65.159999999999997, 42.009999999999998, 63.93, 38.68, 32.609999999999999, 30.48, 52.350000000000001, 11.470000000000001, 26.98, 27.645725880350835, 150.78, 92.859999999999999, 14.949999999999999, 30.48, 56.670000000000002, 42.310000000000002, 61.520000000000003, 202.59, 10.619999999999999, 106.94, 34.649999999999999, 56.520000000000003, 69.420000000000002, 23.5, 44.184443632118629, 60.270000000000003, 22, 69.290000000000006, 91.290000000000006, 44.184443632118629, 20.609999999999999, 43.280000000000001, 31.100000000000001, 44.184443632118629, 18.760000000000002, 19.390000000000001, 17.620000000000001, 44.184443632118629, 44.184443632118629, 44.184443632118629, 44.184443632118629, 44.184443632118629, 44.184443632118629, 44.184443632118629, 44.184443632118629, 44.184443632118629, 44.184443632118629, 44.184443632118629, 44.184443632118629, 44.184443632118629, 31.399999999999999, 11.43, 15.17, 15.699999999999999, 15.956504717067315, 26.289999999999999, 24.629999999999999, 77.390000000000001, 30, 32.210000000000001, 33.490000000000002, 47.369999999999997, 16.739999999999998, 55.920000000000002, 12.98, 56.979999999999997, 52.090000000000003, 72.060000000000002, 61.700000000000003, 45.850000000000001, 21.800000000000001, 38.25, 12.25, 24.68, 13.27, 25.77, 39.479999999999997, 24.629999999999999, 57.32, 19.120000000000001, 26.397740730032361, 23.920000000000002, 26.75, 24, 16.690000000000001, 15.09, 24.09, 11.390000000000001, 40.68, 22.43, 28.739999999999998, 13.69, 54.32, 19.440000000000001, 9.2200000000000006, 32.399999999999999, 24.313915433892483, 25.68, 18.219999999999999, 20.600000000000001, 25.960000000000001, 7.7800000000000002, 18.640000000000001, 6.3799999999999999, 24.313915433892483, 24.140000000000001, 14.09, 18.239999999999998, 80.810000000000002, 24.313915433892483, 6.4400000000000004, 51.799999999999997, 43.43, 48.829999999999998, 31.09, 51.93, 18.68, 56.009999999999998, 83.769999999999996, 87.420000000000002, 24.313915433892483, 156.53999999999999, 8.8399999999999999, 31.359999999999999, 24.313915433892483, 24.313915433892483, 87.530000000000001, 24.313915433892483, 15.18, 24.359999999999999, 25.93, 35.060000000000002, 16.579999999999998, 33.850000000000001, 27.43, 19.010000000000002, 22.600000000000001, 26.18, 30.088080330068799, 25.600000000000001, 42.149999999999999, 9.2699999999999996, 54.090000000000003, 25.920000000000002, 47.140000000000001, 20.699999999999999, 40.670000000000002, 73.739999999999995, 54.340000000000003, 36.609999999999999, 30.088080330068799, 89.680000000000007, 52.75, 30.088080330068799, 30.088080330068799, 35.810000000000002, 42.960000000000001, 44.920000000000002, 30.088080330068799, 30.088080330068799, 30.088080330068799, 30.088080330068799, 30.088080330068799, 30.088080330068799, 62.729999999999997, 94.280000000000001, 37.009999999999998, 50.789999999999999, 30.088080330068799, 30.088080330068799, 30.088080330068799, 30.088080330068799, 30.088080330068799, 30.088080330068799, 30.088080330068799, 30.088080330068799, 30.088080330068799, 30.088080330068799, 30.088080330068799, 30.088080330068799, 30.088080330068799, 30.088080330068799, 9.0399999999999991, 36.869999999999997, 19.07, 19.07, 19.07, 19.07, 29.84],
+          "text": ["Germany", "France", "Saint Pierre and Miquelon", "French Southern Territories", "Italy", "Malta", "Greece", "Cyprus", "Spain", "Portugal", "Austria", "Netherlands", "Belgium", "Luxembourg", "Poland", "Czech Republic", "Slovakia", "Lithuania", "Latvia", "Estonia", "Sweden", "Denmark", "Greenland", "Faroe Islands", "Finland", "Aland Islands", "Romania", "Hungary", "Bulgaria", "Croatia", "Slovenia", "Ireland", "United Kingdom", "Jersey", "Isle of Man", "Guernsey", "Gibraltar", "British Indian Ocean Territory", "Norway", "Svalbard and Jan Mayen", "Switzerland", "Liechtenstein", "Iceland", "Ukraine", "Albania", "Serbia", "Bosnia and Herzegovina", "Georgia", "Moldova, Republic of", "Macedonia, the former Yugoslav Republic of", "Montenegro", "Andorra", "Monaco", "San Marino", "Holy See (Vatican City State)", "Turkey", "Russian Federation", "Kazakhstan", "Uzbekistan", "Korea, Democratic People's Republic of", "Belarus", "Azerbaijan", "Tajikistan", "Kyrgyzstan", "Turkmenistan", "Armenia", "Mongolia", "Japan", "China", "Taiwan, Province of China", "Hong Kong", "Macao", "India", "Indonesia", "Viet Nam", "Philippines", "Thailand", "Singapore", "Myanmar", "Malaysia", "Sri Lanka", "Cambodia", "Papua New Guinea", "Lao People's Democratic Republic", "Timor-Leste", "Fiji", "Solomon Islands", "Brunei Darussalam", "Maldives", "French Polynesia", "New Caledonia", "Vanuatu", "Samoa", "Guam", "Micronesia, Federated States of", "Tonga", "Kiribati", "Northern Mariana Islands", "American Samoa", "Marshall Islands", "Palau", "Cook Islands", "Wallis and Futuna", "Nauru", "Tuvalu", "Norfolk Island", "Niue", "Tokelau", "United States Minor Outlying Islands", "Pitcairn", "Korea, Republic of", "Bangladesh", "Pakistan", "Nepal", "Afghanistan", "Bhutan", "Iran, Islamic Republic of", "Iraq", "Yemen", "Syrian Arab Republic", "Israel", "Jordan", "Lebanon", "United Arab Emirates", "Palestine, State of", "Oman", "Kuwait", "Bahrain", "Qatar", "Saudi Arabia", "Egypt", "Algeria", "Sudan", "Morocco", "Niger", "Mali", "Tunisia", "Chad", "Libya", "Mauritania", "Western Sahara", "South Africa", "Nigeria", "Congo, the Democratic Republic of the", "Ethiopia", "Tanzania, United Republic of", "Kenya", "Uganda", "Ghana", "Mozambique", "Cote d Ivoire", "Madagascar", "Angola", "Cameroon", "Burkina Faso", "Zimbabwe", "Malawi", "Zambia", "Senegal", "Somalia", "Guinea", "Rwanda", "Benin", "Burundi", "South Sudan", "Togo", "Sierra Leone", "Central African Republic", "Congo", "Liberia", "Eritrea", "Lesotho", "Namibia", "Botswana", "Gambia", "Gabon", "Guinea-Bissau", "Mauritius", "Swaziland", "Equatorial Guinea", "Reunion", "Djibouti", "Comoros", "Cape Verde", "Mayotte", "Sao Tome and Principe", "Seychelles", "Saint Helena, Ascension and Tristan da Cunha", "Brazil", "Mexico", "Argentina", "Chile", "Colombia", "Venezuela, Bolivarian Republic of", "Uruguay", "Peru", "Ecuador", "Guatemala", "Cuba", "Bolivia, Plurinational State of", "Dominican Republic", "Haiti", "Honduras", "El Salvador", "Paraguay", "Nicaragua", "Costa Rica", "Puerto Rico", "Panama", "Jamaica", "Trinidad and Tobago", "Guyana", "Suriname", "Martinique", "Guadeloupe", "Bahamas", "Barbados", "Belize", "French Guiana", "Saint Lucia", "Curacao", "Saint Vincent and the Grenadines", "Grenada", "Virgin Islands, U.S.", "Aruba", "Antigua and Barbuda", "Dominica", "Bermuda", "Saint Kitts and Nevis", "Cayman Islands", "Saint Martin (French part)", "Sint Maarten (Dutch part)", "Virgin Islands, British", "Turks and Caicos Islands", "Bonaire, Sint Eustatius and Saba", "Anguilla", "Saint Barthelemy", "Montserrat", "Falkland Islands (Malvinas)", "Antarctica", "South Georgia and the South Sandwich Islands", "Bouvet Island", "United States", "Canada", "Australia", "Christmas Island", "Cocos (Keeling) Islands", "Heard Island and McDonald Islands", "New Zealand"],
+          "zmin": 0,
+          "zmax": 240,
+          "frame": "2003",
+          "type": "choropleth",
+          "marker": {
+            "line": {
+              "color": "rgba(31,119,180,1)"
+            }
+          },
+          "visible": true
+        }
+      ],
+      "traces": [0]
+    },
+    {
+      "name": "2004",
+      "data": [
+        {
+          "colorbar": {
+            "title": "Exports of goods and services",
+            "ticklen": 2
+          },
+          "colorscale": [
+            ["0", "#de5842"],
+            ["1e-05", "#188AF0"],
+            ["1", "#00D4B0"]
+          ],
+          "showscale": true,
+          "locations": ["DEU", "FRA", "SPM", "ATF", "ITA", "MLT", "GRC", "CYP", "ESP", "PRT", "AUT", "NLD", "BEL", "LUX", "POL", "CZE", "SVK", "LTU", "LVA", "EST", "SWE", "DNK", "GRL", "FRO", "FIN", "ALA", "ROU", "HUN", "BGR", "HRV", "SVN", "IRL", "GBR", "JEY", "IMN", "GGY", "GIB", "IOT", "NOR", "SJM", "CHE", "LIE", "ISL", "UKR", "ALB", "SRB", "BIH", "GEO", "MDA", "MKD", "MNE", "AND", "MCO", "SMR", "VAT", "TUR", "RUS", "KAZ", "UZB", "PRK", "BLR", "AZE", "TJK", "KGZ", "TKM", "ARM", "MNG", "JPN", "CHN", "TWN", "HKG", "MAC", "IND", "IDN", "VNM", "PHL", "THA", "SGP", "MMR", "MYS", "LKA", "KHM", "PNG", "LAO", "TLS", "FJI", "SLB", "BRN", "MDV", "PYF", "NCL", "VUT", "WSM", "GUM", "FSM", "TON", "KIR", "MNP", "ASM", "MHL", "PLW", "COK", "WLF", "NRU", "TUV", "NFK", "NIU", "TKL", "UMI", "PCN", "KOR", "BGD", "PAK", "NPL", "AFG", "BTN", "IRN", "IRQ", "YEM", "SYR", "ISR", "JOR", "LBN", "ARE", "PSE", "OMN", "KWT", "BHR", "QAT", "SAU", "EGY", "DZA", "SDN", "MAR", "NER", "MLI", "TUN", "TCD", "LBY", "MRT", "ESH", "ZAF", "NGA", "COD", "ETH", "TZA", "KEN", "UGA", "GHA", "MOZ", "CIV", "MDG", "AGO", "CMR", "BFA", "MWI", "ZWE", "ZMB", "SEN", "SOM", "GIN", "RWA", "BEN", "BDI", "SSD", "TGO", "SLE", "CAF", "COG", "LBR", "ERI", "LSO", "NAM", "BWA", "GMB", "GAB", "GNB", "MUS", "SWZ", "GNQ", "DJI", "REU", "COM", "CPV", "MYT", "STP", "SYC", "SHN", "BRA", "MEX", "ARG", "CHL", "COL", "VEN", "URY", "PER", "ECU", "GTM", "CUB", "BOL", "DOM", "HTI", "HND", "SLV", "PRY", "NIC", "CRI", "PRI", "PAN", "JAM", "TTO", "GUY", "SUR", "MTQ", "GLP", "BHS", "BLZ", "BRB", "GUF", "LCA", "CUW", "VCT", "GRD", "VIR", "ABW", "ATG", "DMA", "BMU", "KNA", "CYM", "MAF", "SXM", "VGB", "TCA", "BES", "AIA", "BLM", "MSR", "FLK", "ATA", "SGS", "BVT", "USA", "CAN", "AUS", "CXR", "CCK", "HMD", "NZL"],
+          "z": [35.710000000000001, 26.469999999999999, 26.469999999999999, 26.469999999999999, 24.010000000000002, 103.13, 20.710000000000001, 56.890000000000001, 25.41, 27.670000000000002, 46.869999999999997, 62.670000000000002, 70.909999999999997, 143.72999999999999, 34.240000000000002, 57.060000000000002, 69.049999999999997, 48.770000000000003, 38.909999999999997, 61.079999999999998, 42.689999999999998, 43.93, 43.927959194976182, 43.700000000000003, 38.619999999999997, 38.619999999999997, 25.739999999999998, 59.560000000000002, 40.960000000000001, 36.530000000000001, 55.049999999999997, 80.480000000000004, 23.98, 23.98, 23.98, 23.98, 23.98, 17.859999999999999, 41.109999999999999, 41.109999999999999, 51.299999999999997, 51.299999999999997, 32.409999999999997, 58.700000000000003, 22.219999999999999, 25.140000000000001, 22.539999999999999, 31.129999999999999, 51.189999999999998, 30.699999999999999, 42.020000000000003, 30.123187466072697, 30.123187466072697, 174.44999999999999, 30.123187466072697, 23.620000000000001, 34.420000000000002, 52.5, 41.789999999999999, 47.433638146053653, 67.890000000000001, 48.789999999999999, 58.75, 42.560000000000002, 29.690000000000001, 28.190000000000001, 60.789999999999999, 12.789999999999999, 31.059999999999999, 31.793829026668341, 167.78, 94.769999999999996, 17.859999999999999, 32.219999999999999, 59.729999999999997, 41.829999999999998, 65.969999999999999, 213.94999999999999, 10.619999999999999, 115.37, 35.329999999999998, 63.609999999999999, 72.159999999999997, 24.91, 47.239838126842734, 54.200000000000003, 24.879999999999999, 68.799999999999997, 91.290000000000006, 47.239838126842734, 21.989999999999998, 45.600000000000001, 29.07, 47.239838126842734, 15.529999999999999, 19.57, 12.18, 47.239838126842734, 47.239838126842734, 47.239838126842734, 47.239838126842734, 47.239838126842734, 47.239838126842734, 47.239838126842734, 47.239838126842734, 47.239838126842734, 47.239838126842734, 47.239838126842734, 47.239838126842734, 47.239838126842734, 36.75, 11.15, 14.24, 16.68, 17.052266358672828, 31.940000000000001, 25.27, 56.270000000000003, 30, 40.450000000000003, 37.859999999999999, 52.189999999999998, 35.049999999999997, 63.57, 12.970000000000001, 57.030000000000001, 56.920000000000002, 78.609999999999999, 64.170000000000002, 50.990000000000002, 28.23, 40.049999999999997, 14.300000000000001, 25.350000000000001, 14.26, 23.68, 42.200000000000003, 51.009999999999998, 63.759999999999998, 23.27, 29.487804936326221, 22.760000000000002, 20.25, 22.73, 16.690000000000001, 16.039999999999999, 26.609999999999999, 12.699999999999999, 39.299999999999997, 25.699999999999999, 30.140000000000001, 19.460000000000001, 58.380000000000003, 20.550000000000001, 10.880000000000001, 25.880264130185456, 34.469999999999999, 33.539999999999999, 19.100000000000001, 20.600000000000001, 24.629999999999999, 10.390000000000001, 18.510000000000002, 6.9500000000000002, 25.880264130185456, 24.5, 16.68, 14, 80.530000000000001, 25.880264130185456, 5.7800000000000002, 51.799999999999997, 39.799999999999997, 49.609999999999999, 20.59, 55.039999999999999, 18.460000000000001, 53.32, 71.540000000000006, 87.420000000000002, 156.53999999999999, 25.880264130185456, 8.8399999999999999, 32, 25.880264130185456, 25.880264130185456, 72.879999999999995, 25.880264130185456, 16.550000000000001, 25.84, 23.850000000000001, 39.689999999999998, 16.77, 36.200000000000003, 32.109999999999999, 22.91, 24.550000000000001, 27.420000000000002, 31.941100690018338, 31.140000000000001, 41.149999999999999, 8.3800000000000008, 58.420000000000002, 25.91, 45.689999999999998, 23.059999999999999, 42.210000000000001, 68.569999999999993, 57.770000000000003, 37.539999999999999, 31.941100690018338, 95.560000000000002, 52.75, 31.941100690018338, 31.941100690018338, 38.219999999999999, 42.609999999999999, 41.689999999999998, 31.941100690018338, 31.941100690018338, 31.941100690018338, 31.941100690018338, 31.941100690018338, 31.941100690018338, 64.670000000000002, 101.33, 37.009999999999998, 50.789999999999999, 31.941100690018338, 31.941100690018338, 31.941100690018338, 31.941100690018338, 31.941100690018338, 31.941100690018338, 31.941100690018338, 31.941100690018338, 31.941100690018338, 31.941100690018338, 31.941100690018338, 31.941100690018338, 31.941100690018338, 31.941100690018338, 9.6300000000000008, 37.329999999999998, 17.170000000000002, 17.170000000000002, 17.170000000000002, 17.170000000000002, 29.539999999999999],
+          "text": ["Germany", "France", "Saint Pierre and Miquelon", "French Southern Territories", "Italy", "Malta", "Greece", "Cyprus", "Spain", "Portugal", "Austria", "Netherlands", "Belgium", "Luxembourg", "Poland", "Czech Republic", "Slovakia", "Lithuania", "Latvia", "Estonia", "Sweden", "Denmark", "Greenland", "Faroe Islands", "Finland", "Aland Islands", "Romania", "Hungary", "Bulgaria", "Croatia", "Slovenia", "Ireland", "United Kingdom", "Jersey", "Isle of Man", "Guernsey", "Gibraltar", "British Indian Ocean Territory", "Norway", "Svalbard and Jan Mayen", "Switzerland", "Liechtenstein", "Iceland", "Ukraine", "Albania", "Serbia", "Bosnia and Herzegovina", "Georgia", "Moldova, Republic of", "Macedonia, the former Yugoslav Republic of", "Montenegro", "Andorra", "Monaco", "San Marino", "Holy See (Vatican City State)", "Turkey", "Russian Federation", "Kazakhstan", "Uzbekistan", "Korea, Democratic People's Republic of", "Belarus", "Azerbaijan", "Tajikistan", "Kyrgyzstan", "Turkmenistan", "Armenia", "Mongolia", "Japan", "China", "Taiwan, Province of China", "Hong Kong", "Macao", "India", "Indonesia", "Viet Nam", "Philippines", "Thailand", "Singapore", "Myanmar", "Malaysia", "Sri Lanka", "Cambodia", "Papua New Guinea", "Lao People's Democratic Republic", "Timor-Leste", "Fiji", "Solomon Islands", "Brunei Darussalam", "Maldives", "French Polynesia", "New Caledonia", "Vanuatu", "Samoa", "Guam", "Micronesia, Federated States of", "Tonga", "Kiribati", "Northern Mariana Islands", "American Samoa", "Marshall Islands", "Palau", "Cook Islands", "Wallis and Futuna", "Nauru", "Tuvalu", "Norfolk Island", "Niue", "Tokelau", "United States Minor Outlying Islands", "Pitcairn", "Korea, Republic of", "Bangladesh", "Pakistan", "Nepal", "Afghanistan", "Bhutan", "Iran, Islamic Republic of", "Iraq", "Yemen", "Syrian Arab Republic", "Israel", "Jordan", "Lebanon", "United Arab Emirates", "Palestine, State of", "Oman", "Kuwait", "Bahrain", "Qatar", "Saudi Arabia", "Egypt", "Algeria", "Sudan", "Morocco", "Niger", "Mali", "Tunisia", "Chad", "Libya", "Mauritania", "Western Sahara", "South Africa", "Nigeria", "Congo, the Democratic Republic of the", "Ethiopia", "Tanzania, United Republic of", "Kenya", "Uganda", "Ghana", "Mozambique", "Cote d Ivoire", "Madagascar", "Angola", "Cameroon", "Burkina Faso", "Malawi", "Zimbabwe", "Zambia", "Senegal", "Somalia", "Guinea", "Rwanda", "Benin", "Burundi", "South Sudan", "Togo", "Sierra Leone", "Central African Republic", "Congo", "Liberia", "Eritrea", "Lesotho", "Namibia", "Botswana", "Gambia", "Gabon", "Guinea-Bissau", "Mauritius", "Swaziland", "Equatorial Guinea", "Djibouti", "Reunion", "Comoros", "Cape Verde", "Mayotte", "Sao Tome and Principe", "Seychelles", "Saint Helena, Ascension and Tristan da Cunha", "Brazil", "Mexico", "Argentina", "Chile", "Colombia", "Venezuela, Bolivarian Republic of", "Uruguay", "Peru", "Ecuador", "Guatemala", "Cuba", "Bolivia, Plurinational State of", "Dominican Republic", "Haiti", "Honduras", "El Salvador", "Paraguay", "Nicaragua", "Costa Rica", "Puerto Rico", "Panama", "Jamaica", "Trinidad and Tobago", "Guyana", "Suriname", "Martinique", "Guadeloupe", "Bahamas", "Belize", "Barbados", "French Guiana", "Saint Lucia", "Curacao", "Saint Vincent and the Grenadines", "Grenada", "Virgin Islands, U.S.", "Aruba", "Antigua and Barbuda", "Dominica", "Bermuda", "Saint Kitts and Nevis", "Cayman Islands", "Saint Martin (French part)", "Sint Maarten (Dutch part)", "Virgin Islands, British", "Turks and Caicos Islands", "Bonaire, Sint Eustatius and Saba", "Anguilla", "Saint Barthelemy", "Montserrat", "Falkland Islands (Malvinas)", "Antarctica", "South Georgia and the South Sandwich Islands", "Bouvet Island", "United States", "Canada", "Australia", "Christmas Island", "Cocos (Keeling) Islands", "Heard Island and McDonald Islands", "New Zealand"],
+          "zmin": 0,
+          "zmax": 240,
+          "frame": "2004",
+          "type": "choropleth",
+          "marker": {
+            "line": {
+              "color": "rgba(31,119,180,1)"
+            }
+          },
+          "visible": true
+        }
+      ],
+      "traces": [0]
+    },
+    {
+      "name": "2005",
+      "data": [
+        {
+          "colorbar": {
+            "title": "Exports of goods and services",
+            "ticklen": 2
+          },
+          "colorscale": [
+            ["0", "#de5842"],
+            ["1e-05", "#188AF0"],
+            ["1", "#00D4B0"]
+          ],
+          "showscale": true,
+          "locations": ["DEU", "FRA", "SPM", "ATF", "ITA", "MLT", "GRC", "CYP", "ESP", "PRT", "AUT", "NLD", "BEL", "LUX", "POL", "CZE", "SVK", "LTU", "LVA", "EST", "SWE", "DNK", "GRL", "FRO", "FIN", "ALA", "ROU", "HUN", "BGR", "HRV", "SVN", "IRL", "GBR", "JEY", "IMN", "GGY", "GIB", "IOT", "NOR", "SJM", "CHE", "LIE", "ISL", "UKR", "ALB", "SRB", "BIH", "GEO", "MDA", "MKD", "MNE", "AND", "MCO", "SMR", "VAT", "TUR", "RUS", "KAZ", "UZB", "PRK", "BLR", "AZE", "TJK", "KGZ", "TKM", "ARM", "MNG", "JPN", "CHN", "TWN", "HKG", "MAC", "IND", "IDN", "VNM", "PHL", "THA", "SGP", "MMR", "MYS", "LKA", "KHM", "PNG", "LAO", "TLS", "FJI", "SLB", "BRN", "MDV", "PYF", "NCL", "VUT", "WSM", "GUM", "FSM", "TON", "KIR", "MNP", "ASM", "MHL", "PLW", "COK", "WLF", "NRU", "TUV", "NIU", "NFK", "TKL", "UMI", "PCN", "KOR", "BGD", "PAK", "NPL", "AFG", "BTN", "IRN", "IRQ", "YEM", "SYR", "ISR", "JOR", "LBN", "ARE", "PSE", "OMN", "KWT", "BHR", "QAT", "SAU", "EGY", "DZA", "SDN", "MAR", "NER", "MLI", "TCD", "TUN", "LBY", "MRT", "ESH", "ZAF", "NGA", "COD", "ETH", "TZA", "KEN", "UGA", "GHA", "MOZ", "CIV", "AGO", "MDG", "CMR", "BFA", "MWI", "ZWE", "ZMB", "SEN", "SOM", "GIN", "RWA", "BEN", "SSD", "BDI", "TGO", "SLE", "CAF", "COG", "LBR", "ERI", "NAM", "LSO", "BWA", "GMB", "GAB", "GNB", "MUS", "SWZ", "GNQ", "DJI", "REU", "COM", "CPV", "MYT", "STP", "SYC", "SHN", "BRA", "MEX", "ARG", "CHL", "COL", "VEN", "URY", "PER", "ECU", "GTM", "CUB", "BOL", "DOM", "HTI", "HND", "SLV", "PRY", "NIC", "CRI", "PRI", "PAN", "JAM", "TTO", "GUY", "SUR", "GLP", "MTQ", "BHS", "BLZ", "BRB", "GUF", "LCA", "CUW", "VCT", "GRD", "VIR", "ABW", "ATG", "DMA", "BMU", "CYM", "KNA", "MAF", "SXM", "TCA", "VGB", "BES", "AIA", "BLM", "MSR", "FLK", "ATA", "SGS", "BVT", "USA", "CAN", "AUS", "CXR", "CCK", "HMD", "NZL"],
+          "z": [38.060000000000002, 27.030000000000001, 27.030000000000001, 27.030000000000001, 24.600000000000001, 103.58, 21.309999999999999, 55.689999999999998, 24.98, 27.079999999999998, 48.619999999999997, 65.629999999999995, 74.280000000000001, 153.81999999999999, 34.609999999999999, 61.810000000000002, 72.299999999999997, 55.130000000000003, 42.969999999999999, 65.439999999999998, 45.020000000000003, 47.450000000000003, 47.402152123224909, 42.039999999999999, 40.270000000000003, 40.270000000000003, 24.539999999999999, 62.520000000000003, 42.530000000000001, 36.369999999999997, 59.810000000000002, 79.530000000000001, 25.18, 25.18, 25.18, 25.18, 25.18, 19.609999999999999, 43.439999999999998, 43.439999999999998, 53.850000000000001, 53.850000000000001, 30.359999999999999, 47.729999999999997, 23.010000000000002, 27.960000000000001, 24.32, 33.259999999999998, 51.159999999999997, 34.810000000000002, 43.549999999999997, 32.367686773542445, 32.367686773542445, 174.44999999999999, 32.367686773542445, 21.879999999999999, 35.200000000000003, 53.189999999999998, 37.810000000000002, 45.602127575922381, 59.799999999999997, 62.939999999999998, 54.240000000000002, 38.310000000000002, 30.690000000000001, 27.309999999999999, 58.770000000000003, 13.82, 33.829999999999998, 34.5946428839761, 177.44999999999999, 84.390000000000001, 19.609999999999999, 34.07, 63.700000000000003, 41.229999999999997, 68.400000000000006, 225.16, 10.619999999999999, 112.90000000000001, 32.340000000000003, 64.079999999999998, 72.159999999999997, 28.960000000000001, 46.733776658657234, 54.07, 27.300000000000001, 70.170000000000002, 91.290000000000006, 46.733776658657234, 21.469999999999999, 45.380000000000003, 28.539999999999999, 46.733776658657234, 16.719999999999999, 17.84, 14.34, 46.733776658657234, 46.733776658657234, 46.733776658657234, 46.733776658657234, 46.733776658657234, 46.733776658657234, 46.733776658657234, 46.733776658657234, 46.733776658657234, 46.733776658657234, 46.733776658657234, 46.733776658657234, 46.733776658657234, 35.280000000000001, 14.390000000000001, 14.31, 14.58, 15.18661847399922, 39.299999999999997, 30.329999999999998, 54.350000000000001, 30, 41.039999999999999, 39.509999999999998, 52.700000000000003, 36.619999999999997, 67.590000000000003, 14.109999999999999, 63.159999999999997, 63.979999999999997, 83.890000000000001, 65.090000000000003, 57.049999999999997, 30.34, 47.210000000000001, 14.460000000000001, 28, 14.41, 22.989999999999998, 47.979999999999997, 44.93, 63.719999999999999, 26.75, 31.589966200040152, 23.600000000000001, 21.030000000000001, 22.940000000000001, 16.690000000000001, 16.98, 28.510000000000002, 14.18, 36.450000000000003, 27.100000000000001, 31.879999999999999, 65.530000000000001, 24.32, 22.25, 9.8399999999999999, 27.127353932914186, 33.549999999999997, 30.609999999999999, 19.809999999999999, 20.600000000000001, 34.789999999999999, 10.69, 18.48, 27.127353932914186, 6.2000000000000002, 26.170000000000002, 17.829999999999998, 13.359999999999999, 75.010000000000005, 27.127353932914186, 6.1699999999999999, 40.409999999999997, 51.799999999999997, 52.920000000000002, 19.899999999999999, 60.009999999999998, 16.149999999999999, 59.020000000000003, 56.780000000000001, 87.420000000000002, 156.53999999999999, 27.127353932914186, 8.8399999999999999, 37.780000000000001, 27.127353932914186, 27.127353932914186, 77.109999999999999, 27.127353932914186, 15.24, 26.23, 23.25, 40.18, 16.969999999999999, 39.659999999999997, 30.399999999999999, 26.850000000000001, 27.620000000000001, 25.449999999999999, 32.591576303635286, 35.549999999999997, 28.329999999999998, 8.6099999999999994, 59.009999999999998, 25.27, 47.590000000000003, 24.379999999999999, 43.460000000000001, 67.379999999999995, 64.5, 35.270000000000003, 32.591576303635286, 84.620000000000005, 52.75, 32.591576303635286, 32.591576303635286, 38.759999999999998, 46.119999999999997, 44.810000000000002, 32.591576303635286, 32.591576303635286, 32.591576303635286, 32.591576303635286, 32.591576303635286, 32.591576303635286, 68.079999999999998, 93.030000000000001, 37.009999999999998, 50.789999999999999, 32.591576303635286, 32.591576303635286, 32.591576303635286, 32.591576303635286, 32.591576303635286, 32.591576303635286, 32.591576303635286, 32.591576303635286, 32.591576303635286, 32.591576303635286, 32.591576303635286, 32.591576303635286, 32.591576303635286, 32.591576303635286, 9.9800000000000004, 36.859999999999999, 18.23, 18.23, 18.23, 18.23, 28.289999999999999],
+          "text": ["Germany", "France", "Saint Pierre and Miquelon", "French Southern Territories", "Italy", "Malta", "Greece", "Cyprus", "Spain", "Portugal", "Austria", "Netherlands", "Belgium", "Luxembourg", "Poland", "Czech Republic", "Slovakia", "Lithuania", "Latvia", "Estonia", "Sweden", "Denmark", "Greenland", "Faroe Islands", "Finland", "Aland Islands", "Romania", "Hungary", "Bulgaria", "Croatia", "Slovenia", "Ireland", "United Kingdom", "Jersey", "Isle of Man", "Guernsey", "Gibraltar", "British Indian Ocean Territory", "Norway", "Svalbard and Jan Mayen", "Switzerland", "Liechtenstein", "Iceland", "Ukraine", "Albania", "Serbia", "Bosnia and Herzegovina", "Georgia", "Moldova, Republic of", "Macedonia, the former Yugoslav Republic of", "Montenegro", "Andorra", "Monaco", "San Marino", "Holy See (Vatican City State)", "Turkey", "Russian Federation", "Kazakhstan", "Uzbekistan", "Korea, Democratic People's Republic of", "Belarus", "Azerbaijan", "Tajikistan", "Kyrgyzstan", "Turkmenistan", "Armenia", "Mongolia", "Japan", "China", "Taiwan, Province of China", "Hong Kong", "Macao", "India", "Indonesia", "Viet Nam", "Philippines", "Thailand", "Singapore", "Myanmar", "Malaysia", "Sri Lanka", "Cambodia", "Papua New Guinea", "Lao People's Democratic Republic", "Timor-Leste", "Fiji", "Solomon Islands", "Brunei Darussalam", "Maldives", "French Polynesia", "New Caledonia", "Vanuatu", "Samoa", "Guam", "Micronesia, Federated States of", "Tonga", "Kiribati", "Northern Mariana Islands", "American Samoa", "Marshall Islands", "Palau", "Cook Islands", "Wallis and Futuna", "Nauru", "Tuvalu", "Niue", "Norfolk Island", "Tokelau", "United States Minor Outlying Islands", "Pitcairn", "Korea, Republic of", "Bangladesh", "Pakistan", "Nepal", "Afghanistan", "Bhutan", "Iran, Islamic Republic of", "Iraq", "Yemen", "Syrian Arab Republic", "Israel", "Jordan", "Lebanon", "United Arab Emirates", "Palestine, State of", "Oman", "Kuwait", "Bahrain", "Qatar", "Saudi Arabia", "Egypt", "Algeria", "Sudan", "Morocco", "Niger", "Mali", "Chad", "Tunisia", "Libya", "Mauritania", "Western Sahara", "South Africa", "Nigeria", "Congo, the Democratic Republic of the", "Ethiopia", "Tanzania, United Republic of", "Kenya", "Uganda", "Ghana", "Mozambique", "Cote d Ivoire", "Angola", "Madagascar", "Cameroon", "Burkina Faso", "Malawi", "Zimbabwe", "Zambia", "Senegal", "Somalia", "Guinea", "Rwanda", "Benin", "South Sudan", "Burundi", "Togo", "Sierra Leone", "Central African Republic", "Congo", "Liberia", "Eritrea", "Namibia", "Lesotho", "Botswana", "Gambia", "Gabon", "Guinea-Bissau", "Mauritius", "Swaziland", "Equatorial Guinea", "Djibouti", "Reunion", "Comoros", "Cape Verde", "Mayotte", "Sao Tome and Principe", "Seychelles", "Saint Helena, Ascension and Tristan da Cunha", "Brazil", "Mexico", "Argentina", "Chile", "Colombia", "Venezuela, Bolivarian Republic of", "Uruguay", "Peru", "Ecuador", "Guatemala", "Cuba", "Bolivia, Plurinational State of", "Dominican Republic", "Haiti", "Honduras", "El Salvador", "Paraguay", "Nicaragua", "Costa Rica", "Puerto Rico", "Panama", "Jamaica", "Trinidad and Tobago", "Guyana", "Suriname", "Guadeloupe", "Martinique", "Bahamas", "Belize", "Barbados", "French Guiana", "Saint Lucia", "Curacao", "Saint Vincent and the Grenadines", "Grenada", "Virgin Islands, U.S.", "Aruba", "Antigua and Barbuda", "Dominica", "Bermuda", "Cayman Islands", "Saint Kitts and Nevis", "Saint Martin (French part)", "Sint Maarten (Dutch part)", "Turks and Caicos Islands", "Virgin Islands, British", "Bonaire, Sint Eustatius and Saba", "Anguilla", "Saint Barthelemy", "Montserrat", "Falkland Islands (Malvinas)", "Antarctica", "South Georgia and the South Sandwich Islands", "Bouvet Island", "United States", "Canada", "Australia", "Christmas Island", "Cocos (Keeling) Islands", "Heard Island and McDonald Islands", "New Zealand"],
+          "zmin": 0,
+          "zmax": 240,
+          "frame": "2005",
+          "type": "choropleth",
+          "marker": {
+            "line": {
+              "color": "rgba(31,119,180,1)"
+            }
+          },
+          "visible": true
+        }
+      ],
+      "traces": [0]
+    },
+    {
+      "name": "2006",
+      "data": [
+        {
+          "colorbar": {
+            "title": "Exports of goods and services",
+            "ticklen": 2
+          },
+          "colorscale": [
+            ["0", "#de5842"],
+            ["1e-05", "#188AF0"],
+            ["1", "#00D4B0"]
+          ],
+          "showscale": true,
+          "locations": ["DEU", "FRA", "SPM", "ATF", "ITA", "MLT", "GRC", "CYP", "ESP", "PRT", "AUT", "NLD", "BEL", "LUX", "POL", "CZE", "SVK", "LTU", "LVA", "EST", "SWE", "DNK", "GRL", "FRO", "FIN", "ALA", "ROU", "HUN", "BGR", "HRV", "SVN", "IRL", "GBR", "JEY", "IMN", "GGY", "GIB", "IOT", "NOR", "SJM", "CHE", "LIE", "ISL", "UKR", "ALB", "SRB", "BIH", "GEO", "MDA", "MKD", "MNE", "AND", "MCO", "SMR", "VAT", "TUR", "RUS", "KAZ", "UZB", "PRK", "BLR", "AZE", "TJK", "KGZ", "TKM", "ARM", "MNG", "JPN", "CHN", "TWN", "HKG", "MAC", "IND", "IDN", "VNM", "PHL", "THA", "SGP", "MMR", "MYS", "LKA", "KHM", "PNG", "LAO", "TLS", "FJI", "SLB", "BRN", "MDV", "PYF", "NCL", "VUT", "WSM", "GUM", "FSM", "TON", "KIR", "MNP", "ASM", "MHL", "PLW", "COK", "WLF", "TUV", "NRU", "NIU", "NFK", "TKL", "UMI", "PCN", "KOR", "BGD", "PAK", "NPL", "AFG", "BTN", "IRN", "IRQ", "YEM", "SYR", "ISR", "JOR", "ARE", "LBN", "PSE", "OMN", "KWT", "QAT", "BHR", "SAU", "EGY", "DZA", "SDN", "MAR", "NER", "MLI", "TCD", "TUN", "LBY", "MRT", "ESH", "ZAF", "NGA", "COD", "ETH", "TZA", "KEN", "UGA", "GHA", "MOZ", "CIV", "AGO", "MDG", "CMR", "BFA", "MWI", "ZWE", "ZMB", "SEN", "SOM", "GIN", "RWA", "BEN", "SSD", "BDI", "TGO", "SLE", "CAF", "COG", "LBR", "ERI", "NAM", "LSO", "BWA", "GMB", "GAB", "GNB", "MUS", "SWZ", "GNQ", "DJI", "REU", "COM", "CPV", "MYT", "STP", "SYC", "SHN", "BRA", "MEX", "ARG", "CHL", "COL", "VEN", "URY", "PER", "ECU", "GTM", "CUB", "BOL", "DOM", "HTI", "HND", "SLV", "PRY", "NIC", "CRI", "PRI", "PAN", "JAM", "TTO", "GUY", "SUR", "GLP", "MTQ", "BHS", "BLZ", "BRB", "GUF", "LCA", "CUW", "VCT", "GRD", "VIR", "ABW", "ATG", "DMA", "BMU", "CYM", "KNA", "MAF", "SXM", "TCA", "VGB", "BES", "AIA", "BLM", "MSR", "FLK", "ATA", "SGS", "BVT", "USA", "CAN", "AUS", "CXR", "CCK", "HMD", "NZL"],
+          "z": [41.43, 27.940000000000001, 27.940000000000001, 27.940000000000001, 26.170000000000002, 123.40000000000001, 21.170000000000002, 53.439999999999998, 25.239999999999998, 30.359999999999999, 50.840000000000003, 68.180000000000007, 76.810000000000002, 167.74000000000001, 37.82, 64.879999999999995, 81.239999999999995, 57.039999999999999, 39.75, 63.270000000000003, 47.490000000000002, 50.729999999999997, 50.651315626511341, 41.799999999999997, 43.07, 43.07, 24.77, 73.780000000000001, 46.979999999999997, 37.560000000000002, 64.870000000000005, 79.030000000000001, 27.43, 27.43, 27.43, 27.43, 27.43, 21.27, 44.539999999999999, 44.539999999999999, 56.609999999999999, 56.609999999999999, 30.41, 43.219999999999999, 25.210000000000001, 29.440000000000001, 26.260000000000002, 32.469999999999999, 45.259999999999998, 37.789999999999999, 40.560000000000002, 32.625788745337445, 32.625788745337445, 174.44999999999999, 32.625788745337445, 22.390000000000001, 33.729999999999997, 50.979999999999997, 36.509999999999998, 46.338864208697018, 60.060000000000002, 66.5, 58.159999999999997, 41.719999999999999, 35.119999999999997, 22.149999999999999, 59.439999999999998, 15.66, 36.039999999999999, 36.831841404879945, 185.19, 78.549999999999997, 21.27, 31.030000000000001, 67.719999999999999, 41.25, 68.680000000000007, 228.03999999999999, 10.619999999999999, 112.19, 30.129999999999999, 68.590000000000003, 72.159999999999997, 38.159999999999997, 47.381351786329851, 50.079999999999998, 27.059999999999999, 71.719999999999999, 91.290000000000006, 47.381351786329851, 23.890000000000001, 41.270000000000003, 29.609999999999999, 47.381351786329851, 18.079999999999998, 14.56, 10.4, 47.381351786329851, 47.381351786329851, 47.381351786329851, 47.381351786329851, 47.381351786329851, 47.381351786329851, 47.381351786329851, 47.381351786329851, 47.381351786329851, 47.381351786329851, 47.381351786329851, 47.381351786329851, 47.381351786329851, 35.630000000000003, 16.350000000000001, 14.130000000000001, 13.449999999999999, 14.493773968814473, 55.829999999999998, 29.870000000000001, 51.030000000000001, 30, 39.009999999999998, 39.630000000000003, 53.869999999999997, 68.629999999999995, 35.590000000000003, 13.77, 61.530000000000001, 65.549999999999997, 62.82, 84.640000000000001, 59.829999999999998, 29.949999999999999, 48.810000000000002, 15.09, 29.629999999999999, 13.869999999999999, 28.43, 47.579999999999998, 46.030000000000001, 71.840000000000003, 42.359999999999999, 33.448657670598529, 26.100000000000001, 29.52, 21.699999999999999, 16.690000000000001, 18.41, 22.98, 15.279999999999999, 24.66, 27.190000000000001, 32.840000000000003, 63.469999999999999, 27.489999999999998, 24.18, 10.960000000000001, 26.22533084163825, 35.960000000000001, 32.590000000000003, 19.25, 20.600000000000001, 23.82, 10.880000000000001, 18.059999999999999, 26.22533084163825, 7.2999999999999998, 26.030000000000001, 17.07, 14.32, 77.459999999999994, 26.22533084163825, 6.9000000000000004, 45.369999999999997, 51.799999999999997, 51.780000000000001, 21.030000000000001, 60.57, 12.85, 58.439999999999998, 55.840000000000003, 82.329999999999998, 156.53999999999999, 26.22533084163825, 8.8399999999999999, 45.130000000000003, 26.22533084163825, 26.22533084163825, 83.079999999999998, 26.22533084163825, 14.369999999999999, 27.329999999999998, 23.030000000000001, 43.869999999999997, 17.73, 36.520000000000003, 30.300000000000001, 30.539999999999999, 30.329999999999998, 25.34, 34.496581767232371, 41.770000000000003, 28.219999999999999, 9.0199999999999996, 56.049999999999997, 25.940000000000001, 46.289999999999999, 31.27, 43.310000000000002, 68.879999999999995, 66.170000000000002, 40.130000000000003, 34.496581767232371, 84.620000000000005, 52.75, 34.496581767232371, 34.496581767232371, 38.310000000000002, 52.119999999999997, 45.969999999999999, 34.496581767232371, 34.496581767232371, 34.496581767232371, 34.496581767232371, 34.496581767232371, 34.496581767232371, 64.590000000000003, 82.640000000000001, 37.009999999999998, 50.789999999999999, 34.496581767232371, 34.496581767232371, 34.496581767232371, 34.496581767232371, 34.496581767232371, 34.496581767232371, 34.496581767232371, 34.496581767232371, 34.496581767232371, 34.496581767232371, 34.496581767232371, 34.496581767232371, 34.496581767232371, 34.496581767232371, 10.640000000000001, 35.399999999999999, 19.870000000000001, 19.870000000000001, 19.870000000000001, 19.870000000000001, 29.609999999999999],
+          "text": ["Germany", "France", "Saint Pierre and Miquelon", "French Southern Territories", "Italy", "Malta", "Greece", "Cyprus", "Spain", "Portugal", "Austria", "Netherlands", "Belgium", "Luxembourg", "Poland", "Czech Republic", "Slovakia", "Lithuania", "Latvia", "Estonia", "Sweden", "Denmark", "Greenland", "Faroe Islands", "Finland", "Aland Islands", "Romania", "Hungary", "Bulgaria", "Croatia", "Slovenia", "Ireland", "United Kingdom", "Jersey", "Isle of Man", "Guernsey", "Gibraltar", "British Indian Ocean Territory", "Norway", "Svalbard and Jan Mayen", "Switzerland", "Liechtenstein", "Iceland", "Ukraine", "Albania", "Serbia", "Bosnia and Herzegovina", "Georgia", "Moldova, Republic of", "Macedonia, the former Yugoslav Republic of", "Montenegro", "Andorra", "Monaco", "San Marino", "Holy See (Vatican City State)", "Turkey", "Russian Federation", "Kazakhstan", "Uzbekistan", "Korea, Democratic People's Republic of", "Belarus", "Azerbaijan", "Tajikistan", "Kyrgyzstan", "Turkmenistan", "Armenia", "Mongolia", "Japan", "China", "Taiwan, Province of China", "Hong Kong", "Macao", "India", "Indonesia", "Viet Nam", "Philippines", "Thailand", "Singapore", "Myanmar", "Malaysia", "Sri Lanka", "Cambodia", "Papua New Guinea", "Lao People's Democratic Republic", "Timor-Leste", "Fiji", "Solomon Islands", "Brunei Darussalam", "Maldives", "French Polynesia", "New Caledonia", "Vanuatu", "Samoa", "Guam", "Micronesia, Federated States of", "Tonga", "Kiribati", "Northern Mariana Islands", "American Samoa", "Marshall Islands", "Palau", "Cook Islands", "Wallis and Futuna", "Tuvalu", "Nauru", "Niue", "Norfolk Island", "Tokelau", "United States Minor Outlying Islands", "Pitcairn", "Korea, Republic of", "Bangladesh", "Pakistan", "Nepal", "Afghanistan", "Bhutan", "Iran, Islamic Republic of", "Iraq", "Yemen", "Syrian Arab Republic", "Israel", "Jordan", "United Arab Emirates", "Lebanon", "Palestine, State of", "Oman", "Kuwait", "Qatar", "Bahrain", "Saudi Arabia", "Egypt", "Algeria", "Sudan", "Morocco", "Niger", "Mali", "Chad", "Tunisia", "Libya", "Mauritania", "Western Sahara", "South Africa", "Nigeria", "Congo, the Democratic Republic of the", "Ethiopia", "Tanzania, United Republic of", "Kenya", "Uganda", "Ghana", "Mozambique", "Cote d Ivoire", "Angola", "Madagascar", "Cameroon", "Burkina Faso", "Malawi", "Zimbabwe", "Zambia", "Senegal", "Somalia", "Guinea", "Rwanda", "Benin", "South Sudan", "Burundi", "Togo", "Sierra Leone", "Central African Republic", "Congo", "Liberia", "Eritrea", "Namibia", "Lesotho", "Botswana", "Gambia", "Gabon", "Guinea-Bissau", "Mauritius", "Swaziland", "Equatorial Guinea", "Djibouti", "Reunion", "Comoros", "Cape Verde", "Mayotte", "Sao Tome and Principe", "Seychelles", "Saint Helena, Ascension and Tristan da Cunha", "Brazil", "Mexico", "Argentina", "Chile", "Colombia", "Venezuela, Bolivarian Republic of", "Uruguay", "Peru", "Ecuador", "Guatemala", "Cuba", "Bolivia, Plurinational State of", "Dominican Republic", "Haiti", "Honduras", "El Salvador", "Paraguay", "Nicaragua", "Costa Rica", "Puerto Rico", "Panama", "Jamaica", "Trinidad and Tobago", "Guyana", "Suriname", "Guadeloupe", "Martinique", "Bahamas", "Belize", "Barbados", "French Guiana", "Saint Lucia", "Curacao", "Saint Vincent and the Grenadines", "Grenada", "Virgin Islands, U.S.", "Aruba", "Antigua and Barbuda", "Dominica", "Bermuda", "Cayman Islands", "Saint Kitts and Nevis", "Saint Martin (French part)", "Sint Maarten (Dutch part)", "Turks and Caicos Islands", "Virgin Islands, British", "Bonaire, Sint Eustatius and Saba", "Anguilla", "Saint Barthelemy", "Montserrat", "Falkland Islands (Malvinas)", "Antarctica", "South Georgia and the South Sandwich Islands", "Bouvet Island", "United States", "Canada", "Australia", "Christmas Island", "Cocos (Keeling) Islands", "Heard Island and McDonald Islands", "New Zealand"],
+          "zmin": 0,
+          "zmax": 240,
+          "frame": "2006",
+          "type": "choropleth",
+          "marker": {
+            "line": {
+              "color": "rgba(31,119,180,1)"
+            }
+          },
+          "visible": true
+        }
+      ],
+      "traces": [0]
+    },
+    {
+      "name": "2007",
+      "data": [
+        {
+          "colorbar": {
+            "title": "Exports of goods and services",
+            "ticklen": 2
+          },
+          "colorscale": [
+            ["0", "#de5842"],
+            ["1e-05", "#188AF0"],
+            ["1", "#00D4B0"]
+          ],
+          "showscale": true,
+          "locations": ["DEU", "FRA", "SPM", "ATF", "ITA", "MLT", "GRC", "CYP", "ESP", "PRT", "AUT", "NLD", "BEL", "LUX", "POL", "CZE", "SVK", "LTU", "LVA", "EST", "SWE", "DNK", "GRL", "FRO", "FIN", "ALA", "ROU", "HUN", "BGR", "HRV", "SVN", "IRL", "GBR", "JEY", "IMN", "GGY", "GIB", "IOT", "NOR", "SJM", "CHE", "LIE", "ISL", "UKR", "ALB", "SRB", "BIH", "GEO", "MDA", "MKD", "MNE", "AND", "MCO", "SMR", "VAT", "TUR", "RUS", "KAZ", "UZB", "PRK", "BLR", "AZE", "TJK", "KGZ", "TKM", "ARM", "MNG", "JPN", "CHN", "TWN", "HKG", "MAC", "IND", "IDN", "VNM", "PHL", "THA", "SGP", "MMR", "MYS", "LKA", "KHM", "PNG", "LAO", "TLS", "FJI", "SLB", "BRN", "MDV", "PYF", "NCL", "VUT", "WSM", "GUM", "FSM", "TON", "KIR", "MNP", "ASM", "MHL", "PLW", "COK", "WLF", "TUV", "NRU", "NIU", "NFK", "TKL", "UMI", "PCN", "KOR", "BGD", "PAK", "NPL", "AFG", "BTN", "IRN", "IRQ", "YEM", "SYR", "ISR", "JOR", "ARE", "LBN", "PSE", "OMN", "KWT", "QAT", "BHR", "SAU", "EGY", "DZA", "SDN", "MAR", "NER", "MLI", "TCD", "TUN", "LBY", "MRT", "ESH", "ZAF", "NGA", "COD", "ETH", "TZA", "KEN", "UGA", "GHA", "MOZ", "CIV", "AGO", "MDG", "CMR", "BFA", "MWI", "ZWE", "ZMB", "SEN", "SOM", "GIN", "RWA", "BEN", "SSD", "BDI", "TGO", "SLE", "CAF", "COG", "LBR", "ERI", "NAM", "LSO", "BWA", "GMB", "GAB", "GNB", "MUS", "SWZ", "GNQ", "DJI", "REU", "COM", "CPV", "MYT", "STP", "SYC", "SHN", "BRA", "MEX", "ARG", "CHL", "COL", "VEN", "URY", "PER", "ECU", "GTM", "CUB", "BOL", "DOM", "HTI", "HND", "SLV", "PRY", "NIC", "CRI", "PRI", "PAN", "JAM", "TTO", "GUY", "SUR", "GLP", "MTQ", "BHS", "BLZ", "BRB", "GUF", "LCA", "CUW", "VCT", "GRD", "VIR", "ABW", "ATG", "DMA", "BMU", "CYM", "KNA", "MAF", "SXM", "TCA", "VGB", "BES", "AIA", "BLM", "MSR", "FLK", "ATA", "SGS", "BVT", "USA", "CAN", "AUS", "CXR", "CCK", "HMD", "NZL"],
+          "z": [43.32, 27.850000000000001, 27.850000000000001, 27.850000000000001, 27.359999999999999, 129.24000000000001, 22.52, 53.259999999999998, 25.98, 31.190000000000001, 52.560000000000002, 68.780000000000001, 78.299999999999997, 169.58000000000001, 38.520000000000003, 66.099999999999994, 83.379999999999995, 51.640000000000001, 38.259999999999998, 62.600000000000001, 47.609999999999999, 51.479999999999997, 51.397903919114533, 42.130000000000003, 43.829999999999998, 43.829999999999998, 24.710000000000001, 77.819999999999993, 52.359999999999999, 37.530000000000001, 67.900000000000006, 80.840000000000003, 25.420000000000002, 25.420000000000002, 25.420000000000002, 25.420000000000002, 25.420000000000002, 20.800000000000001, 42.960000000000001, 42.960000000000001, 61.549999999999997, 61.549999999999997, 32.840000000000003, 41.289999999999999, 28.25, 27.289999999999999, 27.100000000000001, 30.82, 45.579999999999998, 44.119999999999997, 43, 32.300769924613718, 32.300769924613718, 174.44999999999999, 32.300769924613718, 21.890000000000001, 30.16, 49.310000000000002, 39.670000000000002, 47.41904410066504, 60.939999999999998, 68.129999999999995, 45.859999999999999, 52.909999999999997, 36.780000000000001, 18.190000000000001, 59.609999999999999, 17.289999999999999, 35.43, 36.234978652738178, 186.41, 78.879999999999995, 20.800000000000001, 29.440000000000001, 70.519999999999996, 38.009999999999998, 68.870000000000005, 212.78, 10.619999999999999, 106.17, 29.109999999999999, 65.329999999999998, 72.159999999999997, 33.609999999999999, 45.606095088848036, 48.600000000000001, 32.149999999999999, 67.849999999999994, 91.290000000000006, 45.606095088848036, 27.379999999999999, 41.590000000000003, 29.210000000000001, 45.606095088848036, 22.48, 12.220000000000001, 16.079999999999998, 45.606095088848036, 45.606095088848036, 45.606095088848036, 45.606095088848036, 45.606095088848036, 45.606095088848036, 45.606095088848036, 45.606095088848036, 45.606095088848036, 45.606095088848036, 45.606095088848036, 45.606095088848036, 45.606095088848036, 37.390000000000001, 17, 13.210000000000001, 12.859999999999999, 13.932794609470163, 56.280000000000001, 28.84, 45.899999999999999, 30, 38.590000000000003, 39.369999999999997, 54.229999999999997, 72.379999999999995, 37.140000000000001, 18.329999999999998, 62.68, 63.420000000000002, 60.280000000000001, 79.680000000000007, 59.939999999999998, 30.25, 47.07, 16.899999999999999, 31.43, 13.07, 24.149999999999999, 44.5, 51.079999999999998, 73.430000000000007, 40.520000000000003, 33.429272081362633, 27.960000000000001, 21.239999999999998, 39.07, 16.690000000000001, 19.829999999999998, 21.920000000000002, 16.73, 24.530000000000001, 27.43, 30.489999999999998, 67.909999999999997, 27.800000000000001, 26.98, 10.35, 26.857456656828628, 37.789999999999999, 33.590000000000003, 20.550000000000001, 20.600000000000001, 23.550000000000001, 13.67, 22.039999999999999, 26.857456656828628, 6.7999999999999998, 25.170000000000002, 15.84, 14.119999999999999, 68.489999999999995, 26.857456656828628, 5.7699999999999996, 49.859999999999999, 51.799999999999997, 56.479999999999997, 18.030000000000001, 58.530000000000001, 20.190000000000001, 55.869999999999997, 61.07, 88.620000000000005, 156.53999999999999, 26.857456656828628, 8.9800000000000004, 33.75, 26.857456656828628, 26.857456656828628, 86.840000000000003, 26.857456656828628, 13.33, 27.530000000000001, 22.66, 45.130000000000003, 16.43, 31.129999999999999, 29.09, 31.52, 31.93, 25.98, 34.563096837585157, 41.799999999999997, 26.760000000000002, 8.4399999999999995, 53.509999999999998, 25.57, 43.369999999999997, 33.060000000000002, 40.579999999999998, 67.030000000000001, 71.459999999999994, 39.729999999999997, 34.563096837585157, 84.620000000000005, 54.119999999999997, 34.563096837585157, 34.563096837585157, 40.090000000000003, 50.880000000000003, 43.729999999999997, 34.563096837585157, 34.563096837585157, 34.563096837585157, 34.563096837585157, 34.563096837585157, 34.563096837585157, 65.060000000000002, 77.280000000000001, 35.090000000000003, 50.789999999999999, 34.563096837585157, 34.563096837585157, 34.563096837585157, 34.563096837585157, 34.563096837585157, 34.563096837585157, 34.563096837585157, 34.563096837585157, 34.563096837585157, 34.563096837585157, 34.563096837585157, 34.563096837585157, 34.563096837585157, 34.563096837585157, 11.460000000000001, 34.229999999999997, 20.199999999999999, 20.199999999999999, 20.199999999999999, 20.199999999999999, 29.27],
+          "text": ["Germany", "France", "Saint Pierre and Miquelon", "French Southern Territories", "Italy", "Malta", "Greece", "Cyprus", "Spain", "Portugal", "Austria", "Netherlands", "Belgium", "Luxembourg", "Poland", "Czech Republic", "Slovakia", "Lithuania", "Latvia", "Estonia", "Sweden", "Denmark", "Greenland", "Faroe Islands", "Finland", "Aland Islands", "Romania", "Hungary", "Bulgaria", "Croatia", "Slovenia", "Ireland", "United Kingdom", "Jersey", "Isle of Man", "Guernsey", "Gibraltar", "British Indian Ocean Territory", "Norway", "Svalbard and Jan Mayen", "Switzerland", "Liechtenstein", "Iceland", "Ukraine", "Albania", "Serbia", "Bosnia and Herzegovina", "Georgia", "Moldova, Republic of", "Macedonia, the former Yugoslav Republic of", "Montenegro", "Andorra", "Monaco", "San Marino", "Holy See (Vatican City State)", "Turkey", "Russian Federation", "Kazakhstan", "Uzbekistan", "Korea, Democratic People's Republic of", "Belarus", "Azerbaijan", "Tajikistan", "Kyrgyzstan", "Turkmenistan", "Armenia", "Mongolia", "Japan", "China", "Taiwan, Province of China", "Hong Kong", "Macao", "India", "Indonesia", "Viet Nam", "Philippines", "Thailand", "Singapore", "Myanmar", "Malaysia", "Sri Lanka", "Cambodia", "Papua New Guinea", "Lao People's Democratic Republic", "Timor-Leste", "Fiji", "Solomon Islands", "Brunei Darussalam", "Maldives", "French Polynesia", "New Caledonia", "Vanuatu", "Samoa", "Guam", "Micronesia, Federated States of", "Tonga", "Kiribati", "Northern Mariana Islands", "American Samoa", "Marshall Islands", "Palau", "Cook Islands", "Wallis and Futuna", "Tuvalu", "Nauru", "Niue", "Norfolk Island", "Tokelau", "United States Minor Outlying Islands", "Pitcairn", "Korea, Republic of", "Bangladesh", "Pakistan", "Nepal", "Afghanistan", "Bhutan", "Iran, Islamic Republic of", "Iraq", "Yemen", "Syrian Arab Republic", "Israel", "Jordan", "United Arab Emirates", "Lebanon", "Palestine, State of", "Oman", "Kuwait", "Qatar", "Bahrain", "Saudi Arabia", "Egypt", "Algeria", "Sudan", "Morocco", "Niger", "Mali", "Chad", "Tunisia", "Libya", "Mauritania", "Western Sahara", "South Africa", "Nigeria", "Congo, the Democratic Republic of the", "Ethiopia", "Tanzania, United Republic of", "Kenya", "Uganda", "Ghana", "Mozambique", "Cote d Ivoire", "Angola", "Madagascar", "Cameroon", "Burkina Faso", "Malawi", "Zimbabwe", "Zambia", "Senegal", "Somalia", "Guinea", "Rwanda", "Benin", "South Sudan", "Burundi", "Togo", "Sierra Leone", "Central African Republic", "Congo", "Liberia", "Eritrea", "Namibia", "Lesotho", "Botswana", "Gambia", "Gabon", "Guinea-Bissau", "Mauritius", "Swaziland", "Equatorial Guinea", "Djibouti", "Reunion", "Comoros", "Cape Verde", "Mayotte", "Sao Tome and Principe", "Seychelles", "Saint Helena, Ascension and Tristan da Cunha", "Brazil", "Mexico", "Argentina", "Chile", "Colombia", "Venezuela, Bolivarian Republic of", "Uruguay", "Peru", "Ecuador", "Guatemala", "Cuba", "Bolivia, Plurinational State of", "Dominican Republic", "Haiti", "Honduras", "El Salvador", "Paraguay", "Nicaragua", "Costa Rica", "Puerto Rico", "Panama", "Jamaica", "Trinidad and Tobago", "Guyana", "Suriname", "Guadeloupe", "Martinique", "Bahamas", "Belize", "Barbados", "French Guiana", "Saint Lucia", "Curacao", "Saint Vincent and the Grenadines", "Grenada", "Virgin Islands, U.S.", "Aruba", "Antigua and Barbuda", "Dominica", "Bermuda", "Cayman Islands", "Saint Kitts and Nevis", "Saint Martin (French part)", "Sint Maarten (Dutch part)", "Turks and Caicos Islands", "Virgin Islands, British", "Bonaire, Sint Eustatius and Saba", "Anguilla", "Saint Barthelemy", "Montserrat", "Falkland Islands (Malvinas)", "Antarctica", "South Georgia and the South Sandwich Islands", "Bouvet Island", "United States", "Canada", "Australia", "Christmas Island", "Cocos (Keeling) Islands", "Heard Island and McDonald Islands", "New Zealand"],
+          "zmin": 0,
+          "zmax": 240,
+          "frame": "2007",
+          "type": "choropleth",
+          "marker": {
+            "line": {
+              "color": "rgba(31,119,180,1)"
+            }
+          },
+          "visible": true
+        }
+      ],
+      "traces": [0]
+    },
+    {
+      "name": "2008",
+      "data": [
+        {
+          "colorbar": {
+            "title": "Exports of goods and services",
+            "ticklen": 2
+          },
+          "colorscale": [
+            ["0", "#de5842"],
+            ["1e-05", "#188AF0"],
+            ["1", "#00D4B0"]
+          ],
+          "showscale": true,
+          "locations": ["DEU", "FRA", "SPM", "ATF", "ITA", "MLT", "GRC", "CYP", "ESP", "PRT", "AUT", "NLD", "BEL", "LUX", "POL", "CZE", "SVK", "LTU", "LVA", "EST", "SWE", "DNK", "GRL", "FRO", "FIN", "ALA", "ROU", "HUN", "BGR", "HRV", "SVN", "IRL", "GBR", "JEY", "IMN", "GGY", "GIB", "IOT", "NOR", "SJM", "CHE", "LIE", "ISL", "UKR", "ALB", "SRB", "BIH", "GEO", "MDA", "MKD", "MNE", "AND", "MCO", "SMR", "VAT", "TUR", "RUS", "KAZ", "UZB", "PRK", "BLR", "AZE", "TJK", "TKM", "KGZ", "ARM", "MNG", "JPN", "CHN", "TWN", "HKG", "MAC", "IND", "IDN", "VNM", "PHL", "THA", "SGP", "MMR", "MYS", "LKA", "KHM", "PNG", "LAO", "TLS", "FJI", "SLB", "BRN", "MDV", "PYF", "NCL", "VUT", "WSM", "GUM", "FSM", "TON", "KIR", "MNP", "ASM", "MHL", "PLW", "COK", "WLF", "TUV", "NRU", "NIU", "NFK", "TKL", "UMI", "PCN", "KOR", "BGD", "PAK", "NPL", "AFG", "BTN", "IRN", "IRQ", "YEM", "SYR", "ISR", "JOR", "ARE", "LBN", "PSE", "KWT", "OMN", "QAT", "BHR", "SAU", "EGY", "DZA", "SDN", "MAR", "NER", "MLI", "TCD", "TUN", "LBY", "MRT", "ESH", "ZAF", "NGA", "COD", "ETH", "TZA", "KEN", "UGA", "GHA", "MOZ", "AGO", "CIV", "MDG", "CMR", "BFA", "MWI", "ZMB", "ZWE", "SEN", "SOM", "GIN", "RWA", "BEN", "SSD", "BDI", "TGO", "SLE", "CAF", "COG", "LBR", "ERI", "NAM", "LSO", "BWA", "GMB", "GAB", "GNB", "MUS", "SWZ", "GNQ", "DJI", "REU", "COM", "CPV", "MYT", "STP", "SYC", "SHN", "BRA", "MEX", "ARG", "CHL", "COL", "VEN", "URY", "PER", "ECU", "GTM", "CUB", "BOL", "DOM", "HTI", "HND", "SLV", "PRY", "NIC", "CRI", "PRI", "PAN", "JAM", "TTO", "GUY", "SUR", "GLP", "MTQ", "BHS", "BLZ", "BRB", "GUF", "LCA", "CUW", "VCT", "GRD", "VIR", "ABW", "ATG", "DMA", "BMU", "CYM", "KNA", "MAF", "SXM", "TCA", "VGB", "BES", "AIA", "BLM", "MSR", "FLK", "ATA", "SGS", "BVT", "USA", "CAN", "AUS", "CXR", "CCK", "HMD", "NZL"],
+          "z": [43.799999999999997, 28.120000000000001, 28.120000000000001, 28.120000000000001, 26.859999999999999, 148.5, 23.359999999999999, 50.079999999999998, 25.620000000000001, 31.260000000000002, 53.25, 69.790000000000006, 80.879999999999995, 161.49000000000001, 37.810000000000002, 62.950000000000003, 80.150000000000006, 57.619999999999997, 39.259999999999998, 66.390000000000001, 49.090000000000003, 54.18, 54.108083942962388, 45.969999999999999, 44.899999999999999, 44.899999999999999, 26.16, 79.180000000000007, 52.479999999999997, 36.049999999999997, 66.310000000000002, 84.329999999999998, 27.309999999999999, 27.309999999999999, 27.309999999999999, 27.309999999999999, 27.309999999999999, 24.100000000000001, 46.219999999999999, 46.219999999999999, 63.130000000000003, 63.130000000000003, 40.299999999999997, 43.259999999999998, 25.300000000000001, 28.440000000000001, 26.850000000000001, 28.260000000000002, 40.82, 43.219999999999999, 39.520000000000003, 31.521850418278106, 31.521850418278106, 174.44999999999999, 31.521850418278106, 23.57, 31.309999999999999, 57.149999999999999, 41.170000000000002, 47.712852017159548, 60.939999999999998, 65.780000000000001, 34.009999999999998, 57.369999999999997, 53.549999999999997, 14.27, 54.020000000000003, 17.239999999999998, 32.600000000000001, 33.459071390046276, 193.41999999999999, 79.689999999999998, 24.100000000000001, 29.809999999999999, 70.340000000000003, 33.359999999999999, 71.420000000000002, 228.99000000000001, 10.619999999999999, 99.5, 24.84, 65.540000000000006, 72.159999999999997, 33.149999999999999, 43.815755172451183, 57.119999999999997, 34.729999999999997, 78.299999999999997, 91.290000000000006, 43.815755172451183, 18.550000000000001, 46.479999999999997, 27.859999999999999, 43.815755172451183, 23.32, 15.960000000000001, 14.710000000000001, 43.815755172451183, 43.815755172451183, 43.815755172451183, 43.815755172451183, 43.815755172451183, 43.815755172451183, 43.815755172451183, 43.815755172451183, 43.815755172451183, 43.815755172451183, 43.815755172451183, 43.815755172451183, 43.815755172451183, 47.640000000000001, 17.66, 12.380000000000001, 12.779999999999999, 13.703024500885013, 50, 26.579999999999998, 50.329999999999998, 30, 37.560000000000002, 37.770000000000003, 56.049999999999997, 78.870000000000005, 38.549999999999997, 15.94, 66.760000000000005, 64.950000000000003, 61.359999999999999, 82.579999999999998, 62.109999999999999, 33.039999999999999, 47.969999999999999, 20.27, 32.469999999999999, 13.18, 25.140000000000001, 42.689999999999998, 55.649999999999999, 74.120000000000005, 41.600000000000001, 34.781901476397806, 32.25, 25.670000000000002, 39.030000000000001, 16.690000000000001, 19.460000000000001, 22.670000000000002, 24.280000000000001, 25.030000000000001, 26.52, 72.480000000000004, 31.010000000000002, 27.710000000000001, 27.010000000000002, 10.15, 27.614615763824965, 28.920000000000002, 41.469999999999999, 20.850000000000001, 20.600000000000001, 21.640000000000001, 11.27, 22.140000000000001, 27.614615763824965, 10.5, 25.25, 13.81, 11, 73.400000000000006, 27.614615763824965, 4.4299999999999997, 53.649999999999999, 52, 46.950000000000003, 14.48, 62.200000000000003, 19.850000000000001, 51.07, 52.950000000000003, 89.219999999999999, 156.53999999999999, 27.614615763824965, 8.2200000000000006, 34.340000000000003, 27.614615763824965, 27.614615763824965, 98.140000000000001, 27.614615763824965, 13.529999999999999, 27.699999999999999, 22.059999999999999, 41.159999999999997, 18.109999999999999, 30.82, 30.199999999999999, 29.73, 34.159999999999997, 25.120000000000001, 34.524049963320124, 44.909999999999997, 23.91, 8.7899999999999991, 51.329999999999998, 26.739999999999998, 42.439999999999998, 34.469999999999999, 38.810000000000002, 68.299999999999997, 78.090000000000003, 41.939999999999998, 34.524049963320124, 84.620000000000005, 56.909999999999997, 34.524049963320124, 34.524049963320124, 39.490000000000002, 54.140000000000001, 43.689999999999998, 34.524049963320124, 34.524049963320124, 34.524049963320124, 34.524049963320124, 34.524049963320124, 34.524049963320124, 65.530000000000001, 79.659999999999997, 34.210000000000001, 50.789999999999999, 34.524049963320124, 34.524049963320124, 34.524049963320124, 34.524049963320124, 34.524049963320124, 34.524049963320124, 34.524049963320124, 34.524049963320124, 34.524049963320124, 34.524049963320124, 34.524049963320124, 34.524049963320124, 34.524049963320124, 34.524049963320124, 12.43, 34.399999999999999, 20.16, 20.16, 20.16, 20.16, 32.079999999999998],
+          "text": ["Germany", "France", "Saint Pierre and Miquelon", "French Southern Territories", "Italy", "Malta", "Greece", "Cyprus", "Spain", "Portugal", "Austria", "Netherlands", "Belgium", "Luxembourg", "Poland", "Czech Republic", "Slovakia", "Lithuania", "Latvia", "Estonia", "Sweden", "Denmark", "Greenland", "Faroe Islands", "Finland", "Aland Islands", "Romania", "Hungary", "Bulgaria", "Croatia", "Slovenia", "Ireland", "United Kingdom", "Jersey", "Isle of Man", "Guernsey", "Gibraltar", "British Indian Ocean Territory", "Norway", "Svalbard and Jan Mayen", "Switzerland", "Liechtenstein", "Iceland", "Ukraine", "Albania", "Serbia", "Bosnia and Herzegovina", "Georgia", "Moldova, Republic of", "Macedonia, the former Yugoslav Republic of", "Montenegro", "Andorra", "Monaco", "San Marino", "Holy See (Vatican City State)", "Turkey", "Russian Federation", "Kazakhstan", "Uzbekistan", "Korea, Democratic People's Republic of", "Belarus", "Azerbaijan", "Tajikistan", "Turkmenistan", "Kyrgyzstan", "Armenia", "Mongolia", "Japan", "China", "Taiwan, Province of China", "Hong Kong", "Macao", "India", "Indonesia", "Viet Nam", "Philippines", "Thailand", "Singapore", "Myanmar", "Malaysia", "Sri Lanka", "Cambodia", "Papua New Guinea", "Lao People's Democratic Republic", "Timor-Leste", "Fiji", "Solomon Islands", "Brunei Darussalam", "Maldives", "French Polynesia", "New Caledonia", "Vanuatu", "Samoa", "Guam", "Micronesia, Federated States of", "Tonga", "Kiribati", "Northern Mariana Islands", "American Samoa", "Marshall Islands", "Palau", "Cook Islands", "Wallis and Futuna", "Tuvalu", "Nauru", "Niue", "Norfolk Island", "Tokelau", "United States Minor Outlying Islands", "Pitcairn", "Korea, Republic of", "Bangladesh", "Pakistan", "Nepal", "Afghanistan", "Bhutan", "Iran, Islamic Republic of", "Iraq", "Yemen", "Syrian Arab Republic", "Israel", "Jordan", "United Arab Emirates", "Lebanon", "Palestine, State of", "Kuwait", "Oman", "Qatar", "Bahrain", "Saudi Arabia", "Egypt", "Algeria", "Sudan", "Morocco", "Niger", "Mali", "Chad", "Tunisia", "Libya", "Mauritania", "Western Sahara", "South Africa", "Nigeria", "Congo, the Democratic Republic of the", "Ethiopia", "Tanzania, United Republic of", "Kenya", "Uganda", "Ghana", "Mozambique", "Angola", "Cote d Ivoire", "Madagascar", "Cameroon", "Burkina Faso", "Malawi", "Zambia", "Zimbabwe", "Senegal", "Somalia", "Guinea", "Rwanda", "Benin", "South Sudan", "Burundi", "Togo", "Sierra Leone", "Central African Republic", "Congo", "Liberia", "Eritrea", "Namibia", "Lesotho", "Botswana", "Gambia", "Gabon", "Guinea-Bissau", "Mauritius", "Swaziland", "Equatorial Guinea", "Djibouti", "Reunion", "Comoros", "Cape Verde", "Mayotte", "Sao Tome and Principe", "Seychelles", "Saint Helena, Ascension and Tristan da Cunha", "Brazil", "Mexico", "Argentina", "Chile", "Colombia", "Venezuela, Bolivarian Republic of", "Uruguay", "Peru", "Ecuador", "Guatemala", "Cuba", "Bolivia, Plurinational State of", "Dominican Republic", "Haiti", "Honduras", "El Salvador", "Paraguay", "Nicaragua", "Costa Rica", "Puerto Rico", "Panama", "Jamaica", "Trinidad and Tobago", "Guyana", "Suriname", "Guadeloupe", "Martinique", "Bahamas", "Belize", "Barbados", "French Guiana", "Saint Lucia", "Curacao", "Saint Vincent and the Grenadines", "Grenada", "Virgin Islands, U.S.", "Aruba", "Antigua and Barbuda", "Dominica", "Bermuda", "Cayman Islands", "Saint Kitts and Nevis", "Saint Martin (French part)", "Sint Maarten (Dutch part)", "Turks and Caicos Islands", "Virgin Islands, British", "Bonaire, Sint Eustatius and Saba", "Anguilla", "Saint Barthelemy", "Montserrat", "Falkland Islands (Malvinas)", "Antarctica", "South Georgia and the South Sandwich Islands", "Bouvet Island", "United States", "Canada", "Australia", "Christmas Island", "Cocos (Keeling) Islands", "Heard Island and McDonald Islands", "New Zealand"],
+          "zmin": 0,
+          "zmax": 240,
+          "frame": "2008",
+          "type": "choropleth",
+          "marker": {
+            "line": {
+              "color": "rgba(31,119,180,1)"
+            }
+          },
+          "visible": true
+        }
+      ],
+      "traces": [0]
+    },
+    {
+      "name": "2009",
+      "data": [
+        {
+          "colorbar": {
+            "title": "Exports of goods and services",
+            "ticklen": 2
+          },
+          "colorscale": [
+            ["0", "#de5842"],
+            ["1e-05", "#188AF0"],
+            ["1", "#00D4B0"]
+          ],
+          "showscale": true,
+          "locations": ["DEU", "FRA", "SPM", "ATF", "ITA", "MLT", "GRC", "CYP", "ESP", "PRT", "AUT", "NLD", "BEL", "LUX", "POL", "CZE", "SVK", "LTU", "LVA", "EST", "SWE", "DNK", "GRL", "FRO", "FIN", "ALA", "ROU", "HUN", "BGR", "HRV", "SVN", "IRL", "GBR", "JEY", "IMN", "GGY", "GIB", "IOT", "NOR", "SJM", "CHE", "LIE", "ISL", "UKR", "ALB", "SRB", "BIH", "GEO", "MDA", "MKD", "MNE", "AND", "SMR", "MCO", "VAT", "TUR", "RUS", "KAZ", "UZB", "PRK", "BLR", "AZE", "TJK", "TKM", "KGZ", "ARM", "MNG", "JPN", "CHN", "TWN", "HKG", "MAC", "IND", "IDN", "VNM", "PHL", "THA", "SGP", "MMR", "MYS", "LKA", "KHM", "PNG", "LAO", "TLS", "FJI", "SLB", "BRN", "MDV", "PYF", "NCL", "VUT", "WSM", "GUM", "FSM", "TON", "KIR", "ASM", "MNP", "MHL", "PLW", "COK", "WLF", "TUV", "NRU", "NIU", "NFK", "TKL", "UMI", "PCN", "KOR", "BGD", "PAK", "AFG", "NPL", "BTN", "IRN", "IRQ", "YEM", "SYR", "ISR", "JOR", "ARE", "LBN", "PSE", "KWT", "OMN", "QAT", "BHR", "SAU", "EGY", "DZA", "SDN", "MAR", "NER", "MLI", "TCD", "TUN", "LBY", "MRT", "ESH", "ZAF", "NGA", "COD", "ETH", "TZA", "KEN", "UGA", "GHA", "AGO", "MOZ", "CIV", "MDG", "CMR", "BFA", "MWI", "ZMB", "ZWE", "SEN", "SOM", "GIN", "RWA", "BEN", "SSD", "BDI", "TGO", "SLE", "CAF", "COG", "LBR", "ERI", "NAM", "BWA", "LSO", "GMB", "GAB", "GNB", "MUS", "GNQ", "SWZ", "DJI", "REU", "COM", "CPV", "MYT", "STP", "SYC", "SHN", "BRA", "MEX", "ARG", "CHL", "COL", "VEN", "URY", "PER", "ECU", "GTM", "CUB", "BOL", "DOM", "HTI", "HND", "SLV", "PRY", "NIC", "CRI", "PRI", "PAN", "JAM", "TTO", "GUY", "SUR", "GLP", "MTQ", "BHS", "BLZ", "BRB", "GUF", "LCA", "CUW", "GRD", "VCT", "VIR", "ABW", "ATG", "DMA", "BMU", "CYM", "KNA", "MAF", "SXM", "TCA", "VGB", "BES", "AIA", "BLM", "MSR", "FLK", "ATA", "SGS", "BVT", "USA", "CAN", "AUS", "CXR", "CCK", "HMD", "NZL"],
+          "z": [38.119999999999997, 24.84, 24.84, 24.84, 22.399999999999999, 147.02000000000001, 18.98, 48.719999999999999, 23.059999999999999, 27.289999999999999, 45.210000000000001, 62.240000000000002, 68.829999999999998, 147.93000000000001, 37.140000000000001, 58.350000000000001, 68.040000000000006, 51.789999999999999, 42.210000000000001, 60.859999999999999, 43.450000000000003, 47.130000000000003, 47.099614459089807, 43.659999999999997, 36.079999999999998, 36.079999999999998, 26.02, 74.219999999999999, 42.219999999999999, 32.289999999999999, 57.259999999999998, 93.560000000000002, 26.629999999999999, 26.629999999999999, 26.629999999999999, 26.629999999999999, 26.629999999999999, 20.399999999999999, 39.810000000000002, 39.810000000000002, 58.009999999999998, 58.009999999999998, 48.719999999999999, 42.93, 25.239999999999998, 26.350000000000001, 25.010000000000002, 29.550000000000001, 36.869999999999997, 32.810000000000002, 34.329999999999998, 29.025965904685187, 174.44999999999999, 29.025965904685187, 29.025965904685187, 23.370000000000001, 27.940000000000001, 41.840000000000003, 34.659999999999997, 39.870249620976146, 48.880000000000003, 51.640000000000001, 24.469999999999999, 47.079999999999998, 54.700000000000003, 14.67, 50.280000000000001, 12.42, 24.75, 25.570395734047381, 178.13999999999999, 78.510000000000005, 20.399999999999999, 24.16, 62.609999999999999, 30.219999999999999, 64.439999999999998, 190.84, 10.619999999999999, 91.420000000000002, 21.329999999999998, 49.219999999999999, 72.159999999999997, 30.079999999999998, 39.66356286544741, 49.439999999999998, 29.16, 72.780000000000001, 91.290000000000006, 39.66356286544741, 15.4, 50.560000000000002, 28, 39.66356286544741, 21.870000000000001, 13.619999999999999, 14.960000000000001, 39.66356286544741, 39.66356286544741, 39.66356286544741, 39.66356286544741, 39.66356286544741, 39.66356286544741, 39.66356286544741, 39.66356286544741, 39.66356286544741, 39.66356286544741, 39.66356286544741, 39.66356286544741, 39.66356286544741, 45.189999999999998, 16.940000000000001, 12.4, 13.251778808952789, 12.42, 45.82, 22.710000000000001, 39.399999999999999, 30, 29.059999999999999, 32.539999999999999, 45.079999999999998, 79.650000000000006, 33.200000000000003, 14.02, 59.43, 60.5, 51.130000000000003, 68.469999999999999, 47.090000000000003, 24.960000000000001, 35.369999999999997, 14.550000000000001, 25.719999999999999, 14.98, 21.710000000000001, 35.140000000000001, 45.039999999999999, 63.240000000000002, 37.25, 27.638160484404686, 24.98, 18.629999999999999, 26.809999999999999, 16.690000000000001, 18.190000000000001, 18.77, 18.609999999999999, 29.289999999999999, 58.759999999999998, 27.120000000000001, 35.409999999999997, 20.379999999999999, 19.579999999999998, 13.789999999999999, 24.573471887932453, 29.25, 19.48, 19.390000000000001, 20.600000000000001, 22.52, 10.369999999999999, 19.93, 24.573471887932453, 6.5999999999999996, 26.16, 13.69, 9.8399999999999999, 64.480000000000004, 24.573471887932453, 4.5300000000000002, 51.560000000000002, 35.829999999999998, 43.909999999999997, 15.75, 52.170000000000002, 18.850000000000001, 47.68, 74.340000000000003, 49.590000000000003, 156.53999999999999, 24.573471887932453, 9.3100000000000005, 29.039999999999999, 24.573471887932453, 24.573471887932453, 105.37, 24.573471887932453, 10.85, 27.149999999999999, 19.559999999999999, 37.119999999999997, 16.420000000000002, 18.07, 27.100000000000001, 26.440000000000001, 25.25, 24.370000000000001, 29.914791633528321, 35.719999999999999, 21.030000000000001, 8.9199999999999999, 39.530000000000001, 23.949999999999999, 38.100000000000001, 33.979999999999997, 34.630000000000003, 63.090000000000003, 69.810000000000002, 34.479999999999997, 29.914791633528321, 84.620000000000005, 44.119999999999997, 29.914791633528321, 29.914791633528321, 34.189999999999998, 45.640000000000001, 42.659999999999997, 29.914791633528321, 29.914791633528321, 29.914791633528321, 29.914791633528321, 29.914791633528321, 29.914791633528321, 62.920000000000002, 79.799999999999997, 30.25, 50.789999999999999, 29.914791633528321, 29.914791633528321, 29.914791633528321, 29.914791633528321, 29.914791633528321, 29.914791633528321, 29.914791633528321, 29.914791633528321, 29.914791633528321, 29.914791633528321, 29.914791633528321, 29.914791633528321, 29.914791633528321, 29.914791633528321, 10.93, 28.52, 23.010000000000002, 23.010000000000002, 23.010000000000002, 23.010000000000002, 28.73],
+          "text": ["Germany", "France", "Saint Pierre and Miquelon", "French Southern Territories", "Italy", "Malta", "Greece", "Cyprus", "Spain", "Portugal", "Austria", "Netherlands", "Belgium", "Luxembourg", "Poland", "Czech Republic", "Slovakia", "Lithuania", "Latvia", "Estonia", "Sweden", "Denmark", "Greenland", "Faroe Islands", "Finland", "Aland Islands", "Romania", "Hungary", "Bulgaria", "Croatia", "Slovenia", "Ireland", "United Kingdom", "Jersey", "Isle of Man", "Guernsey", "Gibraltar", "British Indian Ocean Territory", "Norway", "Svalbard and Jan Mayen", "Switzerland", "Liechtenstein", "Iceland", "Ukraine", "Albania", "Serbia", "Bosnia and Herzegovina", "Georgia", "Moldova, Republic of", "Macedonia, the former Yugoslav Republic of", "Montenegro", "Andorra", "San Marino", "Monaco", "Holy See (Vatican City State)", "Turkey", "Russian Federation", "Kazakhstan", "Uzbekistan", "Korea, Democratic People's Republic of", "Belarus", "Azerbaijan", "Tajikistan", "Turkmenistan", "Kyrgyzstan", "Armenia", "Mongolia", "Japan", "China", "Taiwan, Province of China", "Hong Kong", "Macao", "India", "Indonesia", "Viet Nam", "Philippines", "Thailand", "Singapore", "Myanmar", "Malaysia", "Sri Lanka", "Cambodia", "Papua New Guinea", "Lao People's Democratic Republic", "Timor-Leste", "Fiji", "Solomon Islands", "Brunei Darussalam", "Maldives", "French Polynesia", "New Caledonia", "Vanuatu", "Samoa", "Guam", "Micronesia, Federated States of", "Tonga", "Kiribati", "American Samoa", "Northern Mariana Islands", "Marshall Islands", "Palau", "Cook Islands", "Wallis and Futuna", "Tuvalu", "Nauru", "Niue", "Norfolk Island", "Tokelau", "United States Minor Outlying Islands", "Pitcairn", "Korea, Republic of", "Bangladesh", "Pakistan", "Afghanistan", "Nepal", "Bhutan", "Iran, Islamic Republic of", "Iraq", "Yemen", "Syrian Arab Republic", "Israel", "Jordan", "United Arab Emirates", "Lebanon", "Palestine, State of", "Kuwait", "Oman", "Qatar", "Bahrain", "Saudi Arabia", "Egypt", "Algeria", "Sudan", "Morocco", "Niger", "Mali", "Chad", "Tunisia", "Libya", "Mauritania", "Western Sahara", "South Africa", "Nigeria", "Congo, the Democratic Republic of the", "Ethiopia", "Tanzania, United Republic of", "Kenya", "Uganda", "Ghana", "Angola", "Mozambique", "Cote d Ivoire", "Madagascar", "Cameroon", "Burkina Faso", "Malawi", "Zambia", "Zimbabwe", "Senegal", "Somalia", "Guinea", "Rwanda", "Benin", "South Sudan", "Burundi", "Togo", "Sierra Leone", "Central African Republic", "Congo", "Liberia", "Eritrea", "Namibia", "Botswana", "Lesotho", "Gambia", "Gabon", "Guinea-Bissau", "Mauritius", "Equatorial Guinea", "Swaziland", "Djibouti", "Reunion", "Comoros", "Cape Verde", "Mayotte", "Sao Tome and Principe", "Seychelles", "Saint Helena, Ascension and Tristan da Cunha", "Brazil", "Mexico", "Argentina", "Chile", "Colombia", "Venezuela, Bolivarian Republic of", "Uruguay", "Peru", "Ecuador", "Guatemala", "Cuba", "Bolivia, Plurinational State of", "Dominican Republic", "Haiti", "Honduras", "El Salvador", "Paraguay", "Nicaragua", "Costa Rica", "Puerto Rico", "Panama", "Jamaica", "Trinidad and Tobago", "Guyana", "Suriname", "Guadeloupe", "Martinique", "Bahamas", "Belize", "Barbados", "French Guiana", "Saint Lucia", "Curacao", "Grenada", "Saint Vincent and the Grenadines", "Virgin Islands, U.S.", "Aruba", "Antigua and Barbuda", "Dominica", "Bermuda", "Cayman Islands", "Saint Kitts and Nevis", "Saint Martin (French part)", "Sint Maarten (Dutch part)", "Turks and Caicos Islands", "Virgin Islands, British", "Bonaire, Sint Eustatius and Saba", "Anguilla", "Saint Barthelemy", "Montserrat", "Falkland Islands (Malvinas)", "Antarctica", "South Georgia and the South Sandwich Islands", "Bouvet Island", "United States", "Canada", "Australia", "Christmas Island", "Cocos (Keeling) Islands", "Heard Island and McDonald Islands", "New Zealand"],
+          "zmin": 0,
+          "zmax": 240,
+          "frame": "2009",
+          "type": "choropleth",
+          "marker": {
+            "line": {
+              "color": "rgba(31,119,180,1)"
+            }
+          },
+          "visible": true
+        }
+      ],
+      "traces": [0]
+    },
+    {
+      "name": "2010",
+      "data": [
+        {
+          "colorbar": {
+            "title": "Exports of goods and services",
+            "ticklen": 2
+          },
+          "colorscale": [
+            ["0", "#de5842"],
+            ["1e-05", "#188AF0"],
+            ["1", "#00D4B0"]
+          ],
+          "showscale": true,
+          "locations": ["DEU", "FRA", "SPM", "ATF", "ITA", "MLT", "GRC", "CYP", "ESP", "PRT", "AUT", "NLD", "BEL", "LUX", "POL", "CZE", "SVK", "LTU", "LVA", "EST", "SWE", "DNK", "GRL", "FRO", "FIN", "ALA", "ROU", "HUN", "BGR", "HRV", "SVN", "IRL", "GBR", "JEY", "IMN", "GGY", "GIB", "IOT", "NOR", "SJM", "CHE", "LIE", "ISL", "UKR", "ALB", "SRB", "BIH", "GEO", "MDA", "MKD", "MNE", "AND", "SMR", "MCO", "VAT", "TUR", "RUS", "KAZ", "UZB", "PRK", "BLR", "AZE", "TJK", "TKM", "KGZ", "ARM", "MNG", "JPN", "CHN", "TWN", "HKG", "MAC", "IND", "IDN", "VNM", "PHL", "THA", "SGP", "MMR", "MYS", "LKA", "KHM", "PNG", "LAO", "TLS", "FJI", "SLB", "BRN", "MDV", "PYF", "NCL", "VUT", "WSM", "GUM", "KIR", "FSM", "TON", "ASM", "MNP", "MHL", "PLW", "COK", "WLF", "TUV", "NRU", "NIU", "NFK", "TKL", "UMI", "PCN", "KOR", "BGD", "PAK", "AFG", "NPL", "BTN", "IRN", "IRQ", "YEM", "SYR", "ISR", "JOR", "ARE", "LBN", "PSE", "KWT", "OMN", "QAT", "BHR", "SAU", "EGY", "DZA", "SDN", "MAR", "NER", "MLI", "TCD", "TUN", "LBY", "MRT", "ESH", "ZAF", "NGA", "COD", "ETH", "TZA", "KEN", "UGA", "GHA", "AGO", "MOZ", "CIV", "MDG", "CMR", "BFA", "MWI", "ZMB", "ZWE", "SEN", "SOM", "GIN", "RWA", "BEN", "SSD", "BDI", "TGO", "SLE", "CAF", "COG", "LBR", "ERI", "NAM", "BWA", "LSO", "GMB", "GAB", "GNB", "MUS", "GNQ", "SWZ", "DJI", "REU", "COM", "CPV", "MYT", "STP", "SYC", "SHN", "BRA", "MEX", "ARG", "CHL", "COL", "VEN", "URY", "PER", "ECU", "GTM", "CUB", "BOL", "DOM", "HTI", "HND", "SLV", "PRY", "NIC", "CRI", "PRI", "PAN", "JAM", "TTO", "GUY", "SUR", "GLP", "MTQ", "BHS", "BLZ", "BRB", "GUF", "LCA", "CUW", "GRD", "VCT", "VIR", "ABW", "ATG", "DMA", "BMU", "CYM", "KNA", "MAF", "SXM", "TCA", "VGB", "BES", "AIA", "BLM", "MSR", "FLK", "ATA", "SGS", "BVT", "USA", "CAN", "AUS", "CXR", "CCK", "HMD", "NZL"],
+          "z": [42.57, 26.789999999999999, 26.789999999999999, 26.789999999999999, 25.07, 150.94999999999999, 21.800000000000001, 50.329999999999998, 25.949999999999999, 30.07, 51.259999999999998, 69.799999999999997, 75.849999999999994, 162.71000000000001, 40.090000000000003, 65.540000000000006, 76.560000000000002, 63.939999999999998, 53.259999999999998, 75.049999999999997, 44.68, 50.520000000000003, 50.486961156756024, 46.719999999999999, 38.409999999999997, 38.409999999999997, 31.670000000000002, 81.109999999999999, 50.109999999999999, 35.659999999999997, 64.269999999999996, 103.23999999999999, 28.559999999999999, 28.559999999999999, 28.559999999999999, 28.559999999999999, 28.559999999999999, 22.399999999999999, 40.149999999999999, 40.149999999999999, 64.840000000000003, 64.840000000000003, 51.75, 46.460000000000001, 27.98, 32.259999999999998, 29.699999999999999, 32.950000000000003, 27.829999999999998, 39.789999999999999, 37.039999999999999, 32.373929933364934, 174.44999999999999, 32.373929933364934, 32.373929933364934, 21.190000000000001, 29.219999999999999, 44.240000000000002, 24.280000000000001, 35.12452109206118, 51.369999999999997, 54.299999999999997, 14.94, 45.899999999999999, 51.549999999999997, 19.75, 46.68, 14.92, 27.190000000000001, 28.144134026410534, 205.31999999999999, 87.420000000000002, 22.399999999999999, 24.300000000000001, 54.18, 32.869999999999997, 66.489999999999995, 198, 10.619999999999999, 86.930000000000007, 21.09, 54.079999999999998, 72.159999999999997, 35.380000000000003, 39.688346415188896, 57.43, 35.149999999999999, 67.409999999999997, 91.290000000000006, 39.688346415188896, 20.199999999999999, 48.719999999999999, 27.719999999999999, 39.688346415188896, 12.32, 23.690000000000001, 12.5, 39.688346415188896, 39.688346415188896, 39.688346415188896, 39.688346415188896, 39.688346415188896, 39.688346415188896, 39.688346415188896, 39.688346415188896, 39.688346415188896, 39.688346415188896, 39.688346415188896, 39.688346415188896, 39.688346415188896, 47.100000000000001, 16.02, 13.52, 10.428155670830092, 9.5800000000000001, 43.479999999999997, 24.399999999999999, 39.420000000000002, 30, 32.170000000000002, 34.159999999999997, 47, 82.239999999999995, 35.020000000000003, 14.119999999999999, 66.670000000000002, 59.090000000000003, 62.32, 69.540000000000006, 49.57, 21.350000000000001, 38.439999999999998, 17.48, 29.789999999999999, 16.18, 22.84, 36.850000000000001, 47.960000000000001, 66.269999999999996, 45.740000000000002, 30.466571746391011, 25.780000000000001, 25.66, 41.109999999999999, 16.690000000000001, 19.609999999999999, 20.120000000000001, 13.82, 29.48, 61.539999999999999, 28.440000000000001, 33.5, 21.870000000000001, 22.370000000000001, 20.52, 26.303650711786002, 37.030000000000001, 29.640000000000001, 19.98, 20.600000000000001, 30.34, 10.74, 23.07, 26.303650711786002, 9.6999999999999993, 27.84, 16.789999999999999, 11.630000000000001, 68.530000000000001, 26.303650711786002, 6.3799999999999999, 48.280000000000001, 42.140000000000001, 41.140000000000001, 14.67, 57.659999999999997, 14.91, 51.240000000000002, 85.760000000000005, 46.469999999999999, 156.53999999999999, 26.303650711786002, 9.6400000000000006, 30.280000000000001, 26.303650711786002, 26.303650711786002, 91.340000000000003, 26.303650711786002, 10.869999999999999, 29.699999999999999, 18.93, 37.899999999999999, 16.34, 28.530000000000001, 26.34, 27.829999999999998, 27.890000000000001, 26.23, 32.14423950446556, 41.189999999999998, 22.68, 8.5700000000000003, 45.759999999999998, 26.949999999999999, 42.140000000000001, 40.469999999999999, 32.829999999999998, 62.670000000000002, 70.040000000000006, 31.34, 32.14423950446556, 84.620000000000005, 52.549999999999997, 32.14423950446556, 32.14423950446556, 34.950000000000003, 50.93, 38.93, 32.14423950446556, 32.14423950446556, 32.14423950446556, 32.14423950446556, 32.14423950446556, 32.14423950446556, 60.219999999999999, 79.590000000000003, 35.57, 50.789999999999999, 32.14423950446556, 32.14423950446556, 32.14423950446556, 32.14423950446556, 32.14423950446556, 32.14423950446556, 32.14423950446556, 32.14423950446556, 32.14423950446556, 32.14423950446556, 32.14423950446556, 32.14423950446556, 32.14423950446556, 32.14423950446556, 12.34, 29.170000000000002, 19.800000000000001, 19.800000000000001, 19.800000000000001, 19.800000000000001, 30.27],
+          "text": ["Germany", "France", "Saint Pierre and Miquelon", "French Southern Territories", "Italy", "Malta", "Greece", "Cyprus", "Spain", "Portugal", "Austria", "Netherlands", "Belgium", "Luxembourg", "Poland", "Czech Republic", "Slovakia", "Lithuania", "Latvia", "Estonia", "Sweden", "Denmark", "Greenland", "Faroe Islands", "Finland", "Aland Islands", "Romania", "Hungary", "Bulgaria", "Croatia", "Slovenia", "Ireland", "United Kingdom", "Jersey", "Isle of Man", "Guernsey", "Gibraltar", "British Indian Ocean Territory", "Norway", "Svalbard and Jan Mayen", "Switzerland", "Liechtenstein", "Iceland", "Ukraine", "Albania", "Serbia", "Bosnia and Herzegovina", "Georgia", "Moldova, Republic of", "Macedonia, the former Yugoslav Republic of", "Montenegro", "Andorra", "San Marino", "Monaco", "Holy See (Vatican City State)", "Turkey", "Russian Federation", "Kazakhstan", "Uzbekistan", "Korea, Democratic People's Republic of", "Belarus", "Azerbaijan", "Tajikistan", "Turkmenistan", "Kyrgyzstan", "Armenia", "Mongolia", "Japan", "China", "Taiwan, Province of China", "Hong Kong", "Macao", "India", "Indonesia", "Viet Nam", "Philippines", "Thailand", "Singapore", "Myanmar", "Malaysia", "Sri Lanka", "Cambodia", "Papua New Guinea", "Lao People's Democratic Republic", "Timor-Leste", "Fiji", "Solomon Islands", "Brunei Darussalam", "Maldives", "French Polynesia", "New Caledonia", "Vanuatu", "Samoa", "Guam", "Kiribati", "Micronesia, Federated States of", "Tonga", "American Samoa", "Northern Mariana Islands", "Marshall Islands", "Palau", "Cook Islands", "Wallis and Futuna", "Tuvalu", "Nauru", "Niue", "Norfolk Island", "Tokelau", "United States Minor Outlying Islands", "Pitcairn", "Korea, Republic of", "Bangladesh", "Pakistan", "Afghanistan", "Nepal", "Bhutan", "Iran, Islamic Republic of", "Iraq", "Yemen", "Syrian Arab Republic", "Israel", "Jordan", "United Arab Emirates", "Lebanon", "Palestine, State of", "Kuwait", "Oman", "Qatar", "Bahrain", "Saudi Arabia", "Egypt", "Algeria", "Sudan", "Morocco", "Niger", "Mali", "Chad", "Tunisia", "Libya", "Mauritania", "Western Sahara", "South Africa", "Nigeria", "Congo, the Democratic Republic of the", "Ethiopia", "Tanzania, United Republic of", "Kenya", "Uganda", "Ghana", "Angola", "Mozambique", "Cote d Ivoire", "Madagascar", "Cameroon", "Burkina Faso", "Malawi", "Zambia", "Zimbabwe", "Senegal", "Somalia", "Guinea", "Rwanda", "Benin", "South Sudan", "Burundi", "Togo", "Sierra Leone", "Central African Republic", "Congo", "Liberia", "Eritrea", "Namibia", "Botswana", "Lesotho", "Gambia", "Gabon", "Guinea-Bissau", "Mauritius", "Equatorial Guinea", "Swaziland", "Djibouti", "Reunion", "Comoros", "Cape Verde", "Mayotte", "Sao Tome and Principe", "Seychelles", "Saint Helena, Ascension and Tristan da Cunha", "Brazil", "Mexico", "Argentina", "Chile", "Colombia", "Venezuela, Bolivarian Republic of", "Uruguay", "Peru", "Ecuador", "Guatemala", "Cuba", "Bolivia, Plurinational State of", "Dominican Republic", "Haiti", "Honduras", "El Salvador", "Paraguay", "Nicaragua", "Costa Rica", "Puerto Rico", "Panama", "Jamaica", "Trinidad and Tobago", "Guyana", "Suriname", "Guadeloupe", "Martinique", "Bahamas", "Belize", "Barbados", "French Guiana", "Saint Lucia", "Curacao", "Grenada", "Saint Vincent and the Grenadines", "Virgin Islands, U.S.", "Aruba", "Antigua and Barbuda", "Dominica", "Bermuda", "Cayman Islands", "Saint Kitts and Nevis", "Saint Martin (French part)", "Sint Maarten (Dutch part)", "Turks and Caicos Islands", "Virgin Islands, British", "Bonaire, Sint Eustatius and Saba", "Anguilla", "Saint Barthelemy", "Montserrat", "Falkland Islands (Malvinas)", "Antarctica", "South Georgia and the South Sandwich Islands", "Bouvet Island", "United States", "Canada", "Australia", "Christmas Island", "Cocos (Keeling) Islands", "Heard Island and McDonald Islands", "New Zealand"],
+          "zmin": 0,
+          "zmax": 240,
+          "frame": "2010",
+          "type": "choropleth",
+          "marker": {
+            "line": {
+              "color": "rgba(31,119,180,1)"
+            }
+          },
+          "visible": true
+        }
+      ],
+      "traces": [0]
+    },
+    {
+      "name": "2011",
+      "data": [
+        {
+          "colorbar": {
+            "title": "Exports of goods and services",
+            "ticklen": 2
+          },
+          "colorscale": [
+            ["0", "#de5842"],
+            ["1e-05", "#188AF0"],
+            ["1", "#00D4B0"]
+          ],
+          "showscale": true,
+          "locations": ["DEU", "FRA", "SPM", "ATF", "ITA", "MLT", "GRC", "CYP", "ESP", "PRT", "AUT", "NLD", "BEL", "LUX", "POL", "CZE", "SVK", "LTU", "LVA", "EST", "SWE", "DNK", "GRL", "FRO", "FIN", "ALA", "ROU", "HUN", "BGR", "HRV", "SVN", "IRL", "GBR", "JEY", "IMN", "GGY", "GIB", "IOT", "NOR", "SJM", "CHE", "LIE", "ISL", "UKR", "ALB", "SRB", "GEO", "BIH", "MDA", "MKD", "MNE", "AND", "MCO", "SMR", "VAT", "TUR", "RUS", "KAZ", "UZB", "PRK", "BLR", "AZE", "TJK", "TKM", "KGZ", "ARM", "MNG", "JPN", "CHN", "TWN", "HKG", "MAC", "IND", "IDN", "VNM", "PHL", "THA", "SGP", "MMR", "MYS", "LKA", "KHM", "PNG", "LAO", "TLS", "FJI", "SLB", "BRN", "MDV", "PYF", "NCL", "VUT", "WSM", "GUM", "KIR", "FSM", "TON", "ASM", "MNP", "MHL", "PLW", "COK", "WLF", "TUV", "NRU", "NIU", "NFK", "TKL", "UMI", "PCN", "KOR", "BGD", "PAK", "AFG", "NPL", "BTN", "IRN", "IRQ", "YEM", "SYR", "ISR", "JOR", "ARE", "LBN", "PSE", "KWT", "OMN", "QAT", "BHR", "SAU", "EGY", "DZA", "SDN", "MAR", "NER", "MLI", "TCD", "TUN", "LBY", "MRT", "ESH", "ZAF", "NGA", "COD", "ETH", "TZA", "KEN", "UGA", "GHA", "AGO", "MOZ", "CIV", "MDG", "CMR", "BFA", "MWI", "ZMB", "ZWE", "SEN", "SOM", "GIN", "RWA", "SSD", "BEN", "BDI", "TGO", "SLE", "COG", "CAF", "LBR", "ERI", "NAM", "BWA", "LSO", "GMB", "GAB", "GNB", "MUS", "GNQ", "SWZ", "DJI", "REU", "COM", "CPV", "MYT", "STP", "SYC", "SHN", "BRA", "MEX", "ARG", "CHL", "COL", "VEN", "URY", "PER", "ECU", "GTM", "CUB", "BOL", "DOM", "HTI", "HND", "SLV", "NIC", "PRY", "CRI", "PAN", "PRI", "JAM", "TTO", "GUY", "SUR", "GLP", "MTQ", "BHS", "BLZ", "BRB", "GUF", "LCA", "CUW", "GRD", "VCT", "VIR", "ABW", "ATG", "DMA", "BMU", "CYM", "KNA", "MAF", "SXM", "TCA", "VGB", "BES", "AIA", "BLM", "MSR", "FLK", "ATA", "SGS", "BVT", "USA", "CAN", "AUS", "CXR", "CCK", "HMD", "NZL"],
+          "z": [45.060000000000002, 28.420000000000002, 28.420000000000002, 28.420000000000002, 26.870000000000001, 160.59, 25.489999999999998, 53.450000000000003, 29.530000000000001, 34.450000000000003, 53.950000000000003, 75.5, 80.700000000000003, 169.49000000000001, 42.57, 70.819999999999993, 84.340000000000003, 72.879999999999995, 59.780000000000001, 86.599999999999994, 45.270000000000003, 53.82, 53.807991922215507, 52.43, 38.899999999999999, 38.899999999999999, 35.270000000000003, 86.079999999999998, 58.799999999999997, 38.219999999999999, 70.25, 103.26000000000001, 31.09, 31.09, 31.09, 31.09, 31.09, 24.539999999999999, 41.659999999999997, 41.659999999999997, 66.450000000000003, 66.450000000000003, 54.549999999999997, 49.409999999999997, 29.239999999999998, 33, 34.689999999999998, 32.039999999999999, 32.539999999999999, 47.119999999999997, 42.350000000000001, 34.784016823021247, 34.784016823021247, 174.44999999999999, 34.784016823021247, 22.989999999999998, 28.059999999999999, 46.460000000000001, 23.670000000000002, 40.483447567760258, 78.469999999999999, 56.43, 16.449999999999999, 59.799999999999997, 54.539999999999999, 22.52, 52.549999999999997, 14.77, 26.57, 27.569770407291958, 212.84999999999999, 90.340000000000003, 24.539999999999999, 26.329999999999998, 61.18, 29.109999999999999, 70.849999999999994, 203.33000000000001, 9.0999999999999996, 85.260000000000005, 20.849999999999998, 54.079999999999998, 72.159999999999997, 40.340000000000003, 39.193368770655383, 59.280000000000001, 50.149999999999999, 69.510000000000005, 91.290000000000006, 39.193368770655383, 20.09, 45.609999999999999, 28.390000000000001, 39.193368770655383, 14.279999999999999, 24.710000000000001, 16.239999999999998, 39.193368770655383, 39.193368770655383, 39.193368770655383, 39.193368770655383, 39.193368770655383, 39.193368770655383, 39.193368770655383, 39.193368770655383, 39.193368770655383, 39.193368770655383, 39.193368770655383, 39.193368770655383, 39.193368770655383, 53.340000000000003, 19.920000000000002, 13.970000000000001, 8.6758900663668115, 7.8099999999999996, 42.200000000000003, 24.93, 44.420000000000002, 30.34, 19.370000000000001, 34.759999999999998, 46.549999999999997, 90.079999999999998, 36.359999999999999, 16.09, 73.200000000000003, 63.920000000000002, 72.620000000000005, 99.420000000000002, 55.600000000000001, 20.57, 38.789999999999999, 12.48, 31.949999999999999, 15.289999999999999, 22.73, 38.880000000000003, 46.049999999999997, 38.149999999999999, 50.18, 28.806102257202166, 27.699999999999999, 31.620000000000001, 39.520000000000003, 16.690000000000001, 21.629999999999999, 21.550000000000001, 12.859999999999999, 36.939999999999998, 60.670000000000002, 30.100000000000001, 35.280000000000001, 22.719999999999999, 24.23, 26.199999999999999, 28.213130426681268, 40.469999999999999, 34.799999999999997, 21.300000000000001, 20.600000000000001, 32.600000000000001, 12.66, 28.213130426681268, 20.850000000000001, 8.8000000000000007, 32.109999999999999, 16.32, 73.609999999999999, 13.130000000000001, 28.213130426681268, 18.149999999999999, 45.539999999999999, 44.240000000000002, 46.939999999999998, 16.859999999999999, 61.740000000000002, 25.670000000000002, 52.439999999999998, 75.099999999999994, 34.829999999999998, 156.53999999999999, 28.213130426681268, 9.9600000000000009, 32.869999999999997, 28.213130426681268, 28.213130426681268, 97.930000000000007, 28.213130426681268, 11.58, 31.039999999999999, 18.449999999999999, 37.689999999999998, 19.280000000000001, 29.940000000000001, 26.420000000000002, 30.5, 31.120000000000001, 27.07, 34.464257158691517, 44.090000000000003, 24.190000000000001, 10.08, 51.259999999999998, 28.98, 45.020000000000003, 40.240000000000002, 32.469999999999999, 78.230000000000004, 64.049999999999997, 30.370000000000001, 34.464257158691517, 84.620000000000005, 52.549999999999997, 34.464257158691517, 34.464257158691517, 37.439999999999998, 57.100000000000001, 37.93, 34.464257158691517, 34.464257158691517, 34.464257158691517, 34.464257158691517, 34.464257158691517, 34.464257158691517, 69.75, 82.5, 37.579999999999998, 52.539999999999999, 34.464257158691517, 34.464257158691517, 34.464257158691517, 34.464257158691517, 34.464257158691517, 34.464257158691517, 34.464257158691517, 34.464257158691517, 34.464257158691517, 34.464257158691517, 34.464257158691517, 34.464257158691517, 34.464257158691517, 34.464257158691517, 13.56, 30.68, 21.440000000000001, 21.440000000000001, 21.440000000000001, 21.440000000000001, 30.399999999999999],
+          "text": ["Germany", "France", "Saint Pierre and Miquelon", "French Southern Territories", "Italy", "Malta", "Greece", "Cyprus", "Spain", "Portugal", "Austria", "Netherlands", "Belgium", "Luxembourg", "Poland", "Czech Republic", "Slovakia", "Lithuania", "Latvia", "Estonia", "Sweden", "Denmark", "Greenland", "Faroe Islands", "Finland", "Aland Islands", "Romania", "Hungary", "Bulgaria", "Croatia", "Slovenia", "Ireland", "United Kingdom", "Jersey", "Isle of Man", "Guernsey", "Gibraltar", "British Indian Ocean Territory", "Norway", "Svalbard and Jan Mayen", "Switzerland", "Liechtenstein", "Iceland", "Ukraine", "Albania", "Serbia", "Georgia", "Bosnia and Herzegovina", "Moldova, Republic of", "Macedonia, the former Yugoslav Republic of", "Montenegro", "Andorra", "Monaco", "San Marino", "Holy See (Vatican City State)", "Turkey", "Russian Federation", "Kazakhstan", "Uzbekistan", "Korea, Democratic People's Republic of", "Belarus", "Azerbaijan", "Tajikistan", "Turkmenistan", "Kyrgyzstan", "Armenia", "Mongolia", "Japan", "China", "Taiwan, Province of China", "Hong Kong", "Macao", "India", "Indonesia", "Viet Nam", "Philippines", "Thailand", "Singapore", "Myanmar", "Malaysia", "Sri Lanka", "Cambodia", "Papua New Guinea", "Lao People's Democratic Republic", "Timor-Leste", "Fiji", "Solomon Islands", "Brunei Darussalam", "Maldives", "French Polynesia", "New Caledonia", "Vanuatu", "Samoa", "Guam", "Kiribati", "Micronesia, Federated States of", "Tonga", "American Samoa", "Northern Mariana Islands", "Marshall Islands", "Palau", "Cook Islands", "Wallis and Futuna", "Tuvalu", "Nauru", "Niue", "Norfolk Island", "Tokelau", "United States Minor Outlying Islands", "Pitcairn", "Korea, Republic of", "Bangladesh", "Pakistan", "Afghanistan", "Nepal", "Bhutan", "Iran, Islamic Republic of", "Iraq", "Yemen", "Syrian Arab Republic", "Israel", "Jordan", "United Arab Emirates", "Lebanon", "Palestine, State of", "Kuwait", "Oman", "Qatar", "Bahrain", "Saudi Arabia", "Egypt", "Algeria", "Sudan", "Morocco", "Niger", "Mali", "Chad", "Tunisia", "Libya", "Mauritania", "Western Sahara", "South Africa", "Nigeria", "Congo, the Democratic Republic of the", "Ethiopia", "Tanzania, United Republic of", "Kenya", "Uganda", "Ghana", "Angola", "Mozambique", "Cote d Ivoire", "Madagascar", "Cameroon", "Burkina Faso", "Malawi", "Zambia", "Zimbabwe", "Senegal", "Somalia", "Guinea", "Rwanda", "South Sudan", "Benin", "Burundi", "Togo", "Sierra Leone", "Congo", "Central African Republic", "Liberia", "Eritrea", "Namibia", "Botswana", "Lesotho", "Gambia", "Gabon", "Guinea-Bissau", "Mauritius", "Equatorial Guinea", "Swaziland", "Djibouti", "Reunion", "Comoros", "Cape Verde", "Mayotte", "Sao Tome and Principe", "Seychelles", "Saint Helena, Ascension and Tristan da Cunha", "Brazil", "Mexico", "Argentina", "Chile", "Colombia", "Venezuela, Bolivarian Republic of", "Uruguay", "Peru", "Ecuador", "Guatemala", "Cuba", "Bolivia, Plurinational State of", "Dominican Republic", "Haiti", "Honduras", "El Salvador", "Nicaragua", "Paraguay", "Costa Rica", "Panama", "Puerto Rico", "Jamaica", "Trinidad and Tobago", "Guyana", "Suriname", "Guadeloupe", "Martinique", "Bahamas", "Belize", "Barbados", "French Guiana", "Saint Lucia", "Curacao", "Grenada", "Saint Vincent and the Grenadines", "Virgin Islands, U.S.", "Aruba", "Antigua and Barbuda", "Dominica", "Bermuda", "Cayman Islands", "Saint Kitts and Nevis", "Saint Martin (French part)", "Sint Maarten (Dutch part)", "Turks and Caicos Islands", "Virgin Islands, British", "Bonaire, Sint Eustatius and Saba", "Anguilla", "Saint Barthelemy", "Montserrat", "Falkland Islands (Malvinas)", "Antarctica", "South Georgia and the South Sandwich Islands", "Bouvet Island", "United States", "Canada", "Australia", "Christmas Island", "Cocos (Keeling) Islands", "Heard Island and McDonald Islands", "New Zealand"],
+          "zmin": 0,
+          "zmax": 240,
+          "frame": "2011",
+          "type": "choropleth",
+          "marker": {
+            "line": {
+              "color": "rgba(31,119,180,1)"
+            }
+          },
+          "visible": true
+        }
+      ],
+      "traces": [0]
+    },
+    {
+      "name": "2012",
+      "data": [
+        {
+          "colorbar": {
+            "title": "Exports of goods and services",
+            "ticklen": 2
+          },
+          "colorscale": [
+            ["0", "#de5842"],
+            ["1e-05", "#188AF0"],
+            ["1", "#00D4B0"]
+          ],
+          "showscale": true,
+          "locations": ["DEU", "FRA", "SPM", "ATF", "ITA", "MLT", "GRC", "CYP", "ESP", "PRT", "AUT", "NLD", "BEL", "LUX", "POL", "CZE", "SVK", "LTU", "LVA", "EST", "SWE", "DNK", "GRL", "FRO", "FIN", "ALA", "ROU", "HUN", "BGR", "HRV", "SVN", "IRL", "GBR", "JEY", "IMN", "GGY", "GIB", "IOT", "NOR", "SJM", "CHE", "LIE", "ISL", "UKR", "ALB", "SRB", "GEO", "BIH", "MDA", "MKD", "MNE", "AND", "MCO", "SMR", "VAT", "TUR", "RUS", "KAZ", "UZB", "PRK", "BLR", "AZE", "TJK", "TKM", "KGZ", "ARM", "MNG", "JPN", "CHN", "TWN", "HKG", "MAC", "IND", "IDN", "VNM", "PHL", "THA", "SGP", "MMR", "MYS", "LKA", "KHM", "PNG", "LAO", "TLS", "FJI", "SLB", "BRN", "MDV", "PYF", "NCL", "VUT", "WSM", "GUM", "KIR", "FSM", "TON", "ASM", "MNP", "MHL", "COK", "PLW", "WLF", "TUV", "NRU", "NIU", "NFK", "TKL", "UMI", "PCN", "KOR", "BGD", "PAK", "AFG", "NPL", "BTN", "IRN", "IRQ", "YEM", "SYR", "ISR", "JOR", "ARE", "LBN", "PSE", "OMN", "KWT", "QAT", "BHR", "SAU", "EGY", "DZA", "SDN", "MAR", "NER", "MLI", "TCD", "TUN", "LBY", "MRT", "ESH", "ZAF", "NGA", "COD", "ETH", "TZA", "KEN", "UGA", "GHA", "AGO", "MOZ", "CIV", "MDG", "CMR", "BFA", "MWI", "ZMB", "ZWE", "SEN", "SOM", "GIN", "RWA", "SSD", "BEN", "BDI", "TGO", "SLE", "COG", "CAF", "LBR", "ERI", "NAM", "BWA", "GMB", "LSO", "GAB", "GNB", "GNQ", "MUS", "SWZ", "DJI", "REU", "COM", "CPV", "MYT", "STP", "SYC", "SHN", "BRA", "MEX", "ARG", "CHL", "COL", "VEN", "URY", "PER", "ECU", "GTM", "CUB", "BOL", "DOM", "HTI", "HND", "SLV", "NIC", "PRY", "CRI", "PAN", "PRI", "JAM", "TTO", "GUY", "SUR", "GLP", "MTQ", "BHS", "BLZ", "BRB", "GUF", "LCA", "CUW", "GRD", "VCT", "VIR", "ABW", "ATG", "DMA", "BMU", "CYM", "KNA", "MAF", "SXM", "TCA", "VGB", "BES", "AIA", "BLM", "MSR", "FLK", "ATA", "SGS", "BVT", "USA", "CAN", "AUS", "CXR", "CCK", "HMD", "NZL"],
+          "z": [46.310000000000002, 29.199999999999999, 29.199999999999999, 29.199999999999999, 28.379999999999999, 163.12, 28.739999999999998, 55.280000000000001, 31.460000000000001, 37.780000000000001, 53.969999999999999, 79.5, 80.400000000000006, 171.21000000000001, 44.280000000000001, 75.650000000000006, 90.829999999999998, 78.230000000000004, 61.439999999999998, 86.209999999999994, 45.030000000000001, 54.630000000000003, 54.612275744995934, 52.560000000000002, 38.810000000000002, 38.810000000000002, 35.75, 85.879999999999995, 60.350000000000001, 38.93, 72.890000000000001, 104.42, 30.370000000000001, 30.370000000000001, 30.370000000000001, 30.370000000000001, 30.370000000000001, 24.530000000000001, 41.289999999999999, 41.289999999999999, 67.780000000000001, 67.780000000000001, 54.93, 47.380000000000003, 28.940000000000001, 35.840000000000003, 36.520000000000003, 32.350000000000001, 31.129999999999999, 45.369999999999997, 43.670000000000002, 36.029661593940091, 36.029661593940091, 174.44999999999999, 36.029661593940091, 24.359999999999999, 26.91, 44.109999999999999, 19.27, 37.341225061946574, 78.780000000000001, 52.969999999999999, 17.280000000000001, 58.829999999999998, 44.399999999999999, 27.559999999999999, 43.57, 14.41, 25.489999999999998, 26.516622611806373, 215.84999999999999, 90.769999999999996, 24.530000000000001, 24.59, 63.469999999999999, 27.469999999999999, 68.950000000000003, 196.72, 6.0899999999999999, 79.299999999999997, 20.609999999999999, 57.890000000000001, 72.159999999999997, 37.880000000000003, 37.182293728576532, 61.109999999999999, 49.909999999999997, 70.159999999999997, 91.290000000000006, 37.182293728576532, 17.760000000000002, 51.310000000000002, 27.93, 37.182293728576532, 13.94, 29.890000000000001, 17.07, 37.182293728576532, 37.182293728576532, 37.182293728576532, 37.182293728576532, 37.182293728576532, 37.182293728576532, 37.182293728576532, 37.182293728576532, 37.182293728576532, 37.182293728576532, 37.182293728576532, 37.182293728576532, 37.182293728576532, 54.090000000000003, 20.16, 12.4, 9.534502651369305, 8.75, 39.649999999999999, 22.48, 44.509999999999998, 24.859999999999999, 7.71, 35.310000000000002, 45.229999999999997, 97.629999999999995, 28.809999999999999, 15.33, 62.719999999999999, 74.730000000000004, 76.469999999999999, 102.15000000000001, 53.840000000000003, 16.399999999999999, 36.890000000000001, 6.8600000000000003, 32.100000000000001, 16.100000000000001, 27.859999999999999, 38.469999999999999, 45.909999999999997, 66.870000000000005, 48.259999999999998, 28.708720533867329, 27.140000000000001, 31.550000000000001, 30.800000000000001, 13.77, 22.370000000000001, 19.859999999999999, 15.49, 40.359999999999999, 55.939999999999998, 28.879999999999999, 34.979999999999997, 21.780000000000001, 23.879999999999999, 26.600000000000001, 27.972727302098136, 40.079999999999998, 25.16, 22.469999999999999, 20.600000000000001, 33.140000000000001, 11.99, 27.972727302098136, 23.899999999999999, 9.6999999999999993, 33.270000000000003, 33.009999999999998, 58.079999999999998, 11.550000000000001, 27.972727302098136, 18.149999999999999, 40.060000000000002, 48.119999999999997, 19.84, 40.979999999999997, 60.950000000000003, 15.48, 71.900000000000006, 53.789999999999999, 36.689999999999998, 156.53999999999999, 27.972727302098136, 8.9499999999999993, 37.460000000000001, 27.972727302098136, 27.972727302098136, 103, 27.972727302098136, 11.880000000000001, 32.270000000000003, 16.239999999999998, 33.850000000000001, 18.809999999999999, 26.170000000000002, 25.920000000000002, 27.449999999999999, 30.16, 25.27, 33.391856707424296, 47.170000000000002, 24.579999999999998, 9.6600000000000001, 50.899999999999999, 28.57, 47.469999999999999, 38, 31.649999999999999, 75.189999999999998, 57.450000000000003, 30.18, 33.391856707424296, 84.620000000000005, 52.549999999999997, 33.391856707424296, 33.391856707424296, 38.130000000000003, 59.770000000000003, 39.289999999999999, 33.391856707424296, 33.391856707424296, 33.391856707424296, 33.391856707424296, 33.391856707424296, 33.391856707424296, 73.109999999999999, 79.019999999999996, 32.590000000000003, 50.509999999999998, 33.391856707424296, 33.391856707424296, 33.391856707424296, 33.391856707424296, 33.391856707424296, 33.391856707424296, 33.391856707424296, 33.391856707424296, 33.391856707424296, 33.391856707424296, 33.391856707424296, 33.391856707424296, 33.391856707424296, 33.391856707424296, 13.640000000000001, 30.350000000000001, 21.5, 21.5, 21.5, 21.5, 28.859999999999999],
+          "text": ["Germany", "France", "Saint Pierre and Miquelon", "French Southern Territories", "Italy", "Malta", "Greece", "Cyprus", "Spain", "Portugal", "Austria", "Netherlands", "Belgium", "Luxembourg", "Poland", "Czech Republic", "Slovakia", "Lithuania", "Latvia", "Estonia", "Sweden", "Denmark", "Greenland", "Faroe Islands", "Finland", "Aland Islands", "Romania", "Hungary", "Bulgaria", "Croatia", "Slovenia", "Ireland", "United Kingdom", "Jersey", "Isle of Man", "Guernsey", "Gibraltar", "British Indian Ocean Territory", "Norway", "Svalbard and Jan Mayen", "Switzerland", "Liechtenstein", "Iceland", "Ukraine", "Albania", "Serbia", "Georgia", "Bosnia and Herzegovina", "Moldova, Republic of", "Macedonia, the former Yugoslav Republic of", "Montenegro", "Andorra", "Monaco", "San Marino", "Holy See (Vatican City State)", "Turkey", "Russian Federation", "Kazakhstan", "Uzbekistan", "Korea, Democratic People's Republic of", "Belarus", "Azerbaijan", "Tajikistan", "Turkmenistan", "Kyrgyzstan", "Armenia", "Mongolia", "Japan", "China", "Taiwan, Province of China", "Hong Kong", "Macao", "India", "Indonesia", "Viet Nam", "Philippines", "Thailand", "Singapore", "Myanmar", "Malaysia", "Sri Lanka", "Cambodia", "Papua New Guinea", "Lao People's Democratic Republic", "Timor-Leste", "Fiji", "Solomon Islands", "Brunei Darussalam", "Maldives", "French Polynesia", "New Caledonia", "Vanuatu", "Samoa", "Guam", "Kiribati", "Micronesia, Federated States of", "Tonga", "American Samoa", "Northern Mariana Islands", "Marshall Islands", "Cook Islands", "Palau", "Wallis and Futuna", "Tuvalu", "Nauru", "Niue", "Norfolk Island", "Tokelau", "United States Minor Outlying Islands", "Pitcairn", "Korea, Republic of", "Bangladesh", "Pakistan", "Afghanistan", "Nepal", "Bhutan", "Iran, Islamic Republic of", "Iraq", "Yemen", "Syrian Arab Republic", "Israel", "Jordan", "United Arab Emirates", "Lebanon", "Palestine, State of", "Oman", "Kuwait", "Qatar", "Bahrain", "Saudi Arabia", "Egypt", "Algeria", "Sudan", "Morocco", "Niger", "Mali", "Chad", "Tunisia", "Libya", "Mauritania", "Western Sahara", "South Africa", "Nigeria", "Congo, the Democratic Republic of the", "Ethiopia", "Tanzania, United Republic of", "Kenya", "Uganda", "Ghana", "Angola", "Mozambique", "Cote d Ivoire", "Madagascar", "Cameroon", "Burkina Faso", "Malawi", "Zambia", "Zimbabwe", "Senegal", "Somalia", "Guinea", "Rwanda", "South Sudan", "Benin", "Burundi", "Togo", "Sierra Leone", "Congo", "Central African Republic", "Liberia", "Eritrea", "Namibia", "Botswana", "Gambia", "Lesotho", "Gabon", "Guinea-Bissau", "Equatorial Guinea", "Mauritius", "Swaziland", "Djibouti", "Reunion", "Comoros", "Cape Verde", "Mayotte", "Sao Tome and Principe", "Seychelles", "Saint Helena, Ascension and Tristan da Cunha", "Brazil", "Mexico", "Argentina", "Chile", "Colombia", "Venezuela, Bolivarian Republic of", "Uruguay", "Peru", "Ecuador", "Guatemala", "Cuba", "Bolivia, Plurinational State of", "Dominican Republic", "Haiti", "Honduras", "El Salvador", "Nicaragua", "Paraguay", "Costa Rica", "Panama", "Puerto Rico", "Jamaica", "Trinidad and Tobago", "Guyana", "Suriname", "Guadeloupe", "Martinique", "Bahamas", "Belize", "Barbados", "French Guiana", "Saint Lucia", "Curacao", "Grenada", "Saint Vincent and the Grenadines", "Virgin Islands, U.S.", "Aruba", "Antigua and Barbuda", "Dominica", "Bermuda", "Cayman Islands", "Saint Kitts and Nevis", "Saint Martin (French part)", "Sint Maarten (Dutch part)", "Turks and Caicos Islands", "Virgin Islands, British", "Bonaire, Sint Eustatius and Saba", "Anguilla", "Saint Barthelemy", "Montserrat", "Falkland Islands (Malvinas)", "Antarctica", "South Georgia and the South Sandwich Islands", "Bouvet Island", "United States", "Canada", "Australia", "Christmas Island", "Cocos (Keeling) Islands", "Heard Island and McDonald Islands", "New Zealand"],
+          "zmin": 0,
+          "zmax": 240,
+          "frame": "2012",
+          "type": "choropleth",
+          "marker": {
+            "line": {
+              "color": "rgba(31,119,180,1)"
+            }
+          },
+          "visible": true
+        }
+      ],
+      "traces": [0]
+    },
+    {
+      "name": "2013",
+      "data": [
+        {
+          "colorbar": {
+            "title": "Exports of goods and services",
+            "ticklen": 2
+          },
+          "colorscale": [
+            ["0", "#de5842"],
+            ["1e-05", "#188AF0"],
+            ["1", "#00D4B0"]
+          ],
+          "showscale": true,
+          "locations": ["DEU", "FRA", "SPM", "ATF", "ITA", "MLT", "GRC", "CYP", "ESP", "PRT", "AUT", "NLD", "BEL", "LUX", "POL", "CZE", "SVK", "LTU", "LVA", "EST", "SWE", "DNK", "GRL", "FRO", "FIN", "ALA", "ROU", "HUN", "BGR", "HRV", "SVN", "IRL", "GBR", "JEY", "IMN", "GGY", "GIB", "IOT", "NOR", "SJM", "CHE", "LIE", "ISL", "UKR", "ALB", "SRB", "GEO", "BIH", "MDA", "MKD", "MNE", "AND", "MCO", "SMR", "VAT", "TUR", "RUS", "KAZ", "UZB", "PRK", "BLR", "AZE", "TJK", "TKM", "KGZ", "ARM", "MNG", "JPN", "CHN", "TWN", "HKG", "MAC", "IND", "IDN", "VNM", "PHL", "THA", "SGP", "MMR", "MYS", "LKA", "KHM", "PNG", "LAO", "TLS", "FJI", "SLB", "BRN", "MDV", "NCL", "PYF", "VUT", "WSM", "GUM", "KIR", "FSM", "TON", "ASM", "MNP", "MHL", "COK", "PLW", "WLF", "TUV", "NRU", "NIU", "NFK", "TKL", "UMI", "PCN", "KOR", "BGD", "PAK", "AFG", "NPL", "BTN", "IRN", "IRQ", "YEM", "SYR", "ISR", "JOR", "ARE", "LBN", "PSE", "OMN", "KWT", "QAT", "BHR", "SAU", "EGY", "DZA", "SDN", "MAR", "NER", "MLI", "TCD", "TUN", "LBY", "MRT", "ESH", "ZAF", "NGA", "COD", "ETH", "TZA", "KEN", "UGA", "GHA", "AGO", "MOZ", "MDG", "CIV", "CMR", "BFA", "MWI", "ZMB", "ZWE", "SEN", "SOM", "GIN", "SSD", "RWA", "BEN", "BDI", "TGO", "SLE", "COG", "CAF", "LBR", "ERI", "NAM", "BWA", "GMB", "LSO", "GAB", "GNB", "GNQ", "MUS", "SWZ", "DJI", "REU", "COM", "CPV", "MYT", "STP", "SYC", "SHN", "BRA", "MEX", "ARG", "CHL", "COL", "VEN", "URY", "PER", "ECU", "GTM", "CUB", "BOL", "HTI", "DOM", "HND", "SLV", "NIC", "PRY", "CRI", "PAN", "PRI", "JAM", "TTO", "GUY", "SUR", "GLP", "MTQ", "BHS", "BLZ", "BRB", "GUF", "LCA", "CUW", "GRD", "VCT", "VIR", "ABW", "ATG", "DMA", "BMU", "CYM", "KNA", "MAF", "SXM", "TCA", "VGB", "BES", "AIA", "BLM", "MSR", "FLK", "ATA", "SGS", "BVT", "USA", "CAN", "AUS", "CXR", "CCK", "HMD", "NZL"],
+          "z": [45.420000000000002, 29.359999999999999, 29.359999999999999, 29.359999999999999, 28.629999999999999, 155.97, 30.210000000000001, 61.299999999999997, 32.950000000000003, 39.609999999999999, 53.439999999999998, 79.879999999999995, 79.319999999999993, 176.38, 45.979999999999997, 76.060000000000002, 93.439999999999998, 78.670000000000002, 60.399999999999999, 84.569999999999993, 42.530000000000001, 54.829999999999998, 54.835196739357308, 55.439999999999998, 38.020000000000003, 38.020000000000003, 40.25, 85.409999999999997, 64.579999999999998, 39.759999999999998, 74.219999999999999, 104.01000000000001, 30.050000000000001, 30.050000000000001, 30.050000000000001, 30.050000000000001, 30.050000000000001, 25.43, 39.859999999999999, 39.859999999999999, 72.069999999999993, 72.069999999999993, 53.25, 42.899999999999999, 28.920000000000002, 39.850000000000001, 41.719999999999999, 33.740000000000002, 32.090000000000003, 43.399999999999999, 41.340000000000003, 38.69587390431353, 38.69587390431353, 174.44999999999999, 38.69587390431353, 23.789999999999999, 25.850000000000001, 38.619999999999997, 18.629999999999999, 32.109603343456129, 58.329999999999998, 48.420000000000002, 11.09, 49.840000000000003, 42.25, 28.350000000000001, 38.890000000000001, 15.779999999999999, 24.600000000000001, 25.660105436806194, 221.61000000000001, 90.659999999999997, 25.43, 23.920000000000002, 66.799999999999997, 26.18, 67.170000000000002, 195.08000000000001, 15.82, 75.629999999999995, 20.370000000000001, 62.390000000000001, 72.159999999999997, 38.170000000000002, 40.660649170369815, 56.869999999999997, 45.93, 68.040000000000006, 91.290000000000006, 15.720000000000001, 40.660649170369815, 51.68, 28.100000000000001, 40.660649170369815, 11.99, 30.399999999999999, 20.350000000000001, 40.660649170369815, 40.660649170369815, 40.660649170369815, 40.660649170369815, 40.660649170369815, 40.660649170369815, 40.660649170369815, 40.660649170369815, 40.660649170369815, 40.660649170369815, 40.660649170369815, 40.660649170369815, 40.660649170369815, 51.289999999999999, 19.539999999999999, 13.279999999999999, 10.113240429748345, 9.2899999999999991, 41.43, 25.18, 39.659999999999997, 22.359999999999999, 7.7800000000000002, 33.240000000000002, 41.299999999999997, 98.010000000000005, 26.649999999999999, 15.619999999999999, 66.030000000000001, 70.859999999999999, 72.719999999999999, 104.8, 51.420000000000002, 17.02, 33.210000000000001, 9.5099999999999998, 30.25, 16.98, 24.940000000000001, 33.57, 44.890000000000001, 59.890000000000001, 45.549999999999997, 27.176129954026933, 28.379999999999999, 18.050000000000001, 36.450000000000003, 12.48, 19.010000000000002, 17.789999999999999, 16.510000000000002, 25.440000000000001, 50.75, 26.739999999999998, 23.27, 29.16, 23.640000000000001, 27.079999999999998, 25.685208023616465, 40.479999999999997, 21.989999999999998, 22.350000000000001, 20.600000000000001, 26.469999999999999, 25.685208023616465, 13.49, 27.57, 9.0999999999999996, 34.200000000000003, 28.629999999999999, 52.93, 14.970000000000001, 25.685208023616465, 18.149999999999999, 37.5, 61.380000000000003, 18.98, 37.200000000000003, 57.359999999999999, 18.260000000000002, 67.650000000000006, 52.57, 40.530000000000001, 156.53999999999999, 25.685208023616465, 9.0500000000000007, 37.520000000000003, 25.685208023616465, 25.685208023616465, 94.659999999999997, 25.685208023616465, 11.74, 31.309999999999999, 14.619999999999999, 32.090000000000003, 18.09, 24.760000000000002, 23.350000000000001, 24.809999999999999, 28.640000000000001, 22, 31.714629981156982, 44.090000000000003, 10.52, 25.170000000000002, 47.939999999999998, 29.719999999999999, 45.210000000000001, 38.710000000000001, 30.59, 65.159999999999997, 60.869999999999997, 30.579999999999998, 31.714629981156982, 84.620000000000005, 52.549999999999997, 31.714629981156982, 31.714629981156982, 39.789999999999999, 56.170000000000002, 40.93, 31.714629981156982, 31.714629981156982, 31.714629981156982, 31.714629981156982, 31.714629981156982, 31.714629981156982, 76.549999999999997, 80.590000000000003, 38.829999999999998, 51.609999999999999, 31.714629981156982, 31.714629981156982, 31.714629981156982, 31.714629981156982, 31.714629981156982, 31.714629981156982, 31.714629981156982, 31.714629981156982, 31.714629981156982, 31.714629981156982, 31.714629981156982, 31.714629981156982, 31.714629981156982, 31.714629981156982, 13.58, 30.329999999999998, 19.989999999999998, 19.989999999999998, 19.989999999999998, 19.989999999999998, 28.809999999999999],
+          "text": ["Germany", "France", "Saint Pierre and Miquelon", "French Southern Territories", "Italy", "Malta", "Greece", "Cyprus", "Spain", "Portugal", "Austria", "Netherlands", "Belgium", "Luxembourg", "Poland", "Czech Republic", "Slovakia", "Lithuania", "Latvia", "Estonia", "Sweden", "Denmark", "Greenland", "Faroe Islands", "Finland", "Aland Islands", "Romania", "Hungary", "Bulgaria", "Croatia", "Slovenia", "Ireland", "United Kingdom", "Jersey", "Isle of Man", "Guernsey", "Gibraltar", "British Indian Ocean Territory", "Norway", "Svalbard and Jan Mayen", "Switzerland", "Liechtenstein", "Iceland", "Ukraine", "Albania", "Serbia", "Georgia", "Bosnia and Herzegovina", "Moldova, Republic of", "Macedonia, the former Yugoslav Republic of", "Montenegro", "Andorra", "Monaco", "San Marino", "Holy See (Vatican City State)", "Turkey", "Russian Federation", "Kazakhstan", "Uzbekistan", "Korea, Democratic People's Republic of", "Belarus", "Azerbaijan", "Tajikistan", "Turkmenistan", "Kyrgyzstan", "Armenia", "Mongolia", "Japan", "China", "Taiwan, Province of China", "Hong Kong", "Macao", "India", "Indonesia", "Viet Nam", "Philippines", "Thailand", "Singapore", "Myanmar", "Malaysia", "Sri Lanka", "Cambodia", "Papua New Guinea", "Lao People's Democratic Republic", "Timor-Leste", "Fiji", "Solomon Islands", "Brunei Darussalam", "Maldives", "New Caledonia", "French Polynesia", "Vanuatu", "Samoa", "Guam", "Kiribati", "Micronesia, Federated States of", "Tonga", "American Samoa", "Northern Mariana Islands", "Marshall Islands", "Cook Islands", "Palau", "Wallis and Futuna", "Tuvalu", "Nauru", "Niue", "Norfolk Island", "Tokelau", "United States Minor Outlying Islands", "Pitcairn", "Korea, Republic of", "Bangladesh", "Pakistan", "Afghanistan", "Nepal", "Bhutan", "Iran, Islamic Republic of", "Iraq", "Yemen", "Syrian Arab Republic", "Israel", "Jordan", "United Arab Emirates", "Lebanon", "Palestine, State of", "Oman", "Kuwait", "Qatar", "Bahrain", "Saudi Arabia", "Egypt", "Algeria", "Sudan", "Morocco", "Niger", "Mali", "Chad", "Tunisia", "Libya", "Mauritania", "Western Sahara", "South Africa", "Nigeria", "Congo, the Democratic Republic of the", "Ethiopia", "Tanzania, United Republic of", "Kenya", "Uganda", "Ghana", "Angola", "Mozambique", "Madagascar", "Cote d Ivoire", "Cameroon", "Burkina Faso", "Malawi", "Zambia", "Zimbabwe", "Senegal", "Somalia", "Guinea", "South Sudan", "Rwanda", "Benin", "Burundi", "Togo", "Sierra Leone", "Congo", "Central African Republic", "Liberia", "Eritrea", "Namibia", "Botswana", "Gambia", "Lesotho", "Gabon", "Guinea-Bissau", "Equatorial Guinea", "Mauritius", "Swaziland", "Djibouti", "Reunion", "Comoros", "Cape Verde", "Mayotte", "Sao Tome and Principe", "Seychelles", "Saint Helena, Ascension and Tristan da Cunha", "Brazil", "Mexico", "Argentina", "Chile", "Colombia", "Venezuela, Bolivarian Republic of", "Uruguay", "Peru", "Ecuador", "Guatemala", "Cuba", "Bolivia, Plurinational State of", "Haiti", "Dominican Republic", "Honduras", "El Salvador", "Nicaragua", "Paraguay", "Costa Rica", "Panama", "Puerto Rico", "Jamaica", "Trinidad and Tobago", "Guyana", "Suriname", "Guadeloupe", "Martinique", "Bahamas", "Belize", "Barbados", "French Guiana", "Saint Lucia", "Curacao", "Grenada", "Saint Vincent and the Grenadines", "Virgin Islands, U.S.", "Aruba", "Antigua and Barbuda", "Dominica", "Bermuda", "Cayman Islands", "Saint Kitts and Nevis", "Saint Martin (French part)", "Sint Maarten (Dutch part)", "Turks and Caicos Islands", "Virgin Islands, British", "Bonaire, Sint Eustatius and Saba", "Anguilla", "Saint Barthelemy", "Montserrat", "Falkland Islands (Malvinas)", "Antarctica", "South Georgia and the South Sandwich Islands", "Bouvet Island", "United States", "Canada", "Australia", "Christmas Island", "Cocos (Keeling) Islands", "Heard Island and McDonald Islands", "New Zealand"],
+          "zmin": 0,
+          "zmax": 240,
+          "frame": "2013",
+          "type": "choropleth",
+          "marker": {
+            "line": {
+              "color": "rgba(31,119,180,1)"
+            }
+          },
+          "visible": true
+        }
+      ],
+      "traces": [0]
+    },
+    {
+      "name": "2014",
+      "data": [
+        {
+          "colorbar": {
+            "title": "Exports of goods and services",
+            "ticklen": 2
+          },
+          "colorscale": [
+            ["0", "#de5842"],
+            ["1e-05", "#188AF0"],
+            ["1", "#00D4B0"]
+          ],
+          "showscale": true,
+          "locations": ["DEU", "FRA", "SPM", "ATF", "ITA", "MLT", "GRC", "CYP", "ESP", "PRT", "AUT", "NLD", "BEL", "LUX", "POL", "CZE", "SVK", "LTU", "LVA", "EST", "SWE", "DNK", "GRL", "FRO", "FIN", "ALA", "ROU", "HUN", "BGR", "HRV", "SVN", "IRL", "GBR", "JEY", "IMN", "GGY", "GIB", "IOT", "NOR", "SJM", "CHE", "LIE", "ISL", "UKR", "ALB", "SRB", "GEO", "BIH", "MDA", "MKD", "MNE", "AND", "MCO", "SMR", "VAT", "TUR", "RUS", "KAZ", "UZB", "PRK", "AZE", "BLR", "TJK", "TKM", "KGZ", "ARM", "MNG", "JPN", "CHN", "TWN", "HKG", "MAC", "IND", "IDN", "VNM", "PHL", "THA", "SGP", "MMR", "MYS", "LKA", "KHM", "PNG", "LAO", "TLS", "FJI", "SLB", "BRN", "MDV", "NCL", "PYF", "VUT", "WSM", "GUM", "KIR", "FSM", "TON", "ASM", "MNP", "MHL", "COK", "PLW", "WLF", "TUV", "NRU", "NIU", "NFK", "TKL", "UMI", "PCN", "KOR", "BGD", "PAK", "AFG", "NPL", "BTN", "IRN", "IRQ", "YEM", "SYR", "JOR", "ISR", "ARE", "LBN", "PSE", "OMN", "KWT", "QAT", "BHR", "SAU", "EGY", "DZA", "SDN", "MAR", "NER", "MLI", "TCD", "TUN", "LBY", "MRT", "ESH", "ZAF", "NGA", "COD", "ETH", "TZA", "KEN", "UGA", "GHA", "AGO", "MOZ", "MDG", "CIV", "CMR", "BFA", "MWI", "ZMB", "ZWE", "SEN", "SOM", "GIN", "RWA", "SSD", "BEN", "BDI", "TGO", "SLE", "COG", "CAF", "LBR", "ERI", "NAM", "BWA", "GMB", "LSO", "GAB", "GNB", "GNQ", "MUS", "SWZ", "DJI", "REU", "COM", "CPV", "MYT", "STP", "SYC", "SHN", "BRA", "MEX", "ARG", "CHL", "COL", "VEN", "URY", "PER", "ECU", "GTM", "CUB", "BOL", "HTI", "DOM", "HND", "SLV", "PRY", "NIC", "CRI", "PAN", "PRI", "JAM", "TTO", "GUY", "SUR", "GLP", "MTQ", "BHS", "BLZ", "BRB", "GUF", "LCA", "CUW", "GRD", "VIR", "VCT", "ABW", "ATG", "DMA", "BMU", "CYM", "KNA", "MAF", "SXM", "TCA", "VGB", "BES", "AIA", "BLM", "MSR", "FLK", "ATA", "SGS", "BVT", "USA", "CAN", "AUS", "CXR", "CCK", "HMD", "NZL"],
+          "z": [45.619999999999997, 29.670000000000002, 29.670000000000002, 29.670000000000002, 29.109999999999999, 149.81, 32.490000000000002, 65.950000000000003, 33.469999999999999, 40.219999999999999, 53.390000000000001, 80.579999999999998, 79.799999999999997, 182.78, 46.490000000000002, 81.950000000000003, 91.400000000000006, 72.269999999999996, 61.149999999999999, 81.870000000000005, 43.270000000000003, 54.609999999999999, 54.599790128187358, 53.409999999999997, 36.479999999999997, 36.479999999999997, 41.479999999999997, 87.120000000000005, 64.599999999999994, 42.689999999999998, 76.150000000000006, 110.12, 28.390000000000001, 28.390000000000001, 28.390000000000001, 28.390000000000001, 28.390000000000001, 22.969999999999999, 39.729999999999997, 39.729999999999997, 65.340000000000003, 65.340000000000003, 51.520000000000003, 48.590000000000003, 28.210000000000001, 42.079999999999998, 39.93, 33.990000000000002, 31.530000000000001, 47.659999999999997, 40.140000000000001, 39.625094284478891, 39.625094284478891, 174.44999999999999, 39.625094284478891, 25.210000000000001, 27.109999999999999, 39.340000000000003, 16.039999999999999, 29.633423603145509, 43.270000000000003, 54.939999999999998, 9.1699999999999999, 46.780000000000001, 37.450000000000003, 28.559999999999999, 52.25, 17.420000000000002, 23.510000000000002, 24.531369422093551, 213.09, 85.640000000000001, 22.969999999999999, 23.670000000000002, 69.599999999999994, 27.350000000000001, 68.390000000000001, 191.94999999999999, 19.879999999999999, 73.790000000000006, 20.129999999999999, 62.600000000000001, 72.159999999999997, 40.75, 41.949502568232738, 52.329999999999998, 42.340000000000003, 68.180000000000007, 91.290000000000006, 18.59, 41.949502568232738, 51.43, 27.59, 41.949502568232738, 13.550000000000001, 31.829999999999998, 16.969999999999999, 41.949502568232738, 41.949502568232738, 41.949502568232738, 41.949502568232738, 41.949502568232738, 41.949502568232738, 41.949502568232738, 41.949502568232738, 41.949502568232738, 41.949502568232738, 41.949502568232738, 41.949502568232738, 41.949502568232738, 47.829999999999998, 18.989999999999998, 12.24, 10.825380384840136, 10.119999999999999, 37.450000000000003, 22.829999999999998, 38.939999999999998, 21.48, 7.0199999999999996, 42.130000000000003, 31.870000000000001, 96.920000000000002, 23.760000000000002, 15.82, 61.439999999999998, 68.510000000000005, 68, 96.049999999999997, 46.25, 14.24, 30.489999999999998, 7.6100000000000003, 30.129999999999999, 15.949999999999999, 22.559999999999999, 34.159999999999997, 42.57, 32.240000000000002, 37.390000000000001, 24.567886663687279, 29, 18.440000000000001, 36.829999999999998, 11.640000000000001, 18.07, 16.469999999999999, 14.949999999999999, 28.23, 44.700000000000003, 31.280000000000001, 28.280000000000001, 28.16, 23.609999999999999, 26.93, 25.562163947309742, 38.82, 20.93, 21.780000000000001, 20.920000000000002, 26.690000000000001, 13.869999999999999, 25.562163947309742, 31.43, 8.6999999999999993, 29.23, 30.760000000000002, 53.149999999999999, 16.68, 25.562163947309742, 18.149999999999999, 39.020000000000003, 61.280000000000001, 21.84, 37.07, 44.520000000000003, 20.210000000000001, 65.959999999999994, 52.520000000000003, 43.850000000000001, 158.37, 25.562163947309742, 9.6799999999999997, 37.25, 25.562163947309742, 25.562163947309742, 98.959999999999994, 25.562163947309742, 11.01, 31.870000000000001, 14.41, 33, 16.629999999999999, 16.690000000000001, 23.539999999999999, 22.609999999999999, 28.050000000000001, 21.739999999999998, 30.672804169449815, 43.289999999999999, 10.970000000000001, 25.149999999999999, 47.560000000000002, 29.550000000000001, 35.460000000000001, 45.009999999999998, 31.359999999999999, 55.359999999999999, 60.82, 31.25, 30.672804169449815, 84.620000000000005, 52.549999999999997, 30.672804169449815, 30.672804169449815, 37.710000000000001, 55.5, 40.020000000000003, 30.672804169449815, 30.672804169449815, 30.672804169449815, 30.672804169449815, 30.672804169449815, 30.672804169449815, 78.269999999999996, 82.200000000000003, 52.439999999999998, 51.159999999999997, 30.672804169449815, 30.672804169449815, 30.672804169449815, 30.672804169449815, 30.672804169449815, 30.672804169449815, 30.672804169449815, 30.672804169449815, 30.672804169449815, 30.672804169449815, 30.672804169449815, 30.672804169449815, 30.672804169449815, 30.672804169449815, 13.550000000000001, 31.739999999999998, 21.100000000000001, 21.100000000000001, 21.100000000000001, 21.100000000000001, 27.98],
+          "text": ["Germany", "France", "Saint Pierre and Miquelon", "French Southern Territories", "Italy", "Malta", "Greece", "Cyprus", "Spain", "Portugal", "Austria", "Netherlands", "Belgium", "Luxembourg", "Poland", "Czech Republic", "Slovakia", "Lithuania", "Latvia", "Estonia", "Sweden", "Denmark", "Greenland", "Faroe Islands", "Finland", "Aland Islands", "Romania", "Hungary", "Bulgaria", "Croatia", "Slovenia", "Ireland", "United Kingdom", "Jersey", "Isle of Man", "Guernsey", "Gibraltar", "British Indian Ocean Territory", "Norway", "Svalbard and Jan Mayen", "Switzerland", "Liechtenstein", "Iceland", "Ukraine", "Albania", "Serbia", "Georgia", "Bosnia and Herzegovina", "Moldova, Republic of", "Macedonia, the former Yugoslav Republic of", "Montenegro", "Andorra", "Monaco", "San Marino", "Holy See (Vatican City State)", "Turkey", "Russian Federation", "Kazakhstan", "Uzbekistan", "Korea, Democratic People's Republic of", "Azerbaijan", "Belarus", "Tajikistan", "Turkmenistan", "Kyrgyzstan", "Armenia", "Mongolia", "Japan", "China", "Taiwan, Province of China", "Hong Kong", "Macao", "India", "Indonesia", "Viet Nam", "Philippines", "Thailand", "Singapore", "Myanmar", "Malaysia", "Sri Lanka", "Cambodia", "Papua New Guinea", "Lao People's Democratic Republic", "Timor-Leste", "Fiji", "Solomon Islands", "Brunei Darussalam", "Maldives", "New Caledonia", "French Polynesia", "Vanuatu", "Samoa", "Guam", "Kiribati", "Micronesia, Federated States of", "Tonga", "American Samoa", "Northern Mariana Islands", "Marshall Islands", "Cook Islands", "Palau", "Wallis and Futuna", "Tuvalu", "Nauru", "Niue", "Norfolk Island", "Tokelau", "United States Minor Outlying Islands", "Pitcairn", "Korea, Republic of", "Bangladesh", "Pakistan", "Afghanistan", "Nepal", "Bhutan", "Iran, Islamic Republic of", "Iraq", "Yemen", "Syrian Arab Republic", "Jordan", "Israel", "United Arab Emirates", "Lebanon", "Palestine, State of", "Oman", "Kuwait", "Qatar", "Bahrain", "Saudi Arabia", "Egypt", "Algeria", "Sudan", "Morocco", "Niger", "Mali", "Chad", "Tunisia", "Libya", "Mauritania", "Western Sahara", "South Africa", "Nigeria", "Congo, the Democratic Republic of the", "Ethiopia", "Tanzania, United Republic of", "Kenya", "Uganda", "Ghana", "Angola", "Mozambique", "Madagascar", "Cote d Ivoire", "Cameroon", "Burkina Faso", "Malawi", "Zambia", "Zimbabwe", "Senegal", "Somalia", "Guinea", "Rwanda", "South Sudan", "Benin", "Burundi", "Togo", "Sierra Leone", "Congo", "Central African Republic", "Liberia", "Eritrea", "Namibia", "Botswana", "Gambia", "Lesotho", "Gabon", "Guinea-Bissau", "Equatorial Guinea", "Mauritius", "Swaziland", "Djibouti", "Reunion", "Comoros", "Cape Verde", "Mayotte", "Sao Tome and Principe", "Seychelles", "Saint Helena, Ascension and Tristan da Cunha", "Brazil", "Mexico", "Argentina", "Chile", "Colombia", "Venezuela, Bolivarian Republic of", "Uruguay", "Peru", "Ecuador", "Guatemala", "Cuba", "Bolivia, Plurinational State of", "Haiti", "Dominican Republic", "Honduras", "El Salvador", "Paraguay", "Nicaragua", "Costa Rica", "Panama", "Puerto Rico", "Jamaica", "Trinidad and Tobago", "Guyana", "Suriname", "Guadeloupe", "Martinique", "Bahamas", "Belize", "Barbados", "French Guiana", "Saint Lucia", "Curacao", "Grenada", "Virgin Islands, U.S.", "Saint Vincent and the Grenadines", "Aruba", "Antigua and Barbuda", "Dominica", "Bermuda", "Cayman Islands", "Saint Kitts and Nevis", "Saint Martin (French part)", "Sint Maarten (Dutch part)", "Turks and Caicos Islands", "Virgin Islands, British", "Bonaire, Sint Eustatius and Saba", "Anguilla", "Saint Barthelemy", "Montserrat", "Falkland Islands (Malvinas)", "Antarctica", "South Georgia and the South Sandwich Islands", "Bouvet Island", "United States", "Canada", "Australia", "Christmas Island", "Cocos (Keeling) Islands", "Heard Island and McDonald Islands", "New Zealand"],
+          "zmin": 0,
+          "zmax": 240,
+          "frame": "2014",
+          "type": "choropleth",
+          "marker": {
+            "line": {
+              "color": "rgba(31,119,180,1)"
+            }
+          },
+          "visible": true
+        }
+      ],
+      "traces": [0]
+    },
+    {
+      "name": "2015",
+      "data": [
+        {
+          "colorbar": {
+            "title": "Exports of goods and services",
+            "ticklen": 2
+          },
+          "colorscale": [
+            ["0", "#de5842"],
+            ["1e-05", "#188AF0"],
+            ["1", "#00D4B0"]
+          ],
+          "showscale": true,
+          "locations": ["DEU", "FRA", "SPM", "ATF", "ITA", "MLT", "GRC", "CYP", "ESP", "PRT", "AUT", "NLD", "BEL", "LUX", "POL", "CZE", "SVK", "LTU", "LVA", "EST", "SWE", "DNK", "GRL", "FRO", "FIN", "ALA", "ROU", "HUN", "BGR", "HRV", "SVN", "IRL", "GBR", "JEY", "IMN", "GGY", "GIB", "IOT", "NOR", "SJM", "CHE", "LIE", "ISL", "UKR", "ALB", "SRB", "GEO", "BIH", "MDA", "MKD", "MNE", "AND", "MCO", "SMR", "VAT", "TUR", "RUS", "KAZ", "UZB", "PRK", "AZE", "BLR", "TJK", "TKM", "KGZ", "MNG", "ARM", "JPN", "CHN", "TWN", "HKG", "MAC", "IND", "IDN", "VNM", "PHL", "THA", "SGP", "MMR", "MYS", "LKA", "KHM", "PNG", "LAO", "TLS", "FJI", "SLB", "MDV", "BRN", "NCL", "PYF", "VUT", "WSM", "GUM", "KIR", "FSM", "TON", "ASM", "MNP", "MHL", "PLW", "COK", "WLF", "TUV", "NRU", "NIU", "NFK", "TKL", "UMI", "PCN", "KOR", "BGD", "PAK", "AFG", "NPL", "BTN", "IRN", "IRQ", "YEM", "SYR", "JOR", "ARE", "ISR", "LBN", "PSE", "OMN", "KWT", "QAT", "BHR", "SAU", "EGY", "SDN", "DZA", "MAR", "NER", "MLI", "TCD", "TUN", "LBY", "MRT", "ESH", "ZAF", "NGA", "COD", "ETH", "TZA", "KEN", "UGA", "GHA", "AGO", "MOZ", "MDG", "CIV", "CMR", "BFA", "MWI", "ZMB", "SEN", "ZWE", "SOM", "GIN", "RWA", "BEN", "SSD", "BDI", "TGO", "SLE", "COG", "LBR", "CAF", "ERI", "NAM", "GMB", "BWA", "LSO", "GAB", "GNB", "GNQ", "MUS", "SWZ", "DJI", "REU", "COM", "CPV", "MYT", "STP", "SYC", "SHN", "BRA", "MEX", "ARG", "CHL", "COL", "VEN", "URY", "PER", "ECU", "GTM", "CUB", "BOL", "HTI", "DOM", "HND", "SLV", "PRY", "NIC", "CRI", "PAN", "PRI", "JAM", "TTO", "GUY", "SUR", "GLP", "BHS", "MTQ", "BLZ", "BRB", "GUF", "LCA", "CUW", "GRD", "ABW", "VIR", "VCT", "ATG", "DMA", "BMU", "CYM", "KNA", "SXM", "MAF", "TCA", "VGB", "BES", "AIA", "BLM", "MSR", "FLK", "ATA", "SGS", "BVT", "USA", "CAN", "AUS", "CXR", "CCK", "HMD", "NZL"],
+          "z": [46.920000000000002, 30.59, 30.59, 30.59, 29.719999999999999, 154.62, 32.130000000000003, 70.019999999999996, 33.609999999999999, 40.619999999999997, 53.090000000000003, 82.659999999999997, 77.810000000000002, 191.84, 47.450000000000003, 80.560000000000002, 91.599999999999994, 68.780000000000001, 60.280000000000001, 77.439999999999998, 43.770000000000003, 55.420000000000002, 55.401232555251013, 53.219999999999999, 35.409999999999997, 35.409999999999997, 41.350000000000001, 87.530000000000001, 63.799999999999997, 45.68, 77.150000000000006, 122.09999999999999, 27.629999999999999, 27.629999999999999, 27.629999999999999, 27.629999999999999, 27.629999999999999, 19.809999999999999, 38.579999999999998, 38.579999999999998, 63.829999999999998, 63.829999999999998, 51.649999999999999, 52.600000000000001, 27.27, 45.18, 40.859999999999999, 35.109999999999999, 31.809999999999999, 48.740000000000002, 42.119999999999997, 41.451184906110456, 41.451184906110456, 174.44999999999999, 41.451184906110456, 24.530000000000001, 28.699999999999999, 28.52, 13.77, 27.073463372030311, 37.789999999999999, 58.009999999999998, 9.8000000000000007, 35.68, 35.189999999999998, 44.18, 29.73, 17.440000000000001, 21.350000000000001, 22.293543775438753, 195.90000000000001, 78.510000000000005, 19.809999999999999, 21.16, 72.920000000000002, 27.210000000000001, 67.640000000000001, 178.38, 20.460000000000001, 69.450000000000003, 19.890000000000001, 61.719999999999999, 72.159999999999997, 33.950000000000003, 40.690036264172349, 48.840000000000003, 40.299999999999997, 78.359999999999999, 52.210000000000001, 18.07, 40.690036264172349, 46.030000000000001, 27.140000000000001, 40.690036264172349, 15.699999999999999, 27.07, 16.960000000000001, 40.690036264172349, 40.690036264172349, 40.690036264172349, 40.690036264172349, 40.690036264172349, 40.690036264172349, 40.690036264172349, 40.690036264172349, 40.690036264172349, 40.690036264172349, 40.690036264172349, 40.690036264172349, 40.690036264172349, 42.990000000000002, 17.34, 10.6, 10.838239005915332, 10.210000000000001, 34.439999999999998, 18.719999999999999, 34.509999999999998, 18.32, 14.289999999999999, 36.539999999999999, 97.560000000000002, 31.170000000000002, 23.140000000000001, 16.059999999999999, 49.649999999999999, 53.770000000000003, 57.060000000000002, 83.109999999999999, 32.560000000000002, 13.18, 6.4199999999999999, 23.170000000000002, 30, 14.27, 24.039999999999999, 30, 38.399999999999999, 22.23, 30.199999999999999, 21.589428945124627, 27.710000000000001, 10.67, 27.73, 9.3599999999999994, 17.100000000000001, 15.130000000000001, 12.880000000000001, 33.829999999999998, 29.75, 31.079999999999998, 28.390000000000001, 27.350000000000001, 20.989999999999998, 26.109999999999999, 23.4841747759776, 37.140000000000001, 22.68, 19.16, 19.460000000000001, 21.5, 13.23, 24.719999999999999, 23.4841747759776, 6.4199999999999999, 26.379999999999999, 19.210000000000001, 42.729999999999997, 23.4841747759776, 17.07, 18.149999999999999, 35.369999999999997, 19.600000000000001, 53.090000000000003, 41.609999999999999, 46.030000000000001, 27.539999999999999, 56.659999999999997, 51.5, 43.109999999999999, 145.41999999999999, 23.4841747759776, 10.140000000000001, 41.140000000000001, 23.4841747759776, 23.4841747759776, 92.739999999999995, 23.4841747759776, 12.9, 34.520000000000003, 10.710000000000001, 29.190000000000001, 15.65, 16.690000000000001, 22.48, 21.289999999999999, 21.260000000000002, 19.829999999999998, 27.776438225624439, 30.870000000000001, 11.77, 23.760000000000002, 45.170000000000002, 29.489999999999998, 34.729999999999997, 40.079999999999998, 30, 47.68, 67.189999999999998, 29.920000000000002, 27.776438225624439, 84.620000000000005, 52.549999999999997, 27.776438225624439, 36.359999999999999, 27.776438225624439, 51.159999999999997, 40.049999999999997, 27.776438225624439, 27.776438225624439, 27.776438225624439, 27.776438225624439, 72.849999999999994, 27.776438225624439, 27.776438225624439, 76.040000000000006, 47.32, 49.969999999999999, 27.776438225624439, 27.776438225624439, 27.776438225624439, 27.776438225624439, 27.776438225624439, 27.776438225624439, 27.776438225624439, 27.776438225624439, 27.776438225624439, 27.776438225624439, 27.776438225624439, 27.776438225624439, 27.776438225624439, 27.776438225624439, 12.460000000000001, 31.850000000000001, 20.07, 20.07, 20.07, 20.07, 27.960000000000001],
+          "text": ["Germany", "France", "Saint Pierre and Miquelon", "French Southern Territories", "Italy", "Malta", "Greece", "Cyprus", "Spain", "Portugal", "Austria", "Netherlands", "Belgium", "Luxembourg", "Poland", "Czech Republic", "Slovakia", "Lithuania", "Latvia", "Estonia", "Sweden", "Denmark", "Greenland", "Faroe Islands", "Finland", "Aland Islands", "Romania", "Hungary", "Bulgaria", "Croatia", "Slovenia", "Ireland", "United Kingdom", "Jersey", "Isle of Man", "Guernsey", "Gibraltar", "British Indian Ocean Territory", "Norway", "Svalbard and Jan Mayen", "Switzerland", "Liechtenstein", "Iceland", "Ukraine", "Albania", "Serbia", "Georgia", "Bosnia and Herzegovina", "Moldova, Republic of", "Macedonia, the former Yugoslav Republic of", "Montenegro", "Andorra", "Monaco", "San Marino", "Holy See (Vatican City State)", "Turkey", "Russian Federation", "Kazakhstan", "Uzbekistan", "Korea, Democratic People's Republic of", "Azerbaijan", "Belarus", "Tajikistan", "Turkmenistan", "Kyrgyzstan", "Mongolia", "Armenia", "Japan", "China", "Taiwan, Province of China", "Hong Kong", "Macao", "India", "Indonesia", "Viet Nam", "Philippines", "Thailand", "Singapore", "Myanmar", "Malaysia", "Sri Lanka", "Cambodia", "Papua New Guinea", "Lao People's Democratic Republic", "Timor-Leste", "Fiji", "Solomon Islands", "Maldives", "Brunei Darussalam", "New Caledonia", "French Polynesia", "Vanuatu", "Samoa", "Guam", "Kiribati", "Micronesia, Federated States of", "Tonga", "American Samoa", "Northern Mariana Islands", "Marshall Islands", "Palau", "Cook Islands", "Wallis and Futuna", "Tuvalu", "Nauru", "Niue", "Norfolk Island", "Tokelau", "United States Minor Outlying Islands", "Pitcairn", "Korea, Republic of", "Bangladesh", "Pakistan", "Afghanistan", "Nepal", "Bhutan", "Iran, Islamic Republic of", "Iraq", "Yemen", "Syrian Arab Republic", "Jordan", "United Arab Emirates", "Israel", "Lebanon", "Palestine, State of", "Oman", "Kuwait", "Qatar", "Bahrain", "Saudi Arabia", "Egypt", "Sudan", "Algeria", "Morocco", "Niger", "Mali", "Chad", "Tunisia", "Libya", "Mauritania", "Western Sahara", "South Africa", "Nigeria", "Congo, the Democratic Republic of the", "Ethiopia", "Tanzania, United Republic of", "Kenya", "Uganda", "Ghana", "Angola", "Mozambique", "Madagascar", "Cote d Ivoire", "Cameroon", "Burkina Faso", "Malawi", "Zambia", "Senegal", "Zimbabwe", "Somalia", "Guinea", "Rwanda", "Benin", "South Sudan", "Burundi", "Togo", "Sierra Leone", "Congo", "Liberia", "Central African Republic", "Eritrea", "Namibia", "Gambia", "Botswana", "Lesotho", "Gabon", "Guinea-Bissau", "Equatorial Guinea", "Mauritius", "Swaziland", "Djibouti", "Reunion", "Comoros", "Cape Verde", "Mayotte", "Sao Tome and Principe", "Seychelles", "Saint Helena, Ascension and Tristan da Cunha", "Brazil", "Mexico", "Argentina", "Chile", "Colombia", "Venezuela, Bolivarian Republic of", "Uruguay", "Peru", "Ecuador", "Guatemala", "Cuba", "Bolivia, Plurinational State of", "Haiti", "Dominican Republic", "Honduras", "El Salvador", "Paraguay", "Nicaragua", "Costa Rica", "Panama", "Puerto Rico", "Jamaica", "Trinidad and Tobago", "Guyana", "Suriname", "Guadeloupe", "Bahamas", "Martinique", "Belize", "Barbados", "French Guiana", "Saint Lucia", "Curacao", "Grenada", "Aruba", "Virgin Islands, U.S.", "Saint Vincent and the Grenadines", "Antigua and Barbuda", "Dominica", "Bermuda", "Cayman Islands", "Saint Kitts and Nevis", "Sint Maarten (Dutch part)", "Saint Martin (French part)", "Turks and Caicos Islands", "Virgin Islands, British", "Bonaire, Sint Eustatius and Saba", "Anguilla", "Saint Barthelemy", "Montserrat", "Falkland Islands (Malvinas)", "Antarctica", "South Georgia and the South Sandwich Islands", "Bouvet Island", "United States", "Canada", "Australia", "Christmas Island", "Cocos (Keeling) Islands", "Heard Island and McDonald Islands", "New Zealand"],
+          "zmin": 0,
+          "zmax": 240,
+          "frame": "2015",
+          "type": "choropleth",
+          "marker": {
+            "line": {
+              "color": "rgba(31,119,180,1)"
+            }
+          },
+          "visible": true
+        }
+      ],
+      "traces": [0]
+    },
+    {
+      "name": "2016",
+      "data": [
+        {
+          "colorbar": {
+            "title": "Exports of goods and services",
+            "ticklen": 2
+          },
+          "colorscale": [
+            ["0", "#de5842"],
+            ["1e-05", "#188AF0"],
+            ["1", "#00D4B0"]
+          ],
+          "showscale": true,
+          "locations": ["DEU", "FRA", "SPM", "ATF", "ITA", "MLT", "GRC", "CYP", "ESP", "PRT", "AUT", "NLD", "BEL", "LUX", "POL", "CZE", "SVK", "LTU", "LVA", "EST", "SWE", "DNK", "GRL", "FRO", "FIN", "ALA", "ROU", "HUN", "BGR", "HRV", "SVN", "IRL", "GBR", "JEY", "IMN", "GGY", "GIB", "IOT", "NOR", "SJM", "CHE", "LIE", "ISL", "UKR", "ALB", "SRB", "GEO", "BIH", "MDA", "MKD", "MNE", "AND", "MCO", "SMR", "VAT", "TUR", "RUS", "KAZ", "UZB", "PRK", "AZE", "BLR", "TJK", "TKM", "KGZ", "MNG", "ARM", "JPN", "CHN", "TWN", "HKG", "MAC", "IND", "IDN", "VNM", "PHL", "THA", "SGP", "MMR", "MYS", "LKA", "KHM", "PNG", "LAO", "TLS", "FJI", "SLB", "MDV", "BRN", "NCL", "PYF", "VUT", "WSM", "GUM", "KIR", "FSM", "TON", "ASM", "MNP", "MHL", "PLW", "COK", "WLF", "NRU", "TUV", "NIU", "NFK", "TKL", "UMI", "PCN", "KOR", "BGD", "PAK", "AFG", "NPL", "BTN", "IRN", "IRQ", "YEM", "SYR", "JOR", "ARE", "ISR", "LBN", "OMN", "PSE", "KWT", "QAT", "BHR", "SAU", "EGY", "SDN", "DZA", "MAR", "NER", "MLI", "TCD", "TUN", "LBY", "MRT", "ESH", "ZAF", "NGA", "COD", "ETH", "TZA", "KEN", "UGA", "GHA", "AGO", "MOZ", "MDG", "CIV", "CMR", "BFA", "MWI", "ZMB", "SEN", "ZWE", "SOM", "GIN", "RWA", "BEN", "BDI", "SSD", "TGO", "SLE", "COG", "LBR", "CAF", "ERI", "NAM", "GMB", "BWA", "LSO", "GAB", "GNB", "GNQ", "MUS", "SWZ", "DJI", "REU", "COM", "CPV", "MYT", "STP", "SYC", "SHN", "BRA", "MEX", "ARG", "CHL", "COL", "VEN", "URY", "PER", "ECU", "GTM", "CUB", "BOL", "HTI", "DOM", "HND", "PRY", "NIC", "SLV", "CRI", "PAN", "PRI", "JAM", "TTO", "GUY", "SUR", "GLP", "BHS", "MTQ", "BLZ", "BRB", "GUF", "LCA", "CUW", "GRD", "ABW", "VIR", "VCT", "ATG", "DMA", "BMU", "CYM", "KNA", "TCA", "SXM", "MAF", "VGB", "BES", "AIA", "BLM", "MSR", "FLK", "ATA", "SGS", "BVT", "USA", "CAN", "AUS", "CXR", "CCK", "HMD", "NZL"],
+          "z": [46.07, 30.25, 30.25, 30.25, 29.329999999999998, 157.80000000000001, 31.289999999999999, 70.480000000000004, 33.859999999999999, 40.210000000000001, 52.409999999999997, 79.540000000000006, 79.430000000000007, 191.09999999999999, 50.270000000000003, 79.109999999999999, 93.469999999999999, 67.590000000000003, 59.609999999999999, 77.010000000000005, 42.689999999999998, 53.43, 53.43950329503862, 54.539999999999999, 34.810000000000002, 34.810000000000002, 42.420000000000002, 86.400000000000006, 63.869999999999997, 46.859999999999999, 77.599999999999994, 121.7, 28.649999999999999, 28.649999999999999, 28.649999999999999, 28.649999999999999, 28.649999999999999, 19.16, 35.939999999999998, 35.939999999999998, 66.819999999999993, 66.819999999999993, 47.479999999999997, 49.299999999999997, 28.98, 48.520000000000003, 40.799999999999997, 35.909999999999997, 32.869999999999997, 50.659999999999997, 40.600000000000001, 43.23213606499904, 43.23213606499904, 173.06999999999999, 43.23213606499904, 23.079999999999998, 25.850000000000001, 31.84, 12.33, 27.796763869537042, 46.43, 62.509999999999998, 13.199999999999999, 22.149999999999999, 35.829999999999998, 50.869999999999997, 33.740000000000002, 16.059999999999999, 19.579999999999998, 20.486732725830326, 187.00999999999999, 76.640000000000001, 19.16, 19.09, 74.109999999999999, 26.670000000000002, 67.069999999999993, 164.66999999999999, 22.98, 66.780000000000001, 19.82, 61.280000000000001, 72.159999999999997, 33.210000000000001, 40.990376344944245, 46.649999999999999, 40, 71.980000000000004, 49.579999999999998, 19.27, 40.990376344944245, 48.869999999999997, 28.780000000000001, 40.990376344944245, 19.219999999999999, 27.649999999999999, 21.68, 40.990376344944245, 40.990376344944245, 40.990376344944245, 40.990376344944245, 40.990376344944245, 40.990376344944245, 40.990376344944245, 40.990376344944245, 40.990376344944245, 40.990376344944245, 40.990376344944245, 40.990376344944245, 40.990376344944245, 40.130000000000003, 13.92, 8.7400000000000002, 8.7386197893150221, 8.1799999999999997, 29.620000000000001, 21.16, 28.109999999999999, 5.9800000000000004, 21.68, 34.399999999999999, 97.659999999999997, 29.949999999999999, 21.73, 41.32, 14.33, 47.630000000000003, 47.710000000000001, 74.200000000000003, 30.16, 10.35, 5, 20.870000000000001, 30.73, 12.18, 23.440000000000001, 26.300000000000001, 38.299999999999997, 14.58, 33.93, 20.122840769312958, 28.16, 9.2200000000000006, 23.960000000000001, 7.8099999999999996, 16.350000000000001, 13.25, 12.43, 31.190000000000001, 28.120000000000001, 33.549999999999997, 29.09, 24.940000000000001, 18.949999999999999, 25.920000000000002, 23.045260823834031, 35.32, 21.559999999999999, 19.940000000000001, 19.280000000000001, 29.370000000000001, 15.42, 27.609999999999999, 6.3799999999999999, 23.045260823834031, 26.91, 23.699999999999999, 45, 23.045260823834031, 14.82, 18.149999999999999, 35.009999999999998, 15.91, 54.609999999999999, 44.329999999999998, 44.039999999999999, 26.510000000000002, 51.409999999999997, 49.170000000000002, 44.060000000000002, 103.76000000000001, 23.045260823834031, 10.67, 41.469999999999999, 23.045260823834031, 23.045260823834031, 91.760000000000005, 23.045260823834031, 12.470000000000001, 37.039999999999999, 12.529999999999999, 27.920000000000002, 14.720000000000001, 16.690000000000001, 26.93, 22.600000000000001, 19.5, 18.75, 26.966937996443768, 24.489999999999998, 11.6, 23.91, 42.710000000000001, 37.140000000000001, 38.880000000000003, 28.460000000000001, 31.260000000000002, 41.969999999999999, 68.760000000000005, 31.809999999999999, 26.966937996443768, 84.620000000000005, 52.549999999999997, 26.966937996443768, 33.210000000000001, 26.966937996443768, 46.909999999999997, 36.539999999999999, 26.966937996443768, 26.966937996443768, 26.966937996443768, 26.966937996443768, 71.819999999999993, 26.966937996443768, 26.966937996443768, 72.609999999999999, 44.630000000000003, 49.329999999999998, 26.966937996443768, 26.966937996443768, 26.966937996443768, 26.966937996443768, 26.966937996443768, 26.966937996443768, 26.966937996443768, 26.966937996443768, 26.966937996443768, 26.966937996443768, 26.966937996443768, 26.966937996443768, 26.966937996443768, 26.966937996443768, 11.94, 31.5, 19.27, 19.27, 19.27, 19.27, 26.649999999999999],
+          "text": ["Germany", "France", "Saint Pierre and Miquelon", "French Southern Territories", "Italy", "Malta", "Greece", "Cyprus", "Spain", "Portugal", "Austria", "Netherlands", "Belgium", "Luxembourg", "Poland", "Czech Republic", "Slovakia", "Lithuania", "Latvia", "Estonia", "Sweden", "Denmark", "Greenland", "Faroe Islands", "Finland", "Aland Islands", "Romania", "Hungary", "Bulgaria", "Croatia", "Slovenia", "Ireland", "United Kingdom", "Jersey", "Isle of Man", "Guernsey", "Gibraltar", "British Indian Ocean Territory", "Norway", "Svalbard and Jan Mayen", "Switzerland", "Liechtenstein", "Iceland", "Ukraine", "Albania", "Serbia", "Georgia", "Bosnia and Herzegovina", "Moldova, Republic of", "Macedonia, the former Yugoslav Republic of", "Montenegro", "Andorra", "Monaco", "San Marino", "Holy See (Vatican City State)", "Turkey", "Russian Federation", "Kazakhstan", "Uzbekistan", "Korea, Democratic People's Republic of", "Azerbaijan", "Belarus", "Tajikistan", "Turkmenistan", "Kyrgyzstan", "Mongolia", "Armenia", "Japan", "China", "Taiwan, Province of China", "Hong Kong", "Macao", "India", "Indonesia", "Viet Nam", "Philippines", "Thailand", "Singapore", "Myanmar", "Malaysia", "Sri Lanka", "Cambodia", "Papua New Guinea", "Lao People's Democratic Republic", "Timor-Leste", "Fiji", "Solomon Islands", "Maldives", "Brunei Darussalam", "New Caledonia", "French Polynesia", "Vanuatu", "Samoa", "Guam", "Kiribati", "Micronesia, Federated States of", "Tonga", "American Samoa", "Northern Mariana Islands", "Marshall Islands", "Palau", "Cook Islands", "Wallis and Futuna", "Nauru", "Tuvalu", "Niue", "Norfolk Island", "Tokelau", "United States Minor Outlying Islands", "Pitcairn", "Korea, Republic of", "Bangladesh", "Pakistan", "Afghanistan", "Nepal", "Bhutan", "Iran, Islamic Republic of", "Iraq", "Yemen", "Syrian Arab Republic", "Jordan", "United Arab Emirates", "Israel", "Lebanon", "Oman", "Palestine, State of", "Kuwait", "Qatar", "Bahrain", "Saudi Arabia", "Egypt", "Sudan", "Algeria", "Morocco", "Niger", "Mali", "Chad", "Tunisia", "Libya", "Mauritania", "Western Sahara", "South Africa", "Nigeria", "Congo, the Democratic Republic of the", "Ethiopia", "Tanzania, United Republic of", "Kenya", "Uganda", "Ghana", "Angola", "Mozambique", "Madagascar", "Cote d Ivoire", "Cameroon", "Burkina Faso", "Malawi", "Zambia", "Senegal", "Zimbabwe", "Somalia", "Guinea", "Rwanda", "Benin", "Burundi", "South Sudan", "Togo", "Sierra Leone", "Congo", "Liberia", "Central African Republic", "Eritrea", "Namibia", "Gambia", "Botswana", "Lesotho", "Gabon", "Guinea-Bissau", "Equatorial Guinea", "Mauritius", "Swaziland", "Djibouti", "Reunion", "Comoros", "Cape Verde", "Mayotte", "Sao Tome and Principe", "Seychelles", "Saint Helena, Ascension and Tristan da Cunha", "Brazil", "Mexico", "Argentina", "Chile", "Colombia", "Venezuela, Bolivarian Republic of", "Uruguay", "Peru", "Ecuador", "Guatemala", "Cuba", "Bolivia, Plurinational State of", "Haiti", "Dominican Republic", "Honduras", "Paraguay", "Nicaragua", "El Salvador", "Costa Rica", "Panama", "Puerto Rico", "Jamaica", "Trinidad and Tobago", "Guyana", "Suriname", "Guadeloupe", "Bahamas", "Martinique", "Belize", "Barbados", "French Guiana", "Saint Lucia", "Curacao", "Grenada", "Aruba", "Virgin Islands, U.S.", "Saint Vincent and the Grenadines", "Antigua and Barbuda", "Dominica", "Bermuda", "Cayman Islands", "Saint Kitts and Nevis", "Turks and Caicos Islands", "Sint Maarten (Dutch part)", "Saint Martin (French part)", "Virgin Islands, British", "Bonaire, Sint Eustatius and Saba", "Anguilla", "Saint Barthelemy", "Montserrat", "Falkland Islands (Malvinas)", "Antarctica", "South Georgia and the South Sandwich Islands", "Bouvet Island", "United States", "Canada", "Australia", "Christmas Island", "Cocos (Keeling) Islands", "Heard Island and McDonald Islands", "New Zealand"],
+          "zmin": 0,
+          "zmax": 240,
+          "frame": "2016",
+          "type": "choropleth",
+          "marker": {
+            "line": {
+              "color": "rgba(31,119,180,1)"
+            }
+          },
+          "visible": true
+        }
+      ],
+      "traces": [0]
+    },
+    {
+      "name": "2017",
+      "data": [
+        {
+          "colorbar": {
+            "title": "Exports of goods and services",
+            "ticklen": 2
+          },
+          "colorscale": [
+            ["0", "#de5842"],
+            ["1e-05", "#188AF0"],
+            ["1", "#00D4B0"]
+          ],
+          "showscale": true,
+          "locations": ["DEU", "FRA", "SPM", "ATF", "ITA", "MLT", "GRC", "CYP", "ESP", "PRT", "AUT", "NLD", "BEL", "LUX", "POL", "CZE", "SVK", "LTU", "LVA", "EST", "SWE", "DNK", "GRL", "FRO", "FIN", "ALA", "ROU", "HUN", "BGR", "HRV", "SVN", "IRL", "GBR", "JEY", "IMN", "GGY", "GIB", "IOT", "NOR", "SJM", "CHE", "LIE", "ISL", "UKR", "ALB", "SRB", "GEO", "BIH", "MDA", "MKD", "MNE", "AND", "MCO", "SMR", "VAT", "TUR", "RUS", "KAZ", "UZB", "PRK", "AZE", "BLR", "TJK", "TKM", "KGZ", "MNG", "ARM", "JPN", "CHN", "TWN", "HKG", "MAC", "IND", "IDN", "VNM", "PHL", "THA", "SGP", "MMR", "MYS", "LKA", "KHM", "PNG", "LAO", "TLS", "FJI", "SLB", "MDV", "BRN", "NCL", "PYF", "VUT", "WSM", "GUM", "KIR", "FSM", "TON", "ASM", "MNP", "MHL", "PLW", "COK", "WLF", "NRU", "TUV", "NIU", "NFK", "TKL", "UMI", "PCN", "KOR", "BGD", "PAK", "AFG", "NPL", "BTN", "IRN", "IRQ", "YEM", "SYR", "JOR", "ARE", "ISR", "LBN", "OMN", "PSE", "KWT", "QAT", "BHR", "SAU", "EGY", "SDN", "DZA", "MAR", "NER", "MLI", "TCD", "TUN", "LBY", "MRT", "ESH", "ZAF", "NGA", "COD", "ETH", "TZA", "KEN", "UGA", "AGO", "GHA", "MOZ", "MDG", "CIV", "CMR", "BFA", "MWI", "ZMB", "SEN", "SOM", "ZWE", "GIN", "RWA", "BEN", "BDI", "SSD", "TGO", "SLE", "COG", "LBR", "CAF", "ERI", "NAM", "GMB", "BWA", "LSO", "GAB", "GNB", "GNQ", "MUS", "SWZ", "DJI", "REU", "COM", "CPV", "MYT", "STP", "SYC", "SHN", "BRA", "MEX", "ARG", "CHL", "COL", "VEN", "URY", "PER", "ECU", "GTM", "BOL", "CUB", "HTI", "DOM", "HND", "PRY", "NIC", "SLV", "CRI", "PAN", "PRI", "JAM", "TTO", "GUY", "SUR", "GLP", "BHS", "MTQ", "BLZ", "BRB", "GUF", "LCA", "CUW", "GRD", "ABW", "VIR", "VCT", "ATG", "DMA", "CYM", "BMU", "KNA", "TCA", "SXM", "MAF", "VGB", "BES", "AIA", "BLM", "MSR", "FLK", "ATA", "SGS", "BVT", "USA", "CAN", "AUS", "CXR", "CCK", "HMD", "NZL"],
+          "z": [47.159999999999997, 30.949999999999999, 30.949999999999996, 30.949999999999996, 30.73, 154.66999999999999, 35.030000000000001, 73.840000000000003, 35.130000000000003, 42.719999999999999, 54.049999999999997, 83.390000000000001, 83.180000000000007, 192.75, 52.060000000000002, 79.030000000000001, 95.069999999999993, 73.599999999999994, 61.590000000000003, 75.810000000000002, 43.729999999999997, 55.079999999999998, 55.09104577310142, 56.359999999999999, 37.549999999999997, 37.549999999999997, 42.329999999999998, 85.920000000000002, 66.989999999999995, 49.109999999999999, 83.129999999999995, 121.02, 30.670000000000002, 30.670000000000002, 30.670000000000002, 30.670000000000002, 30.670000000000002, 18.789999999999999, 36.729999999999997, 36.729999999999997, 66.349999999999994, 66.349999999999994, 45.729999999999997, 48.119999999999997, 31.57, 50.469999999999999, 46.530000000000001, 40.32, 32.530000000000001, 55.149999999999999, 41.060000000000002, 46.151741378089277, 46.151741378089277, 168.78, 46.151741378089277, 26.039999999999999, 26.09, 32.399999999999999, 20.75, 32.446756456694764, 48.549999999999997, 66.790000000000006, 14.93, 22.469999999999999, 34.25, 59.170000000000002, 38.219999999999999, 17.59, 19.690000000000001, 20.608915867655529, 188.90000000000001, 80.439999999999998, 18.789999999999999, 20.18, 81.760000000000005, 29.550000000000001, 66.670000000000002, 171.56, 25.940000000000001, 70.010000000000005, 20.219999999999999, 60.68, 72.159999999999997, 33.210000000000001, 42.900381059979104, 46.020000000000003, 40.390000000000001, 72.310000000000002, 49.57, 21.010000000000002, 42.900381059979104, 47.659999999999997, 29.66, 42.900381059979104, 15.67, 29.960000000000001, 22.16, 42.900381059979104, 42.900381059979104, 42.900381059979104, 42.900381059979104, 42.900381059979104, 42.900381059979104, 42.900381059979104, 42.900381059979104, 42.900381059979104, 42.900381059979104, 42.900381059979104, 42.900381059979104, 42.900381059979104, 40.93, 12.82, 8.2200000000000006, 8.3939977103896304, 7.8099999999999996, 30.079999999999998, 22.739999999999998, 33.920000000000002, 8.7100000000000009, 19.34, 34.710000000000001, 98.340000000000003, 29.239999999999998, 21.93, 45.719999999999999, 15.720000000000001, 51.200000000000003, 52.890000000000001, 75.780000000000001, 33.57, 15.01, 6.1100000000000003, 22.629999999999999, 32.609999999999999, 13.289999999999999, 22.210000000000001, 33.869999999999997, 41.719999999999999, 27.199999999999999, 34.509999999999998, 22.220670751278938, 27.34, 13.17, 35.25, 7.6299999999999999, 15.66, 12.74, 16.66, 29, 33.880000000000003, 38.579999999999998, 30.899999999999999, 25.5, 18.350000000000001, 26.449999999999999, 24.606420780805568, 34.990000000000002, 21.93, 17.719999999999999, 19.66, 44.659999999999997, 20.530000000000001, 27.210000000000001, 6.0300000000000002, 24.606420780805568, 25.27, 26.190000000000001, 58.060000000000002, 24.606420780805568, 17.260000000000002, 18.149999999999999, 33.619999999999997, 16.789999999999999, 42.920000000000002, 46.030000000000001, 50.229999999999997, 27.77, 58.859999999999999, 48.159999999999997, 43.509999999999998, 150.09999999999999, 24.606420780805568, 11.9, 42.07, 24.606420780805568, 24.606420780805568, 102.84999999999999, 24.606420780805568, 12.52, 37.649999999999999, 11.32, 28.329999999999998, 15.15, 16.690000000000001, 25.93, 24.719999999999999, 20.829999999999998, 18.5, 24.899999999999999, 27.784736335679963, 11, 23.68, 43.090000000000003, 38.170000000000002, 41.340000000000003, 29.030000000000001, 32.759999999999998, 41.799999999999997, 68.719999999999999, 34.659999999999997, 27.784736335679963, 84.620000000000005, 52.549999999999997, 27.784736335679963, 32.390000000000001, 27.784736335679963, 49.369999999999997, 35.75, 27.784736335679963, 27.784736335679963, 27.784736335679963, 27.784736335679963, 72.549999999999997, 27.784736335679963, 27.784736335679963, 67.739999999999995, 40.880000000000003, 27.784736335679963, 48.539999999999999, 27.784736335679963, 27.784736335679963, 27.784736335679963, 27.784736335679963, 27.784736335679963, 27.784736335679963, 27.784736335679963, 27.784736335679963, 27.784736335679963, 27.784736335679963, 27.784736335679963, 27.784736335679963, 27.784736335679963, 12.26, 31.449999999999999, 21.23, 21.23, 21.23, 21.23, 27.59],
+          "text": ["Germany", "France", "Saint Pierre and Miquelon", "French Southern Territories", "Italy", "Malta", "Greece", "Cyprus", "Spain", "Portugal", "Austria", "Netherlands", "Belgium", "Luxembourg", "Poland", "Czech Republic", "Slovakia", "Lithuania", "Latvia", "Estonia", "Sweden", "Denmark", "Greenland", "Faroe Islands", "Finland", "Aland Islands", "Romania", "Hungary", "Bulgaria", "Croatia", "Slovenia", "Ireland", "United Kingdom", "Jersey", "Isle of Man", "Guernsey", "Gibraltar", "British Indian Ocean Territory", "Norway", "Svalbard and Jan Mayen", "Switzerland", "Liechtenstein", "Iceland", "Ukraine", "Albania", "Serbia", "Georgia", "Bosnia and Herzegovina", "Moldova, Republic of", "Macedonia, the former Yugoslav Republic of", "Montenegro", "Andorra", "Monaco", "San Marino", "Holy See (Vatican City State)", "Turkey", "Russian Federation", "Kazakhstan", "Uzbekistan", "Korea, Democratic People's Republic of", "Azerbaijan", "Belarus", "Tajikistan", "Turkmenistan", "Kyrgyzstan", "Mongolia", "Armenia", "Japan", "China", "Taiwan, Province of China", "Hong Kong", "Macao", "India", "Indonesia", "Viet Nam", "Philippines", "Thailand", "Singapore", "Myanmar", "Malaysia", "Sri Lanka", "Cambodia", "Papua New Guinea", "Lao People's Democratic Republic", "Timor-Leste", "Fiji", "Solomon Islands", "Maldives", "Brunei Darussalam", "New Caledonia", "French Polynesia", "Vanuatu", "Samoa", "Guam", "Kiribati", "Micronesia, Federated States of", "Tonga", "American Samoa", "Northern Mariana Islands", "Marshall Islands", "Palau", "Cook Islands", "Wallis and Futuna", "Nauru", "Tuvalu", "Niue", "Norfolk Island", "Tokelau", "United States Minor Outlying Islands", "Pitcairn", "Korea, Republic of", "Bangladesh", "Pakistan", "Afghanistan", "Nepal", "Bhutan", "Iran, Islamic Republic of", "Iraq", "Yemen", "Syrian Arab Republic", "Jordan", "United Arab Emirates", "Israel", "Lebanon", "Oman", "Palestine, State of", "Kuwait", "Qatar", "Bahrain", "Saudi Arabia", "Egypt", "Sudan", "Algeria", "Morocco", "Niger", "Mali", "Chad", "Tunisia", "Libya", "Mauritania", "Western Sahara", "South Africa", "Nigeria", "Congo, the Democratic Republic of the", "Ethiopia", "Tanzania, United Republic of", "Kenya", "Uganda", "Angola", "Ghana", "Mozambique", "Madagascar", "Cote d Ivoire", "Cameroon", "Burkina Faso", "Malawi", "Zambia", "Senegal", "Somalia", "Zimbabwe", "Guinea", "Rwanda", "Benin", "Burundi", "South Sudan", "Togo", "Sierra Leone", "Congo", "Liberia", "Central African Republic", "Eritrea", "Namibia", "Gambia", "Botswana", "Lesotho", "Gabon", "Guinea-Bissau", "Equatorial Guinea", "Mauritius", "Swaziland", "Djibouti", "Reunion", "Comoros", "Cape Verde", "Mayotte", "Sao Tome and Principe", "Seychelles", "Saint Helena, Ascension and Tristan da Cunha", "Brazil", "Mexico", "Argentina", "Chile", "Colombia", "Venezuela, Bolivarian Republic of", "Uruguay", "Peru", "Ecuador", "Guatemala", "Bolivia, Plurinational State of", "Cuba", "Haiti", "Dominican Republic", "Honduras", "Paraguay", "Nicaragua", "El Salvador", "Costa Rica", "Panama", "Puerto Rico", "Jamaica", "Trinidad and Tobago", "Guyana", "Suriname", "Guadeloupe", "Bahamas", "Martinique", "Belize", "Barbados", "French Guiana", "Saint Lucia", "Curacao", "Grenada", "Aruba", "Virgin Islands, U.S.", "Saint Vincent and the Grenadines", "Antigua and Barbuda", "Dominica", "Cayman Islands", "Bermuda", "Saint Kitts and Nevis", "Turks and Caicos Islands", "Sint Maarten (Dutch part)", "Saint Martin (French part)", "Virgin Islands, British", "Bonaire, Sint Eustatius and Saba", "Anguilla", "Saint Barthelemy", "Montserrat", "Falkland Islands (Malvinas)", "Antarctica", "South Georgia and the South Sandwich Islands", "Bouvet Island", "United States", "Canada", "Australia", "Christmas Island", "Cocos (Keeling) Islands", "Heard Island and McDonald Islands", "New Zealand"],
+          "zmin": 0,
+          "zmax": 240,
+          "frame": "2017",
+          "type": "choropleth",
+          "marker": {
+            "line": {
+              "color": "rgba(31,119,180,1)"
+            }
+          },
+          "visible": true
+        }
+      ],
+      "traces": [0]
+    },
+    {
+      "name": "2018",
+      "data": [
+        {
+          "colorbar": {
+            "title": "Exports of goods and services",
+            "ticklen": 2
+          },
+          "colorscale": [
+            ["0", "#de5842"],
+            ["1e-05", "#188AF0"],
+            ["1", "#00D4B0"]
+          ],
+          "showscale": true,
+          "locations": ["DEU", "FRA", "SPM", "ATF", "ITA", "MLT", "GRC", "CYP", "ESP", "PRT", "AUT", "NLD", "BEL", "LUX", "POL", "CZE", "SVK", "LTU", "LVA", "EST", "SWE", "DNK", "GRL", "FRO", "FIN", "ALA", "ROU", "HUN", "BGR", "HRV", "SVN", "IRL", "GBR", "JEY", "IMN", "GGY", "GIB", "IOT", "NOR", "SJM", "CHE", "LIE", "ISL", "UKR", "ALB", "SRB", "GEO", "BIH", "MDA", "MKD", "MNE", "AND", "MCO", "SMR", "VAT", "TUR", "RUS", "KAZ", "UZB", "PRK", "AZE", "BLR", "TJK", "TKM", "KGZ", "MNG", "ARM", "JPN", "CHN", "TWN", "HKG", "MAC", "IND", "IDN", "VNM", "PHL", "THA", "SGP", "MMR", "MYS", "LKA", "KHM", "PNG", "LAO", "TLS", "FJI", "SLB", "MDV", "BRN", "VUT", "NCL", "PYF", "WSM", "GUM", "KIR", "FSM", "TON", "ASM", "MNP", "MHL", "PLW", "COK", "WLF", "NRU", "TUV", "NIU", "NFK", "TKL", "UMI", "PCN", "KOR", "BGD", "PAK", "AFG", "NPL", "BTN", "IRN", "IRQ", "YEM", "SYR", "JOR", "ARE", "ISR", "LBN", "OMN", "PSE", "KWT", "QAT", "BHR", "SAU", "EGY", "SDN", "DZA", "MAR", "NER", "MLI", "TCD", "TUN", "LBY", "MRT", "ESH", "ZAF", "NGA", "COD", "ETH", "TZA", "KEN", "UGA", "AGO", "GHA", "MOZ", "MDG", "CIV", "CMR", "BFA", "MWI", "ZMB", "SEN", "SOM", "ZWE", "GIN", "RWA", "BEN", "BDI", "SSD", "TGO", "SLE", "COG", "LBR", "CAF", "ERI", "NAM", "GMB", "BWA", "GAB", "LSO", "GNB", "GNQ", "MUS", "SWZ", "DJI", "REU", "COM", "CPV", "MYT", "STP", "SYC", "SHN", "BRA", "MEX", "ARG", "CHL", "COL", "VEN", "URY", "PER", "ECU", "GTM", "BOL", "CUB", "HTI", "DOM", "HND", "PRY", "NIC", "SLV", "CRI", "PAN", "PRI", "JAM", "TTO", "GUY", "SUR", "GLP", "BHS", "BLZ", "MTQ", "BRB", "GUF", "LCA", "CUW", "GRD", "ABW", "VIR", "VCT", "ATG", "DMA", "CYM", "BMU", "KNA", "TCA", "SXM", "MAF", "VGB", "BES", "AIA", "BLM", "MSR", "FLK", "ATA", "SGS", "BVT", "USA", "CAN", "AUS", "CXR", "CCK", "HMD", "NZL"],
+          "z": [47.310000000000002, 31.710000000000001, 31.709999999999997, 31.709999999999997, 31.350000000000001, 162.80000000000001, 38.990000000000002, 74.969999999999999, 35.149999999999999, 43.450000000000003, 55.460000000000001, 84.680000000000007, 83.079999999999998, 197.5, 52.75, 76.939999999999998, 95.840000000000003, 75.209999999999994, 61.460000000000001, 74.319999999999993, 45.68, 56.560000000000002, 56.527366216601422, 52.82, 38.469999999999999, 38.469999999999999, 41.539999999999999, 83.760000000000005, 65.700000000000003, 49.390000000000001, 84.790000000000006, 122.78, 31.23, 31.23, 31.23, 31.23, 31.23, 19.93, 38.219999999999999, 38.219999999999999, 67.480000000000004, 67.480000000000004, 46.049999999999997, 45.240000000000002, 31.57, 50.43, 50.560000000000002, 41.979999999999997, 30.699999999999999, 60.380000000000003, 42.880000000000003, 47.429932684020166, 47.429932684020166, 166.59999999999999, 47.429932684020166, 31.149999999999999, 30.789999999999999, 37.630000000000003, 26.84, 36.241692242723971, 54.090000000000003, 70.450000000000003, 14.380000000000001, 29.899999999999999, 31.600000000000001, 58.159999999999997, 39.390000000000001, 18.309999999999999, 19.109999999999999, 20.033536222823976, 188.34, 82.530000000000001, 19.93, 21, 84.420000000000002, 30.210000000000001, 64.840000000000003, 177.34999999999999, 28.359999999999999, 68.549999999999997, 21.449999999999999, 61.600000000000001, 72.159999999999997, 33.210000000000001, 43.837366054612744, 47.75, 42.130000000000003, 70.109999999999999, 51.93, 41.600000000000001, 21.010000000000002, 43.837366054612744, 31.969999999999999, 43.837366054612744, 10.76, 35.469999999999999, 21.41, 43.837366054612744, 43.837366054612744, 43.837366054612744, 43.837366054612744, 43.837366054612744, 43.837366054612744, 43.837366054612744, 43.837366054612744, 43.837366054612744, 43.837366054612744, 43.837366054612744, 43.837366054612744, 43.837366054612744, 41.710000000000001, 12.67, 8.5800000000000001, 8.4259220342913643, 7.8200000000000003, 30.82, 30.219999999999999, 40.799999999999997, 6.0599999999999996, 14.92, 35.130000000000003, 91.989999999999995, 29.890000000000001, 20.75, 50.619999999999997, 15.960000000000001, 57.5, 55.939999999999998, 79.25, 37.200000000000003, 17.98, 7.6500000000000004, 25.859999999999999, 33.829999999999998, 11.84, 24.52, 36.189999999999998, 45.490000000000002, 39.609999999999999, 36.590000000000003, 24.295285825280686, 27.559999999999999, 15.5, 32.549999999999997, 8.3699999999999992, 14.74, 12.539999999999999, 15.09, 40.840000000000003, 33.450000000000003, 44.869999999999997, 31.539999999999999, 22.690000000000001, 18.739999999999998, 28.079999999999998, 25.70959899774374, 37.960000000000001, 22.949999999999999, 19.109999999999999, 26.16, 40.210000000000001, 21.109999999999999, 27.27, 5.6900000000000004, 25.70959899774374, 24.640000000000001, 17.469999999999999, 71.030000000000001, 25.70959899774374, 15.94, 18.149999999999999, 35.880000000000003, 21.73, 44.229999999999997, 54.299999999999997, 48.810000000000002, 25.280000000000001, 59.609999999999999, 46.100000000000001, 40.43, 156.62, 25.70959899774374, 12.91, 45.869999999999997, 25.70959899774374, 25.70959899774374, 97.819999999999993, 25.70959899774374, 14.630000000000001, 39.259999999999998, 14.44, 28.530000000000001, 15.9, 16.690000000000001, 26.5, 25.190000000000001, 22.600000000000001, 18.170000000000002, 25.989999999999998, 27.857783012593991, 10.779999999999999, 23.550000000000001, 41.450000000000003, 36.850000000000001, 42.280000000000001, 28.93, 33.740000000000002, 41.799999999999997, 59.950000000000003, 38.560000000000002, 27.857783012593991, 84.620000000000005, 52.549999999999997, 27.857783012593991, 35.93, 51.079999999999998, 27.857783012593991, 35.520000000000003, 27.857783012593991, 27.857783012593991, 27.857783012593991, 27.857783012593991, 72.25, 27.857783012593991, 27.857783012593991, 64.569999999999993, 29.190000000000001, 27.857783012593991, 51.479999999999997, 27.857783012593991, 27.857783012593991, 27.857783012593991, 27.857783012593991, 27.857783012593991, 27.857783012593991, 27.857783012593991, 27.857783012593991, 27.857783012593991, 27.857783012593991, 27.857783012593991, 27.857783012593991, 27.857783012593991, 12.359999999999999, 32.329999999999998, 21.870000000000001, 21.870000000000001, 21.870000000000001, 21.870000000000001, 27.879999999999999],
+          "text": ["Germany", "France", "Saint Pierre and Miquelon", "French Southern Territories", "Italy", "Malta", "Greece", "Cyprus", "Spain", "Portugal", "Austria", "Netherlands", "Belgium", "Luxembourg", "Poland", "Czech Republic", "Slovakia", "Lithuania", "Latvia", "Estonia", "Sweden", "Denmark", "Greenland", "Faroe Islands", "Finland", "Aland Islands", "Romania", "Hungary", "Bulgaria", "Croatia", "Slovenia", "Ireland", "United Kingdom", "Jersey", "Isle of Man", "Guernsey", "Gibraltar", "British Indian Ocean Territory", "Norway", "Svalbard and Jan Mayen", "Switzerland", "Liechtenstein", "Iceland", "Ukraine", "Albania", "Serbia", "Georgia", "Bosnia and Herzegovina", "Moldova, Republic of", "Macedonia, the former Yugoslav Republic of", "Montenegro", "Andorra", "Monaco", "San Marino", "Holy See (Vatican City State)", "Turkey", "Russian Federation", "Kazakhstan", "Uzbekistan", "Korea, Democratic People's Republic of", "Azerbaijan", "Belarus", "Tajikistan", "Turkmenistan", "Kyrgyzstan", "Mongolia", "Armenia", "Japan", "China", "Taiwan, Province of China", "Hong Kong", "Macao", "India", "Indonesia", "Viet Nam", "Philippines", "Thailand", "Singapore", "Myanmar", "Malaysia", "Sri Lanka", "Cambodia", "Papua New Guinea", "Lao People's Democratic Republic", "Timor-Leste", "Fiji", "Solomon Islands", "Maldives", "Brunei Darussalam", "Vanuatu", "New Caledonia", "French Polynesia", "Samoa", "Guam", "Kiribati", "Micronesia, Federated States of", "Tonga", "American Samoa", "Northern Mariana Islands", "Marshall Islands", "Palau", "Cook Islands", "Wallis and Futuna", "Nauru", "Tuvalu", "Niue", "Norfolk Island", "Tokelau", "United States Minor Outlying Islands", "Pitcairn", "Korea, Republic of", "Bangladesh", "Pakistan", "Afghanistan", "Nepal", "Bhutan", "Iran, Islamic Republic of", "Iraq", "Yemen", "Syrian Arab Republic", "Jordan", "United Arab Emirates", "Israel", "Lebanon", "Oman", "Palestine, State of", "Kuwait", "Qatar", "Bahrain", "Saudi Arabia", "Egypt", "Sudan", "Algeria", "Morocco", "Niger", "Mali", "Chad", "Tunisia", "Libya", "Mauritania", "Western Sahara", "South Africa", "Nigeria", "Congo, the Democratic Republic of the", "Ethiopia", "Tanzania, United Republic of", "Kenya", "Uganda", "Angola", "Ghana", "Mozambique", "Madagascar", "Cote d Ivoire", "Cameroon", "Burkina Faso", "Malawi", "Zambia", "Senegal", "Somalia", "Zimbabwe", "Guinea", "Rwanda", "Benin", "Burundi", "South Sudan", "Togo", "Sierra Leone", "Congo", "Liberia", "Central African Republic", "Eritrea", "Namibia", "Gambia", "Botswana", "Gabon", "Lesotho", "Guinea-Bissau", "Equatorial Guinea", "Mauritius", "Swaziland", "Djibouti", "Reunion", "Comoros", "Cape Verde", "Mayotte", "Sao Tome and Principe", "Seychelles", "Saint Helena, Ascension and Tristan da Cunha", "Brazil", "Mexico", "Argentina", "Chile", "Colombia", "Venezuela, Bolivarian Republic of", "Uruguay", "Peru", "Ecuador", "Guatemala", "Bolivia, Plurinational State of", "Cuba", "Haiti", "Dominican Republic", "Honduras", "Paraguay", "Nicaragua", "El Salvador", "Costa Rica", "Panama", "Puerto Rico", "Jamaica", "Trinidad and Tobago", "Guyana", "Suriname", "Guadeloupe", "Bahamas", "Belize", "Martinique", "Barbados", "French Guiana", "Saint Lucia", "Curacao", "Grenada", "Aruba", "Virgin Islands, U.S.", "Saint Vincent and the Grenadines", "Antigua and Barbuda", "Dominica", "Cayman Islands", "Bermuda", "Saint Kitts and Nevis", "Turks and Caicos Islands", "Sint Maarten (Dutch part)", "Saint Martin (French part)", "Virgin Islands, British", "Bonaire, Sint Eustatius and Saba", "Anguilla", "Saint Barthelemy", "Montserrat", "Falkland Islands (Malvinas)", "Antarctica", "South Georgia and the South Sandwich Islands", "Bouvet Island", "United States", "Canada", "Australia", "Christmas Island", "Cocos (Keeling) Islands", "Heard Island and McDonald Islands", "New Zealand"],
+          "zmin": 0,
+          "zmax": 240,
+          "frame": "2018",
+          "type": "choropleth",
+          "marker": {
+            "line": {
+              "color": "rgba(31,119,180,1)"
+            }
+          },
+          "visible": true
+        }
+      ],
+      "traces": [0]
+    },
+    {
+      "name": "2019",
+      "data": [
+        {
+          "colorbar": {
+            "title": "Exports of goods and services",
+            "ticklen": 2
+          },
+          "colorscale": [
+            ["0", "#de5842"],
+            ["1e-05", "#188AF0"],
+            ["1", "#00D4B0"]
+          ],
+          "showscale": true,
+          "locations": ["DEU", "FRA", "SPM", "ATF", "ITA", "MLT", "GRC", "CYP", "ESP", "PRT", "AUT", "NLD", "BEL", "LUX", "POL", "CZE", "SVK", "LTU", "LVA", "EST", "SWE", "DNK", "GRL", "FRO", "FIN", "ALA", "ROU", "HUN", "BGR", "HRV", "SVN", "IRL", "GBR", "JEY", "IMN", "GGY", "GIB", "IOT", "NOR", "SJM", "CHE", "LIE", "ISL", "UKR", "ALB", "SRB", "GEO", "BIH", "MDA", "MKD", "MNE", "AND", "MCO", "SMR", "VAT", "TUR", "RUS", "KAZ", "UZB", "PRK", "AZE", "TJK", "BLR", "TKM", "KGZ", "MNG", "ARM", "JPN", "CHN", "TWN", "HKG", "MAC", "IND", "IDN", "VNM", "PHL", "THA", "SGP", "MMR", "MYS", "LKA", "KHM", "PNG", "LAO", "TLS", "FJI", "SLB", "MDV", "BRN", "VUT", "NCL", "PYF", "WSM", "GUM", "KIR", "FSM", "TON", "ASM", "MNP", "MHL", "PLW", "COK", "WLF", "NRU", "TUV", "NIU", "NFK", "TKL", "UMI", "PCN", "KOR", "BGD", "PAK", "AFG", "NPL", "BTN", "IRN", "IRQ", "YEM", "SYR", "JOR", "ARE", "ISR", "LBN", "PSE", "OMN", "KWT", "QAT", "BHR", "SAU", "EGY", "SDN", "DZA", "MAR", "NER", "MLI", "TCD", "TUN", "LBY", "MRT", "ESH", "ZAF", "NGA", "COD", "ETH", "TZA", "KEN", "UGA", "AGO", "GHA", "MOZ", "MDG", "CIV", "CMR", "BFA", "MWI", "ZMB", "SEN", "SOM", "ZWE", "GIN", "RWA", "BEN", "BDI", "SSD", "TGO", "SLE", "COG", "LBR", "CAF", "ERI", "NAM", "GMB", "BWA", "GAB", "LSO", "GNB", "GNQ", "MUS", "SWZ", "DJI", "REU", "COM", "CPV", "MYT", "STP", "SYC", "SHN", "BRA", "MEX", "ARG", "CHL", "COL", "VEN", "URY", "PER", "ECU", "GTM", "BOL", "CUB", "HTI", "DOM", "HND", "PRY", "NIC", "SLV", "CRI", "PAN", "PRI", "JAM", "TTO", "GUY", "SUR", "GLP", "BHS", "BLZ", "MTQ", "GUF", "BRB", "LCA", "CUW", "GRD", "ABW", "VIR", "VCT", "ATG", "DMA", "CYM", "BMU", "KNA", "TCA", "SXM", "VGB", "MAF", "BES", "AIA", "BLM", "MSR", "FLK", "ATA", "SGS", "BVT", "USA", "CAN", "AUS", "CXR", "CCK", "HMD", "NZL"],
+          "z": [46.670000000000002, 31.59, 31.589999999999996, 31.589999999999996, 31.600000000000001, 166.78999999999999, 40.109999999999999, 76.489999999999995, 34.909999999999997, 43.509999999999998, 55.759999999999998, 82.540000000000006, 82.400000000000006, 204.31999999999999, 53.200000000000003, 73.879999999999995, 91.909999999999997, 77.310000000000002, 59.810000000000002, 73.879999999999995, 47.810000000000002, 58.649999999999999, 58.623158715403804, 55.609999999999999, 39.880000000000003, 39.880000000000003, 40.200000000000003, 81.530000000000001, 63.93, 50.590000000000003, 83.700000000000003, 127.88, 31.260000000000002, 31.259999999999998, 31.259999999999998, 31.259999999999998, 31.259999999999998, 18.66, 36.640000000000001, 36.640000000000001, 66.969999999999999, 66.969999999999999, 43.670000000000002, 41.229999999999997, 31.300000000000001, 51.009999999999998, 54.82, 40.039999999999999, 31.190000000000001, 62.409999999999997, 43.850000000000001, 48.415373511745507, 48.415373511745507, 164, 48.415373511745507, 32.530000000000001, 28.43, 36.439999999999998, 28.300000000000001, 35.565215413756796, 49.049999999999997, 14.98, 65.090000000000003, 25.300000000000001, 35.229999999999997, 59.219999999999999, 41.350000000000001, 17.460000000000001, 18.41, 19.284792099496237, 177.65000000000001, 82.519999999999996, 18.66, 18.59, 85.159999999999997, 28.379999999999999, 59.520000000000003, 175.59, 30.390000000000001, 65.280000000000001, 21.82, 61.090000000000003, 72.159999999999997, 33.210000000000001, 43.925701108844365, 48.130000000000003, 36.5, 69.430000000000007, 57.950000000000003, 50.350000000000001, 21.010000000000002, 43.925701108844365, 35.030000000000001, 43.925701108844365, 18.559999999999999, 31.48, 21.969999999999999, 43.925701108844365, 43.925701108844365, 43.925701108844365, 43.925701108844365, 43.925701108844365, 43.925701108844365, 43.925701108844365, 43.925701108844365, 43.925701108844365, 43.925701108844365, 43.925701108844365, 43.925701108844365, 43.925701108844365, 39.280000000000001, 13.09, 9.3900000000000006, 8.4656942540099536, 7.7800000000000002, 33.939999999999998, 23.48, 38.049999999999997, 6.0599999999999996, 13.01, 36.670000000000002, 96.659999999999997, 29.300000000000001, 20.699999999999999, 15.52, 49.490000000000002, 53.289999999999999, 52.189999999999998, 76.489999999999995, 34.090000000000003, 16.640000000000001, 8.4499999999999993, 22.710000000000001, 34.090000000000003, 11.42, 25.710000000000001, 36.740000000000002, 45.950000000000003, 42.840000000000003, 41.579999999999998, 24.149800420548644, 27.300000000000001, 14.220000000000001, 25.870000000000001, 7.9400000000000004, 16.039999999999999, 11.43, 17.109999999999999, 40.789999999999999, 37.450000000000003, 32.270000000000003, 28.420000000000002, 23.02, 19.850000000000001, 27.620000000000001, 25.104871832064049, 34.640000000000001, 24.98, 17.440000000000001, 27.16, 35.039999999999999, 21.829999999999998, 29.629999999999999, 5.1699999999999999, 25.104871832064049, 24.23, 18.25, 73.790000000000006, 25.104871832064049, 15.76, 18.149999999999999, 36.399999999999999, 18.84, 37.090000000000003, 51.43, 44.920000000000002, 20.289999999999999, 51.130000000000003, 44.07, 45.939999999999998, 166.72, 25.104871832064049, 12.77, 46.75, 25.104871832064049, 25.104871832064049, 93.549999999999997, 25.104871832064049, 14.119999999999999, 38.82, 17.920000000000002, 27.84, 15.869999999999999, 16.690000000000001, 27.809999999999999, 24.039999999999999, 23.050000000000001, 17.609999999999999, 24.969999999999999, 27.495837795292033, 10.56, 23.07, 39.920000000000002, 36.090000000000003, 44.799999999999997, 29.960000000000001, 34.329999999999998, 41.799999999999997, 60.579999999999998, 38.039999999999999, 27.495837795292033, 84.620000000000005, 52.549999999999997, 27.495837795292033, 35.539999999999999, 51.25, 27.495837795292033, 27.495837795292033, 36.479999999999997, 27.495837795292033, 27.495837795292033, 27.495837795292033, 73.230000000000004, 27.495837795292033, 27.495837795292033, 71.400000000000006, 29.190000000000001, 27.495837795292033, 51.740000000000002, 27.495837795292033, 27.495837795292033, 27.495837795292033, 27.495837795292033, 27.495837795292033, 27.495837795292033, 27.495837795292033, 27.495837795292033, 27.495837795292033, 27.495837795292033, 27.495837795292033, 27.495837795292033, 27.495837795292033, 11.869999999999999, 32.350000000000001, 24.149999999999999, 24.149999999999999, 24.149999999999999, 24.149999999999999, 27.32],
+          "text": ["Germany", "France", "Saint Pierre and Miquelon", "French Southern Territories", "Italy", "Malta", "Greece", "Cyprus", "Spain", "Portugal", "Austria", "Netherlands", "Belgium", "Luxembourg", "Poland", "Czech Republic", "Slovakia", "Lithuania", "Latvia", "Estonia", "Sweden", "Denmark", "Greenland", "Faroe Islands", "Finland", "Aland Islands", "Romania", "Hungary", "Bulgaria", "Croatia", "Slovenia", "Ireland", "United Kingdom", "Jersey", "Isle of Man", "Guernsey", "Gibraltar", "British Indian Ocean Territory", "Norway", "Svalbard and Jan Mayen", "Switzerland", "Liechtenstein", "Iceland", "Ukraine", "Albania", "Serbia", "Georgia", "Bosnia and Herzegovina", "Moldova, Republic of", "Macedonia, the former Yugoslav Republic of", "Montenegro", "Andorra", "Monaco", "San Marino", "Holy See (Vatican City State)", "Turkey", "Russian Federation", "Kazakhstan", "Uzbekistan", "Korea, Democratic People's Republic of", "Azerbaijan", "Tajikistan", "Belarus", "Turkmenistan", "Kyrgyzstan", "Mongolia", "Armenia", "Japan", "China", "Taiwan, Province of China", "Hong Kong", "Macao", "India", "Indonesia", "Viet Nam", "Philippines", "Thailand", "Singapore", "Myanmar", "Malaysia", "Sri Lanka", "Cambodia", "Papua New Guinea", "Lao People's Democratic Republic", "Timor-Leste", "Fiji", "Solomon Islands", "Maldives", "Brunei Darussalam", "Vanuatu", "New Caledonia", "French Polynesia", "Samoa", "Guam", "Kiribati", "Micronesia, Federated States of", "Tonga", "American Samoa", "Northern Mariana Islands", "Marshall Islands", "Palau", "Cook Islands", "Wallis and Futuna", "Nauru", "Tuvalu", "Niue", "Norfolk Island", "Tokelau", "United States Minor Outlying Islands", "Pitcairn", "Korea, Republic of", "Bangladesh", "Pakistan", "Afghanistan", "Nepal", "Bhutan", "Iran, Islamic Republic of", "Iraq", "Yemen", "Syrian Arab Republic", "Jordan", "United Arab Emirates", "Israel", "Lebanon", "Palestine, State of", "Oman", "Kuwait", "Qatar", "Bahrain", "Saudi Arabia", "Egypt", "Sudan", "Algeria", "Morocco", "Niger", "Mali", "Chad", "Tunisia", "Libya", "Mauritania", "Western Sahara", "South Africa", "Nigeria", "Congo, the Democratic Republic of the", "Ethiopia", "Tanzania, United Republic of", "Kenya", "Uganda", "Angola", "Ghana", "Mozambique", "Madagascar", "Cote d Ivoire", "Cameroon", "Burkina Faso", "Malawi", "Zambia", "Senegal", "Somalia", "Zimbabwe", "Guinea", "Rwanda", "Benin", "Burundi", "South Sudan", "Togo", "Sierra Leone", "Congo", "Liberia", "Central African Republic", "Eritrea", "Namibia", "Gambia", "Botswana", "Gabon", "Lesotho", "Guinea-Bissau", "Equatorial Guinea", "Mauritius", "Swaziland", "Djibouti", "Reunion", "Comoros", "Cape Verde", "Mayotte", "Sao Tome and Principe", "Seychelles", "Saint Helena, Ascension and Tristan da Cunha", "Brazil", "Mexico", "Argentina", "Chile", "Colombia", "Venezuela, Bolivarian Republic of", "Uruguay", "Peru", "Ecuador", "Guatemala", "Bolivia, Plurinational State of", "Cuba", "Haiti", "Dominican Republic", "Honduras", "Paraguay", "Nicaragua", "El Salvador", "Costa Rica", "Panama", "Puerto Rico", "Jamaica", "Trinidad and Tobago", "Guyana", "Suriname", "Guadeloupe", "Bahamas", "Belize", "Martinique", "French Guiana", "Barbados", "Saint Lucia", "Curacao", "Grenada", "Aruba", "Virgin Islands, U.S.", "Saint Vincent and the Grenadines", "Antigua and Barbuda", "Dominica", "Cayman Islands", "Bermuda", "Saint Kitts and Nevis", "Turks and Caicos Islands", "Sint Maarten (Dutch part)", "Virgin Islands, British", "Saint Martin (French part)", "Bonaire, Sint Eustatius and Saba", "Anguilla", "Saint Barthelemy", "Montserrat", "Falkland Islands (Malvinas)", "Antarctica", "South Georgia and the South Sandwich Islands", "Bouvet Island", "United States", "Canada", "Australia", "Christmas Island", "Cocos (Keeling) Islands", "Heard Island and McDonald Islands", "New Zealand"],
+          "zmin": 0,
+          "zmax": 240,
+          "frame": "2019",
+          "type": "choropleth",
+          "marker": {
+            "line": {
+              "color": "rgba(31,119,180,1)"
+            }
+          },
+          "visible": true
+        }
+      ],
+      "traces": [0]
+    },
+    {
+      "name": "2020",
+      "data": [
+        {
+          "colorbar": {
+            "title": "Exports of goods and services",
+            "ticklen": 2
+          },
+          "colorscale": [
+            ["0", "#de5842"],
+            ["1e-05", "#188AF0"],
+            ["1", "#00D4B0"]
+          ],
+          "showscale": true,
+          "locations": ["DEU", "FRA", "SPM", "ATF", "ITA", "MLT", "GRC", "CYP", "ESP", "PRT", "AUT", "NLD", "BEL", "LUX", "POL", "CZE", "SVK", "LTU", "LVA", "EST", "SWE", "DNK", "GRL", "FRO", "FIN", "ALA", "ROU", "HUN", "BGR", "HRV", "SVN", "IRL", "GBR", "JEY", "IMN", "GGY", "GIB", "IOT", "NOR", "SJM", "CHE", "LIE", "ISL", "UKR", "ALB", "SRB", "GEO", "BIH", "MDA", "MKD", "MNE", "AND", "MCO", "SMR", "VAT", "TUR", "RUS", "KAZ", "UZB", "PRK", "AZE", "TJK", "BLR", "TKM", "KGZ", "MNG", "ARM", "JPN", "CHN", "TWN", "HKG", "MAC", "IND", "IDN", "VNM", "PHL", "THA", "SGP", "MMR", "MYS", "LKA", "KHM", "PNG", "LAO", "TLS", "FJI", "SLB", "MDV", "BRN", "VUT", "NCL", "PYF", "WSM", "GUM", "KIR", "FSM", "TON", "ASM", "MNP", "MHL", "PLW", "COK", "WLF", "NRU", "TUV", "NIU", "TKL", "NFK", "UMI", "PCN", "KOR", "BGD", "PAK", "AFG", "NPL", "BTN", "IRN", "IRQ", "YEM", "SYR", "JOR", "ARE", "ISR", "LBN", "PSE", "OMN", "KWT", "QAT", "BHR", "SAU", "EGY", "SDN", "DZA", "MAR", "NER", "MLI", "TCD", "TUN", "LBY", "MRT", "ESH", "ZAF", "NGA", "COD", "ETH", "TZA", "KEN", "UGA", "AGO", "GHA", "MOZ", "MDG", "CIV", "CMR", "BFA", "MWI", "ZMB", "SEN", "SOM", "ZWE", "GIN", "BEN", "RWA", "BDI", "SSD", "TGO", "SLE", "COG", "LBR", "CAF", "ERI", "NAM", "GMB", "BWA", "GAB", "LSO", "GNB", "GNQ", "MUS", "SWZ", "DJI", "REU", "COM", "CPV", "MYT", "STP", "SYC", "SHN", "BRA", "MEX", "ARG", "CHL", "COL", "VEN", "URY", "PER", "ECU", "GTM", "BOL", "HTI", "CUB", "DOM", "HND", "PRY", "NIC", "SLV", "CRI", "PAN", "PRI", "JAM", "TTO", "GUY", "SUR", "BHS", "GLP", "BLZ", "MTQ", "GUF", "BRB", "LCA", "CUW", "GRD", "ABW", "VIR", "VCT", "ATG", "CYM", "DMA", "BMU", "KNA", "TCA", "SXM", "VGB", "MAF", "BES", "AIA", "BLM", "MSR", "FLK", "ATA", "SGS", "BVT", "USA", "CAN", "AUS", "CXR", "CCK", "HMD", "NZL"],
+          "z": [43.009999999999998, 27.449999999999999, 27.449999999999999, 27.449999999999999, 29.440000000000001, 178.34, 31.989999999999998, 81.390000000000001, 30.800000000000001, 37.049999999999997, 51.609999999999999, 78.269999999999996, 79.450000000000003, 199.62, 52.990000000000002, 69.950000000000003, 85.060000000000002, 73.159999999999997, 59.899999999999999, 69.269999999999996, 43.850000000000001, 54.93, 54.866028219018602, 47.770000000000003, 35.789999999999999, 35.789999999999999, 36.880000000000003, 78.709999999999994, 56.119999999999997, 41.479999999999997, 77.739999999999995, 133.34, 29.239999999999998, 29.239999999999998, 29.239999999999998, 29.239999999999998, 29.239999999999998, 18.710000000000001, 32.210000000000001, 32.210000000000001, 64.310000000000002, 64.310000000000002, 33.229999999999997, 38.82, 22.66, 48.219999999999999, 37.289999999999999, 34.18, 27.91, 57.770000000000003, 26, 41.864432171691845, 41.864432171691845, 164.47999999999999, 41.864432171691845, 28.73, 25.52, 30.530000000000001, 24.18, 30.538083713132195, 35.619999999999997, 17.32, 61.009999999999998, 17.899999999999999, 31.309999999999999, 57.659999999999997, 29.760000000000002, 15.550000000000001, 18.59, 19.442031433985893, 176.30000000000001, 61.530000000000001, 18.710000000000001, 17.329999999999998, 84.379999999999995, 25.199999999999999, 51.490000000000002, 181.99000000000001, 32.670000000000002, 61.600000000000001, 15.43, 61.039999999999999, 72.159999999999997, 33.210000000000001, 42.679524684818524, 27.52, 27.940000000000001, 49.43, 57.359999999999999, 15.699999999999999, 21.010000000000002, 42.679524684818524, 29.199999999999999, 42.679524684818524, 12.960000000000001, 23.75, 20.59, 42.679524684818524, 42.679524684818524, 42.679524684818524, 42.679524684818524, 42.679524684818524, 42.679524684818524, 42.679524684818524, 42.679524684818524, 42.679524684818524, 42.679524684818524, 42.679524684818524, 42.679524684818524, 42.679524684818524, 36.359999999999999, 10.44, 9.3000000000000007, 7.4016832769605649, 6.8099999999999996, 29.66, 19.420000000000002, 27.75, 6.0599999999999996, 14.779999999999999, 36.670000000000002, 95.930000000000007, 27.68, 16.370000000000001, 15.359999999999999, 47.060000000000002, 53.289999999999999, 49.119999999999997, 72.930000000000007, 24.899999999999999, 12.470000000000001, 5.1299999999999999, 17.469999999999999, 30.800000000000001, 10.289999999999999, 30.66, 26.719999999999999, 37.950000000000003, 42.840000000000003, 40.659999999999997, 20.822393759650748, 27.600000000000001, 8.1199999999999992, 28.600000000000001, 7.1299999999999999, 13.5, 9.6400000000000006, 15.41, 38.039999999999999, 20.719999999999999, 29.32, 20.140000000000001, 21.010000000000002, 15.24, 27.620000000000001, 22.0210236709345, 46.789999999999999, 20.699999999999999, 17.109999999999999, 25.920000000000002, 46.670000000000002, 19.870000000000001, 19.329999999999998, 4.5499999999999998, 22.0210236709345, 23.699999999999999, 15.09, 57.009999999999998, 22.0210236709345, 15.17, 18.149999999999999, 33.68, 9.6199999999999992, 31.289999999999999, 47.5, 41.840000000000003, 14.390000000000001, 43.490000000000002, 39.369999999999997, 44.920000000000002, 115.77, 22.0210236709345, 5.6699999999999999, 23.84, 22.0210236709345, 22.0210236709345, 77.739999999999995, 22.0210236709345, 16.449999999999999, 39.490000000000002, 16.609999999999999, 31.300000000000001, 13.529999999999999, 16.690000000000001, 25.210000000000001, 22.710000000000001, 21.859999999999999, 16.34, 20.27, 7, 24.655190015859645, 18.300000000000001, 35.090000000000003, 33.270000000000003, 41.909999999999997, 24.34, 31.91, 41.799999999999997, 60.350000000000001, 24.09, 24.655190015859645, 84.620000000000005, 52.549999999999997, 24.640000000000001, 24.655190015859645, 37.039999999999999, 24.655190015859645, 24.655190015859645, 29.739999999999998, 24.655190015859645, 24.655190015859645, 24.655190015859645, 51.649999999999999, 24.655190015859645, 24.655190015859645, 42.280000000000001, 24.655190015859645, 29.190000000000001, 47.140000000000001, 24.655190015859645, 24.655190015859645, 24.655190015859645, 24.655190015859645, 24.655190015859645, 24.655190015859645, 24.655190015859645, 24.655190015859645, 24.655190015859645, 24.655190015859645, 24.655190015859645, 24.655190015859645, 24.655190015859645, 10.199999999999999, 29.68, 24.010000000000002, 24.010000000000002, 24.010000000000002, 24.010000000000002, 21.739999999999998],
+          "text": ["Germany", "France", "Saint Pierre and Miquelon", "French Southern Territories", "Italy", "Malta", "Greece", "Cyprus", "Spain", "Portugal", "Austria", "Netherlands", "Belgium", "Luxembourg", "Poland", "Czech Republic", "Slovakia", "Lithuania", "Latvia", "Estonia", "Sweden", "Denmark", "Greenland", "Faroe Islands", "Finland", "Aland Islands", "Romania", "Hungary", "Bulgaria", "Croatia", "Slovenia", "Ireland", "United Kingdom", "Jersey", "Isle of Man", "Guernsey", "Gibraltar", "British Indian Ocean Territory", "Norway", "Svalbard and Jan Mayen", "Switzerland", "Liechtenstein", "Iceland", "Ukraine", "Albania", "Serbia", "Georgia", "Bosnia and Herzegovina", "Moldova, Republic of", "Macedonia, the former Yugoslav Republic of", "Montenegro", "Andorra", "Monaco", "San Marino", "Holy See (Vatican City State)", "Turkey", "Russian Federation", "Kazakhstan", "Uzbekistan", "Korea, Democratic People's Republic of", "Azerbaijan", "Tajikistan", "Belarus", "Turkmenistan", "Kyrgyzstan", "Mongolia", "Armenia", "Japan", "China", "Taiwan, Province of China", "Hong Kong", "Macao", "India", "Indonesia", "Viet Nam", "Philippines", "Thailand", "Singapore", "Myanmar", "Malaysia", "Sri Lanka", "Cambodia", "Papua New Guinea", "Lao People's Democratic Republic", "Timor-Leste", "Fiji", "Solomon Islands", "Maldives", "Brunei Darussalam", "Vanuatu", "New Caledonia", "French Polynesia", "Samoa", "Guam", "Kiribati", "Micronesia, Federated States of", "Tonga", "American Samoa", "Northern Mariana Islands", "Marshall Islands", "Palau", "Cook Islands", "Wallis and Futuna", "Nauru", "Tuvalu", "Niue", "Tokelau", "Norfolk Island", "United States Minor Outlying Islands", "Pitcairn", "Korea, Republic of", "Bangladesh", "Pakistan", "Afghanistan", "Nepal", "Bhutan", "Iran, Islamic Republic of", "Iraq", "Yemen", "Syrian Arab Republic", "Jordan", "United Arab Emirates", "Israel", "Lebanon", "Palestine, State of", "Oman", "Kuwait", "Qatar", "Bahrain", "Saudi Arabia", "Egypt", "Sudan", "Algeria", "Morocco", "Niger", "Mali", "Chad", "Tunisia", "Libya", "Mauritania", "Western Sahara", "South Africa", "Nigeria", "Congo, the Democratic Republic of the", "Ethiopia", "Tanzania, United Republic of", "Kenya", "Uganda", "Angola", "Ghana", "Mozambique", "Madagascar", "Cote d Ivoire", "Cameroon", "Burkina Faso", "Malawi", "Zambia", "Senegal", "Somalia", "Zimbabwe", "Guinea", "Benin", "Rwanda", "Burundi", "South Sudan", "Togo", "Sierra Leone", "Congo", "Liberia", "Central African Republic", "Eritrea", "Namibia", "Gambia", "Botswana", "Gabon", "Lesotho", "Guinea-Bissau", "Equatorial Guinea", "Mauritius", "Swaziland", "Djibouti", "Reunion", "Comoros", "Cape Verde", "Mayotte", "Sao Tome and Principe", "Seychelles", "Saint Helena, Ascension and Tristan da Cunha", "Brazil", "Mexico", "Argentina", "Chile", "Colombia", "Venezuela, Bolivarian Republic of", "Uruguay", "Peru", "Ecuador", "Guatemala", "Bolivia, Plurinational State of", "Haiti", "Cuba", "Dominican Republic", "Honduras", "Paraguay", "Nicaragua", "El Salvador", "Costa Rica", "Panama", "Puerto Rico", "Jamaica", "Trinidad and Tobago", "Guyana", "Suriname", "Bahamas", "Guadeloupe", "Belize", "Martinique", "French Guiana", "Barbados", "Saint Lucia", "Curacao", "Grenada", "Aruba", "Virgin Islands, U.S.", "Saint Vincent and the Grenadines", "Antigua and Barbuda", "Cayman Islands", "Dominica", "Bermuda", "Saint Kitts and Nevis", "Turks and Caicos Islands", "Sint Maarten (Dutch part)", "Virgin Islands, British", "Saint Martin (French part)", "Bonaire, Sint Eustatius and Saba", "Anguilla", "Saint Barthelemy", "Montserrat", "Falkland Islands (Malvinas)", "Antarctica", "South Georgia and the South Sandwich Islands", "Bouvet Island", "United States", "Canada", "Australia", "Christmas Island", "Cocos (Keeling) Islands", "Heard Island and McDonald Islands", "New Zealand"],
+          "zmin": 0,
+          "zmax": 240,
+          "frame": "2020",
+          "type": "choropleth",
+          "marker": {
+            "line": {
+              "color": "rgba(31,119,180,1)"
+            }
+          },
+          "visible": true
+        }
+      ],
+      "traces": [0]
+    },
+    {
+      "name": "2021",
+      "data": [
+        {
+          "colorbar": {
+            "title": "Exports of goods and services",
+            "ticklen": 2
+          },
+          "colorscale": [
+            ["0", "#de5842"],
+            ["1e-05", "#188AF0"],
+            ["1", "#00D4B0"]
+          ],
+          "showscale": true,
+          "locations": ["DEU", "FRA", "SPM", "ATF", "ITA", "MLT", "GRC", "CYP", "ESP", "PRT", "AUT", "NLD", "BEL", "LUX", "POL", "CZE", "SVK", "LTU", "LVA", "EST", "SWE", "DNK", "GRL", "FRO", "FIN", "ALA", "ROU", "HUN", "BGR", "HRV", "SVN", "IRL", "GBR", "JEY", "IMN", "GGY", "GIB", "IOT", "NOR", "SJM", "CHE", "LIE", "ISL", "UKR", "ALB", "SRB", "GEO", "BIH", "MDA", "MKD", "MNE", "AND", "MCO", "SMR", "VAT", "TUR", "RUS", "KAZ", "UZB", "PRK", "AZE", "TJK", "BLR", "TKM", "KGZ", "MNG", "ARM", "JPN", "CHN", "TWN", "HKG", "MAC", "IND", "IDN", "VNM", "PHL", "THA", "SGP", "MMR", "MYS", "LKA", "KHM", "PNG", "LAO", "TLS", "FJI", "SLB", "MDV", "BRN", "VUT", "NCL", "PYF", "WSM", "GUM", "KIR", "FSM", "TON", "ASM", "MNP", "MHL", "PLW", "COK", "NRU", "WLF", "TUV", "NIU", "TKL", "NFK", "UMI", "PCN", "KOR", "BGD", "PAK", "AFG", "NPL", "BTN", "IRN", "IRQ", "YEM", "SYR", "JOR", "ARE", "ISR", "LBN", "PSE", "OMN", "KWT", "QAT", "BHR", "SAU", "EGY", "SDN", "DZA", "MAR", "NER", "MLI", "TCD", "TUN", "LBY", "MRT", "ESH", "ZAF", "NGA", "COD", "ETH", "TZA", "KEN", "UGA", "AGO", "GHA", "MOZ", "MDG", "CIV", "CMR", "BFA", "MWI", "ZMB", "SOM", "SEN", "ZWE", "GIN", "BEN", "RWA", "BDI", "SSD", "TGO", "SLE", "COG", "LBR", "CAF", "ERI", "NAM", "GMB", "BWA", "GAB", "LSO", "GNB", "GNQ", "MUS", "SWZ", "DJI", "REU", "COM", "CPV", "MYT", "STP", "SYC", "SHN", "BRA", "MEX", "ARG", "CHL", "COL", "VEN", "URY", "PER", "ECU", "GTM", "BOL", "HTI", "DOM", "CUB", "HND", "PRY", "NIC", "SLV", "CRI", "PAN", "PRI", "JAM", "TTO", "GUY", "SUR", "BHS", "GLP", "BLZ", "MTQ", "GUF", "BRB", "LCA", "CUW", "GRD", "ABW", "VIR", "VCT", "ATG", "CYM", "DMA", "BMU", "KNA", "TCA", "SXM", "VGB", "MAF", "BES", "AIA", "BLM", "MSR", "FLK", "ATA", "SGS", "BVT", "USA", "CAN", "AUS", "CXR", "CCK", "HMD", "NZL"],
+          "z": [47.030000000000001, 29.449999999999999, 29.449999999999999, 29.449999999999999, 32.689999999999998, 169.69999999999999, 40.869999999999997, 86.620000000000005, 34.93, 41.630000000000003, 55.899999999999999, 83.069999999999993, 86.829999999999998, 211.43000000000001, 57.909999999999997, 72.730000000000004, 92.349999999999994, 80.530000000000001, 63.68, 78.299999999999997, 46.280000000000001, 59.659999999999997, 59.597123091047656, 52.689999999999998, 39.549999999999997, 39.549999999999997, 40.649999999999999, 80.25, 61.329999999999998, 51.280000000000001, 83.629999999999995, 134.41, 28.82, 28.82, 28.82, 28.82, 28.82, 21.510000000000002, 41.740000000000002, 41.740000000000002, 71.370000000000005, 71.370000000000005, 37.369999999999997, 40.689999999999998, 31.309999999999999, 54.479999999999997, 43.189999999999998, 42.149999999999999, 30.649999999999999, 66.209999999999994, 42.829999999999998, 48.431902536888487, 48.431902536888487, 184.31, 48.431902536888487, 35.299999999999997, 29.890000000000001, 33.549999999999997, 23.68, 34.197566219456085, 46.490000000000002, 24.18, 70.829999999999998, 17.899999999999999, 37.759999999999998, 58.549999999999997, 35.340000000000003, 18.199999999999999, 19.940000000000001, 20.933447496704577, 204.03999999999999, 87.920000000000002, 21.510000000000002, 21.41, 93.290000000000006, 25.75, 58.640000000000001, 184.30000000000001, 33.740000000000002, 68.840000000000003, 16.93, 64.599999999999994, 72.159999999999997, 33.210000000000001, 45.519756421276895, 27.309999999999999, 26.18, 75.299999999999997, 80.170000000000002, 9.1600000000000001, 21.010000000000002, 45.519756421276895, 11.69, 45.519756421276895, 11.550000000000001, 23.829999999999998, 12.52, 45.519756421276895, 45.519756421276895, 45.519756421276895, 45.519756421276895, 45.519756421276895, 45.519756421276895, 45.519756421276895, 45.519756421276895, 45.519756421276895, 45.519756421276895, 45.519756421276895, 45.519756421276895, 45.519756421276895, 42.039999999999999, 10.66, 9.0600000000000005, 5.804685829487771, 5.1200000000000001, 31.829999999999998, 22.84, 37.68, 6.0599999999999996, 14.779999999999999, 36.670000000000002, 95.930000000000007, 29.460000000000001, 26.030000000000001, 17.34, 52.530000000000001, 53.289999999999999, 58.909999999999997, 89.650000000000006, 32.979999999999997, 10.56, 2.25, 26.73, 32.93, 10.279999999999999, 27.870000000000001, 38.75, 42.130000000000003, 42.840000000000003, 39.450000000000003, 23.295894046218137, 31.190000000000001, 10.74, 40.390000000000001, 7.6299999999999999, 14.119999999999999, 10.77, 15.779999999999999, 45.43, 29.91, 31.379999999999999, 22.77, 22.59, 16.710000000000001, 27.620000000000001, 24.178480306705726, 52.079999999999998, 20.079999999999998, 24.59, 25.41, 42.990000000000002, 20.920000000000002, 19.539999999999999, 5, 24.178480306705726, 23.239999999999998, 16.93, 58.460000000000001, 24.178480306705726, 14.19, 18.149999999999999, 31.859999999999999, 6.4699999999999998, 41.939999999999998, 55.539999999999999, 45.549999999999997, 14.390000000000001, 55.469999999999999, 44.240000000000002, 45, 115.77, 24.178480306705726, 10.81, 23, 24.178480306705726, 24.178480306705726, 111.52, 24.178480306705726, 19.559999999999999, 41.100000000000001, 18.030000000000001, 31.98, 16.329999999999998, 16.690000000000001, 30.48, 29.489999999999998, 26.190000000000001, 17.710000000000001, 27.82, 7.1399999999999997, 21.75, 28.507188289926937, 38.460000000000001, 35.490000000000002, 46.609999999999999, 28.280000000000001, 36.770000000000003, 41.799999999999997, 54.450000000000003, 27.530000000000001, 28.507188289926937, 84.620000000000005, 52.549999999999997, 28.780000000000001, 28.507188289926937, 46.479999999999997, 28.507188289926937, 28.507188289926937, 30.370000000000001, 28.507188289926937, 28.507188289926937, 28.507188289926937, 68.909999999999997, 28.507188289926937, 28.507188289926937, 42.280000000000001, 28.507188289926937, 29.190000000000001, 50.039999999999999, 28.507188289926937, 28.507188289926937, 28.507188289926937, 28.507188289926937, 28.507188289926937, 28.507188289926937, 28.507188289926937, 28.507188289926937, 28.507188289926937, 28.507188289926937, 28.507188289926937, 28.507188289926937, 28.507188289926937, 10.890000000000001, 30.91, 22.079999999999998, 22.079999999999998, 22.079999999999998, 22.079999999999998, 22.149999999999999],
+          "text": ["Germany", "France", "Saint Pierre and Miquelon", "French Southern Territories", "Italy", "Malta", "Greece", "Cyprus", "Spain", "Portugal", "Austria", "Netherlands", "Belgium", "Luxembourg", "Poland", "Czech Republic", "Slovakia", "Lithuania", "Latvia", "Estonia", "Sweden", "Denmark", "Greenland", "Faroe Islands", "Finland", "Aland Islands", "Romania", "Hungary", "Bulgaria", "Croatia", "Slovenia", "Ireland", "United Kingdom", "Jersey", "Isle of Man", "Guernsey", "Gibraltar", "British Indian Ocean Territory", "Norway", "Svalbard and Jan Mayen", "Switzerland", "Liechtenstein", "Iceland", "Ukraine", "Albania", "Serbia", "Georgia", "Bosnia and Herzegovina", "Moldova, Republic of", "Macedonia, the former Yugoslav Republic of", "Montenegro", "Andorra", "Monaco", "San Marino", "Holy See (Vatican City State)", "Turkey", "Russian Federation", "Kazakhstan", "Uzbekistan", "Korea, Democratic People's Republic of", "Azerbaijan", "Tajikistan", "Belarus", "Turkmenistan", "Kyrgyzstan", "Mongolia", "Armenia", "Japan", "China", "Taiwan, Province of China", "Hong Kong", "Macao", "India", "Indonesia", "Viet Nam", "Philippines", "Thailand", "Singapore", "Myanmar", "Malaysia", "Sri Lanka", "Cambodia", "Papua New Guinea", "Lao People's Democratic Republic", "Timor-Leste", "Fiji", "Solomon Islands", "Maldives", "Brunei Darussalam", "Vanuatu", "New Caledonia", "French Polynesia", "Samoa", "Guam", "Kiribati", "Micronesia, Federated States of", "Tonga", "American Samoa", "Northern Mariana Islands", "Marshall Islands", "Palau", "Cook Islands", "Nauru", "Wallis and Futuna", "Tuvalu", "Niue", "Tokelau", "Norfolk Island", "United States Minor Outlying Islands", "Pitcairn", "Korea, Republic of", "Bangladesh", "Pakistan", "Afghanistan", "Nepal", "Bhutan", "Iran, Islamic Republic of", "Iraq", "Yemen", "Syrian Arab Republic", "Jordan", "United Arab Emirates", "Israel", "Lebanon", "Palestine, State of", "Oman", "Kuwait", "Qatar", "Bahrain", "Saudi Arabia", "Egypt", "Sudan", "Algeria", "Morocco", "Niger", "Mali", "Chad", "Tunisia", "Libya", "Mauritania", "Western Sahara", "South Africa", "Nigeria", "Congo, the Democratic Republic of the", "Ethiopia", "Tanzania, United Republic of", "Kenya", "Uganda", "Angola", "Ghana", "Mozambique", "Madagascar", "Cote d Ivoire", "Cameroon", "Burkina Faso", "Malawi", "Zambia", "Somalia", "Senegal", "Zimbabwe", "Guinea", "Benin", "Rwanda", "Burundi", "South Sudan", "Togo", "Sierra Leone", "Congo", "Liberia", "Central African Republic", "Eritrea", "Namibia", "Gambia", "Botswana", "Gabon", "Lesotho", "Guinea-Bissau", "Equatorial Guinea", "Mauritius", "Swaziland", "Djibouti", "Reunion", "Comoros", "Cape Verde", "Mayotte", "Sao Tome and Principe", "Seychelles", "Saint Helena, Ascension and Tristan da Cunha", "Brazil", "Mexico", "Argentina", "Chile", "Colombia", "Venezuela, Bolivarian Republic of", "Uruguay", "Peru", "Ecuador", "Guatemala", "Bolivia, Plurinational State of", "Haiti", "Dominican Republic", "Cuba", "Honduras", "Paraguay", "Nicaragua", "El Salvador", "Costa Rica", "Panama", "Puerto Rico", "Jamaica", "Trinidad and Tobago", "Guyana", "Suriname", "Bahamas", "Guadeloupe", "Belize", "Martinique", "French Guiana", "Barbados", "Saint Lucia", "Curacao", "Grenada", "Aruba", "Virgin Islands, U.S.", "Saint Vincent and the Grenadines", "Antigua and Barbuda", "Cayman Islands", "Dominica", "Bermuda", "Saint Kitts and Nevis", "Turks and Caicos Islands", "Sint Maarten (Dutch part)", "Virgin Islands, British", "Saint Martin (French part)", "Bonaire, Sint Eustatius and Saba", "Anguilla", "Saint Barthelemy", "Montserrat", "Falkland Islands (Malvinas)", "Antarctica", "South Georgia and the South Sandwich Islands", "Bouvet Island", "United States", "Canada", "Australia", "Christmas Island", "Cocos (Keeling) Islands", "Heard Island and McDonald Islands", "New Zealand"],
+          "zmin": 0,
+          "zmax": 240,
+          "frame": "2021",
+          "type": "choropleth",
+          "marker": {
+            "line": {
+              "color": "rgba(31,119,180,1)"
+            }
+          },
+          "visible": true
+        }
+      ],
+      "traces": [0]
+    }
+  ],
+  "shinyEvents": ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  "base_url": "https://plot.ly"
+}
+           
+
+                  ); 
+
+           }()); 
+
+  

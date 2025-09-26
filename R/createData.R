@@ -236,19 +236,13 @@ pop <- calcOutput("PopulationPast", aggregate = FALSE) %>%
   select(CountryCode = Region, period = Year, pop = Value)
 
 # remindHist
-df <- out[["mapping"]][["regionMapping"]] %>%
+out[["data"]][["country"]][["Raw"]][["remindHist"]] <- out[["mapping"]][["regionMapping"]] %>%
   left_join(gdp, by = "CountryCode") %>%
   left_join(pop, by = c("CountryCode", "period")) %>%
   mutate(gdpPerCapita = gdp/pop * 1000) %>%
   arrange(desc(pop)) %>%
   arrange(match(REMIND_62, region_sort)) %>%
-  mutate(period = as.integer(as.character(period))) # Convert period to numeric
-
-out[["data"]][["country"]][["Raw"]][["remindHist"]] <- df %>%
-  #dplyr::bind_rows( # repeat last year for missing years (2024 - 2025)
-  #  df %>% filter(.data$period == 2023) %>% mutate(period = 2024),
-  #  df %>% filter(.data$period == 2023) %>% mutate(period = 2025)
-  #) %>%
+  mutate(period = as.integer(as.character(period))) %>% # Convert period to numeric
   arrange(match(REMIND_62, region_sort), period)
 
 # carbonPrice
@@ -262,21 +256,13 @@ out[["data"]][["country"]][["Raw"]][["carbonPrice"]] <- out[["mapping"]][["regio
   arrange(sector, match(REMIND_62, region_sort), period)
   
 # GlobalEconomyDataIndicators
-df <- out[["mapping"]][["regionMapping"]] %>%
+out[["data"]][["country"]][["Raw"]][["globalEconomyDataIndicators"]] <- out[["mapping"]][["regionMapping"]] %>%
   left_join(
     globalEconomyDataIndicators <- calcOutput("GlobalEconomyDataIndicators", aggregate = FALSE) %>%
       as.data.frame() %>%
       select(region = Region, period = Year, type = Data1, driver = Data2, unit = Data3, value = Value), 
     by = c("CountryCode" = "region")) %>%
-  mutate(period = as.integer(as.character(period))) # Convert period to numeric
-
-out[["data"]][["country"]][["Raw"]][["globalEconomyDataIndicators"]] <- df %>%
-  #dplyr::bind_rows( # repeat last year for missing years (2022 - 2025)
-  #  df %>% filter(.data$period == 2021) %>% mutate(period = 2022),
-  #  df %>% filter(.data$period == 2021) %>% mutate(period = 2023),
-  #  df %>% filter(.data$period == 2021) %>% mutate(period = 2024),
-  #  df %>% filter(.data$period == 2021) %>% mutate(period = 2025)
-  #) %>%
+  mutate(period = as.integer(as.character(period))) %>% # Convert period to numeric
   arrange(type, driver, unit, match(REMIND_62, region_sort), period)
 
 out[["data"]][["country"]][["Raw"]][["geopoliticalMemberships"]] <- 
@@ -308,11 +294,6 @@ out[["data"]][["country"]][["selected"]] <-
       pivot_wider(names_from = "sector", values_from = "value") %>%
       rename(bulk_carbonPrice = bulk, diffuse_carbonPrice = diffuse),
     by = c("period", "CountryCode"))
-
-# out[["data"]][["country"]][["latest"]] <-
-#   out[["data"]][["country"]][["selected"]] %>%
-#   filter(period == 2025) %>%
-#   select(-period)
 
 out[["data"]][["country"]][["latest"]] <-
   out[["data"]][["country"]][["Raw"]][["remindHist"]] %>%
@@ -367,18 +348,10 @@ for(currRegion in out[["mapping"]][["mappingsVector"]]){
     select(region = Region, period = Year, sector = Data1, value = Value) %>%
     mutate(period = as.integer(as.character(period)))
   
-  df <- calcOutput("GlobalEconomyDataIndicators") %>%
+  out[["data"]][[currRegion]][["Raw"]][["globalEconomyDataIndicators"]] <- calcOutput("GlobalEconomyDataIndicators") %>%
     as.data.frame() %>%
     select(region = Region, period = Year, type = Data1, driver = Data2, unit = Data3, value = Value) %>%
-    mutate(period = as.integer(as.character(period))) # Convert period to numeric
-  
-  out[["data"]][[currRegion]][["Raw"]][["globalEconomyDataIndicators"]] <- df %>%
-    #dplyr::bind_rows( # repeat last year for missing years (2022 - 2025)
-    #  df %>% filter(.data$period == 2021) %>% mutate(period = 2022),
-    #  df %>% filter(.data$period == 2021) %>% mutate(period = 2023),
-    #  df %>% filter(.data$period == 2021) %>% mutate(period = 2024),
-    #  df %>% filter(.data$period == 2021) %>% mutate(period = 2025)
-    #) %>%
+    mutate(period = as.integer(as.character(period))) %>% # Convert period to numeric
     arrange(type, driver, unit, match(region, region_sort), period)
   
   out[["data"]][[currRegion]][["selected"]] <- 
@@ -394,11 +367,6 @@ for(currRegion in out[["mapping"]][["mappingsVector"]]){
         pivot_wider(names_from = "sector", values_from = "value") %>%
         rename(bulk_carbonPrice = bulk, diffuse_carbonPrice = diffuse),
       by = c("period", "region"))
-  
-  #out[["data"]][[currRegion]][["latest"]] <-
-  #  out[["data"]][[currRegion]][["selected"]] %>%
-  #  filter(period == 2025) %>% # actually 2025 for carbon price, 2023 for remindHist and 2021 for globalEconomyDataIndicators
-  #  select(-period)
   
   out[["data"]][[currRegion]][["latest"]] <-
     out[["data"]][[currRegion]][["Raw"]][["remindHist"]] %>%
@@ -1235,94 +1203,6 @@ saveRDS(out[["table"]], file = "./data/table.rds")
 ################# Create data for maps ######################
 print("Creating maps...")
 
-#### Create nested List of regions 
-
-# # Function to create a nested list from a data frame
-# nested_list <- function(df, column_names) {
-#   # Base case: if there's only one column left, return the unique values
-#   if (length(column_names) == 1) {
-#     return(as.list(unique(df[[column_names[1]]])))
-#   }
-#   
-#   # Recursive step: split by the first column and call the function again
-#   first_col <- column_names[1]
-#   remaining_cols <- column_names[-1]
-#   
-#   df %>%
-#     split(f = df[[first_col]]) %>%
-#     lapply(function(sub_df) {
-#       nested_list(sub_df, remaining_cols)
-#     })
-# }
-
-# # Create the nested list
-# 
-# result_list <- nested_list(out[["mapping"]][["regionsTable"]], out[["mapping"]][["mappingsVector"]]) 
-# 
-# # Print a portion of the resulting list to show the structure
-# #str(result_list, max.level = 3)
-# 
-# #### Define colors for each region
-# 
-# assign_and_extract_colors <- function(nested_list, regions_pallete) {
-#   
-#   find_all_regions <- function(x, path = character()) {
-#     if (is.character(x)) {
-#       return(tibble(
-#         region = x,
-#         parent = path[1],
-#         immediate_parent = if (length(path) > 1) tail(path, 2)[1] else NA_character_,
-#         depth = length(path)
-#       ))
-#     }
-#     
-#     current_node_data <- NULL
-#     if (length(path) > 0) {
-#       current_node_data <- tibble(
-#         region = tail(path, 1),
-#         parent = path[1],
-#         immediate_parent = if (length(path) > 1) tail(path, 2)[1] else NA_character_,
-#         depth = length(path)
-#       )
-#     }
-#     
-#     child_data <- NULL
-#     if (is.list(x)) {
-#       child_data <- map_dfr(seq_along(x), function(i) {
-#         item <- x[[i]]
-#         item_name <- names(x)[i]
-#         new_path <- if (is.null(item_name) || item_name == "") path else c(path, item_name)
-#         find_all_regions(item, path = new_path)
-#       })
-#     }
-#     
-#     bind_rows(current_node_data, child_data)
-#   }
-#   
-#   regions_df <- map_dfr(names(nested_list), ~find_all_regions(nested_list[[.x]], path = .x))
-#   
-#   color_df <- regions_df %>%
-#     group_by(immediate_parent) %>%
-#     mutate(child_index = row_number()) %>%
-#     ungroup() %>%
-#     mutate(
-#       color = map2_chr(parent, child_index, function(parent, child_index) {
-#         # The palette is now the vector of colors from the mapping
-#         palette_colors <- regions_pallete[[parent]] %||% regions_pallete[["default"]]
-#         
-#         # Use modulo to repeat colors if there are more children than colors
-#         palette_colors[(child_index - 1) %% length(palette_colors) + 1]
-#       })
-#     ) %>%
-#     select(region, color) %>%
-#     distinct(region, .keep_all = TRUE)
-#   
-#   return(color_df)
-# }
-# 
-# # Run the corrected function
-# final_colors_df <- assign_and_extract_colors(result_list, regions_pallete)
-
 # 1. Create a map of every region to its top-level (REMIND_12) ancestor
 ancestor_map <- out[["mapping"]][["regionsTable"]] %>%
   # Keep the ancestor column
@@ -1694,12 +1574,6 @@ out[["charts"]][["carbonPrice"]] <-
       yaxis = list(range = c(0, max(carbonPrice %>% pull(value))))
     )
 
-# create external file with only plotly chart
-# plotly2js(
-#   out[["charts"]][["carbonPrice"]],
-#   div.id = "Carbon Price", output.html = TRUE, output.file = "Carbon_Price.js", 
-#   output.dir = "./output/charts", output.url = paste0("./output/charts/Carbon_Price.html"))
-
 ### Drivers
 
 d <- list()
@@ -1875,6 +1749,8 @@ for(driver in out[["drivers"]][["drivers_df"]] %>% filter(exclude != "charts") %
 # create independent plotly scripts
 for(driver in out[["drivers"]][["drivers_df"]] %>% filter(exclude != "charts") %>% pull(Variable)){
   print(paste0("Creating map plotly js files for: ", driver, "..."))
+  category    <- out[["drivers"]][["drivers_df"]] %>% filter(Variable == driver, exclude != "charts") %>% pull(Category)
+  displayName <- out[["drivers"]][["drivers_df"]] %>% filter(Variable == driver, exclude != "charts") %>% pull(DisplayName)
   idSafe  <- .safe_id(paste0(category, "_", displayName, "_map"))
   plotly2js(
     out[["charts"]][[driver]][["availability_map"]],
@@ -1884,58 +1760,5 @@ for(driver in out[["drivers"]][["drivers_df"]] %>% filter(exclude != "charts") %
 
 print("Saving region charts to file: ./data/charts_region.rds")
 saveRDS(out[["charts"]], file = "./data/charts_region.rds")
-
-# dc <- list()
-# for(driver in out[["drivers"]][["drivers_df"]] %>% filter(exclude != "charts") %>% pull(Variable)){
-#   
-#   print(paste0("Creating country charts for: ", driver, "..."))
-#   
-#   for(currRegion in sort(unique(out[["data"]][["country"]][["latest"]]$REMIND_62))){
-#     
-#     dc[[currRegion]][[driver]] <- out[["data"]][["country"]][["latest"]] %>%
-#       filter(REMIND_62 == currRegion) %>%
-#       mutate(currentDriver = !!sym(driver)) %>%
-#       select(countryName, currentDriver) %>%
-#       mutate(countryName = sub(",.*", "", countryName),
-#              tooltip = paste0(out[["drivers"]][["drivers_df"]] %>% filter(Variable == driver, exclude != "charts") %>% pull(DisplayName), ": ",
-#                               round(currentDriver, digits = 2), " ",
-#                               out$drivers$units[[driver]], "<br> Country: ", countryName)) %>%
-#       filter(currentDriver != 0)
-#     
-#     if(nrow(dc[[currRegion]][[driver]]) > 1){
-#       category    <- out[["drivers"]][["drivers_df"]] %>% filter(Variable == driver, exclude != "charts") %>% pull(Category)
-#       displayName <- out[["drivers"]][["drivers_df"]] %>% filter(Variable == driver, exclude != "charts") %>% pull(DisplayName)
-#       
-#       out[["charts"]][["subRegion"]][[currRegion]][[driver]] <- 
-#         ggplotly(
-#           ggplot(dc[[currRegion]][[driver]], aes(x = countryName, fill = countryName, text = tooltip)) +
-#             geom_col(aes(y = currentDriver)) +
-#             guides(fill="none") +
-#             labs(x=NULL, y=out$drivers$units[driver], title = displayName) +
-#             theme(
-#               axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)
-#             ),# +
-#             #scale_x_discrete(labels = dc[[currRegion]][[driver]]$countryName), 
-#           tooltip = "text"
-#         )
-#       
-#       #idSafe  <- .safe_id(paste0("subRegion_", currRegion, "_", category, "_", displayName))
-#       #fileSafe <- paste0("subRegion_", currRegion, "_", gsub(" ", "_", displayName))
-#       #file <- .safe_id(paste0("subRegion_", currRegion, "_", displayName))
-#       
-#       #plotly2js(
-#       #  out[["charts"]][["subRegion"]][[currRegion]][[driver]],
-#       #  div.id = idSafe, output.html = FALSE, output.file = paste0(file, ".js"), 
-#       #  output.dir = "./output/drivers", output.url = paste0("./output/drivers/", file, ".html"))
-#       
-#     }
-#     
-#   }
-# }
-# 
-# 
-# print("Saving subregion charts to file: ./data/charts_subregion.rds")
-# saveRDS(out[["charts"]][["subRegion"]], file = "./data/charts_subregion.rds")
-
 
 
