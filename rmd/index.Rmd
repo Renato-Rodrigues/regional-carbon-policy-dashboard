@@ -1,0 +1,70 @@
+---
+title: "REMIND Regions split"
+output:
+  html_document:
+    theme: paper
+    toc: true
+    toc_float:
+      collapsed: false
+---
+
+<style>
+  .main-container {
+    max-width: 90% !important;
+  }
+  .svg-container {
+    margin: auto !important;
+  }
+  .plotly {
+    width: 100% !important;
+  }
+  iframe { 
+    position: fixed; 
+    height: 100%; 
+    width: calc(100vw - 160px); 
+    top: 0; 
+    left: 160px; 
+  }
+</style>
+
+
+Description:
+This is an REMIND regions split exploration notebook. 
+
+
+
+```{r chunk_options, echo=FALSE}
+
+# setting global R chunk options (https://yihui.name/knitr/options/#chunk_options)
+  knitr::opts_chunk$set(dev='svglite', # svg, png,...
+                        fig.ext = ".svg",
+                        #fig.asp = .8 # default aspect ratio
+                        fig.width = 12,
+                        fig.height = 6,
+                        dpi=100
+                        )
+```  
+
+# Data
+
+```{r data_chunk, include=FALSE}
+
+result = ""
+result = paste0(result, "<div><iframe data-src='tables.html' loading='lazy' src='tables.html'></iframe></div>")
+
+```
+
+`r paste(result)`
+
+# World Maps
+
+```{r World_map_chunk, include=FALSE}
+
+result = ""
+result = paste0(result, "<div><iframe data-src='Worldmaps.html' loading='lazy' src='Worldmaps.html'></iframe></div>")
+
+```
+  
+  
+`r paste(result)`
+

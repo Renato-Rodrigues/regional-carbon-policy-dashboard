@@ -1,0 +1,2017 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      /* 1. Design System: CSS Variables */
+      :root {
+        --font-sans: "Inter", sans-serif;
+        --color-brand: #0075FF;
+        --color-brand-light: #e6f1ff;
+        --color-text-primary: #1a1a1a;
+        --color-text-secondary: #6b7280;
+        --color-text-inverted: #f8f9fa;
+        
+        --bg-sidebar: #1f2937;
+        --bg-sidebar-active: #374151;
+        --bg-main: #f9fafb;
+        --bg-topbar: #ffffff;
+
+        --border-color: #e5e7eb;
+        --border-radius-sm: 4px;
+        --border-radius-md: 6px;
+
+        --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+        --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        
+        --spacing-sm: 8px;
+        --spacing-md: 16px;
+        --spacing-lg: 24px;
+        --spacing-xl: 32px;
+      }
+      
+      /* 2. Global Resets & Typography */
+      *, *::before, *::after {
+        box-sizing: border-box;
+      }
+      html, body { 
+        margin: 0; 
+        padding: 0; 
+        height: 100%;
+        font-family: var(--font-sans);
+        color: var(--color-text-primary);
+        background-color: var(--bg-main);
+      }
+      body { 
+        display: flex; 
+        height: 100vh; 
+        overflow: hidden;
+      }
+
+      /* 3. Component Styles: Sidebar */
+      .sidenav {
+        width: 250px;
+        height: 100%;
+        background-color: var(--bg-sidebar);
+        overflow-y: auto;
+        padding: var(--spacing-md) 0;
+        flex-shrink: 0;
+        border-right: 1px solid var(--border-color);
+      }
+      .sidenav a, .dropdown-btn {
+        display: block;
+        width: 100%;
+        padding: 10px var(--spacing-lg);
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: #d1d5db; /* Lighter gray for better contrast on dark bg */
+        background: none;
+        border: none;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+        transition: background-color 0.2s ease, color 0.2s ease;
+        border-left: 3px solid transparent;
+      }
+      .sidenav a:hover, .dropdown-btn:hover {
+        background-color: var(--bg-sidebar-active);
+        color: var(--color-text-inverted);
+      }
+      .sidenav a.selected, .dropdown-btn.active {
+        background-color: var(--bg-sidebar-active);
+        color: var(--color-text-inverted);
+        border-left-color: var(--color-brand);
+      }
+      .dropdown-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      /* Dropdown arrow indicator */
+      .dropdown-btn::after {
+        content: "›";
+        font-size: 1.5rem;
+        line-height: 1;
+        transform: rotate(90deg);
+        transition: transform 0.2s ease;
+      }
+      .dropdown-btn.active::after {
+        transform: rotate(-90deg);
+      }
+      .dropdown-container {
+        display: none;
+        background-color: rgba(0,0,0,0.2);
+      }
+      .dropdown-container a {
+        padding-left: var(--spacing-xl);
+        font-size: 0.85rem;
+        color: #9ca3af;
+      }
+      .dropdown-container.show {
+        display: block;
+      }
+      hr.sidebar-sep {
+        border: 0;
+        border-top: 1px solid #374151;
+        margin: var(--spacing-md) 0;
+      }
+      
+      /* Main Content Area */
+      .content { 
+    		flex: 1; 
+    		display: flex; 
+    		flex-direction: column; 
+    		min-height: 0;          /* allow flex children to shrink */
+    		overflow: hidden;
+    	 }
+      .main-area { 
+    		flex: 1 1 auto;         /* grow & shrink */
+    		min-height: 0;          /* allow child tabs to shrink */
+    		padding: var(--spacing-lg);
+    		overflow: hidden;
+      }
+  	  .content, .main-area {
+        position: relative;
+      }
+      .hide { display: none !important; }
+
+      /* Top Bar */
+      .top-bar {
+        display: flex;
+        padding: var(--spacing-sm) var(--spacing-lg);
+        background-color: var(--bg-topbar);
+        border-bottom: 1px solid var(--border-color);
+        gap: var(--spacing-sm);
+        flex-shrink: 0;
+        box-shadow: var(--shadow-sm);
+        align-items: center;
+        padding: 0.5rem 1rem;
+      }
+      .top-bar-left {
+        flex: 0 0 auto;  /* only as wide as needed */
+      }
+      .spacer {
+        flex: 1;         /* fills all available space */
+      }
+      .top-bar-right {
+        display: flex;
+        align-items: center;
+        gap: 1rem;     /* Increased gap */
+      }
+      .top-bar-view-controls {
+        display: flex;
+        gap: var(--spacing-sm);
+      }
+      .top-bar-btn {
+        padding: var(--spacing-sm) 12px;
+        border: 1px solid var(--border-color);
+        background-color: var(--bg-topbar);
+        cursor: pointer;
+        font-size: 0.9rem;
+        font-weight: 600;
+        border-radius: var(--border-radius-md);
+        transition: all 0.2s ease-in-out;
+      }
+      .top-bar-btn:hover {
+        background-color: var(--bg-main);
+        border-color: #d1d5db;
+      }
+      .top-bar-btn.active {
+        background-color: var(--color-brand);
+        color: white;
+        border-color: var(--color-brand);
+      }
+      .top-bar-btn:disabled {
+		    background-color: #e5e7eb !important;
+		    color: #9ca3af !important;
+		    border-color: #d1d5db !important;
+		    cursor: not-allowed !important;
+		    opacity: 0.7;
+		  }
+      #pik-logo {
+        height: 24px; 
+        width: auto;
+      }
+      .credit-text {
+        font-size: 0.9rem;
+        color: #6b7280;   
+      }
+      /* Tabs Container */
+      .tabs {
+        display: flex;
+        background-color: #ffffff;
+        border-radius: var(--border-radius-md);
+        box-shadow: var(--shadow-sm);
+        border: 1px solid var(--border-color);
+        overflow: hidden;
+        width: 100%;
+        height: 100%; 
+        flex-direction: column;
+      }
+      .tab-content {
+    		display: none;
+    		flex: 1 1 auto;
+    		min-height: 0;       
+    		overflow: auto;      
+    		padding: var(--spacing-md);
+    		box-sizing: border-box;
+	    }
+      .tab-content.active {
+        display: flex;
+	    	flex-direction: column;
+      }
+
+      /* Chart visibility control */
+      .chart-view {
+        display: none;
+        flex: 1;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .chart-view.active {
+        display: block;
+      }
+      .plotly-graph-div {
+        flex: 1;
+    		width: 100%;
+    		height: 100%;
+    		box-sizing: border-box;
+      }
+
+      /* Iframe styling */
+      .top_info, .driver_content { 
+        height: 100%; 
+      }
+      iframe { 
+        border: none; 
+        height: 100%; 
+        width: 100%; 
+      }
+      #loader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);  /* center relative to parent */
+        z-index: 10;                       /* appear above charts */
+        pointer-events: none;               /* dont block clicks */
+      }
+      #loader.hidden {
+        display: none;
+      }
+      .lds-ring { color: #1c4c5b; margin-left: 250px; }
+      .lds-ring, .lds-ring div { box-sizing: border-box; }
+      .lds-ring { display: inline-block; position: relative; width: 80px; height: 80px; }
+      .lds-ring div { box-sizing: border-box; display: block; position: absolute; width: 64px; height: 64px; margin: 8px; border: 8px solid currentColor; border-radius: 50%; animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite; border-color: currentColor transparent transparent transparent; }
+      .lds-ring div:nth-child(1) { animation-delay: -0.45s; }
+      .lds-ring div:nth-child(2) { animation-delay: -0.3s; }
+      .lds-ring div:nth-child(3) { animation-delay: -0.15s; }
+      @keyframes lds-ring { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+    </head>
+    
+    <body>
+    <div id="sideBar" class="sidenav">
+      <a href="#TOP_Data" class="sidenavLink topItem">Data</a>
+      <a href="#TOP_World_Maps" class="sidenavLink topItem">World Maps</a>
+      <a href="#TOP_Carbon_Price" class="sidenavLink topItem">Carbon Price</a>
+      <hr class="sidebar-sep">
+      <button class="dropdown-btn">Environment</button>
+      <div class="dropdown-container">
+        <a href="#Environment_Carbon_Price___bulk_sectors" class="sidenavLink">Carbon Price - bulk sectors</a>
+        <a href="#Environment_Carbon_Price___diffuse_sectors" class="sidenavLink">Carbon Price - diffuse sectors</a>
+        <a href="#Environment_GHG_emissions" class="sidenavLink">GHG emissions</a>
+        <a href="#Environment_CO2_emissions" class="sidenavLink">CO2 emissions</a>
+        <a href="#Environment_CO2_emi_per_capita" class="sidenavLink">CO2 emi per capita</a>
+      </div>
+      <button class="dropdown-btn">Demographics</button>
+      <div class="dropdown-container">
+        <a href="#Demographics_Population" class="sidenavLink">Population</a>
+        <a href="#Demographics_Population_growth" class="sidenavLink">Population growth</a>
+        <a href="#Demographics_Population_ages___0_to_14" class="sidenavLink">Population ages - 0 to 14</a>
+        <a href="#Demographics_Population_ages___65_and_above" class="sidenavLink">Population ages - 65 and above</a>
+        <a href="#Demographics_Rural_population" class="sidenavLink">Rural population</a>
+      </div>
+      <button class="dropdown-btn">Economy</button>
+      <div class="dropdown-container">
+        <a href="#Economy_GDP" class="sidenavLink">GDP</a>
+        <a href="#Economy_GDP_per_capita" class="sidenavLink">GDP per capita</a>
+        <a href="#Economy_Gini_index" class="sidenavLink">Gini index</a>
+      </div>
+      <button class="dropdown-btn">Extraction</button>
+      <div class="dropdown-container">
+        <a href="#Extraction_Oil_production" class="sidenavLink">Oil production</a>
+        <a href="#Extraction_Coal_production" class="sidenavLink">Coal production</a>
+        <a href="#Extraction_Cobalt_production" class="sidenavLink">Cobalt production</a>
+        <a href="#Extraction_Lithium_production" class="sidenavLink">Lithium production</a>
+      </div>
+      <button class="dropdown-btn">Consumption</button>
+      <div class="dropdown-container">
+        <a href="#Consumption_Oil_consumption" class="sidenavLink">Oil consumption</a>
+        <a href="#Consumption_Coal_consumption" class="sidenavLink">Coal consumption</a>
+      </div>
+      <button class="dropdown-btn">Resources</button>
+      <div class="dropdown-container">
+        <a href="#Resources_Land_area" class="sidenavLink">Land area</a>
+        <a href="#Resources_Oil_reserves" class="sidenavLink">Oil reserves</a>
+        <a href="#Resources_Coal_reserves" class="sidenavLink">Coal reserves</a>
+      </div>
+      <button class="dropdown-btn">Trade</button>
+      <div class="dropdown-container">
+        <a href="#Trade_Trade_freedom_index" class="sidenavLink">Trade freedom index</a>
+        <a href="#Trade_Trade_openness___exports_plus_imports" class="sidenavLink">Trade openness - exports plus imports</a>
+        <a href="#Trade_Exports" class="sidenavLink">Exports</a>
+        <a href="#Trade_Exports___coal" class="sidenavLink">Exports - coal</a>
+        <a href="#Trade_Exports___goods_and_services" class="sidenavLink">Exports - goods and services</a>
+        <a href="#Trade_Exports___high_technology" class="sidenavLink">Exports - high technology</a>
+        <a href="#Trade_Imports" class="sidenavLink">Imports</a>
+        <a href="#Trade_Imports___energy" class="sidenavLink">Imports - energy</a>
+        <a href="#Trade_Imports___coal" class="sidenavLink">Imports - coal</a>
+      </div>
+      <button class="dropdown-btn">Energy</button>
+      <div class="dropdown-container">
+        <a href="#Energy_Energy_use_per_capita" class="sidenavLink">Energy use per capita</a>
+        <a href="#Energy_Alternative___and_nuclear_energy" class="sidenavLink">Alternative - and nuclear energy</a>
+        <a href="#Energy_Access_to_electricity" class="sidenavLink">Access to electricity</a>
+      </div>
+      <button class="dropdown-btn">Sectors</button>
+      <div class="dropdown-container">
+        <a href="#Sectors_Value_added___agriculture" class="sidenavLink">Value added - agriculture</a>
+        <a href="#Sectors_Value_added___industry" class="sidenavLink">Value added - industry</a>
+        <a href="#Sectors_Value_added___services" class="sidenavLink">Value added - services</a>
+      </div>
+      <button class="dropdown-btn">Government</button>
+      <div class="dropdown-container">
+        <a href="#Government_Government_spending___percent_of_GDP" class="sidenavLink">Government spending - percent of GDP</a>
+        <a href="#Government_Tax_revenue" class="sidenavLink">Tax revenue</a>
+        <a href="#Government_Taxes_on_international_trade" class="sidenavLink">Taxes on international trade</a>
+        <a href="#Government_Number_of_taxes___paid_by_businesses" class="sidenavLink">Number of taxes - paid by businesses</a>
+      </div>
+      <button class="dropdown-btn">Education</button>
+      <div class="dropdown-container">
+        <a href="#Education_Public_spending___on_education" class="sidenavLink">Public spending - on education</a>
+        <a href="#Education_Literacy_rate_index" class="sidenavLink">Literacy rate index</a>
+        <a href="#Education_Tertiary_school___enrollment" class="sidenavLink">Tertiary school - enrollment</a>
+      </div>
+      <button class="dropdown-btn">Credit</button>
+      <div class="dropdown-container">
+        <a href="#Credit_Domestic_credit___to_the_private_sector" class="sidenavLink">Domestic credit - to the private sector</a>
+        <a href="#Credit_Bank_credit_interest_rates___to_the_private_sector_" class="sidenavLink">Bank credit interest rates - to the private sector </a>
+        <a href="#Credit_Bank_credit___to_the_private_sector" class="sidenavLink">Bank credit - to the private sector</a>
+        <a href="#Credit_Foreign_Direct_Investment" class="sidenavLink">Foreign Direct Investment</a>
+        <a href="#Credit_Credit_information___sharing_index" class="sidenavLink">Credit information - sharing index</a>
+        <a href="#Credit_Business_freedom_index" class="sidenavLink">Business freedom index</a>
+      </div>
+    </div>
+    <div id="content" class="content">
+      <div id="loader">
+        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+      </div>
+      <div class="top-bar">
+        <div class="top-bar-left">
+          <button class="top-bar-btn active" data-reg="REMIND_12" disabled> REMIND_12</button>
+          <button class="top-bar-btn " data-reg="REMIND_21" disabled> REMIND_21</button>
+          <button class="top-bar-btn " data-reg="REMIND_26" disabled> REMIND_26</button>
+          <button class="top-bar-btn " data-reg="REMIND_39" disabled> REMIND_39</button>
+          <button class="top-bar-btn " data-reg="REMIND_54" disabled> REMIND_54</button>
+          <button class="top-bar-btn " data-reg="REMIND_62" disabled> REMIND_62</button>
+        </div>
+        <div class="spacer"></div>
+        <div class="top-bar-right">
+          <div class="top-bar-view-controls">
+            <button class="top-bar-btn top-bar-view-btn active" data-view="bar" disabled>Bar</button>
+            <button class="top-bar-btn top-bar-view-btn" data-view="line" disabled>Line</button>
+            <button class="top-bar-btn top-bar-view-btn" data-view="map" disabled>Map</button>
+          </div>
+          <img id="pik-logo" src="img/PIK_logo.svg" alt="PIK logo">
+          <span class="credit-text">made by Renato Rodrigues</span>
+        </div>
+      </div>
+      <div class="main-area">
+        <div id="TOP_Data" class="top_info"><iframe data-src="./iframe/Data.html" loading="lazy" src="./iframe/Data.html"></iframe></div>
+        <div id="TOP_World_Maps" class="top_info"><iframe data-src="./iframe/World_maps.html" loading="lazy" src="./iframe/World_maps.html"></iframe></div>
+        <div id="TOP_Carbon_Price" class="top_info"><iframe data-src="./iframe/Carbon_Price.html" loading="lazy" src="./iframe/Carbon_Price.html"></iframe></div>
+        <div class="driver_content">
+          <div id="Environment_Carbon_Price___bulk_sectors" class="tabs hide">
+            <div id="Environment_Carbon_Price___bulk_sectors_map_mainTab" class="tab-content">
+              <div id="Environment_Carbon_Price___bulk_sectors_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Environment_Carbon_Price___bulk_sectors_mainTab" class="tab-content">
+              <div id="REMIND_12_Environment_Carbon_Price___bulk_sectors_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Environment_Carbon_Price___bulk_sectors_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Environment_Carbon_Price___bulk_sectors_mainTab" class="tab-content">
+              <div id="REMIND_21_Environment_Carbon_Price___bulk_sectors_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Environment_Carbon_Price___bulk_sectors_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Environment_Carbon_Price___bulk_sectors_mainTab" class="tab-content">
+              <div id="REMIND_26_Environment_Carbon_Price___bulk_sectors_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Environment_Carbon_Price___bulk_sectors_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Environment_Carbon_Price___bulk_sectors_mainTab" class="tab-content">
+              <div id="REMIND_39_Environment_Carbon_Price___bulk_sectors_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Environment_Carbon_Price___bulk_sectors_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Environment_Carbon_Price___bulk_sectors_mainTab" class="tab-content">
+              <div id="REMIND_54_Environment_Carbon_Price___bulk_sectors_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Environment_Carbon_Price___bulk_sectors_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Environment_Carbon_Price___bulk_sectors_mainTab" class="tab-content">
+              <div id="REMIND_62_Environment_Carbon_Price___bulk_sectors_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Environment_Carbon_Price___bulk_sectors_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Environment_Carbon_Price___diffuse_sectors" class="tabs hide">
+            <div id="Environment_Carbon_Price___diffuse_sectors_map_mainTab" class="tab-content">
+              <div id="Environment_Carbon_Price___diffuse_sectors_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Environment_Carbon_Price___diffuse_sectors_mainTab" class="tab-content">
+              <div id="REMIND_12_Environment_Carbon_Price___diffuse_sectors_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Environment_Carbon_Price___diffuse_sectors_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Environment_Carbon_Price___diffuse_sectors_mainTab" class="tab-content">
+              <div id="REMIND_21_Environment_Carbon_Price___diffuse_sectors_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Environment_Carbon_Price___diffuse_sectors_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Environment_Carbon_Price___diffuse_sectors_mainTab" class="tab-content">
+              <div id="REMIND_26_Environment_Carbon_Price___diffuse_sectors_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Environment_Carbon_Price___diffuse_sectors_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Environment_Carbon_Price___diffuse_sectors_mainTab" class="tab-content">
+              <div id="REMIND_39_Environment_Carbon_Price___diffuse_sectors_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Environment_Carbon_Price___diffuse_sectors_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Environment_Carbon_Price___diffuse_sectors_mainTab" class="tab-content">
+              <div id="REMIND_54_Environment_Carbon_Price___diffuse_sectors_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Environment_Carbon_Price___diffuse_sectors_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Environment_Carbon_Price___diffuse_sectors_mainTab" class="tab-content">
+              <div id="REMIND_62_Environment_Carbon_Price___diffuse_sectors_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Environment_Carbon_Price___diffuse_sectors_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Environment_GHG_emissions" class="tabs hide">
+            <div id="Environment_GHG_emissions_map_mainTab" class="tab-content">
+              <div id="Environment_GHG_emissions_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Environment_GHG_emissions_mainTab" class="tab-content">
+              <div id="REMIND_12_Environment_GHG_emissions_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Environment_GHG_emissions_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Environment_GHG_emissions_mainTab" class="tab-content">
+              <div id="REMIND_21_Environment_GHG_emissions_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Environment_GHG_emissions_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Environment_GHG_emissions_mainTab" class="tab-content">
+              <div id="REMIND_26_Environment_GHG_emissions_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Environment_GHG_emissions_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Environment_GHG_emissions_mainTab" class="tab-content">
+              <div id="REMIND_39_Environment_GHG_emissions_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Environment_GHG_emissions_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Environment_GHG_emissions_mainTab" class="tab-content">
+              <div id="REMIND_54_Environment_GHG_emissions_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Environment_GHG_emissions_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Environment_GHG_emissions_mainTab" class="tab-content">
+              <div id="REMIND_62_Environment_GHG_emissions_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Environment_GHG_emissions_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Environment_CO2_emissions" class="tabs hide">
+            <div id="Environment_CO2_emissions_map_mainTab" class="tab-content">
+              <div id="Environment_CO2_emissions_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Environment_CO2_emissions_mainTab" class="tab-content">
+              <div id="REMIND_12_Environment_CO2_emissions_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Environment_CO2_emissions_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Environment_CO2_emissions_mainTab" class="tab-content">
+              <div id="REMIND_21_Environment_CO2_emissions_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Environment_CO2_emissions_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Environment_CO2_emissions_mainTab" class="tab-content">
+              <div id="REMIND_26_Environment_CO2_emissions_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Environment_CO2_emissions_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Environment_CO2_emissions_mainTab" class="tab-content">
+              <div id="REMIND_39_Environment_CO2_emissions_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Environment_CO2_emissions_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Environment_CO2_emissions_mainTab" class="tab-content">
+              <div id="REMIND_54_Environment_CO2_emissions_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Environment_CO2_emissions_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Environment_CO2_emissions_mainTab" class="tab-content">
+              <div id="REMIND_62_Environment_CO2_emissions_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Environment_CO2_emissions_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Environment_CO2_emi_per_capita" class="tabs hide">
+            <div id="Environment_CO2_emi_per_capita_map_mainTab" class="tab-content">
+              <div id="Environment_CO2_emi_per_capita_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Environment_CO2_emi_per_capita_mainTab" class="tab-content">
+              <div id="REMIND_12_Environment_CO2_emi_per_capita_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Environment_CO2_emi_per_capita_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Environment_CO2_emi_per_capita_mainTab" class="tab-content">
+              <div id="REMIND_21_Environment_CO2_emi_per_capita_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Environment_CO2_emi_per_capita_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Environment_CO2_emi_per_capita_mainTab" class="tab-content">
+              <div id="REMIND_26_Environment_CO2_emi_per_capita_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Environment_CO2_emi_per_capita_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Environment_CO2_emi_per_capita_mainTab" class="tab-content">
+              <div id="REMIND_39_Environment_CO2_emi_per_capita_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Environment_CO2_emi_per_capita_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Environment_CO2_emi_per_capita_mainTab" class="tab-content">
+              <div id="REMIND_54_Environment_CO2_emi_per_capita_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Environment_CO2_emi_per_capita_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Environment_CO2_emi_per_capita_mainTab" class="tab-content">
+              <div id="REMIND_62_Environment_CO2_emi_per_capita_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Environment_CO2_emi_per_capita_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Demographics_Population" class="tabs hide">
+            <div id="Demographics_Population_map_mainTab" class="tab-content">
+              <div id="Demographics_Population_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Demographics_Population_mainTab" class="tab-content">
+              <div id="REMIND_12_Demographics_Population_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Demographics_Population_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Demographics_Population_mainTab" class="tab-content">
+              <div id="REMIND_21_Demographics_Population_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Demographics_Population_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Demographics_Population_mainTab" class="tab-content">
+              <div id="REMIND_26_Demographics_Population_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Demographics_Population_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Demographics_Population_mainTab" class="tab-content">
+              <div id="REMIND_39_Demographics_Population_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Demographics_Population_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Demographics_Population_mainTab" class="tab-content">
+              <div id="REMIND_54_Demographics_Population_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Demographics_Population_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Demographics_Population_mainTab" class="tab-content">
+              <div id="REMIND_62_Demographics_Population_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Demographics_Population_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Demographics_Population_growth" class="tabs hide">
+            <div id="Demographics_Population_growth_map_mainTab" class="tab-content">
+              <div id="Demographics_Population_growth_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Demographics_Population_growth_mainTab" class="tab-content">
+              <div id="REMIND_12_Demographics_Population_growth_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Demographics_Population_growth_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Demographics_Population_growth_mainTab" class="tab-content">
+              <div id="REMIND_21_Demographics_Population_growth_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Demographics_Population_growth_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Demographics_Population_growth_mainTab" class="tab-content">
+              <div id="REMIND_26_Demographics_Population_growth_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Demographics_Population_growth_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Demographics_Population_growth_mainTab" class="tab-content">
+              <div id="REMIND_39_Demographics_Population_growth_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Demographics_Population_growth_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Demographics_Population_growth_mainTab" class="tab-content">
+              <div id="REMIND_54_Demographics_Population_growth_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Demographics_Population_growth_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Demographics_Population_growth_mainTab" class="tab-content">
+              <div id="REMIND_62_Demographics_Population_growth_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Demographics_Population_growth_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Demographics_Population_ages___0_to_14" class="tabs hide">
+            <div id="Demographics_Population_ages___0_to_14_map_mainTab" class="tab-content">
+              <div id="Demographics_Population_ages___0_to_14_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Demographics_Population_ages___0_to_14_mainTab" class="tab-content">
+              <div id="REMIND_12_Demographics_Population_ages___0_to_14_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Demographics_Population_ages___0_to_14_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Demographics_Population_ages___0_to_14_mainTab" class="tab-content">
+              <div id="REMIND_21_Demographics_Population_ages___0_to_14_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Demographics_Population_ages___0_to_14_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Demographics_Population_ages___0_to_14_mainTab" class="tab-content">
+              <div id="REMIND_26_Demographics_Population_ages___0_to_14_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Demographics_Population_ages___0_to_14_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Demographics_Population_ages___0_to_14_mainTab" class="tab-content">
+              <div id="REMIND_39_Demographics_Population_ages___0_to_14_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Demographics_Population_ages___0_to_14_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Demographics_Population_ages___0_to_14_mainTab" class="tab-content">
+              <div id="REMIND_54_Demographics_Population_ages___0_to_14_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Demographics_Population_ages___0_to_14_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Demographics_Population_ages___0_to_14_mainTab" class="tab-content">
+              <div id="REMIND_62_Demographics_Population_ages___0_to_14_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Demographics_Population_ages___0_to_14_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Demographics_Population_ages___65_and_above" class="tabs hide">
+            <div id="Demographics_Population_ages___65_and_above_map_mainTab" class="tab-content">
+              <div id="Demographics_Population_ages___65_and_above_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Demographics_Population_ages___65_and_above_mainTab" class="tab-content">
+              <div id="REMIND_12_Demographics_Population_ages___65_and_above_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Demographics_Population_ages___65_and_above_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Demographics_Population_ages___65_and_above_mainTab" class="tab-content">
+              <div id="REMIND_21_Demographics_Population_ages___65_and_above_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Demographics_Population_ages___65_and_above_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Demographics_Population_ages___65_and_above_mainTab" class="tab-content">
+              <div id="REMIND_26_Demographics_Population_ages___65_and_above_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Demographics_Population_ages___65_and_above_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Demographics_Population_ages___65_and_above_mainTab" class="tab-content">
+              <div id="REMIND_39_Demographics_Population_ages___65_and_above_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Demographics_Population_ages___65_and_above_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Demographics_Population_ages___65_and_above_mainTab" class="tab-content">
+              <div id="REMIND_54_Demographics_Population_ages___65_and_above_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Demographics_Population_ages___65_and_above_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Demographics_Population_ages___65_and_above_mainTab" class="tab-content">
+              <div id="REMIND_62_Demographics_Population_ages___65_and_above_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Demographics_Population_ages___65_and_above_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Demographics_Rural_population" class="tabs hide">
+            <div id="Demographics_Rural_population_map_mainTab" class="tab-content">
+              <div id="Demographics_Rural_population_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Demographics_Rural_population_mainTab" class="tab-content">
+              <div id="REMIND_12_Demographics_Rural_population_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Demographics_Rural_population_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Demographics_Rural_population_mainTab" class="tab-content">
+              <div id="REMIND_21_Demographics_Rural_population_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Demographics_Rural_population_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Demographics_Rural_population_mainTab" class="tab-content">
+              <div id="REMIND_26_Demographics_Rural_population_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Demographics_Rural_population_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Demographics_Rural_population_mainTab" class="tab-content">
+              <div id="REMIND_39_Demographics_Rural_population_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Demographics_Rural_population_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Demographics_Rural_population_mainTab" class="tab-content">
+              <div id="REMIND_54_Demographics_Rural_population_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Demographics_Rural_population_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Demographics_Rural_population_mainTab" class="tab-content">
+              <div id="REMIND_62_Demographics_Rural_population_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Demographics_Rural_population_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Economy_GDP" class="tabs hide">
+            <div id="Economy_GDP_map_mainTab" class="tab-content">
+              <div id="Economy_GDP_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Economy_GDP_mainTab" class="tab-content">
+              <div id="REMIND_12_Economy_GDP_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Economy_GDP_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Economy_GDP_mainTab" class="tab-content">
+              <div id="REMIND_21_Economy_GDP_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Economy_GDP_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Economy_GDP_mainTab" class="tab-content">
+              <div id="REMIND_26_Economy_GDP_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Economy_GDP_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Economy_GDP_mainTab" class="tab-content">
+              <div id="REMIND_39_Economy_GDP_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Economy_GDP_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Economy_GDP_mainTab" class="tab-content">
+              <div id="REMIND_54_Economy_GDP_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Economy_GDP_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Economy_GDP_mainTab" class="tab-content">
+              <div id="REMIND_62_Economy_GDP_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Economy_GDP_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Economy_GDP_per_capita" class="tabs hide">
+            <div id="Economy_GDP_per_capita_map_mainTab" class="tab-content">
+              <div id="Economy_GDP_per_capita_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Economy_GDP_per_capita_mainTab" class="tab-content">
+              <div id="REMIND_12_Economy_GDP_per_capita_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Economy_GDP_per_capita_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Economy_GDP_per_capita_mainTab" class="tab-content">
+              <div id="REMIND_21_Economy_GDP_per_capita_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Economy_GDP_per_capita_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Economy_GDP_per_capita_mainTab" class="tab-content">
+              <div id="REMIND_26_Economy_GDP_per_capita_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Economy_GDP_per_capita_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Economy_GDP_per_capita_mainTab" class="tab-content">
+              <div id="REMIND_39_Economy_GDP_per_capita_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Economy_GDP_per_capita_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Economy_GDP_per_capita_mainTab" class="tab-content">
+              <div id="REMIND_54_Economy_GDP_per_capita_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Economy_GDP_per_capita_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Economy_GDP_per_capita_mainTab" class="tab-content">
+              <div id="REMIND_62_Economy_GDP_per_capita_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Economy_GDP_per_capita_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Economy_Gini_index" class="tabs hide">
+            <div id="Economy_Gini_index_map_mainTab" class="tab-content">
+              <div id="Economy_Gini_index_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Economy_Gini_index_mainTab" class="tab-content">
+              <div id="REMIND_12_Economy_Gini_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Economy_Gini_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Economy_Gini_index_mainTab" class="tab-content">
+              <div id="REMIND_21_Economy_Gini_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Economy_Gini_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Economy_Gini_index_mainTab" class="tab-content">
+              <div id="REMIND_26_Economy_Gini_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Economy_Gini_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Economy_Gini_index_mainTab" class="tab-content">
+              <div id="REMIND_39_Economy_Gini_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Economy_Gini_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Economy_Gini_index_mainTab" class="tab-content">
+              <div id="REMIND_54_Economy_Gini_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Economy_Gini_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Economy_Gini_index_mainTab" class="tab-content">
+              <div id="REMIND_62_Economy_Gini_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Economy_Gini_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Extraction_Oil_production" class="tabs hide">
+            <div id="Extraction_Oil_production_map_mainTab" class="tab-content">
+              <div id="Extraction_Oil_production_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Extraction_Oil_production_mainTab" class="tab-content">
+              <div id="REMIND_12_Extraction_Oil_production_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Extraction_Oil_production_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Extraction_Oil_production_mainTab" class="tab-content">
+              <div id="REMIND_21_Extraction_Oil_production_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Extraction_Oil_production_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Extraction_Oil_production_mainTab" class="tab-content">
+              <div id="REMIND_26_Extraction_Oil_production_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Extraction_Oil_production_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Extraction_Oil_production_mainTab" class="tab-content">
+              <div id="REMIND_39_Extraction_Oil_production_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Extraction_Oil_production_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Extraction_Oil_production_mainTab" class="tab-content">
+              <div id="REMIND_54_Extraction_Oil_production_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Extraction_Oil_production_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Extraction_Oil_production_mainTab" class="tab-content">
+              <div id="REMIND_62_Extraction_Oil_production_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Extraction_Oil_production_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Extraction_Coal_production" class="tabs hide">
+            <div id="Extraction_Coal_production_map_mainTab" class="tab-content">
+              <div id="Extraction_Coal_production_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Extraction_Coal_production_mainTab" class="tab-content">
+              <div id="REMIND_12_Extraction_Coal_production_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Extraction_Coal_production_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Extraction_Coal_production_mainTab" class="tab-content">
+              <div id="REMIND_21_Extraction_Coal_production_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Extraction_Coal_production_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Extraction_Coal_production_mainTab" class="tab-content">
+              <div id="REMIND_26_Extraction_Coal_production_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Extraction_Coal_production_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Extraction_Coal_production_mainTab" class="tab-content">
+              <div id="REMIND_39_Extraction_Coal_production_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Extraction_Coal_production_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Extraction_Coal_production_mainTab" class="tab-content">
+              <div id="REMIND_54_Extraction_Coal_production_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Extraction_Coal_production_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Extraction_Coal_production_mainTab" class="tab-content">
+              <div id="REMIND_62_Extraction_Coal_production_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Extraction_Coal_production_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Extraction_Cobalt_production" class="tabs hide">
+            <div id="Extraction_Cobalt_production_map_mainTab" class="tab-content">
+              <div id="Extraction_Cobalt_production_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Extraction_Cobalt_production_mainTab" class="tab-content">
+              <div id="REMIND_12_Extraction_Cobalt_production_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Extraction_Cobalt_production_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Extraction_Cobalt_production_mainTab" class="tab-content">
+              <div id="REMIND_21_Extraction_Cobalt_production_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Extraction_Cobalt_production_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Extraction_Cobalt_production_mainTab" class="tab-content">
+              <div id="REMIND_26_Extraction_Cobalt_production_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Extraction_Cobalt_production_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Extraction_Cobalt_production_mainTab" class="tab-content">
+              <div id="REMIND_39_Extraction_Cobalt_production_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Extraction_Cobalt_production_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Extraction_Cobalt_production_mainTab" class="tab-content">
+              <div id="REMIND_54_Extraction_Cobalt_production_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Extraction_Cobalt_production_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Extraction_Cobalt_production_mainTab" class="tab-content">
+              <div id="REMIND_62_Extraction_Cobalt_production_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Extraction_Cobalt_production_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Extraction_Lithium_production" class="tabs hide">
+            <div id="Extraction_Lithium_production_map_mainTab" class="tab-content">
+              <div id="Extraction_Lithium_production_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Extraction_Lithium_production_mainTab" class="tab-content">
+              <div id="REMIND_12_Extraction_Lithium_production_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Extraction_Lithium_production_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Extraction_Lithium_production_mainTab" class="tab-content">
+              <div id="REMIND_21_Extraction_Lithium_production_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Extraction_Lithium_production_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Extraction_Lithium_production_mainTab" class="tab-content">
+              <div id="REMIND_26_Extraction_Lithium_production_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Extraction_Lithium_production_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Extraction_Lithium_production_mainTab" class="tab-content">
+              <div id="REMIND_39_Extraction_Lithium_production_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Extraction_Lithium_production_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Extraction_Lithium_production_mainTab" class="tab-content">
+              <div id="REMIND_54_Extraction_Lithium_production_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Extraction_Lithium_production_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Extraction_Lithium_production_mainTab" class="tab-content">
+              <div id="REMIND_62_Extraction_Lithium_production_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Extraction_Lithium_production_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Consumption_Oil_consumption" class="tabs hide">
+            <div id="Consumption_Oil_consumption_map_mainTab" class="tab-content">
+              <div id="Consumption_Oil_consumption_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Consumption_Oil_consumption_mainTab" class="tab-content">
+              <div id="REMIND_12_Consumption_Oil_consumption_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Consumption_Oil_consumption_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Consumption_Oil_consumption_mainTab" class="tab-content">
+              <div id="REMIND_21_Consumption_Oil_consumption_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Consumption_Oil_consumption_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Consumption_Oil_consumption_mainTab" class="tab-content">
+              <div id="REMIND_26_Consumption_Oil_consumption_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Consumption_Oil_consumption_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Consumption_Oil_consumption_mainTab" class="tab-content">
+              <div id="REMIND_39_Consumption_Oil_consumption_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Consumption_Oil_consumption_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Consumption_Oil_consumption_mainTab" class="tab-content">
+              <div id="REMIND_54_Consumption_Oil_consumption_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Consumption_Oil_consumption_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Consumption_Oil_consumption_mainTab" class="tab-content">
+              <div id="REMIND_62_Consumption_Oil_consumption_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Consumption_Oil_consumption_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Consumption_Coal_consumption" class="tabs hide">
+            <div id="Consumption_Coal_consumption_map_mainTab" class="tab-content">
+              <div id="Consumption_Coal_consumption_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Consumption_Coal_consumption_mainTab" class="tab-content">
+              <div id="REMIND_12_Consumption_Coal_consumption_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Consumption_Coal_consumption_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Consumption_Coal_consumption_mainTab" class="tab-content">
+              <div id="REMIND_21_Consumption_Coal_consumption_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Consumption_Coal_consumption_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Consumption_Coal_consumption_mainTab" class="tab-content">
+              <div id="REMIND_26_Consumption_Coal_consumption_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Consumption_Coal_consumption_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Consumption_Coal_consumption_mainTab" class="tab-content">
+              <div id="REMIND_39_Consumption_Coal_consumption_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Consumption_Coal_consumption_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Consumption_Coal_consumption_mainTab" class="tab-content">
+              <div id="REMIND_54_Consumption_Coal_consumption_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Consumption_Coal_consumption_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Consumption_Coal_consumption_mainTab" class="tab-content">
+              <div id="REMIND_62_Consumption_Coal_consumption_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Consumption_Coal_consumption_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Resources_Land_area" class="tabs hide">
+            <div id="Resources_Land_area_map_mainTab" class="tab-content">
+              <div id="Resources_Land_area_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Resources_Land_area_mainTab" class="tab-content">
+              <div id="REMIND_12_Resources_Land_area_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Resources_Land_area_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Resources_Land_area_mainTab" class="tab-content">
+              <div id="REMIND_21_Resources_Land_area_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Resources_Land_area_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Resources_Land_area_mainTab" class="tab-content">
+              <div id="REMIND_26_Resources_Land_area_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Resources_Land_area_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Resources_Land_area_mainTab" class="tab-content">
+              <div id="REMIND_39_Resources_Land_area_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Resources_Land_area_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Resources_Land_area_mainTab" class="tab-content">
+              <div id="REMIND_54_Resources_Land_area_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Resources_Land_area_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Resources_Land_area_mainTab" class="tab-content">
+              <div id="REMIND_62_Resources_Land_area_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Resources_Land_area_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Resources_Oil_reserves" class="tabs hide">
+            <div id="Resources_Oil_reserves_map_mainTab" class="tab-content">
+              <div id="Resources_Oil_reserves_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Resources_Oil_reserves_mainTab" class="tab-content">
+              <div id="REMIND_12_Resources_Oil_reserves_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Resources_Oil_reserves_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Resources_Oil_reserves_mainTab" class="tab-content">
+              <div id="REMIND_21_Resources_Oil_reserves_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Resources_Oil_reserves_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Resources_Oil_reserves_mainTab" class="tab-content">
+              <div id="REMIND_26_Resources_Oil_reserves_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Resources_Oil_reserves_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Resources_Oil_reserves_mainTab" class="tab-content">
+              <div id="REMIND_39_Resources_Oil_reserves_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Resources_Oil_reserves_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Resources_Oil_reserves_mainTab" class="tab-content">
+              <div id="REMIND_54_Resources_Oil_reserves_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Resources_Oil_reserves_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Resources_Oil_reserves_mainTab" class="tab-content">
+              <div id="REMIND_62_Resources_Oil_reserves_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Resources_Oil_reserves_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Resources_Coal_reserves" class="tabs hide">
+            <div id="Resources_Coal_reserves_map_mainTab" class="tab-content">
+              <div id="Resources_Coal_reserves_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Resources_Coal_reserves_mainTab" class="tab-content">
+              <div id="REMIND_12_Resources_Coal_reserves_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Resources_Coal_reserves_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Resources_Coal_reserves_mainTab" class="tab-content">
+              <div id="REMIND_21_Resources_Coal_reserves_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Resources_Coal_reserves_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Resources_Coal_reserves_mainTab" class="tab-content">
+              <div id="REMIND_26_Resources_Coal_reserves_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Resources_Coal_reserves_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Resources_Coal_reserves_mainTab" class="tab-content">
+              <div id="REMIND_39_Resources_Coal_reserves_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Resources_Coal_reserves_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Resources_Coal_reserves_mainTab" class="tab-content">
+              <div id="REMIND_54_Resources_Coal_reserves_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Resources_Coal_reserves_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Resources_Coal_reserves_mainTab" class="tab-content">
+              <div id="REMIND_62_Resources_Coal_reserves_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Resources_Coal_reserves_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Trade_Trade_freedom_index" class="tabs hide">
+            <div id="Trade_Trade_freedom_index_map_mainTab" class="tab-content">
+              <div id="Trade_Trade_freedom_index_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Trade_Trade_freedom_index_mainTab" class="tab-content">
+              <div id="REMIND_12_Trade_Trade_freedom_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Trade_Trade_freedom_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Trade_Trade_freedom_index_mainTab" class="tab-content">
+              <div id="REMIND_21_Trade_Trade_freedom_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Trade_Trade_freedom_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Trade_Trade_freedom_index_mainTab" class="tab-content">
+              <div id="REMIND_26_Trade_Trade_freedom_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Trade_Trade_freedom_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Trade_Trade_freedom_index_mainTab" class="tab-content">
+              <div id="REMIND_39_Trade_Trade_freedom_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Trade_Trade_freedom_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Trade_Trade_freedom_index_mainTab" class="tab-content">
+              <div id="REMIND_54_Trade_Trade_freedom_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Trade_Trade_freedom_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Trade_Trade_freedom_index_mainTab" class="tab-content">
+              <div id="REMIND_62_Trade_Trade_freedom_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Trade_Trade_freedom_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Trade_Trade_openness___exports_plus_imports" class="tabs hide">
+            <div id="Trade_Trade_openness___exports_plus_imports_map_mainTab" class="tab-content">
+              <div id="Trade_Trade_openness___exports_plus_imports_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Trade_Trade_openness___exports_plus_imports_mainTab" class="tab-content">
+              <div id="REMIND_12_Trade_Trade_openness___exports_plus_imports_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Trade_Trade_openness___exports_plus_imports_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Trade_Trade_openness___exports_plus_imports_mainTab" class="tab-content">
+              <div id="REMIND_21_Trade_Trade_openness___exports_plus_imports_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Trade_Trade_openness___exports_plus_imports_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Trade_Trade_openness___exports_plus_imports_mainTab" class="tab-content">
+              <div id="REMIND_26_Trade_Trade_openness___exports_plus_imports_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Trade_Trade_openness___exports_plus_imports_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Trade_Trade_openness___exports_plus_imports_mainTab" class="tab-content">
+              <div id="REMIND_39_Trade_Trade_openness___exports_plus_imports_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Trade_Trade_openness___exports_plus_imports_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Trade_Trade_openness___exports_plus_imports_mainTab" class="tab-content">
+              <div id="REMIND_54_Trade_Trade_openness___exports_plus_imports_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Trade_Trade_openness___exports_plus_imports_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Trade_Trade_openness___exports_plus_imports_mainTab" class="tab-content">
+              <div id="REMIND_62_Trade_Trade_openness___exports_plus_imports_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Trade_Trade_openness___exports_plus_imports_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Trade_Exports" class="tabs hide">
+            <div id="Trade_Exports_map_mainTab" class="tab-content">
+              <div id="Trade_Exports_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Trade_Exports_mainTab" class="tab-content">
+              <div id="REMIND_12_Trade_Exports_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Trade_Exports_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Trade_Exports_mainTab" class="tab-content">
+              <div id="REMIND_21_Trade_Exports_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Trade_Exports_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Trade_Exports_mainTab" class="tab-content">
+              <div id="REMIND_26_Trade_Exports_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Trade_Exports_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Trade_Exports_mainTab" class="tab-content">
+              <div id="REMIND_39_Trade_Exports_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Trade_Exports_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Trade_Exports_mainTab" class="tab-content">
+              <div id="REMIND_54_Trade_Exports_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Trade_Exports_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Trade_Exports_mainTab" class="tab-content">
+              <div id="REMIND_62_Trade_Exports_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Trade_Exports_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Trade_Exports___coal" class="tabs hide">
+            <div id="Trade_Exports___coal_map_mainTab" class="tab-content">
+              <div id="Trade_Exports___coal_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Trade_Exports___coal_mainTab" class="tab-content">
+              <div id="REMIND_12_Trade_Exports___coal_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Trade_Exports___coal_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Trade_Exports___coal_mainTab" class="tab-content">
+              <div id="REMIND_21_Trade_Exports___coal_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Trade_Exports___coal_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Trade_Exports___coal_mainTab" class="tab-content">
+              <div id="REMIND_26_Trade_Exports___coal_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Trade_Exports___coal_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Trade_Exports___coal_mainTab" class="tab-content">
+              <div id="REMIND_39_Trade_Exports___coal_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Trade_Exports___coal_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Trade_Exports___coal_mainTab" class="tab-content">
+              <div id="REMIND_54_Trade_Exports___coal_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Trade_Exports___coal_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Trade_Exports___coal_mainTab" class="tab-content">
+              <div id="REMIND_62_Trade_Exports___coal_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Trade_Exports___coal_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Trade_Exports___goods_and_services" class="tabs hide">
+            <div id="Trade_Exports___goods_and_services_map_mainTab" class="tab-content">
+              <div id="Trade_Exports___goods_and_services_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Trade_Exports___goods_and_services_mainTab" class="tab-content">
+              <div id="REMIND_12_Trade_Exports___goods_and_services_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Trade_Exports___goods_and_services_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Trade_Exports___goods_and_services_mainTab" class="tab-content">
+              <div id="REMIND_21_Trade_Exports___goods_and_services_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Trade_Exports___goods_and_services_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Trade_Exports___goods_and_services_mainTab" class="tab-content">
+              <div id="REMIND_26_Trade_Exports___goods_and_services_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Trade_Exports___goods_and_services_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Trade_Exports___goods_and_services_mainTab" class="tab-content">
+              <div id="REMIND_39_Trade_Exports___goods_and_services_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Trade_Exports___goods_and_services_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Trade_Exports___goods_and_services_mainTab" class="tab-content">
+              <div id="REMIND_54_Trade_Exports___goods_and_services_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Trade_Exports___goods_and_services_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Trade_Exports___goods_and_services_mainTab" class="tab-content">
+              <div id="REMIND_62_Trade_Exports___goods_and_services_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Trade_Exports___goods_and_services_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Trade_Exports___high_technology" class="tabs hide">
+            <div id="Trade_Exports___high_technology_map_mainTab" class="tab-content">
+              <div id="Trade_Exports___high_technology_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Trade_Exports___high_technology_mainTab" class="tab-content">
+              <div id="REMIND_12_Trade_Exports___high_technology_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Trade_Exports___high_technology_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Trade_Exports___high_technology_mainTab" class="tab-content">
+              <div id="REMIND_21_Trade_Exports___high_technology_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Trade_Exports___high_technology_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Trade_Exports___high_technology_mainTab" class="tab-content">
+              <div id="REMIND_26_Trade_Exports___high_technology_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Trade_Exports___high_technology_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Trade_Exports___high_technology_mainTab" class="tab-content">
+              <div id="REMIND_39_Trade_Exports___high_technology_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Trade_Exports___high_technology_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Trade_Exports___high_technology_mainTab" class="tab-content">
+              <div id="REMIND_54_Trade_Exports___high_technology_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Trade_Exports___high_technology_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Trade_Exports___high_technology_mainTab" class="tab-content">
+              <div id="REMIND_62_Trade_Exports___high_technology_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Trade_Exports___high_technology_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Trade_Imports" class="tabs hide">
+            <div id="Trade_Imports_map_mainTab" class="tab-content">
+              <div id="Trade_Imports_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Trade_Imports_mainTab" class="tab-content">
+              <div id="REMIND_12_Trade_Imports_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Trade_Imports_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Trade_Imports_mainTab" class="tab-content">
+              <div id="REMIND_21_Trade_Imports_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Trade_Imports_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Trade_Imports_mainTab" class="tab-content">
+              <div id="REMIND_26_Trade_Imports_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Trade_Imports_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Trade_Imports_mainTab" class="tab-content">
+              <div id="REMIND_39_Trade_Imports_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Trade_Imports_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Trade_Imports_mainTab" class="tab-content">
+              <div id="REMIND_54_Trade_Imports_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Trade_Imports_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Trade_Imports_mainTab" class="tab-content">
+              <div id="REMIND_62_Trade_Imports_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Trade_Imports_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Trade_Imports___energy" class="tabs hide">
+            <div id="Trade_Imports___energy_map_mainTab" class="tab-content">
+              <div id="Trade_Imports___energy_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Trade_Imports___energy_mainTab" class="tab-content">
+              <div id="REMIND_12_Trade_Imports___energy_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Trade_Imports___energy_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Trade_Imports___energy_mainTab" class="tab-content">
+              <div id="REMIND_21_Trade_Imports___energy_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Trade_Imports___energy_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Trade_Imports___energy_mainTab" class="tab-content">
+              <div id="REMIND_26_Trade_Imports___energy_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Trade_Imports___energy_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Trade_Imports___energy_mainTab" class="tab-content">
+              <div id="REMIND_39_Trade_Imports___energy_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Trade_Imports___energy_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Trade_Imports___energy_mainTab" class="tab-content">
+              <div id="REMIND_54_Trade_Imports___energy_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Trade_Imports___energy_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Trade_Imports___energy_mainTab" class="tab-content">
+              <div id="REMIND_62_Trade_Imports___energy_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Trade_Imports___energy_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Trade_Imports___coal" class="tabs hide">
+            <div id="Trade_Imports___coal_map_mainTab" class="tab-content">
+              <div id="Trade_Imports___coal_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Trade_Imports___coal_mainTab" class="tab-content">
+              <div id="REMIND_12_Trade_Imports___coal_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Trade_Imports___coal_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Trade_Imports___coal_mainTab" class="tab-content">
+              <div id="REMIND_21_Trade_Imports___coal_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Trade_Imports___coal_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Trade_Imports___coal_mainTab" class="tab-content">
+              <div id="REMIND_26_Trade_Imports___coal_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Trade_Imports___coal_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Trade_Imports___coal_mainTab" class="tab-content">
+              <div id="REMIND_39_Trade_Imports___coal_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Trade_Imports___coal_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Trade_Imports___coal_mainTab" class="tab-content">
+              <div id="REMIND_54_Trade_Imports___coal_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Trade_Imports___coal_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Trade_Imports___coal_mainTab" class="tab-content">
+              <div id="REMIND_62_Trade_Imports___coal_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Trade_Imports___coal_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Energy_Energy_use_per_capita" class="tabs hide">
+            <div id="Energy_Energy_use_per_capita_map_mainTab" class="tab-content">
+              <div id="Energy_Energy_use_per_capita_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Energy_Energy_use_per_capita_mainTab" class="tab-content">
+              <div id="REMIND_12_Energy_Energy_use_per_capita_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Energy_Energy_use_per_capita_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Energy_Energy_use_per_capita_mainTab" class="tab-content">
+              <div id="REMIND_21_Energy_Energy_use_per_capita_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Energy_Energy_use_per_capita_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Energy_Energy_use_per_capita_mainTab" class="tab-content">
+              <div id="REMIND_26_Energy_Energy_use_per_capita_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Energy_Energy_use_per_capita_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Energy_Energy_use_per_capita_mainTab" class="tab-content">
+              <div id="REMIND_39_Energy_Energy_use_per_capita_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Energy_Energy_use_per_capita_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Energy_Energy_use_per_capita_mainTab" class="tab-content">
+              <div id="REMIND_54_Energy_Energy_use_per_capita_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Energy_Energy_use_per_capita_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Energy_Energy_use_per_capita_mainTab" class="tab-content">
+              <div id="REMIND_62_Energy_Energy_use_per_capita_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Energy_Energy_use_per_capita_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Energy_Alternative___and_nuclear_energy" class="tabs hide">
+            <div id="Energy_Alternative___and_nuclear_energy_map_mainTab" class="tab-content">
+              <div id="Energy_Alternative___and_nuclear_energy_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Energy_Alternative___and_nuclear_energy_mainTab" class="tab-content">
+              <div id="REMIND_12_Energy_Alternative___and_nuclear_energy_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Energy_Alternative___and_nuclear_energy_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Energy_Alternative___and_nuclear_energy_mainTab" class="tab-content">
+              <div id="REMIND_21_Energy_Alternative___and_nuclear_energy_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Energy_Alternative___and_nuclear_energy_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Energy_Alternative___and_nuclear_energy_mainTab" class="tab-content">
+              <div id="REMIND_26_Energy_Alternative___and_nuclear_energy_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Energy_Alternative___and_nuclear_energy_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Energy_Alternative___and_nuclear_energy_mainTab" class="tab-content">
+              <div id="REMIND_39_Energy_Alternative___and_nuclear_energy_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Energy_Alternative___and_nuclear_energy_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Energy_Alternative___and_nuclear_energy_mainTab" class="tab-content">
+              <div id="REMIND_54_Energy_Alternative___and_nuclear_energy_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Energy_Alternative___and_nuclear_energy_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Energy_Alternative___and_nuclear_energy_mainTab" class="tab-content">
+              <div id="REMIND_62_Energy_Alternative___and_nuclear_energy_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Energy_Alternative___and_nuclear_energy_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Energy_Access_to_electricity" class="tabs hide">
+            <div id="Energy_Access_to_electricity_map_mainTab" class="tab-content">
+              <div id="Energy_Access_to_electricity_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Energy_Access_to_electricity_mainTab" class="tab-content">
+              <div id="REMIND_12_Energy_Access_to_electricity_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Energy_Access_to_electricity_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Energy_Access_to_electricity_mainTab" class="tab-content">
+              <div id="REMIND_21_Energy_Access_to_electricity_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Energy_Access_to_electricity_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Energy_Access_to_electricity_mainTab" class="tab-content">
+              <div id="REMIND_26_Energy_Access_to_electricity_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Energy_Access_to_electricity_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Energy_Access_to_electricity_mainTab" class="tab-content">
+              <div id="REMIND_39_Energy_Access_to_electricity_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Energy_Access_to_electricity_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Energy_Access_to_electricity_mainTab" class="tab-content">
+              <div id="REMIND_54_Energy_Access_to_electricity_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Energy_Access_to_electricity_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Energy_Access_to_electricity_mainTab" class="tab-content">
+              <div id="REMIND_62_Energy_Access_to_electricity_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Energy_Access_to_electricity_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Sectors_Value_added___agriculture" class="tabs hide">
+            <div id="Sectors_Value_added___agriculture_map_mainTab" class="tab-content">
+              <div id="Sectors_Value_added___agriculture_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Sectors_Value_added___agriculture_mainTab" class="tab-content">
+              <div id="REMIND_12_Sectors_Value_added___agriculture_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Sectors_Value_added___agriculture_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Sectors_Value_added___agriculture_mainTab" class="tab-content">
+              <div id="REMIND_21_Sectors_Value_added___agriculture_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Sectors_Value_added___agriculture_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Sectors_Value_added___agriculture_mainTab" class="tab-content">
+              <div id="REMIND_26_Sectors_Value_added___agriculture_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Sectors_Value_added___agriculture_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Sectors_Value_added___agriculture_mainTab" class="tab-content">
+              <div id="REMIND_39_Sectors_Value_added___agriculture_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Sectors_Value_added___agriculture_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Sectors_Value_added___agriculture_mainTab" class="tab-content">
+              <div id="REMIND_54_Sectors_Value_added___agriculture_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Sectors_Value_added___agriculture_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Sectors_Value_added___agriculture_mainTab" class="tab-content">
+              <div id="REMIND_62_Sectors_Value_added___agriculture_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Sectors_Value_added___agriculture_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Sectors_Value_added___industry" class="tabs hide">
+            <div id="Sectors_Value_added___industry_map_mainTab" class="tab-content">
+              <div id="Sectors_Value_added___industry_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Sectors_Value_added___industry_mainTab" class="tab-content">
+              <div id="REMIND_12_Sectors_Value_added___industry_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Sectors_Value_added___industry_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Sectors_Value_added___industry_mainTab" class="tab-content">
+              <div id="REMIND_21_Sectors_Value_added___industry_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Sectors_Value_added___industry_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Sectors_Value_added___industry_mainTab" class="tab-content">
+              <div id="REMIND_26_Sectors_Value_added___industry_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Sectors_Value_added___industry_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Sectors_Value_added___industry_mainTab" class="tab-content">
+              <div id="REMIND_39_Sectors_Value_added___industry_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Sectors_Value_added___industry_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Sectors_Value_added___industry_mainTab" class="tab-content">
+              <div id="REMIND_54_Sectors_Value_added___industry_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Sectors_Value_added___industry_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Sectors_Value_added___industry_mainTab" class="tab-content">
+              <div id="REMIND_62_Sectors_Value_added___industry_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Sectors_Value_added___industry_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Sectors_Value_added___services" class="tabs hide">
+            <div id="Sectors_Value_added___services_map_mainTab" class="tab-content">
+              <div id="Sectors_Value_added___services_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Sectors_Value_added___services_mainTab" class="tab-content">
+              <div id="REMIND_12_Sectors_Value_added___services_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Sectors_Value_added___services_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Sectors_Value_added___services_mainTab" class="tab-content">
+              <div id="REMIND_21_Sectors_Value_added___services_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Sectors_Value_added___services_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Sectors_Value_added___services_mainTab" class="tab-content">
+              <div id="REMIND_26_Sectors_Value_added___services_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Sectors_Value_added___services_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Sectors_Value_added___services_mainTab" class="tab-content">
+              <div id="REMIND_39_Sectors_Value_added___services_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Sectors_Value_added___services_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Sectors_Value_added___services_mainTab" class="tab-content">
+              <div id="REMIND_54_Sectors_Value_added___services_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Sectors_Value_added___services_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Sectors_Value_added___services_mainTab" class="tab-content">
+              <div id="REMIND_62_Sectors_Value_added___services_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Sectors_Value_added___services_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Government_Government_spending___percent_of_GDP" class="tabs hide">
+            <div id="Government_Government_spending___percent_of_GDP_map_mainTab" class="tab-content">
+              <div id="Government_Government_spending___percent_of_GDP_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Government_Government_spending___percent_of_GDP_mainTab" class="tab-content">
+              <div id="REMIND_12_Government_Government_spending___percent_of_GDP_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Government_Government_spending___percent_of_GDP_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Government_Government_spending___percent_of_GDP_mainTab" class="tab-content">
+              <div id="REMIND_21_Government_Government_spending___percent_of_GDP_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Government_Government_spending___percent_of_GDP_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Government_Government_spending___percent_of_GDP_mainTab" class="tab-content">
+              <div id="REMIND_26_Government_Government_spending___percent_of_GDP_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Government_Government_spending___percent_of_GDP_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Government_Government_spending___percent_of_GDP_mainTab" class="tab-content">
+              <div id="REMIND_39_Government_Government_spending___percent_of_GDP_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Government_Government_spending___percent_of_GDP_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Government_Government_spending___percent_of_GDP_mainTab" class="tab-content">
+              <div id="REMIND_54_Government_Government_spending___percent_of_GDP_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Government_Government_spending___percent_of_GDP_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Government_Government_spending___percent_of_GDP_mainTab" class="tab-content">
+              <div id="REMIND_62_Government_Government_spending___percent_of_GDP_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Government_Government_spending___percent_of_GDP_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Government_Tax_revenue" class="tabs hide">
+            <div id="Government_Tax_revenue_map_mainTab" class="tab-content">
+              <div id="Government_Tax_revenue_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Government_Tax_revenue_mainTab" class="tab-content">
+              <div id="REMIND_12_Government_Tax_revenue_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Government_Tax_revenue_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Government_Tax_revenue_mainTab" class="tab-content">
+              <div id="REMIND_21_Government_Tax_revenue_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Government_Tax_revenue_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Government_Tax_revenue_mainTab" class="tab-content">
+              <div id="REMIND_26_Government_Tax_revenue_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Government_Tax_revenue_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Government_Tax_revenue_mainTab" class="tab-content">
+              <div id="REMIND_39_Government_Tax_revenue_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Government_Tax_revenue_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Government_Tax_revenue_mainTab" class="tab-content">
+              <div id="REMIND_54_Government_Tax_revenue_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Government_Tax_revenue_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Government_Tax_revenue_mainTab" class="tab-content">
+              <div id="REMIND_62_Government_Tax_revenue_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Government_Tax_revenue_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Government_Taxes_on_international_trade" class="tabs hide">
+            <div id="Government_Taxes_on_international_trade_map_mainTab" class="tab-content">
+              <div id="Government_Taxes_on_international_trade_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Government_Taxes_on_international_trade_mainTab" class="tab-content">
+              <div id="REMIND_12_Government_Taxes_on_international_trade_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Government_Taxes_on_international_trade_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Government_Taxes_on_international_trade_mainTab" class="tab-content">
+              <div id="REMIND_21_Government_Taxes_on_international_trade_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Government_Taxes_on_international_trade_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Government_Taxes_on_international_trade_mainTab" class="tab-content">
+              <div id="REMIND_26_Government_Taxes_on_international_trade_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Government_Taxes_on_international_trade_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Government_Taxes_on_international_trade_mainTab" class="tab-content">
+              <div id="REMIND_39_Government_Taxes_on_international_trade_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Government_Taxes_on_international_trade_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Government_Taxes_on_international_trade_mainTab" class="tab-content">
+              <div id="REMIND_54_Government_Taxes_on_international_trade_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Government_Taxes_on_international_trade_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Government_Taxes_on_international_trade_mainTab" class="tab-content">
+              <div id="REMIND_62_Government_Taxes_on_international_trade_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Government_Taxes_on_international_trade_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Government_Number_of_taxes___paid_by_businesses" class="tabs hide">
+            <div id="Government_Number_of_taxes___paid_by_businesses_map_mainTab" class="tab-content">
+              <div id="Government_Number_of_taxes___paid_by_businesses_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Government_Number_of_taxes___paid_by_businesses_mainTab" class="tab-content">
+              <div id="REMIND_12_Government_Number_of_taxes___paid_by_businesses_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Government_Number_of_taxes___paid_by_businesses_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Government_Number_of_taxes___paid_by_businesses_mainTab" class="tab-content">
+              <div id="REMIND_21_Government_Number_of_taxes___paid_by_businesses_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Government_Number_of_taxes___paid_by_businesses_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Government_Number_of_taxes___paid_by_businesses_mainTab" class="tab-content">
+              <div id="REMIND_26_Government_Number_of_taxes___paid_by_businesses_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Government_Number_of_taxes___paid_by_businesses_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Government_Number_of_taxes___paid_by_businesses_mainTab" class="tab-content">
+              <div id="REMIND_39_Government_Number_of_taxes___paid_by_businesses_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Government_Number_of_taxes___paid_by_businesses_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Government_Number_of_taxes___paid_by_businesses_mainTab" class="tab-content">
+              <div id="REMIND_54_Government_Number_of_taxes___paid_by_businesses_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Government_Number_of_taxes___paid_by_businesses_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Government_Number_of_taxes___paid_by_businesses_mainTab" class="tab-content">
+              <div id="REMIND_62_Government_Number_of_taxes___paid_by_businesses_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Government_Number_of_taxes___paid_by_businesses_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Education_Public_spending___on_education" class="tabs hide">
+            <div id="Education_Public_spending___on_education_map_mainTab" class="tab-content">
+              <div id="Education_Public_spending___on_education_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Education_Public_spending___on_education_mainTab" class="tab-content">
+              <div id="REMIND_12_Education_Public_spending___on_education_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Education_Public_spending___on_education_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Education_Public_spending___on_education_mainTab" class="tab-content">
+              <div id="REMIND_21_Education_Public_spending___on_education_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Education_Public_spending___on_education_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Education_Public_spending___on_education_mainTab" class="tab-content">
+              <div id="REMIND_26_Education_Public_spending___on_education_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Education_Public_spending___on_education_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Education_Public_spending___on_education_mainTab" class="tab-content">
+              <div id="REMIND_39_Education_Public_spending___on_education_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Education_Public_spending___on_education_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Education_Public_spending___on_education_mainTab" class="tab-content">
+              <div id="REMIND_54_Education_Public_spending___on_education_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Education_Public_spending___on_education_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Education_Public_spending___on_education_mainTab" class="tab-content">
+              <div id="REMIND_62_Education_Public_spending___on_education_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Education_Public_spending___on_education_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Education_Literacy_rate_index" class="tabs hide">
+            <div id="Education_Literacy_rate_index_map_mainTab" class="tab-content">
+              <div id="Education_Literacy_rate_index_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Education_Literacy_rate_index_mainTab" class="tab-content">
+              <div id="REMIND_12_Education_Literacy_rate_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Education_Literacy_rate_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Education_Literacy_rate_index_mainTab" class="tab-content">
+              <div id="REMIND_21_Education_Literacy_rate_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Education_Literacy_rate_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Education_Literacy_rate_index_mainTab" class="tab-content">
+              <div id="REMIND_26_Education_Literacy_rate_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Education_Literacy_rate_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Education_Literacy_rate_index_mainTab" class="tab-content">
+              <div id="REMIND_39_Education_Literacy_rate_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Education_Literacy_rate_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Education_Literacy_rate_index_mainTab" class="tab-content">
+              <div id="REMIND_54_Education_Literacy_rate_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Education_Literacy_rate_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Education_Literacy_rate_index_mainTab" class="tab-content">
+              <div id="REMIND_62_Education_Literacy_rate_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Education_Literacy_rate_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Education_Tertiary_school___enrollment" class="tabs hide">
+            <div id="Education_Tertiary_school___enrollment_map_mainTab" class="tab-content">
+              <div id="Education_Tertiary_school___enrollment_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Education_Tertiary_school___enrollment_mainTab" class="tab-content">
+              <div id="REMIND_12_Education_Tertiary_school___enrollment_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Education_Tertiary_school___enrollment_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Education_Tertiary_school___enrollment_mainTab" class="tab-content">
+              <div id="REMIND_21_Education_Tertiary_school___enrollment_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Education_Tertiary_school___enrollment_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Education_Tertiary_school___enrollment_mainTab" class="tab-content">
+              <div id="REMIND_26_Education_Tertiary_school___enrollment_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Education_Tertiary_school___enrollment_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Education_Tertiary_school___enrollment_mainTab" class="tab-content">
+              <div id="REMIND_39_Education_Tertiary_school___enrollment_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Education_Tertiary_school___enrollment_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Education_Tertiary_school___enrollment_mainTab" class="tab-content">
+              <div id="REMIND_54_Education_Tertiary_school___enrollment_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Education_Tertiary_school___enrollment_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Education_Tertiary_school___enrollment_mainTab" class="tab-content">
+              <div id="REMIND_62_Education_Tertiary_school___enrollment_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Education_Tertiary_school___enrollment_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Credit_Domestic_credit___to_the_private_sector" class="tabs hide">
+            <div id="Credit_Domestic_credit___to_the_private_sector_map_mainTab" class="tab-content">
+              <div id="Credit_Domestic_credit___to_the_private_sector_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Credit_Domestic_credit___to_the_private_sector_mainTab" class="tab-content">
+              <div id="REMIND_12_Credit_Domestic_credit___to_the_private_sector_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Credit_Domestic_credit___to_the_private_sector_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Credit_Domestic_credit___to_the_private_sector_mainTab" class="tab-content">
+              <div id="REMIND_21_Credit_Domestic_credit___to_the_private_sector_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Credit_Domestic_credit___to_the_private_sector_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Credit_Domestic_credit___to_the_private_sector_mainTab" class="tab-content">
+              <div id="REMIND_26_Credit_Domestic_credit___to_the_private_sector_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Credit_Domestic_credit___to_the_private_sector_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Credit_Domestic_credit___to_the_private_sector_mainTab" class="tab-content">
+              <div id="REMIND_39_Credit_Domestic_credit___to_the_private_sector_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Credit_Domestic_credit___to_the_private_sector_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Credit_Domestic_credit___to_the_private_sector_mainTab" class="tab-content">
+              <div id="REMIND_54_Credit_Domestic_credit___to_the_private_sector_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Credit_Domestic_credit___to_the_private_sector_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Credit_Domestic_credit___to_the_private_sector_mainTab" class="tab-content">
+              <div id="REMIND_62_Credit_Domestic_credit___to_the_private_sector_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Credit_Domestic_credit___to_the_private_sector_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Credit_Bank_credit_interest_rates___to_the_private_sector_" class="tabs hide">
+            <div id="Credit_Bank_credit_interest_rates___to_the_private_sector__map_mainTab" class="tab-content">
+              <div id="Credit_Bank_credit_interest_rates___to_the_private_sector__map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Credit_Bank_credit_interest_rates___to_the_private_sector__mainTab" class="tab-content">
+              <div id="REMIND_12_Credit_Bank_credit_interest_rates___to_the_private_sector__line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Credit_Bank_credit_interest_rates___to_the_private_sector__bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Credit_Bank_credit_interest_rates___to_the_private_sector__mainTab" class="tab-content">
+              <div id="REMIND_21_Credit_Bank_credit_interest_rates___to_the_private_sector__line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Credit_Bank_credit_interest_rates___to_the_private_sector__bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Credit_Bank_credit_interest_rates___to_the_private_sector__mainTab" class="tab-content">
+              <div id="REMIND_26_Credit_Bank_credit_interest_rates___to_the_private_sector__line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Credit_Bank_credit_interest_rates___to_the_private_sector__bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Credit_Bank_credit_interest_rates___to_the_private_sector__mainTab" class="tab-content">
+              <div id="REMIND_39_Credit_Bank_credit_interest_rates___to_the_private_sector__line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Credit_Bank_credit_interest_rates___to_the_private_sector__bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Credit_Bank_credit_interest_rates___to_the_private_sector__mainTab" class="tab-content">
+              <div id="REMIND_54_Credit_Bank_credit_interest_rates___to_the_private_sector__line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Credit_Bank_credit_interest_rates___to_the_private_sector__bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Credit_Bank_credit_interest_rates___to_the_private_sector__mainTab" class="tab-content">
+              <div id="REMIND_62_Credit_Bank_credit_interest_rates___to_the_private_sector__line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Credit_Bank_credit_interest_rates___to_the_private_sector__bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Credit_Bank_credit___to_the_private_sector" class="tabs hide">
+            <div id="Credit_Bank_credit___to_the_private_sector_map_mainTab" class="tab-content">
+              <div id="Credit_Bank_credit___to_the_private_sector_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Credit_Bank_credit___to_the_private_sector_mainTab" class="tab-content">
+              <div id="REMIND_12_Credit_Bank_credit___to_the_private_sector_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Credit_Bank_credit___to_the_private_sector_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Credit_Bank_credit___to_the_private_sector_mainTab" class="tab-content">
+              <div id="REMIND_21_Credit_Bank_credit___to_the_private_sector_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Credit_Bank_credit___to_the_private_sector_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Credit_Bank_credit___to_the_private_sector_mainTab" class="tab-content">
+              <div id="REMIND_26_Credit_Bank_credit___to_the_private_sector_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Credit_Bank_credit___to_the_private_sector_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Credit_Bank_credit___to_the_private_sector_mainTab" class="tab-content">
+              <div id="REMIND_39_Credit_Bank_credit___to_the_private_sector_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Credit_Bank_credit___to_the_private_sector_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Credit_Bank_credit___to_the_private_sector_mainTab" class="tab-content">
+              <div id="REMIND_54_Credit_Bank_credit___to_the_private_sector_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Credit_Bank_credit___to_the_private_sector_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Credit_Bank_credit___to_the_private_sector_mainTab" class="tab-content">
+              <div id="REMIND_62_Credit_Bank_credit___to_the_private_sector_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Credit_Bank_credit___to_the_private_sector_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Credit_Foreign_Direct_Investment" class="tabs hide">
+            <div id="Credit_Foreign_Direct_Investment_map_mainTab" class="tab-content">
+              <div id="Credit_Foreign_Direct_Investment_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Credit_Foreign_Direct_Investment_mainTab" class="tab-content">
+              <div id="REMIND_12_Credit_Foreign_Direct_Investment_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Credit_Foreign_Direct_Investment_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Credit_Foreign_Direct_Investment_mainTab" class="tab-content">
+              <div id="REMIND_21_Credit_Foreign_Direct_Investment_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Credit_Foreign_Direct_Investment_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Credit_Foreign_Direct_Investment_mainTab" class="tab-content">
+              <div id="REMIND_26_Credit_Foreign_Direct_Investment_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Credit_Foreign_Direct_Investment_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Credit_Foreign_Direct_Investment_mainTab" class="tab-content">
+              <div id="REMIND_39_Credit_Foreign_Direct_Investment_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Credit_Foreign_Direct_Investment_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Credit_Foreign_Direct_Investment_mainTab" class="tab-content">
+              <div id="REMIND_54_Credit_Foreign_Direct_Investment_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Credit_Foreign_Direct_Investment_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Credit_Foreign_Direct_Investment_mainTab" class="tab-content">
+              <div id="REMIND_62_Credit_Foreign_Direct_Investment_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Credit_Foreign_Direct_Investment_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Credit_Credit_information___sharing_index" class="tabs hide">
+            <div id="Credit_Credit_information___sharing_index_map_mainTab" class="tab-content">
+              <div id="Credit_Credit_information___sharing_index_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Credit_Credit_information___sharing_index_mainTab" class="tab-content">
+              <div id="REMIND_12_Credit_Credit_information___sharing_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Credit_Credit_information___sharing_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Credit_Credit_information___sharing_index_mainTab" class="tab-content">
+              <div id="REMIND_21_Credit_Credit_information___sharing_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Credit_Credit_information___sharing_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Credit_Credit_information___sharing_index_mainTab" class="tab-content">
+              <div id="REMIND_26_Credit_Credit_information___sharing_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Credit_Credit_information___sharing_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Credit_Credit_information___sharing_index_mainTab" class="tab-content">
+              <div id="REMIND_39_Credit_Credit_information___sharing_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Credit_Credit_information___sharing_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Credit_Credit_information___sharing_index_mainTab" class="tab-content">
+              <div id="REMIND_54_Credit_Credit_information___sharing_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Credit_Credit_information___sharing_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Credit_Credit_information___sharing_index_mainTab" class="tab-content">
+              <div id="REMIND_62_Credit_Credit_information___sharing_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Credit_Credit_information___sharing_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+          <div id="Credit_Business_freedom_index" class="tabs hide">
+            <div id="Credit_Business_freedom_index_map_mainTab" class="tab-content">
+              <div id="Credit_Business_freedom_index_map" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_12_Credit_Business_freedom_index_mainTab" class="tab-content">
+              <div id="REMIND_12_Credit_Business_freedom_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_12_Credit_Business_freedom_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_21_Credit_Business_freedom_index_mainTab" class="tab-content">
+              <div id="REMIND_21_Credit_Business_freedom_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_21_Credit_Business_freedom_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_26_Credit_Business_freedom_index_mainTab" class="tab-content">
+              <div id="REMIND_26_Credit_Business_freedom_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_26_Credit_Business_freedom_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_39_Credit_Business_freedom_index_mainTab" class="tab-content">
+              <div id="REMIND_39_Credit_Business_freedom_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_39_Credit_Business_freedom_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_54_Credit_Business_freedom_index_mainTab" class="tab-content">
+              <div id="REMIND_54_Credit_Business_freedom_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_54_Credit_Business_freedom_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+            <div id="REMIND_62_Credit_Business_freedom_index_mainTab" class="tab-content">
+              <div id="REMIND_62_Credit_Business_freedom_index_line" class="chart-view plotly-graph-div"></div>
+              <div id="REMIND_62_Credit_Business_freedom_index_bar" class="chart-view plotly-graph-div"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      const loadedScripts = new Set();
+      const loadedCharts = new Set();
+      
+      // Debounce timer variable
+      let stateUpdateTimeout;
+
+      // --- HELPERS ---
+      function loadChartScript(scriptUrl, containerId) {
+        const script = document.createElement("script");
+        script.src = scriptUrl;
+        script.defer = true;
+        script.onload = () => loadedCharts.add(containerId);
+        document.body.appendChild(script);
+        loadedScripts.add(scriptUrl);
+      }
+
+      // resize plotly charts
+      function resizePlotlyCharts(div) {
+        if (typeof Plotly === "undefined") return;
+        if(div===null) return;
+        //console.log(div);
+        const tabsContainer = div.closest(".tabs");
+        if (!tabsContainer) return;
+        const availableWidth = tabsContainer.clientWidth - 40;
+        const availableHeight = tabsContainer.clientHeight - 50;
+        //console.log(availableWidth);
+        //console.log(availableHeight);
+        if (div._fullLayout) {
+          //console.log("cccc");
+          Plotly.relayout(div, {
+            autosize: false,
+            width: availableWidth,
+            height: availableHeight,
+            margin: { l: 10, r: 10, t: 30, b: 20 },
+          });
+          Plotly.Plots.resize(div);
+        }
+      }
+
+      // --- ACTIVE STATE MANAGEMENT ---
+      function updateActiveState() {
+        const sideLink = document.querySelector(".sidenavLink.selected");
+        const indicator = sideLink.getAttribute("href").replace("#", "");
+        const activeRegionBtn = document.querySelector(".top-bar-left .top-bar-btn.active");
+        const region = activeRegionBtn.dataset.reg;
+        const activeViewButton = document.querySelector(".top-bar-view-btn.active");
+        const viewType = activeViewButton.dataset.view;
+        // Remove active class from chart content area 
+        document.querySelectorAll(".tab-content, .chart-view").forEach(content => content.classList.remove("active"));
+        if (viewType === "map") {
+		      parentId = `${indicator}_map_mainTab`;
+          containerId = `${indicator}_map`;
+          scriptUrl = `./drivers/${indicator}_map.js`;
+        } else {
+		      parentId = `${region}_${indicator}_mainTab`;
+          containerId = `${region}_${indicator}_${viewType}`;
+          scriptUrl = `./drivers/${region}_${indicator}_${viewType}.js`;
+        }
+		    console.log(parentId);
+		    console.log(containerId);
+		    console.log(scriptUrl);
+        //const containerId = `${region}_${indicator}_${viewType}`;
+        //const scriptUrl = `./drivers/${containerId}.js`;
+        //Add active to the tab content
+        const tabContent = document.getElementById(parentId);
+        if (tabContent) tabContent.classList.add("active");
+        // Add active to the chart to be displayed	
+        const chartView = document.getElementById(containerId);
+        if (chartView) chartView.classList.add("active");
+        // lear any pending update to prevent the function from running multiple times
+        clearTimeout(stateUpdateTimeout);
+        // Let a new timer to run the update after a short delay
+        stateUpdateTimeout = setTimeout(() => {
+          //if chart is loaded resize plot to div
+          if(loadedScripts.has(scriptUrl)){
+            //console.log("resizing");
+            //console.log(containerId);
+            //console.log(tabContent.querySelector(containerId));
+            if (tabContent) resizePlotlyCharts(tabContent.querySelector(containerId));
+          } else { // else load chart if it is not loaded yet
+            //console.log("loading script");
+            //console.log(scriptUrl);
+            loadChartScript(scriptUrl, containerId);
+          }
+        }, 50); // 50 ms delay
+      }
+
+      // --- EVENT BINDINGS (no changes here) ---
+      // side bar click
+      document.querySelectorAll(".sidenavLink").forEach((sideButton) => {
+        sideButton.addEventListener("click", (e) => {
+          e.preventDefault();
+          if (sideButton.classList.contains("selected")) return;
+          // Remove selected class from all side bar links 
+          document.querySelectorAll(".sidenavLink, .chart-view").forEach((el) => el.classList.remove("selected"));
+          // hide all tab contents and top info
+          document.querySelectorAll(".top_info, .tabs").forEach((div) => div.classList.add("hide"));
+          // Add selected to the side bar link clicked
+          sideButton.classList.add("selected");
+          const allTopBarBtns = document.querySelectorAll(".top-bar-btn");
+          if (sideButton.classList.contains("topItem")) {
+            allTopBarBtns.forEach(btn => btn.disabled = true); // Disable all top-bar-btn if selected sidenavLink has topItem class
+          } else { 
+            allTopBarBtns.forEach(btn => btn.disabled = false); // Enable all top-bar-btn if selected sidenavLink has topItem class
+            updateActiveState(); // Call showContent and updateActiveState for non-topItem
+          }
+          // if viewType = map disable region buttons
+          const viewType = document.querySelector(".top-bar-view-btn.active").dataset.view;
+          const regionTopBarBtns = document.querySelectorAll(".top-bar-left .top-bar-btn");
+          if (viewType === "map") {
+            regionTopBarBtns.forEach(btn => btn.disabled = true);
+          }
+          document.querySelector(sideButton.getAttribute("href")).classList.remove("hide");
+        });
+      });
+
+      // region top bar click
+      document.querySelectorAll(".top-bar-left .top-bar-btn").forEach((topButton) => {
+        topButton.addEventListener("click", (e) => {
+          e.preventDefault();
+          if (topButton.classList.contains("active")) return;
+          // Remove active class from all region buttons 
+          document.querySelectorAll(".top-bar-left .top-bar-btn.active, .chart-view")
+            .forEach((btn) => btn.classList.remove("active"));
+          // Add active class to the clicked button
+          topButton.classList.add("active");
+          updateActiveState();
+        });
+      });
+
+      // view top bar click
+      document.querySelectorAll(".top-bar-view-btn").forEach((viewButton) => {
+        viewButton.addEventListener("click", (e) => {
+          e.preventDefault();
+          if (viewButton.classList.contains("active")) return;
+          // Remove active class from all region buttons 
+          document.querySelectorAll(".top-bar-view-btn.active, .chart-view")
+            .forEach((btn) => btn.classList.remove("active"));
+          // Add active class to the clicked button
+          viewButton.classList.add("active");
+          updateActiveState();
+          // if viewType = map disable region buttons
+          const viewType = viewButton.dataset.view;
+          const regionTopBarBtns = document.querySelectorAll(".top-bar-left .top-bar-btn");
+          if (viewType === "map") {
+            regionTopBarBtns.forEach(btn => btn.disabled = true);
+          } else {
+            regionTopBarBtns.forEach(btn => btn.disabled = false);
+          }
+        });
+      });
+
+      // side bar dropdown button
+      document.querySelectorAll(".dropdown-btn").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          this.classList.toggle("active");
+          this.nextElementSibling.classList.toggle("show");
+        });
+      });
+	  
+	    // remove loader when page is loaded
+      document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("loader").classList.add("hidden");
+		  });
+	  
+	  </script>
+    <script defer src="libs/plotly-latest.min.js"></script>
+  </body>
+</html>

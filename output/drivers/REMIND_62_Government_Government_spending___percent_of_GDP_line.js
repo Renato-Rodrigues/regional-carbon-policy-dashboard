@@ -1,0 +1,1325 @@
+(function(){ 
+
+        window.PLOTLYENV={'BASE_URL': 'https://plotly.com'}; 
+
+        
+
+        var gd = document.getElementById('REMIND_62_Government_Government_spending___percent_of_GDP_line') 
+
+        var resizeDebounce = null; 
+
+
+        function resizePlot() { 
+
+          var bb = gd.getBoundingClientRect(); 
+
+          Plotly.relayout(gd, { 
+
+            width: bb.width, 
+
+              height: bb.height 
+
+            }); 
+
+          } 
+
+
+          Plotly.plot(gd,  
+
+              {
+  "data": [
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [11.44, 11.109999999999998, 12.140000000000001, 12.43, 12.99, 13.630000000000001, 15.899999999999999, 15.160000000000002, 15.69, 16.649999999999999, 16.809999999999999, 16.949999999999999, 18.100000000000001, 17.649999999999999, 17.699999999999999, 15.81, 16.440000000000001, 16.870000000000001, 15.740000000000002],
+      "text": ["Government spending - percent of GDP: 11.44 % (GDP)<br>Period: 2003<br>REMIND_62 region code: ARG<br>Countries in region: Argentina", "Government spending - percent of GDP: 11.11 % (GDP)<br>Period: 2004<br>REMIND_62 region code: ARG<br>Countries in region: Argentina", "Government spending - percent of GDP: 12.14 % (GDP)<br>Period: 2005<br>REMIND_62 region code: ARG<br>Countries in region: Argentina", "Government spending - percent of GDP: 12.43 % (GDP)<br>Period: 2006<br>REMIND_62 region code: ARG<br>Countries in region: Argentina", "Government spending - percent of GDP: 12.99 % (GDP)<br>Period: 2007<br>REMIND_62 region code: ARG<br>Countries in region: Argentina", "Government spending - percent of GDP: 13.63 % (GDP)<br>Period: 2008<br>REMIND_62 region code: ARG<br>Countries in region: Argentina", "Government spending - percent of GDP: 15.9 % (GDP)<br>Period: 2009<br>REMIND_62 region code: ARG<br>Countries in region: Argentina", "Government spending - percent of GDP: 15.16 % (GDP)<br>Period: 2010<br>REMIND_62 region code: ARG<br>Countries in region: Argentina", "Government spending - percent of GDP: 15.69 % (GDP)<br>Period: 2011<br>REMIND_62 region code: ARG<br>Countries in region: Argentina", "Government spending - percent of GDP: 16.65 % (GDP)<br>Period: 2012<br>REMIND_62 region code: ARG<br>Countries in region: Argentina", "Government spending - percent of GDP: 16.81 % (GDP)<br>Period: 2013<br>REMIND_62 region code: ARG<br>Countries in region: Argentina", "Government spending - percent of GDP: 16.95 % (GDP)<br>Period: 2014<br>REMIND_62 region code: ARG<br>Countries in region: Argentina", "Government spending - percent of GDP: 18.1 % (GDP)<br>Period: 2015<br>REMIND_62 region code: ARG<br>Countries in region: Argentina", "Government spending - percent of GDP: 17.65 % (GDP)<br>Period: 2016<br>REMIND_62 region code: ARG<br>Countries in region: Argentina", "Government spending - percent of GDP: 17.7 % (GDP)<br>Period: 2017<br>REMIND_62 region code: ARG<br>Countries in region: Argentina", "Government spending - percent of GDP: 15.81 % (GDP)<br>Period: 2018<br>REMIND_62 region code: ARG<br>Countries in region: Argentina", "Government spending - percent of GDP: 16.44 % (GDP)<br>Period: 2019<br>REMIND_62 region code: ARG<br>Countries in region: Argentina", "Government spending - percent of GDP: 16.87 % (GDP)<br>Period: 2020<br>REMIND_62 region code: ARG<br>Countries in region: Argentina", "Government spending - percent of GDP: 15.74 % (GDP)<br>Period: 2021<br>REMIND_62 region code: ARG<br>Countries in region: Argentina"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,68,27,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [11.73, 11.51, 11.250000000000002, 10.74, 10.42, 10.57, 11.380000000000001, 11.179999999999998, 11.279999999999999, 11.31, 11.409999999999998, 11.48, 11.539999999999997, 11.510000000000002, 11.509999999999998, 11.259999999999998, 11.35, 12.130000000000003, 11.94],
+      "text": ["Government spending - percent of GDP: 11.73 % (GDP)<br>Period: 2003<br>REMIND_62 region code: CHE<br>Countries in region: Switzerland; Liechtenstein", "Government spending - percent of GDP: 11.51 % (GDP)<br>Period: 2004<br>REMIND_62 region code: CHE<br>Countries in region: Switzerland; Liechtenstein", "Government spending - percent of GDP: 11.25 % (GDP)<br>Period: 2005<br>REMIND_62 region code: CHE<br>Countries in region: Switzerland; Liechtenstein", "Government spending - percent of GDP: 10.74 % (GDP)<br>Period: 2006<br>REMIND_62 region code: CHE<br>Countries in region: Switzerland; Liechtenstein", "Government spending - percent of GDP: 10.42 % (GDP)<br>Period: 2007<br>REMIND_62 region code: CHE<br>Countries in region: Switzerland; Liechtenstein", "Government spending - percent of GDP: 10.57 % (GDP)<br>Period: 2008<br>REMIND_62 region code: CHE<br>Countries in region: Switzerland; Liechtenstein", "Government spending - percent of GDP: 11.38 % (GDP)<br>Period: 2009<br>REMIND_62 region code: CHE<br>Countries in region: Switzerland; Liechtenstein", "Government spending - percent of GDP: 11.18 % (GDP)<br>Period: 2010<br>REMIND_62 region code: CHE<br>Countries in region: Switzerland; Liechtenstein", "Government spending - percent of GDP: 11.28 % (GDP)<br>Period: 2011<br>REMIND_62 region code: CHE<br>Countries in region: Switzerland; Liechtenstein", "Government spending - percent of GDP: 11.31 % (GDP)<br>Period: 2012<br>REMIND_62 region code: CHE<br>Countries in region: Switzerland; Liechtenstein", "Government spending - percent of GDP: 11.41 % (GDP)<br>Period: 2013<br>REMIND_62 region code: CHE<br>Countries in region: Switzerland; Liechtenstein", "Government spending - percent of GDP: 11.48 % (GDP)<br>Period: 2014<br>REMIND_62 region code: CHE<br>Countries in region: Switzerland; Liechtenstein", "Government spending - percent of GDP: 11.54 % (GDP)<br>Period: 2015<br>REMIND_62 region code: CHE<br>Countries in region: Switzerland; Liechtenstein", "Government spending - percent of GDP: 11.51 % (GDP)<br>Period: 2016<br>REMIND_62 region code: CHE<br>Countries in region: Switzerland; Liechtenstein", "Government spending - percent of GDP: 11.51 % (GDP)<br>Period: 2017<br>REMIND_62 region code: CHE<br>Countries in region: Switzerland; Liechtenstein", "Government spending - percent of GDP: 11.26 % (GDP)<br>Period: 2018<br>REMIND_62 region code: CHE<br>Countries in region: Switzerland; Liechtenstein", "Government spending - percent of GDP: 11.35 % (GDP)<br>Period: 2019<br>REMIND_62 region code: CHE<br>Countries in region: Switzerland; Liechtenstein", "Government spending - percent of GDP: 12.13 % (GDP)<br>Period: 2020<br>REMIND_62 region code: CHE<br>Countries in region: Switzerland; Liechtenstein", "Government spending - percent of GDP: 11.94 % (GDP)<br>Period: 2021<br>REMIND_62 region code: CHE<br>Countries in region: Switzerland; Liechtenstein"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,68,27,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [20.133705352145522, 19.238400248440843, 18.617842079421241, 18.633615395837491, 19.603849697514992, 20.304756168983548, 20.602779531718483, 19.053843135425165, 18.435351796334643, 18.531123721245251, 17.727685337205013, 17.6038838764457, 16.731569010602325, 16.524346350719515, 16.173523733954958, 16.024028455268787, 16.061403395447453, 17.559787576611413, 16.725852297756049],
+      "text": ["Government spending - percent of GDP: 20.13 % (GDP)<br>Period: 2003<br>REMIND_62 region code: NES_other<br>Countries in region: Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Government spending - percent of GDP: 19.24 % (GDP)<br>Period: 2004<br>REMIND_62 region code: NES_other<br>Countries in region: Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Government spending - percent of GDP: 18.62 % (GDP)<br>Period: 2005<br>REMIND_62 region code: NES_other<br>Countries in region: Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Government spending - percent of GDP: 18.63 % (GDP)<br>Period: 2006<br>REMIND_62 region code: NES_other<br>Countries in region: Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Government spending - percent of GDP: 19.6 % (GDP)<br>Period: 2007<br>REMIND_62 region code: NES_other<br>Countries in region: Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Government spending - percent of GDP: 20.3 % (GDP)<br>Period: 2008<br>REMIND_62 region code: NES_other<br>Countries in region: Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Government spending - percent of GDP: 20.6 % (GDP)<br>Period: 2009<br>REMIND_62 region code: NES_other<br>Countries in region: Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; San Marino; Monaco; Holy See (Vatican City State)", "Government spending - percent of GDP: 19.05 % (GDP)<br>Period: 2010<br>REMIND_62 region code: NES_other<br>Countries in region: Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; San Marino; Monaco; Holy See (Vatican City State)", "Government spending - percent of GDP: 18.44 % (GDP)<br>Period: 2011<br>REMIND_62 region code: NES_other<br>Countries in region: Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Government spending - percent of GDP: 18.53 % (GDP)<br>Period: 2012<br>REMIND_62 region code: NES_other<br>Countries in region: Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Government spending - percent of GDP: 17.73 % (GDP)<br>Period: 2013<br>REMIND_62 region code: NES_other<br>Countries in region: Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Government spending - percent of GDP: 17.6 % (GDP)<br>Period: 2014<br>REMIND_62 region code: NES_other<br>Countries in region: Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Government spending - percent of GDP: 16.73 % (GDP)<br>Period: 2015<br>REMIND_62 region code: NES_other<br>Countries in region: Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Government spending - percent of GDP: 16.52 % (GDP)<br>Period: 2016<br>REMIND_62 region code: NES_other<br>Countries in region: Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Government spending - percent of GDP: 16.17 % (GDP)<br>Period: 2017<br>REMIND_62 region code: NES_other<br>Countries in region: Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Government spending - percent of GDP: 16.02 % (GDP)<br>Period: 2018<br>REMIND_62 region code: NES_other<br>Countries in region: Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Government spending - percent of GDP: 16.06 % (GDP)<br>Period: 2019<br>REMIND_62 region code: NES_other<br>Countries in region: Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Government spending - percent of GDP: 17.56 % (GDP)<br>Period: 2020<br>REMIND_62 region code: NES_other<br>Countries in region: Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Government spending - percent of GDP: 16.73 % (GDP)<br>Period: 2021<br>REMIND_62 region code: NES_other<br>Countries in region: Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,68,27,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [11.099999999999998, 11.210000000000001, 11.029999999999999, 10.530000000000001, 10.479999999999999, 10.380000000000001, 11.109999999999998, 11.16, 10.970000000000001, 10.84, 11.029999999999999, 11.449999999999998, 11.109999999999999, 11.27, 11.499999999999998, 11.289999999999999, 11.35, 11.849999999999998, 11.910000000000002],
+      "text": ["Government spending - percent of GDP: 11.1 % (GDP)<br>Period: 2003<br>REMIND_62 region code: ALB<br>Countries in region: Albania", "Government spending - percent of GDP: 11.21 % (GDP)<br>Period: 2004<br>REMIND_62 region code: ALB<br>Countries in region: Albania", "Government spending - percent of GDP: 11.03 % (GDP)<br>Period: 2005<br>REMIND_62 region code: ALB<br>Countries in region: Albania", "Government spending - percent of GDP: 10.53 % (GDP)<br>Period: 2006<br>REMIND_62 region code: ALB<br>Countries in region: Albania", "Government spending - percent of GDP: 10.48 % (GDP)<br>Period: 2007<br>REMIND_62 region code: ALB<br>Countries in region: Albania", "Government spending - percent of GDP: 10.38 % (GDP)<br>Period: 2008<br>REMIND_62 region code: ALB<br>Countries in region: Albania", "Government spending - percent of GDP: 11.11 % (GDP)<br>Period: 2009<br>REMIND_62 region code: ALB<br>Countries in region: Albania", "Government spending - percent of GDP: 11.16 % (GDP)<br>Period: 2010<br>REMIND_62 region code: ALB<br>Countries in region: Albania", "Government spending - percent of GDP: 10.97 % (GDP)<br>Period: 2011<br>REMIND_62 region code: ALB<br>Countries in region: Albania", "Government spending - percent of GDP: 10.84 % (GDP)<br>Period: 2012<br>REMIND_62 region code: ALB<br>Countries in region: Albania", "Government spending - percent of GDP: 11.03 % (GDP)<br>Period: 2013<br>REMIND_62 region code: ALB<br>Countries in region: Albania", "Government spending - percent of GDP: 11.45 % (GDP)<br>Period: 2014<br>REMIND_62 region code: ALB<br>Countries in region: Albania", "Government spending - percent of GDP: 11.11 % (GDP)<br>Period: 2015<br>REMIND_62 region code: ALB<br>Countries in region: Albania", "Government spending - percent of GDP: 11.27 % (GDP)<br>Period: 2016<br>REMIND_62 region code: ALB<br>Countries in region: Albania", "Government spending - percent of GDP: 11.5 % (GDP)<br>Period: 2017<br>REMIND_62 region code: ALB<br>Countries in region: Albania", "Government spending - percent of GDP: 11.29 % (GDP)<br>Period: 2018<br>REMIND_62 region code: ALB<br>Countries in region: Albania", "Government spending - percent of GDP: 11.35 % (GDP)<br>Period: 2019<br>REMIND_62 region code: ALB<br>Countries in region: Albania", "Government spending - percent of GDP: 11.85 % (GDP)<br>Period: 2020<br>REMIND_62 region code: ALB<br>Countries in region: Albania", "Government spending - percent of GDP: 11.91 % (GDP)<br>Period: 2021<br>REMIND_62 region code: ALB<br>Countries in region: Albania"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,109,44,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [11.597887895681755, 11.232790036257061, 11.277704252332093, 11.268567057706019, 11.297073545475971, 11.523969500080565, 12.57045908446379, 12.170299122602641, 11.821043221951271, 12.161544242456745, 12.551159461506851, 12.771910349461022, 13.03999754609884, 12.996584255373063, 12.954090615926157, 13.08457763224733, 13.122097836855188, 14.568761937715683, 13.728215886163682],
+      "text": ["Government spending - percent of GDP: 11.6 % (GDP)<br>Period: 2003<br>REMIND_62 region code: LAM_other<br>Countries in region: Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Martinique; Guadeloupe; Bahamas; Barbados; Belize; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Saint Kitts and Nevis; Cayman Islands; Saint Martin (French part); Sint Maarten (Dutch part); Virgin Islands, British; Turks and Caicos Islands; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Government spending - percent of GDP: 11.23 % (GDP)<br>Period: 2004<br>REMIND_62 region code: LAM_other<br>Countries in region: Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Martinique; Guadeloupe; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Saint Kitts and Nevis; Cayman Islands; Saint Martin (French part); Sint Maarten (Dutch part); Virgin Islands, British; Turks and Caicos Islands; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Government spending - percent of GDP: 11.28 % (GDP)<br>Period: 2005<br>REMIND_62 region code: LAM_other<br>Countries in region: Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Government spending - percent of GDP: 11.27 % (GDP)<br>Period: 2006<br>REMIND_62 region code: LAM_other<br>Countries in region: Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Government spending - percent of GDP: 11.3 % (GDP)<br>Period: 2007<br>REMIND_62 region code: LAM_other<br>Countries in region: Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Government spending - percent of GDP: 11.52 % (GDP)<br>Period: 2008<br>REMIND_62 region code: LAM_other<br>Countries in region: Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Government spending - percent of GDP: 12.57 % (GDP)<br>Period: 2009<br>REMIND_62 region code: LAM_other<br>Countries in region: Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Government spending - percent of GDP: 12.17 % (GDP)<br>Period: 2010<br>REMIND_62 region code: LAM_other<br>Countries in region: Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Government spending - percent of GDP: 11.82 % (GDP)<br>Period: 2011<br>REMIND_62 region code: LAM_other<br>Countries in region: Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Nicaragua; Paraguay; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Government spending - percent of GDP: 12.16 % (GDP)<br>Period: 2012<br>REMIND_62 region code: LAM_other<br>Countries in region: Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Nicaragua; Paraguay; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Government spending - percent of GDP: 12.55 % (GDP)<br>Period: 2013<br>REMIND_62 region code: LAM_other<br>Countries in region: Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Haiti; Dominican Republic; Honduras; El Salvador; Nicaragua; Paraguay; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Government spending - percent of GDP: 12.77 % (GDP)<br>Period: 2014<br>REMIND_62 region code: LAM_other<br>Countries in region: Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Haiti; Dominican Republic; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Government spending - percent of GDP: 13.04 % (GDP)<br>Period: 2015<br>REMIND_62 region code: LAM_other<br>Countries in region: Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Haiti; Dominican Republic; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Martinique; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Sint Maarten (Dutch part); Saint Martin (French part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Government spending - percent of GDP: 13 % (GDP)<br>Period: 2016<br>REMIND_62 region code: LAM_other<br>Countries in region: Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Haiti; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Martinique; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Saint Martin (French part); Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Government spending - percent of GDP: 12.95 % (GDP)<br>Period: 2017<br>REMIND_62 region code: LAM_other<br>Countries in region: Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Cuba; Haiti; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Martinique; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Cayman Islands; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Saint Martin (French part); Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Government spending - percent of GDP: 13.08 % (GDP)<br>Period: 2018<br>REMIND_62 region code: LAM_other<br>Countries in region: Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Cuba; Haiti; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Belize; Martinique; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Cayman Islands; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Saint Martin (French part); Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Government spending - percent of GDP: 13.12 % (GDP)<br>Period: 2019<br>REMIND_62 region code: LAM_other<br>Countries in region: Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Cuba; Haiti; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Belize; Martinique; French Guiana; Barbados; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Cayman Islands; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Virgin Islands, British; Saint Martin (French part); Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Government spending - percent of GDP: 14.57 % (GDP)<br>Period: 2020<br>REMIND_62 region code: LAM_other<br>Countries in region: Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Haiti; Cuba; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Bahamas; Guadeloupe; Belize; Martinique; French Guiana; Barbados; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Cayman Islands; Dominica; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Virgin Islands, British; Saint Martin (French part); Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Government spending - percent of GDP: 13.73 % (GDP)<br>Period: 2021<br>REMIND_62 region code: LAM_other<br>Countries in region: Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Haiti; Dominican Republic; Cuba; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Bahamas; Guadeloupe; Belize; Martinique; French Guiana; Barbados; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Cayman Islands; Dominica; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Virgin Islands, British; Saint Martin (French part); Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,109,44,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [12.67, 12.75, 12.74, 12.289999999999999, 11.330000000000002, 10.890000000000001, 11.35, 11.16, 11.449999999999999, 11.18, 11.35, 11.850000000000001, 11.76, 11.429999999999998, 9.5800000000000001, 7.9400000000000004, 7.29, 7.54, 7.5600000000000005],
+      "text": ["Government spending - percent of GDP: 12.67 % (GDP)<br>Period: 2003<br>REMIND_62 region code: EGY<br>Countries in region: Egypt", "Government spending - percent of GDP: 12.75 % (GDP)<br>Period: 2004<br>REMIND_62 region code: EGY<br>Countries in region: Egypt", "Government spending - percent of GDP: 12.74 % (GDP)<br>Period: 2005<br>REMIND_62 region code: EGY<br>Countries in region: Egypt", "Government spending - percent of GDP: 12.29 % (GDP)<br>Period: 2006<br>REMIND_62 region code: EGY<br>Countries in region: Egypt", "Government spending - percent of GDP: 11.33 % (GDP)<br>Period: 2007<br>REMIND_62 region code: EGY<br>Countries in region: Egypt", "Government spending - percent of GDP: 10.89 % (GDP)<br>Period: 2008<br>REMIND_62 region code: EGY<br>Countries in region: Egypt", "Government spending - percent of GDP: 11.35 % (GDP)<br>Period: 2009<br>REMIND_62 region code: EGY<br>Countries in region: Egypt", "Government spending - percent of GDP: 11.16 % (GDP)<br>Period: 2010<br>REMIND_62 region code: EGY<br>Countries in region: Egypt", "Government spending - percent of GDP: 11.45 % (GDP)<br>Period: 2011<br>REMIND_62 region code: EGY<br>Countries in region: Egypt", "Government spending - percent of GDP: 11.18 % (GDP)<br>Period: 2012<br>REMIND_62 region code: EGY<br>Countries in region: Egypt", "Government spending - percent of GDP: 11.35 % (GDP)<br>Period: 2013<br>REMIND_62 region code: EGY<br>Countries in region: Egypt", "Government spending - percent of GDP: 11.85 % (GDP)<br>Period: 2014<br>REMIND_62 region code: EGY<br>Countries in region: Egypt", "Government spending - percent of GDP: 11.76 % (GDP)<br>Period: 2015<br>REMIND_62 region code: EGY<br>Countries in region: Egypt", "Government spending - percent of GDP: 11.43 % (GDP)<br>Period: 2016<br>REMIND_62 region code: EGY<br>Countries in region: Egypt", "Government spending - percent of GDP: 9.58 % (GDP)<br>Period: 2017<br>REMIND_62 region code: EGY<br>Countries in region: Egypt", "Government spending - percent of GDP: 7.94 % (GDP)<br>Period: 2018<br>REMIND_62 region code: EGY<br>Countries in region: Egypt", "Government spending - percent of GDP: 7.29 % (GDP)<br>Period: 2019<br>REMIND_62 region code: EGY<br>Countries in region: Egypt", "Government spending - percent of GDP: 7.54 % (GDP)<br>Period: 2020<br>REMIND_62 region code: EGY<br>Countries in region: Egypt", "Government spending - percent of GDP: 7.56 % (GDP)<br>Period: 2021<br>REMIND_62 region code: EGY<br>Countries in region: Egypt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(8,48,107,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [19.899999999999999, 19.420000000000002, 19.079999999999998, 19.250000000000004, 19.25, 19.719999999999999, 21.960000000000001, 21.48, 21.150000000000002, 21.059999999999999, 20.699999999999999, 20.269999999999996, 20.879999999999999, 21.050000000000001, 20.699999999999996, 20.68, 20.66, 22.809999999999999, 21.859999999999996],
+      "text": ["Government spending - percent of GDP: 19.9 % (GDP)<br>Period: 2003<br>REMIND_62 region code: CAN<br>Countries in region: Canada", "Government spending - percent of GDP: 19.42 % (GDP)<br>Period: 2004<br>REMIND_62 region code: CAN<br>Countries in region: Canada", "Government spending - percent of GDP: 19.08 % (GDP)<br>Period: 2005<br>REMIND_62 region code: CAN<br>Countries in region: Canada", "Government spending - percent of GDP: 19.25 % (GDP)<br>Period: 2006<br>REMIND_62 region code: CAN<br>Countries in region: Canada", "Government spending - percent of GDP: 19.25 % (GDP)<br>Period: 2007<br>REMIND_62 region code: CAN<br>Countries in region: Canada", "Government spending - percent of GDP: 19.72 % (GDP)<br>Period: 2008<br>REMIND_62 region code: CAN<br>Countries in region: Canada", "Government spending - percent of GDP: 21.96 % (GDP)<br>Period: 2009<br>REMIND_62 region code: CAN<br>Countries in region: Canada", "Government spending - percent of GDP: 21.48 % (GDP)<br>Period: 2010<br>REMIND_62 region code: CAN<br>Countries in region: Canada", "Government spending - percent of GDP: 21.15 % (GDP)<br>Period: 2011<br>REMIND_62 region code: CAN<br>Countries in region: Canada", "Government spending - percent of GDP: 21.06 % (GDP)<br>Period: 2012<br>REMIND_62 region code: CAN<br>Countries in region: Canada", "Government spending - percent of GDP: 20.7 % (GDP)<br>Period: 2013<br>REMIND_62 region code: CAN<br>Countries in region: Canada", "Government spending - percent of GDP: 20.27 % (GDP)<br>Period: 2014<br>REMIND_62 region code: CAN<br>Countries in region: Canada", "Government spending - percent of GDP: 20.88 % (GDP)<br>Period: 2015<br>REMIND_62 region code: CAN<br>Countries in region: Canada", "Government spending - percent of GDP: 21.05 % (GDP)<br>Period: 2016<br>REMIND_62 region code: CAN<br>Countries in region: Canada", "Government spending - percent of GDP: 20.7 % (GDP)<br>Period: 2017<br>REMIND_62 region code: CAN<br>Countries in region: Canada", "Government spending - percent of GDP: 20.68 % (GDP)<br>Period: 2018<br>REMIND_62 region code: CAN<br>Countries in region: Canada", "Government spending - percent of GDP: 20.66 % (GDP)<br>Period: 2019<br>REMIND_62 region code: CAN<br>Countries in region: Canada", "Government spending - percent of GDP: 22.81 % (GDP)<br>Period: 2020<br>REMIND_62 region code: CAN<br>Countries in region: Canada", "Government spending - percent of GDP: 21.86 % (GDP)<br>Period: 2021<br>REMIND_62 region code: CAN<br>Countries in region: Canada"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(8,81,156,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [16.809999999999999, 17.07, 17.949999999999999, 18.359999999999999, 18.43, 19.789999999999996, 19.780000000000001, 19.699999999999999, 19.579999999999995, 19.379999999999999, 18.739999999999998, 18.77, 18.5, 18.149999999999999, 17.920000000000002, 18.23, 18.840000000000003, 20.489999999999998, 20.890000000000001],
+      "text": ["Government spending - percent of GDP: 16.81 % (GDP)<br>Period: 2003<br>REMIND_62 region code: NZL<br>Countries in region: New Zealand", "Government spending - percent of GDP: 17.07 % (GDP)<br>Period: 2004<br>REMIND_62 region code: NZL<br>Countries in region: New Zealand", "Government spending - percent of GDP: 17.95 % (GDP)<br>Period: 2005<br>REMIND_62 region code: NZL<br>Countries in region: New Zealand", "Government spending - percent of GDP: 18.36 % (GDP)<br>Period: 2006<br>REMIND_62 region code: NZL<br>Countries in region: New Zealand", "Government spending - percent of GDP: 18.43 % (GDP)<br>Period: 2007<br>REMIND_62 region code: NZL<br>Countries in region: New Zealand", "Government spending - percent of GDP: 19.79 % (GDP)<br>Period: 2008<br>REMIND_62 region code: NZL<br>Countries in region: New Zealand", "Government spending - percent of GDP: 19.78 % (GDP)<br>Period: 2009<br>REMIND_62 region code: NZL<br>Countries in region: New Zealand", "Government spending - percent of GDP: 19.7 % (GDP)<br>Period: 2010<br>REMIND_62 region code: NZL<br>Countries in region: New Zealand", "Government spending - percent of GDP: 19.58 % (GDP)<br>Period: 2011<br>REMIND_62 region code: NZL<br>Countries in region: New Zealand", "Government spending - percent of GDP: 19.38 % (GDP)<br>Period: 2012<br>REMIND_62 region code: NZL<br>Countries in region: New Zealand", "Government spending - percent of GDP: 18.74 % (GDP)<br>Period: 2013<br>REMIND_62 region code: NZL<br>Countries in region: New Zealand", "Government spending - percent of GDP: 18.77 % (GDP)<br>Period: 2014<br>REMIND_62 region code: NZL<br>Countries in region: New Zealand", "Government spending - percent of GDP: 18.5 % (GDP)<br>Period: 2015<br>REMIND_62 region code: NZL<br>Countries in region: New Zealand", "Government spending - percent of GDP: 18.15 % (GDP)<br>Period: 2016<br>REMIND_62 region code: NZL<br>Countries in region: New Zealand", "Government spending - percent of GDP: 17.92 % (GDP)<br>Period: 2017<br>REMIND_62 region code: NZL<br>Countries in region: New Zealand", "Government spending - percent of GDP: 18.23 % (GDP)<br>Period: 2018<br>REMIND_62 region code: NZL<br>Countries in region: New Zealand", "Government spending - percent of GDP: 18.84 % (GDP)<br>Period: 2019<br>REMIND_62 region code: NZL<br>Countries in region: New Zealand", "Government spending - percent of GDP: 20.49 % (GDP)<br>Period: 2020<br>REMIND_62 region code: NZL<br>Countries in region: New Zealand", "Government spending - percent of GDP: 20.89 % (GDP)<br>Period: 2021<br>REMIND_62 region code: NZL<br>Countries in region: New Zealand"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(8,81,156,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [10.5, 10.02, 10.08, 9.8900000000000006, 9.9499999999999993, 10.259999999999998, 11.380000000000001, 11.270000000000001, 11.330000000000002, 11.449999999999999, 11.710000000000001, 11.75, 11.9, 11.57, 11.219999999999999, 11.259999999999998, 11.109999999999999, 12.220000000000001, 11.459999999999999],
+      "text": ["Government spending - percent of GDP: 10.5 % (GDP)<br>Period: 2003<br>REMIND_62 region code: MEX<br>Countries in region: Mexico", "Government spending - percent of GDP: 10.02 % (GDP)<br>Period: 2004<br>REMIND_62 region code: MEX<br>Countries in region: Mexico", "Government spending - percent of GDP: 10.08 % (GDP)<br>Period: 2005<br>REMIND_62 region code: MEX<br>Countries in region: Mexico", "Government spending - percent of GDP: 9.89 % (GDP)<br>Period: 2006<br>REMIND_62 region code: MEX<br>Countries in region: Mexico", "Government spending - percent of GDP: 9.95 % (GDP)<br>Period: 2007<br>REMIND_62 region code: MEX<br>Countries in region: Mexico", "Government spending - percent of GDP: 10.26 % (GDP)<br>Period: 2008<br>REMIND_62 region code: MEX<br>Countries in region: Mexico", "Government spending - percent of GDP: 11.38 % (GDP)<br>Period: 2009<br>REMIND_62 region code: MEX<br>Countries in region: Mexico", "Government spending - percent of GDP: 11.27 % (GDP)<br>Period: 2010<br>REMIND_62 region code: MEX<br>Countries in region: Mexico", "Government spending - percent of GDP: 11.33 % (GDP)<br>Period: 2011<br>REMIND_62 region code: MEX<br>Countries in region: Mexico", "Government spending - percent of GDP: 11.45 % (GDP)<br>Period: 2012<br>REMIND_62 region code: MEX<br>Countries in region: Mexico", "Government spending - percent of GDP: 11.71 % (GDP)<br>Period: 2013<br>REMIND_62 region code: MEX<br>Countries in region: Mexico", "Government spending - percent of GDP: 11.75 % (GDP)<br>Period: 2014<br>REMIND_62 region code: MEX<br>Countries in region: Mexico", "Government spending - percent of GDP: 11.9 % (GDP)<br>Period: 2015<br>REMIND_62 region code: MEX<br>Countries in region: Mexico", "Government spending - percent of GDP: 11.57 % (GDP)<br>Period: 2016<br>REMIND_62 region code: MEX<br>Countries in region: Mexico", "Government spending - percent of GDP: 11.22 % (GDP)<br>Period: 2017<br>REMIND_62 region code: MEX<br>Countries in region: Mexico", "Government spending - percent of GDP: 11.26 % (GDP)<br>Period: 2018<br>REMIND_62 region code: MEX<br>Countries in region: Mexico", "Government spending - percent of GDP: 11.11 % (GDP)<br>Period: 2019<br>REMIND_62 region code: MEX<br>Countries in region: Mexico", "Government spending - percent of GDP: 12.22 % (GDP)<br>Period: 2020<br>REMIND_62 region code: MEX<br>Countries in region: Mexico", "Government spending - percent of GDP: 11.46 % (GDP)<br>Period: 2021<br>REMIND_62 region code: MEX<br>Countries in region: Mexico"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(35,139,69,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [21.940000000000001, 20.739999999999998, 19.370000000000001, 18.57, 18.650000000000002, 18.399999999999999, 21.5, 21.23, 20.789999999999999, 20.609999999999999, 20.98, 21.719999999999999, 23.100000000000001, 24.219999999999999, 23.810000000000002, 23.109999999999999, 24.100000000000001, 26.130000000000003, 23.079999999999998],
+      "text": ["Government spending - percent of GDP: 21.94 % (GDP)<br>Period: 2003<br>REMIND_62 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Government spending - percent of GDP: 20.74 % (GDP)<br>Period: 2004<br>REMIND_62 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Government spending - percent of GDP: 19.37 % (GDP)<br>Period: 2005<br>REMIND_62 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Government spending - percent of GDP: 18.57 % (GDP)<br>Period: 2006<br>REMIND_62 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Government spending - percent of GDP: 18.65 % (GDP)<br>Period: 2007<br>REMIND_62 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Government spending - percent of GDP: 18.4 % (GDP)<br>Period: 2008<br>REMIND_62 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Government spending - percent of GDP: 21.5 % (GDP)<br>Period: 2009<br>REMIND_62 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Government spending - percent of GDP: 21.23 % (GDP)<br>Period: 2010<br>REMIND_62 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Government spending - percent of GDP: 20.79 % (GDP)<br>Period: 2011<br>REMIND_62 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Government spending - percent of GDP: 20.61 % (GDP)<br>Period: 2012<br>REMIND_62 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Government spending - percent of GDP: 20.98 % (GDP)<br>Period: 2013<br>REMIND_62 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Government spending - percent of GDP: 21.72 % (GDP)<br>Period: 2014<br>REMIND_62 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Government spending - percent of GDP: 23.1 % (GDP)<br>Period: 2015<br>REMIND_62 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Government spending - percent of GDP: 24.22 % (GDP)<br>Period: 2016<br>REMIND_62 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Government spending - percent of GDP: 23.81 % (GDP)<br>Period: 2017<br>REMIND_62 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Government spending - percent of GDP: 23.11 % (GDP)<br>Period: 2018<br>REMIND_62 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Government spending - percent of GDP: 24.1 % (GDP)<br>Period: 2019<br>REMIND_62 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Government spending - percent of GDP: 26.13 % (GDP)<br>Period: 2020<br>REMIND_62 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Government spending - percent of GDP: 23.08 % (GDP)<br>Period: 2021<br>REMIND_62 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(35,139,69,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [18.239999999999998, 16.890000000000001, 17.530000000000001, 17.649999999999999, 17.030000000000001, 16.970000000000002, 19.440000000000001, 19.670000000000002, 17.690000000000005, 18.940000000000001, 18.899999999999999, 18.670000000000002, 18.920000000000002, 18.600000000000001, 20.68, 20.769999999999996, 18.780000000000001, 19.300000000000001, 17.739999999999998],
+      "text": ["Government spending - percent of GDP: 18.24 % (GDP)<br>Period: 2003<br>REMIND_62 region code: UKR<br>Countries in region: Ukraine", "Government spending - percent of GDP: 16.89 % (GDP)<br>Period: 2004<br>REMIND_62 region code: UKR<br>Countries in region: Ukraine", "Government spending - percent of GDP: 17.53 % (GDP)<br>Period: 2005<br>REMIND_62 region code: UKR<br>Countries in region: Ukraine", "Government spending - percent of GDP: 17.65 % (GDP)<br>Period: 2006<br>REMIND_62 region code: UKR<br>Countries in region: Ukraine", "Government spending - percent of GDP: 17.03 % (GDP)<br>Period: 2007<br>REMIND_62 region code: UKR<br>Countries in region: Ukraine", "Government spending - percent of GDP: 16.97 % (GDP)<br>Period: 2008<br>REMIND_62 region code: UKR<br>Countries in region: Ukraine", "Government spending - percent of GDP: 19.44 % (GDP)<br>Period: 2009<br>REMIND_62 region code: UKR<br>Countries in region: Ukraine", "Government spending - percent of GDP: 19.67 % (GDP)<br>Period: 2010<br>REMIND_62 region code: UKR<br>Countries in region: Ukraine", "Government spending - percent of GDP: 17.69 % (GDP)<br>Period: 2011<br>REMIND_62 region code: UKR<br>Countries in region: Ukraine", "Government spending - percent of GDP: 18.94 % (GDP)<br>Period: 2012<br>REMIND_62 region code: UKR<br>Countries in region: Ukraine", "Government spending - percent of GDP: 18.9 % (GDP)<br>Period: 2013<br>REMIND_62 region code: UKR<br>Countries in region: Ukraine", "Government spending - percent of GDP: 18.67 % (GDP)<br>Period: 2014<br>REMIND_62 region code: UKR<br>Countries in region: Ukraine", "Government spending - percent of GDP: 18.92 % (GDP)<br>Period: 2015<br>REMIND_62 region code: UKR<br>Countries in region: Ukraine", "Government spending - percent of GDP: 18.6 % (GDP)<br>Period: 2016<br>REMIND_62 region code: UKR<br>Countries in region: Ukraine", "Government spending - percent of GDP: 20.68 % (GDP)<br>Period: 2017<br>REMIND_62 region code: UKR<br>Countries in region: Ukraine", "Government spending - percent of GDP: 20.77 % (GDP)<br>Period: 2018<br>REMIND_62 region code: UKR<br>Countries in region: Ukraine", "Government spending - percent of GDP: 18.78 % (GDP)<br>Period: 2019<br>REMIND_62 region code: UKR<br>Countries in region: Ukraine", "Government spending - percent of GDP: 19.3 % (GDP)<br>Period: 2020<br>REMIND_62 region code: UKR<br>Countries in region: Ukraine", "Government spending - percent of GDP: 17.74 % (GDP)<br>Period: 2021<br>REMIND_62 region code: UKR<br>Countries in region: Ukraine"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(35,139,69,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [11.99, 11.01, 10.939999999999998, 11.289999999999999, 11.48, 12.209999999999999, 12.94, 12.65, 12.76, 13.27, 13.52, 13.699999999999999, 13.84, 13.84, 13.84, 13.840000000000002, 13.84, 13.840000000000002, 13.84],
+      "text": ["Government spending - percent of GDP: 11.99 % (GDP)<br>Period: 2003<br>REMIND_62 region code: URY<br>Countries in region: Uruguay", "Government spending - percent of GDP: 11.01 % (GDP)<br>Period: 2004<br>REMIND_62 region code: URY<br>Countries in region: Uruguay", "Government spending - percent of GDP: 10.94 % (GDP)<br>Period: 2005<br>REMIND_62 region code: URY<br>Countries in region: Uruguay", "Government spending - percent of GDP: 11.29 % (GDP)<br>Period: 2006<br>REMIND_62 region code: URY<br>Countries in region: Uruguay", "Government spending - percent of GDP: 11.48 % (GDP)<br>Period: 2007<br>REMIND_62 region code: URY<br>Countries in region: Uruguay", "Government spending - percent of GDP: 12.21 % (GDP)<br>Period: 2008<br>REMIND_62 region code: URY<br>Countries in region: Uruguay", "Government spending - percent of GDP: 12.94 % (GDP)<br>Period: 2009<br>REMIND_62 region code: URY<br>Countries in region: Uruguay", "Government spending - percent of GDP: 12.65 % (GDP)<br>Period: 2010<br>REMIND_62 region code: URY<br>Countries in region: Uruguay", "Government spending - percent of GDP: 12.76 % (GDP)<br>Period: 2011<br>REMIND_62 region code: URY<br>Countries in region: Uruguay", "Government spending - percent of GDP: 13.27 % (GDP)<br>Period: 2012<br>REMIND_62 region code: URY<br>Countries in region: Uruguay", "Government spending - percent of GDP: 13.52 % (GDP)<br>Period: 2013<br>REMIND_62 region code: URY<br>Countries in region: Uruguay", "Government spending - percent of GDP: 13.7 % (GDP)<br>Period: 2014<br>REMIND_62 region code: URY<br>Countries in region: Uruguay", "Government spending - percent of GDP: 13.84 % (GDP)<br>Period: 2015<br>REMIND_62 region code: URY<br>Countries in region: Uruguay", "Government spending - percent of GDP: 13.84 % (GDP)<br>Period: 2016<br>REMIND_62 region code: URY<br>Countries in region: Uruguay", "Government spending - percent of GDP: 13.84 % (GDP)<br>Period: 2017<br>REMIND_62 region code: URY<br>Countries in region: Uruguay", "Government spending - percent of GDP: 13.84 % (GDP)<br>Period: 2018<br>REMIND_62 region code: URY<br>Countries in region: Uruguay", "Government spending - percent of GDP: 13.84 % (GDP)<br>Period: 2019<br>REMIND_62 region code: URY<br>Countries in region: Uruguay", "Government spending - percent of GDP: 13.84 % (GDP)<br>Period: 2020<br>REMIND_62 region code: URY<br>Countries in region: Uruguay", "Government spending - percent of GDP: 13.84 % (GDP)<br>Period: 2021<br>REMIND_62 region code: URY<br>Countries in region: Uruguay"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(35,139,69,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [19.079999999999998, 18.469999999999999, 18.890000000000001, 19.039999999999999, 18.940000000000001, 18.84, 19.649999999999999, 19.02, 18.670000000000002, 18.530000000000001, 18.890000000000001, 19.149999999999999, 19.780000000000001, 20.379999999999995, 20.159999999999997, 19.900000000000002, 19.979999999999997, 20.140000000000001, 18.619999999999997],
+      "text": ["Government spending - percent of GDP: 19.08 % (GDP)<br>Period: 2003<br>REMIND_62 region code: BRA<br>Countries in region: Brazil", "Government spending - percent of GDP: 18.47 % (GDP)<br>Period: 2004<br>REMIND_62 region code: BRA<br>Countries in region: Brazil", "Government spending - percent of GDP: 18.89 % (GDP)<br>Period: 2005<br>REMIND_62 region code: BRA<br>Countries in region: Brazil", "Government spending - percent of GDP: 19.04 % (GDP)<br>Period: 2006<br>REMIND_62 region code: BRA<br>Countries in region: Brazil", "Government spending - percent of GDP: 18.94 % (GDP)<br>Period: 2007<br>REMIND_62 region code: BRA<br>Countries in region: Brazil", "Government spending - percent of GDP: 18.84 % (GDP)<br>Period: 2008<br>REMIND_62 region code: BRA<br>Countries in region: Brazil", "Government spending - percent of GDP: 19.65 % (GDP)<br>Period: 2009<br>REMIND_62 region code: BRA<br>Countries in region: Brazil", "Government spending - percent of GDP: 19.02 % (GDP)<br>Period: 2010<br>REMIND_62 region code: BRA<br>Countries in region: Brazil", "Government spending - percent of GDP: 18.67 % (GDP)<br>Period: 2011<br>REMIND_62 region code: BRA<br>Countries in region: Brazil", "Government spending - percent of GDP: 18.53 % (GDP)<br>Period: 2012<br>REMIND_62 region code: BRA<br>Countries in region: Brazil", "Government spending - percent of GDP: 18.89 % (GDP)<br>Period: 2013<br>REMIND_62 region code: BRA<br>Countries in region: Brazil", "Government spending - percent of GDP: 19.15 % (GDP)<br>Period: 2014<br>REMIND_62 region code: BRA<br>Countries in region: Brazil", "Government spending - percent of GDP: 19.78 % (GDP)<br>Period: 2015<br>REMIND_62 region code: BRA<br>Countries in region: Brazil", "Government spending - percent of GDP: 20.38 % (GDP)<br>Period: 2016<br>REMIND_62 region code: BRA<br>Countries in region: Brazil", "Government spending - percent of GDP: 20.16 % (GDP)<br>Period: 2017<br>REMIND_62 region code: BRA<br>Countries in region: Brazil", "Government spending - percent of GDP: 19.9 % (GDP)<br>Period: 2018<br>REMIND_62 region code: BRA<br>Countries in region: Brazil", "Government spending - percent of GDP: 19.98 % (GDP)<br>Period: 2019<br>REMIND_62 region code: BRA<br>Countries in region: Brazil", "Government spending - percent of GDP: 20.14 % (GDP)<br>Period: 2020<br>REMIND_62 region code: BRA<br>Countries in region: Brazil", "Government spending - percent of GDP: 18.62 % (GDP)<br>Period: 2021<br>REMIND_62 region code: BRA<br>Countries in region: Brazil"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(65,171,93,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [12.870000000000001, 11.960000000000003, 11.06, 11.710000000000001, 12.470000000000001, 11.859999999999999, 13.699999999999999, 11.210000000000001, 11.52, 12.190000000000001, 12.390000000000001, 14.600000000000001, 14.6, 14.599999999999998, 14.599999999999998, 14.6, 14.6, 14.6, 14.600000000000001],
+      "text": ["Government spending - percent of GDP: 12.87 % (GDP)<br>Period: 2003<br>REMIND_62 region code: VEN<br>Countries in region: Venezuela, Bolivarian Republic of", "Government spending - percent of GDP: 11.96 % (GDP)<br>Period: 2004<br>REMIND_62 region code: VEN<br>Countries in region: Venezuela, Bolivarian Republic of", "Government spending - percent of GDP: 11.06 % (GDP)<br>Period: 2005<br>REMIND_62 region code: VEN<br>Countries in region: Venezuela, Bolivarian Republic of", "Government spending - percent of GDP: 11.71 % (GDP)<br>Period: 2006<br>REMIND_62 region code: VEN<br>Countries in region: Venezuela, Bolivarian Republic of", "Government spending - percent of GDP: 12.47 % (GDP)<br>Period: 2007<br>REMIND_62 region code: VEN<br>Countries in region: Venezuela, Bolivarian Republic of", "Government spending - percent of GDP: 11.86 % (GDP)<br>Period: 2008<br>REMIND_62 region code: VEN<br>Countries in region: Venezuela, Bolivarian Republic of", "Government spending - percent of GDP: 13.7 % (GDP)<br>Period: 2009<br>REMIND_62 region code: VEN<br>Countries in region: Venezuela, Bolivarian Republic of", "Government spending - percent of GDP: 11.21 % (GDP)<br>Period: 2010<br>REMIND_62 region code: VEN<br>Countries in region: Venezuela, Bolivarian Republic of", "Government spending - percent of GDP: 11.52 % (GDP)<br>Period: 2011<br>REMIND_62 region code: VEN<br>Countries in region: Venezuela, Bolivarian Republic of", "Government spending - percent of GDP: 12.19 % (GDP)<br>Period: 2012<br>REMIND_62 region code: VEN<br>Countries in region: Venezuela, Bolivarian Republic of", "Government spending - percent of GDP: 12.39 % (GDP)<br>Period: 2013<br>REMIND_62 region code: VEN<br>Countries in region: Venezuela, Bolivarian Republic of", "Government spending - percent of GDP: 14.6 % (GDP)<br>Period: 2014<br>REMIND_62 region code: VEN<br>Countries in region: Venezuela, Bolivarian Republic of", "Government spending - percent of GDP: 14.6 % (GDP)<br>Period: 2015<br>REMIND_62 region code: VEN<br>Countries in region: Venezuela, Bolivarian Republic of", "Government spending - percent of GDP: 14.6 % (GDP)<br>Period: 2016<br>REMIND_62 region code: VEN<br>Countries in region: Venezuela, Bolivarian Republic of", "Government spending - percent of GDP: 14.6 % (GDP)<br>Period: 2017<br>REMIND_62 region code: VEN<br>Countries in region: Venezuela, Bolivarian Republic of", "Government spending - percent of GDP: 14.6 % (GDP)<br>Period: 2018<br>REMIND_62 region code: VEN<br>Countries in region: Venezuela, Bolivarian Republic of", "Government spending - percent of GDP: 14.6 % (GDP)<br>Period: 2019<br>REMIND_62 region code: VEN<br>Countries in region: Venezuela, Bolivarian Republic of", "Government spending - percent of GDP: 14.6 % (GDP)<br>Period: 2020<br>REMIND_62 region code: VEN<br>Countries in region: Venezuela, Bolivarian Republic of", "Government spending - percent of GDP: 14.6 % (GDP)<br>Period: 2021<br>REMIND_62 region code: VEN<br>Countries in region: Venezuela, Bolivarian Republic of"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(65,171,93,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [12.15, 12.390000000000001, 12.860000000000001, 13.369999999999999, 13.44, 14.050000000000001, 14.66, 14.199999999999999, 14.370000000000001, 14.69, 14.98, 15.229999999999999, 15.080000000000002, 15.24, 15.42, 16.050000000000001, 17.079999999999998, 18.039999999999999, 18.16],
+      "text": ["Government spending - percent of GDP: 12.15 % (GDP)<br>Period: 2003<br>REMIND_62 region code: KOR<br>Countries in region: Korea, Republic of", "Government spending - percent of GDP: 12.39 % (GDP)<br>Period: 2004<br>REMIND_62 region code: KOR<br>Countries in region: Korea, Republic of", "Government spending - percent of GDP: 12.86 % (GDP)<br>Period: 2005<br>REMIND_62 region code: KOR<br>Countries in region: Korea, Republic of", "Government spending - percent of GDP: 13.37 % (GDP)<br>Period: 2006<br>REMIND_62 region code: KOR<br>Countries in region: Korea, Republic of", "Government spending - percent of GDP: 13.44 % (GDP)<br>Period: 2007<br>REMIND_62 region code: KOR<br>Countries in region: Korea, Republic of", "Government spending - percent of GDP: 14.05 % (GDP)<br>Period: 2008<br>REMIND_62 region code: KOR<br>Countries in region: Korea, Republic of", "Government spending - percent of GDP: 14.66 % (GDP)<br>Period: 2009<br>REMIND_62 region code: KOR<br>Countries in region: Korea, Republic of", "Government spending - percent of GDP: 14.2 % (GDP)<br>Period: 2010<br>REMIND_62 region code: KOR<br>Countries in region: Korea, Republic of", "Government spending - percent of GDP: 14.37 % (GDP)<br>Period: 2011<br>REMIND_62 region code: KOR<br>Countries in region: Korea, Republic of", "Government spending - percent of GDP: 14.69 % (GDP)<br>Period: 2012<br>REMIND_62 region code: KOR<br>Countries in region: Korea, Republic of", "Government spending - percent of GDP: 14.98 % (GDP)<br>Period: 2013<br>REMIND_62 region code: KOR<br>Countries in region: Korea, Republic of", "Government spending - percent of GDP: 15.23 % (GDP)<br>Period: 2014<br>REMIND_62 region code: KOR<br>Countries in region: Korea, Republic of", "Government spending - percent of GDP: 15.08 % (GDP)<br>Period: 2015<br>REMIND_62 region code: KOR<br>Countries in region: Korea, Republic of", "Government spending - percent of GDP: 15.24 % (GDP)<br>Period: 2016<br>REMIND_62 region code: KOR<br>Countries in region: Korea, Republic of", "Government spending - percent of GDP: 15.42 % (GDP)<br>Period: 2017<br>REMIND_62 region code: KOR<br>Countries in region: Korea, Republic of", "Government spending - percent of GDP: 16.05 % (GDP)<br>Period: 2018<br>REMIND_62 region code: KOR<br>Countries in region: Korea, Republic of", "Government spending - percent of GDP: 17.08 % (GDP)<br>Period: 2019<br>REMIND_62 region code: KOR<br>Countries in region: Korea, Republic of", "Government spending - percent of GDP: 18.04 % (GDP)<br>Period: 2020<br>REMIND_62 region code: KOR<br>Countries in region: Korea, Republic of", "Government spending - percent of GDP: 18.16 % (GDP)<br>Period: 2021<br>REMIND_62 region code: KOR<br>Countries in region: Korea, Republic of"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(77,0,75,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [9.9299999999999979, 9.1400000000000023, 8.8699999999999992, 9.0700000000000003, 9.2300000000000004, 8.8100000000000023, 9.8300000000000001, 9.7200000000000006, 9.7100000000000009, 10.789999999999999, 10.820000000000002, 10.56, 10.910000000000002, 11.26, 11.32, 12.039999999999997, 12.470000000000002, 15.26, 15.58],
+      "text": ["Government spending - percent of GDP: 9.93 % (GDP)<br>Period: 2003<br>REMIND_62 region code: PHL<br>Countries in region: Philippines", "Government spending - percent of GDP: 9.14 % (GDP)<br>Period: 2004<br>REMIND_62 region code: PHL<br>Countries in region: Philippines", "Government spending - percent of GDP: 8.87 % (GDP)<br>Period: 2005<br>REMIND_62 region code: PHL<br>Countries in region: Philippines", "Government spending - percent of GDP: 9.07 % (GDP)<br>Period: 2006<br>REMIND_62 region code: PHL<br>Countries in region: Philippines", "Government spending - percent of GDP: 9.23 % (GDP)<br>Period: 2007<br>REMIND_62 region code: PHL<br>Countries in region: Philippines", "Government spending - percent of GDP: 8.81 % (GDP)<br>Period: 2008<br>REMIND_62 region code: PHL<br>Countries in region: Philippines", "Government spending - percent of GDP: 9.83 % (GDP)<br>Period: 2009<br>REMIND_62 region code: PHL<br>Countries in region: Philippines", "Government spending - percent of GDP: 9.72 % (GDP)<br>Period: 2010<br>REMIND_62 region code: PHL<br>Countries in region: Philippines", "Government spending - percent of GDP: 9.71 % (GDP)<br>Period: 2011<br>REMIND_62 region code: PHL<br>Countries in region: Philippines", "Government spending - percent of GDP: 10.79 % (GDP)<br>Period: 2012<br>REMIND_62 region code: PHL<br>Countries in region: Philippines", "Government spending - percent of GDP: 10.82 % (GDP)<br>Period: 2013<br>REMIND_62 region code: PHL<br>Countries in region: Philippines", "Government spending - percent of GDP: 10.56 % (GDP)<br>Period: 2014<br>REMIND_62 region code: PHL<br>Countries in region: Philippines", "Government spending - percent of GDP: 10.91 % (GDP)<br>Period: 2015<br>REMIND_62 region code: PHL<br>Countries in region: Philippines", "Government spending - percent of GDP: 11.26 % (GDP)<br>Period: 2016<br>REMIND_62 region code: PHL<br>Countries in region: Philippines", "Government spending - percent of GDP: 11.32 % (GDP)<br>Period: 2017<br>REMIND_62 region code: PHL<br>Countries in region: Philippines", "Government spending - percent of GDP: 12.04 % (GDP)<br>Period: 2018<br>REMIND_62 region code: PHL<br>Countries in region: Philippines", "Government spending - percent of GDP: 12.47 % (GDP)<br>Period: 2019<br>REMIND_62 region code: PHL<br>Countries in region: Philippines", "Government spending - percent of GDP: 15.26 % (GDP)<br>Period: 2020<br>REMIND_62 region code: PHL<br>Countries in region: Philippines", "Government spending - percent of GDP: 15.58 % (GDP)<br>Period: 2021<br>REMIND_62 region code: PHL<br>Countries in region: Philippines"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(77,0,75,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [18.41, 18.300000000000004, 18.379999999999995, 18.309999999999999, 18.169999999999995, 18.09, 18.43, 18.829999999999998, 18.66, 18.899999999999999, 18.850000000000001, 18.77, 19.179999999999996, 19.959999999999997, 19.93, 19.989999999999995, 20.340000000000003, 21.859999999999992, 22.390000000000001],
+      "text": ["Government spending - percent of GDP: 18.41 % (GDP)<br>Period: 2003<br>REMIND_62 region code: AUS<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands", "Government spending - percent of GDP: 18.3 % (GDP)<br>Period: 2004<br>REMIND_62 region code: AUS<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands", "Government spending - percent of GDP: 18.38 % (GDP)<br>Period: 2005<br>REMIND_62 region code: AUS<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands", "Government spending - percent of GDP: 18.31 % (GDP)<br>Period: 2006<br>REMIND_62 region code: AUS<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands", "Government spending - percent of GDP: 18.17 % (GDP)<br>Period: 2007<br>REMIND_62 region code: AUS<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands", "Government spending - percent of GDP: 18.09 % (GDP)<br>Period: 2008<br>REMIND_62 region code: AUS<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands", "Government spending - percent of GDP: 18.43 % (GDP)<br>Period: 2009<br>REMIND_62 region code: AUS<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands", "Government spending - percent of GDP: 18.83 % (GDP)<br>Period: 2010<br>REMIND_62 region code: AUS<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands", "Government spending - percent of GDP: 18.66 % (GDP)<br>Period: 2011<br>REMIND_62 region code: AUS<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands", "Government spending - percent of GDP: 18.9 % (GDP)<br>Period: 2012<br>REMIND_62 region code: AUS<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands", "Government spending - percent of GDP: 18.85 % (GDP)<br>Period: 2013<br>REMIND_62 region code: AUS<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands", "Government spending - percent of GDP: 18.77 % (GDP)<br>Period: 2014<br>REMIND_62 region code: AUS<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands", "Government spending - percent of GDP: 19.18 % (GDP)<br>Period: 2015<br>REMIND_62 region code: AUS<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands", "Government spending - percent of GDP: 19.96 % (GDP)<br>Period: 2016<br>REMIND_62 region code: AUS<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands", "Government spending - percent of GDP: 19.93 % (GDP)<br>Period: 2017<br>REMIND_62 region code: AUS<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands", "Government spending - percent of GDP: 19.99 % (GDP)<br>Period: 2018<br>REMIND_62 region code: AUS<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands", "Government spending - percent of GDP: 20.34 % (GDP)<br>Period: 2019<br>REMIND_62 region code: AUS<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands", "Government spending - percent of GDP: 21.86 % (GDP)<br>Period: 2020<br>REMIND_62 region code: AUS<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands", "Government spending - percent of GDP: 22.39 % (GDP)<br>Period: 2021<br>REMIND_62 region code: AUS<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(107,174,214,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [15.609999999999999, 15.68, 13.960000000000001, 13.880000000000001, 13.729999999999999, 13.140000000000001, 13.800000000000001, 13.76, 13.35, 13.48, 14.1, 14.24, 14.809999999999999, 14.539999999999999, 14.879999999999999, 15.419999999999998, 15.770000000000001, 17.170000000000002, 16.050000000000001],
+      "text": ["Government spending - percent of GDP: 15.61 % (GDP)<br>Period: 2003<br>REMIND_62 region code: COL<br>Countries in region: Colombia", "Government spending - percent of GDP: 15.68 % (GDP)<br>Period: 2004<br>REMIND_62 region code: COL<br>Countries in region: Colombia", "Government spending - percent of GDP: 13.96 % (GDP)<br>Period: 2005<br>REMIND_62 region code: COL<br>Countries in region: Colombia", "Government spending - percent of GDP: 13.88 % (GDP)<br>Period: 2006<br>REMIND_62 region code: COL<br>Countries in region: Colombia", "Government spending - percent of GDP: 13.73 % (GDP)<br>Period: 2007<br>REMIND_62 region code: COL<br>Countries in region: Colombia", "Government spending - percent of GDP: 13.14 % (GDP)<br>Period: 2008<br>REMIND_62 region code: COL<br>Countries in region: Colombia", "Government spending - percent of GDP: 13.8 % (GDP)<br>Period: 2009<br>REMIND_62 region code: COL<br>Countries in region: Colombia", "Government spending - percent of GDP: 13.76 % (GDP)<br>Period: 2010<br>REMIND_62 region code: COL<br>Countries in region: Colombia", "Government spending - percent of GDP: 13.35 % (GDP)<br>Period: 2011<br>REMIND_62 region code: COL<br>Countries in region: Colombia", "Government spending - percent of GDP: 13.48 % (GDP)<br>Period: 2012<br>REMIND_62 region code: COL<br>Countries in region: Colombia", "Government spending - percent of GDP: 14.1 % (GDP)<br>Period: 2013<br>REMIND_62 region code: COL<br>Countries in region: Colombia", "Government spending - percent of GDP: 14.24 % (GDP)<br>Period: 2014<br>REMIND_62 region code: COL<br>Countries in region: Colombia", "Government spending - percent of GDP: 14.81 % (GDP)<br>Period: 2015<br>REMIND_62 region code: COL<br>Countries in region: Colombia", "Government spending - percent of GDP: 14.54 % (GDP)<br>Period: 2016<br>REMIND_62 region code: COL<br>Countries in region: Colombia", "Government spending - percent of GDP: 14.88 % (GDP)<br>Period: 2017<br>REMIND_62 region code: COL<br>Countries in region: Colombia", "Government spending - percent of GDP: 15.42 % (GDP)<br>Period: 2018<br>REMIND_62 region code: COL<br>Countries in region: Colombia", "Government spending - percent of GDP: 15.77 % (GDP)<br>Period: 2019<br>REMIND_62 region code: COL<br>Countries in region: Colombia", "Government spending - percent of GDP: 17.17 % (GDP)<br>Period: 2020<br>REMIND_62 region code: COL<br>Countries in region: Colombia", "Government spending - percent of GDP: 16.05 % (GDP)<br>Period: 2021<br>REMIND_62 region code: COL<br>Countries in region: Colombia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(116,196,118,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [11.26, 11.609999999999999, 11.249999999999998, 10.18, 11.049999999999999, 10.19, 11.66, 10.81, 10.48, 11.52, 10.17, 10.69, 11.629999999999999, 11.630000000000001, 10.539999999999999, 8.3200000000000021, 9.1300000000000008, 12.74, 11.27],
+      "text": ["Government spending - percent of GDP: 11.26 % (GDP)<br>Period: 2003<br>REMIND_62 region code: KAZ<br>Countries in region: Kazakhstan", "Government spending - percent of GDP: 11.61 % (GDP)<br>Period: 2004<br>REMIND_62 region code: KAZ<br>Countries in region: Kazakhstan", "Government spending - percent of GDP: 11.25 % (GDP)<br>Period: 2005<br>REMIND_62 region code: KAZ<br>Countries in region: Kazakhstan", "Government spending - percent of GDP: 10.18 % (GDP)<br>Period: 2006<br>REMIND_62 region code: KAZ<br>Countries in region: Kazakhstan", "Government spending - percent of GDP: 11.05 % (GDP)<br>Period: 2007<br>REMIND_62 region code: KAZ<br>Countries in region: Kazakhstan", "Government spending - percent of GDP: 10.19 % (GDP)<br>Period: 2008<br>REMIND_62 region code: KAZ<br>Countries in region: Kazakhstan", "Government spending - percent of GDP: 11.66 % (GDP)<br>Period: 2009<br>REMIND_62 region code: KAZ<br>Countries in region: Kazakhstan", "Government spending - percent of GDP: 10.81 % (GDP)<br>Period: 2010<br>REMIND_62 region code: KAZ<br>Countries in region: Kazakhstan", "Government spending - percent of GDP: 10.48 % (GDP)<br>Period: 2011<br>REMIND_62 region code: KAZ<br>Countries in region: Kazakhstan", "Government spending - percent of GDP: 11.52 % (GDP)<br>Period: 2012<br>REMIND_62 region code: KAZ<br>Countries in region: Kazakhstan", "Government spending - percent of GDP: 10.17 % (GDP)<br>Period: 2013<br>REMIND_62 region code: KAZ<br>Countries in region: Kazakhstan", "Government spending - percent of GDP: 10.69 % (GDP)<br>Period: 2014<br>REMIND_62 region code: KAZ<br>Countries in region: Kazakhstan", "Government spending - percent of GDP: 11.63 % (GDP)<br>Period: 2015<br>REMIND_62 region code: KAZ<br>Countries in region: Kazakhstan", "Government spending - percent of GDP: 11.63 % (GDP)<br>Period: 2016<br>REMIND_62 region code: KAZ<br>Countries in region: Kazakhstan", "Government spending - percent of GDP: 10.54 % (GDP)<br>Period: 2017<br>REMIND_62 region code: KAZ<br>Countries in region: Kazakhstan", "Government spending - percent of GDP: 8.32 % (GDP)<br>Period: 2018<br>REMIND_62 region code: KAZ<br>Countries in region: Kazakhstan", "Government spending - percent of GDP: 9.13 % (GDP)<br>Period: 2019<br>REMIND_62 region code: KAZ<br>Countries in region: Kazakhstan", "Government spending - percent of GDP: 12.74 % (GDP)<br>Period: 2020<br>REMIND_62 region code: KAZ<br>Countries in region: Kazakhstan", "Government spending - percent of GDP: 11.27 % (GDP)<br>Period: 2021<br>REMIND_62 region code: KAZ<br>Countries in region: Kazakhstan"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(119,136,153,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [14.058975496254982, 13.665098224935486, 13.435525285523283, 12.315678516503818, 12.528527070216924, 11.965790809849317, 12.04953242571883, 12.090194077375179, 13.336199370178075, 12.822046104437881, 12.979786547464672, 12.88397673366876, 13.018408712639813, 12.715645506039804, 12.587474865254455, 11.781159326031922, 11.998664094725914, 12.637931953981672, 12.435611663740636],
+      "text": ["Government spending - percent of GDP: 14.06 % (GDP)<br>Period: 2003<br>REMIND_62 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Madagascar; Angola; Cameroon; Burkina Faso; Zimbabwe; Malawi; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Lesotho; Namibia; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Reunion; Djibouti; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Government spending - percent of GDP: 13.67 % (GDP)<br>Period: 2004<br>REMIND_62 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Madagascar; Angola; Cameroon; Burkina Faso; Malawi; Zimbabwe; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Lesotho; Namibia; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Government spending - percent of GDP: 13.44 % (GDP)<br>Period: 2005<br>REMIND_62 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Angola; Madagascar; Cameroon; Burkina Faso; Malawi; Zimbabwe; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Lesotho; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Government spending - percent of GDP: 12.32 % (GDP)<br>Period: 2006<br>REMIND_62 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Angola; Madagascar; Cameroon; Burkina Faso; Malawi; Zimbabwe; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Lesotho; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Government spending - percent of GDP: 12.53 % (GDP)<br>Period: 2007<br>REMIND_62 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Angola; Madagascar; Cameroon; Burkina Faso; Malawi; Zimbabwe; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Lesotho; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Government spending - percent of GDP: 11.97 % (GDP)<br>Period: 2008<br>REMIND_62 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Angola; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Lesotho; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Government spending - percent of GDP: 12.05 % (GDP)<br>Period: 2009<br>REMIND_62 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Botswana; Lesotho; Gambia; Gabon; Guinea-Bissau; Mauritius; Equatorial Guinea; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Government spending - percent of GDP: 12.09 % (GDP)<br>Period: 2010<br>REMIND_62 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Botswana; Lesotho; Gambia; Gabon; Guinea-Bissau; Mauritius; Equatorial Guinea; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Government spending - percent of GDP: 13.34 % (GDP)<br>Period: 2011<br>REMIND_62 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; South Sudan; Benin; Burundi; Togo; Sierra Leone; Congo; Central African Republic; Liberia; Eritrea; Namibia; Botswana; Lesotho; Gambia; Gabon; Guinea-Bissau; Mauritius; Equatorial Guinea; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Government spending - percent of GDP: 12.82 % (GDP)<br>Period: 2012<br>REMIND_62 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; South Sudan; Benin; Burundi; Togo; Sierra Leone; Congo; Central African Republic; Liberia; Eritrea; Namibia; Botswana; Gambia; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Government spending - percent of GDP: 12.98 % (GDP)<br>Period: 2013<br>REMIND_62 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; South Sudan; Rwanda; Benin; Burundi; Togo; Sierra Leone; Congo; Central African Republic; Liberia; Eritrea; Namibia; Botswana; Gambia; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Government spending - percent of GDP: 12.88 % (GDP)<br>Period: 2014<br>REMIND_62 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; South Sudan; Benin; Burundi; Togo; Sierra Leone; Congo; Central African Republic; Liberia; Eritrea; Namibia; Botswana; Gambia; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Government spending - percent of GDP: 13.02 % (GDP)<br>Period: 2015<br>REMIND_62 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Zimbabwe; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Government spending - percent of GDP: 12.72 % (GDP)<br>Period: 2016<br>REMIND_62 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Zimbabwe; Somalia; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Government spending - percent of GDP: 12.59 % (GDP)<br>Period: 2017<br>REMIND_62 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Somalia; Zimbabwe; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Government spending - percent of GDP: 11.78 % (GDP)<br>Period: 2018<br>REMIND_62 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Somalia; Zimbabwe; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Gabon; Lesotho; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Government spending - percent of GDP: 12 % (GDP)<br>Period: 2019<br>REMIND_62 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Somalia; Zimbabwe; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Gabon; Lesotho; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Government spending - percent of GDP: 12.64 % (GDP)<br>Period: 2020<br>REMIND_62 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Somalia; Zimbabwe; Guinea; Benin; Rwanda; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Gabon; Lesotho; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Government spending - percent of GDP: 12.44 % (GDP)<br>Period: 2021<br>REMIND_62 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Somalia; Senegal; Zimbabwe; Guinea; Benin; Rwanda; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Gabon; Lesotho; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(122,1,119,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [17.920000000000002, 16.969999999999999, 16.870000000000001, 17.390000000000001, 17.300000000000001, 17.829999999999998, 20.789999999999999, 18.729999999999997, 17.629999999999999, 17.969999999999995, 18.68, 18.030000000000001, 17.77, 18.469999999999999, 18.219999999999999, 17.710000000000004, 18.100000000000001, 19.969999999999999, 17.329999999999998],
+      "text": ["Government spending - percent of GDP: 17.92 % (GDP)<br>Period: 2003<br>REMIND_62 region code: RUS<br>Countries in region: Russian Federation", "Government spending - percent of GDP: 16.97 % (GDP)<br>Period: 2004<br>REMIND_62 region code: RUS<br>Countries in region: Russian Federation", "Government spending - percent of GDP: 16.87 % (GDP)<br>Period: 2005<br>REMIND_62 region code: RUS<br>Countries in region: Russian Federation", "Government spending - percent of GDP: 17.39 % (GDP)<br>Period: 2006<br>REMIND_62 region code: RUS<br>Countries in region: Russian Federation", "Government spending - percent of GDP: 17.3 % (GDP)<br>Period: 2007<br>REMIND_62 region code: RUS<br>Countries in region: Russian Federation", "Government spending - percent of GDP: 17.83 % (GDP)<br>Period: 2008<br>REMIND_62 region code: RUS<br>Countries in region: Russian Federation", "Government spending - percent of GDP: 20.79 % (GDP)<br>Period: 2009<br>REMIND_62 region code: RUS<br>Countries in region: Russian Federation", "Government spending - percent of GDP: 18.73 % (GDP)<br>Period: 2010<br>REMIND_62 region code: RUS<br>Countries in region: Russian Federation", "Government spending - percent of GDP: 17.63 % (GDP)<br>Period: 2011<br>REMIND_62 region code: RUS<br>Countries in region: Russian Federation", "Government spending - percent of GDP: 17.97 % (GDP)<br>Period: 2012<br>REMIND_62 region code: RUS<br>Countries in region: Russian Federation", "Government spending - percent of GDP: 18.68 % (GDP)<br>Period: 2013<br>REMIND_62 region code: RUS<br>Countries in region: Russian Federation", "Government spending - percent of GDP: 18.03 % (GDP)<br>Period: 2014<br>REMIND_62 region code: RUS<br>Countries in region: Russian Federation", "Government spending - percent of GDP: 17.77 % (GDP)<br>Period: 2015<br>REMIND_62 region code: RUS<br>Countries in region: Russian Federation", "Government spending - percent of GDP: 18.47 % (GDP)<br>Period: 2016<br>REMIND_62 region code: RUS<br>Countries in region: Russian Federation", "Government spending - percent of GDP: 18.22 % (GDP)<br>Period: 2017<br>REMIND_62 region code: RUS<br>Countries in region: Russian Federation", "Government spending - percent of GDP: 17.71 % (GDP)<br>Period: 2018<br>REMIND_62 region code: RUS<br>Countries in region: Russian Federation", "Government spending - percent of GDP: 18.1 % (GDP)<br>Period: 2019<br>REMIND_62 region code: RUS<br>Countries in region: Russian Federation", "Government spending - percent of GDP: 19.97 % (GDP)<br>Period: 2020<br>REMIND_62 region code: RUS<br>Countries in region: Russian Federation", "Government spending - percent of GDP: 17.33 % (GDP)<br>Period: 2021<br>REMIND_62 region code: RUS<br>Countries in region: Russian Federation"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(128,128,128,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [15.058574313379252, 15.125007406846409, 15.350346898516015, 15.33117846971604, 15.598519820668026, 15.9860967689402, 16.543420675290264, 16.206416254937427, 15.44923466078704, 15.426988071256201, 15.346056227160034, 15.672752437202556, 16.133565945585847, 15.80091819940527, 16.158052148950652, 16.052438352025291, 16.145958447920847, 16.622617451447489, 15.816984994803768],
+      "text": ["Government spending - percent of GDP: 15.06 % (GDP)<br>Period: 2003<br>REMIND_62 region code: OAS_other<br>Countries in region: Nepal; Afghanistan; Bhutan", "Government spending - percent of GDP: 15.13 % (GDP)<br>Period: 2004<br>REMIND_62 region code: OAS_other<br>Countries in region: Nepal; Afghanistan; Bhutan", "Government spending - percent of GDP: 15.35 % (GDP)<br>Period: 2005<br>REMIND_62 region code: OAS_other<br>Countries in region: Nepal; Afghanistan; Bhutan", "Government spending - percent of GDP: 15.33 % (GDP)<br>Period: 2006<br>REMIND_62 region code: OAS_other<br>Countries in region: Nepal; Afghanistan; Bhutan", "Government spending - percent of GDP: 15.6 % (GDP)<br>Period: 2007<br>REMIND_62 region code: OAS_other<br>Countries in region: Nepal; Afghanistan; Bhutan", "Government spending - percent of GDP: 15.99 % (GDP)<br>Period: 2008<br>REMIND_62 region code: OAS_other<br>Countries in region: Nepal; Afghanistan; Bhutan", "Government spending - percent of GDP: 16.54 % (GDP)<br>Period: 2009<br>REMIND_62 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Government spending - percent of GDP: 16.21 % (GDP)<br>Period: 2010<br>REMIND_62 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Government spending - percent of GDP: 15.45 % (GDP)<br>Period: 2011<br>REMIND_62 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Government spending - percent of GDP: 15.43 % (GDP)<br>Period: 2012<br>REMIND_62 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Government spending - percent of GDP: 15.35 % (GDP)<br>Period: 2013<br>REMIND_62 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Government spending - percent of GDP: 15.67 % (GDP)<br>Period: 2014<br>REMIND_62 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Government spending - percent of GDP: 16.13 % (GDP)<br>Period: 2015<br>REMIND_62 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Government spending - percent of GDP: 15.8 % (GDP)<br>Period: 2016<br>REMIND_62 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Government spending - percent of GDP: 16.16 % (GDP)<br>Period: 2017<br>REMIND_62 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Government spending - percent of GDP: 16.05 % (GDP)<br>Period: 2018<br>REMIND_62 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Government spending - percent of GDP: 16.15 % (GDP)<br>Period: 2019<br>REMIND_62 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Government spending - percent of GDP: 16.62 % (GDP)<br>Period: 2020<br>REMIND_62 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Government spending - percent of GDP: 15.82 % (GDP)<br>Period: 2021<br>REMIND_62 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(129,15,124,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [11.377136520841585, 11.245890837628446, 11.027153536328132, 11.40486380884751, 11.939464620750138, 12.076757956377508, 13.580937510513404, 12.917977164482524, 12.662688671319373, 12.626199158834353, 12.527157798548849, 11.892874660779572, 11.450625263408304, 10.951357585975208, 10.714692329854916, 10.81172622232952, 10.808674585574884, 11.724052860974611, 11.763228586789936],
+      "text": ["Government spending - percent of GDP: 11.38 % (GDP)<br>Period: 2003<br>REMIND_62 region code: SEA_other2<br>Countries in region: Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Norfolk Island; Niue; Tokelau; United States Minor Outlying Islands; Pitcairn", "Government spending - percent of GDP: 11.25 % (GDP)<br>Period: 2004<br>REMIND_62 region code: SEA_other2<br>Countries in region: Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Norfolk Island; Niue; Tokelau; United States Minor Outlying Islands; Pitcairn", "Government spending - percent of GDP: 11.03 % (GDP)<br>Period: 2005<br>REMIND_62 region code: SEA_other2<br>Countries in region: Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Government spending - percent of GDP: 11.4 % (GDP)<br>Period: 2006<br>REMIND_62 region code: SEA_other2<br>Countries in region: Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Government spending - percent of GDP: 11.94 % (GDP)<br>Period: 2007<br>REMIND_62 region code: SEA_other2<br>Countries in region: Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Government spending - percent of GDP: 12.08 % (GDP)<br>Period: 2008<br>REMIND_62 region code: SEA_other2<br>Countries in region: Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Government spending - percent of GDP: 13.58 % (GDP)<br>Period: 2009<br>REMIND_62 region code: SEA_other2<br>Countries in region: Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Government spending - percent of GDP: 12.92 % (GDP)<br>Period: 2010<br>REMIND_62 region code: SEA_other2<br>Countries in region: Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Government spending - percent of GDP: 12.66 % (GDP)<br>Period: 2011<br>REMIND_62 region code: SEA_other2<br>Countries in region: Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Government spending - percent of GDP: 12.63 % (GDP)<br>Period: 2012<br>REMIND_62 region code: SEA_other2<br>Countries in region: Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Cook Islands; Palau; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Government spending - percent of GDP: 12.53 % (GDP)<br>Period: 2013<br>REMIND_62 region code: SEA_other2<br>Countries in region: Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Cook Islands; Palau; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Government spending - percent of GDP: 11.89 % (GDP)<br>Period: 2014<br>REMIND_62 region code: SEA_other2<br>Countries in region: Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Cook Islands; Palau; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Government spending - percent of GDP: 11.45 % (GDP)<br>Period: 2015<br>REMIND_62 region code: SEA_other2<br>Countries in region: Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Government spending - percent of GDP: 10.95 % (GDP)<br>Period: 2016<br>REMIND_62 region code: SEA_other2<br>Countries in region: Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Government spending - percent of GDP: 10.71 % (GDP)<br>Period: 2017<br>REMIND_62 region code: SEA_other2<br>Countries in region: Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Government spending - percent of GDP: 10.81 % (GDP)<br>Period: 2018<br>REMIND_62 region code: SEA_other2<br>Countries in region: Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; Vanuatu; New Caledonia; French Polynesia; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Government spending - percent of GDP: 10.81 % (GDP)<br>Period: 2019<br>REMIND_62 region code: SEA_other2<br>Countries in region: Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; Vanuatu; New Caledonia; French Polynesia; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Government spending - percent of GDP: 11.72 % (GDP)<br>Period: 2020<br>REMIND_62 region code: SEA_other2<br>Countries in region: Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; Vanuatu; New Caledonia; French Polynesia; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Tokelau; Norfolk Island; United States Minor Outlying Islands; Pitcairn", "Government spending - percent of GDP: 11.76 % (GDP)<br>Period: 2021<br>REMIND_62 region code: SEA_other2<br>Countries in region: Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; Vanuatu; New Caledonia; French Polynesia; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Nauru; Wallis and Futuna; Tuvalu; Niue; Tokelau; Norfolk Island; United States Minor Outlying Islands; Pitcairn"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(129,15,124,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [6.3200000000000003, 6.3899999999999997, 5.4699999999999989, 5.5300000000000011, 5.5499999999999998, 5.6299999999999999, 5.7800000000000002, 10.380000000000001, 9.9800000000000004, 10.449999999999999, 10.92, 10.32, 10.65, 10.4, 10.130000000000001, 9.75, 9.5799999999999983, 9.4800000000000004, 9.6099999999999994],
+      "text": ["Government spending - percent of GDP: 6.32 % (GDP)<br>Period: 2003<br>REMIND_62 region code: VNM<br>Countries in region: Viet Nam", "Government spending - percent of GDP: 6.39 % (GDP)<br>Period: 2004<br>REMIND_62 region code: VNM<br>Countries in region: Viet Nam", "Government spending - percent of GDP: 5.47 % (GDP)<br>Period: 2005<br>REMIND_62 region code: VNM<br>Countries in region: Viet Nam", "Government spending - percent of GDP: 5.53 % (GDP)<br>Period: 2006<br>REMIND_62 region code: VNM<br>Countries in region: Viet Nam", "Government spending - percent of GDP: 5.55 % (GDP)<br>Period: 2007<br>REMIND_62 region code: VNM<br>Countries in region: Viet Nam", "Government spending - percent of GDP: 5.63 % (GDP)<br>Period: 2008<br>REMIND_62 region code: VNM<br>Countries in region: Viet Nam", "Government spending - percent of GDP: 5.78 % (GDP)<br>Period: 2009<br>REMIND_62 region code: VNM<br>Countries in region: Viet Nam", "Government spending - percent of GDP: 10.38 % (GDP)<br>Period: 2010<br>REMIND_62 region code: VNM<br>Countries in region: Viet Nam", "Government spending - percent of GDP: 9.98 % (GDP)<br>Period: 2011<br>REMIND_62 region code: VNM<br>Countries in region: Viet Nam", "Government spending - percent of GDP: 10.45 % (GDP)<br>Period: 2012<br>REMIND_62 region code: VNM<br>Countries in region: Viet Nam", "Government spending - percent of GDP: 10.92 % (GDP)<br>Period: 2013<br>REMIND_62 region code: VNM<br>Countries in region: Viet Nam", "Government spending - percent of GDP: 10.32 % (GDP)<br>Period: 2014<br>REMIND_62 region code: VNM<br>Countries in region: Viet Nam", "Government spending - percent of GDP: 10.65 % (GDP)<br>Period: 2015<br>REMIND_62 region code: VNM<br>Countries in region: Viet Nam", "Government spending - percent of GDP: 10.4 % (GDP)<br>Period: 2016<br>REMIND_62 region code: VNM<br>Countries in region: Viet Nam", "Government spending - percent of GDP: 10.13 % (GDP)<br>Period: 2017<br>REMIND_62 region code: VNM<br>Countries in region: Viet Nam", "Government spending - percent of GDP: 9.75 % (GDP)<br>Period: 2018<br>REMIND_62 region code: VNM<br>Countries in region: Viet Nam", "Government spending - percent of GDP: 9.58 % (GDP)<br>Period: 2019<br>REMIND_62 region code: VNM<br>Countries in region: Viet Nam", "Government spending - percent of GDP: 9.48 % (GDP)<br>Period: 2020<br>REMIND_62 region code: VNM<br>Countries in region: Viet Nam", "Government spending - percent of GDP: 9.61 % (GDP)<br>Period: 2021<br>REMIND_62 region code: VNM<br>Countries in region: Viet Nam"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(129,15,124,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [9.7299999999999986, 9.6900000000000013, 9.1600000000000001, 11.57, 10.4, 10.58, 11.529999999999999, 10.920000000000002, 10.23, 10.100000000000001, 10.26, 10.029999999999999, 9.7899999999999991, 10.609999999999999, 10.75, 10.990000000000002, 10.75, 11.789999999999999, 10.93],
+      "text": ["Government spending - percent of GDP: 9.73 % (GDP)<br>Period: 2003<br>REMIND_62 region code: PAK<br>Countries in region: Pakistan", "Government spending - percent of GDP: 9.69 % (GDP)<br>Period: 2004<br>REMIND_62 region code: PAK<br>Countries in region: Pakistan", "Government spending - percent of GDP: 9.16 % (GDP)<br>Period: 2005<br>REMIND_62 region code: PAK<br>Countries in region: Pakistan", "Government spending - percent of GDP: 11.57 % (GDP)<br>Period: 2006<br>REMIND_62 region code: PAK<br>Countries in region: Pakistan", "Government spending - percent of GDP: 10.4 % (GDP)<br>Period: 2007<br>REMIND_62 region code: PAK<br>Countries in region: Pakistan", "Government spending - percent of GDP: 10.58 % (GDP)<br>Period: 2008<br>REMIND_62 region code: PAK<br>Countries in region: Pakistan", "Government spending - percent of GDP: 11.53 % (GDP)<br>Period: 2009<br>REMIND_62 region code: PAK<br>Countries in region: Pakistan", "Government spending - percent of GDP: 10.92 % (GDP)<br>Period: 2010<br>REMIND_62 region code: PAK<br>Countries in region: Pakistan", "Government spending - percent of GDP: 10.23 % (GDP)<br>Period: 2011<br>REMIND_62 region code: PAK<br>Countries in region: Pakistan", "Government spending - percent of GDP: 10.1 % (GDP)<br>Period: 2012<br>REMIND_62 region code: PAK<br>Countries in region: Pakistan", "Government spending - percent of GDP: 10.26 % (GDP)<br>Period: 2013<br>REMIND_62 region code: PAK<br>Countries in region: Pakistan", "Government spending - percent of GDP: 10.03 % (GDP)<br>Period: 2014<br>REMIND_62 region code: PAK<br>Countries in region: Pakistan", "Government spending - percent of GDP: 9.79 % (GDP)<br>Period: 2015<br>REMIND_62 region code: PAK<br>Countries in region: Pakistan", "Government spending - percent of GDP: 10.61 % (GDP)<br>Period: 2016<br>REMIND_62 region code: PAK<br>Countries in region: Pakistan", "Government spending - percent of GDP: 10.75 % (GDP)<br>Period: 2017<br>REMIND_62 region code: PAK<br>Countries in region: Pakistan", "Government spending - percent of GDP: 10.99 % (GDP)<br>Period: 2018<br>REMIND_62 region code: PAK<br>Countries in region: Pakistan", "Government spending - percent of GDP: 10.75 % (GDP)<br>Period: 2019<br>REMIND_62 region code: PAK<br>Countries in region: Pakistan", "Government spending - percent of GDP: 11.79 % (GDP)<br>Period: 2020<br>REMIND_62 region code: PAK<br>Countries in region: Pakistan", "Government spending - percent of GDP: 10.93 % (GDP)<br>Period: 2021<br>REMIND_62 region code: PAK<br>Countries in region: Pakistan"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(136,65,157,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [11.41, 10.32, 9.9000000000000004, 9.9100000000000001, 9.1400000000000006, 10.110000000000001, 9.9299999999999997, 9.6899999999999995, 9.2400000000000002, 8.8599999999999994, 9.7400000000000002, 9.6300000000000008, 10.19, 10.260000000000002, 10.189999999999998, 9.9800000000000004, 10.24, 12.23, 10.779999999999999],
+      "text": ["Government spending - percent of GDP: 11.41 % (GDP)<br>Period: 2003<br>REMIND_62 region code: SGP<br>Countries in region: Singapore", "Government spending - percent of GDP: 10.32 % (GDP)<br>Period: 2004<br>REMIND_62 region code: SGP<br>Countries in region: Singapore", "Government spending - percent of GDP: 9.9 % (GDP)<br>Period: 2005<br>REMIND_62 region code: SGP<br>Countries in region: Singapore", "Government spending - percent of GDP: 9.91 % (GDP)<br>Period: 2006<br>REMIND_62 region code: SGP<br>Countries in region: Singapore", "Government spending - percent of GDP: 9.14 % (GDP)<br>Period: 2007<br>REMIND_62 region code: SGP<br>Countries in region: Singapore", "Government spending - percent of GDP: 10.11 % (GDP)<br>Period: 2008<br>REMIND_62 region code: SGP<br>Countries in region: Singapore", "Government spending - percent of GDP: 9.93 % (GDP)<br>Period: 2009<br>REMIND_62 region code: SGP<br>Countries in region: Singapore", "Government spending - percent of GDP: 9.69 % (GDP)<br>Period: 2010<br>REMIND_62 region code: SGP<br>Countries in region: Singapore", "Government spending - percent of GDP: 9.24 % (GDP)<br>Period: 2011<br>REMIND_62 region code: SGP<br>Countries in region: Singapore", "Government spending - percent of GDP: 8.86 % (GDP)<br>Period: 2012<br>REMIND_62 region code: SGP<br>Countries in region: Singapore", "Government spending - percent of GDP: 9.74 % (GDP)<br>Period: 2013<br>REMIND_62 region code: SGP<br>Countries in region: Singapore", "Government spending - percent of GDP: 9.63 % (GDP)<br>Period: 2014<br>REMIND_62 region code: SGP<br>Countries in region: Singapore", "Government spending - percent of GDP: 10.19 % (GDP)<br>Period: 2015<br>REMIND_62 region code: SGP<br>Countries in region: Singapore", "Government spending - percent of GDP: 10.26 % (GDP)<br>Period: 2016<br>REMIND_62 region code: SGP<br>Countries in region: Singapore", "Government spending - percent of GDP: 10.19 % (GDP)<br>Period: 2017<br>REMIND_62 region code: SGP<br>Countries in region: Singapore", "Government spending - percent of GDP: 9.98 % (GDP)<br>Period: 2018<br>REMIND_62 region code: SGP<br>Countries in region: Singapore", "Government spending - percent of GDP: 10.24 % (GDP)<br>Period: 2019<br>REMIND_62 region code: SGP<br>Countries in region: Singapore", "Government spending - percent of GDP: 12.23 % (GDP)<br>Period: 2020<br>REMIND_62 region code: SGP<br>Countries in region: Singapore", "Government spending - percent of GDP: 10.78 % (GDP)<br>Period: 2021<br>REMIND_62 region code: SGP<br>Countries in region: Singapore"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(136,65,157,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [5.1299999999999999, 5.1699999999999999, 5.1799999999999997, 5.4400000000000004, 5.3599999999999994, 5.1799999999999997, 5.0899999999999999, 5.0799999999999992, 5.0999999999999996, 5.04, 5.1200000000000001, 5.3399999999999999, 5.4000000000000004, 5.8700000000000001, 6.0199999999999996, 5.96, 6.2399999999999993, 5.9699999999999998, 5.8799999999999999],
+      "text": ["Government spending - percent of GDP: 5.13 % (GDP)<br>Period: 2003<br>REMIND_62 region code: BGD<br>Countries in region: Bangladesh", "Government spending - percent of GDP: 5.17 % (GDP)<br>Period: 2004<br>REMIND_62 region code: BGD<br>Countries in region: Bangladesh", "Government spending - percent of GDP: 5.18 % (GDP)<br>Period: 2005<br>REMIND_62 region code: BGD<br>Countries in region: Bangladesh", "Government spending - percent of GDP: 5.44 % (GDP)<br>Period: 2006<br>REMIND_62 region code: BGD<br>Countries in region: Bangladesh", "Government spending - percent of GDP: 5.36 % (GDP)<br>Period: 2007<br>REMIND_62 region code: BGD<br>Countries in region: Bangladesh", "Government spending - percent of GDP: 5.18 % (GDP)<br>Period: 2008<br>REMIND_62 region code: BGD<br>Countries in region: Bangladesh", "Government spending - percent of GDP: 5.09 % (GDP)<br>Period: 2009<br>REMIND_62 region code: BGD<br>Countries in region: Bangladesh", "Government spending - percent of GDP: 5.08 % (GDP)<br>Period: 2010<br>REMIND_62 region code: BGD<br>Countries in region: Bangladesh", "Government spending - percent of GDP: 5.1 % (GDP)<br>Period: 2011<br>REMIND_62 region code: BGD<br>Countries in region: Bangladesh", "Government spending - percent of GDP: 5.04 % (GDP)<br>Period: 2012<br>REMIND_62 region code: BGD<br>Countries in region: Bangladesh", "Government spending - percent of GDP: 5.12 % (GDP)<br>Period: 2013<br>REMIND_62 region code: BGD<br>Countries in region: Bangladesh", "Government spending - percent of GDP: 5.34 % (GDP)<br>Period: 2014<br>REMIND_62 region code: BGD<br>Countries in region: Bangladesh", "Government spending - percent of GDP: 5.4 % (GDP)<br>Period: 2015<br>REMIND_62 region code: BGD<br>Countries in region: Bangladesh", "Government spending - percent of GDP: 5.87 % (GDP)<br>Period: 2016<br>REMIND_62 region code: BGD<br>Countries in region: Bangladesh", "Government spending - percent of GDP: 6.02 % (GDP)<br>Period: 2017<br>REMIND_62 region code: BGD<br>Countries in region: Bangladesh", "Government spending - percent of GDP: 5.96 % (GDP)<br>Period: 2018<br>REMIND_62 region code: BGD<br>Countries in region: Bangladesh", "Government spending - percent of GDP: 6.24 % (GDP)<br>Period: 2019<br>REMIND_62 region code: BGD<br>Countries in region: Bangladesh", "Government spending - percent of GDP: 5.97 % (GDP)<br>Period: 2020<br>REMIND_62 region code: BGD<br>Countries in region: Bangladesh", "Government spending - percent of GDP: 5.88 % (GDP)<br>Period: 2021<br>REMIND_62 region code: BGD<br>Countries in region: Bangladesh"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(140,107,177,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [8.129999999999999, 8.3200000000000021, 8.1099999999999994, 8.6300000000000008, 8.3499999999999996, 8.4199999999999999, 9.5900000000000016, 9.0099999999999998, 9.0600000000000005, 9.25, 9.5199999999999996, 9.4299999999999997, 9.75, 9.5299999999999994, 9.120000000000001, 9.0199999999999996, 8.8100000000000005, 9.6600000000000001, 9.2499999999999982],
+      "text": ["Government spending - percent of GDP: 8.13 % (GDP)<br>Period: 2003<br>REMIND_62 region code: IDN<br>Countries in region: Indonesia", "Government spending - percent of GDP: 8.32 % (GDP)<br>Period: 2004<br>REMIND_62 region code: IDN<br>Countries in region: Indonesia", "Government spending - percent of GDP: 8.11 % (GDP)<br>Period: 2005<br>REMIND_62 region code: IDN<br>Countries in region: Indonesia", "Government spending - percent of GDP: 8.63 % (GDP)<br>Period: 2006<br>REMIND_62 region code: IDN<br>Countries in region: Indonesia", "Government spending - percent of GDP: 8.35 % (GDP)<br>Period: 2007<br>REMIND_62 region code: IDN<br>Countries in region: Indonesia", "Government spending - percent of GDP: 8.42 % (GDP)<br>Period: 2008<br>REMIND_62 region code: IDN<br>Countries in region: Indonesia", "Government spending - percent of GDP: 9.59 % (GDP)<br>Period: 2009<br>REMIND_62 region code: IDN<br>Countries in region: Indonesia", "Government spending - percent of GDP: 9.01 % (GDP)<br>Period: 2010<br>REMIND_62 region code: IDN<br>Countries in region: Indonesia", "Government spending - percent of GDP: 9.06 % (GDP)<br>Period: 2011<br>REMIND_62 region code: IDN<br>Countries in region: Indonesia", "Government spending - percent of GDP: 9.25 % (GDP)<br>Period: 2012<br>REMIND_62 region code: IDN<br>Countries in region: Indonesia", "Government spending - percent of GDP: 9.52 % (GDP)<br>Period: 2013<br>REMIND_62 region code: IDN<br>Countries in region: Indonesia", "Government spending - percent of GDP: 9.43 % (GDP)<br>Period: 2014<br>REMIND_62 region code: IDN<br>Countries in region: Indonesia", "Government spending - percent of GDP: 9.75 % (GDP)<br>Period: 2015<br>REMIND_62 region code: IDN<br>Countries in region: Indonesia", "Government spending - percent of GDP: 9.53 % (GDP)<br>Period: 2016<br>REMIND_62 region code: IDN<br>Countries in region: Indonesia", "Government spending - percent of GDP: 9.12 % (GDP)<br>Period: 2017<br>REMIND_62 region code: IDN<br>Countries in region: Indonesia", "Government spending - percent of GDP: 9.02 % (GDP)<br>Period: 2018<br>REMIND_62 region code: IDN<br>Countries in region: Indonesia", "Government spending - percent of GDP: 8.81 % (GDP)<br>Period: 2019<br>REMIND_62 region code: IDN<br>Countries in region: Indonesia", "Government spending - percent of GDP: 9.66 % (GDP)<br>Period: 2020<br>REMIND_62 region code: IDN<br>Countries in region: Indonesia", "Government spending - percent of GDP: 9.25 % (GDP)<br>Period: 2021<br>REMIND_62 region code: IDN<br>Countries in region: Indonesia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(140,107,177,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [12.93, 13.109999999999999, 13.65, 13.499999999999998, 13.929999999999998, 14.34, 15.98, 15.800000000000002, 16.140000000000001, 16.350000000000001, 16.359999999999999, 16.920000000000002, 17.120000000000001, 16.870000000000001, 16.300000000000001, 16.170000000000002, 16.170000000000002, 17.800000000000001, 18.260000000000002],
+      "text": ["Government spending - percent of GDP: 12.93 % (GDP)<br>Period: 2003<br>REMIND_62 region code: THA<br>Countries in region: Thailand", "Government spending - percent of GDP: 13.11 % (GDP)<br>Period: 2004<br>REMIND_62 region code: THA<br>Countries in region: Thailand", "Government spending - percent of GDP: 13.65 % (GDP)<br>Period: 2005<br>REMIND_62 region code: THA<br>Countries in region: Thailand", "Government spending - percent of GDP: 13.5 % (GDP)<br>Period: 2006<br>REMIND_62 region code: THA<br>Countries in region: Thailand", "Government spending - percent of GDP: 13.93 % (GDP)<br>Period: 2007<br>REMIND_62 region code: THA<br>Countries in region: Thailand", "Government spending - percent of GDP: 14.34 % (GDP)<br>Period: 2008<br>REMIND_62 region code: THA<br>Countries in region: Thailand", "Government spending - percent of GDP: 15.98 % (GDP)<br>Period: 2009<br>REMIND_62 region code: THA<br>Countries in region: Thailand", "Government spending - percent of GDP: 15.8 % (GDP)<br>Period: 2010<br>REMIND_62 region code: THA<br>Countries in region: Thailand", "Government spending - percent of GDP: 16.14 % (GDP)<br>Period: 2011<br>REMIND_62 region code: THA<br>Countries in region: Thailand", "Government spending - percent of GDP: 16.35 % (GDP)<br>Period: 2012<br>REMIND_62 region code: THA<br>Countries in region: Thailand", "Government spending - percent of GDP: 16.36 % (GDP)<br>Period: 2013<br>REMIND_62 region code: THA<br>Countries in region: Thailand", "Government spending - percent of GDP: 16.92 % (GDP)<br>Period: 2014<br>REMIND_62 region code: THA<br>Countries in region: Thailand", "Government spending - percent of GDP: 17.12 % (GDP)<br>Period: 2015<br>REMIND_62 region code: THA<br>Countries in region: Thailand", "Government spending - percent of GDP: 16.87 % (GDP)<br>Period: 2016<br>REMIND_62 region code: THA<br>Countries in region: Thailand", "Government spending - percent of GDP: 16.3 % (GDP)<br>Period: 2017<br>REMIND_62 region code: THA<br>Countries in region: Thailand", "Government spending - percent of GDP: 16.17 % (GDP)<br>Period: 2018<br>REMIND_62 region code: THA<br>Countries in region: Thailand", "Government spending - percent of GDP: 16.17 % (GDP)<br>Period: 2019<br>REMIND_62 region code: THA<br>Countries in region: Thailand", "Government spending - percent of GDP: 17.8 % (GDP)<br>Period: 2020<br>REMIND_62 region code: THA<br>Countries in region: Thailand", "Government spending - percent of GDP: 18.26 % (GDP)<br>Period: 2021<br>REMIND_62 region code: THA<br>Countries in region: Thailand"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(140,150,198,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [17.84, 17.720000000000002, 17.739999999999998, 17.600000000000005, 17.630000000000003, 18.030000000000001, 19.329999999999995, 19.199999999999999, 19.890000000000004, 19.960000000000001, 19.850000000000001, 19.93, 19.620000000000001, 19.66, 19.41, 19.559999999999999, 19.949999999999996, 20.999999999999996, 21.43],
+      "text": ["Government spending - percent of GDP: 17.84 % (GDP)<br>Period: 2003<br>REMIND_62 region code: JPN<br>Countries in region: Japan", "Government spending - percent of GDP: 17.72 % (GDP)<br>Period: 2004<br>REMIND_62 region code: JPN<br>Countries in region: Japan", "Government spending - percent of GDP: 17.74 % (GDP)<br>Period: 2005<br>REMIND_62 region code: JPN<br>Countries in region: Japan", "Government spending - percent of GDP: 17.6 % (GDP)<br>Period: 2006<br>REMIND_62 region code: JPN<br>Countries in region: Japan", "Government spending - percent of GDP: 17.63 % (GDP)<br>Period: 2007<br>REMIND_62 region code: JPN<br>Countries in region: Japan", "Government spending - percent of GDP: 18.03 % (GDP)<br>Period: 2008<br>REMIND_62 region code: JPN<br>Countries in region: Japan", "Government spending - percent of GDP: 19.33 % (GDP)<br>Period: 2009<br>REMIND_62 region code: JPN<br>Countries in region: Japan", "Government spending - percent of GDP: 19.2 % (GDP)<br>Period: 2010<br>REMIND_62 region code: JPN<br>Countries in region: Japan", "Government spending - percent of GDP: 19.89 % (GDP)<br>Period: 2011<br>REMIND_62 region code: JPN<br>Countries in region: Japan", "Government spending - percent of GDP: 19.96 % (GDP)<br>Period: 2012<br>REMIND_62 region code: JPN<br>Countries in region: Japan", "Government spending - percent of GDP: 19.85 % (GDP)<br>Period: 2013<br>REMIND_62 region code: JPN<br>Countries in region: Japan", "Government spending - percent of GDP: 19.93 % (GDP)<br>Period: 2014<br>REMIND_62 region code: JPN<br>Countries in region: Japan", "Government spending - percent of GDP: 19.62 % (GDP)<br>Period: 2015<br>REMIND_62 region code: JPN<br>Countries in region: Japan", "Government spending - percent of GDP: 19.66 % (GDP)<br>Period: 2016<br>REMIND_62 region code: JPN<br>Countries in region: Japan", "Government spending - percent of GDP: 19.41 % (GDP)<br>Period: 2017<br>REMIND_62 region code: JPN<br>Countries in region: Japan", "Government spending - percent of GDP: 19.56 % (GDP)<br>Period: 2018<br>REMIND_62 region code: JPN<br>Countries in region: Japan", "Government spending - percent of GDP: 19.95 % (GDP)<br>Period: 2019<br>REMIND_62 region code: JPN<br>Countries in region: Japan", "Government spending - percent of GDP: 21 % (GDP)<br>Period: 2020<br>REMIND_62 region code: JPN<br>Countries in region: Japan", "Government spending - percent of GDP: 21.43 % (GDP)<br>Period: 2021<br>REMIND_62 region code: JPN<br>Countries in region: Japan"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(152,0,67,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [14.091836650358694, 14.325251547557317, 13.073573120242308, 12.764583018946279, 13.178793138762513, 13.238786919131567, 14.822749817540048, 14.207207838212849, 15.724542151134747, 14.776754411067079, 15.035035818149113, 15.67681829136821, 16.029605847321346, 15.486107777838781, 14.910966738435462, 14.240964785500182, 14.561268304515618, 17.588119997335408, 15.471454371438819],
+      "text": ["Government spending - percent of GDP: 14.09 % (GDP)<br>Period: 2003<br>REMIND_62 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Tunisia; Chad; Libya; Mauritania; Western Sahara", "Government spending - percent of GDP: 14.33 % (GDP)<br>Period: 2004<br>REMIND_62 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Tunisia; Chad; Libya; Mauritania; Western Sahara", "Government spending - percent of GDP: 13.07 % (GDP)<br>Period: 2005<br>REMIND_62 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Government spending - percent of GDP: 12.76 % (GDP)<br>Period: 2006<br>REMIND_62 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Government spending - percent of GDP: 13.18 % (GDP)<br>Period: 2007<br>REMIND_62 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Government spending - percent of GDP: 13.24 % (GDP)<br>Period: 2008<br>REMIND_62 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Government spending - percent of GDP: 14.82 % (GDP)<br>Period: 2009<br>REMIND_62 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Government spending - percent of GDP: 14.21 % (GDP)<br>Period: 2010<br>REMIND_62 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Government spending - percent of GDP: 15.72 % (GDP)<br>Period: 2011<br>REMIND_62 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Government spending - percent of GDP: 14.78 % (GDP)<br>Period: 2012<br>REMIND_62 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Government spending - percent of GDP: 15.04 % (GDP)<br>Period: 2013<br>REMIND_62 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Government spending - percent of GDP: 15.68 % (GDP)<br>Period: 2014<br>REMIND_62 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Government spending - percent of GDP: 16.03 % (GDP)<br>Period: 2015<br>REMIND_62 region code: NAF_other<br>Countries in region: Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Government spending - percent of GDP: 15.49 % (GDP)<br>Period: 2016<br>REMIND_62 region code: NAF_other<br>Countries in region: Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Government spending - percent of GDP: 14.91 % (GDP)<br>Period: 2017<br>REMIND_62 region code: NAF_other<br>Countries in region: Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Government spending - percent of GDP: 14.24 % (GDP)<br>Period: 2018<br>REMIND_62 region code: NAF_other<br>Countries in region: Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Government spending - percent of GDP: 14.56 % (GDP)<br>Period: 2019<br>REMIND_62 region code: NAF_other<br>Countries in region: Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Government spending - percent of GDP: 17.59 % (GDP)<br>Period: 2020<br>REMIND_62 region code: NAF_other<br>Countries in region: Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Government spending - percent of GDP: 15.47 % (GDP)<br>Period: 2021<br>REMIND_62 region code: NAF_other<br>Countries in region: Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(158,202,225,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [12.18, 11.43, 10.949999999999999, 10.300000000000001, 10.550000000000001, 11.26, 12.869999999999999, 12.550000000000001, 12.31, 12.33, 12.789999999999999, 13.23, 13.59, 14.34, 14.65, 14.859999999999999, 15.24, 16.010000000000002, 14.66],
+      "text": ["Government spending - percent of GDP: 12.18 % (GDP)<br>Period: 2003<br>REMIND_62 region code: CHL<br>Countries in region: Chile", "Government spending - percent of GDP: 11.43 % (GDP)<br>Period: 2004<br>REMIND_62 region code: CHL<br>Countries in region: Chile", "Government spending - percent of GDP: 10.95 % (GDP)<br>Period: 2005<br>REMIND_62 region code: CHL<br>Countries in region: Chile", "Government spending - percent of GDP: 10.3 % (GDP)<br>Period: 2006<br>REMIND_62 region code: CHL<br>Countries in region: Chile", "Government spending - percent of GDP: 10.55 % (GDP)<br>Period: 2007<br>REMIND_62 region code: CHL<br>Countries in region: Chile", "Government spending - percent of GDP: 11.26 % (GDP)<br>Period: 2008<br>REMIND_62 region code: CHL<br>Countries in region: Chile", "Government spending - percent of GDP: 12.87 % (GDP)<br>Period: 2009<br>REMIND_62 region code: CHL<br>Countries in region: Chile", "Government spending - percent of GDP: 12.55 % (GDP)<br>Period: 2010<br>REMIND_62 region code: CHL<br>Countries in region: Chile", "Government spending - percent of GDP: 12.31 % (GDP)<br>Period: 2011<br>REMIND_62 region code: CHL<br>Countries in region: Chile", "Government spending - percent of GDP: 12.33 % (GDP)<br>Period: 2012<br>REMIND_62 region code: CHL<br>Countries in region: Chile", "Government spending - percent of GDP: 12.79 % (GDP)<br>Period: 2013<br>REMIND_62 region code: CHL<br>Countries in region: Chile", "Government spending - percent of GDP: 13.23 % (GDP)<br>Period: 2014<br>REMIND_62 region code: CHL<br>Countries in region: Chile", "Government spending - percent of GDP: 13.59 % (GDP)<br>Period: 2015<br>REMIND_62 region code: CHL<br>Countries in region: Chile", "Government spending - percent of GDP: 14.34 % (GDP)<br>Period: 2016<br>REMIND_62 region code: CHL<br>Countries in region: Chile", "Government spending - percent of GDP: 14.65 % (GDP)<br>Period: 2017<br>REMIND_62 region code: CHL<br>Countries in region: Chile", "Government spending - percent of GDP: 14.86 % (GDP)<br>Period: 2018<br>REMIND_62 region code: CHL<br>Countries in region: Chile", "Government spending - percent of GDP: 15.24 % (GDP)<br>Period: 2019<br>REMIND_62 region code: CHL<br>Countries in region: Chile", "Government spending - percent of GDP: 16.01 % (GDP)<br>Period: 2020<br>REMIND_62 region code: CHL<br>Countries in region: Chile", "Government spending - percent of GDP: 14.66 % (GDP)<br>Period: 2021<br>REMIND_62 region code: CHL<br>Countries in region: Chile"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(161,217,155,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [25.25, 24.300000000000001, 24.460000000000001, 24.309999999999999, 23.800000000000001, 24.260000000000002, 25.300000000000001, 24.820000000000004, 24.879999999999995, 24.759999999999998, 24.350000000000001, 24.120000000000001, 23.43, 23.010000000000002, 23.68, 24.149999999999999, 24.59, 28.150000000000002, 27.579999999999995],
+      "text": ["Government spending - percent of GDP: 25.25 % (GDP)<br>Period: 2003<br>REMIND_62 region code: ISL<br>Countries in region: Iceland", "Government spending - percent of GDP: 24.3 % (GDP)<br>Period: 2004<br>REMIND_62 region code: ISL<br>Countries in region: Iceland", "Government spending - percent of GDP: 24.46 % (GDP)<br>Period: 2005<br>REMIND_62 region code: ISL<br>Countries in region: Iceland", "Government spending - percent of GDP: 24.31 % (GDP)<br>Period: 2006<br>REMIND_62 region code: ISL<br>Countries in region: Iceland", "Government spending - percent of GDP: 23.8 % (GDP)<br>Period: 2007<br>REMIND_62 region code: ISL<br>Countries in region: Iceland", "Government spending - percent of GDP: 24.26 % (GDP)<br>Period: 2008<br>REMIND_62 region code: ISL<br>Countries in region: Iceland", "Government spending - percent of GDP: 25.3 % (GDP)<br>Period: 2009<br>REMIND_62 region code: ISL<br>Countries in region: Iceland", "Government spending - percent of GDP: 24.82 % (GDP)<br>Period: 2010<br>REMIND_62 region code: ISL<br>Countries in region: Iceland", "Government spending - percent of GDP: 24.88 % (GDP)<br>Period: 2011<br>REMIND_62 region code: ISL<br>Countries in region: Iceland", "Government spending - percent of GDP: 24.76 % (GDP)<br>Period: 2012<br>REMIND_62 region code: ISL<br>Countries in region: Iceland", "Government spending - percent of GDP: 24.35 % (GDP)<br>Period: 2013<br>REMIND_62 region code: ISL<br>Countries in region: Iceland", "Government spending - percent of GDP: 24.12 % (GDP)<br>Period: 2014<br>REMIND_62 region code: ISL<br>Countries in region: Iceland", "Government spending - percent of GDP: 23.43 % (GDP)<br>Period: 2015<br>REMIND_62 region code: ISL<br>Countries in region: Iceland", "Government spending - percent of GDP: 23.01 % (GDP)<br>Period: 2016<br>REMIND_62 region code: ISL<br>Countries in region: Iceland", "Government spending - percent of GDP: 23.68 % (GDP)<br>Period: 2017<br>REMIND_62 region code: ISL<br>Countries in region: Iceland", "Government spending - percent of GDP: 24.15 % (GDP)<br>Period: 2018<br>REMIND_62 region code: ISL<br>Countries in region: Iceland", "Government spending - percent of GDP: 24.59 % (GDP)<br>Period: 2019<br>REMIND_62 region code: ISL<br>Countries in region: Iceland", "Government spending - percent of GDP: 28.15 % (GDP)<br>Period: 2020<br>REMIND_62 region code: ISL<br>Countries in region: Iceland", "Government spending - percent of GDP: 27.58 % (GDP)<br>Period: 2021<br>REMIND_62 region code: ISL<br>Countries in region: Iceland"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(161,217,155,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [12.59, 12.32, 12.19, 12.910000000000002, 13.390000000000001, 13.6, 15.66, 14.869999999999997, 13.6, 14.130000000000003, 14.02, 14.019999999999998, 13.81, 14.73, 14.380000000000001, 14.510000000000002, 15.270000000000001, 14.989999999999998, 12.949999999999999],
+      "text": ["Government spending - percent of GDP: 12.59 % (GDP)<br>Period: 2003<br>REMIND_62 region code: TUR<br>Countries in region: Turkey", "Government spending - percent of GDP: 12.32 % (GDP)<br>Period: 2004<br>REMIND_62 region code: TUR<br>Countries in region: Turkey", "Government spending - percent of GDP: 12.19 % (GDP)<br>Period: 2005<br>REMIND_62 region code: TUR<br>Countries in region: Turkey", "Government spending - percent of GDP: 12.91 % (GDP)<br>Period: 2006<br>REMIND_62 region code: TUR<br>Countries in region: Turkey", "Government spending - percent of GDP: 13.39 % (GDP)<br>Period: 2007<br>REMIND_62 region code: TUR<br>Countries in region: Turkey", "Government spending - percent of GDP: 13.6 % (GDP)<br>Period: 2008<br>REMIND_62 region code: TUR<br>Countries in region: Turkey", "Government spending - percent of GDP: 15.66 % (GDP)<br>Period: 2009<br>REMIND_62 region code: TUR<br>Countries in region: Turkey", "Government spending - percent of GDP: 14.87 % (GDP)<br>Period: 2010<br>REMIND_62 region code: TUR<br>Countries in region: Turkey", "Government spending - percent of GDP: 13.6 % (GDP)<br>Period: 2011<br>REMIND_62 region code: TUR<br>Countries in region: Turkey", "Government spending - percent of GDP: 14.13 % (GDP)<br>Period: 2012<br>REMIND_62 region code: TUR<br>Countries in region: Turkey", "Government spending - percent of GDP: 14.02 % (GDP)<br>Period: 2013<br>REMIND_62 region code: TUR<br>Countries in region: Turkey", "Government spending - percent of GDP: 14.02 % (GDP)<br>Period: 2014<br>REMIND_62 region code: TUR<br>Countries in region: Turkey", "Government spending - percent of GDP: 13.81 % (GDP)<br>Period: 2015<br>REMIND_62 region code: TUR<br>Countries in region: Turkey", "Government spending - percent of GDP: 14.73 % (GDP)<br>Period: 2016<br>REMIND_62 region code: TUR<br>Countries in region: Turkey", "Government spending - percent of GDP: 14.38 % (GDP)<br>Period: 2017<br>REMIND_62 region code: TUR<br>Countries in region: Turkey", "Government spending - percent of GDP: 14.51 % (GDP)<br>Period: 2018<br>REMIND_62 region code: TUR<br>Countries in region: Turkey", "Government spending - percent of GDP: 15.27 % (GDP)<br>Period: 2019<br>REMIND_62 region code: TUR<br>Countries in region: Turkey", "Government spending - percent of GDP: 14.99 % (GDP)<br>Period: 2020<br>REMIND_62 region code: TUR<br>Countries in region: Turkey", "Government spending - percent of GDP: 12.95 % (GDP)<br>Period: 2021<br>REMIND_62 region code: TUR<br>Countries in region: Turkey"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(161,217,155,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [15.643979182434391, 15.571572449564464, 15.383164674315099, 14.091969285876768, 13.864916846203045, 13.47588800128818, 14.097384023044127, 12.640979460448124, 12.181110065626804, 12.410671215619471, 12.715472638192736, 12.841225651542441, 13.333520556235374, 13.743239492647916, 12.806482391133342, 12.995379608802738, 14.31945429826815, 15.22319636881241, 14.942432973541282],
+      "text": ["Government spending - percent of GDP: 15.64 % (GDP)<br>Period: 2003<br>REMIND_62 region code: REF_other<br>Countries in region: Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Government spending - percent of GDP: 15.57 % (GDP)<br>Period: 2004<br>REMIND_62 region code: REF_other<br>Countries in region: Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Government spending - percent of GDP: 15.38 % (GDP)<br>Period: 2005<br>REMIND_62 region code: REF_other<br>Countries in region: Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Government spending - percent of GDP: 14.09 % (GDP)<br>Period: 2006<br>REMIND_62 region code: REF_other<br>Countries in region: Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Government spending - percent of GDP: 13.86 % (GDP)<br>Period: 2007<br>REMIND_62 region code: REF_other<br>Countries in region: Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Government spending - percent of GDP: 13.48 % (GDP)<br>Period: 2008<br>REMIND_62 region code: REF_other<br>Countries in region: Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Government spending - percent of GDP: 14.1 % (GDP)<br>Period: 2009<br>REMIND_62 region code: REF_other<br>Countries in region: Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Government spending - percent of GDP: 12.64 % (GDP)<br>Period: 2010<br>REMIND_62 region code: REF_other<br>Countries in region: Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Government spending - percent of GDP: 12.18 % (GDP)<br>Period: 2011<br>REMIND_62 region code: REF_other<br>Countries in region: Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Government spending - percent of GDP: 12.41 % (GDP)<br>Period: 2012<br>REMIND_62 region code: REF_other<br>Countries in region: Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Government spending - percent of GDP: 12.72 % (GDP)<br>Period: 2013<br>REMIND_62 region code: REF_other<br>Countries in region: Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Government spending - percent of GDP: 12.84 % (GDP)<br>Period: 2014<br>REMIND_62 region code: REF_other<br>Countries in region: Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Government spending - percent of GDP: 13.33 % (GDP)<br>Period: 2015<br>REMIND_62 region code: REF_other<br>Countries in region: Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Government spending - percent of GDP: 13.74 % (GDP)<br>Period: 2016<br>REMIND_62 region code: REF_other<br>Countries in region: Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Government spending - percent of GDP: 12.81 % (GDP)<br>Period: 2017<br>REMIND_62 region code: REF_other<br>Countries in region: Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Government spending - percent of GDP: 13 % (GDP)<br>Period: 2018<br>REMIND_62 region code: REF_other<br>Countries in region: Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Government spending - percent of GDP: 14.32 % (GDP)<br>Period: 2019<br>REMIND_62 region code: REF_other<br>Countries in region: Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Tajikistan; Belarus; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Government spending - percent of GDP: 15.22 % (GDP)<br>Period: 2020<br>REMIND_62 region code: REF_other<br>Countries in region: Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Tajikistan; Belarus; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Government spending - percent of GDP: 14.94 % (GDP)<br>Period: 2021<br>REMIND_62 region code: REF_other<br>Countries in region: Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Tajikistan; Belarus; Turkmenistan; Kyrgyzstan; Mongolia; Armenia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(169,169,169,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [10.32, 10.32, 10.32, 10.32, 10.320000000000002, 10.32, 10.32, 10.32, 10.319999999999999, 8.3000000000000007, 8.9600000000000026, 9.25, 9.0099999999999998, 11.130000000000001, 11.109999999999999, 10.25, 9.1899999999999995, 9.1300000000000008, 8.8400000000000016],
+      "text": ["Government spending - percent of GDP: 10.32 % (GDP)<br>Period: 2003<br>REMIND_62 region code: ETH<br>Countries in region: Ethiopia", "Government spending - percent of GDP: 10.32 % (GDP)<br>Period: 2004<br>REMIND_62 region code: ETH<br>Countries in region: Ethiopia", "Government spending - percent of GDP: 10.32 % (GDP)<br>Period: 2005<br>REMIND_62 region code: ETH<br>Countries in region: Ethiopia", "Government spending - percent of GDP: 10.32 % (GDP)<br>Period: 2006<br>REMIND_62 region code: ETH<br>Countries in region: Ethiopia", "Government spending - percent of GDP: 10.32 % (GDP)<br>Period: 2007<br>REMIND_62 region code: ETH<br>Countries in region: Ethiopia", "Government spending - percent of GDP: 10.32 % (GDP)<br>Period: 2008<br>REMIND_62 region code: ETH<br>Countries in region: Ethiopia", "Government spending - percent of GDP: 10.32 % (GDP)<br>Period: 2009<br>REMIND_62 region code: ETH<br>Countries in region: Ethiopia", "Government spending - percent of GDP: 10.32 % (GDP)<br>Period: 2010<br>REMIND_62 region code: ETH<br>Countries in region: Ethiopia", "Government spending - percent of GDP: 10.32 % (GDP)<br>Period: 2011<br>REMIND_62 region code: ETH<br>Countries in region: Ethiopia", "Government spending - percent of GDP: 8.3 % (GDP)<br>Period: 2012<br>REMIND_62 region code: ETH<br>Countries in region: Ethiopia", "Government spending - percent of GDP: 8.96 % (GDP)<br>Period: 2013<br>REMIND_62 region code: ETH<br>Countries in region: Ethiopia", "Government spending - percent of GDP: 9.25 % (GDP)<br>Period: 2014<br>REMIND_62 region code: ETH<br>Countries in region: Ethiopia", "Government spending - percent of GDP: 9.01 % (GDP)<br>Period: 2015<br>REMIND_62 region code: ETH<br>Countries in region: Ethiopia", "Government spending - percent of GDP: 11.13 % (GDP)<br>Period: 2016<br>REMIND_62 region code: ETH<br>Countries in region: Ethiopia", "Government spending - percent of GDP: 11.11 % (GDP)<br>Period: 2017<br>REMIND_62 region code: ETH<br>Countries in region: Ethiopia", "Government spending - percent of GDP: 10.25 % (GDP)<br>Period: 2018<br>REMIND_62 region code: ETH<br>Countries in region: Ethiopia", "Government spending - percent of GDP: 9.19 % (GDP)<br>Period: 2019<br>REMIND_62 region code: ETH<br>Countries in region: Ethiopia", "Government spending - percent of GDP: 9.13 % (GDP)<br>Period: 2020<br>REMIND_62 region code: ETH<br>Countries in region: Ethiopia", "Government spending - percent of GDP: 8.84 % (GDP)<br>Period: 2021<br>REMIND_62 region code: ETH<br>Countries in region: Ethiopia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(174,1,126,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [18.762013853189991, 17.811690401766526, 18.338657112965546, 18.164379451046351, 17.425742483688513, 17.897484884620138, 18.361974544714585, 17.689787748755567, 16.745390813936691, 16.714678439969425, 17.051156605622118, 17.152358215732935, 16.663036043178682, 17.204364649858523, 17.450317831427569, 17.885712776742178, 18.424387537813129, 20.099019076830199, 19.384872261396467],
+      "text": ["Government spending - percent of GDP: 18.76 % (GDP)<br>Period: 2003<br>REMIND_62 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Government spending - percent of GDP: 17.81 % (GDP)<br>Period: 2004<br>REMIND_62 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Government spending - percent of GDP: 18.34 % (GDP)<br>Period: 2005<br>REMIND_62 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Government spending - percent of GDP: 18.16 % (GDP)<br>Period: 2006<br>REMIND_62 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Government spending - percent of GDP: 17.43 % (GDP)<br>Period: 2007<br>REMIND_62 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Government spending - percent of GDP: 17.9 % (GDP)<br>Period: 2008<br>REMIND_62 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Government spending - percent of GDP: 18.36 % (GDP)<br>Period: 2009<br>REMIND_62 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Government spending - percent of GDP: 17.69 % (GDP)<br>Period: 2010<br>REMIND_62 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Government spending - percent of GDP: 16.75 % (GDP)<br>Period: 2011<br>REMIND_62 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Government spending - percent of GDP: 16.71 % (GDP)<br>Period: 2012<br>REMIND_62 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Government spending - percent of GDP: 17.05 % (GDP)<br>Period: 2013<br>REMIND_62 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Government spending - percent of GDP: 17.15 % (GDP)<br>Period: 2014<br>REMIND_62 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Government spending - percent of GDP: 16.66 % (GDP)<br>Period: 2015<br>REMIND_62 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Government spending - percent of GDP: 17.2 % (GDP)<br>Period: 2016<br>REMIND_62 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Government spending - percent of GDP: 17.45 % (GDP)<br>Period: 2017<br>REMIND_62 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Government spending - percent of GDP: 17.89 % (GDP)<br>Period: 2018<br>REMIND_62 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Government spending - percent of GDP: 18.42 % (GDP)<br>Period: 2019<br>REMIND_62 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Government spending - percent of GDP: 20.1 % (GDP)<br>Period: 2020<br>REMIND_62 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Government spending - percent of GDP: 19.38 % (GDP)<br>Period: 2021<br>REMIND_62 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(217,72,1,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [11.42, 11.24, 12.08, 12.470000000000001, 9.4800000000000004, 10.050000000000001, 11.18, 10.800000000000001, 13.200000000000001, 13.330000000000002, 12.970000000000001, 12.82, 15.570000000000002, 15.779999999999998, 16.059999999999999, 15.750000000000002, 15.300000000000002, 14.43, 14.23],
+      "text": ["Government spending - percent of GDP: 11.42 % (GDP)<br>Period: 2003<br>REMIND_62 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Government spending - percent of GDP: 11.24 % (GDP)<br>Period: 2004<br>REMIND_62 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Government spending - percent of GDP: 12.08 % (GDP)<br>Period: 2005<br>REMIND_62 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Government spending - percent of GDP: 12.47 % (GDP)<br>Period: 2006<br>REMIND_62 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Government spending - percent of GDP: 9.48 % (GDP)<br>Period: 2007<br>REMIND_62 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Government spending - percent of GDP: 10.05 % (GDP)<br>Period: 2008<br>REMIND_62 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Government spending - percent of GDP: 11.18 % (GDP)<br>Period: 2009<br>REMIND_62 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Government spending - percent of GDP: 10.8 % (GDP)<br>Period: 2010<br>REMIND_62 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Government spending - percent of GDP: 13.2 % (GDP)<br>Period: 2011<br>REMIND_62 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Government spending - percent of GDP: 13.33 % (GDP)<br>Period: 2012<br>REMIND_62 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Government spending - percent of GDP: 12.97 % (GDP)<br>Period: 2013<br>REMIND_62 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Government spending - percent of GDP: 12.82 % (GDP)<br>Period: 2014<br>REMIND_62 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Government spending - percent of GDP: 15.57 % (GDP)<br>Period: 2015<br>REMIND_62 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Government spending - percent of GDP: 15.78 % (GDP)<br>Period: 2016<br>REMIND_62 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Government spending - percent of GDP: 16.06 % (GDP)<br>Period: 2017<br>REMIND_62 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Government spending - percent of GDP: 15.75 % (GDP)<br>Period: 2018<br>REMIND_62 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Government spending - percent of GDP: 15.3 % (GDP)<br>Period: 2019<br>REMIND_62 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Government spending - percent of GDP: 14.43 % (GDP)<br>Period: 2020<br>REMIND_62 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Government spending - percent of GDP: 14.23 % (GDP)<br>Period: 2021<br>REMIND_62 region code: IRN<br>Countries in region: Iran, Islamic Republic of"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(217,72,1,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [10.880000000000001, 10.399999999999999, 10.369999999999999, 9.8000000000000025, 9.8599999999999994, 10.539999999999999, 11.460000000000001, 11.01, 11.08, 10.68, 10.300000000000002, 10.439999999999998, 10.43, 10.31, 10.77, 10.82, 11, 11.610000000000001, 11.19],
+      "text": ["Government spending - percent of GDP: 10.88 % (GDP)<br>Period: 2003<br>REMIND_62 region code: IND<br>Countries in region: India", "Government spending - percent of GDP: 10.4 % (GDP)<br>Period: 2004<br>REMIND_62 region code: IND<br>Countries in region: India", "Government spending - percent of GDP: 10.37 % (GDP)<br>Period: 2005<br>REMIND_62 region code: IND<br>Countries in region: India", "Government spending - percent of GDP: 9.8 % (GDP)<br>Period: 2006<br>REMIND_62 region code: IND<br>Countries in region: India", "Government spending - percent of GDP: 9.86 % (GDP)<br>Period: 2007<br>REMIND_62 region code: IND<br>Countries in region: India", "Government spending - percent of GDP: 10.54 % (GDP)<br>Period: 2008<br>REMIND_62 region code: IND<br>Countries in region: India", "Government spending - percent of GDP: 11.46 % (GDP)<br>Period: 2009<br>REMIND_62 region code: IND<br>Countries in region: India", "Government spending - percent of GDP: 11.01 % (GDP)<br>Period: 2010<br>REMIND_62 region code: IND<br>Countries in region: India", "Government spending - percent of GDP: 11.08 % (GDP)<br>Period: 2011<br>REMIND_62 region code: IND<br>Countries in region: India", "Government spending - percent of GDP: 10.68 % (GDP)<br>Period: 2012<br>REMIND_62 region code: IND<br>Countries in region: India", "Government spending - percent of GDP: 10.3 % (GDP)<br>Period: 2013<br>REMIND_62 region code: IND<br>Countries in region: India", "Government spending - percent of GDP: 10.44 % (GDP)<br>Period: 2014<br>REMIND_62 region code: IND<br>Countries in region: India", "Government spending - percent of GDP: 10.43 % (GDP)<br>Period: 2015<br>REMIND_62 region code: IND<br>Countries in region: India", "Government spending - percent of GDP: 10.31 % (GDP)<br>Period: 2016<br>REMIND_62 region code: IND<br>Countries in region: India", "Government spending - percent of GDP: 10.77 % (GDP)<br>Period: 2017<br>REMIND_62 region code: IND<br>Countries in region: India", "Government spending - percent of GDP: 10.82 % (GDP)<br>Period: 2018<br>REMIND_62 region code: IND<br>Countries in region: India", "Government spending - percent of GDP: 11 % (GDP)<br>Period: 2019<br>REMIND_62 region code: IND<br>Countries in region: India", "Government spending - percent of GDP: 11.61 % (GDP)<br>Period: 2020<br>REMIND_62 region code: IND<br>Countries in region: India", "Government spending - percent of GDP: 11.19 % (GDP)<br>Period: 2021<br>REMIND_62 region code: IND<br>Countries in region: India"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(220,0,5,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [15.24, 15.16, 15.050000000000002, 14.999999999999998, 15.189999999999998, 15.930000000000001, 16.809999999999999, 16.690000000000001, 16.100000000000001, 15.480000000000002, 15.039999999999999, 14.619999999999999, 14.33, 14.240000000000002, 14, 13.960000000000001, 14.069999999999999, 14.9, 14.380000000000001],
+      "text": ["Government spending - percent of GDP: 15.24 % (GDP)<br>Period: 2003<br>REMIND_62 region code: USA<br>Countries in region: United States", "Government spending - percent of GDP: 15.16 % (GDP)<br>Period: 2004<br>REMIND_62 region code: USA<br>Countries in region: United States", "Government spending - percent of GDP: 15.05 % (GDP)<br>Period: 2005<br>REMIND_62 region code: USA<br>Countries in region: United States", "Government spending - percent of GDP: 15 % (GDP)<br>Period: 2006<br>REMIND_62 region code: USA<br>Countries in region: United States", "Government spending - percent of GDP: 15.19 % (GDP)<br>Period: 2007<br>REMIND_62 region code: USA<br>Countries in region: United States", "Government spending - percent of GDP: 15.93 % (GDP)<br>Period: 2008<br>REMIND_62 region code: USA<br>Countries in region: United States", "Government spending - percent of GDP: 16.81 % (GDP)<br>Period: 2009<br>REMIND_62 region code: USA<br>Countries in region: United States", "Government spending - percent of GDP: 16.69 % (GDP)<br>Period: 2010<br>REMIND_62 region code: USA<br>Countries in region: United States", "Government spending - percent of GDP: 16.1 % (GDP)<br>Period: 2011<br>REMIND_62 region code: USA<br>Countries in region: United States", "Government spending - percent of GDP: 15.48 % (GDP)<br>Period: 2012<br>REMIND_62 region code: USA<br>Countries in region: United States", "Government spending - percent of GDP: 15.04 % (GDP)<br>Period: 2013<br>REMIND_62 region code: USA<br>Countries in region: United States", "Government spending - percent of GDP: 14.62 % (GDP)<br>Period: 2014<br>REMIND_62 region code: USA<br>Countries in region: United States", "Government spending - percent of GDP: 14.33 % (GDP)<br>Period: 2015<br>REMIND_62 region code: USA<br>Countries in region: United States", "Government spending - percent of GDP: 14.24 % (GDP)<br>Period: 2016<br>REMIND_62 region code: USA<br>Countries in region: United States", "Government spending - percent of GDP: 14 % (GDP)<br>Period: 2017<br>REMIND_62 region code: USA<br>Countries in region: United States", "Government spending - percent of GDP: 13.96 % (GDP)<br>Period: 2018<br>REMIND_62 region code: USA<br>Countries in region: United States", "Government spending - percent of GDP: 14.07 % (GDP)<br>Period: 2019<br>REMIND_62 region code: USA<br>Countries in region: United States", "Government spending - percent of GDP: 14.9 % (GDP)<br>Period: 2020<br>REMIND_62 region code: USA<br>Countries in region: United States", "Government spending - percent of GDP: 14.38 % (GDP)<br>Period: 2021<br>REMIND_62 region code: USA<br>Countries in region: United States"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(220,0,5,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [4.9500000000000011, 6.2499999999999991, 5.3999999999999995, 5.9500000000000011, 6.9500000000000002, 8.25, 7.0899999999999999, 7.2999999999999998, 8.0600000000000005, 7.8200000000000012, 8.1899999999999995, 8.3200000000000003, 9.0600000000000005, 7.4400000000000013, 5.4599999999999991, 6.3200000000000003, 6.9299999999999997, 7.5799999999999992, 8.2599999999999998],
+      "text": ["Government spending - percent of GDP: 4.95 % (GDP)<br>Period: 2003<br>REMIND_62 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Government spending - percent of GDP: 6.25 % (GDP)<br>Period: 2004<br>REMIND_62 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Government spending - percent of GDP: 5.4 % (GDP)<br>Period: 2005<br>REMIND_62 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Government spending - percent of GDP: 5.95 % (GDP)<br>Period: 2006<br>REMIND_62 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Government spending - percent of GDP: 6.95 % (GDP)<br>Period: 2007<br>REMIND_62 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Government spending - percent of GDP: 8.25 % (GDP)<br>Period: 2008<br>REMIND_62 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Government spending - percent of GDP: 7.09 % (GDP)<br>Period: 2009<br>REMIND_62 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Government spending - percent of GDP: 7.3 % (GDP)<br>Period: 2010<br>REMIND_62 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Government spending - percent of GDP: 8.06 % (GDP)<br>Period: 2011<br>REMIND_62 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Government spending - percent of GDP: 7.82 % (GDP)<br>Period: 2012<br>REMIND_62 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Government spending - percent of GDP: 8.19 % (GDP)<br>Period: 2013<br>REMIND_62 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Government spending - percent of GDP: 8.32 % (GDP)<br>Period: 2014<br>REMIND_62 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Government spending - percent of GDP: 9.06 % (GDP)<br>Period: 2015<br>REMIND_62 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Government spending - percent of GDP: 7.44 % (GDP)<br>Period: 2016<br>REMIND_62 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Government spending - percent of GDP: 5.46 % (GDP)<br>Period: 2017<br>REMIND_62 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Government spending - percent of GDP: 6.32 % (GDP)<br>Period: 2018<br>REMIND_62 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Government spending - percent of GDP: 6.93 % (GDP)<br>Period: 2019<br>REMIND_62 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Government spending - percent of GDP: 7.58 % (GDP)<br>Period: 2020<br>REMIND_62 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Government spending - percent of GDP: 8.26 % (GDP)<br>Period: 2021<br>REMIND_62 region code: COD<br>Countries in region: Congo, the Democratic Republic of the"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(221,52,151,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [16.780000000000001, 17.170000000000002, 17.329999999999998, 17.359999999999999, 17.710000000000001, 18.82, 20.640000000000001, 20.629999999999999, 20.670000000000002, 19.98, 19.91, 19.670000000000002, 19.52, 19.100000000000001, 18.66, 18.710000000000001, 18.859999999999996, 22.009999999999998, 21.23],
+      "text": ["Government spending - percent of GDP: 16.78 % (GDP)<br>Period: 2003<br>REMIND_62 region code: ESP<br>Countries in region: Spain", "Government spending - percent of GDP: 17.17 % (GDP)<br>Period: 2004<br>REMIND_62 region code: ESP<br>Countries in region: Spain", "Government spending - percent of GDP: 17.33 % (GDP)<br>Period: 2005<br>REMIND_62 region code: ESP<br>Countries in region: Spain", "Government spending - percent of GDP: 17.36 % (GDP)<br>Period: 2006<br>REMIND_62 region code: ESP<br>Countries in region: Spain", "Government spending - percent of GDP: 17.71 % (GDP)<br>Period: 2007<br>REMIND_62 region code: ESP<br>Countries in region: Spain", "Government spending - percent of GDP: 18.82 % (GDP)<br>Period: 2008<br>REMIND_62 region code: ESP<br>Countries in region: Spain", "Government spending - percent of GDP: 20.64 % (GDP)<br>Period: 2009<br>REMIND_62 region code: ESP<br>Countries in region: Spain", "Government spending - percent of GDP: 20.63 % (GDP)<br>Period: 2010<br>REMIND_62 region code: ESP<br>Countries in region: Spain", "Government spending - percent of GDP: 20.67 % (GDP)<br>Period: 2011<br>REMIND_62 region code: ESP<br>Countries in region: Spain", "Government spending - percent of GDP: 19.98 % (GDP)<br>Period: 2012<br>REMIND_62 region code: ESP<br>Countries in region: Spain", "Government spending - percent of GDP: 19.91 % (GDP)<br>Period: 2013<br>REMIND_62 region code: ESP<br>Countries in region: Spain", "Government spending - percent of GDP: 19.67 % (GDP)<br>Period: 2014<br>REMIND_62 region code: ESP<br>Countries in region: Spain", "Government spending - percent of GDP: 19.52 % (GDP)<br>Period: 2015<br>REMIND_62 region code: ESP<br>Countries in region: Spain", "Government spending - percent of GDP: 19.1 % (GDP)<br>Period: 2016<br>REMIND_62 region code: ESP<br>Countries in region: Spain", "Government spending - percent of GDP: 18.66 % (GDP)<br>Period: 2017<br>REMIND_62 region code: ESP<br>Countries in region: Spain", "Government spending - percent of GDP: 18.71 % (GDP)<br>Period: 2018<br>REMIND_62 region code: ESP<br>Countries in region: Spain", "Government spending - percent of GDP: 18.86 % (GDP)<br>Period: 2019<br>REMIND_62 region code: ESP<br>Countries in region: Spain", "Government spending - percent of GDP: 22.01 % (GDP)<br>Period: 2020<br>REMIND_62 region code: ESP<br>Countries in region: Spain", "Government spending - percent of GDP: 21.23 % (GDP)<br>Period: 2021<br>REMIND_62 region code: ESP<br>Countries in region: Spain"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(241,105,19,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [18.920000000000002, 18.32, 18.329999999999998, 18.539999999999999, 18.190000000000001, 18.68, 18.75, 19.260000000000002, 18.210000000000001, 18.120000000000001, 18.420000000000002, 18.350000000000001, 18.02, 17.950000000000003, 17.690000000000001, 17.649999999999995, 18.02, 19.050000000000004, 18.75],
+      "text": ["Government spending - percent of GDP: 18.92 % (GDP)<br>Period: 2003<br>REMIND_62 region code: POL<br>Countries in region: Poland", "Government spending - percent of GDP: 18.32 % (GDP)<br>Period: 2004<br>REMIND_62 region code: POL<br>Countries in region: Poland", "Government spending - percent of GDP: 18.33 % (GDP)<br>Period: 2005<br>REMIND_62 region code: POL<br>Countries in region: Poland", "Government spending - percent of GDP: 18.54 % (GDP)<br>Period: 2006<br>REMIND_62 region code: POL<br>Countries in region: Poland", "Government spending - percent of GDP: 18.19 % (GDP)<br>Period: 2007<br>REMIND_62 region code: POL<br>Countries in region: Poland", "Government spending - percent of GDP: 18.68 % (GDP)<br>Period: 2008<br>REMIND_62 region code: POL<br>Countries in region: Poland", "Government spending - percent of GDP: 18.75 % (GDP)<br>Period: 2009<br>REMIND_62 region code: POL<br>Countries in region: Poland", "Government spending - percent of GDP: 19.26 % (GDP)<br>Period: 2010<br>REMIND_62 region code: POL<br>Countries in region: Poland", "Government spending - percent of GDP: 18.21 % (GDP)<br>Period: 2011<br>REMIND_62 region code: POL<br>Countries in region: Poland", "Government spending - percent of GDP: 18.12 % (GDP)<br>Period: 2012<br>REMIND_62 region code: POL<br>Countries in region: Poland", "Government spending - percent of GDP: 18.42 % (GDP)<br>Period: 2013<br>REMIND_62 region code: POL<br>Countries in region: Poland", "Government spending - percent of GDP: 18.35 % (GDP)<br>Period: 2014<br>REMIND_62 region code: POL<br>Countries in region: Poland", "Government spending - percent of GDP: 18.02 % (GDP)<br>Period: 2015<br>REMIND_62 region code: POL<br>Countries in region: Poland", "Government spending - percent of GDP: 17.95 % (GDP)<br>Period: 2016<br>REMIND_62 region code: POL<br>Countries in region: Poland", "Government spending - percent of GDP: 17.69 % (GDP)<br>Period: 2017<br>REMIND_62 region code: POL<br>Countries in region: Poland", "Government spending - percent of GDP: 17.65 % (GDP)<br>Period: 2018<br>REMIND_62 region code: POL<br>Countries in region: Poland", "Government spending - percent of GDP: 18.02 % (GDP)<br>Period: 2019<br>REMIND_62 region code: POL<br>Countries in region: Poland", "Government spending - percent of GDP: 19.05 % (GDP)<br>Period: 2020<br>REMIND_62 region code: POL<br>Countries in region: Poland", "Government spending - percent of GDP: 18.75 % (GDP)<br>Period: 2021<br>REMIND_62 region code: POL<br>Countries in region: Poland"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(241,105,19,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [16.869999999999997, 17, 16.149999999999999, 15.859999999999999, 15.890000000000001, 17.07, 17.790000000000003, 18, 18.199999999999999, 18.82, 19.079999999999998, 19.309999999999999, 18.990000000000002, 19.309999999999999, 19.239999999999998, 19.350000000000001, 19.579999999999998, 20.570000000000004, 19.350000000000001],
+      "text": ["Government spending - percent of GDP: 16.87 % (GDP)<br>Period: 2003<br>REMIND_62 region code: ZAF<br>Countries in region: South Africa", "Government spending - percent of GDP: 17 % (GDP)<br>Period: 2004<br>REMIND_62 region code: ZAF<br>Countries in region: South Africa", "Government spending - percent of GDP: 16.15 % (GDP)<br>Period: 2005<br>REMIND_62 region code: ZAF<br>Countries in region: South Africa", "Government spending - percent of GDP: 15.86 % (GDP)<br>Period: 2006<br>REMIND_62 region code: ZAF<br>Countries in region: South Africa", "Government spending - percent of GDP: 15.89 % (GDP)<br>Period: 2007<br>REMIND_62 region code: ZAF<br>Countries in region: South Africa", "Government spending - percent of GDP: 17.07 % (GDP)<br>Period: 2008<br>REMIND_62 region code: ZAF<br>Countries in region: South Africa", "Government spending - percent of GDP: 17.79 % (GDP)<br>Period: 2009<br>REMIND_62 region code: ZAF<br>Countries in region: South Africa", "Government spending - percent of GDP: 18 % (GDP)<br>Period: 2010<br>REMIND_62 region code: ZAF<br>Countries in region: South Africa", "Government spending - percent of GDP: 18.2 % (GDP)<br>Period: 2011<br>REMIND_62 region code: ZAF<br>Countries in region: South Africa", "Government spending - percent of GDP: 18.82 % (GDP)<br>Period: 2012<br>REMIND_62 region code: ZAF<br>Countries in region: South Africa", "Government spending - percent of GDP: 19.08 % (GDP)<br>Period: 2013<br>REMIND_62 region code: ZAF<br>Countries in region: South Africa", "Government spending - percent of GDP: 19.31 % (GDP)<br>Period: 2014<br>REMIND_62 region code: ZAF<br>Countries in region: South Africa", "Government spending - percent of GDP: 18.99 % (GDP)<br>Period: 2015<br>REMIND_62 region code: ZAF<br>Countries in region: South Africa", "Government spending - percent of GDP: 19.31 % (GDP)<br>Period: 2016<br>REMIND_62 region code: ZAF<br>Countries in region: South Africa", "Government spending - percent of GDP: 19.24 % (GDP)<br>Period: 2017<br>REMIND_62 region code: ZAF<br>Countries in region: South Africa", "Government spending - percent of GDP: 19.35 % (GDP)<br>Period: 2018<br>REMIND_62 region code: ZAF<br>Countries in region: South Africa", "Government spending - percent of GDP: 19.58 % (GDP)<br>Period: 2019<br>REMIND_62 region code: ZAF<br>Countries in region: South Africa", "Government spending - percent of GDP: 20.57 % (GDP)<br>Period: 2020<br>REMIND_62 region code: ZAF<br>Countries in region: South Africa", "Government spending - percent of GDP: 19.35 % (GDP)<br>Period: 2021<br>REMIND_62 region code: ZAF<br>Countries in region: South Africa"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(252,197,192,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [19.329999999999995, 18.82, 18.780000000000001, 18.329999999999998, 17.859999999999999, 18.260000000000002, 19.989999999999998, 19.559999999999999, 19.07, 19.280000000000001, 19.629999999999999, 19.59, 19.690000000000001, 19.899999999999999, 19.84, 19.879999999999999, 20.25, 22.019999999999996, 22.030000000000001],
+      "text": ["Government spending - percent of GDP: 19.33 % (GDP)<br>Period: 2003<br>REMIND_62 region code: DEU<br>Countries in region: Germany", "Government spending - percent of GDP: 18.82 % (GDP)<br>Period: 2004<br>REMIND_62 region code: DEU<br>Countries in region: Germany", "Government spending - percent of GDP: 18.78 % (GDP)<br>Period: 2005<br>REMIND_62 region code: DEU<br>Countries in region: Germany", "Government spending - percent of GDP: 18.33 % (GDP)<br>Period: 2006<br>REMIND_62 region code: DEU<br>Countries in region: Germany", "Government spending - percent of GDP: 17.86 % (GDP)<br>Period: 2007<br>REMIND_62 region code: DEU<br>Countries in region: Germany", "Government spending - percent of GDP: 18.26 % (GDP)<br>Period: 2008<br>REMIND_62 region code: DEU<br>Countries in region: Germany", "Government spending - percent of GDP: 19.99 % (GDP)<br>Period: 2009<br>REMIND_62 region code: DEU<br>Countries in region: Germany", "Government spending - percent of GDP: 19.56 % (GDP)<br>Period: 2010<br>REMIND_62 region code: DEU<br>Countries in region: Germany", "Government spending - percent of GDP: 19.07 % (GDP)<br>Period: 2011<br>REMIND_62 region code: DEU<br>Countries in region: Germany", "Government spending - percent of GDP: 19.28 % (GDP)<br>Period: 2012<br>REMIND_62 region code: DEU<br>Countries in region: Germany", "Government spending - percent of GDP: 19.63 % (GDP)<br>Period: 2013<br>REMIND_62 region code: DEU<br>Countries in region: Germany", "Government spending - percent of GDP: 19.59 % (GDP)<br>Period: 2014<br>REMIND_62 region code: DEU<br>Countries in region: Germany", "Government spending - percent of GDP: 19.69 % (GDP)<br>Period: 2015<br>REMIND_62 region code: DEU<br>Countries in region: Germany", "Government spending - percent of GDP: 19.9 % (GDP)<br>Period: 2016<br>REMIND_62 region code: DEU<br>Countries in region: Germany", "Government spending - percent of GDP: 19.84 % (GDP)<br>Period: 2017<br>REMIND_62 region code: DEU<br>Countries in region: Germany", "Government spending - percent of GDP: 19.88 % (GDP)<br>Period: 2018<br>REMIND_62 region code: DEU<br>Countries in region: Germany", "Government spending - percent of GDP: 20.25 % (GDP)<br>Period: 2019<br>REMIND_62 region code: DEU<br>Countries in region: Germany", "Government spending - percent of GDP: 22.02 % (GDP)<br>Period: 2020<br>REMIND_62 region code: DEU<br>Countries in region: Germany", "Government spending - percent of GDP: 22.03 % (GDP)<br>Period: 2021<br>REMIND_62 region code: DEU<br>Countries in region: Germany"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(253,141,60,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [20.949096146150875, 19.717184345224336, 19.162713348036956, 19.024894264209053, 18.068983000745487, 18.698183162051318, 20.427770617979743, 19.85806491694634, 19.047892643278818, 18.516782222032173, 18.660482647684788, 18.563186140081289, 18.569618357859703, 18.632508928358504, 18.442945081312672, 18.689787592691104, 19.20698262758048, 20.962559609812505, 20.740201948812157],
+      "text": ["Government spending - percent of GDP: 20.95 % (GDP)<br>Period: 2003<br>REMIND_62 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Government spending - percent of GDP: 19.72 % (GDP)<br>Period: 2004<br>REMIND_62 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Government spending - percent of GDP: 19.16 % (GDP)<br>Period: 2005<br>REMIND_62 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Government spending - percent of GDP: 19.02 % (GDP)<br>Period: 2006<br>REMIND_62 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Government spending - percent of GDP: 18.07 % (GDP)<br>Period: 2007<br>REMIND_62 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Government spending - percent of GDP: 18.7 % (GDP)<br>Period: 2008<br>REMIND_62 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Government spending - percent of GDP: 20.43 % (GDP)<br>Period: 2009<br>REMIND_62 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Government spending - percent of GDP: 19.86 % (GDP)<br>Period: 2010<br>REMIND_62 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Government spending - percent of GDP: 19.05 % (GDP)<br>Period: 2011<br>REMIND_62 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Government spending - percent of GDP: 18.52 % (GDP)<br>Period: 2012<br>REMIND_62 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Government spending - percent of GDP: 18.66 % (GDP)<br>Period: 2013<br>REMIND_62 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Government spending - percent of GDP: 18.56 % (GDP)<br>Period: 2014<br>REMIND_62 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Government spending - percent of GDP: 18.57 % (GDP)<br>Period: 2015<br>REMIND_62 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Government spending - percent of GDP: 18.63 % (GDP)<br>Period: 2016<br>REMIND_62 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Government spending - percent of GDP: 18.44 % (GDP)<br>Period: 2017<br>REMIND_62 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Government spending - percent of GDP: 18.69 % (GDP)<br>Period: 2018<br>REMIND_62 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Government spending - percent of GDP: 19.21 % (GDP)<br>Period: 2019<br>REMIND_62 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Government spending - percent of GDP: 20.96 % (GDP)<br>Period: 2020<br>REMIND_62 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Government spending - percent of GDP: 20.74 % (GDP)<br>Period: 2021<br>REMIND_62 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(253,141,60,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [16.059999999999999, 16.170000000000002, 16.059999999999999, 16.23, 16.850000000000001, 18.649999999999999, 20.039999999999999, 18.670000000000002, 19.080000000000002, 18.239999999999998, 17.18, 16.41, 12.52, 12.83, 12.32, 12.02, 12.060000000000002, 12.84, 12.09],
+      "text": ["Government spending - percent of GDP: 16.06 % (GDP)<br>Period: 2003<br>REMIND_62 region code: IRL<br>Countries in region: Ireland", "Government spending - percent of GDP: 16.17 % (GDP)<br>Period: 2004<br>REMIND_62 region code: IRL<br>Countries in region: Ireland", "Government spending - percent of GDP: 16.06 % (GDP)<br>Period: 2005<br>REMIND_62 region code: IRL<br>Countries in region: Ireland", "Government spending - percent of GDP: 16.23 % (GDP)<br>Period: 2006<br>REMIND_62 region code: IRL<br>Countries in region: Ireland", "Government spending - percent of GDP: 16.85 % (GDP)<br>Period: 2007<br>REMIND_62 region code: IRL<br>Countries in region: Ireland", "Government spending - percent of GDP: 18.65 % (GDP)<br>Period: 2008<br>REMIND_62 region code: IRL<br>Countries in region: Ireland", "Government spending - percent of GDP: 20.04 % (GDP)<br>Period: 2009<br>REMIND_62 region code: IRL<br>Countries in region: Ireland", "Government spending - percent of GDP: 18.67 % (GDP)<br>Period: 2010<br>REMIND_62 region code: IRL<br>Countries in region: Ireland", "Government spending - percent of GDP: 19.08 % (GDP)<br>Period: 2011<br>REMIND_62 region code: IRL<br>Countries in region: Ireland", "Government spending - percent of GDP: 18.24 % (GDP)<br>Period: 2012<br>REMIND_62 region code: IRL<br>Countries in region: Ireland", "Government spending - percent of GDP: 17.18 % (GDP)<br>Period: 2013<br>REMIND_62 region code: IRL<br>Countries in region: Ireland", "Government spending - percent of GDP: 16.41 % (GDP)<br>Period: 2014<br>REMIND_62 region code: IRL<br>Countries in region: Ireland", "Government spending - percent of GDP: 12.52 % (GDP)<br>Period: 2015<br>REMIND_62 region code: IRL<br>Countries in region: Ireland", "Government spending - percent of GDP: 12.83 % (GDP)<br>Period: 2016<br>REMIND_62 region code: IRL<br>Countries in region: Ireland", "Government spending - percent of GDP: 12.32 % (GDP)<br>Period: 2017<br>REMIND_62 region code: IRL<br>Countries in region: Ireland", "Government spending - percent of GDP: 12.02 % (GDP)<br>Period: 2018<br>REMIND_62 region code: IRL<br>Countries in region: Ireland", "Government spending - percent of GDP: 12.06 % (GDP)<br>Period: 2019<br>REMIND_62 region code: IRL<br>Countries in region: Ireland", "Government spending - percent of GDP: 12.84 % (GDP)<br>Period: 2020<br>REMIND_62 region code: IRL<br>Countries in region: Ireland", "Government spending - percent of GDP: 12.09 % (GDP)<br>Period: 2021<br>REMIND_62 region code: IRL<br>Countries in region: Ireland"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(253,141,60,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [20.110000000000003, 20.420000000000002, 20.989999999999998, 20.32, 19.609999999999999, 19.77, 21.309999999999999, 20.59, 19.710000000000001, 18.34, 18.849999999999998, 18.399999999999999, 17.850000000000001, 17.59, 17.179999999999996, 16.98, 17, 18.969999999999995, 18.690000000000001],
+      "text": ["Government spending - percent of GDP: 20.11 % (GDP)<br>Period: 2003<br>REMIND_62 region code: PRT<br>Countries in region: Portugal", "Government spending - percent of GDP: 20.42 % (GDP)<br>Period: 2004<br>REMIND_62 region code: PRT<br>Countries in region: Portugal", "Government spending - percent of GDP: 20.99 % (GDP)<br>Period: 2005<br>REMIND_62 region code: PRT<br>Countries in region: Portugal", "Government spending - percent of GDP: 20.32 % (GDP)<br>Period: 2006<br>REMIND_62 region code: PRT<br>Countries in region: Portugal", "Government spending - percent of GDP: 19.61 % (GDP)<br>Period: 2007<br>REMIND_62 region code: PRT<br>Countries in region: Portugal", "Government spending - percent of GDP: 19.77 % (GDP)<br>Period: 2008<br>REMIND_62 region code: PRT<br>Countries in region: Portugal", "Government spending - percent of GDP: 21.31 % (GDP)<br>Period: 2009<br>REMIND_62 region code: PRT<br>Countries in region: Portugal", "Government spending - percent of GDP: 20.59 % (GDP)<br>Period: 2010<br>REMIND_62 region code: PRT<br>Countries in region: Portugal", "Government spending - percent of GDP: 19.71 % (GDP)<br>Period: 2011<br>REMIND_62 region code: PRT<br>Countries in region: Portugal", "Government spending - percent of GDP: 18.34 % (GDP)<br>Period: 2012<br>REMIND_62 region code: PRT<br>Countries in region: Portugal", "Government spending - percent of GDP: 18.85 % (GDP)<br>Period: 2013<br>REMIND_62 region code: PRT<br>Countries in region: Portugal", "Government spending - percent of GDP: 18.4 % (GDP)<br>Period: 2014<br>REMIND_62 region code: PRT<br>Countries in region: Portugal", "Government spending - percent of GDP: 17.85 % (GDP)<br>Period: 2015<br>REMIND_62 region code: PRT<br>Countries in region: Portugal", "Government spending - percent of GDP: 17.59 % (GDP)<br>Period: 2016<br>REMIND_62 region code: PRT<br>Countries in region: Portugal", "Government spending - percent of GDP: 17.18 % (GDP)<br>Period: 2017<br>REMIND_62 region code: PRT<br>Countries in region: Portugal", "Government spending - percent of GDP: 16.98 % (GDP)<br>Period: 2018<br>REMIND_62 region code: PRT<br>Countries in region: Portugal", "Government spending - percent of GDP: 17 % (GDP)<br>Period: 2019<br>REMIND_62 region code: PRT<br>Countries in region: Portugal", "Government spending - percent of GDP: 18.97 % (GDP)<br>Period: 2020<br>REMIND_62 region code: PRT<br>Countries in region: Portugal", "Government spending - percent of GDP: 18.69 % (GDP)<br>Period: 2021<br>REMIND_62 region code: PRT<br>Countries in region: Portugal"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(253,141,60,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [24.48, 22.859999999999999, 21.34, 22.039999999999999, 20.66, 17.700000000000003, 22.190000000000001, 20.199999999999999, 19.23, 19.809999999999995, 22.23, 25.710000000000001, 29.32, 25.009999999999998, 23.530000000000001, 23.600000000000001, 23.400000000000002, 27.960000000000004, 23.800000000000001],
+      "text": ["Government spending - percent of GDP: 24.48 % (GDP)<br>Period: 2003<br>REMIND_62 region code: SAU<br>Countries in region: Saudi Arabia", "Government spending - percent of GDP: 22.86 % (GDP)<br>Period: 2004<br>REMIND_62 region code: SAU<br>Countries in region: Saudi Arabia", "Government spending - percent of GDP: 21.34 % (GDP)<br>Period: 2005<br>REMIND_62 region code: SAU<br>Countries in region: Saudi Arabia", "Government spending - percent of GDP: 22.04 % (GDP)<br>Period: 2006<br>REMIND_62 region code: SAU<br>Countries in region: Saudi Arabia", "Government spending - percent of GDP: 20.66 % (GDP)<br>Period: 2007<br>REMIND_62 region code: SAU<br>Countries in region: Saudi Arabia", "Government spending - percent of GDP: 17.7 % (GDP)<br>Period: 2008<br>REMIND_62 region code: SAU<br>Countries in region: Saudi Arabia", "Government spending - percent of GDP: 22.19 % (GDP)<br>Period: 2009<br>REMIND_62 region code: SAU<br>Countries in region: Saudi Arabia", "Government spending - percent of GDP: 20.2 % (GDP)<br>Period: 2010<br>REMIND_62 region code: SAU<br>Countries in region: Saudi Arabia", "Government spending - percent of GDP: 19.23 % (GDP)<br>Period: 2011<br>REMIND_62 region code: SAU<br>Countries in region: Saudi Arabia", "Government spending - percent of GDP: 19.81 % (GDP)<br>Period: 2012<br>REMIND_62 region code: SAU<br>Countries in region: Saudi Arabia", "Government spending - percent of GDP: 22.23 % (GDP)<br>Period: 2013<br>REMIND_62 region code: SAU<br>Countries in region: Saudi Arabia", "Government spending - percent of GDP: 25.71 % (GDP)<br>Period: 2014<br>REMIND_62 region code: SAU<br>Countries in region: Saudi Arabia", "Government spending - percent of GDP: 29.32 % (GDP)<br>Period: 2015<br>REMIND_62 region code: SAU<br>Countries in region: Saudi Arabia", "Government spending - percent of GDP: 25.01 % (GDP)<br>Period: 2016<br>REMIND_62 region code: SAU<br>Countries in region: Saudi Arabia", "Government spending - percent of GDP: 23.53 % (GDP)<br>Period: 2017<br>REMIND_62 region code: SAU<br>Countries in region: Saudi Arabia", "Government spending - percent of GDP: 23.6 % (GDP)<br>Period: 2018<br>REMIND_62 region code: SAU<br>Countries in region: Saudi Arabia", "Government spending - percent of GDP: 23.4 % (GDP)<br>Period: 2019<br>REMIND_62 region code: SAU<br>Countries in region: Saudi Arabia", "Government spending - percent of GDP: 27.96 % (GDP)<br>Period: 2020<br>REMIND_62 region code: SAU<br>Countries in region: Saudi Arabia", "Government spending - percent of GDP: 23.8 % (GDP)<br>Period: 2021<br>REMIND_62 region code: SAU<br>Countries in region: Saudi Arabia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(253,141,60,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [23.140000000000001, 23.039999999999999, 23.069999999999997, 22.759999999999998, 22.430000000000007, 22.560000000000002, 24.079999999999995, 23.989999999999995, 23.739999999999998, 23.949999999999992, 24.109999999999992, 24.129999999999995, 23.809999999999995, 23.729999999999997, 23.640000000000001, 23.269999999999996, 22.979999999999997, 24.839999999999996, 24.409999999999993],
+      "text": ["Government spending - percent of GDP: 23.14 % (GDP)<br>Period: 2003<br>REMIND_62 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Government spending - percent of GDP: 23.04 % (GDP)<br>Period: 2004<br>REMIND_62 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Government spending - percent of GDP: 23.07 % (GDP)<br>Period: 2005<br>REMIND_62 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Government spending - percent of GDP: 22.76 % (GDP)<br>Period: 2006<br>REMIND_62 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Government spending - percent of GDP: 22.43 % (GDP)<br>Period: 2007<br>REMIND_62 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Government spending - percent of GDP: 22.56 % (GDP)<br>Period: 2008<br>REMIND_62 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Government spending - percent of GDP: 24.08 % (GDP)<br>Period: 2009<br>REMIND_62 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Government spending - percent of GDP: 23.99 % (GDP)<br>Period: 2010<br>REMIND_62 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Government spending - percent of GDP: 23.74 % (GDP)<br>Period: 2011<br>REMIND_62 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Government spending - percent of GDP: 23.95 % (GDP)<br>Period: 2012<br>REMIND_62 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Government spending - percent of GDP: 24.11 % (GDP)<br>Period: 2013<br>REMIND_62 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Government spending - percent of GDP: 24.13 % (GDP)<br>Period: 2014<br>REMIND_62 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Government spending - percent of GDP: 23.81 % (GDP)<br>Period: 2015<br>REMIND_62 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Government spending - percent of GDP: 23.73 % (GDP)<br>Period: 2016<br>REMIND_62 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Government spending - percent of GDP: 23.64 % (GDP)<br>Period: 2017<br>REMIND_62 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Government spending - percent of GDP: 23.27 % (GDP)<br>Period: 2018<br>REMIND_62 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Government spending - percent of GDP: 22.98 % (GDP)<br>Period: 2019<br>REMIND_62 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Government spending - percent of GDP: 24.84 % (GDP)<br>Period: 2020<br>REMIND_62 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Government spending - percent of GDP: 24.41 % (GDP)<br>Period: 2021<br>REMIND_62 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,178,76,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [18.839601783911355, 19.399552314288897, 19.599544016439715, 19.789510085531759, 19.679522157554985, 20.379524937758319, 21.989495457105519, 21.529499872341464, 20.899536781804642, 20.739528743404438, 20.129542584935358, 19.869564409154627, 19.549582041777249, 19.21959473710719, 18.659643554332533, 18.53965333927566, 19.099638321716316, 22.59951107387278, 22.269506678993562],
+      "text": ["Government spending - percent of GDP: 18.84 % (GDP)<br>Period: 2003<br>REMIND_62 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Government spending - percent of GDP: 19.4 % (GDP)<br>Period: 2004<br>REMIND_62 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Government spending - percent of GDP: 19.6 % (GDP)<br>Period: 2005<br>REMIND_62 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Government spending - percent of GDP: 19.79 % (GDP)<br>Period: 2006<br>REMIND_62 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Government spending - percent of GDP: 19.68 % (GDP)<br>Period: 2007<br>REMIND_62 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Government spending - percent of GDP: 20.38 % (GDP)<br>Period: 2008<br>REMIND_62 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Government spending - percent of GDP: 21.99 % (GDP)<br>Period: 2009<br>REMIND_62 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Government spending - percent of GDP: 21.53 % (GDP)<br>Period: 2010<br>REMIND_62 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Government spending - percent of GDP: 20.9 % (GDP)<br>Period: 2011<br>REMIND_62 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Government spending - percent of GDP: 20.74 % (GDP)<br>Period: 2012<br>REMIND_62 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Government spending - percent of GDP: 20.13 % (GDP)<br>Period: 2013<br>REMIND_62 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Government spending - percent of GDP: 19.87 % (GDP)<br>Period: 2014<br>REMIND_62 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Government spending - percent of GDP: 19.55 % (GDP)<br>Period: 2015<br>REMIND_62 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Government spending - percent of GDP: 19.22 % (GDP)<br>Period: 2016<br>REMIND_62 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Government spending - percent of GDP: 18.66 % (GDP)<br>Period: 2017<br>REMIND_62 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Government spending - percent of GDP: 18.54 % (GDP)<br>Period: 2018<br>REMIND_62 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Government spending - percent of GDP: 19.1 % (GDP)<br>Period: 2019<br>REMIND_62 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Government spending - percent of GDP: 22.6 % (GDP)<br>Period: 2020<br>REMIND_62 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Government spending - percent of GDP: 22.27 % (GDP)<br>Period: 2021<br>REMIND_62 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,178,76,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [18.98, 18.890000000000001, 19.350000000000001, 19.260000000000002, 18.739999999999998, 19.27, 20.68, 20.489999999999998, 19.899999999999999, 19.859999999999999, 19.920000000000002, 19.799999999999997, 19.760000000000002, 19.649999999999999, 19.490000000000002, 19.34, 19.460000000000004, 21.120000000000001, 21.780000000000001],
+      "text": ["Government spending - percent of GDP: 18.98 % (GDP)<br>Period: 2003<br>REMIND_62 region code: AUT<br>Countries in region: Austria", "Government spending - percent of GDP: 18.89 % (GDP)<br>Period: 2004<br>REMIND_62 region code: AUT<br>Countries in region: Austria", "Government spending - percent of GDP: 19.35 % (GDP)<br>Period: 2005<br>REMIND_62 region code: AUT<br>Countries in region: Austria", "Government spending - percent of GDP: 19.26 % (GDP)<br>Period: 2006<br>REMIND_62 region code: AUT<br>Countries in region: Austria", "Government spending - percent of GDP: 18.74 % (GDP)<br>Period: 2007<br>REMIND_62 region code: AUT<br>Countries in region: Austria", "Government spending - percent of GDP: 19.27 % (GDP)<br>Period: 2008<br>REMIND_62 region code: AUT<br>Countries in region: Austria", "Government spending - percent of GDP: 20.68 % (GDP)<br>Period: 2009<br>REMIND_62 region code: AUT<br>Countries in region: Austria", "Government spending - percent of GDP: 20.49 % (GDP)<br>Period: 2010<br>REMIND_62 region code: AUT<br>Countries in region: Austria", "Government spending - percent of GDP: 19.9 % (GDP)<br>Period: 2011<br>REMIND_62 region code: AUT<br>Countries in region: Austria", "Government spending - percent of GDP: 19.86 % (GDP)<br>Period: 2012<br>REMIND_62 region code: AUT<br>Countries in region: Austria", "Government spending - percent of GDP: 19.92 % (GDP)<br>Period: 2013<br>REMIND_62 region code: AUT<br>Countries in region: Austria", "Government spending - percent of GDP: 19.8 % (GDP)<br>Period: 2014<br>REMIND_62 region code: AUT<br>Countries in region: Austria", "Government spending - percent of GDP: 19.76 % (GDP)<br>Period: 2015<br>REMIND_62 region code: AUT<br>Countries in region: Austria", "Government spending - percent of GDP: 19.65 % (GDP)<br>Period: 2016<br>REMIND_62 region code: AUT<br>Countries in region: Austria", "Government spending - percent of GDP: 19.49 % (GDP)<br>Period: 2017<br>REMIND_62 region code: AUT<br>Countries in region: Austria", "Government spending - percent of GDP: 19.34 % (GDP)<br>Period: 2018<br>REMIND_62 region code: AUT<br>Countries in region: Austria", "Government spending - percent of GDP: 19.46 % (GDP)<br>Period: 2019<br>REMIND_62 region code: AUT<br>Countries in region: Austria", "Government spending - percent of GDP: 21.12 % (GDP)<br>Period: 2020<br>REMIND_62 region code: AUT<br>Countries in region: Austria", "Government spending - percent of GDP: 21.78 % (GDP)<br>Period: 2021<br>REMIND_62 region code: AUT<br>Countries in region: Austria"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,196,79,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [15.286324002697182, 14.605975516092368, 14.769343993436491, 14.786224548232067, 14.595273702500418, 14.457260353255087, 14.718999390334904, 14.557510559620098, 15.202550138017335, 15.721327566179214, 15.841443795336989, 15.782850012379406, 16.182395181504575, 16.323573648580926, 16.282788265335554, 16.501768399177386, 16.735655063344105, 17.111128815562743, 15.796230859310212],
+      "text": ["Government spending - percent of GDP: 15.29 % (GDP)<br>Period: 2003<br>REMIND_62 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Government spending - percent of GDP: 14.61 % (GDP)<br>Period: 2004<br>REMIND_62 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Government spending - percent of GDP: 14.77 % (GDP)<br>Period: 2005<br>REMIND_62 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Government spending - percent of GDP: 14.79 % (GDP)<br>Period: 2006<br>REMIND_62 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Government spending - percent of GDP: 14.6 % (GDP)<br>Period: 2007<br>REMIND_62 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Government spending - percent of GDP: 14.46 % (GDP)<br>Period: 2008<br>REMIND_62 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Government spending - percent of GDP: 14.72 % (GDP)<br>Period: 2009<br>REMIND_62 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Government spending - percent of GDP: 14.56 % (GDP)<br>Period: 2010<br>REMIND_62 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Government spending - percent of GDP: 15.2 % (GDP)<br>Period: 2011<br>REMIND_62 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Government spending - percent of GDP: 15.72 % (GDP)<br>Period: 2012<br>REMIND_62 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Government spending - percent of GDP: 15.84 % (GDP)<br>Period: 2013<br>REMIND_62 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Government spending - percent of GDP: 15.78 % (GDP)<br>Period: 2014<br>REMIND_62 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Government spending - percent of GDP: 16.18 % (GDP)<br>Period: 2015<br>REMIND_62 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Government spending - percent of GDP: 16.32 % (GDP)<br>Period: 2016<br>REMIND_62 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Government spending - percent of GDP: 16.28 % (GDP)<br>Period: 2017<br>REMIND_62 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Government spending - percent of GDP: 16.5 % (GDP)<br>Period: 2018<br>REMIND_62 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Government spending - percent of GDP: 16.74 % (GDP)<br>Period: 2019<br>REMIND_62 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Government spending - percent of GDP: 17.11 % (GDP)<br>Period: 2020<br>REMIND_62 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Government spending - percent of GDP: 15.8 % (GDP)<br>Period: 2021<br>REMIND_62 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,196,79,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [15.304345557938353, 18.83168297722311, 16.535295039410595, 15.060129127319975, 16.339471488109311, 14.692105550628938, 17.021380470237823, 15.673757083486647, 15.9452409432651, 15.893617024769306, 16.679054403178281, 16.765763313034526, 16.592363962623189, 16.074113894158739, 14.69073158382059, 15.076795910758138, 16.038143339690762, 16.586976632863152, 14.670873908791966],
+      "text": ["Government spending - percent of GDP: 15.3 % (GDP)<br>Period: 2003<br>REMIND_62 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; Lebanon; United Arab Emirates; Palestine, State of; Oman; Kuwait; Bahrain; Qatar", "Government spending - percent of GDP: 18.83 % (GDP)<br>Period: 2004<br>REMIND_62 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; Lebanon; United Arab Emirates; Palestine, State of; Oman; Kuwait; Bahrain; Qatar", "Government spending - percent of GDP: 16.54 % (GDP)<br>Period: 2005<br>REMIND_62 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; Lebanon; United Arab Emirates; Palestine, State of; Oman; Kuwait; Bahrain; Qatar", "Government spending - percent of GDP: 15.06 % (GDP)<br>Period: 2006<br>REMIND_62 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Government spending - percent of GDP: 16.34 % (GDP)<br>Period: 2007<br>REMIND_62 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Government spending - percent of GDP: 14.69 % (GDP)<br>Period: 2008<br>REMIND_62 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Kuwait; Oman; Qatar; Bahrain", "Government spending - percent of GDP: 17.02 % (GDP)<br>Period: 2009<br>REMIND_62 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Kuwait; Oman; Qatar; Bahrain", "Government spending - percent of GDP: 15.67 % (GDP)<br>Period: 2010<br>REMIND_62 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Kuwait; Oman; Qatar; Bahrain", "Government spending - percent of GDP: 15.95 % (GDP)<br>Period: 2011<br>REMIND_62 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Kuwait; Oman; Qatar; Bahrain", "Government spending - percent of GDP: 15.89 % (GDP)<br>Period: 2012<br>REMIND_62 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Government spending - percent of GDP: 16.68 % (GDP)<br>Period: 2013<br>REMIND_62 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Government spending - percent of GDP: 16.77 % (GDP)<br>Period: 2014<br>REMIND_62 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; Israel; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Government spending - percent of GDP: 16.59 % (GDP)<br>Period: 2015<br>REMIND_62 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Government spending - percent of GDP: 16.07 % (GDP)<br>Period: 2016<br>REMIND_62 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Oman; Palestine, State of; Kuwait; Qatar; Bahrain", "Government spending - percent of GDP: 14.69 % (GDP)<br>Period: 2017<br>REMIND_62 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Oman; Palestine, State of; Kuwait; Qatar; Bahrain", "Government spending - percent of GDP: 15.08 % (GDP)<br>Period: 2018<br>REMIND_62 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Oman; Palestine, State of; Kuwait; Qatar; Bahrain", "Government spending - percent of GDP: 16.04 % (GDP)<br>Period: 2019<br>REMIND_62 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Government spending - percent of GDP: 16.59 % (GDP)<br>Period: 2020<br>REMIND_62 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Government spending - percent of GDP: 14.67 % (GDP)<br>Period: 2021<br>REMIND_62 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,196,79,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [25.710000000000001, 25.02, 24.899999999999999, 24.629999999999999, 24.149999999999999, 24.640000000000001, 26, 25.030000000000001, 24.940000000000001, 25.750000000000004, 26.199999999999996, 26.079999999999998, 25.719999999999999, 26.370000000000001, 26.020000000000003, 26.059999999999999, 25.750000000000004, 26.439999999999998, 25.649999999999999],
+      "text": ["Government spending - percent of GDP: 25.71 % (GDP)<br>Period: 2003<br>REMIND_62 region code: SWE<br>Countries in region: Sweden", "Government spending - percent of GDP: 25.02 % (GDP)<br>Period: 2004<br>REMIND_62 region code: SWE<br>Countries in region: Sweden", "Government spending - percent of GDP: 24.9 % (GDP)<br>Period: 2005<br>REMIND_62 region code: SWE<br>Countries in region: Sweden", "Government spending - percent of GDP: 24.63 % (GDP)<br>Period: 2006<br>REMIND_62 region code: SWE<br>Countries in region: Sweden", "Government spending - percent of GDP: 24.15 % (GDP)<br>Period: 2007<br>REMIND_62 region code: SWE<br>Countries in region: Sweden", "Government spending - percent of GDP: 24.64 % (GDP)<br>Period: 2008<br>REMIND_62 region code: SWE<br>Countries in region: Sweden", "Government spending - percent of GDP: 26 % (GDP)<br>Period: 2009<br>REMIND_62 region code: SWE<br>Countries in region: Sweden", "Government spending - percent of GDP: 25.03 % (GDP)<br>Period: 2010<br>REMIND_62 region code: SWE<br>Countries in region: Sweden", "Government spending - percent of GDP: 24.94 % (GDP)<br>Period: 2011<br>REMIND_62 region code: SWE<br>Countries in region: Sweden", "Government spending - percent of GDP: 25.75 % (GDP)<br>Period: 2012<br>REMIND_62 region code: SWE<br>Countries in region: Sweden", "Government spending - percent of GDP: 26.2 % (GDP)<br>Period: 2013<br>REMIND_62 region code: SWE<br>Countries in region: Sweden", "Government spending - percent of GDP: 26.08 % (GDP)<br>Period: 2014<br>REMIND_62 region code: SWE<br>Countries in region: Sweden", "Government spending - percent of GDP: 25.72 % (GDP)<br>Period: 2015<br>REMIND_62 region code: SWE<br>Countries in region: Sweden", "Government spending - percent of GDP: 26.37 % (GDP)<br>Period: 2016<br>REMIND_62 region code: SWE<br>Countries in region: Sweden", "Government spending - percent of GDP: 26.02 % (GDP)<br>Period: 2017<br>REMIND_62 region code: SWE<br>Countries in region: Sweden", "Government spending - percent of GDP: 26.06 % (GDP)<br>Period: 2018<br>REMIND_62 region code: SWE<br>Countries in region: Sweden", "Government spending - percent of GDP: 25.75 % (GDP)<br>Period: 2019<br>REMIND_62 region code: SWE<br>Countries in region: Sweden", "Government spending - percent of GDP: 26.44 % (GDP)<br>Period: 2020<br>REMIND_62 region code: SWE<br>Countries in region: Sweden", "Government spending - percent of GDP: 25.65 % (GDP)<br>Period: 2021<br>REMIND_62 region code: SWE<br>Countries in region: Sweden"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,196,79,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [25.074443532037431, 24.969573871331377, 24.55103183900043, 24.230575002912165, 24.374331088370283, 25.15509768559885, 27.978599352176268, 27.417906322703764, 26.612178985480806, 26.515209693923417, 26.04739948488287, 25.816120255387336, 25.4938005322044, 24.893886660502496, 24.437269252344127, 24.316036771506997, 24.160726207366682, 24.784315647160295, 24.043932646570724],
+      "text": ["Government spending - percent of GDP: 25.07 % (GDP)<br>Period: 2003<br>REMIND_62 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Government spending - percent of GDP: 24.97 % (GDP)<br>Period: 2004<br>REMIND_62 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Government spending - percent of GDP: 24.55 % (GDP)<br>Period: 2005<br>REMIND_62 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Government spending - percent of GDP: 24.23 % (GDP)<br>Period: 2006<br>REMIND_62 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Government spending - percent of GDP: 24.37 % (GDP)<br>Period: 2007<br>REMIND_62 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Government spending - percent of GDP: 25.16 % (GDP)<br>Period: 2008<br>REMIND_62 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Government spending - percent of GDP: 27.98 % (GDP)<br>Period: 2009<br>REMIND_62 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Government spending - percent of GDP: 27.42 % (GDP)<br>Period: 2010<br>REMIND_62 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Government spending - percent of GDP: 26.61 % (GDP)<br>Period: 2011<br>REMIND_62 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Government spending - percent of GDP: 26.52 % (GDP)<br>Period: 2012<br>REMIND_62 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Government spending - percent of GDP: 26.05 % (GDP)<br>Period: 2013<br>REMIND_62 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Government spending - percent of GDP: 25.82 % (GDP)<br>Period: 2014<br>REMIND_62 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Government spending - percent of GDP: 25.49 % (GDP)<br>Period: 2015<br>REMIND_62 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Government spending - percent of GDP: 24.89 % (GDP)<br>Period: 2016<br>REMIND_62 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Government spending - percent of GDP: 24.44 % (GDP)<br>Period: 2017<br>REMIND_62 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Government spending - percent of GDP: 24.32 % (GDP)<br>Period: 2018<br>REMIND_62 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Government spending - percent of GDP: 24.16 % (GDP)<br>Period: 2019<br>REMIND_62 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Government spending - percent of GDP: 24.78 % (GDP)<br>Period: 2020<br>REMIND_62 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Government spending - percent of GDP: 24.04 % (GDP)<br>Period: 2021<br>REMIND_62 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,217,118,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [18.979930935769879, 19.16, 19.601905791957893, 19.475431143679, 19.024263221599977, 19.561796852291614, 20.67306852700187, 20.539653258460003, 19.818468469572828, 19.810140103330991, 19.802626673644365, 19.532689191365076, 19.0953044915676, 19.006144873649813, 18.797089167773738, 18.852230192923926, 18.600752413999054, 20.679656182788779, 19.421999327127409],
+      "text": ["Government spending - percent of GDP: 18.98 % (GDP)<br>Period: 2003<br>REMIND_62 region code: ITA<br>Countries in region: Italy; Malta", "Government spending - percent of GDP: 19.16 % (GDP)<br>Period: 2004<br>REMIND_62 region code: ITA<br>Countries in region: Italy; Malta", "Government spending - percent of GDP: 19.6 % (GDP)<br>Period: 2005<br>REMIND_62 region code: ITA<br>Countries in region: Italy; Malta", "Government spending - percent of GDP: 19.48 % (GDP)<br>Period: 2006<br>REMIND_62 region code: ITA<br>Countries in region: Italy; Malta", "Government spending - percent of GDP: 19.02 % (GDP)<br>Period: 2007<br>REMIND_62 region code: ITA<br>Countries in region: Italy; Malta", "Government spending - percent of GDP: 19.56 % (GDP)<br>Period: 2008<br>REMIND_62 region code: ITA<br>Countries in region: Italy; Malta", "Government spending - percent of GDP: 20.67 % (GDP)<br>Period: 2009<br>REMIND_62 region code: ITA<br>Countries in region: Italy; Malta", "Government spending - percent of GDP: 20.54 % (GDP)<br>Period: 2010<br>REMIND_62 region code: ITA<br>Countries in region: Italy; Malta", "Government spending - percent of GDP: 19.82 % (GDP)<br>Period: 2011<br>REMIND_62 region code: ITA<br>Countries in region: Italy; Malta", "Government spending - percent of GDP: 19.81 % (GDP)<br>Period: 2012<br>REMIND_62 region code: ITA<br>Countries in region: Italy; Malta", "Government spending - percent of GDP: 19.8 % (GDP)<br>Period: 2013<br>REMIND_62 region code: ITA<br>Countries in region: Italy; Malta", "Government spending - percent of GDP: 19.53 % (GDP)<br>Period: 2014<br>REMIND_62 region code: ITA<br>Countries in region: Italy; Malta", "Government spending - percent of GDP: 19.1 % (GDP)<br>Period: 2015<br>REMIND_62 region code: ITA<br>Countries in region: Italy; Malta", "Government spending - percent of GDP: 19.01 % (GDP)<br>Period: 2016<br>REMIND_62 region code: ITA<br>Countries in region: Italy; Malta", "Government spending - percent of GDP: 18.8 % (GDP)<br>Period: 2017<br>REMIND_62 region code: ITA<br>Countries in region: Italy; Malta", "Government spending - percent of GDP: 18.85 % (GDP)<br>Period: 2018<br>REMIND_62 region code: ITA<br>Countries in region: Italy; Malta", "Government spending - percent of GDP: 18.6 % (GDP)<br>Period: 2019<br>REMIND_62 region code: ITA<br>Countries in region: Italy; Malta", "Government spending - percent of GDP: 20.68 % (GDP)<br>Period: 2020<br>REMIND_62 region code: ITA<br>Countries in region: Italy; Malta", "Government spending - percent of GDP: 19.42 % (GDP)<br>Period: 2021<br>REMIND_62 region code: ITA<br>Countries in region: Italy; Malta"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,217,118,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [22.899999999999999, 22.510000000000002, 22.280000000000001, 23.190000000000001, 23.23, 23.489999999999998, 26, 26.239999999999998, 25.789999999999999, 26.030000000000001, 25.789999999999999, 25.68, 24.98, 24.68, 24.32, 24.370000000000001, 24.620000000000001, 26.059999999999999, 25.760000000000002],
+      "text": ["Government spending - percent of GDP: 22.9 % (GDP)<br>Period: 2003<br>REMIND_62 region code: NLD<br>Countries in region: Netherlands", "Government spending - percent of GDP: 22.51 % (GDP)<br>Period: 2004<br>REMIND_62 region code: NLD<br>Countries in region: Netherlands", "Government spending - percent of GDP: 22.28 % (GDP)<br>Period: 2005<br>REMIND_62 region code: NLD<br>Countries in region: Netherlands", "Government spending - percent of GDP: 23.19 % (GDP)<br>Period: 2006<br>REMIND_62 region code: NLD<br>Countries in region: Netherlands", "Government spending - percent of GDP: 23.23 % (GDP)<br>Period: 2007<br>REMIND_62 region code: NLD<br>Countries in region: Netherlands", "Government spending - percent of GDP: 23.49 % (GDP)<br>Period: 2008<br>REMIND_62 region code: NLD<br>Countries in region: Netherlands", "Government spending - percent of GDP: 26 % (GDP)<br>Period: 2009<br>REMIND_62 region code: NLD<br>Countries in region: Netherlands", "Government spending - percent of GDP: 26.24 % (GDP)<br>Period: 2010<br>REMIND_62 region code: NLD<br>Countries in region: Netherlands", "Government spending - percent of GDP: 25.79 % (GDP)<br>Period: 2011<br>REMIND_62 region code: NLD<br>Countries in region: Netherlands", "Government spending - percent of GDP: 26.03 % (GDP)<br>Period: 2012<br>REMIND_62 region code: NLD<br>Countries in region: Netherlands", "Government spending - percent of GDP: 25.79 % (GDP)<br>Period: 2013<br>REMIND_62 region code: NLD<br>Countries in region: Netherlands", "Government spending - percent of GDP: 25.68 % (GDP)<br>Period: 2014<br>REMIND_62 region code: NLD<br>Countries in region: Netherlands", "Government spending - percent of GDP: 24.98 % (GDP)<br>Period: 2015<br>REMIND_62 region code: NLD<br>Countries in region: Netherlands", "Government spending - percent of GDP: 24.68 % (GDP)<br>Period: 2016<br>REMIND_62 region code: NLD<br>Countries in region: Netherlands", "Government spending - percent of GDP: 24.32 % (GDP)<br>Period: 2017<br>REMIND_62 region code: NLD<br>Countries in region: Netherlands", "Government spending - percent of GDP: 24.37 % (GDP)<br>Period: 2018<br>REMIND_62 region code: NLD<br>Countries in region: Netherlands", "Government spending - percent of GDP: 24.62 % (GDP)<br>Period: 2019<br>REMIND_62 region code: NLD<br>Countries in region: Netherlands", "Government spending - percent of GDP: 26.06 % (GDP)<br>Period: 2020<br>REMIND_62 region code: NLD<br>Countries in region: Netherlands", "Government spending - percent of GDP: 25.76 % (GDP)<br>Period: 2021<br>REMIND_62 region code: NLD<br>Countries in region: Netherlands"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,217,118,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [22.225149639865592, 21.954935559789515, 21.855801053110099, 21.649657011259372, 21.309244996237517, 22.313067098517383, 23.832560520922282, 23.376990304527791, 23.690728629699489, 23.935022123448967, 23.940416840735185, 23.843213430662992, 23.252088468228106, 22.889201326972334, 22.690773487419371, 22.819733966021111, 22.743029858581821, 24.092795003345792, 23.383326128622009],
+      "text": ["Government spending - percent of GDP: 22.23 % (GDP)<br>Period: 2003<br>REMIND_62 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Government spending - percent of GDP: 21.95 % (GDP)<br>Period: 2004<br>REMIND_62 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Government spending - percent of GDP: 21.86 % (GDP)<br>Period: 2005<br>REMIND_62 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Government spending - percent of GDP: 21.65 % (GDP)<br>Period: 2006<br>REMIND_62 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Government spending - percent of GDP: 21.31 % (GDP)<br>Period: 2007<br>REMIND_62 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Government spending - percent of GDP: 22.31 % (GDP)<br>Period: 2008<br>REMIND_62 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Government spending - percent of GDP: 23.83 % (GDP)<br>Period: 2009<br>REMIND_62 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Government spending - percent of GDP: 23.38 % (GDP)<br>Period: 2010<br>REMIND_62 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Government spending - percent of GDP: 23.69 % (GDP)<br>Period: 2011<br>REMIND_62 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Government spending - percent of GDP: 23.94 % (GDP)<br>Period: 2012<br>REMIND_62 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Government spending - percent of GDP: 23.94 % (GDP)<br>Period: 2013<br>REMIND_62 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Government spending - percent of GDP: 23.84 % (GDP)<br>Period: 2014<br>REMIND_62 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Government spending - percent of GDP: 23.25 % (GDP)<br>Period: 2015<br>REMIND_62 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Government spending - percent of GDP: 22.89 % (GDP)<br>Period: 2016<br>REMIND_62 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Government spending - percent of GDP: 22.69 % (GDP)<br>Period: 2017<br>REMIND_62 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Government spending - percent of GDP: 22.82 % (GDP)<br>Period: 2018<br>REMIND_62 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Government spending - percent of GDP: 22.74 % (GDP)<br>Period: 2019<br>REMIND_62 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Government spending - percent of GDP: 24.09 % (GDP)<br>Period: 2020<br>REMIND_62 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Government spending - percent of GDP: 23.38 % (GDP)<br>Period: 2021<br>REMIND_62 region code: BELUX<br>Countries in region: Belgium; Luxembourg"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(255,237,160,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [21.099999999999998, 21.18, 21.41, 21.32, 20.770000000000003, 21.559999999999999, 24.07, 23.690000000000001, 23.359999999999999, 24.100000000000001, 24.540000000000003, 24.510000000000002, 24.379999999999992, 23.670000000000005, 22.789999999999999, 22.899999999999995, 23.190000000000005, 24.25, 24.579999999999995],
+      "text": ["Government spending - percent of GDP: 21.1 % (GDP)<br>Period: 2003<br>REMIND_62 region code: FIN<br>Countries in region: Finland; Aland Islands", "Government spending - percent of GDP: 21.18 % (GDP)<br>Period: 2004<br>REMIND_62 region code: FIN<br>Countries in region: Finland; Aland Islands", "Government spending - percent of GDP: 21.41 % (GDP)<br>Period: 2005<br>REMIND_62 region code: FIN<br>Countries in region: Finland; Aland Islands", "Government spending - percent of GDP: 21.32 % (GDP)<br>Period: 2006<br>REMIND_62 region code: FIN<br>Countries in region: Finland; Aland Islands", "Government spending - percent of GDP: 20.77 % (GDP)<br>Period: 2007<br>REMIND_62 region code: FIN<br>Countries in region: Finland; Aland Islands", "Government spending - percent of GDP: 21.56 % (GDP)<br>Period: 2008<br>REMIND_62 region code: FIN<br>Countries in region: Finland; Aland Islands", "Government spending - percent of GDP: 24.07 % (GDP)<br>Period: 2009<br>REMIND_62 region code: FIN<br>Countries in region: Finland; Aland Islands", "Government spending - percent of GDP: 23.69 % (GDP)<br>Period: 2010<br>REMIND_62 region code: FIN<br>Countries in region: Finland; Aland Islands", "Government spending - percent of GDP: 23.36 % (GDP)<br>Period: 2011<br>REMIND_62 region code: FIN<br>Countries in region: Finland; Aland Islands", "Government spending - percent of GDP: 24.1 % (GDP)<br>Period: 2012<br>REMIND_62 region code: FIN<br>Countries in region: Finland; Aland Islands", "Government spending - percent of GDP: 24.54 % (GDP)<br>Period: 2013<br>REMIND_62 region code: FIN<br>Countries in region: Finland; Aland Islands", "Government spending - percent of GDP: 24.51 % (GDP)<br>Period: 2014<br>REMIND_62 region code: FIN<br>Countries in region: Finland; Aland Islands", "Government spending - percent of GDP: 24.38 % (GDP)<br>Period: 2015<br>REMIND_62 region code: FIN<br>Countries in region: Finland; Aland Islands", "Government spending - percent of GDP: 23.67 % (GDP)<br>Period: 2016<br>REMIND_62 region code: FIN<br>Countries in region: Finland; Aland Islands", "Government spending - percent of GDP: 22.79 % (GDP)<br>Period: 2017<br>REMIND_62 region code: FIN<br>Countries in region: Finland; Aland Islands", "Government spending - percent of GDP: 22.9 % (GDP)<br>Period: 2018<br>REMIND_62 region code: FIN<br>Countries in region: Finland; Aland Islands", "Government spending - percent of GDP: 23.19 % (GDP)<br>Period: 2019<br>REMIND_62 region code: FIN<br>Countries in region: Finland; Aland Islands", "Government spending - percent of GDP: 24.25 % (GDP)<br>Period: 2020<br>REMIND_62 region code: FIN<br>Countries in region: Finland; Aland Islands", "Government spending - percent of GDP: 24.58 % (GDP)<br>Period: 2021<br>REMIND_62 region code: FIN<br>Countries in region: Finland; Aland Islands"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(255,237,160,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [18.872005414305907, 18.940663660684994, 19.717517312189123, 19.875323783953, 20.15892371926941, 20.390958239579742, 22.898630401228253, 22.006439878270804, 21.818322299213019, 21.93072192427968, 20.498795110520891, 20.21239432839538, 20.214477498020202, 20.058025097304334, 19.897796944679776, 19.229513317608632, 19.741761033016207, 22.674161629938425, 21.543043901173398],
+      "text": ["Government spending - percent of GDP: 18.87 % (GDP)<br>Period: 2003<br>REMIND_62 region code: GRC<br>Countries in region: Greece; Cyprus", "Government spending - percent of GDP: 18.94 % (GDP)<br>Period: 2004<br>REMIND_62 region code: GRC<br>Countries in region: Greece; Cyprus", "Government spending - percent of GDP: 19.72 % (GDP)<br>Period: 2005<br>REMIND_62 region code: GRC<br>Countries in region: Greece; Cyprus", "Government spending - percent of GDP: 19.88 % (GDP)<br>Period: 2006<br>REMIND_62 region code: GRC<br>Countries in region: Greece; Cyprus", "Government spending - percent of GDP: 20.16 % (GDP)<br>Period: 2007<br>REMIND_62 region code: GRC<br>Countries in region: Greece; Cyprus", "Government spending - percent of GDP: 20.39 % (GDP)<br>Period: 2008<br>REMIND_62 region code: GRC<br>Countries in region: Greece; Cyprus", "Government spending - percent of GDP: 22.9 % (GDP)<br>Period: 2009<br>REMIND_62 region code: GRC<br>Countries in region: Greece; Cyprus", "Government spending - percent of GDP: 22.01 % (GDP)<br>Period: 2010<br>REMIND_62 region code: GRC<br>Countries in region: Greece; Cyprus", "Government spending - percent of GDP: 21.82 % (GDP)<br>Period: 2011<br>REMIND_62 region code: GRC<br>Countries in region: Greece; Cyprus", "Government spending - percent of GDP: 21.93 % (GDP)<br>Period: 2012<br>REMIND_62 region code: GRC<br>Countries in region: Greece; Cyprus", "Government spending - percent of GDP: 20.5 % (GDP)<br>Period: 2013<br>REMIND_62 region code: GRC<br>Countries in region: Greece; Cyprus", "Government spending - percent of GDP: 20.21 % (GDP)<br>Period: 2014<br>REMIND_62 region code: GRC<br>Countries in region: Greece; Cyprus", "Government spending - percent of GDP: 20.21 % (GDP)<br>Period: 2015<br>REMIND_62 region code: GRC<br>Countries in region: Greece; Cyprus", "Government spending - percent of GDP: 20.06 % (GDP)<br>Period: 2016<br>REMIND_62 region code: GRC<br>Countries in region: Greece; Cyprus", "Government spending - percent of GDP: 19.9 % (GDP)<br>Period: 2017<br>REMIND_62 region code: GRC<br>Countries in region: Greece; Cyprus", "Government spending - percent of GDP: 19.23 % (GDP)<br>Period: 2018<br>REMIND_62 region code: GRC<br>Countries in region: Greece; Cyprus", "Government spending - percent of GDP: 19.74 % (GDP)<br>Period: 2019<br>REMIND_62 region code: GRC<br>Countries in region: Greece; Cyprus", "Government spending - percent of GDP: 22.67 % (GDP)<br>Period: 2020<br>REMIND_62 region code: GRC<br>Countries in region: Greece; Cyprus", "Government spending - percent of GDP: 21.54 % (GDP)<br>Period: 2021<br>REMIND_62 region code: GRC<br>Countries in region: Greece; Cyprus"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(255,237,160,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "visible": false,
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    }
+  ],
+  "layout": {
+    "margin": {
+      "t": 33.534246575342465,
+      "r": 0,
+      "b": 27.031963470319649,
+      "l": 35.799086757990878
+    },
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.611872146118724
+    },
+    "title": {
+      "text": "Government spending - percent of GDP (REMIND_62)",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 17.534246575342468
+      },
+      "x": 0,
+      "xref": "paper"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [2002.0999999999999, 2021.9000000000001],
+      "tickmode": "array",
+      "ticktext": ["2005", "2010", "2015", "2020"],
+      "tickvals": [2005, 2010, 2015, 2020],
+      "categoryorder": "array",
+      "categoryarray": ["2005", "2010", "2015", "2020"],
+      "nticks": null,
+      "ticks": "",
+      "tickcolor": null,
+      "ticklen": 3.6529680365296811,
+      "tickwidth": 0,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716894984
+      },
+      "tickangle": -90,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(235,235,235,1)",
+      "gridwidth": 0.66417600664176002,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.611872146118724
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [0, 100],
+      "tickmode": "array",
+      "ticktext": ["25", "50", "75", "100"],
+      "tickvals": [25, 50, 75, 100],
+      "categoryorder": "array",
+      "categoryarray": ["25", "50", "75", "100"],
+      "nticks": null,
+      "ticks": "",
+      "tickcolor": null,
+      "ticklen": 3.6529680365296811,
+      "tickwidth": 0,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.68949771689498
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(235,235,235,1)",
+      "gridwidth": 0.66417600664176002,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "% (GDP)",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.611872146118724
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "layer": "below",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": false,
+    "legend": {
+      "bgcolor": null,
+      "bordercolor": null,
+      "borderwidth": 0,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716894984
+      },
+      "title": {
+        "text": "",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.611872146118724
+        }
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  "config": {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  "source": "A",
+  "attrs": {
+    "b55c288535ed": {
+      "x": {},
+      "colour": {},
+      "text": {},
+      "y": {},
+      "type": "scatter"
+    },
+    "b55c2ef74740": {
+      "y": {}
+    }
+  },
+  "cur_data": "b55c288535ed",
+  "visdat": {
+    "b55c288535ed": ["function (y) ", "x"],
+    "b55c2ef74740": ["function (y) ", "x"]
+  },
+  "highlight": {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.20000000000000001,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  "shinyEvents": ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  "base_url": "https://plot.ly"
+}
+           
+
+                  ); 
+
+           }()); 
+
+  

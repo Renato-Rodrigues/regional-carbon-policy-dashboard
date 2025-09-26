@@ -1,0 +1,92 @@
+---
+output:
+  html_document:
+    theme: paper
+    toc: false
+    self_contained: false
+    lib_dir: ../output/iframe/libs
+params:
+  mappingsVector: ""
+  driver: ""
+  driverTitle: ""
+  unit: ""
+  charts: ""
+---
+
+<style>
+  .main-container {
+    max-width: 95% !important;
+  }
+  .toc-content {
+    padding-left: 0px !important;
+  }
+  .svg-container {
+    margin: auto !important;
+  }
+  img {
+    max-width: 100% !important;
+    <!-- display: block !important; -->
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .hideChart {
+    display: none;
+  }
+  .plotly {
+    width: 100% !important;
+  }
+  
+</style>
+
+
+```{r chunk_options, echo=FALSE}
+
+# setting global R chunk options (https://yihui.name/knitr/options/#chunk_options)
+  knitr::opts_chunk$set(dev='svglite', # svg, png,...
+                        fig.ext = ".svg",
+                        #fig.asp = .8 # default aspect ratio
+                        fig.width = 12,
+                        fig.height = 6,
+                        dpi=100
+                        )
+```  
+
+
+
+```{r creating_chunks_for_drivers_display, include=FALSE}
+
+  result = ""
+
+  result = paste0(result,knitr::knit_expand(text=paste0("\n\n")))
+  result = paste0(result,knitr::knit_expand(text=paste0("# ", params$driverTitle, " {.tabset}\n\n")))
+  result = paste0(result,knitr::knit_expand(text=paste0("\n\n")))
+  result = paste0(result,knitr::knit_expand(text=paste0(paste0("Unit = ", params$unit))))
+  result = paste0(result,knitr::knit_expand(text=paste0("\n\n")))
+  
+  for (region in params$mappingsVector){
+    result = paste0(result,knitr::knit_expand(text=paste0("\n\n")))
+    result = paste0(result,knitr::knit_expand(text=paste0("## ", region, ifelse(region == "REMIND_62", " {.active}", "") ,"\n\n")))
+    result = paste0(result,"```{r ", params$driverTitle, "_", region, ", echo=FALSE}\n\n")
+    result = paste0(result,"params[['charts']][['", region, "']][['", params$driver,"']]\n\n")
+    result = paste0(result,"```\n\n")
+  }
+  
+  result = paste0(result,knitr::knit_expand(text=paste0("## subRegions {.tabset}\n\n")))
+    
+  for (subRegion in names(params[["charts"]][["subRegion"]])){
+    result = paste0(result,knitr::knit_expand(text=paste0("\n\n")))
+    result = paste0(result,knitr::knit_expand(text=paste0("### ", subRegion, "\n\n")))
+    result = paste0(result,"```{r ", params$driverTitle, "_subRegion_", subRegion, ", echo=FALSE}\n\n")
+    result = paste0(result,"params[['charts']][['subRegion']][['", subRegion, "']][['", params$driver,"']]\n\n")
+    result = paste0(result,"```\n\n")
+  }
+
+ # fileConn<-file("output.txt")
+ # writeLines(result, fileConn)
+ # close(fileConn)
+ 
+  
+
+```
+
+`r paste(knitr::knit(text = paste(result, collapse = '\n')))`

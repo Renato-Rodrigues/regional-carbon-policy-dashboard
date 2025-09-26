@@ -1,0 +1,1199 @@
+(function(){ 
+
+        window.PLOTLYENV={'BASE_URL': 'https://plotly.com'}; 
+
+        
+
+        var gd = document.getElementById('REMIND_54_Sectors_Value_added___agriculture_line') 
+
+        var resizeDebounce = null; 
+
+
+        function resizePlot() { 
+
+          var bb = gd.getBoundingClientRect(); 
+
+          Plotly.relayout(gd, { 
+
+            width: bb.width, 
+
+              height: bb.height 
+
+            }); 
+
+          } 
+
+
+          Plotly.plot(gd,  
+
+              {
+  "data": [
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [10.33, 8.3599999999999994, 7.9400000000000004, 6.9400000000000004, 7.4500000000000002, 7.3200000000000003, 5.2699999999999996, 7.129999999999999, 7, 5.7800000000000002, 6.0499999999999998, 6.71, 5.1600000000000001, 6.2599999999999998, 5.2300000000000013, 4.54, 5.3200000000000003, 6.1299999999999999, 7.1299999999999999],
+      "text": ["Value added - agriculture: 10.33 % (GDP)<br>Period: 2003<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Value added - agriculture: 8.36 % (GDP)<br>Period: 2004<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Value added - agriculture: 7.94 % (GDP)<br>Period: 2005<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Value added - agriculture: 6.94 % (GDP)<br>Period: 2006<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Value added - agriculture: 7.45 % (GDP)<br>Period: 2007<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Value added - agriculture: 7.32 % (GDP)<br>Period: 2008<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Value added - agriculture: 5.27 % (GDP)<br>Period: 2009<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Value added - agriculture: 7.13 % (GDP)<br>Period: 2010<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Value added - agriculture: 7 % (GDP)<br>Period: 2011<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Value added - agriculture: 5.78 % (GDP)<br>Period: 2012<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Value added - agriculture: 6.05 % (GDP)<br>Period: 2013<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Value added - agriculture: 6.71 % (GDP)<br>Period: 2014<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Value added - agriculture: 5.16 % (GDP)<br>Period: 2015<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Value added - agriculture: 6.26 % (GDP)<br>Period: 2016<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Value added - agriculture: 5.23 % (GDP)<br>Period: 2017<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Value added - agriculture: 4.54 % (GDP)<br>Period: 2018<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Value added - agriculture: 5.32 % (GDP)<br>Period: 2019<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Value added - agriculture: 6.13 % (GDP)<br>Period: 2020<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Value added - agriculture: 7.13 % (GDP)<br>Period: 2021<br>REMIND_54 region code: ARG<br>Countries in region: Argentina"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,68,27,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1.0476305813130555, 1.0910415134705851, 0.96507125220213374, 0.90251084752388333, 0.8996465675564973, 0.9357695346901882, 0.91124982711934388, 0.87615657077686537, 0.89902105585527525, 0.85502884764779152, 0.8561074231836947, 0.88196950457502676, 0.80599443744758381, 0.8076248651888247, 0.75031073216711219, 0.7669747193130918, 0.79766803061951963, 0.8575063678114222, 0.77934606210800772],
+      "text": ["Value added - agriculture: 1.05 % (GDP)<br>Period: 2003<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Value added - agriculture: 1.09 % (GDP)<br>Period: 2004<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Value added - agriculture: 0.97 % (GDP)<br>Period: 2005<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Value added - agriculture: 0.9 % (GDP)<br>Period: 2006<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Value added - agriculture: 0.9 % (GDP)<br>Period: 2007<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Value added - agriculture: 0.94 % (GDP)<br>Period: 2008<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Value added - agriculture: 0.91 % (GDP)<br>Period: 2009<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Value added - agriculture: 0.88 % (GDP)<br>Period: 2010<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Value added - agriculture: 0.9 % (GDP)<br>Period: 2011<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Value added - agriculture: 0.86 % (GDP)<br>Period: 2012<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Value added - agriculture: 0.86 % (GDP)<br>Period: 2013<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Value added - agriculture: 0.88 % (GDP)<br>Period: 2014<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Value added - agriculture: 0.81 % (GDP)<br>Period: 2015<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Value added - agriculture: 0.81 % (GDP)<br>Period: 2016<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Value added - agriculture: 0.75 % (GDP)<br>Period: 2017<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Value added - agriculture: 0.77 % (GDP)<br>Period: 2018<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Value added - agriculture: 0.8 % (GDP)<br>Period: 2019<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Value added - agriculture: 0.86 % (GDP)<br>Period: 2020<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Value added - agriculture: 0.78 % (GDP)<br>Period: 2021<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,109,44,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [9.0987222911980528, 8.8530522922266712, 8.7538119358707416, 8.4718011115890945, 8.5564187940643652, 8.6505354859606083, 8.8891178547984424, 8.8660365349321157, 9.0090290802017154, 8.5045347382922802, 8.4009268764727061, 8.3324014968814826, 8.2852938099455162, 8.3555920344210026, 8.3846315724283915, 8.2600597233367381, 8.2924499785334387, 9.0306708157985458, 8.7181085284212418],
+      "text": ["Value added - agriculture: 9.1 % (GDP)<br>Period: 2003<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Martinique; Guadeloupe; Bahamas; Barbados; Belize; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Saint Kitts and Nevis; Cayman Islands; Saint Martin (French part); Sint Maarten (Dutch part); Virgin Islands, British; Turks and Caicos Islands; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Value added - agriculture: 8.85 % (GDP)<br>Period: 2004<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Martinique; Guadeloupe; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Saint Kitts and Nevis; Cayman Islands; Saint Martin (French part); Sint Maarten (Dutch part); Virgin Islands, British; Turks and Caicos Islands; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Value added - agriculture: 8.75 % (GDP)<br>Period: 2005<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Value added - agriculture: 8.47 % (GDP)<br>Period: 2006<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Value added - agriculture: 8.56 % (GDP)<br>Period: 2007<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Value added - agriculture: 8.65 % (GDP)<br>Period: 2008<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Value added - agriculture: 8.89 % (GDP)<br>Period: 2009<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Value added - agriculture: 8.87 % (GDP)<br>Period: 2010<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Value added - agriculture: 9.01 % (GDP)<br>Period: 2011<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Nicaragua; Paraguay; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Value added - agriculture: 8.5 % (GDP)<br>Period: 2012<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Nicaragua; Paraguay; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Value added - agriculture: 8.4 % (GDP)<br>Period: 2013<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Haiti; Dominican Republic; Honduras; El Salvador; Nicaragua; Paraguay; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Value added - agriculture: 8.33 % (GDP)<br>Period: 2014<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Haiti; Dominican Republic; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Value added - agriculture: 8.29 % (GDP)<br>Period: 2015<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Haiti; Dominican Republic; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Martinique; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Sint Maarten (Dutch part); Saint Martin (French part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Value added - agriculture: 8.36 % (GDP)<br>Period: 2016<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Haiti; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Martinique; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Saint Martin (French part); Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Value added - agriculture: 8.38 % (GDP)<br>Period: 2017<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Cuba; Haiti; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Martinique; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Cayman Islands; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Saint Martin (French part); Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Value added - agriculture: 8.26 % (GDP)<br>Period: 2018<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Cuba; Haiti; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Belize; Martinique; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Cayman Islands; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Saint Martin (French part); Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Value added - agriculture: 8.29 % (GDP)<br>Period: 2019<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Cuba; Haiti; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Belize; Martinique; French Guiana; Barbados; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Cayman Islands; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Virgin Islands, British; Saint Martin (French part); Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Value added - agriculture: 9.03 % (GDP)<br>Period: 2020<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Haiti; Cuba; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Bahamas; Guadeloupe; Belize; Martinique; French Guiana; Barbados; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Cayman Islands; Dominica; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Virgin Islands, British; Saint Martin (French part); Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Value added - agriculture: 8.72 % (GDP)<br>Period: 2021<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Haiti; Dominican Republic; Cuba; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Bahamas; Guadeloupe; Belize; Martinique; French Guiana; Barbados; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Cayman Islands; Dominica; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Virgin Islands, British; Saint Martin (French part); Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,109,44,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [15.289999999999999, 14.269999999999998, 13.979999999999999, 13.240000000000002, 13.42, 12.629999999999999, 13, 13.34, 13.869999999999999, 11.269999999999998, 11.27, 11.340000000000002, 11.389999999999999, 11.77, 10.99, 10.83, 10.699999999999998, 11.170000000000002, 11.440000000000001],
+      "text": ["Value added - agriculture: 15.29 % (GDP)<br>Period: 2003<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Value added - agriculture: 14.27 % (GDP)<br>Period: 2004<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Value added - agriculture: 13.98 % (GDP)<br>Period: 2005<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Value added - agriculture: 13.24 % (GDP)<br>Period: 2006<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Value added - agriculture: 13.42 % (GDP)<br>Period: 2007<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Value added - agriculture: 12.63 % (GDP)<br>Period: 2008<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Value added - agriculture: 13 % (GDP)<br>Period: 2009<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Value added - agriculture: 13.34 % (GDP)<br>Period: 2010<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Value added - agriculture: 13.87 % (GDP)<br>Period: 2011<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Value added - agriculture: 11.27 % (GDP)<br>Period: 2012<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Value added - agriculture: 11.27 % (GDP)<br>Period: 2013<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Value added - agriculture: 11.34 % (GDP)<br>Period: 2014<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Value added - agriculture: 11.39 % (GDP)<br>Period: 2015<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Value added - agriculture: 11.77 % (GDP)<br>Period: 2016<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Value added - agriculture: 10.99 % (GDP)<br>Period: 2017<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Value added - agriculture: 10.83 % (GDP)<br>Period: 2018<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Value added - agriculture: 10.7 % (GDP)<br>Period: 2019<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Value added - agriculture: 11.17 % (GDP)<br>Period: 2020<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Value added - agriculture: 11.44 % (GDP)<br>Period: 2021<br>REMIND_54 region code: EGY<br>Countries in region: Egypt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(8,48,107,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [2.0500000000000003, 2.1700000000000004, 1.8799999999999999, 1.7, 1.5900000000000001, 1.77, 1.5500000000000003, 1.49, 1.77, 1.8100000000000001, 1.8899999999999997, 1.5900000000000001, 1.8700000000000001, 1.8599999999999999, 1.8899999999999999, 1.7, 1.7, 1.6999999999999997, 1.7],
+      "text": ["Value added - agriculture: 2.05 % (GDP)<br>Period: 2003<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Value added - agriculture: 2.17 % (GDP)<br>Period: 2004<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Value added - agriculture: 1.88 % (GDP)<br>Period: 2005<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Value added - agriculture: 1.7 % (GDP)<br>Period: 2006<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Value added - agriculture: 1.59 % (GDP)<br>Period: 2007<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Value added - agriculture: 1.77 % (GDP)<br>Period: 2008<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Value added - agriculture: 1.55 % (GDP)<br>Period: 2009<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Value added - agriculture: 1.49 % (GDP)<br>Period: 2010<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Value added - agriculture: 1.77 % (GDP)<br>Period: 2011<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Value added - agriculture: 1.81 % (GDP)<br>Period: 2012<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Value added - agriculture: 1.89 % (GDP)<br>Period: 2013<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Value added - agriculture: 1.59 % (GDP)<br>Period: 2014<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Value added - agriculture: 1.87 % (GDP)<br>Period: 2015<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Value added - agriculture: 1.86 % (GDP)<br>Period: 2016<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Value added - agriculture: 1.89 % (GDP)<br>Period: 2017<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Value added - agriculture: 1.7 % (GDP)<br>Period: 2018<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Value added - agriculture: 1.7 % (GDP)<br>Period: 2019<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Value added - agriculture: 1.7 % (GDP)<br>Period: 2020<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Value added - agriculture: 1.7 % (GDP)<br>Period: 2021<br>REMIND_54 region code: CAN<br>Countries in region: Canada"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(8,81,156,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [3.3715594193754672, 3.4530498467692019, 3.1671436374352555, 3.1121468194820467, 2.8607519279081082, 2.7858257618013686, 2.870994276836325, 2.9238828778315349, 2.94448827731371, 2.7977895759613109, 3.0536384764001658, 2.6330163534935092, 2.7188807007103142, 2.9136881491211382, 3.2254122667113516, 2.9850706967337302, 2.7063395045663303, 2.6127061704595151, 2.864292526717291],
+      "text": ["Value added - agriculture: 3.37 % (GDP)<br>Period: 2003<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Value added - agriculture: 3.45 % (GDP)<br>Period: 2004<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Value added - agriculture: 3.17 % (GDP)<br>Period: 2005<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Value added - agriculture: 3.11 % (GDP)<br>Period: 2006<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Value added - agriculture: 2.86 % (GDP)<br>Period: 2007<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Value added - agriculture: 2.79 % (GDP)<br>Period: 2008<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Value added - agriculture: 2.87 % (GDP)<br>Period: 2009<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Value added - agriculture: 2.92 % (GDP)<br>Period: 2010<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Value added - agriculture: 2.94 % (GDP)<br>Period: 2011<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Value added - agriculture: 2.8 % (GDP)<br>Period: 2012<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Value added - agriculture: 3.05 % (GDP)<br>Period: 2013<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Value added - agriculture: 2.63 % (GDP)<br>Period: 2014<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Value added - agriculture: 2.72 % (GDP)<br>Period: 2015<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Value added - agriculture: 2.91 % (GDP)<br>Period: 2016<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Value added - agriculture: 3.23 % (GDP)<br>Period: 2017<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Value added - agriculture: 2.99 % (GDP)<br>Period: 2018<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Value added - agriculture: 2.71 % (GDP)<br>Period: 2019<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Value added - agriculture: 2.61 % (GDP)<br>Period: 2020<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Value added - agriculture: 2.86 % (GDP)<br>Period: 2021<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(33,113,181,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [3.3900000000000001, 3.3399999999999999, 3.0699999999999998, 3.0800000000000001, 3.1800000000000002, 3.1599999999999997, 3.2399999999999998, 3.2200000000000006, 3.0899999999999999, 3.1699999999999999, 3.1400000000000006, 3.1299999999999999, 3.1899999999999999, 3.3500000000000001, 3.3799999999999999, 3.3799999999999994, 3.3900000000000001, 3.7999999999999998, 3.8899999999999997],
+      "text": ["Value added - agriculture: 3.39 % (GDP)<br>Period: 2003<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Value added - agriculture: 3.34 % (GDP)<br>Period: 2004<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Value added - agriculture: 3.07 % (GDP)<br>Period: 2005<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Value added - agriculture: 3.08 % (GDP)<br>Period: 2006<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Value added - agriculture: 3.18 % (GDP)<br>Period: 2007<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Value added - agriculture: 3.16 % (GDP)<br>Period: 2008<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Value added - agriculture: 3.24 % (GDP)<br>Period: 2009<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Value added - agriculture: 3.22 % (GDP)<br>Period: 2010<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Value added - agriculture: 3.09 % (GDP)<br>Period: 2011<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Value added - agriculture: 3.17 % (GDP)<br>Period: 2012<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Value added - agriculture: 3.14 % (GDP)<br>Period: 2013<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Value added - agriculture: 3.13 % (GDP)<br>Period: 2014<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Value added - agriculture: 3.19 % (GDP)<br>Period: 2015<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Value added - agriculture: 3.35 % (GDP)<br>Period: 2016<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Value added - agriculture: 3.38 % (GDP)<br>Period: 2017<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Value added - agriculture: 3.38 % (GDP)<br>Period: 2018<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Value added - agriculture: 3.39 % (GDP)<br>Period: 2019<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Value added - agriculture: 3.8 % (GDP)<br>Period: 2020<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Value added - agriculture: 3.89 % (GDP)<br>Period: 2021<br>REMIND_54 region code: MEX<br>Countries in region: Mexico"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(35,139,69,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1.26, 1.3400000000000001, 1.3600000000000003, 1.3700000000000001, 1.2, 1.0800000000000001, 1.2399999999999998, 1.52, 1.3, 1.0800000000000001, 1.25, 1.3799999999999999, 1.4800000000000002, 2.0299999999999998, 1.9199999999999999, 1.8099999999999998, 1.7799999999999998, 1.8399999999999999, 1.6499999999999997],
+      "text": ["Value added - agriculture: 1.26 % (GDP)<br>Period: 2003<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Value added - agriculture: 1.34 % (GDP)<br>Period: 2004<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Value added - agriculture: 1.36 % (GDP)<br>Period: 2005<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Value added - agriculture: 1.37 % (GDP)<br>Period: 2006<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Value added - agriculture: 1.2 % (GDP)<br>Period: 2007<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Value added - agriculture: 1.08 % (GDP)<br>Period: 2008<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Value added - agriculture: 1.24 % (GDP)<br>Period: 2009<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Value added - agriculture: 1.52 % (GDP)<br>Period: 2010<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Value added - agriculture: 1.3 % (GDP)<br>Period: 2011<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Value added - agriculture: 1.08 % (GDP)<br>Period: 2012<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Value added - agriculture: 1.25 % (GDP)<br>Period: 2013<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Value added - agriculture: 1.38 % (GDP)<br>Period: 2014<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Value added - agriculture: 1.48 % (GDP)<br>Period: 2015<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Value added - agriculture: 2.03 % (GDP)<br>Period: 2016<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Value added - agriculture: 1.92 % (GDP)<br>Period: 2017<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Value added - agriculture: 1.81 % (GDP)<br>Period: 2018<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Value added - agriculture: 1.78 % (GDP)<br>Period: 2019<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Value added - agriculture: 1.84 % (GDP)<br>Period: 2020<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Value added - agriculture: 1.65 % (GDP)<br>Period: 2021<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(35,139,69,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [6.1699999999999999, 5.6699999999999999, 4.6500000000000004, 4.3700000000000001, 4.4199999999999999, 4.5699999999999994, 4.4800000000000004, 4.1200000000000001, 4.3399999999999999, 4.1699999999999999, 4.5099999999999989, 4.3300000000000001, 4.3200000000000003, 4.8899999999999997, 4.5999999999999996, 4.4199999999999999, 4.21, 5.71, 7.4899999999999993],
+      "text": ["Value added - agriculture: 6.17 % (GDP)<br>Period: 2003<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Value added - agriculture: 5.67 % (GDP)<br>Period: 2004<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Value added - agriculture: 4.65 % (GDP)<br>Period: 2005<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Value added - agriculture: 4.37 % (GDP)<br>Period: 2006<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Value added - agriculture: 4.42 % (GDP)<br>Period: 2007<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Value added - agriculture: 4.57 % (GDP)<br>Period: 2008<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Value added - agriculture: 4.48 % (GDP)<br>Period: 2009<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Value added - agriculture: 4.12 % (GDP)<br>Period: 2010<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Value added - agriculture: 4.34 % (GDP)<br>Period: 2011<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Value added - agriculture: 4.17 % (GDP)<br>Period: 2012<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Value added - agriculture: 4.51 % (GDP)<br>Period: 2013<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Value added - agriculture: 4.33 % (GDP)<br>Period: 2014<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Value added - agriculture: 4.32 % (GDP)<br>Period: 2015<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Value added - agriculture: 4.89 % (GDP)<br>Period: 2016<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Value added - agriculture: 4.6 % (GDP)<br>Period: 2017<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Value added - agriculture: 4.42 % (GDP)<br>Period: 2018<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Value added - agriculture: 4.21 % (GDP)<br>Period: 2019<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Value added - agriculture: 5.71 % (GDP)<br>Period: 2020<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Value added - agriculture: 7.49 % (GDP)<br>Period: 2021<br>REMIND_54 region code: BRA<br>Countries in region: Brazil"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(65,171,93,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [11.316173093957065, 11.111905796019041, 9.605222628982462, 8.2035301696373271, 7.1550074254428075, 7.4168776822611209, 7.5798273877038227, 7.9672247207720739, 8.6002389217673922, 8.109488904605735, 9.0073168679104718, 9.9908774419168029, 11.086005340170239, 10.834077271560769, 9.5431362652439109, 9.5110439427885076, 8.6579009998155421, 9.0210514487895015, 9.9230223554278503],
+      "text": ["Value added - agriculture: 11.32 % (GDP)<br>Period: 2003<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Value added - agriculture: 11.11 % (GDP)<br>Period: 2004<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Value added - agriculture: 9.61 % (GDP)<br>Period: 2005<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Value added - agriculture: 8.2 % (GDP)<br>Period: 2006<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Value added - agriculture: 7.16 % (GDP)<br>Period: 2007<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Value added - agriculture: 7.42 % (GDP)<br>Period: 2008<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Value added - agriculture: 7.58 % (GDP)<br>Period: 2009<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; San Marino; Monaco; Holy See (Vatican City State)", "Value added - agriculture: 7.97 % (GDP)<br>Period: 2010<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; San Marino; Monaco; Holy See (Vatican City State)", "Value added - agriculture: 8.6 % (GDP)<br>Period: 2011<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Value added - agriculture: 8.11 % (GDP)<br>Period: 2012<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Value added - agriculture: 9.01 % (GDP)<br>Period: 2013<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Value added - agriculture: 9.99 % (GDP)<br>Period: 2014<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Value added - agriculture: 11.09 % (GDP)<br>Period: 2015<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Value added - agriculture: 10.83 % (GDP)<br>Period: 2016<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Value added - agriculture: 9.54 % (GDP)<br>Period: 2017<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Value added - agriculture: 9.51 % (GDP)<br>Period: 2018<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Value added - agriculture: 8.66 % (GDP)<br>Period: 2019<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Value added - agriculture: 9.02 % (GDP)<br>Period: 2020<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Value added - agriculture: 9.92 % (GDP)<br>Period: 2021<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(65,171,93,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [2.96, 2.9599999999999995, 2.6200000000000001, 2.5, 2.2799999999999998, 2.1400000000000001, 2.2400000000000002, 2.1400000000000001, 2.21, 2.1899999999999999, 2.1000000000000001, 2.0600000000000001, 2, 1.8600000000000001, 1.8500000000000001, 1.75, 1.6699999999999999, 1.7700000000000002, 1.7899999999999998],
+      "text": ["Value added - agriculture: 2.96 % (GDP)<br>Period: 2003<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Value added - agriculture: 2.96 % (GDP)<br>Period: 2004<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Value added - agriculture: 2.62 % (GDP)<br>Period: 2005<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Value added - agriculture: 2.5 % (GDP)<br>Period: 2006<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Value added - agriculture: 2.28 % (GDP)<br>Period: 2007<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Value added - agriculture: 2.14 % (GDP)<br>Period: 2008<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Value added - agriculture: 2.24 % (GDP)<br>Period: 2009<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Value added - agriculture: 2.14 % (GDP)<br>Period: 2010<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Value added - agriculture: 2.21 % (GDP)<br>Period: 2011<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Value added - agriculture: 2.19 % (GDP)<br>Period: 2012<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Value added - agriculture: 2.1 % (GDP)<br>Period: 2013<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Value added - agriculture: 2.06 % (GDP)<br>Period: 2014<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Value added - agriculture: 2 % (GDP)<br>Period: 2015<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Value added - agriculture: 1.86 % (GDP)<br>Period: 2016<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Value added - agriculture: 1.85 % (GDP)<br>Period: 2017<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Value added - agriculture: 1.75 % (GDP)<br>Period: 2018<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Value added - agriculture: 1.67 % (GDP)<br>Period: 2019<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Value added - agriculture: 1.77 % (GDP)<br>Period: 2020<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Value added - agriculture: 1.79 % (GDP)<br>Period: 2021<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(77,0,75,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [13.149999999999999, 13.980000000000002, 13.52, 13.359999999999999, 13.609999999999999, 14.52, 14.539999999999999, 13.75, 14.100000000000001, 13.100000000000001, 12.470000000000001, 12.27, 11.000000000000002, 10.210000000000001, 10.18, 9.6500000000000004, 8.8200000000000003, 10.190000000000001, 10.07],
+      "text": ["Value added - agriculture: 13.15 % (GDP)<br>Period: 2003<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Value added - agriculture: 13.98 % (GDP)<br>Period: 2004<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Value added - agriculture: 13.52 % (GDP)<br>Period: 2005<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Value added - agriculture: 13.36 % (GDP)<br>Period: 2006<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Value added - agriculture: 13.61 % (GDP)<br>Period: 2007<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Value added - agriculture: 14.52 % (GDP)<br>Period: 2008<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Value added - agriculture: 14.54 % (GDP)<br>Period: 2009<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Value added - agriculture: 13.75 % (GDP)<br>Period: 2010<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Value added - agriculture: 14.1 % (GDP)<br>Period: 2011<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Value added - agriculture: 13.1 % (GDP)<br>Period: 2012<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Value added - agriculture: 12.47 % (GDP)<br>Period: 2013<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Value added - agriculture: 12.27 % (GDP)<br>Period: 2014<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Value added - agriculture: 11 % (GDP)<br>Period: 2015<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Value added - agriculture: 10.21 % (GDP)<br>Period: 2016<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Value added - agriculture: 10.18 % (GDP)<br>Period: 2017<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Value added - agriculture: 9.65 % (GDP)<br>Period: 2018<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Value added - agriculture: 8.82 % (GDP)<br>Period: 2019<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Value added - agriculture: 10.19 % (GDP)<br>Period: 2020<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Value added - agriculture: 10.07 % (GDP)<br>Period: 2021<br>REMIND_54 region code: PHL<br>Countries in region: Philippines"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(77,0,75,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [19.814799843691659, 18.276722490657271, 18.000729275616699, 17.157921376248936, 16.348903605953858, 14.352867666313731, 13.634794760943263, 16.094693976015957, 17.099969608336142, 16.745653277979947, 16.051231922672837, 16.604317490904354, 16.658500866991908, 16.536680759237544, 16.279480721856693, 15.294527455391485, 14.696737459007581, 15.524098009844337, 15.293958431791976],
+      "text": ["Value added - agriculture: 19.81 % (GDP)<br>Period: 2003<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Value added - agriculture: 18.28 % (GDP)<br>Period: 2004<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Value added - agriculture: 18 % (GDP)<br>Period: 2005<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Value added - agriculture: 17.16 % (GDP)<br>Period: 2006<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Value added - agriculture: 16.35 % (GDP)<br>Period: 2007<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Value added - agriculture: 14.35 % (GDP)<br>Period: 2008<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Value added - agriculture: 13.63 % (GDP)<br>Period: 2009<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Value added - agriculture: 16.09 % (GDP)<br>Period: 2010<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Value added - agriculture: 17.1 % (GDP)<br>Period: 2011<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Value added - agriculture: 16.75 % (GDP)<br>Period: 2012<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Value added - agriculture: 16.05 % (GDP)<br>Period: 2013<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Value added - agriculture: 16.6 % (GDP)<br>Period: 2014<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Value added - agriculture: 16.66 % (GDP)<br>Period: 2015<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Value added - agriculture: 16.54 % (GDP)<br>Period: 2016<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Value added - agriculture: 16.28 % (GDP)<br>Period: 2017<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Value added - agriculture: 15.29 % (GDP)<br>Period: 2018<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Value added - agriculture: 14.7 % (GDP)<br>Period: 2019<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Tajikistan; Belarus; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Value added - agriculture: 15.52 % (GDP)<br>Period: 2020<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Tajikistan; Belarus; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Value added - agriculture: 15.29 % (GDP)<br>Period: 2021<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Tajikistan; Belarus; Turkmenistan; Kyrgyzstan; Mongolia; Armenia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(105,105,105,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [8.3300000000000001, 7.9100000000000001, 7.5300000000000011, 7.1899999999999995, 6.9299999999999997, 6.6899999999999995, 6.6900000000000004, 6.3200000000000003, 6.0899999999999999, 5.5800000000000001, 5.3899999999999997, 5.4500000000000002, 5.9799999999999995, 6.6099999999999994, 6.3899999999999997, 6.2300000000000004, 6.410000000000001, 7.4700000000000006, 7.6399999999999997],
+      "text": ["Value added - agriculture: 8.33 % (GDP)<br>Period: 2003<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Value added - agriculture: 7.91 % (GDP)<br>Period: 2004<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Value added - agriculture: 7.53 % (GDP)<br>Period: 2005<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Value added - agriculture: 7.19 % (GDP)<br>Period: 2006<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Value added - agriculture: 6.93 % (GDP)<br>Period: 2007<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Value added - agriculture: 6.69 % (GDP)<br>Period: 2008<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Value added - agriculture: 6.69 % (GDP)<br>Period: 2009<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Value added - agriculture: 6.32 % (GDP)<br>Period: 2010<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Value added - agriculture: 6.09 % (GDP)<br>Period: 2011<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Value added - agriculture: 5.58 % (GDP)<br>Period: 2012<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Value added - agriculture: 5.39 % (GDP)<br>Period: 2013<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Value added - agriculture: 5.45 % (GDP)<br>Period: 2014<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Value added - agriculture: 5.98 % (GDP)<br>Period: 2015<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Value added - agriculture: 6.61 % (GDP)<br>Period: 2016<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Value added - agriculture: 6.39 % (GDP)<br>Period: 2017<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Value added - agriculture: 6.23 % (GDP)<br>Period: 2018<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Value added - agriculture: 6.41 % (GDP)<br>Period: 2019<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Value added - agriculture: 7.47 % (GDP)<br>Period: 2020<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Value added - agriculture: 7.64 % (GDP)<br>Period: 2021<br>REMIND_54 region code: COL<br>Countries in region: Colombia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(116,196,118,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [24.189012872593569, 23.815782801742699, 23.938100834126743, 22.279957696448033, 21.4616006474972, 22.36334658957707, 22.839912959995374, 22.303897850151959, 21.467580642953088, 21.367690179017746, 20.750019518125939, 20.277875464737178, 20.502016970940272, 20.640870708736085, 20.966594650067723, 20.403418358747402, 20.102109077167462, 20.956096740517726, 20.686046363180282],
+      "text": ["Value added - agriculture: 24.19 % (GDP)<br>Period: 2003<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Madagascar; Angola; Cameroon; Burkina Faso; Zimbabwe; Malawi; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Lesotho; Namibia; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Reunion; Djibouti; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Value added - agriculture: 23.82 % (GDP)<br>Period: 2004<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Madagascar; Angola; Cameroon; Burkina Faso; Malawi; Zimbabwe; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Lesotho; Namibia; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Value added - agriculture: 23.94 % (GDP)<br>Period: 2005<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Angola; Madagascar; Cameroon; Burkina Faso; Malawi; Zimbabwe; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Lesotho; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Value added - agriculture: 22.28 % (GDP)<br>Period: 2006<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Angola; Madagascar; Cameroon; Burkina Faso; Malawi; Zimbabwe; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Lesotho; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Value added - agriculture: 21.46 % (GDP)<br>Period: 2007<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Angola; Madagascar; Cameroon; Burkina Faso; Malawi; Zimbabwe; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Lesotho; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Value added - agriculture: 22.36 % (GDP)<br>Period: 2008<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Angola; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Lesotho; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Value added - agriculture: 22.84 % (GDP)<br>Period: 2009<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Botswana; Lesotho; Gambia; Gabon; Guinea-Bissau; Mauritius; Equatorial Guinea; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Value added - agriculture: 22.3 % (GDP)<br>Period: 2010<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Botswana; Lesotho; Gambia; Gabon; Guinea-Bissau; Mauritius; Equatorial Guinea; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Value added - agriculture: 21.47 % (GDP)<br>Period: 2011<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; South Sudan; Benin; Burundi; Togo; Sierra Leone; Congo; Central African Republic; Liberia; Eritrea; Namibia; Botswana; Lesotho; Gambia; Gabon; Guinea-Bissau; Mauritius; Equatorial Guinea; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Value added - agriculture: 21.37 % (GDP)<br>Period: 2012<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; South Sudan; Benin; Burundi; Togo; Sierra Leone; Congo; Central African Republic; Liberia; Eritrea; Namibia; Botswana; Gambia; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Value added - agriculture: 20.75 % (GDP)<br>Period: 2013<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; South Sudan; Rwanda; Benin; Burundi; Togo; Sierra Leone; Congo; Central African Republic; Liberia; Eritrea; Namibia; Botswana; Gambia; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Value added - agriculture: 20.28 % (GDP)<br>Period: 2014<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; South Sudan; Benin; Burundi; Togo; Sierra Leone; Congo; Central African Republic; Liberia; Eritrea; Namibia; Botswana; Gambia; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Value added - agriculture: 20.5 % (GDP)<br>Period: 2015<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Zimbabwe; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Value added - agriculture: 20.64 % (GDP)<br>Period: 2016<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Zimbabwe; Somalia; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Value added - agriculture: 20.97 % (GDP)<br>Period: 2017<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Somalia; Zimbabwe; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Value added - agriculture: 20.4 % (GDP)<br>Period: 2018<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Somalia; Zimbabwe; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Gabon; Lesotho; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Value added - agriculture: 20.1 % (GDP)<br>Period: 2019<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Somalia; Zimbabwe; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Gabon; Lesotho; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Value added - agriculture: 20.96 % (GDP)<br>Period: 2020<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Somalia; Zimbabwe; Guinea; Benin; Rwanda; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Gabon; Lesotho; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Value added - agriculture: 20.69 % (GDP)<br>Period: 2021<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Somalia; Senegal; Zimbabwe; Guinea; Benin; Rwanda; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Gabon; Lesotho; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(122,1,119,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [5.5, 4.9000000000000004, 4.2599999999999998, 3.8600000000000003, 3.7799999999999998, 3.75, 4.0800000000000001, 3.3399999999999999, 3.1500000000000004, 2.9300000000000002, 2.9900000000000002, 3.3599999999999999, 3.8700000000000001, 3.8399999999999994, 3.5499999999999998, 3.3900000000000001, 3.5300000000000002, 4.0099999999999998, 3.8700000000000001],
+      "text": ["Value added - agriculture: 5.5 % (GDP)<br>Period: 2003<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Value added - agriculture: 4.9 % (GDP)<br>Period: 2004<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Value added - agriculture: 4.26 % (GDP)<br>Period: 2005<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Value added - agriculture: 3.86 % (GDP)<br>Period: 2006<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Value added - agriculture: 3.78 % (GDP)<br>Period: 2007<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Value added - agriculture: 3.75 % (GDP)<br>Period: 2008<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Value added - agriculture: 4.08 % (GDP)<br>Period: 2009<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Value added - agriculture: 3.34 % (GDP)<br>Period: 2010<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Value added - agriculture: 3.15 % (GDP)<br>Period: 2011<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Value added - agriculture: 2.93 % (GDP)<br>Period: 2012<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Value added - agriculture: 2.99 % (GDP)<br>Period: 2013<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Value added - agriculture: 3.36 % (GDP)<br>Period: 2014<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Value added - agriculture: 3.87 % (GDP)<br>Period: 2015<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Value added - agriculture: 3.84 % (GDP)<br>Period: 2016<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Value added - agriculture: 3.55 % (GDP)<br>Period: 2017<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Value added - agriculture: 3.39 % (GDP)<br>Period: 2018<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Value added - agriculture: 3.53 % (GDP)<br>Period: 2019<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Value added - agriculture: 4.01 % (GDP)<br>Period: 2020<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Value added - agriculture: 3.87 % (GDP)<br>Period: 2021<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(128,128,128,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [36.011820873319671, 32.185659138055151, 32.35723258380537, 30.403453470410106, 30.466979444043155, 27.483200162447577, 30.127557613049284, 29.45092478806998, 26.999254300025385, 26.926758960738571, 25.378880602618977, 24.454178302825163, 23.182995725800481, 25.509123484439606, 25.104615339825312, 22.094077971456006, 23.880009653015787, 24.78076288864974, 28.5140157982968],
+      "text": ["Value added - agriculture: 36.01 % (GDP)<br>Period: 2003<br>REMIND_54 region code: OAS_other<br>Countries in region: Nepal; Afghanistan; Bhutan", "Value added - agriculture: 32.19 % (GDP)<br>Period: 2004<br>REMIND_54 region code: OAS_other<br>Countries in region: Nepal; Afghanistan; Bhutan", "Value added - agriculture: 32.36 % (GDP)<br>Period: 2005<br>REMIND_54 region code: OAS_other<br>Countries in region: Nepal; Afghanistan; Bhutan", "Value added - agriculture: 30.4 % (GDP)<br>Period: 2006<br>REMIND_54 region code: OAS_other<br>Countries in region: Nepal; Afghanistan; Bhutan", "Value added - agriculture: 30.47 % (GDP)<br>Period: 2007<br>REMIND_54 region code: OAS_other<br>Countries in region: Nepal; Afghanistan; Bhutan", "Value added - agriculture: 27.48 % (GDP)<br>Period: 2008<br>REMIND_54 region code: OAS_other<br>Countries in region: Nepal; Afghanistan; Bhutan", "Value added - agriculture: 30.13 % (GDP)<br>Period: 2009<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Value added - agriculture: 29.45 % (GDP)<br>Period: 2010<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Value added - agriculture: 27 % (GDP)<br>Period: 2011<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Value added - agriculture: 26.93 % (GDP)<br>Period: 2012<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Value added - agriculture: 25.38 % (GDP)<br>Period: 2013<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Value added - agriculture: 24.45 % (GDP)<br>Period: 2014<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Value added - agriculture: 23.18 % (GDP)<br>Period: 2015<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Value added - agriculture: 25.51 % (GDP)<br>Period: 2016<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Value added - agriculture: 25.1 % (GDP)<br>Period: 2017<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Value added - agriculture: 22.09 % (GDP)<br>Period: 2018<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Value added - agriculture: 23.88 % (GDP)<br>Period: 2019<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Value added - agriculture: 24.78 % (GDP)<br>Period: 2020<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Value added - agriculture: 28.51 % (GDP)<br>Period: 2021<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(129,15,124,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [22.539999999999999, 21.809999999999999, 19.299999999999997, 18.73, 18.660000000000004, 20.41, 19.170000000000002, 15.379999999999999, 16.260000000000002, 16.199999999999999, 15.220000000000001, 14.880000000000003, 14.470000000000001, 13.82, 12.930000000000001, 12.310000000000002, 11.779999999999999, 12.66, 12.56],
+      "text": ["Value added - agriculture: 22.54 % (GDP)<br>Period: 2003<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Value added - agriculture: 21.81 % (GDP)<br>Period: 2004<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Value added - agriculture: 19.3 % (GDP)<br>Period: 2005<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Value added - agriculture: 18.73 % (GDP)<br>Period: 2006<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Value added - agriculture: 18.66 % (GDP)<br>Period: 2007<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Value added - agriculture: 20.41 % (GDP)<br>Period: 2008<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Value added - agriculture: 19.17 % (GDP)<br>Period: 2009<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Value added - agriculture: 15.38 % (GDP)<br>Period: 2010<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Value added - agriculture: 16.26 % (GDP)<br>Period: 2011<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Value added - agriculture: 16.2 % (GDP)<br>Period: 2012<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Value added - agriculture: 15.22 % (GDP)<br>Period: 2013<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Value added - agriculture: 14.88 % (GDP)<br>Period: 2014<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Value added - agriculture: 14.47 % (GDP)<br>Period: 2015<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Value added - agriculture: 13.82 % (GDP)<br>Period: 2016<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Value added - agriculture: 12.93 % (GDP)<br>Period: 2017<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Value added - agriculture: 12.31 % (GDP)<br>Period: 2018<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Value added - agriculture: 11.78 % (GDP)<br>Period: 2019<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Value added - agriculture: 12.66 % (GDP)<br>Period: 2020<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Value added - agriculture: 12.56 % (GDP)<br>Period: 2021<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(129,15,124,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [22.859999999999999, 23.080000000000002, 22.960000000000001, 21.609999999999999, 21.800000000000001, 22.500000000000004, 22.719999999999999, 23.280000000000001, 25.130000000000003, 23.710000000000001, 23.830000000000002, 23.739999999999998, 23.82, 22.329999999999995, 21.960000000000001, 21.649999999999999, 20.68, 21.850000000000001, 22.670000000000005],
+      "text": ["Value added - agriculture: 22.86 % (GDP)<br>Period: 2003<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Value added - agriculture: 23.08 % (GDP)<br>Period: 2004<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Value added - agriculture: 22.96 % (GDP)<br>Period: 2005<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Value added - agriculture: 21.61 % (GDP)<br>Period: 2006<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Value added - agriculture: 21.8 % (GDP)<br>Period: 2007<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Value added - agriculture: 22.5 % (GDP)<br>Period: 2008<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Value added - agriculture: 22.72 % (GDP)<br>Period: 2009<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Value added - agriculture: 23.28 % (GDP)<br>Period: 2010<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Value added - agriculture: 25.13 % (GDP)<br>Period: 2011<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Value added - agriculture: 23.71 % (GDP)<br>Period: 2012<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Value added - agriculture: 23.83 % (GDP)<br>Period: 2013<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Value added - agriculture: 23.74 % (GDP)<br>Period: 2014<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Value added - agriculture: 23.82 % (GDP)<br>Period: 2015<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Value added - agriculture: 22.33 % (GDP)<br>Period: 2016<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Value added - agriculture: 21.96 % (GDP)<br>Period: 2017<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Value added - agriculture: 21.65 % (GDP)<br>Period: 2018<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Value added - agriculture: 20.68 % (GDP)<br>Period: 2019<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Value added - agriculture: 21.85 % (GDP)<br>Period: 2020<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Value added - agriculture: 22.67 % (GDP)<br>Period: 2021<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(136,65,157,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [19.809999999999999, 19.27, 18.57, 18.030000000000001, 17.809999999999999, 17.600000000000001, 17.100000000000001, 17, 16.809999999999999, 16.18, 15.49, 15.350000000000001, 14.779999999999999, 13.459999999999999, 12.960000000000003, 12.48, 11.98, 12, 11.630000000000001],
+      "text": ["Value added - agriculture: 19.81 % (GDP)<br>Period: 2003<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Value added - agriculture: 19.27 % (GDP)<br>Period: 2004<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Value added - agriculture: 18.57 % (GDP)<br>Period: 2005<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Value added - agriculture: 18.03 % (GDP)<br>Period: 2006<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Value added - agriculture: 17.81 % (GDP)<br>Period: 2007<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Value added - agriculture: 17.6 % (GDP)<br>Period: 2008<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Value added - agriculture: 17.1 % (GDP)<br>Period: 2009<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Value added - agriculture: 17 % (GDP)<br>Period: 2010<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Value added - agriculture: 16.81 % (GDP)<br>Period: 2011<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Value added - agriculture: 16.18 % (GDP)<br>Period: 2012<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Value added - agriculture: 15.49 % (GDP)<br>Period: 2013<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Value added - agriculture: 15.35 % (GDP)<br>Period: 2014<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Value added - agriculture: 14.78 % (GDP)<br>Period: 2015<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Value added - agriculture: 13.46 % (GDP)<br>Period: 2016<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Value added - agriculture: 12.96 % (GDP)<br>Period: 2017<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Value added - agriculture: 12.48 % (GDP)<br>Period: 2018<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Value added - agriculture: 11.98 % (GDP)<br>Period: 2019<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Value added - agriculture: 12 % (GDP)<br>Period: 2020<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Value added - agriculture: 11.63 % (GDP)<br>Period: 2021<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(140,107,177,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [15.189999999999998, 14.340000000000002, 13.130000000000001, 12.970000000000001, 13.720000000000001, 14.48, 15.289999999999999, 13.929999999999998, 13.51, 13.369999999999999, 13.359999999999999, 13.34, 13.49, 13.48, 13.16, 12.809999999999999, 12.710000000000003, 13.699999999999999, 13.279999999999999],
+      "text": ["Value added - agriculture: 15.19 % (GDP)<br>Period: 2003<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Value added - agriculture: 14.34 % (GDP)<br>Period: 2004<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Value added - agriculture: 13.13 % (GDP)<br>Period: 2005<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Value added - agriculture: 12.97 % (GDP)<br>Period: 2006<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Value added - agriculture: 13.72 % (GDP)<br>Period: 2007<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Value added - agriculture: 14.48 % (GDP)<br>Period: 2008<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Value added - agriculture: 15.29 % (GDP)<br>Period: 2009<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Value added - agriculture: 13.93 % (GDP)<br>Period: 2010<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Value added - agriculture: 13.51 % (GDP)<br>Period: 2011<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Value added - agriculture: 13.37 % (GDP)<br>Period: 2012<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Value added - agriculture: 13.36 % (GDP)<br>Period: 2013<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Value added - agriculture: 13.34 % (GDP)<br>Period: 2014<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Value added - agriculture: 13.49 % (GDP)<br>Period: 2015<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Value added - agriculture: 13.48 % (GDP)<br>Period: 2016<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Value added - agriculture: 13.16 % (GDP)<br>Period: 2017<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Value added - agriculture: 12.81 % (GDP)<br>Period: 2018<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Value added - agriculture: 12.71 % (GDP)<br>Period: 2019<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Value added - agriculture: 13.7 % (GDP)<br>Period: 2020<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Value added - agriculture: 13.28 % (GDP)<br>Period: 2021<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(140,107,177,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [30.947156629665447, 29.185004967400971, 27.677227874222975, 26.204471292945826, 25.766091441693337, 25.4875696292494, 24.384192843897658, 23.210648459460426, 22.456492538434127, 20.536352777886059, 19.682043802980974, 18.734267117578497, 17.840831294561855, 17.360261313448746, 16.548745913552153, 15.425577643228776, 14.605691820353837, 15.195244468818915, 16.491671878882762],
+      "text": ["Value added - agriculture: 30.95 % (GDP)<br>Period: 2003<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Norfolk Island; Niue; Tokelau; United States Minor Outlying Islands; Pitcairn", "Value added - agriculture: 29.19 % (GDP)<br>Period: 2004<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Norfolk Island; Niue; Tokelau; United States Minor Outlying Islands; Pitcairn", "Value added - agriculture: 27.68 % (GDP)<br>Period: 2005<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Value added - agriculture: 26.2 % (GDP)<br>Period: 2006<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Value added - agriculture: 25.77 % (GDP)<br>Period: 2007<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Value added - agriculture: 25.49 % (GDP)<br>Period: 2008<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Value added - agriculture: 24.38 % (GDP)<br>Period: 2009<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Value added - agriculture: 23.21 % (GDP)<br>Period: 2010<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Value added - agriculture: 22.46 % (GDP)<br>Period: 2011<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Value added - agriculture: 20.54 % (GDP)<br>Period: 2012<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Cook Islands; Palau; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Value added - agriculture: 19.68 % (GDP)<br>Period: 2013<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Cook Islands; Palau; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Value added - agriculture: 18.73 % (GDP)<br>Period: 2014<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Cook Islands; Palau; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Value added - agriculture: 17.84 % (GDP)<br>Period: 2015<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Value added - agriculture: 17.36 % (GDP)<br>Period: 2016<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Value added - agriculture: 16.55 % (GDP)<br>Period: 2017<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Value added - agriculture: 15.43 % (GDP)<br>Period: 2018<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; Vanuatu; New Caledonia; French Polynesia; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Value added - agriculture: 14.61 % (GDP)<br>Period: 2019<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; Vanuatu; New Caledonia; French Polynesia; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Value added - agriculture: 15.2 % (GDP)<br>Period: 2020<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; Vanuatu; New Caledonia; French Polynesia; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Tokelau; Norfolk Island; United States Minor Outlying Islands; Pitcairn", "Value added - agriculture: 16.49 % (GDP)<br>Period: 2021<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; Vanuatu; New Caledonia; French Polynesia; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Nauru; Wallis and Futuna; Tuvalu; Niue; Tokelau; Norfolk Island; United States Minor Outlying Islands; Pitcairn"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(140,107,177,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [9.4399999999999995, 9.2899999999999991, 9.1899999999999995, 9.4000000000000004, 9.3499999999999996, 10.07, 9.7899999999999991, 10.52, 11.59, 11.5, 11.32, 10.09, 8.8699999999999992, 8.4800000000000004, 8.4100000000000001, 8.1999999999999993, 8.1300000000000008, 8.6999999999999993, 8.7100000000000009],
+      "text": ["Value added - agriculture: 9.44 % (GDP)<br>Period: 2003<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Value added - agriculture: 9.29 % (GDP)<br>Period: 2004<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Value added - agriculture: 9.19 % (GDP)<br>Period: 2005<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Value added - agriculture: 9.4 % (GDP)<br>Period: 2006<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Value added - agriculture: 9.35 % (GDP)<br>Period: 2007<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Value added - agriculture: 10.07 % (GDP)<br>Period: 2008<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Value added - agriculture: 9.79 % (GDP)<br>Period: 2009<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Value added - agriculture: 10.52 % (GDP)<br>Period: 2010<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Value added - agriculture: 11.59 % (GDP)<br>Period: 2011<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Value added - agriculture: 11.5 % (GDP)<br>Period: 2012<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Value added - agriculture: 11.32 % (GDP)<br>Period: 2013<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Value added - agriculture: 10.09 % (GDP)<br>Period: 2014<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Value added - agriculture: 8.87 % (GDP)<br>Period: 2015<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Value added - agriculture: 8.48 % (GDP)<br>Period: 2016<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Value added - agriculture: 8.41 % (GDP)<br>Period: 2017<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Value added - agriculture: 8.2 % (GDP)<br>Period: 2018<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Value added - agriculture: 8.13 % (GDP)<br>Period: 2019<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Value added - agriculture: 8.7 % (GDP)<br>Period: 2020<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Value added - agriculture: 8.71 % (GDP)<br>Period: 2021<br>REMIND_54 region code: THA<br>Countries in region: Thailand"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(140,150,198,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1.3, 1.2300000000000002, 1.1100000000000001, 1.0800000000000001, 1.05, 1.05, 1.0800000000000001, 1.1100000000000001, 1.0800000000000001, 1.1200000000000001, 1.0700000000000001, 1, 1.03, 1.1200000000000001, 1.1299999999999999, 1.04, 1.0399999999999998, 1.03, 0.94999999999999996],
+      "text": ["Value added - agriculture: 1.3 % (GDP)<br>Period: 2003<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Value added - agriculture: 1.23 % (GDP)<br>Period: 2004<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Value added - agriculture: 1.11 % (GDP)<br>Period: 2005<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Value added - agriculture: 1.08 % (GDP)<br>Period: 2006<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Value added - agriculture: 1.05 % (GDP)<br>Period: 2007<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Value added - agriculture: 1.05 % (GDP)<br>Period: 2008<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Value added - agriculture: 1.08 % (GDP)<br>Period: 2009<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Value added - agriculture: 1.11 % (GDP)<br>Period: 2010<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Value added - agriculture: 1.08 % (GDP)<br>Period: 2011<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Value added - agriculture: 1.12 % (GDP)<br>Period: 2012<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Value added - agriculture: 1.07 % (GDP)<br>Period: 2013<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Value added - agriculture: 1 % (GDP)<br>Period: 2014<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Value added - agriculture: 1.03 % (GDP)<br>Period: 2015<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Value added - agriculture: 1.12 % (GDP)<br>Period: 2016<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Value added - agriculture: 1.13 % (GDP)<br>Period: 2017<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Value added - agriculture: 1.04 % (GDP)<br>Period: 2018<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Value added - agriculture: 1.04 % (GDP)<br>Period: 2019<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Value added - agriculture: 1.03 % (GDP)<br>Period: 2020<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Value added - agriculture: 0.95 % (GDP)<br>Period: 2021<br>REMIND_54 region code: JPN<br>Countries in region: Japan"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(152,0,67,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [21.827715656037544, 20.734040578634453, 19.876459936352497, 19.87795456269696, 20.16591789755272, 20.479192262888908, 20.557912638266355, 20.20522906232577, 19.032231816520355, 20.864432458023007, 20.085344597933773, 21.026645118213743, 21.843514663659501, 19.968408421367744, 20.274603349657735, 20.475229416985183, 19.718132113021294, 20.355015644136476, 16.765043398943462],
+      "text": ["Value added - agriculture: 21.83 % (GDP)<br>Period: 2003<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Tunisia; Chad; Libya; Mauritania; Western Sahara", "Value added - agriculture: 20.73 % (GDP)<br>Period: 2004<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Tunisia; Chad; Libya; Mauritania; Western Sahara", "Value added - agriculture: 19.88 % (GDP)<br>Period: 2005<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Value added - agriculture: 19.88 % (GDP)<br>Period: 2006<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Value added - agriculture: 20.17 % (GDP)<br>Period: 2007<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Value added - agriculture: 20.48 % (GDP)<br>Period: 2008<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Value added - agriculture: 20.56 % (GDP)<br>Period: 2009<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Value added - agriculture: 20.21 % (GDP)<br>Period: 2010<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Value added - agriculture: 19.03 % (GDP)<br>Period: 2011<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Value added - agriculture: 20.86 % (GDP)<br>Period: 2012<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Value added - agriculture: 20.09 % (GDP)<br>Period: 2013<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Value added - agriculture: 21.03 % (GDP)<br>Period: 2014<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Value added - agriculture: 21.84 % (GDP)<br>Period: 2015<br>REMIND_54 region code: NAF_other<br>Countries in region: Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Value added - agriculture: 19.97 % (GDP)<br>Period: 2016<br>REMIND_54 region code: NAF_other<br>Countries in region: Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Value added - agriculture: 20.27 % (GDP)<br>Period: 2017<br>REMIND_54 region code: NAF_other<br>Countries in region: Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Value added - agriculture: 20.48 % (GDP)<br>Period: 2018<br>REMIND_54 region code: NAF_other<br>Countries in region: Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Value added - agriculture: 19.72 % (GDP)<br>Period: 2019<br>REMIND_54 region code: NAF_other<br>Countries in region: Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Value added - agriculture: 20.36 % (GDP)<br>Period: 2020<br>REMIND_54 region code: NAF_other<br>Countries in region: Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Value added - agriculture: 16.77 % (GDP)<br>Period: 2021<br>REMIND_54 region code: NAF_other<br>Countries in region: Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(158,202,225,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [4.0899999999999999, 3.7599999999999998, 3.9199999999999995, 3.71, 3.5499999999999998, 3.4199999999999999, 3.7000000000000002, 3.4800000000000004, 3.6299999999999999, 3.27, 3.4700000000000002, 3.9500000000000002, 3.71, 4.2000000000000002, 4.2800000000000002, 3.9300000000000002, 3.9799999999999995, 4.04, 3.6499999999999999],
+      "text": ["Value added - agriculture: 4.09 % (GDP)<br>Period: 2003<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Value added - agriculture: 3.76 % (GDP)<br>Period: 2004<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Value added - agriculture: 3.92 % (GDP)<br>Period: 2005<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Value added - agriculture: 3.71 % (GDP)<br>Period: 2006<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Value added - agriculture: 3.55 % (GDP)<br>Period: 2007<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Value added - agriculture: 3.42 % (GDP)<br>Period: 2008<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Value added - agriculture: 3.7 % (GDP)<br>Period: 2009<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Value added - agriculture: 3.48 % (GDP)<br>Period: 2010<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Value added - agriculture: 3.63 % (GDP)<br>Period: 2011<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Value added - agriculture: 3.27 % (GDP)<br>Period: 2012<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Value added - agriculture: 3.47 % (GDP)<br>Period: 2013<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Value added - agriculture: 3.95 % (GDP)<br>Period: 2014<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Value added - agriculture: 3.71 % (GDP)<br>Period: 2015<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Value added - agriculture: 4.2 % (GDP)<br>Period: 2016<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Value added - agriculture: 4.28 % (GDP)<br>Period: 2017<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Value added - agriculture: 3.93 % (GDP)<br>Period: 2018<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Value added - agriculture: 3.98 % (GDP)<br>Period: 2019<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Value added - agriculture: 4.04 % (GDP)<br>Period: 2020<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Value added - agriculture: 3.65 % (GDP)<br>Period: 2021<br>REMIND_54 region code: CHL<br>Countries in region: Chile"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(161,217,155,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [9.8000000000000007, 9.3300000000000001, 9.1699999999999999, 8.0899999999999999, 7.4600000000000009, 7.4200000000000008, 8.0700000000000021, 8.9700000000000006, 8.1699999999999999, 7.6900000000000004, 6.6799999999999997, 6.5599999999999996, 6.8700000000000001, 6.1399999999999997, 6.0399999999999991, 5.7800000000000002, 6.410000000000001, 6.669999999999999, 5.54],
+      "text": ["Value added - agriculture: 9.8 % (GDP)<br>Period: 2003<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Value added - agriculture: 9.33 % (GDP)<br>Period: 2004<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Value added - agriculture: 9.17 % (GDP)<br>Period: 2005<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Value added - agriculture: 8.09 % (GDP)<br>Period: 2006<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Value added - agriculture: 7.46 % (GDP)<br>Period: 2007<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Value added - agriculture: 7.42 % (GDP)<br>Period: 2008<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Value added - agriculture: 8.07 % (GDP)<br>Period: 2009<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Value added - agriculture: 8.97 % (GDP)<br>Period: 2010<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Value added - agriculture: 8.17 % (GDP)<br>Period: 2011<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Value added - agriculture: 7.69 % (GDP)<br>Period: 2012<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Value added - agriculture: 6.68 % (GDP)<br>Period: 2013<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Value added - agriculture: 6.56 % (GDP)<br>Period: 2014<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Value added - agriculture: 6.87 % (GDP)<br>Period: 2015<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Value added - agriculture: 6.14 % (GDP)<br>Period: 2016<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Value added - agriculture: 6.04 % (GDP)<br>Period: 2017<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Value added - agriculture: 5.78 % (GDP)<br>Period: 2018<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Value added - agriculture: 6.41 % (GDP)<br>Period: 2019<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Value added - agriculture: 6.67 % (GDP)<br>Period: 2020<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Value added - agriculture: 5.54 % (GDP)<br>Period: 2021<br>REMIND_54 region code: TUR<br>Countries in region: Turkey"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(161,217,155,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [37.289999999999999, 38.68, 41.170000000000002, 42.520000000000003, 42.270000000000003, 45.179999999999993, 45.88000000000001, 41.450000000000003, 41.25, 44.329999999999998, 41.240000000000002, 38.520000000000003, 36.060000000000002, 34.700000000000003, 33.780000000000001, 31.219999999999995, 33.630000000000003, 35.560000000000002, 37.579999999999998],
+      "text": ["Value added - agriculture: 37.29 % (GDP)<br>Period: 2003<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Value added - agriculture: 38.68 % (GDP)<br>Period: 2004<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Value added - agriculture: 41.17 % (GDP)<br>Period: 2005<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Value added - agriculture: 42.52 % (GDP)<br>Period: 2006<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Value added - agriculture: 42.27 % (GDP)<br>Period: 2007<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Value added - agriculture: 45.18 % (GDP)<br>Period: 2008<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Value added - agriculture: 45.88 % (GDP)<br>Period: 2009<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Value added - agriculture: 41.45 % (GDP)<br>Period: 2010<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Value added - agriculture: 41.25 % (GDP)<br>Period: 2011<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Value added - agriculture: 44.33 % (GDP)<br>Period: 2012<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Value added - agriculture: 41.24 % (GDP)<br>Period: 2013<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Value added - agriculture: 38.52 % (GDP)<br>Period: 2014<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Value added - agriculture: 36.06 % (GDP)<br>Period: 2015<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Value added - agriculture: 34.7 % (GDP)<br>Period: 2016<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Value added - agriculture: 33.78 % (GDP)<br>Period: 2017<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Value added - agriculture: 31.22 % (GDP)<br>Period: 2018<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Value added - agriculture: 33.63 % (GDP)<br>Period: 2019<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Value added - agriculture: 35.56 % (GDP)<br>Period: 2020<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Value added - agriculture: 37.58 % (GDP)<br>Period: 2021<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(174,1,126,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [8.4890307063797437, 8.9014433247414964, 6.5194048277272953, 5.9571085751054591, 4.5773417487943462, 5.1456594957009232, 4.7039015519213345, 4.1952245183028074, 4.8843500265107815, 4.1298149095271555, 4.6135825622042113, 4.3206564689062104, 3.9695105799185453, 3.9289673876981701, 3.9413944060189441, 3.8523010562332356, 3.7074970951571329, 3.6751448629688412, 3.9555635104248994],
+      "text": ["Value added - agriculture: 8.49 % (GDP)<br>Period: 2003<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Value added - agriculture: 8.9 % (GDP)<br>Period: 2004<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Value added - agriculture: 6.52 % (GDP)<br>Period: 2005<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Value added - agriculture: 5.96 % (GDP)<br>Period: 2006<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Value added - agriculture: 4.58 % (GDP)<br>Period: 2007<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Value added - agriculture: 5.15 % (GDP)<br>Period: 2008<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Value added - agriculture: 4.7 % (GDP)<br>Period: 2009<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Value added - agriculture: 4.2 % (GDP)<br>Period: 2010<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Value added - agriculture: 4.88 % (GDP)<br>Period: 2011<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Value added - agriculture: 4.13 % (GDP)<br>Period: 2012<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Value added - agriculture: 4.61 % (GDP)<br>Period: 2013<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Value added - agriculture: 4.32 % (GDP)<br>Period: 2014<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Value added - agriculture: 3.97 % (GDP)<br>Period: 2015<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Value added - agriculture: 3.93 % (GDP)<br>Period: 2016<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Value added - agriculture: 3.94 % (GDP)<br>Period: 2017<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Value added - agriculture: 3.85 % (GDP)<br>Period: 2018<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Value added - agriculture: 3.71 % (GDP)<br>Period: 2019<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Value added - agriculture: 3.68 % (GDP)<br>Period: 2020<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Value added - agriculture: 3.96 % (GDP)<br>Period: 2021<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(217,72,1,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [7.4500000000000002, 6.8899999999999997, 6.5, 7.1199999999999992, 7.1900000000000004, 6.1200000000000001, 6.9200000000000008, 6.5, 4.6400000000000006, 6.8000000000000007, 8.7699999999999996, 9.3800000000000008, 10.09, 9.7799999999999994, 9.8300000000000001, 11.220000000000001, 13.320000000000002, 12.210000000000001, 12.390000000000001],
+      "text": ["Value added - agriculture: 7.45 % (GDP)<br>Period: 2003<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Value added - agriculture: 6.89 % (GDP)<br>Period: 2004<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Value added - agriculture: 6.5 % (GDP)<br>Period: 2005<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Value added - agriculture: 7.12 % (GDP)<br>Period: 2006<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Value added - agriculture: 7.19 % (GDP)<br>Period: 2007<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Value added - agriculture: 6.12 % (GDP)<br>Period: 2008<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Value added - agriculture: 6.92 % (GDP)<br>Period: 2009<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Value added - agriculture: 6.5 % (GDP)<br>Period: 2010<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Value added - agriculture: 4.64 % (GDP)<br>Period: 2011<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Value added - agriculture: 6.8 % (GDP)<br>Period: 2012<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Value added - agriculture: 8.77 % (GDP)<br>Period: 2013<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Value added - agriculture: 9.38 % (GDP)<br>Period: 2014<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Value added - agriculture: 10.09 % (GDP)<br>Period: 2015<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Value added - agriculture: 9.78 % (GDP)<br>Period: 2016<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Value added - agriculture: 9.83 % (GDP)<br>Period: 2017<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Value added - agriculture: 11.22 % (GDP)<br>Period: 2018<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Value added - agriculture: 13.32 % (GDP)<br>Period: 2019<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Value added - agriculture: 12.21 % (GDP)<br>Period: 2020<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Value added - agriculture: 12.39 % (GDP)<br>Period: 2021<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(217,72,1,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [19.589999999999996, 17.809999999999995, 17.620000000000001, 16.809999999999999, 16.75, 16.789999999999999, 16.739999999999998, 17.030000000000001, 17.190000000000001, 16.850000000000001, 17.150000000000002, 16.789999999999999, 16.170000000000002, 16.359999999999999, 16.559999999999995, 16.030000000000001, 16.760000000000002, 18.640000000000001, 17.329999999999998],
+      "text": ["Value added - agriculture: 19.59 % (GDP)<br>Period: 2003<br>REMIND_54 region code: IND<br>Countries in region: India", "Value added - agriculture: 17.81 % (GDP)<br>Period: 2004<br>REMIND_54 region code: IND<br>Countries in region: India", "Value added - agriculture: 17.62 % (GDP)<br>Period: 2005<br>REMIND_54 region code: IND<br>Countries in region: India", "Value added - agriculture: 16.81 % (GDP)<br>Period: 2006<br>REMIND_54 region code: IND<br>Countries in region: India", "Value added - agriculture: 16.75 % (GDP)<br>Period: 2007<br>REMIND_54 region code: IND<br>Countries in region: India", "Value added - agriculture: 16.79 % (GDP)<br>Period: 2008<br>REMIND_54 region code: IND<br>Countries in region: India", "Value added - agriculture: 16.74 % (GDP)<br>Period: 2009<br>REMIND_54 region code: IND<br>Countries in region: India", "Value added - agriculture: 17.03 % (GDP)<br>Period: 2010<br>REMIND_54 region code: IND<br>Countries in region: India", "Value added - agriculture: 17.19 % (GDP)<br>Period: 2011<br>REMIND_54 region code: IND<br>Countries in region: India", "Value added - agriculture: 16.85 % (GDP)<br>Period: 2012<br>REMIND_54 region code: IND<br>Countries in region: India", "Value added - agriculture: 17.15 % (GDP)<br>Period: 2013<br>REMIND_54 region code: IND<br>Countries in region: India", "Value added - agriculture: 16.79 % (GDP)<br>Period: 2014<br>REMIND_54 region code: IND<br>Countries in region: India", "Value added - agriculture: 16.17 % (GDP)<br>Period: 2015<br>REMIND_54 region code: IND<br>Countries in region: India", "Value added - agriculture: 16.36 % (GDP)<br>Period: 2016<br>REMIND_54 region code: IND<br>Countries in region: India", "Value added - agriculture: 16.56 % (GDP)<br>Period: 2017<br>REMIND_54 region code: IND<br>Countries in region: India", "Value added - agriculture: 16.03 % (GDP)<br>Period: 2018<br>REMIND_54 region code: IND<br>Countries in region: India", "Value added - agriculture: 16.76 % (GDP)<br>Period: 2019<br>REMIND_54 region code: IND<br>Countries in region: India", "Value added - agriculture: 18.64 % (GDP)<br>Period: 2020<br>REMIND_54 region code: IND<br>Countries in region: India", "Value added - agriculture: 17.33 % (GDP)<br>Period: 2021<br>REMIND_54 region code: IND<br>Countries in region: India"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(220,0,5,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1.1200000000000001, 1.2699999999999998, 1.1499999999999999, 1.01, 1.0799999999999998, 1.05, 0.95999999999999985, 1.03, 1.2, 1.1499999999999999, 1.3200000000000001, 1.1699999999999999, 1.03, 0.94000000000000006, 0.94999999999999996, 0.90000000000000002, 0.83999999999999997, 0.94999999999999996, 0.95999999999999985],
+      "text": ["Value added - agriculture: 1.12 % (GDP)<br>Period: 2003<br>REMIND_54 region code: USA<br>Countries in region: United States", "Value added - agriculture: 1.27 % (GDP)<br>Period: 2004<br>REMIND_54 region code: USA<br>Countries in region: United States", "Value added - agriculture: 1.15 % (GDP)<br>Period: 2005<br>REMIND_54 region code: USA<br>Countries in region: United States", "Value added - agriculture: 1.01 % (GDP)<br>Period: 2006<br>REMIND_54 region code: USA<br>Countries in region: United States", "Value added - agriculture: 1.08 % (GDP)<br>Period: 2007<br>REMIND_54 region code: USA<br>Countries in region: United States", "Value added - agriculture: 1.05 % (GDP)<br>Period: 2008<br>REMIND_54 region code: USA<br>Countries in region: United States", "Value added - agriculture: 0.96 % (GDP)<br>Period: 2009<br>REMIND_54 region code: USA<br>Countries in region: United States", "Value added - agriculture: 1.03 % (GDP)<br>Period: 2010<br>REMIND_54 region code: USA<br>Countries in region: United States", "Value added - agriculture: 1.2 % (GDP)<br>Period: 2011<br>REMIND_54 region code: USA<br>Countries in region: United States", "Value added - agriculture: 1.15 % (GDP)<br>Period: 2012<br>REMIND_54 region code: USA<br>Countries in region: United States", "Value added - agriculture: 1.32 % (GDP)<br>Period: 2013<br>REMIND_54 region code: USA<br>Countries in region: United States", "Value added - agriculture: 1.17 % (GDP)<br>Period: 2014<br>REMIND_54 region code: USA<br>Countries in region: United States", "Value added - agriculture: 1.03 % (GDP)<br>Period: 2015<br>REMIND_54 region code: USA<br>Countries in region: United States", "Value added - agriculture: 0.94 % (GDP)<br>Period: 2016<br>REMIND_54 region code: USA<br>Countries in region: United States", "Value added - agriculture: 0.95 % (GDP)<br>Period: 2017<br>REMIND_54 region code: USA<br>Countries in region: United States", "Value added - agriculture: 0.9 % (GDP)<br>Period: 2018<br>REMIND_54 region code: USA<br>Countries in region: United States", "Value added - agriculture: 0.84 % (GDP)<br>Period: 2019<br>REMIND_54 region code: USA<br>Countries in region: United States", "Value added - agriculture: 0.95 % (GDP)<br>Period: 2020<br>REMIND_54 region code: USA<br>Countries in region: United States", "Value added - agriculture: 0.96 % (GDP)<br>Period: 2021<br>REMIND_54 region code: USA<br>Countries in region: United States"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(220,0,5,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [26.050000000000004, 23.879999999999995, 21.579999999999995, 21.210000000000004, 21.600000000000001, 22.620000000000001, 23.670000000000002, 21.43, 20.920000000000002, 20.440000000000001, 19.32, 18.559999999999999, 18.370000000000001, 18.600000000000001, 19.699999999999999, 18.890000000000004, 19.43, 20.879999999999999, 19.039999999999999],
+      "text": ["Value added - agriculture: 26.05 % (GDP)<br>Period: 2003<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Value added - agriculture: 23.88 % (GDP)<br>Period: 2004<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Value added - agriculture: 21.58 % (GDP)<br>Period: 2005<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Value added - agriculture: 21.21 % (GDP)<br>Period: 2006<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Value added - agriculture: 21.6 % (GDP)<br>Period: 2007<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Value added - agriculture: 22.62 % (GDP)<br>Period: 2008<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Value added - agriculture: 23.67 % (GDP)<br>Period: 2009<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Value added - agriculture: 21.43 % (GDP)<br>Period: 2010<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Value added - agriculture: 20.92 % (GDP)<br>Period: 2011<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Value added - agriculture: 20.44 % (GDP)<br>Period: 2012<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Value added - agriculture: 19.32 % (GDP)<br>Period: 2013<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Value added - agriculture: 18.56 % (GDP)<br>Period: 2014<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Value added - agriculture: 18.37 % (GDP)<br>Period: 2015<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Value added - agriculture: 18.6 % (GDP)<br>Period: 2016<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Value added - agriculture: 19.7 % (GDP)<br>Period: 2017<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Value added - agriculture: 18.89 % (GDP)<br>Period: 2018<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Value added - agriculture: 19.43 % (GDP)<br>Period: 2019<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Value added - agriculture: 20.88 % (GDP)<br>Period: 2020<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Value added - agriculture: 19.04 % (GDP)<br>Period: 2021<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(221,52,151,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [3.4300000000000002, 3.1299999999999994, 2.77, 2.4099999999999997, 2.5099999999999998, 2.3700000000000006, 2.27, 2.4300000000000002, 2.3700000000000001, 2.4100000000000001, 2.6200000000000001, 2.54, 2.73, 2.8199999999999998, 2.79, 2.7599999999999993, 2.4700000000000002, 2.8699999999999997, 2.6099999999999999],
+      "text": ["Value added - agriculture: 3.43 % (GDP)<br>Period: 2003<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Value added - agriculture: 3.13 % (GDP)<br>Period: 2004<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Value added - agriculture: 2.77 % (GDP)<br>Period: 2005<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Value added - agriculture: 2.41 % (GDP)<br>Period: 2006<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Value added - agriculture: 2.51 % (GDP)<br>Period: 2007<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Value added - agriculture: 2.37 % (GDP)<br>Period: 2008<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Value added - agriculture: 2.27 % (GDP)<br>Period: 2009<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Value added - agriculture: 2.43 % (GDP)<br>Period: 2010<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Value added - agriculture: 2.37 % (GDP)<br>Period: 2011<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Value added - agriculture: 2.41 % (GDP)<br>Period: 2012<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Value added - agriculture: 2.62 % (GDP)<br>Period: 2013<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Value added - agriculture: 2.54 % (GDP)<br>Period: 2014<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Value added - agriculture: 2.73 % (GDP)<br>Period: 2015<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Value added - agriculture: 2.82 % (GDP)<br>Period: 2016<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Value added - agriculture: 2.79 % (GDP)<br>Period: 2017<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Value added - agriculture: 2.76 % (GDP)<br>Period: 2018<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Value added - agriculture: 2.47 % (GDP)<br>Period: 2019<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Value added - agriculture: 2.87 % (GDP)<br>Period: 2020<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Value added - agriculture: 2.61 % (GDP)<br>Period: 2021<br>REMIND_54 region code: ESP<br>Countries in region: Spain"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(241,105,19,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [2.6099999999999999, 3.29, 2.9199999999999999, 2.6899999999999999, 3.0499999999999998, 2.5899999999999999, 2.5600000000000001, 2.9299999999999997, 3.2000000000000002, 3.0099999999999993, 3.25, 2.9900000000000002, 2.5, 2.6499999999999999, 3.0099999999999998, 2.4099999999999997, 2.3700000000000001, 2.5699999999999998, 2.2200000000000002],
+      "text": ["Value added - agriculture: 2.61 % (GDP)<br>Period: 2003<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Value added - agriculture: 3.29 % (GDP)<br>Period: 2004<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Value added - agriculture: 2.92 % (GDP)<br>Period: 2005<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Value added - agriculture: 2.69 % (GDP)<br>Period: 2006<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Value added - agriculture: 3.05 % (GDP)<br>Period: 2007<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Value added - agriculture: 2.59 % (GDP)<br>Period: 2008<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Value added - agriculture: 2.56 % (GDP)<br>Period: 2009<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Value added - agriculture: 2.93 % (GDP)<br>Period: 2010<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Value added - agriculture: 3.2 % (GDP)<br>Period: 2011<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Value added - agriculture: 3.01 % (GDP)<br>Period: 2012<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Value added - agriculture: 3.25 % (GDP)<br>Period: 2013<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Value added - agriculture: 2.99 % (GDP)<br>Period: 2014<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Value added - agriculture: 2.5 % (GDP)<br>Period: 2015<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Value added - agriculture: 2.65 % (GDP)<br>Period: 2016<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Value added - agriculture: 3.01 % (GDP)<br>Period: 2017<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Value added - agriculture: 2.41 % (GDP)<br>Period: 2018<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Value added - agriculture: 2.37 % (GDP)<br>Period: 2019<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Value added - agriculture: 2.57 % (GDP)<br>Period: 2020<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Value added - agriculture: 2.22 % (GDP)<br>Period: 2021<br>REMIND_54 region code: POL<br>Countries in region: Poland"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(241,105,19,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [33.829999999999998, 27.23, 26.09, 24.73, 24.66, 25.280000000000001, 26.75, 23.890000000000001, 22.23, 21.859999999999999, 20.760000000000002, 19.989999999999998, 20.629999999999999, 20.98, 20.850000000000005, 21.199999999999999, 21.910000000000004, 24.140000000000001, 23.360000000000003],
+      "text": ["Value added - agriculture: 33.83 % (GDP)<br>Period: 2003<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Value added - agriculture: 27.23 % (GDP)<br>Period: 2004<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Value added - agriculture: 26.09 % (GDP)<br>Period: 2005<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Value added - agriculture: 24.73 % (GDP)<br>Period: 2006<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Value added - agriculture: 24.66 % (GDP)<br>Period: 2007<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Value added - agriculture: 25.28 % (GDP)<br>Period: 2008<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Value added - agriculture: 26.75 % (GDP)<br>Period: 2009<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Value added - agriculture: 23.89 % (GDP)<br>Period: 2010<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Value added - agriculture: 22.23 % (GDP)<br>Period: 2011<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Value added - agriculture: 21.86 % (GDP)<br>Period: 2012<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Value added - agriculture: 20.76 % (GDP)<br>Period: 2013<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Value added - agriculture: 19.99 % (GDP)<br>Period: 2014<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Value added - agriculture: 20.63 % (GDP)<br>Period: 2015<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Value added - agriculture: 20.98 % (GDP)<br>Period: 2016<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Value added - agriculture: 20.85 % (GDP)<br>Period: 2017<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Value added - agriculture: 21.2 % (GDP)<br>Period: 2018<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Value added - agriculture: 21.91 % (GDP)<br>Period: 2019<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Value added - agriculture: 24.14 % (GDP)<br>Period: 2020<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Value added - agriculture: 23.36 % (GDP)<br>Period: 2021<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(247,104,161,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [2.6499999999999995, 2.4100000000000001, 2.0899999999999999, 2.0499999999999994, 2.3599999999999999, 2.5700000000000003, 2.3999999999999999, 2.1099999999999999, 2.04, 1.98, 1.9299999999999999, 2.1299999999999999, 2.23, 2.4100000000000001, 2.4900000000000002, 2.27, 1.9599999999999997, 2.5200000000000005, 2.4699999999999998],
+      "text": ["Value added - agriculture: 2.65 % (GDP)<br>Period: 2003<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Value added - agriculture: 2.41 % (GDP)<br>Period: 2004<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Value added - agriculture: 2.09 % (GDP)<br>Period: 2005<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Value added - agriculture: 2.05 % (GDP)<br>Period: 2006<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Value added - agriculture: 2.36 % (GDP)<br>Period: 2007<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Value added - agriculture: 2.57 % (GDP)<br>Period: 2008<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Value added - agriculture: 2.4 % (GDP)<br>Period: 2009<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Value added - agriculture: 2.11 % (GDP)<br>Period: 2010<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Value added - agriculture: 2.04 % (GDP)<br>Period: 2011<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Value added - agriculture: 1.98 % (GDP)<br>Period: 2012<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Value added - agriculture: 1.93 % (GDP)<br>Period: 2013<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Value added - agriculture: 2.13 % (GDP)<br>Period: 2014<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Value added - agriculture: 2.23 % (GDP)<br>Period: 2015<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Value added - agriculture: 2.41 % (GDP)<br>Period: 2016<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Value added - agriculture: 2.49 % (GDP)<br>Period: 2017<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Value added - agriculture: 2.27 % (GDP)<br>Period: 2018<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Value added - agriculture: 1.96 % (GDP)<br>Period: 2019<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Value added - agriculture: 2.52 % (GDP)<br>Period: 2020<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Value added - agriculture: 2.47 % (GDP)<br>Period: 2021<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(252,197,192,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0.82999999999999985, 0.94999999999999984, 0.72999999999999998, 0.73999999999999988, 0.78000000000000003, 0.84000000000000008, 0.69999999999999996, 0.80000000000000004, 0.91000000000000003, 0.84999999999999998, 0.93999999999999995, 0.90000000000000002, 0.68000000000000005, 0.69999999999999984, 0.85000000000000009, 0.68999999999999995, 0.78000000000000003, 0.75, 0.84999999999999998],
+      "text": ["Value added - agriculture: 0.83 % (GDP)<br>Period: 2003<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Value added - agriculture: 0.95 % (GDP)<br>Period: 2004<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Value added - agriculture: 0.73 % (GDP)<br>Period: 2005<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Value added - agriculture: 0.74 % (GDP)<br>Period: 2006<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Value added - agriculture: 0.78 % (GDP)<br>Period: 2007<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Value added - agriculture: 0.84 % (GDP)<br>Period: 2008<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Value added - agriculture: 0.7 % (GDP)<br>Period: 2009<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Value added - agriculture: 0.8 % (GDP)<br>Period: 2010<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Value added - agriculture: 0.91 % (GDP)<br>Period: 2011<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Value added - agriculture: 0.85 % (GDP)<br>Period: 2012<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Value added - agriculture: 0.94 % (GDP)<br>Period: 2013<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Value added - agriculture: 0.9 % (GDP)<br>Period: 2014<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Value added - agriculture: 0.68 % (GDP)<br>Period: 2015<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Value added - agriculture: 0.7 % (GDP)<br>Period: 2016<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Value added - agriculture: 0.85 % (GDP)<br>Period: 2017<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Value added - agriculture: 0.69 % (GDP)<br>Period: 2018<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Value added - agriculture: 0.78 % (GDP)<br>Period: 2019<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Value added - agriculture: 0.75 % (GDP)<br>Period: 2020<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Value added - agriculture: 0.85 % (GDP)<br>Period: 2021<br>REMIND_54 region code: DEU<br>Countries in region: Germany"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(253,141,60,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [2.8024781933514298, 2.7542214083669911, 2.6292124194865578, 2.5009477046745818, 2.5669458675671728, 2.4473273073598407, 2.1292799385049257, 2.0849169932320031, 2.4197794926743863, 2.570379709036708, 2.5996732246734986, 2.7725434360362931, 2.5188706074386409, 2.3636676208977789, 2.4032397073372049, 2.2633732044258448, 2.2002103062361171, 2.3092641016239588, 2.2345037561540479],
+      "text": ["Value added - agriculture: 2.8 % (GDP)<br>Period: 2003<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Value added - agriculture: 2.75 % (GDP)<br>Period: 2004<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Value added - agriculture: 2.63 % (GDP)<br>Period: 2005<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Value added - agriculture: 2.5 % (GDP)<br>Period: 2006<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Value added - agriculture: 2.57 % (GDP)<br>Period: 2007<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Value added - agriculture: 2.45 % (GDP)<br>Period: 2008<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Value added - agriculture: 2.13 % (GDP)<br>Period: 2009<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Value added - agriculture: 2.08 % (GDP)<br>Period: 2010<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Value added - agriculture: 2.42 % (GDP)<br>Period: 2011<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Value added - agriculture: 2.57 % (GDP)<br>Period: 2012<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Value added - agriculture: 2.6 % (GDP)<br>Period: 2013<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Value added - agriculture: 2.77 % (GDP)<br>Period: 2014<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Value added - agriculture: 2.52 % (GDP)<br>Period: 2015<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Value added - agriculture: 2.36 % (GDP)<br>Period: 2016<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Value added - agriculture: 2.4 % (GDP)<br>Period: 2017<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Value added - agriculture: 2.26 % (GDP)<br>Period: 2018<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Value added - agriculture: 2.2 % (GDP)<br>Period: 2019<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Value added - agriculture: 2.31 % (GDP)<br>Period: 2020<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Value added - agriculture: 2.23 % (GDP)<br>Period: 2021<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(253,141,60,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1.4799999999999998, 1.5700000000000001, 1.03, 0.92000000000000004, 1.04, 0.84999999999999998, 0.56000000000000005, 0.94999999999999984, 1.21, 0.98999999999999999, 1.0800000000000001, 1.24, 0.8899999999999999, 0.94000000000000006, 1.1799999999999997, 0.89000000000000012, 0.90000000000000013, 0.93000000000000016, 1.02],
+      "text": ["Value added - agriculture: 1.48 % (GDP)<br>Period: 2003<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Value added - agriculture: 1.57 % (GDP)<br>Period: 2004<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Value added - agriculture: 1.03 % (GDP)<br>Period: 2005<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Value added - agriculture: 0.92 % (GDP)<br>Period: 2006<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Value added - agriculture: 1.04 % (GDP)<br>Period: 2007<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Value added - agriculture: 0.85 % (GDP)<br>Period: 2008<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Value added - agriculture: 0.56 % (GDP)<br>Period: 2009<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Value added - agriculture: 0.95 % (GDP)<br>Period: 2010<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Value added - agriculture: 1.21 % (GDP)<br>Period: 2011<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Value added - agriculture: 0.99 % (GDP)<br>Period: 2012<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Value added - agriculture: 1.08 % (GDP)<br>Period: 2013<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Value added - agriculture: 1.24 % (GDP)<br>Period: 2014<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Value added - agriculture: 0.89 % (GDP)<br>Period: 2015<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Value added - agriculture: 0.94 % (GDP)<br>Period: 2016<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Value added - agriculture: 1.18 % (GDP)<br>Period: 2017<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Value added - agriculture: 0.89 % (GDP)<br>Period: 2018<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Value added - agriculture: 0.9 % (GDP)<br>Period: 2019<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Value added - agriculture: 0.93 % (GDP)<br>Period: 2020<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Value added - agriculture: 1.02 % (GDP)<br>Period: 2021<br>REMIND_54 region code: IRL<br>Countries in region: Ireland"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(253,141,60,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [2.6500000000000004, 2.6000000000000001, 2.2999999999999998, 2.25, 2, 1.96, 1.95, 1.9400000000000002, 1.8299999999999998, 1.9199999999999997, 2.1000000000000001, 2.0800000000000001, 2.1000000000000001, 2.0699999999999994, 2.1000000000000001, 2.04, 2.0899999999999999, 2.1699999999999995, 2.1899999999999999],
+      "text": ["Value added - agriculture: 2.65 % (GDP)<br>Period: 2003<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Value added - agriculture: 2.6 % (GDP)<br>Period: 2004<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Value added - agriculture: 2.3 % (GDP)<br>Period: 2005<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Value added - agriculture: 2.25 % (GDP)<br>Period: 2006<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Value added - agriculture: 2 % (GDP)<br>Period: 2007<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Value added - agriculture: 1.96 % (GDP)<br>Period: 2008<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Value added - agriculture: 1.95 % (GDP)<br>Period: 2009<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Value added - agriculture: 1.94 % (GDP)<br>Period: 2010<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Value added - agriculture: 1.83 % (GDP)<br>Period: 2011<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Value added - agriculture: 1.92 % (GDP)<br>Period: 2012<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Value added - agriculture: 2.1 % (GDP)<br>Period: 2013<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Value added - agriculture: 2.08 % (GDP)<br>Period: 2014<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Value added - agriculture: 2.1 % (GDP)<br>Period: 2015<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Value added - agriculture: 2.07 % (GDP)<br>Period: 2016<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Value added - agriculture: 2.1 % (GDP)<br>Period: 2017<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Value added - agriculture: 2.04 % (GDP)<br>Period: 2018<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Value added - agriculture: 2.09 % (GDP)<br>Period: 2019<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Value added - agriculture: 2.17 % (GDP)<br>Period: 2020<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Value added - agriculture: 2.19 % (GDP)<br>Period: 2021<br>REMIND_54 region code: PRT<br>Countries in region: Portugal"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(253,141,60,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [4.4699999999999998, 3.8700000000000001, 3.1899999999999999, 2.9199999999999999, 2.7400000000000002, 2.29, 2.8300000000000001, 2.6199999999999997, 2.1600000000000001, 2.0699999999999994, 2.1700000000000004, 2.29, 2.77, 2.9500000000000002, 2.8700000000000001, 2.48, 2.5600000000000005, 2.96, 2.6999999999999997],
+      "text": ["Value added - agriculture: 4.47 % (GDP)<br>Period: 2003<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Value added - agriculture: 3.87 % (GDP)<br>Period: 2004<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Value added - agriculture: 3.19 % (GDP)<br>Period: 2005<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Value added - agriculture: 2.92 % (GDP)<br>Period: 2006<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Value added - agriculture: 2.74 % (GDP)<br>Period: 2007<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Value added - agriculture: 2.29 % (GDP)<br>Period: 2008<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Value added - agriculture: 2.83 % (GDP)<br>Period: 2009<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Value added - agriculture: 2.62 % (GDP)<br>Period: 2010<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Value added - agriculture: 2.16 % (GDP)<br>Period: 2011<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Value added - agriculture: 2.07 % (GDP)<br>Period: 2012<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Value added - agriculture: 2.17 % (GDP)<br>Period: 2013<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Value added - agriculture: 2.29 % (GDP)<br>Period: 2014<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Value added - agriculture: 2.77 % (GDP)<br>Period: 2015<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Value added - agriculture: 2.95 % (GDP)<br>Period: 2016<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Value added - agriculture: 2.87 % (GDP)<br>Period: 2017<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Value added - agriculture: 2.48 % (GDP)<br>Period: 2018<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Value added - agriculture: 2.56 % (GDP)<br>Period: 2019<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Value added - agriculture: 2.96 % (GDP)<br>Period: 2020<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Value added - agriculture: 2.7 % (GDP)<br>Period: 2021<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(253,141,60,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1.8500000000000001, 1.8200000000000003, 1.6799999999999997, 1.5199999999999998, 1.6100000000000003, 1.52, 1.3199999999999998, 1.6000000000000001, 1.6499999999999997, 1.6299999999999994, 1.46, 1.5600000000000001, 1.6099999999999997, 1.4399999999999995, 1.54, 1.6499999999999999, 1.5199999999999998, 1.5700000000000001, 1.6399999999999997],
+      "text": ["Value added - agriculture: 1.85 % (GDP)<br>Period: 2003<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Value added - agriculture: 1.82 % (GDP)<br>Period: 2004<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Value added - agriculture: 1.68 % (GDP)<br>Period: 2005<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Value added - agriculture: 1.52 % (GDP)<br>Period: 2006<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Value added - agriculture: 1.61 % (GDP)<br>Period: 2007<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Value added - agriculture: 1.52 % (GDP)<br>Period: 2008<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Value added - agriculture: 1.32 % (GDP)<br>Period: 2009<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Value added - agriculture: 1.6 % (GDP)<br>Period: 2010<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Value added - agriculture: 1.65 % (GDP)<br>Period: 2011<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Value added - agriculture: 1.63 % (GDP)<br>Period: 2012<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Value added - agriculture: 1.46 % (GDP)<br>Period: 2013<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Value added - agriculture: 1.56 % (GDP)<br>Period: 2014<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Value added - agriculture: 1.61 % (GDP)<br>Period: 2015<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Value added - agriculture: 1.44 % (GDP)<br>Period: 2016<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Value added - agriculture: 1.54 % (GDP)<br>Period: 2017<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Value added - agriculture: 1.65 % (GDP)<br>Period: 2018<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Value added - agriculture: 1.52 % (GDP)<br>Period: 2019<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Value added - agriculture: 1.57 % (GDP)<br>Period: 2020<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Value added - agriculture: 1.64 % (GDP)<br>Period: 2021<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,178,76,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0.85093750873130025, 0.7308496079939556, 0.55084329787368158, 0.57079641751393717, 0.56078780745262446, 0.67077825237153754, 0.68076951176498923, 0.59078156831809181, 0.68077879148731391, 0.6307598192823084, 0.63076871789093403, 0.75074092016541327, 0.63071217881377095, 0.57071819316245542, 0.59072147494416238, 0.57069421953345612, 0.60072157050176922, 0.64080078892538583, 0.67074176245192541],
+      "text": ["Value added - agriculture: 0.85 % (GDP)<br>Period: 2003<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Value added - agriculture: 0.73 % (GDP)<br>Period: 2004<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Value added - agriculture: 0.55 % (GDP)<br>Period: 2005<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Value added - agriculture: 0.57 % (GDP)<br>Period: 2006<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Value added - agriculture: 0.56 % (GDP)<br>Period: 2007<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Value added - agriculture: 0.67 % (GDP)<br>Period: 2008<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Value added - agriculture: 0.68 % (GDP)<br>Period: 2009<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Value added - agriculture: 0.59 % (GDP)<br>Period: 2010<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Value added - agriculture: 0.68 % (GDP)<br>Period: 2011<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Value added - agriculture: 0.63 % (GDP)<br>Period: 2012<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Value added - agriculture: 0.63 % (GDP)<br>Period: 2013<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Value added - agriculture: 0.75 % (GDP)<br>Period: 2014<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Value added - agriculture: 0.63 % (GDP)<br>Period: 2015<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Value added - agriculture: 0.57 % (GDP)<br>Period: 2016<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Value added - agriculture: 0.59 % (GDP)<br>Period: 2017<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Value added - agriculture: 0.57 % (GDP)<br>Period: 2018<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Value added - agriculture: 0.6 % (GDP)<br>Period: 2019<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Value added - agriculture: 0.64 % (GDP)<br>Period: 2020<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Value added - agriculture: 0.67 % (GDP)<br>Period: 2021<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,178,76,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1.49, 1.48, 1.2599999999999998, 1.3, 1.4199999999999999, 1.3400000000000001, 1.1499999999999999, 1.27, 1.3999999999999999, 1.3500000000000001, 1.25, 1.2, 1.1299999999999999, 1.1100000000000001, 1.2100000000000002, 1.1299999999999997, 1.05, 1.0900000000000001, 1.21],
+      "text": ["Value added - agriculture: 1.49 % (GDP)<br>Period: 2003<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Value added - agriculture: 1.48 % (GDP)<br>Period: 2004<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Value added - agriculture: 1.26 % (GDP)<br>Period: 2005<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Value added - agriculture: 1.3 % (GDP)<br>Period: 2006<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Value added - agriculture: 1.42 % (GDP)<br>Period: 2007<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Value added - agriculture: 1.34 % (GDP)<br>Period: 2008<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Value added - agriculture: 1.15 % (GDP)<br>Period: 2009<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Value added - agriculture: 1.27 % (GDP)<br>Period: 2010<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Value added - agriculture: 1.4 % (GDP)<br>Period: 2011<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Value added - agriculture: 1.35 % (GDP)<br>Period: 2012<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Value added - agriculture: 1.25 % (GDP)<br>Period: 2013<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Value added - agriculture: 1.2 % (GDP)<br>Period: 2014<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Value added - agriculture: 1.13 % (GDP)<br>Period: 2015<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Value added - agriculture: 1.11 % (GDP)<br>Period: 2016<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Value added - agriculture: 1.21 % (GDP)<br>Period: 2017<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Value added - agriculture: 1.13 % (GDP)<br>Period: 2018<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Value added - agriculture: 1.05 % (GDP)<br>Period: 2019<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Value added - agriculture: 1.09 % (GDP)<br>Period: 2020<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Value added - agriculture: 1.21 % (GDP)<br>Period: 2021<br>REMIND_54 region code: AUT<br>Countries in region: Austria"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,196,79,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [12.28623276042852, 12.853094825723593, 11.579849884001414, 10.575002802613385, 10.196801760384746, 10.117122064311788, 9.5901359584072363, 9.2815258715286326, 9.1322495430463846, 9.0624146052848946, 8.8934823753525283, 8.5950741159293873, 8.3462674843039846, 8.0180353008823708, 7.4210747871093954, 7.0031125491291162, 7.102493733098866, 7.6599207940893042, 7.2026152967681965],
+      "text": ["Value added - agriculture: 12.29 % (GDP)<br>Period: 2003<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Value added - agriculture: 12.85 % (GDP)<br>Period: 2004<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Value added - agriculture: 11.58 % (GDP)<br>Period: 2005<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Value added - agriculture: 10.58 % (GDP)<br>Period: 2006<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Value added - agriculture: 10.2 % (GDP)<br>Period: 2007<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Value added - agriculture: 10.12 % (GDP)<br>Period: 2008<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Value added - agriculture: 9.59 % (GDP)<br>Period: 2009<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Value added - agriculture: 9.28 % (GDP)<br>Period: 2010<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Value added - agriculture: 9.13 % (GDP)<br>Period: 2011<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Value added - agriculture: 9.06 % (GDP)<br>Period: 2012<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Value added - agriculture: 8.89 % (GDP)<br>Period: 2013<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Value added - agriculture: 8.6 % (GDP)<br>Period: 2014<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Value added - agriculture: 8.35 % (GDP)<br>Period: 2015<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Value added - agriculture: 8.02 % (GDP)<br>Period: 2016<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Value added - agriculture: 7.42 % (GDP)<br>Period: 2017<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Value added - agriculture: 7 % (GDP)<br>Period: 2018<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Value added - agriculture: 7.1 % (GDP)<br>Period: 2019<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Value added - agriculture: 7.66 % (GDP)<br>Period: 2020<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Value added - agriculture: 7.2 % (GDP)<br>Period: 2021<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,196,79,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [10.681208939364263, 9.6293518354948482, 8.8758497894797834, 8.8030912448956862, 8.0898232179289433, 7.4301291083069323, 8.8283513867043357, 7.7006053512064936, 7.7804562778098108, 9.413650247879831, 9.5462495120752333, 9.5798844659341622, 9.9396850994130261, 11.259918447879254, 11.527915346285948, 10.891346655198436, 11.486934407283533, 11.712405317256737, 10.920863732022186],
+      "text": ["Value added - agriculture: 10.68 % (GDP)<br>Period: 2003<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; Lebanon; United Arab Emirates; Palestine, State of; Oman; Kuwait; Bahrain; Qatar", "Value added - agriculture: 9.63 % (GDP)<br>Period: 2004<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; Lebanon; United Arab Emirates; Palestine, State of; Oman; Kuwait; Bahrain; Qatar", "Value added - agriculture: 8.88 % (GDP)<br>Period: 2005<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; Lebanon; United Arab Emirates; Palestine, State of; Oman; Kuwait; Bahrain; Qatar", "Value added - agriculture: 8.8 % (GDP)<br>Period: 2006<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Value added - agriculture: 8.09 % (GDP)<br>Period: 2007<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Value added - agriculture: 7.43 % (GDP)<br>Period: 2008<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Kuwait; Oman; Qatar; Bahrain", "Value added - agriculture: 8.83 % (GDP)<br>Period: 2009<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Kuwait; Oman; Qatar; Bahrain", "Value added - agriculture: 7.7 % (GDP)<br>Period: 2010<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Kuwait; Oman; Qatar; Bahrain", "Value added - agriculture: 7.78 % (GDP)<br>Period: 2011<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Kuwait; Oman; Qatar; Bahrain", "Value added - agriculture: 9.41 % (GDP)<br>Period: 2012<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Value added - agriculture: 9.55 % (GDP)<br>Period: 2013<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Value added - agriculture: 9.58 % (GDP)<br>Period: 2014<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; Israel; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Value added - agriculture: 9.94 % (GDP)<br>Period: 2015<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Value added - agriculture: 11.26 % (GDP)<br>Period: 2016<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Oman; Palestine, State of; Kuwait; Qatar; Bahrain", "Value added - agriculture: 11.53 % (GDP)<br>Period: 2017<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Oman; Palestine, State of; Kuwait; Qatar; Bahrain", "Value added - agriculture: 10.89 % (GDP)<br>Period: 2018<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Oman; Palestine, State of; Kuwait; Qatar; Bahrain", "Value added - agriculture: 11.49 % (GDP)<br>Period: 2019<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Value added - agriculture: 11.71 % (GDP)<br>Period: 2020<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Value added - agriculture: 10.92 % (GDP)<br>Period: 2021<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,196,79,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1.8600000000000001, 1.8299999999999998, 1.2500000000000002, 1.3600000000000001, 1.5800000000000001, 1.5700000000000001, 1.4399999999999999, 1.6499999999999999, 1.6699999999999999, 1.5500000000000003, 1.47, 1.4399999999999999, 1.4500000000000002, 1.3999999999999999, 1.4399999999999999, 1.3899999999999997, 1.3899999999999999, 1.3300000000000001, 1.29],
+      "text": ["Value added - agriculture: 1.86 % (GDP)<br>Period: 2003<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Value added - agriculture: 1.83 % (GDP)<br>Period: 2004<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Value added - agriculture: 1.25 % (GDP)<br>Period: 2005<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Value added - agriculture: 1.36 % (GDP)<br>Period: 2006<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Value added - agriculture: 1.58 % (GDP)<br>Period: 2007<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Value added - agriculture: 1.57 % (GDP)<br>Period: 2008<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Value added - agriculture: 1.44 % (GDP)<br>Period: 2009<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Value added - agriculture: 1.65 % (GDP)<br>Period: 2010<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Value added - agriculture: 1.67 % (GDP)<br>Period: 2011<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Value added - agriculture: 1.55 % (GDP)<br>Period: 2012<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Value added - agriculture: 1.47 % (GDP)<br>Period: 2013<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Value added - agriculture: 1.44 % (GDP)<br>Period: 2014<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Value added - agriculture: 1.45 % (GDP)<br>Period: 2015<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Value added - agriculture: 1.4 % (GDP)<br>Period: 2016<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Value added - agriculture: 1.44 % (GDP)<br>Period: 2017<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Value added - agriculture: 1.39 % (GDP)<br>Period: 2018<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Value added - agriculture: 1.39 % (GDP)<br>Period: 2019<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Value added - agriculture: 1.33 % (GDP)<br>Period: 2020<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Value added - agriculture: 1.29 % (GDP)<br>Period: 2021<br>REMIND_54 region code: SWE<br>Countries in region: Sweden"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,196,79,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1.7018494187664999, 1.7110376501928237, 1.241892687558833, 1.2811097368076132, 1.2685152970625517, 0.93585786284356576, 0.91029838909123406, 1.3183312254080342, 1.423342432037785, 1.7405050122671419, 1.4150098054484606, 1.4957969628083962, 1.0854006535500762, 1.1179601742907022, 1.4439402307278799, 1.1634145850706821, 1.408709401646751, 1.4693595808955682, 0.9898901176437146],
+      "text": ["Value added - agriculture: 1.7 % (GDP)<br>Period: 2003<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Value added - agriculture: 1.71 % (GDP)<br>Period: 2004<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Value added - agriculture: 1.24 % (GDP)<br>Period: 2005<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Value added - agriculture: 1.28 % (GDP)<br>Period: 2006<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Value added - agriculture: 1.27 % (GDP)<br>Period: 2007<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Value added - agriculture: 0.94 % (GDP)<br>Period: 2008<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Value added - agriculture: 0.91 % (GDP)<br>Period: 2009<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Value added - agriculture: 1.32 % (GDP)<br>Period: 2010<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Value added - agriculture: 1.42 % (GDP)<br>Period: 2011<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Value added - agriculture: 1.74 % (GDP)<br>Period: 2012<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Value added - agriculture: 1.42 % (GDP)<br>Period: 2013<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Value added - agriculture: 1.5 % (GDP)<br>Period: 2014<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Value added - agriculture: 1.09 % (GDP)<br>Period: 2015<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Value added - agriculture: 1.12 % (GDP)<br>Period: 2016<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Value added - agriculture: 1.44 % (GDP)<br>Period: 2017<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Value added - agriculture: 1.16 % (GDP)<br>Period: 2018<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Value added - agriculture: 1.41 % (GDP)<br>Period: 2019<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Value added - agriculture: 1.47 % (GDP)<br>Period: 2020<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Value added - agriculture: 0.99 % (GDP)<br>Period: 2021<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,217,118,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [2.3572374307951138, 2.3468913550536064, 2.0286855559589743, 1.9494461992338181, 1.8995161753156606, 1.8644021140145766, 1.7975046697206731, 1.7764584978621483, 1.8738042632718994, 1.9636252984398115, 2.1324862293328306, 1.9929021275389145, 2.0616337451993756, 1.9225452730155665, 1.9598735900842279, 1.9396559457882825, 1.8979493374602749, 1.9993416664521972, 1.9307857097606373],
+      "text": ["Value added - agriculture: 2.36 % (GDP)<br>Period: 2003<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Value added - agriculture: 2.35 % (GDP)<br>Period: 2004<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Value added - agriculture: 2.03 % (GDP)<br>Period: 2005<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Value added - agriculture: 1.95 % (GDP)<br>Period: 2006<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Value added - agriculture: 1.9 % (GDP)<br>Period: 2007<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Value added - agriculture: 1.86 % (GDP)<br>Period: 2008<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Value added - agriculture: 1.8 % (GDP)<br>Period: 2009<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Value added - agriculture: 1.78 % (GDP)<br>Period: 2010<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Value added - agriculture: 1.87 % (GDP)<br>Period: 2011<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Value added - agriculture: 1.96 % (GDP)<br>Period: 2012<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Value added - agriculture: 2.13 % (GDP)<br>Period: 2013<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Value added - agriculture: 1.99 % (GDP)<br>Period: 2014<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Value added - agriculture: 2.06 % (GDP)<br>Period: 2015<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Value added - agriculture: 1.92 % (GDP)<br>Period: 2016<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Value added - agriculture: 1.96 % (GDP)<br>Period: 2017<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Value added - agriculture: 1.94 % (GDP)<br>Period: 2018<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Value added - agriculture: 1.9 % (GDP)<br>Period: 2019<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Value added - agriculture: 2 % (GDP)<br>Period: 2020<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Value added - agriculture: 1.93 % (GDP)<br>Period: 2021<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,217,118,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [2.0600000000000001, 1.8700000000000001, 1.8600000000000001, 1.9499999999999997, 1.8200000000000001, 1.6399999999999999, 1.55, 1.78, 1.5799999999999998, 1.6599999999999999, 1.79, 1.74, 1.72, 1.77, 1.8600000000000001, 1.6499999999999999, 1.6399999999999999, 1.6000000000000003, 1.55],
+      "text": ["Value added - agriculture: 2.06 % (GDP)<br>Period: 2003<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Value added - agriculture: 1.87 % (GDP)<br>Period: 2004<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Value added - agriculture: 1.86 % (GDP)<br>Period: 2005<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Value added - agriculture: 1.95 % (GDP)<br>Period: 2006<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Value added - agriculture: 1.82 % (GDP)<br>Period: 2007<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Value added - agriculture: 1.64 % (GDP)<br>Period: 2008<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Value added - agriculture: 1.55 % (GDP)<br>Period: 2009<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Value added - agriculture: 1.78 % (GDP)<br>Period: 2010<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Value added - agriculture: 1.58 % (GDP)<br>Period: 2011<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Value added - agriculture: 1.66 % (GDP)<br>Period: 2012<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Value added - agriculture: 1.79 % (GDP)<br>Period: 2013<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Value added - agriculture: 1.74 % (GDP)<br>Period: 2014<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Value added - agriculture: 1.72 % (GDP)<br>Period: 2015<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Value added - agriculture: 1.77 % (GDP)<br>Period: 2016<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Value added - agriculture: 1.86 % (GDP)<br>Period: 2017<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Value added - agriculture: 1.65 % (GDP)<br>Period: 2018<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Value added - agriculture: 1.64 % (GDP)<br>Period: 2019<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Value added - agriculture: 1.6 % (GDP)<br>Period: 2020<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Value added - agriculture: 1.55 % (GDP)<br>Period: 2021<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,217,118,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1.006225089152764, 0.99978849977645468, 0.81959791388254954, 0.88426797736419838, 0.86709316383948298, 0.69254606838715793, 0.63148895422778772, 0.74777017031031423, 0.63205885791258354, 0.75764510506124916, 0.66049938104381634, 0.62345045241223074, 0.66739628497610559, 0.60948149635420035, 0.64808228112548039, 0.58130939549334582, 0.64695921316583116, 0.72202517737044303, 0.6359182723022635],
+      "text": ["Value added - agriculture: 1.01 % (GDP)<br>Period: 2003<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Value added - agriculture: 1 % (GDP)<br>Period: 2004<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Value added - agriculture: 0.82 % (GDP)<br>Period: 2005<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Value added - agriculture: 0.88 % (GDP)<br>Period: 2006<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Value added - agriculture: 0.87 % (GDP)<br>Period: 2007<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Value added - agriculture: 0.69 % (GDP)<br>Period: 2008<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Value added - agriculture: 0.63 % (GDP)<br>Period: 2009<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Value added - agriculture: 0.75 % (GDP)<br>Period: 2010<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Value added - agriculture: 0.63 % (GDP)<br>Period: 2011<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Value added - agriculture: 0.76 % (GDP)<br>Period: 2012<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Value added - agriculture: 0.66 % (GDP)<br>Period: 2013<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Value added - agriculture: 0.62 % (GDP)<br>Period: 2014<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Value added - agriculture: 0.67 % (GDP)<br>Period: 2015<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Value added - agriculture: 0.61 % (GDP)<br>Period: 2016<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Value added - agriculture: 0.65 % (GDP)<br>Period: 2017<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Value added - agriculture: 0.58 % (GDP)<br>Period: 2018<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Value added - agriculture: 0.65 % (GDP)<br>Period: 2019<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Value added - agriculture: 0.72 % (GDP)<br>Period: 2020<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Value added - agriculture: 0.64 % (GDP)<br>Period: 2021<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(255,237,160,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [2.54, 2.3799999999999999, 2.2799999999999998, 2, 2.3799999999999999, 2.2100000000000004, 2.25, 2.4199999999999995, 2.3199999999999998, 2.3100000000000001, 2.3700000000000001, 2.3999999999999995, 2.25, 2.3100000000000001, 2.3199999999999994, 2.3899999999999997, 2.3500000000000001, 2.4500000000000002, 2.3100000000000001],
+      "text": ["Value added - agriculture: 2.54 % (GDP)<br>Period: 2003<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Value added - agriculture: 2.38 % (GDP)<br>Period: 2004<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Value added - agriculture: 2.28 % (GDP)<br>Period: 2005<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Value added - agriculture: 2 % (GDP)<br>Period: 2006<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Value added - agriculture: 2.38 % (GDP)<br>Period: 2007<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Value added - agriculture: 2.21 % (GDP)<br>Period: 2008<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Value added - agriculture: 2.25 % (GDP)<br>Period: 2009<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Value added - agriculture: 2.42 % (GDP)<br>Period: 2010<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Value added - agriculture: 2.32 % (GDP)<br>Period: 2011<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Value added - agriculture: 2.31 % (GDP)<br>Period: 2012<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Value added - agriculture: 2.37 % (GDP)<br>Period: 2013<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Value added - agriculture: 2.4 % (GDP)<br>Period: 2014<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Value added - agriculture: 2.25 % (GDP)<br>Period: 2015<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Value added - agriculture: 2.31 % (GDP)<br>Period: 2016<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Value added - agriculture: 2.32 % (GDP)<br>Period: 2017<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Value added - agriculture: 2.39 % (GDP)<br>Period: 2018<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Value added - agriculture: 2.35 % (GDP)<br>Period: 2019<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Value added - agriculture: 2.45 % (GDP)<br>Period: 2020<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Value added - agriculture: 2.31 % (GDP)<br>Period: 2021<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(255,237,160,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [4.8617227939092826, 4.177983097993021, 4.1472867979405263, 3.1196619267597425, 2.9497309298173526, 2.7454468480919387, 2.7264438465772369, 2.904372158018711, 3.0201625937689367, 3.3025621944819532, 3.2494209022458116, 3.4070963503705163, 3.6584442374558619, 3.3778870586343244, 3.6500655835637308, 3.4378020070447093, 3.5914162609665201, 3.9839094777151547, 3.6295123306105843],
+      "text": ["Value added - agriculture: 4.86 % (GDP)<br>Period: 2003<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Value added - agriculture: 4.18 % (GDP)<br>Period: 2004<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Value added - agriculture: 4.15 % (GDP)<br>Period: 2005<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Value added - agriculture: 3.12 % (GDP)<br>Period: 2006<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Value added - agriculture: 2.95 % (GDP)<br>Period: 2007<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Value added - agriculture: 2.75 % (GDP)<br>Period: 2008<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Value added - agriculture: 2.73 % (GDP)<br>Period: 2009<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Value added - agriculture: 2.9 % (GDP)<br>Period: 2010<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Value added - agriculture: 3.02 % (GDP)<br>Period: 2011<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Value added - agriculture: 3.3 % (GDP)<br>Period: 2012<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Value added - agriculture: 3.25 % (GDP)<br>Period: 2013<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Value added - agriculture: 3.41 % (GDP)<br>Period: 2014<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Value added - agriculture: 3.66 % (GDP)<br>Period: 2015<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Value added - agriculture: 3.38 % (GDP)<br>Period: 2016<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Value added - agriculture: 3.65 % (GDP)<br>Period: 2017<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Value added - agriculture: 3.44 % (GDP)<br>Period: 2018<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Value added - agriculture: 3.59 % (GDP)<br>Period: 2019<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Value added - agriculture: 3.98 % (GDP)<br>Period: 2020<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Value added - agriculture: 3.63 % (GDP)<br>Period: 2021<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(255,237,160,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "visible": false,
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    }
+  ],
+  "layout": {
+    "margin": {
+      "t": 33.534246575342465,
+      "r": 0,
+      "b": 27.031963470319649,
+      "l": 35.799086757990878
+    },
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.611872146118724
+    },
+    "title": {
+      "text": "Value added - agriculture (REMIND_54)",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 17.534246575342468
+      },
+      "x": 0,
+      "xref": "paper"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [2002.0999999999999, 2021.9000000000001],
+      "tickmode": "array",
+      "ticktext": ["2005", "2010", "2015", "2020"],
+      "tickvals": [2005, 2010, 2015, 2020],
+      "categoryorder": "array",
+      "categoryarray": ["2005", "2010", "2015", "2020"],
+      "nticks": null,
+      "ticks": "",
+      "tickcolor": null,
+      "ticklen": 3.6529680365296811,
+      "tickwidth": 0,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716894984
+      },
+      "tickangle": -90,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(235,235,235,1)",
+      "gridwidth": 0.66417600664176002,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.611872146118724
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [0, 100],
+      "tickmode": "array",
+      "ticktext": ["0", "25", "50", "75", "100"],
+      "tickvals": [0, 25.000000000000004, 50, 75, 100],
+      "categoryorder": "array",
+      "categoryarray": ["0", "25", "50", "75", "100"],
+      "nticks": null,
+      "ticks": "",
+      "tickcolor": null,
+      "ticklen": 3.6529680365296811,
+      "tickwidth": 0,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.68949771689498
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(235,235,235,1)",
+      "gridwidth": 0.66417600664176002,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "% (GDP)",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.611872146118724
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "layer": "below",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": false,
+    "legend": {
+      "bgcolor": null,
+      "bordercolor": null,
+      "borderwidth": 0,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716894984
+      },
+      "title": {
+        "text": "",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.611872146118724
+        }
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  "config": {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  "source": "A",
+  "attrs": {
+    "b55c43475283": {
+      "x": {},
+      "colour": {},
+      "text": {},
+      "y": {},
+      "type": "scatter"
+    },
+    "b55c7bc718b1": {
+      "y": {}
+    }
+  },
+  "cur_data": "b55c43475283",
+  "visdat": {
+    "b55c43475283": ["function (y) ", "x"],
+    "b55c7bc718b1": ["function (y) ", "x"]
+  },
+  "highlight": {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.20000000000000001,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  "shinyEvents": ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  "base_url": "https://plot.ly"
+}
+           
+
+                  ); 
+
+           }()); 
+
+  

@@ -1,0 +1,109 @@
+---
+output:
+  html_document:
+    theme: paper
+    toc: false
+    self_contained: false
+    lib_dir: ../output/iframe/libs
+params:
+  charts: ""
+---
+
+<style>
+  .main-container {
+    max-width: 95% !important;
+  }
+  .toc-content {
+    padding-left: 0px !important;
+  }
+  .svg-container {
+    margin: auto !important;
+  }
+  img {
+    max-width: 100% !important;
+    <!-- display: block !important; -->
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .hideChart {
+    display: none;
+  }
+  .plotly {
+    width: 100% !important;
+  }
+  
+</style>
+
+
+```{r chunk_options, echo=FALSE}
+
+# setting global R chunk options (https://yihui.name/knitr/options/#chunk_options)
+  knitr::opts_chunk$set(dev='svglite', # svg, png,...
+                        fig.ext = ".svg",
+                        #fig.asp = .8 # default aspect ratio
+                        fig.width = 12,
+                        fig.height = 7.2,
+                        dpi=100
+                        )
+```  
+
+# {.tabset}
+
+## Carbon Price
+
+Unit: USD per t CO2 
+
+```{r creating_chunks_for_drivers_display, echo=FALSE, fig.height = 6.8}
+
+  params$charts
+
+```
+
+## Map 2025
+
+<div style="width:100%; display:flex; justify-content:center;">
+  <div style="width:100%; max-width:1200px;">
+  
+```{r, echo=FALSE}
+
+out[["charts"]][["carbonPriceMap"]][["all"]][["2025"]]
+
+```
+
+  </div>
+</div>
+
+<!-- ## Map - bulk 2025 -->
+
+<!-- ```{r, echo=FALSE} -->
+
+<!-- out[["charts"]][["carbonPriceMap"]][["bulk"]][["2025"]] -->
+
+<!-- ``` -->
+
+
+<!-- ## Map - diffuse 2025 -->
+
+<!-- ```{r, echo=FALSE} -->
+
+<!-- out[["charts"]][["carbonPriceMap"]][["diffuse"]][["2025"]] -->
+
+<!-- ``` -->
+
+
+## Map - bulk timeline
+
+```{r, echo=FALSE}
+
+out[["charts"]][["carbonPriceMap"]][["bulk"]][["timeline"]]
+
+```
+
+
+## Map - diffuse timeline
+
+```{r, echo=FALSE}
+
+out[["charts"]][["carbonPriceMap"]][["diffuse"]][["timeline"]]
+
+```

@@ -1,0 +1,929 @@
+(function(){ 
+
+        window.PLOTLYENV={'BASE_URL': 'https://plotly.com'}; 
+
+        
+
+        var gd = document.getElementById('REMIND_39_Extraction_Lithium_production_line') 
+
+        var resizeDebounce = null; 
+
+
+        function resizePlot() { 
+
+          var bb = gd.getBoundingClientRect(); 
+
+          Plotly.relayout(gd, { 
+
+            width: bb.width, 
+
+              height: bb.height 
+
+            }); 
+
+          } 
+
+
+          Plotly.plot(gd,  
+
+              {
+  "data": [
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,109,44,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [3695.7129456724142, 4408.8176208053865, 5040.9777861592411, 5582.3658989326277, 6157.0369044720092, 6092.9688402178681, 3772.9685952760688, 5864.60490025935, 6382.1155330684405, 6789.7749791841979, 5794.356435139146, 6571.1575779838995, 7366.7379413069848, 9267.895118370805, 9512.1023351136155, 10037.441254737261, 10051.031951635194, 10042.493274986016, 10013.654144528826],
+      "text": ["Lithium production: 3695.71 metric tons<br>Period: 2003<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Martinique; Guadeloupe; Bahamas; Barbados; Belize; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Saint Kitts and Nevis; Cayman Islands; Saint Martin (French part); Sint Maarten (Dutch part); Virgin Islands, British; Turks and Caicos Islands; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Lithium production: 4408.82 metric tons<br>Period: 2004<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Martinique; Guadeloupe; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Saint Kitts and Nevis; Cayman Islands; Saint Martin (French part); Sint Maarten (Dutch part); Virgin Islands, British; Turks and Caicos Islands; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Lithium production: 5040.98 metric tons<br>Period: 2005<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Lithium production: 5582.37 metric tons<br>Period: 2006<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Lithium production: 6157.04 metric tons<br>Period: 2007<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Lithium production: 6092.97 metric tons<br>Period: 2008<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Lithium production: 3772.97 metric tons<br>Period: 2009<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Lithium production: 5864.6 metric tons<br>Period: 2010<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Lithium production: 6382.12 metric tons<br>Period: 2011<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Nicaragua; Paraguay; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Lithium production: 6789.77 metric tons<br>Period: 2012<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Nicaragua; Paraguay; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Lithium production: 5794.36 metric tons<br>Period: 2013<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Haiti; Dominican Republic; Honduras; El Salvador; Nicaragua; Paraguay; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Lithium production: 6571.16 metric tons<br>Period: 2014<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Haiti; Dominican Republic; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Lithium production: 7366.74 metric tons<br>Period: 2015<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Haiti; Dominican Republic; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Martinique; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Sint Maarten (Dutch part); Saint Martin (French part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Lithium production: 9267.9 metric tons<br>Period: 2016<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Haiti; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Martinique; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Saint Martin (French part); Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Lithium production: 9512.1 metric tons<br>Period: 2017<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Cuba; Haiti; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Martinique; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Cayman Islands; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Saint Martin (French part); Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Lithium production: 10037.44 metric tons<br>Period: 2018<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Cuba; Haiti; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Belize; Martinique; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Cayman Islands; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Saint Martin (French part); Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Lithium production: 10051.03 metric tons<br>Period: 2019<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Cuba; Haiti; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Belize; Martinique; French Guiana; Barbados; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Cayman Islands; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Virgin Islands, British; Saint Martin (French part); Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Lithium production: 10042.49 metric tons<br>Period: 2020<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Haiti; Cuba; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Bahamas; Guadeloupe; Belize; Martinique; French Guiana; Barbados; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Cayman Islands; Dominica; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Virgin Islands, British; Saint Martin (French part); Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Lithium production: 10013.65 metric tons<br>Period: 2021<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Haiti; Dominican Republic; Cuba; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Bahamas; Guadeloupe; Belize; Martinique; French Guiana; Barbados; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Cayman Islands; Dominica; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Virgin Islands, British; Saint Martin (French part); Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,109,44,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [22500.000000000004, 22500, 22500.000000000004, 22500, 22499.999999999996, 22000, 10000, 15342.625000000002, 20685.25, 26027.875, 31370.499999999996, 36713.125, 42055.75, 47398.375, 52740.999999999993, 113999.99999999999, 9000, 9000, 8999.9999999999982],
+      "text": ["Lithium production: 22500 metric tons<br>Period: 2003<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Lithium production: 22500 metric tons<br>Period: 2004<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Lithium production: 22500 metric tons<br>Period: 2005<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Lithium production: 22500 metric tons<br>Period: 2006<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Lithium production: 22500 metric tons<br>Period: 2007<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Lithium production: 22000 metric tons<br>Period: 2008<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Lithium production: 10000 metric tons<br>Period: 2009<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Lithium production: 15342.63 metric tons<br>Period: 2010<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Lithium production: 20685.25 metric tons<br>Period: 2011<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Lithium production: 26027.88 metric tons<br>Period: 2012<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Lithium production: 31370.5 metric tons<br>Period: 2013<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Lithium production: 36713.12 metric tons<br>Period: 2014<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Lithium production: 42055.75 metric tons<br>Period: 2015<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Lithium production: 47398.38 metric tons<br>Period: 2016<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Lithium production: 52741 metric tons<br>Period: 2017<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Lithium production: 114000 metric tons<br>Period: 2018<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Lithium production: 9000 metric tons<br>Period: 2019<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Lithium production: 9000 metric tons<br>Period: 2020<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Lithium production: 9000 metric tons<br>Period: 2021<br>REMIND_39 region code: CAN<br>Countries in region: Canada"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(8,81,156,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Algeria; Sudan; Morocco; Niger; Mali; Tunisia; Chad; Libya; Mauritania; Western Sahara", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Algeria; Sudan; Morocco; Niger; Mali; Tunisia; Chad; Libya; Mauritania; Western Sahara", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(8,81,156,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [103301.53508020511, 98284.091370366412, 144094.64756184182, 184356.358536763, 182888.8296601208, 199509.48232574284, 164778.9961010213, 246329.06427442917, 352234.97371609299, 382677.35474391421, 339816.32801255793, 372786.57758848753, 363463.22936365299, 368648.87555028626, 1427137.2210507444, 1643202.0035674991, 1351095.1183651658, 1348933.9170624891, 1348324.2672873244],
+      "text": ["Lithium production: 103301.54 metric tons<br>Period: 2003<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Lithium production: 98284.09 metric tons<br>Period: 2004<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Lithium production: 144094.65 metric tons<br>Period: 2005<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Lithium production: 184356.36 metric tons<br>Period: 2006<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Lithium production: 182888.83 metric tons<br>Period: 2007<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Lithium production: 199509.48 metric tons<br>Period: 2008<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Lithium production: 164779 metric tons<br>Period: 2009<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Lithium production: 246329.06 metric tons<br>Period: 2010<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Lithium production: 352234.97 metric tons<br>Period: 2011<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Lithium production: 382677.35 metric tons<br>Period: 2012<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Lithium production: 339816.33 metric tons<br>Period: 2013<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Lithium production: 372786.58 metric tons<br>Period: 2014<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Lithium production: 363463.23 metric tons<br>Period: 2015<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Lithium production: 368648.88 metric tons<br>Period: 2016<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Lithium production: 1427137.22 metric tons<br>Period: 2017<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Lithium production: 1643202 metric tons<br>Period: 2018<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Lithium production: 1351095.12 metric tons<br>Period: 2019<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Lithium production: 1348933.92 metric tons<br>Period: 2020<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Lithium production: 1348324.27 metric tons<br>Period: 2021<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(33,113,181,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: MEX<br>Countries in region: Mexico"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(35,139,69,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(35,139,69,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [9755, 9084, 8924, 8950, 9000, 14459.999999999998, 15929.000000000002, 15732.999999999998, 7820, 7499.9999999999991, 7981.9999999999991, 8519, 5781, 6000, 10547, 41000, 85000, 85000.000000000015, 85000],
+      "text": ["Lithium production: 9755 metric tons<br>Period: 2003<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Lithium production: 9084 metric tons<br>Period: 2004<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Lithium production: 8924 metric tons<br>Period: 2005<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Lithium production: 8950 metric tons<br>Period: 2006<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Lithium production: 9000 metric tons<br>Period: 2007<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Lithium production: 14460 metric tons<br>Period: 2008<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Lithium production: 15929 metric tons<br>Period: 2009<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Lithium production: 15733 metric tons<br>Period: 2010<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Lithium production: 7820 metric tons<br>Period: 2011<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Lithium production: 7500 metric tons<br>Period: 2012<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Lithium production: 7982 metric tons<br>Period: 2013<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Lithium production: 8519 metric tons<br>Period: 2014<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Lithium production: 5781 metric tons<br>Period: 2015<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Lithium production: 6000 metric tons<br>Period: 2016<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Lithium production: 10547 metric tons<br>Period: 2017<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Lithium production: 41000 metric tons<br>Period: 2018<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Lithium production: 85000 metric tons<br>Period: 2019<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Lithium production: 85000 metric tons<br>Period: 2020<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Lithium production: 85000 metric tons<br>Period: 2021<br>REMIND_39 region code: BRA<br>Countries in region: Brazil"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(65,171,93,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; San Marino; Monaco; Holy See (Vatican City State)", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; San Marino; Monaco; Holy See (Vatican City State)", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(65,171,93,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(77,0,75,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Tajikistan; Belarus; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Tajikistan; Belarus; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Tajikistan; Belarus; Turkmenistan; Kyrgyzstan; Mongolia; Armenia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(105,105,105,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(128,128,128,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Norfolk Island; Niue; Tokelau; United States Minor Outlying Islands; Pitcairn", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Norfolk Island; Niue; Tokelau; United States Minor Outlying Islands; Pitcairn", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Cook Islands; Palau; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Cook Islands; Palau; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Cook Islands; Palau; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; Vanuatu; New Caledonia; French Polynesia; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; Vanuatu; New Caledonia; French Polynesia; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; Vanuatu; New Caledonia; French Polynesia; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Tokelau; Norfolk Island; United States Minor Outlying Islands; Pitcairn", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; Vanuatu; New Caledonia; French Polynesia; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Nauru; Wallis and Futuna; Tuvalu; Niue; Tokelau; Norfolk Island; United States Minor Outlying Islands; Pitcairn"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(136,65,157,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(140,107,177,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Nepal; Afghanistan; Bhutan", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Nepal; Afghanistan; Bhutan", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Nepal; Afghanistan; Bhutan", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Nepal; Afghanistan; Bhutan", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Nepal; Afghanistan; Bhutan", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Nepal; Afghanistan; Bhutan", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Afghanistan; Nepal; Bhutan", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Afghanistan; Nepal; Bhutan", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Afghanistan; Nepal; Bhutan", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Afghanistan; Nepal; Bhutan", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Afghanistan; Nepal; Bhutan", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Afghanistan; Nepal; Bhutan", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Afghanistan; Nepal; Bhutan", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Afghanistan; Nepal; Bhutan", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Afghanistan; Nepal; Bhutan", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Afghanistan; Nepal; Bhutan", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Afghanistan; Nepal; Bhutan", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Afghanistan; Nepal; Bhutan", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Afghanistan; Nepal; Bhutan"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(140,150,198,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: JPN<br>Countries in region: Japan"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(152,0,67,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: TUR<br>Countries in region: Turkey"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(161,217,155,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(217,72,1,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [4888.2625763712231, 5633.1919588592655, 5078.4258995021564, 5459.8650193545636, 5387.7663501803772, 6518.1171175830923, 6935.023119452283, 7420.4110264432729, 6915.6314087736109, 6882.895984717471, 3653.2617374951255, 3192.4390885445123, 3121.8518094179262, 4689.2966132398169, 9186.775153156239, 9141.8635628771008, 9089.9659429896001, 9061.3941936955616, 9100.2423590966227],
+      "text": ["Lithium production: 4888.26 metric tons<br>Period: 2003<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Lithium production: 5633.19 metric tons<br>Period: 2004<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Lithium production: 5078.43 metric tons<br>Period: 2005<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Lithium production: 5459.87 metric tons<br>Period: 2006<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Lithium production: 5387.77 metric tons<br>Period: 2007<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Lithium production: 6518.12 metric tons<br>Period: 2008<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Lithium production: 6935.02 metric tons<br>Period: 2009<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Lithium production: 7420.41 metric tons<br>Period: 2010<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Lithium production: 6915.63 metric tons<br>Period: 2011<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Lithium production: 6882.9 metric tons<br>Period: 2012<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Lithium production: 3653.26 metric tons<br>Period: 2013<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Lithium production: 3192.44 metric tons<br>Period: 2014<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Lithium production: 3121.85 metric tons<br>Period: 2015<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Lithium production: 4689.3 metric tons<br>Period: 2016<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Lithium production: 9186.78 metric tons<br>Period: 2017<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Lithium production: 9141.86 metric tons<br>Period: 2018<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Lithium production: 9089.97 metric tons<br>Period: 2019<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Lithium production: 9061.39 metric tons<br>Period: 2020<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Lithium production: 9100.24 metric tons<br>Period: 2021<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(217,72,1,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(217,72,1,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: IND<br>Countries in region: India", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: IND<br>Countries in region: India", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: IND<br>Countries in region: India", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: IND<br>Countries in region: India", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: IND<br>Countries in region: India", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: IND<br>Countries in region: India", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: IND<br>Countries in region: India", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: IND<br>Countries in region: India", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: IND<br>Countries in region: India", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: IND<br>Countries in region: India", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: IND<br>Countries in region: India", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: IND<br>Countries in region: India", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: IND<br>Countries in region: India", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: IND<br>Countries in region: India", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: IND<br>Countries in region: India", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: IND<br>Countries in region: India", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: IND<br>Countries in region: India", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: IND<br>Countries in region: India", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: IND<br>Countries in region: India"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(220,0,5,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [4600, 4600, 4600, 4600, 4600, 4600, 4599.9999999999991, 4600, 4600, 4600, 4600, 4600, 4600, 4600.0000000000009, 4600, 4600, 4600, 4600, 4600],
+      "text": ["Lithium production: 4600 metric tons<br>Period: 2003<br>REMIND_39 region code: USA<br>Countries in region: United States", "Lithium production: 4600 metric tons<br>Period: 2004<br>REMIND_39 region code: USA<br>Countries in region: United States", "Lithium production: 4600 metric tons<br>Period: 2005<br>REMIND_39 region code: USA<br>Countries in region: United States", "Lithium production: 4600 metric tons<br>Period: 2006<br>REMIND_39 region code: USA<br>Countries in region: United States", "Lithium production: 4600 metric tons<br>Period: 2007<br>REMIND_39 region code: USA<br>Countries in region: United States", "Lithium production: 4600 metric tons<br>Period: 2008<br>REMIND_39 region code: USA<br>Countries in region: United States", "Lithium production: 4600 metric tons<br>Period: 2009<br>REMIND_39 region code: USA<br>Countries in region: United States", "Lithium production: 4600 metric tons<br>Period: 2010<br>REMIND_39 region code: USA<br>Countries in region: United States", "Lithium production: 4600 metric tons<br>Period: 2011<br>REMIND_39 region code: USA<br>Countries in region: United States", "Lithium production: 4600 metric tons<br>Period: 2012<br>REMIND_39 region code: USA<br>Countries in region: United States", "Lithium production: 4600 metric tons<br>Period: 2013<br>REMIND_39 region code: USA<br>Countries in region: United States", "Lithium production: 4600 metric tons<br>Period: 2014<br>REMIND_39 region code: USA<br>Countries in region: United States", "Lithium production: 4600 metric tons<br>Period: 2015<br>REMIND_39 region code: USA<br>Countries in region: United States", "Lithium production: 4600 metric tons<br>Period: 2016<br>REMIND_39 region code: USA<br>Countries in region: United States", "Lithium production: 4600 metric tons<br>Period: 2017<br>REMIND_39 region code: USA<br>Countries in region: United States", "Lithium production: 4600 metric tons<br>Period: 2018<br>REMIND_39 region code: USA<br>Countries in region: United States", "Lithium production: 4600 metric tons<br>Period: 2019<br>REMIND_39 region code: USA<br>Countries in region: United States", "Lithium production: 4600 metric tons<br>Period: 2020<br>REMIND_39 region code: USA<br>Countries in region: United States", "Lithium production: 4600 metric tons<br>Period: 2021<br>REMIND_39 region code: USA<br>Countries in region: United States"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(220,0,5,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: POL<br>Countries in region: Poland"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(241,105,19,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [330.01138338467518, 354.94405151257291, 798.39561900685305, 646.13033362557394, 361.5182515599729, 986.70263871269685, 972.90435707877316, 908.38487275292937, 916.18909660298527, 991.85952726224696, 928.42726109499654, 916.86571634022278, 905.70112316427401, 894.96389089569141, 724.36860169444196, 717.18900582123513, 772.78587617442099, 767.46316200124272, 763.02972510024051],
+      "text": ["Lithium production: 330.01 metric tons<br>Period: 2003<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Madagascar; Angola; Cameroon; Burkina Faso; Zimbabwe; Malawi; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Lesotho; Namibia; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Reunion; Djibouti; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Lithium production: 354.94 metric tons<br>Period: 2004<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Madagascar; Angola; Cameroon; Burkina Faso; Malawi; Zimbabwe; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Lesotho; Namibia; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Lithium production: 798.4 metric tons<br>Period: 2005<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Angola; Madagascar; Cameroon; Burkina Faso; Malawi; Zimbabwe; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Lesotho; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Lithium production: 646.13 metric tons<br>Period: 2006<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Angola; Madagascar; Cameroon; Burkina Faso; Malawi; Zimbabwe; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Lesotho; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Lithium production: 361.52 metric tons<br>Period: 2007<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Angola; Madagascar; Cameroon; Burkina Faso; Malawi; Zimbabwe; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Lesotho; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Lithium production: 986.7 metric tons<br>Period: 2008<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Angola; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Lesotho; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Lithium production: 972.9 metric tons<br>Period: 2009<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Botswana; Lesotho; Gambia; Gabon; Guinea-Bissau; Mauritius; Equatorial Guinea; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Lithium production: 908.38 metric tons<br>Period: 2010<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Botswana; Lesotho; Gambia; Gabon; Guinea-Bissau; Mauritius; Equatorial Guinea; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Lithium production: 916.19 metric tons<br>Period: 2011<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; South Sudan; Benin; Burundi; Togo; Sierra Leone; Congo; Central African Republic; Liberia; Eritrea; Namibia; Botswana; Lesotho; Gambia; Gabon; Guinea-Bissau; Mauritius; Equatorial Guinea; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Lithium production: 991.86 metric tons<br>Period: 2012<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; South Sudan; Benin; Burundi; Togo; Sierra Leone; Congo; Central African Republic; Liberia; Eritrea; Namibia; Botswana; Gambia; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Lithium production: 928.43 metric tons<br>Period: 2013<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; South Sudan; Rwanda; Benin; Burundi; Togo; Sierra Leone; Congo; Central African Republic; Liberia; Eritrea; Namibia; Botswana; Gambia; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Lithium production: 916.87 metric tons<br>Period: 2014<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; South Sudan; Benin; Burundi; Togo; Sierra Leone; Congo; Central African Republic; Liberia; Eritrea; Namibia; Botswana; Gambia; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Lithium production: 905.7 metric tons<br>Period: 2015<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Zimbabwe; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Lithium production: 894.96 metric tons<br>Period: 2016<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Zimbabwe; Somalia; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Lithium production: 724.37 metric tons<br>Period: 2017<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Somalia; Zimbabwe; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Lithium production: 717.19 metric tons<br>Period: 2018<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Somalia; Zimbabwe; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Gabon; Lesotho; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Lithium production: 772.79 metric tons<br>Period: 2019<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Somalia; Zimbabwe; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Gabon; Lesotho; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Lithium production: 767.46 metric tons<br>Period: 2020<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Somalia; Zimbabwe; Guinea; Benin; Rwanda; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Gabon; Lesotho; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Lithium production: 763.03 metric tons<br>Period: 2021<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Somalia; Senegal; Zimbabwe; Guinea; Benin; Rwanda; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Gabon; Lesotho; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(250,159,181,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(252,197,192,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: DEU<br>Countries in region: Germany"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(253,141,60,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(253,141,60,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: IRL<br>Countries in region: Ireland"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(253,141,60,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(253,141,60,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,178,76,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,178,76,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,178,76,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: AUT<br>Countries in region: Austria"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,196,79,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [13195.130613999443, 13683.881573464729, 14661.68535535599, 14661.909198113317, 15639.483103696932, 17106.173750662794, 19551.305398288485, 20529.703460417462, 21508.057632016313, 23463.70164746535, 18642.683411878275, 18390.753760753931, 20013.893149564195, 24834.805100087353, 35532.102065148079, 35532.537209018104, 35532.36913133043, 35533.500184873876, 35534.998837567015],
+      "text": ["Lithium production: 13195.13 metric tons<br>Period: 2003<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Lithium production: 13683.88 metric tons<br>Period: 2004<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Lithium production: 14661.69 metric tons<br>Period: 2005<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Lithium production: 14661.91 metric tons<br>Period: 2006<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Lithium production: 15639.48 metric tons<br>Period: 2007<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Lithium production: 17106.17 metric tons<br>Period: 2008<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Lithium production: 19551.31 metric tons<br>Period: 2009<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Lithium production: 20529.7 metric tons<br>Period: 2010<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Lithium production: 21508.06 metric tons<br>Period: 2011<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Lithium production: 23463.7 metric tons<br>Period: 2012<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Lithium production: 18642.68 metric tons<br>Period: 2013<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Lithium production: 18390.75 metric tons<br>Period: 2014<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Lithium production: 20013.89 metric tons<br>Period: 2015<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Lithium production: 24834.81 metric tons<br>Period: 2016<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Lithium production: 35532.1 metric tons<br>Period: 2017<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Lithium production: 35532.54 metric tons<br>Period: 2018<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Lithium production: 35532.37 metric tons<br>Period: 2019<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Lithium production: 35533.5 metric tons<br>Period: 2020<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Lithium production: 35535 metric tons<br>Period: 2021<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,196,79,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; Lebanon; United Arab Emirates; Palestine, State of; Oman; Kuwait; Bahrain; Qatar", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; Lebanon; United Arab Emirates; Palestine, State of; Oman; Kuwait; Bahrain; Qatar", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; Lebanon; United Arab Emirates; Palestine, State of; Oman; Kuwait; Bahrain; Qatar", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Kuwait; Oman; Qatar; Bahrain", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Kuwait; Oman; Qatar; Bahrain", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Kuwait; Oman; Qatar; Bahrain", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Kuwait; Oman; Qatar; Bahrain", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; Israel; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Oman; Palestine, State of; Kuwait; Qatar; Bahrain", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Oman; Palestine, State of; Kuwait; Qatar; Bahrain", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Oman; Palestine, State of; Kuwait; Qatar; Bahrain", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,196,79,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,217,118,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,217,118,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(255,237,160,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Lithium production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Lithium production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Lithium production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Lithium production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Lithium production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Lithium production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Lithium production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Lithium production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Lithium production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Lithium production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Lithium production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Lithium production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Lithium production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Lithium production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Lithium production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Lithium production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Lithium production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Lithium production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Lithium production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(255,237,160,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "visible": false,
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    }
+  ],
+  "layout": {
+    "margin": {
+      "t": 33.534246575342465,
+      "r": 0,
+      "b": 27.031963470319649,
+      "l": 59.178082191780831
+    },
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.611872146118724
+    },
+    "title": {
+      "text": "Lithium production (REMIND_39)",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 17.534246575342468
+      },
+      "x": 0,
+      "xref": "paper"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [2002.0999999999999, 2021.9000000000001],
+      "tickmode": "array",
+      "ticktext": ["2005", "2010", "2015", "2020"],
+      "tickvals": [2005, 2010, 2015, 2020],
+      "categoryorder": "array",
+      "categoryarray": ["2005", "2010", "2015", "2020"],
+      "nticks": null,
+      "ticks": "",
+      "tickcolor": null,
+      "ticklen": 3.6529680365296811,
+      "tickwidth": 0,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716894984
+      },
+      "tickangle": -90,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(235,235,235,1)",
+      "gridwidth": 0.66417600664176002,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.611872146118724
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [0, 1965751.5452820833],
+      "tickmode": "array",
+      "ticktext": ["0", "500000", "1000000", "1500000", "2000000"],
+      "tickvals": [0, 500000, 1000000.0000000001, 1500000, 1999999.9999999998],
+      "categoryorder": "array",
+      "categoryarray": ["0", "500000", "1000000", "1500000", "2000000"],
+      "nticks": null,
+      "ticks": "",
+      "tickcolor": null,
+      "ticklen": 3.6529680365296811,
+      "tickwidth": 0,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.68949771689498
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(235,235,235,1)",
+      "gridwidth": 0.66417600664176002,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "metric tons",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.611872146118724
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "layer": "below",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": false,
+    "legend": {
+      "bgcolor": null,
+      "bordercolor": null,
+      "borderwidth": 0,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716894984
+      },
+      "title": {
+        "text": "",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.611872146118724
+        }
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  "config": {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  "source": "A",
+  "attrs": {
+    "b55c28d56e10": {
+      "x": {},
+      "colour": {},
+      "text": {},
+      "y": {},
+      "type": "scatter"
+    },
+    "b55c2eb32c29": {
+      "y": {}
+    }
+  },
+  "cur_data": "b55c28d56e10",
+  "visdat": {
+    "b55c28d56e10": ["function (y) ", "x"],
+    "b55c2eb32c29": ["function (y) ", "x"]
+  },
+  "highlight": {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.20000000000000001,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  "shinyEvents": ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  "base_url": "https://plot.ly"
+}
+           
+
+                  ); 
+
+           }()); 
+
+  

@@ -1,0 +1,1199 @@
+(function(){ 
+
+        window.PLOTLYENV={'BASE_URL': 'https://plotly.com'}; 
+
+        
+
+        var gd = document.getElementById('REMIND_54_Energy_Energy_use_per_capita_line') 
+
+        var resizeDebounce = null; 
+
+
+        function resizePlot() { 
+
+          var bb = gd.getBoundingClientRect(); 
+
+          Plotly.relayout(gd, { 
+
+            width: bb.width, 
+
+              height: bb.height 
+
+            }); 
+
+          } 
+
+
+          Plotly.plot(gd,  
+
+              {
+  "data": [
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1590.8399999999999, 1720.3099999999999, 1712.8499999999997, 1844.27, 1849.4499999999998, 1928.3300000000002, 1856.0999999999999, 1928.6500000000001, 1952.05, 1936.7999999999997, 1967.02, 2029.9199999999998, 2029.9200000000001, 2029.9200000000003, 2029.9200000000001, 2029.9200000000003, 2029.9200000000001, 2029.9199999999998, 2029.9200000000003],
+      "text": ["Energy use per capita: 1590.84 energy per capita<br>Period: 2003<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Energy use per capita: 1720.31 energy per capita<br>Period: 2004<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Energy use per capita: 1712.85 energy per capita<br>Period: 2005<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Energy use per capita: 1844.27 energy per capita<br>Period: 2006<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Energy use per capita: 1849.45 energy per capita<br>Period: 2007<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Energy use per capita: 1928.33 energy per capita<br>Period: 2008<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Energy use per capita: 1856.1 energy per capita<br>Period: 2009<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Energy use per capita: 1928.65 energy per capita<br>Period: 2010<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Energy use per capita: 1952.05 energy per capita<br>Period: 2011<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Energy use per capita: 1936.8 energy per capita<br>Period: 2012<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Energy use per capita: 1967.02 energy per capita<br>Period: 2013<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Energy use per capita: 2029.92 energy per capita<br>Period: 2014<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Energy use per capita: 2029.92 energy per capita<br>Period: 2015<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Energy use per capita: 2029.92 energy per capita<br>Period: 2016<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Energy use per capita: 2029.92 energy per capita<br>Period: 2017<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Energy use per capita: 2029.92 energy per capita<br>Period: 2018<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Energy use per capita: 2029.92 energy per capita<br>Period: 2019<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Energy use per capita: 2029.92 energy per capita<br>Period: 2020<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Energy use per capita: 2029.92 energy per capita<br>Period: 2021<br>REMIND_54 region code: ARG<br>Countries in region: Argentina"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,68,27,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [3813.7064514425329, 3795.30660983605, 3756.9963214591244, 3973.1085617135045, 3857.9826529255392, 4009.760706127895, 4010.024647714913, 3879.3965603733573, 3782.2703359110678, 3756.6864880801759, 3874.0156971697593, 3628.5760834173261, 3515.2898853503852, 3516.8849956765525, 3524.5043679675846, 3535.1314813050576, 3543.3898649203074, 3548.403288586062, 3553.3569340983267],
+      "text": ["Energy use per capita: 3813.71 energy per capita<br>Period: 2003<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Energy use per capita: 3795.31 energy per capita<br>Period: 2004<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Energy use per capita: 3757 energy per capita<br>Period: 2005<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Energy use per capita: 3973.11 energy per capita<br>Period: 2006<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Energy use per capita: 3857.98 energy per capita<br>Period: 2007<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Energy use per capita: 4009.76 energy per capita<br>Period: 2008<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Energy use per capita: 4010.02 energy per capita<br>Period: 2009<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Energy use per capita: 3879.4 energy per capita<br>Period: 2010<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Energy use per capita: 3782.27 energy per capita<br>Period: 2011<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Energy use per capita: 3756.69 energy per capita<br>Period: 2012<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Energy use per capita: 3874.02 energy per capita<br>Period: 2013<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Energy use per capita: 3628.58 energy per capita<br>Period: 2014<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Energy use per capita: 3515.29 energy per capita<br>Period: 2015<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Energy use per capita: 3516.88 energy per capita<br>Period: 2016<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Energy use per capita: 3524.5 energy per capita<br>Period: 2017<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Energy use per capita: 3535.13 energy per capita<br>Period: 2018<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Energy use per capita: 3543.39 energy per capita<br>Period: 2019<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Energy use per capita: 3548.4 energy per capita<br>Period: 2020<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Energy use per capita: 3553.36 energy per capita<br>Period: 2021<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,109,44,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [915.58558747183508, 941.29047200914488, 965.14075485014928, 1020.3356350692709, 1005.5035716161498, 1031.4308611561478, 1041.4185893235901, 1111.2101658563379, 1090.9172954544197, 1129.5921333723461, 1103.0338795001098, 1135.4864596237303, 1134.2018190814103, 1132.0346857323912, 1127.3524664674701, 1119.1506794817974, 1110.4860100341566, 1104.4339305337041, 1100.4985223262001],
+      "text": ["Energy use per capita: 915.59 energy per capita<br>Period: 2003<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Martinique; Guadeloupe; Bahamas; Barbados; Belize; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Saint Kitts and Nevis; Cayman Islands; Saint Martin (French part); Sint Maarten (Dutch part); Virgin Islands, British; Turks and Caicos Islands; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Energy use per capita: 941.29 energy per capita<br>Period: 2004<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Martinique; Guadeloupe; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Saint Kitts and Nevis; Cayman Islands; Saint Martin (French part); Sint Maarten (Dutch part); Virgin Islands, British; Turks and Caicos Islands; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Energy use per capita: 965.14 energy per capita<br>Period: 2005<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Energy use per capita: 1020.34 energy per capita<br>Period: 2006<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Energy use per capita: 1005.5 energy per capita<br>Period: 2007<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Energy use per capita: 1031.43 energy per capita<br>Period: 2008<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Energy use per capita: 1041.42 energy per capita<br>Period: 2009<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Energy use per capita: 1111.21 energy per capita<br>Period: 2010<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Energy use per capita: 1090.92 energy per capita<br>Period: 2011<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Nicaragua; Paraguay; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Energy use per capita: 1129.59 energy per capita<br>Period: 2012<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Nicaragua; Paraguay; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Energy use per capita: 1103.03 energy per capita<br>Period: 2013<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Haiti; Dominican Republic; Honduras; El Salvador; Nicaragua; Paraguay; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Energy use per capita: 1135.49 energy per capita<br>Period: 2014<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Haiti; Dominican Republic; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Energy use per capita: 1134.2 energy per capita<br>Period: 2015<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Haiti; Dominican Republic; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Martinique; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Sint Maarten (Dutch part); Saint Martin (French part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Energy use per capita: 1132.03 energy per capita<br>Period: 2016<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Haiti; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Martinique; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Saint Martin (French part); Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Energy use per capita: 1127.35 energy per capita<br>Period: 2017<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Cuba; Haiti; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Martinique; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Cayman Islands; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Saint Martin (French part); Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Energy use per capita: 1119.15 energy per capita<br>Period: 2018<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Cuba; Haiti; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Belize; Martinique; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Cayman Islands; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Saint Martin (French part); Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Energy use per capita: 1110.49 energy per capita<br>Period: 2019<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Cuba; Haiti; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Belize; Martinique; French Guiana; Barbados; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Cayman Islands; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Virgin Islands, British; Saint Martin (French part); Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Energy use per capita: 1104.43 energy per capita<br>Period: 2020<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Haiti; Cuba; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Bahamas; Guadeloupe; Belize; Martinique; French Guiana; Barbados; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Cayman Islands; Dominica; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Virgin Islands, British; Saint Martin (French part); Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Energy use per capita: 1100.5 energy per capita<br>Period: 2021<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Haiti; Dominican Republic; Cuba; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Bahamas; Guadeloupe; Belize; Martinique; French Guiana; Barbados; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Cayman Islands; Dominica; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Virgin Islands, British; Saint Martin (French part); Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,109,44,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [642.57000000000005, 680.60000000000002, 777.43999999999994, 805.62999999999988, 846.2600000000001, 862.03999999999996, 864.94000000000005, 831.41999999999996, 853.49999999999989, 857.76999999999987, 803.42999999999995, 782.75999999999999, 782.75999999999988, 782.75999999999988, 782.75999999999999, 782.75999999999999, 782.75999999999988, 782.75999999999999, 782.75999999999999],
+      "text": ["Energy use per capita: 642.57 energy per capita<br>Period: 2003<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Energy use per capita: 680.6 energy per capita<br>Period: 2004<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Energy use per capita: 777.44 energy per capita<br>Period: 2005<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Energy use per capita: 805.63 energy per capita<br>Period: 2006<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Energy use per capita: 846.26 energy per capita<br>Period: 2007<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Energy use per capita: 862.04 energy per capita<br>Period: 2008<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Energy use per capita: 864.94 energy per capita<br>Period: 2009<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Energy use per capita: 831.42 energy per capita<br>Period: 2010<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Energy use per capita: 853.5 energy per capita<br>Period: 2011<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Energy use per capita: 857.77 energy per capita<br>Period: 2012<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Energy use per capita: 803.43 energy per capita<br>Period: 2013<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Energy use per capita: 782.76 energy per capita<br>Period: 2014<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Energy use per capita: 782.76 energy per capita<br>Period: 2015<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Energy use per capita: 782.76 energy per capita<br>Period: 2016<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Energy use per capita: 782.76 energy per capita<br>Period: 2017<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Energy use per capita: 782.76 energy per capita<br>Period: 2018<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Energy use per capita: 782.76 energy per capita<br>Period: 2019<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Energy use per capita: 782.76 energy per capita<br>Period: 2020<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Energy use per capita: 782.76 energy per capita<br>Period: 2021<br>REMIND_54 region code: EGY<br>Countries in region: Egypt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(8,48,107,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [8341.340000000002, 8455.5499999999993, 8422.0300000000007, 8239.9500000000007, 8213.3899999999994, 8194.8799999999992, 7797.1199999999999, 7788.5600000000013, 7911.5500000000011, 7733.4100000000008, 7743.7300000000005, 7897.8599999999988, 7631.3399999999992, 7631.3399999999992, 7631.3400000000001, 7631.3400000000001, 7631.3400000000001, 7631.3399999999992, 7631.3399999999992],
+      "text": ["Energy use per capita: 8341.34 energy per capita<br>Period: 2003<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Energy use per capita: 8455.55 energy per capita<br>Period: 2004<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Energy use per capita: 8422.03 energy per capita<br>Period: 2005<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Energy use per capita: 8239.95 energy per capita<br>Period: 2006<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Energy use per capita: 8213.39 energy per capita<br>Period: 2007<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Energy use per capita: 8194.88 energy per capita<br>Period: 2008<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Energy use per capita: 7797.12 energy per capita<br>Period: 2009<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Energy use per capita: 7788.56 energy per capita<br>Period: 2010<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Energy use per capita: 7911.55 energy per capita<br>Period: 2011<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Energy use per capita: 7733.41 energy per capita<br>Period: 2012<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Energy use per capita: 7743.73 energy per capita<br>Period: 2013<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Energy use per capita: 7897.86 energy per capita<br>Period: 2014<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Energy use per capita: 7631.34 energy per capita<br>Period: 2015<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Energy use per capita: 7631.34 energy per capita<br>Period: 2016<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Energy use per capita: 7631.34 energy per capita<br>Period: 2017<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Energy use per capita: 7631.34 energy per capita<br>Period: 2018<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Energy use per capita: 7631.34 energy per capita<br>Period: 2019<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Energy use per capita: 7631.34 energy per capita<br>Period: 2020<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Energy use per capita: 7631.34 energy per capita<br>Period: 2021<br>REMIND_54 region code: CAN<br>Countries in region: Canada"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(8,81,156,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [5377.2255087243475, 5412.3172861610265, 5364.210565140871, 5484.2885072663803, 5562.5472857728364, 5650.4296283063341, 5566.4175421945583, 5534.5618977389113, 5487.9947828362501, 5377.5751529411154, 5289.8725900992622, 5208.5728778483581, 5313.1943779117355, 5312.2139123169309, 5311.5780740239798, 5311.1521422250398, 5310.9878083893009, 5309.5799642208094, 5309.1830033563247],
+      "text": ["Energy use per capita: 5377.23 energy per capita<br>Period: 2003<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Energy use per capita: 5412.32 energy per capita<br>Period: 2004<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Energy use per capita: 5364.21 energy per capita<br>Period: 2005<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Energy use per capita: 5484.29 energy per capita<br>Period: 2006<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Energy use per capita: 5562.55 energy per capita<br>Period: 2007<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Energy use per capita: 5650.43 energy per capita<br>Period: 2008<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Energy use per capita: 5566.42 energy per capita<br>Period: 2009<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Energy use per capita: 5534.56 energy per capita<br>Period: 2010<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Energy use per capita: 5487.99 energy per capita<br>Period: 2011<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Energy use per capita: 5377.58 energy per capita<br>Period: 2012<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Energy use per capita: 5289.87 energy per capita<br>Period: 2013<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Energy use per capita: 5208.57 energy per capita<br>Period: 2014<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Energy use per capita: 5313.19 energy per capita<br>Period: 2015<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Energy use per capita: 5312.21 energy per capita<br>Period: 2016<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Energy use per capita: 5311.58 energy per capita<br>Period: 2017<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Energy use per capita: 5311.15 energy per capita<br>Period: 2018<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Energy use per capita: 5310.99 energy per capita<br>Period: 2019<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Energy use per capita: 5309.58 energy per capita<br>Period: 2020<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Energy use per capita: 5309.18 energy per capita<br>Period: 2021<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(33,113,181,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1614.1400000000001, 1607.9200000000001, 1694.0899999999999, 1709.29, 1675.9200000000003, 1637.98, 1619.8899999999999, 1553.0000000000002, 1608.55, 1656.1400000000001, 1637.79, 1582.9099999999999, 1559.1200000000001, 1559.1199999999999, 1559.1199999999997, 1559.1199999999999, 1559.1199999999999, 1559.1200000000001, 1559.1199999999997],
+      "text": ["Energy use per capita: 1614.14 energy per capita<br>Period: 2003<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Energy use per capita: 1607.92 energy per capita<br>Period: 2004<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Energy use per capita: 1694.09 energy per capita<br>Period: 2005<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Energy use per capita: 1709.29 energy per capita<br>Period: 2006<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Energy use per capita: 1675.92 energy per capita<br>Period: 2007<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Energy use per capita: 1637.98 energy per capita<br>Period: 2008<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Energy use per capita: 1619.89 energy per capita<br>Period: 2009<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Energy use per capita: 1553 energy per capita<br>Period: 2010<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Energy use per capita: 1608.55 energy per capita<br>Period: 2011<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Energy use per capita: 1656.14 energy per capita<br>Period: 2012<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Energy use per capita: 1637.79 energy per capita<br>Period: 2013<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Energy use per capita: 1582.91 energy per capita<br>Period: 2014<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Energy use per capita: 1559.12 energy per capita<br>Period: 2015<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Energy use per capita: 1559.12 energy per capita<br>Period: 2016<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Energy use per capita: 1559.12 energy per capita<br>Period: 2017<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Energy use per capita: 1559.12 energy per capita<br>Period: 2018<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Energy use per capita: 1559.12 energy per capita<br>Period: 2019<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Energy use per capita: 1559.12 energy per capita<br>Period: 2020<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Energy use per capita: 1559.12 energy per capita<br>Period: 2021<br>REMIND_54 region code: MEX<br>Countries in region: Mexico"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(35,139,69,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [5933.2200000000003, 5769.3300000000008, 5802.7200000000012, 5833.7700000000004, 5862.2200000000003, 6752.7100000000009, 6484.1199999999999, 6934.5899999999992, 5649.7000000000007, 5906.1400000000012, 6415.9900000000007, 5595.6499999999996, 5817.6400000000003, 5817.6400000000003, 5817.6400000000003, 5817.6400000000003, 5817.6400000000003, 5817.6400000000003, 5817.6400000000003],
+      "text": ["Energy use per capita: 5933.22 energy per capita<br>Period: 2003<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Energy use per capita: 5769.33 energy per capita<br>Period: 2004<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Energy use per capita: 5802.72 energy per capita<br>Period: 2005<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Energy use per capita: 5833.77 energy per capita<br>Period: 2006<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Energy use per capita: 5862.22 energy per capita<br>Period: 2007<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Energy use per capita: 6752.71 energy per capita<br>Period: 2008<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Energy use per capita: 6484.12 energy per capita<br>Period: 2009<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Energy use per capita: 6934.59 energy per capita<br>Period: 2010<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Energy use per capita: 5649.7 energy per capita<br>Period: 2011<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Energy use per capita: 5906.14 energy per capita<br>Period: 2012<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Energy use per capita: 6415.99 energy per capita<br>Period: 2013<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Energy use per capita: 5595.65 energy per capita<br>Period: 2014<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Energy use per capita: 5817.64 energy per capita<br>Period: 2015<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Energy use per capita: 5817.64 energy per capita<br>Period: 2016<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Energy use per capita: 5817.64 energy per capita<br>Period: 2017<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Energy use per capita: 5817.64 energy per capita<br>Period: 2018<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Energy use per capita: 5817.64 energy per capita<br>Period: 2019<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Energy use per capita: 5817.64 energy per capita<br>Period: 2020<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Energy use per capita: 5817.64 energy per capita<br>Period: 2021<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(35,139,69,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1089.51, 1137.0699999999999, 1152.76, 1180.05, 1234.2, 1290.1700000000001, 1236.1500000000001, 1354.0799999999999, 1362.5600000000002, 1408.8499999999997, 1456.1099999999999, 1490.4300000000001, 1490.4300000000001, 1490.4300000000001, 1490.4300000000001, 1490.4300000000003, 1490.4300000000001, 1490.4300000000003, 1490.4299999999998],
+      "text": ["Energy use per capita: 1089.51 energy per capita<br>Period: 2003<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Energy use per capita: 1137.07 energy per capita<br>Period: 2004<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Energy use per capita: 1152.76 energy per capita<br>Period: 2005<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Energy use per capita: 1180.05 energy per capita<br>Period: 2006<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Energy use per capita: 1234.2 energy per capita<br>Period: 2007<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Energy use per capita: 1290.17 energy per capita<br>Period: 2008<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Energy use per capita: 1236.15 energy per capita<br>Period: 2009<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Energy use per capita: 1354.08 energy per capita<br>Period: 2010<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Energy use per capita: 1362.56 energy per capita<br>Period: 2011<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Energy use per capita: 1408.85 energy per capita<br>Period: 2012<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Energy use per capita: 1456.11 energy per capita<br>Period: 2013<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Energy use per capita: 1490.43 energy per capita<br>Period: 2014<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Energy use per capita: 1490.43 energy per capita<br>Period: 2015<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Energy use per capita: 1490.43 energy per capita<br>Period: 2016<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Energy use per capita: 1490.43 energy per capita<br>Period: 2017<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Energy use per capita: 1490.43 energy per capita<br>Period: 2018<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Energy use per capita: 1490.43 energy per capita<br>Period: 2019<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Energy use per capita: 1490.43 energy per capita<br>Period: 2020<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Energy use per capita: 1490.43 energy per capita<br>Period: 2021<br>REMIND_54 region code: BRA<br>Countries in region: Brazil"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(65,171,93,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [2462.2081489374741, 2500.7129217956435, 2475.0416292537748, 2438.4122534246053, 2476.2482483210933, 2434.7102727539882, 2132.0286182496034, 2414.5984006991157, 2371.6120656222392, 2282.6339311617535, 2199.7821809706188, 2058.76236234415, 2058.5262155652968, 2058.4527999923093, 2058.4540610393792, 2058.4287639465319, 2058.4784053864632, 2058.2811974949736, 2058.2428781695166],
+      "text": ["Energy use per capita: 2462.21 energy per capita<br>Period: 2003<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Energy use per capita: 2500.71 energy per capita<br>Period: 2004<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Energy use per capita: 2475.04 energy per capita<br>Period: 2005<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Energy use per capita: 2438.41 energy per capita<br>Period: 2006<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Energy use per capita: 2476.25 energy per capita<br>Period: 2007<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Energy use per capita: 2434.71 energy per capita<br>Period: 2008<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Energy use per capita: 2132.03 energy per capita<br>Period: 2009<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; San Marino; Monaco; Holy See (Vatican City State)", "Energy use per capita: 2414.6 energy per capita<br>Period: 2010<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; San Marino; Monaco; Holy See (Vatican City State)", "Energy use per capita: 2371.61 energy per capita<br>Period: 2011<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Energy use per capita: 2282.63 energy per capita<br>Period: 2012<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Energy use per capita: 2199.78 energy per capita<br>Period: 2013<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Energy use per capita: 2058.76 energy per capita<br>Period: 2014<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Energy use per capita: 2058.53 energy per capita<br>Period: 2015<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Energy use per capita: 2058.45 energy per capita<br>Period: 2016<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Energy use per capita: 2058.45 energy per capita<br>Period: 2017<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Energy use per capita: 2058.43 energy per capita<br>Period: 2018<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Energy use per capita: 2058.48 energy per capita<br>Period: 2019<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Energy use per capita: 2058.28 energy per capita<br>Period: 2020<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Energy use per capita: 2058.24 energy per capita<br>Period: 2021<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(65,171,93,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [4233.4899999999998, 4332.6700000000001, 4364.2200000000012, 4412.5299999999997, 4564.9899999999998, 4629.7799999999997, 4649.7700000000004, 5045.4899999999989, 5216.5900000000001, 5248.5199999999995, 5231.6800000000012, 5289.2799999999997, 5413.3500000000013, 5413.3500000000004, 5413.3500000000004, 5413.3500000000004, 5413.3500000000004, 5413.3500000000013, 5413.3499999999995],
+      "text": ["Energy use per capita: 4233.49 energy per capita<br>Period: 2003<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Energy use per capita: 4332.67 energy per capita<br>Period: 2004<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Energy use per capita: 4364.22 energy per capita<br>Period: 2005<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Energy use per capita: 4412.53 energy per capita<br>Period: 2006<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Energy use per capita: 4564.99 energy per capita<br>Period: 2007<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Energy use per capita: 4629.78 energy per capita<br>Period: 2008<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Energy use per capita: 4649.77 energy per capita<br>Period: 2009<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Energy use per capita: 5045.49 energy per capita<br>Period: 2010<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Energy use per capita: 5216.59 energy per capita<br>Period: 2011<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Energy use per capita: 5248.52 energy per capita<br>Period: 2012<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Energy use per capita: 5231.68 energy per capita<br>Period: 2013<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Energy use per capita: 5289.28 energy per capita<br>Period: 2014<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Energy use per capita: 5413.35 energy per capita<br>Period: 2015<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Energy use per capita: 5413.35 energy per capita<br>Period: 2016<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Energy use per capita: 5413.35 energy per capita<br>Period: 2017<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Energy use per capita: 5413.35 energy per capita<br>Period: 2018<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Energy use per capita: 5413.35 energy per capita<br>Period: 2019<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Energy use per capita: 5413.35 energy per capita<br>Period: 2020<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Energy use per capita: 5413.35 energy per capita<br>Period: 2021<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(77,0,75,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [469.15999999999997, 458.45999999999998, 450.42000000000002, 438.77999999999997, 431.50999999999999, 439.50000000000006, 410.83999999999997, 426.87, 422.13, 441.23000000000002, 449.29000000000002, 470.50000000000006, 470.5, 470.5, 470.49999999999994, 470.5, 470.50000000000006, 470.50000000000006, 470.5],
+      "text": ["Energy use per capita: 469.16 energy per capita<br>Period: 2003<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Energy use per capita: 458.46 energy per capita<br>Period: 2004<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Energy use per capita: 450.42 energy per capita<br>Period: 2005<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Energy use per capita: 438.78 energy per capita<br>Period: 2006<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Energy use per capita: 431.51 energy per capita<br>Period: 2007<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Energy use per capita: 439.5 energy per capita<br>Period: 2008<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Energy use per capita: 410.84 energy per capita<br>Period: 2009<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Energy use per capita: 426.87 energy per capita<br>Period: 2010<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Energy use per capita: 422.13 energy per capita<br>Period: 2011<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Energy use per capita: 441.23 energy per capita<br>Period: 2012<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Energy use per capita: 449.29 energy per capita<br>Period: 2013<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Energy use per capita: 470.5 energy per capita<br>Period: 2014<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Energy use per capita: 470.5 energy per capita<br>Period: 2015<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Energy use per capita: 470.5 energy per capita<br>Period: 2016<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Energy use per capita: 470.5 energy per capita<br>Period: 2017<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Energy use per capita: 470.5 energy per capita<br>Period: 2018<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Energy use per capita: 470.5 energy per capita<br>Period: 2019<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Energy use per capita: 470.5 energy per capita<br>Period: 2020<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Energy use per capita: 470.5 energy per capita<br>Period: 2021<br>REMIND_54 region code: PHL<br>Countries in region: Philippines"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(77,0,75,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1729.5778343442951, 1814.8013411782183, 1795.06791234867, 1916.5323983935475, 1930.5036490578013, 1992.5674468503964, 1795.5223540246936, 1836.8528398445887, 1931.8919308323041, 1933.1837121605197, 1886.7581545620033, 1850.873511223572, 1852.4313079316139, 1854.2080650733735, 1856.1627763953743, 1857.8005038092463, 1859.1534248730086, 1860.2765288305568, 1860.8481397142336],
+      "text": ["Energy use per capita: 1729.58 energy per capita<br>Period: 2003<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Energy use per capita: 1814.8 energy per capita<br>Period: 2004<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Energy use per capita: 1795.07 energy per capita<br>Period: 2005<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Energy use per capita: 1916.53 energy per capita<br>Period: 2006<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Energy use per capita: 1930.5 energy per capita<br>Period: 2007<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Energy use per capita: 1992.57 energy per capita<br>Period: 2008<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Energy use per capita: 1795.52 energy per capita<br>Period: 2009<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Energy use per capita: 1836.85 energy per capita<br>Period: 2010<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Energy use per capita: 1931.89 energy per capita<br>Period: 2011<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Energy use per capita: 1933.18 energy per capita<br>Period: 2012<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Energy use per capita: 1886.76 energy per capita<br>Period: 2013<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Energy use per capita: 1850.87 energy per capita<br>Period: 2014<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Energy use per capita: 1852.43 energy per capita<br>Period: 2015<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Energy use per capita: 1854.21 energy per capita<br>Period: 2016<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Energy use per capita: 1856.16 energy per capita<br>Period: 2017<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Energy use per capita: 1857.8 energy per capita<br>Period: 2018<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Energy use per capita: 1859.15 energy per capita<br>Period: 2019<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Tajikistan; Belarus; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Energy use per capita: 1860.28 energy per capita<br>Period: 2020<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Tajikistan; Belarus; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Energy use per capita: 1860.85 energy per capita<br>Period: 2021<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Tajikistan; Belarus; Turkmenistan; Kyrgyzstan; Mongolia; Armenia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(105,105,105,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [626.76999999999998, 624.25, 641.48000000000002, 665.50999999999999, 653.23000000000002, 675.96000000000004, 692.86000000000001, 696.24000000000001, 689.75, 689.01999999999998, 727.84999999999991, 728.57000000000005, 728.57000000000005, 728.57000000000005, 728.57000000000005, 728.56999999999994, 728.57000000000005, 728.57000000000016, 728.57000000000005],
+      "text": ["Energy use per capita: 626.77 energy per capita<br>Period: 2003<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Energy use per capita: 624.25 energy per capita<br>Period: 2004<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Energy use per capita: 641.48 energy per capita<br>Period: 2005<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Energy use per capita: 665.51 energy per capita<br>Period: 2006<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Energy use per capita: 653.23 energy per capita<br>Period: 2007<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Energy use per capita: 675.96 energy per capita<br>Period: 2008<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Energy use per capita: 692.86 energy per capita<br>Period: 2009<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Energy use per capita: 696.24 energy per capita<br>Period: 2010<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Energy use per capita: 689.75 energy per capita<br>Period: 2011<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Energy use per capita: 689.02 energy per capita<br>Period: 2012<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Energy use per capita: 727.85 energy per capita<br>Period: 2013<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Energy use per capita: 728.57 energy per capita<br>Period: 2014<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Energy use per capita: 728.57 energy per capita<br>Period: 2015<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Energy use per capita: 728.57 energy per capita<br>Period: 2016<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Energy use per capita: 728.57 energy per capita<br>Period: 2017<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Energy use per capita: 728.57 energy per capita<br>Period: 2018<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Energy use per capita: 728.57 energy per capita<br>Period: 2019<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Energy use per capita: 728.57 energy per capita<br>Period: 2020<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Energy use per capita: 728.57 energy per capita<br>Period: 2021<br>REMIND_54 region code: COL<br>Countries in region: Colombia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(116,196,118,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [429.37242276696611, 443.60303421231811, 446.48369436189284, 451.52350109710318, 452.6371562248242, 451.80256324338382, 459.26954814447089, 469.48819574756618, 476.36224975520145, 485.05199714014481, 495.4891734756506, 503.54972506519755, 503.50230625084805, 503.44140136603022, 503.38705679093505, 503.33277223781596, 503.29117732252575, 503.22436015895642, 503.14972957388358],
+      "text": ["Energy use per capita: 429.37 energy per capita<br>Period: 2003<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Madagascar; Angola; Cameroon; Burkina Faso; Zimbabwe; Malawi; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Lesotho; Namibia; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Reunion; Djibouti; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Energy use per capita: 443.6 energy per capita<br>Period: 2004<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Madagascar; Angola; Cameroon; Burkina Faso; Malawi; Zimbabwe; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Lesotho; Namibia; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Energy use per capita: 446.48 energy per capita<br>Period: 2005<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Angola; Madagascar; Cameroon; Burkina Faso; Malawi; Zimbabwe; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Lesotho; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Energy use per capita: 451.52 energy per capita<br>Period: 2006<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Angola; Madagascar; Cameroon; Burkina Faso; Malawi; Zimbabwe; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Lesotho; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Energy use per capita: 452.64 energy per capita<br>Period: 2007<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Angola; Madagascar; Cameroon; Burkina Faso; Malawi; Zimbabwe; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Lesotho; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Energy use per capita: 451.8 energy per capita<br>Period: 2008<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Angola; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Lesotho; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Energy use per capita: 459.27 energy per capita<br>Period: 2009<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Botswana; Lesotho; Gambia; Gabon; Guinea-Bissau; Mauritius; Equatorial Guinea; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Energy use per capita: 469.49 energy per capita<br>Period: 2010<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Botswana; Lesotho; Gambia; Gabon; Guinea-Bissau; Mauritius; Equatorial Guinea; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Energy use per capita: 476.36 energy per capita<br>Period: 2011<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; South Sudan; Benin; Burundi; Togo; Sierra Leone; Congo; Central African Republic; Liberia; Eritrea; Namibia; Botswana; Lesotho; Gambia; Gabon; Guinea-Bissau; Mauritius; Equatorial Guinea; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Energy use per capita: 485.05 energy per capita<br>Period: 2012<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; South Sudan; Benin; Burundi; Togo; Sierra Leone; Congo; Central African Republic; Liberia; Eritrea; Namibia; Botswana; Gambia; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Energy use per capita: 495.49 energy per capita<br>Period: 2013<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; South Sudan; Rwanda; Benin; Burundi; Togo; Sierra Leone; Congo; Central African Republic; Liberia; Eritrea; Namibia; Botswana; Gambia; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Energy use per capita: 503.55 energy per capita<br>Period: 2014<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; South Sudan; Benin; Burundi; Togo; Sierra Leone; Congo; Central African Republic; Liberia; Eritrea; Namibia; Botswana; Gambia; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Energy use per capita: 503.5 energy per capita<br>Period: 2015<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Zimbabwe; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Energy use per capita: 503.44 energy per capita<br>Period: 2016<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Zimbabwe; Somalia; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Energy use per capita: 503.39 energy per capita<br>Period: 2017<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Somalia; Zimbabwe; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Energy use per capita: 503.33 energy per capita<br>Period: 2018<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Somalia; Zimbabwe; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Gabon; Lesotho; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Energy use per capita: 503.29 energy per capita<br>Period: 2019<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Somalia; Zimbabwe; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Gabon; Lesotho; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Energy use per capita: 503.22 energy per capita<br>Period: 2020<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Somalia; Zimbabwe; Guinea; Benin; Rwanda; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Gabon; Lesotho; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Energy use per capita: 503.15 energy per capita<br>Period: 2021<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Somalia; Senegal; Zimbabwe; Guinea; Benin; Rwanda; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Gabon; Lesotho; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(122,1,119,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [4461.3100000000004, 4493.6899999999996, 4540.9099999999999, 4688.3900000000003, 4709.8400000000001, 4823.1299999999992, 4531.29, 4819.04, 5049.4300000000003, 5167.0100000000002, 5078.630000000001, 4942.8800000000001, 4942.8800000000001, 4942.8800000000001, 4942.8800000000001, 4942.880000000001, 4942.8800000000001, 4942.880000000001, 4942.8800000000001],
+      "text": ["Energy use per capita: 4461.31 energy per capita<br>Period: 2003<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Energy use per capita: 4493.69 energy per capita<br>Period: 2004<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Energy use per capita: 4540.91 energy per capita<br>Period: 2005<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Energy use per capita: 4688.39 energy per capita<br>Period: 2006<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Energy use per capita: 4709.84 energy per capita<br>Period: 2007<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Energy use per capita: 4823.13 energy per capita<br>Period: 2008<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Energy use per capita: 4531.29 energy per capita<br>Period: 2009<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Energy use per capita: 4819.04 energy per capita<br>Period: 2010<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Energy use per capita: 5049.43 energy per capita<br>Period: 2011<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Energy use per capita: 5167.01 energy per capita<br>Period: 2012<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Energy use per capita: 5078.63 energy per capita<br>Period: 2013<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Energy use per capita: 4942.88 energy per capita<br>Period: 2014<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Energy use per capita: 4942.88 energy per capita<br>Period: 2015<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Energy use per capita: 4942.88 energy per capita<br>Period: 2016<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Energy use per capita: 4942.88 energy per capita<br>Period: 2017<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Energy use per capita: 4942.88 energy per capita<br>Period: 2018<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Energy use per capita: 4942.88 energy per capita<br>Period: 2019<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Energy use per capita: 4942.88 energy per capita<br>Period: 2020<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Energy use per capita: 4942.88 energy per capita<br>Period: 2021<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(128,128,128,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [337.51609274006512, 338.12970716385678, 346.43160685443581, 343.55847354611268, 348.67546136868378, 358.36983234698113, 366.76536991446847, 375.47090282326246, 386.85395979452028, 369.33397084417578, 408.88165798212975, 423.92268012975939, 423.91466443662949, 423.90607463914984, 423.89466793922867, 423.88648166428158, 423.8954777906547, 423.91696026913655, 423.93457391777162],
+      "text": ["Energy use per capita: 337.52 energy per capita<br>Period: 2003<br>REMIND_54 region code: OAS_other<br>Countries in region: Nepal; Afghanistan; Bhutan", "Energy use per capita: 338.13 energy per capita<br>Period: 2004<br>REMIND_54 region code: OAS_other<br>Countries in region: Nepal; Afghanistan; Bhutan", "Energy use per capita: 346.43 energy per capita<br>Period: 2005<br>REMIND_54 region code: OAS_other<br>Countries in region: Nepal; Afghanistan; Bhutan", "Energy use per capita: 343.56 energy per capita<br>Period: 2006<br>REMIND_54 region code: OAS_other<br>Countries in region: Nepal; Afghanistan; Bhutan", "Energy use per capita: 348.68 energy per capita<br>Period: 2007<br>REMIND_54 region code: OAS_other<br>Countries in region: Nepal; Afghanistan; Bhutan", "Energy use per capita: 358.37 energy per capita<br>Period: 2008<br>REMIND_54 region code: OAS_other<br>Countries in region: Nepal; Afghanistan; Bhutan", "Energy use per capita: 366.77 energy per capita<br>Period: 2009<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Energy use per capita: 375.47 energy per capita<br>Period: 2010<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Energy use per capita: 386.85 energy per capita<br>Period: 2011<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Energy use per capita: 369.33 energy per capita<br>Period: 2012<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Energy use per capita: 408.88 energy per capita<br>Period: 2013<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Energy use per capita: 423.92 energy per capita<br>Period: 2014<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Energy use per capita: 423.91 energy per capita<br>Period: 2015<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Energy use per capita: 423.91 energy per capita<br>Period: 2016<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Energy use per capita: 423.89 energy per capita<br>Period: 2017<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Energy use per capita: 423.89 energy per capita<br>Period: 2018<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Energy use per capita: 423.9 energy per capita<br>Period: 2019<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Energy use per capita: 423.92 energy per capita<br>Period: 2020<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Energy use per capita: 423.93 energy per capita<br>Period: 2021<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(129,15,124,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [430.93000000000006, 473.41999999999996, 496.16000000000003, 503.51999999999998, 536.62, 568.19000000000005, 613.57000000000005, 673.95999999999992, 666.48000000000013, 671.07000000000005, 663.88999999999999, 663.88999999999999, 663.88999999999999, 663.8900000000001, 663.88999999999999, 663.8900000000001, 663.88999999999999, 663.88999999999987, 663.88999999999999],
+      "text": ["Energy use per capita: 430.93 energy per capita<br>Period: 2003<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Energy use per capita: 473.42 energy per capita<br>Period: 2004<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Energy use per capita: 496.16 energy per capita<br>Period: 2005<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Energy use per capita: 503.52 energy per capita<br>Period: 2006<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Energy use per capita: 536.62 energy per capita<br>Period: 2007<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Energy use per capita: 568.19 energy per capita<br>Period: 2008<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Energy use per capita: 613.57 energy per capita<br>Period: 2009<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Energy use per capita: 673.96 energy per capita<br>Period: 2010<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Energy use per capita: 666.48 energy per capita<br>Period: 2011<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Energy use per capita: 671.07 energy per capita<br>Period: 2012<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Energy use per capita: 663.89 energy per capita<br>Period: 2013<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Energy use per capita: 663.89 energy per capita<br>Period: 2014<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Energy use per capita: 663.89 energy per capita<br>Period: 2015<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Energy use per capita: 663.89 energy per capita<br>Period: 2016<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Energy use per capita: 663.89 energy per capita<br>Period: 2017<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Energy use per capita: 663.89 energy per capita<br>Period: 2018<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Energy use per capita: 663.89 energy per capita<br>Period: 2019<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Energy use per capita: 663.89 energy per capita<br>Period: 2020<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Energy use per capita: 663.89 energy per capita<br>Period: 2021<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(129,15,124,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [412.43999999999994, 432.38999999999999, 438.78000000000003, 447.61000000000001, 461.60000000000002, 444.06999999999999, 440.81, 437.22000000000003, 431.31, 428.53000000000003, 432.23000000000008, 431.63, 431.63000000000005, 431.63, 431.63, 431.63, 431.63, 431.63, 431.63],
+      "text": ["Energy use per capita: 412.44 energy per capita<br>Period: 2003<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Energy use per capita: 432.39 energy per capita<br>Period: 2004<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Energy use per capita: 438.78 energy per capita<br>Period: 2005<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Energy use per capita: 447.61 energy per capita<br>Period: 2006<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Energy use per capita: 461.6 energy per capita<br>Period: 2007<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Energy use per capita: 444.07 energy per capita<br>Period: 2008<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Energy use per capita: 440.81 energy per capita<br>Period: 2009<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Energy use per capita: 437.22 energy per capita<br>Period: 2010<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Energy use per capita: 431.31 energy per capita<br>Period: 2011<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Energy use per capita: 428.53 energy per capita<br>Period: 2012<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Energy use per capita: 432.23 energy per capita<br>Period: 2013<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Energy use per capita: 431.63 energy per capita<br>Period: 2014<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Energy use per capita: 431.63 energy per capita<br>Period: 2015<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Energy use per capita: 431.63 energy per capita<br>Period: 2016<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Energy use per capita: 431.63 energy per capita<br>Period: 2017<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Energy use per capita: 431.63 energy per capita<br>Period: 2018<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Energy use per capita: 431.63 energy per capita<br>Period: 2019<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Energy use per capita: 431.63 energy per capita<br>Period: 2020<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Energy use per capita: 431.63 energy per capita<br>Period: 2021<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(136,65,157,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [157.88999999999996, 158.16, 161.75999999999999, 171.22999999999999, 177.02000000000001, 184.16, 192.03999999999999, 205.62, 210.72999999999999, 218.40000000000001, 220.23000000000002, 227.13, 227.13, 227.12999999999997, 227.13000000000002, 227.13000000000002, 227.12999999999997, 227.13, 227.12999999999997],
+      "text": ["Energy use per capita: 157.89 energy per capita<br>Period: 2003<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Energy use per capita: 158.16 energy per capita<br>Period: 2004<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Energy use per capita: 161.76 energy per capita<br>Period: 2005<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Energy use per capita: 171.23 energy per capita<br>Period: 2006<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Energy use per capita: 177.02 energy per capita<br>Period: 2007<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Energy use per capita: 184.16 energy per capita<br>Period: 2008<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Energy use per capita: 192.04 energy per capita<br>Period: 2009<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Energy use per capita: 205.62 energy per capita<br>Period: 2010<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Energy use per capita: 210.73 energy per capita<br>Period: 2011<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Energy use per capita: 218.4 energy per capita<br>Period: 2012<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Energy use per capita: 220.23 energy per capita<br>Period: 2013<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Energy use per capita: 227.13 energy per capita<br>Period: 2014<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Energy use per capita: 227.13 energy per capita<br>Period: 2015<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Energy use per capita: 227.13 energy per capita<br>Period: 2016<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Energy use per capita: 227.13 energy per capita<br>Period: 2017<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Energy use per capita: 227.13 energy per capita<br>Period: 2018<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Energy use per capita: 227.13 energy per capita<br>Period: 2019<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Energy use per capita: 227.13 energy per capita<br>Period: 2020<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Energy use per capita: 227.13 energy per capita<br>Period: 2021<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(140,107,177,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [742.76999999999998, 781.79999999999995, 785.67999999999995, 793.76999999999998, 779.74000000000001, 784.88, 837.71000000000004, 869.2299999999999, 826.87, 847.16999999999996, 858.80999999999995, 880.12, 880.12, 880.12, 880.12, 880.12, 880.12, 880.12, 880.12],
+      "text": ["Energy use per capita: 742.77 energy per capita<br>Period: 2003<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Energy use per capita: 781.8 energy per capita<br>Period: 2004<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Energy use per capita: 785.68 energy per capita<br>Period: 2005<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Energy use per capita: 793.77 energy per capita<br>Period: 2006<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Energy use per capita: 779.74 energy per capita<br>Period: 2007<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Energy use per capita: 784.88 energy per capita<br>Period: 2008<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Energy use per capita: 837.71 energy per capita<br>Period: 2009<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Energy use per capita: 869.23 energy per capita<br>Period: 2010<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Energy use per capita: 826.87 energy per capita<br>Period: 2011<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Energy use per capita: 847.17 energy per capita<br>Period: 2012<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Energy use per capita: 858.81 energy per capita<br>Period: 2013<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Energy use per capita: 880.12 energy per capita<br>Period: 2014<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Energy use per capita: 880.12 energy per capita<br>Period: 2015<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Energy use per capita: 880.12 energy per capita<br>Period: 2016<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Energy use per capita: 880.12 energy per capita<br>Period: 2017<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Energy use per capita: 880.12 energy per capita<br>Period: 2018<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Energy use per capita: 880.12 energy per capita<br>Period: 2019<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Energy use per capita: 880.12 energy per capita<br>Period: 2020<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Energy use per capita: 880.12 energy per capita<br>Period: 2021<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(140,107,177,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [991.45646015038744, 1056.3407509166957, 1017.3668026123964, 1030.4788277357886, 1065.13002023595, 1100.1097798085532, 1032.8229176217524, 1071.4337971929399, 1107.3265482064396, 1122.6667055486905, 1189.9227796538878, 1238.2215255000726, 1241.6476013874435, 1245.1534916149185, 1247.0591365151636, 1249.6400375360308, 1253.380186876911, 1253.7744178058863, 1247.4444450451331],
+      "text": ["Energy use per capita: 991.46 energy per capita<br>Period: 2003<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Norfolk Island; Niue; Tokelau; United States Minor Outlying Islands; Pitcairn", "Energy use per capita: 1056.34 energy per capita<br>Period: 2004<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Norfolk Island; Niue; Tokelau; United States Minor Outlying Islands; Pitcairn", "Energy use per capita: 1017.37 energy per capita<br>Period: 2005<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Energy use per capita: 1030.48 energy per capita<br>Period: 2006<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Energy use per capita: 1065.13 energy per capita<br>Period: 2007<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Energy use per capita: 1100.11 energy per capita<br>Period: 2008<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Energy use per capita: 1032.82 energy per capita<br>Period: 2009<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Energy use per capita: 1071.43 energy per capita<br>Period: 2010<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Energy use per capita: 1107.33 energy per capita<br>Period: 2011<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Energy use per capita: 1122.67 energy per capita<br>Period: 2012<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Cook Islands; Palau; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Energy use per capita: 1189.92 energy per capita<br>Period: 2013<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Cook Islands; Palau; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Energy use per capita: 1238.22 energy per capita<br>Period: 2014<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Cook Islands; Palau; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Energy use per capita: 1241.65 energy per capita<br>Period: 2015<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Energy use per capita: 1245.15 energy per capita<br>Period: 2016<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Energy use per capita: 1247.06 energy per capita<br>Period: 2017<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Energy use per capita: 1249.64 energy per capita<br>Period: 2018<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; Vanuatu; New Caledonia; French Polynesia; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Energy use per capita: 1253.38 energy per capita<br>Period: 2019<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; Vanuatu; New Caledonia; French Polynesia; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Energy use per capita: 1253.77 energy per capita<br>Period: 2020<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; Vanuatu; New Caledonia; French Polynesia; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Tokelau; Norfolk Island; United States Minor Outlying Islands; Pitcairn", "Energy use per capita: 1247.44 energy per capita<br>Period: 2021<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; Vanuatu; New Caledonia; French Polynesia; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Nauru; Wallis and Futuna; Tuvalu; Niue; Tokelau; Norfolk Island; United States Minor Outlying Islands; Pitcairn"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(140,107,177,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1375.6600000000003, 1474.4100000000001, 1504.1500000000001, 1522.27, 1574.74, 1605.5899999999999, 1588.1900000000003, 1726.0799999999999, 1712.9400000000001, 1824.7800000000002, 1950.5399999999997, 1926.1600000000001, 1926.1599999999999, 1926.1600000000003, 1926.1600000000001, 1926.1600000000003, 1926.1600000000003, 1926.1600000000001, 1926.1600000000003],
+      "text": ["Energy use per capita: 1375.66 energy per capita<br>Period: 2003<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Energy use per capita: 1474.41 energy per capita<br>Period: 2004<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Energy use per capita: 1504.15 energy per capita<br>Period: 2005<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Energy use per capita: 1522.27 energy per capita<br>Period: 2006<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Energy use per capita: 1574.74 energy per capita<br>Period: 2007<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Energy use per capita: 1605.59 energy per capita<br>Period: 2008<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Energy use per capita: 1588.19 energy per capita<br>Period: 2009<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Energy use per capita: 1726.08 energy per capita<br>Period: 2010<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Energy use per capita: 1712.94 energy per capita<br>Period: 2011<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Energy use per capita: 1824.78 energy per capita<br>Period: 2012<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Energy use per capita: 1950.54 energy per capita<br>Period: 2013<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Energy use per capita: 1926.16 energy per capita<br>Period: 2014<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Energy use per capita: 1926.16 energy per capita<br>Period: 2015<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Energy use per capita: 1926.16 energy per capita<br>Period: 2016<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Energy use per capita: 1926.16 energy per capita<br>Period: 2017<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Energy use per capita: 1926.16 energy per capita<br>Period: 2018<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Energy use per capita: 1926.16 energy per capita<br>Period: 2019<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Energy use per capita: 1926.16 energy per capita<br>Period: 2020<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Energy use per capita: 1926.16 energy per capita<br>Period: 2021<br>REMIND_54 region code: THA<br>Countries in region: Thailand"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(140,150,198,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [3953.1799999999998, 4078.2100000000005, 4062.9799999999996, 4053.8800000000001, 4012.6500000000005, 3858.4299999999998, 3678.5099999999998, 3893.27, 3610.8099999999999, 3537.3600000000001, 3567.6300000000001, 3470.7599999999998, 3428.5599999999999, 3428.5599999999999, 3428.5600000000004, 3428.5599999999999, 3428.5599999999995, 3428.5599999999995, 3428.5599999999999],
+      "text": ["Energy use per capita: 3953.18 energy per capita<br>Period: 2003<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Energy use per capita: 4078.21 energy per capita<br>Period: 2004<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Energy use per capita: 4062.98 energy per capita<br>Period: 2005<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Energy use per capita: 4053.88 energy per capita<br>Period: 2006<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Energy use per capita: 4012.65 energy per capita<br>Period: 2007<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Energy use per capita: 3858.43 energy per capita<br>Period: 2008<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Energy use per capita: 3678.51 energy per capita<br>Period: 2009<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Energy use per capita: 3893.27 energy per capita<br>Period: 2010<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Energy use per capita: 3610.81 energy per capita<br>Period: 2011<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Energy use per capita: 3537.36 energy per capita<br>Period: 2012<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Energy use per capita: 3567.63 energy per capita<br>Period: 2013<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Energy use per capita: 3470.76 energy per capita<br>Period: 2014<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Energy use per capita: 3428.56 energy per capita<br>Period: 2015<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Energy use per capita: 3428.56 energy per capita<br>Period: 2016<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Energy use per capita: 3428.56 energy per capita<br>Period: 2017<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Energy use per capita: 3428.56 energy per capita<br>Period: 2018<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Energy use per capita: 3428.56 energy per capita<br>Period: 2019<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Energy use per capita: 3428.56 energy per capita<br>Period: 2020<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Energy use per capita: 3428.56 energy per capita<br>Period: 2021<br>REMIND_54 region code: JPN<br>Countries in region: Japan"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(152,0,67,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [711.70640945062098, 727.42492448680184, 730.29031824056858, 750.79487864700457, 744.82554245418009, 751.42254548729238, 777.14006522525085, 785.13210703244317, 739.2721331323952, 774.09789176057097, 793.09826369276402, 797.97248671466764, 795.57780255842295, 793.08578807945889, 790.25495468408894, 787.40399671010857, 784.93793221093244, 782.46036476939139, 779.78161339798351],
+      "text": ["Energy use per capita: 711.71 energy per capita<br>Period: 2003<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Tunisia; Chad; Libya; Mauritania; Western Sahara", "Energy use per capita: 727.42 energy per capita<br>Period: 2004<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Tunisia; Chad; Libya; Mauritania; Western Sahara", "Energy use per capita: 730.29 energy per capita<br>Period: 2005<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Energy use per capita: 750.79 energy per capita<br>Period: 2006<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Energy use per capita: 744.83 energy per capita<br>Period: 2007<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Energy use per capita: 751.42 energy per capita<br>Period: 2008<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Energy use per capita: 777.14 energy per capita<br>Period: 2009<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Energy use per capita: 785.13 energy per capita<br>Period: 2010<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Energy use per capita: 739.27 energy per capita<br>Period: 2011<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Energy use per capita: 774.1 energy per capita<br>Period: 2012<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Energy use per capita: 793.1 energy per capita<br>Period: 2013<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Energy use per capita: 797.97 energy per capita<br>Period: 2014<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Energy use per capita: 795.58 energy per capita<br>Period: 2015<br>REMIND_54 region code: NAF_other<br>Countries in region: Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Energy use per capita: 793.09 energy per capita<br>Period: 2016<br>REMIND_54 region code: NAF_other<br>Countries in region: Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Energy use per capita: 790.25 energy per capita<br>Period: 2017<br>REMIND_54 region code: NAF_other<br>Countries in region: Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Energy use per capita: 787.4 energy per capita<br>Period: 2018<br>REMIND_54 region code: NAF_other<br>Countries in region: Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Energy use per capita: 784.94 energy per capita<br>Period: 2019<br>REMIND_54 region code: NAF_other<br>Countries in region: Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Energy use per capita: 782.46 energy per capita<br>Period: 2020<br>REMIND_54 region code: NAF_other<br>Countries in region: Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Energy use per capita: 779.78 energy per capita<br>Period: 2021<br>REMIND_54 region code: NAF_other<br>Countries in region: Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(158,202,225,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1628.9300000000001, 1717.54, 1753.5299999999997, 1807.4200000000001, 1856.4000000000001, 1820.3099999999999, 1753.8099999999999, 1814.1200000000001, 1957.0500000000002, 2145.52, 2209.8600000000001, 2041.1900000000001, 2016.6900000000003, 2016.6900000000001, 2016.6900000000001, 2016.6899999999998, 2016.6900000000001, 2016.6900000000001, 2016.6900000000003],
+      "text": ["Energy use per capita: 1628.93 energy per capita<br>Period: 2003<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Energy use per capita: 1717.54 energy per capita<br>Period: 2004<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Energy use per capita: 1753.53 energy per capita<br>Period: 2005<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Energy use per capita: 1807.42 energy per capita<br>Period: 2006<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Energy use per capita: 1856.4 energy per capita<br>Period: 2007<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Energy use per capita: 1820.31 energy per capita<br>Period: 2008<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Energy use per capita: 1753.81 energy per capita<br>Period: 2009<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Energy use per capita: 1814.12 energy per capita<br>Period: 2010<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Energy use per capita: 1957.05 energy per capita<br>Period: 2011<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Energy use per capita: 2145.52 energy per capita<br>Period: 2012<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Energy use per capita: 2209.86 energy per capita<br>Period: 2013<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Energy use per capita: 2041.19 energy per capita<br>Period: 2014<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Energy use per capita: 2016.69 energy per capita<br>Period: 2015<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Energy use per capita: 2016.69 energy per capita<br>Period: 2016<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Energy use per capita: 2016.69 energy per capita<br>Period: 2017<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Energy use per capita: 2016.69 energy per capita<br>Period: 2018<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Energy use per capita: 2016.69 energy per capita<br>Period: 2019<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Energy use per capita: 2016.69 energy per capita<br>Period: 2020<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Energy use per capita: 2016.69 energy per capita<br>Period: 2021<br>REMIND_54 region code: CHL<br>Countries in region: Chile"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(161,217,155,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1164.6699999999998, 1190.9100000000001, 1225.7, 1338.3699999999999, 1419.0699999999999, 1384.04, 1353.96, 1457.1700000000001, 1530.27, 1570.5, 1527.0699999999999, 1555.98, 1628.21, 1628.21, 1628.21, 1628.21, 1628.21, 1628.21, 1628.2100000000003],
+      "text": ["Energy use per capita: 1164.67 energy per capita<br>Period: 2003<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Energy use per capita: 1190.91 energy per capita<br>Period: 2004<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Energy use per capita: 1225.7 energy per capita<br>Period: 2005<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Energy use per capita: 1338.37 energy per capita<br>Period: 2006<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Energy use per capita: 1419.07 energy per capita<br>Period: 2007<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Energy use per capita: 1384.04 energy per capita<br>Period: 2008<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Energy use per capita: 1353.96 energy per capita<br>Period: 2009<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Energy use per capita: 1457.17 energy per capita<br>Period: 2010<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Energy use per capita: 1530.27 energy per capita<br>Period: 2011<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Energy use per capita: 1570.5 energy per capita<br>Period: 2012<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Energy use per capita: 1527.07 energy per capita<br>Period: 2013<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Energy use per capita: 1555.98 energy per capita<br>Period: 2014<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Energy use per capita: 1628.21 energy per capita<br>Period: 2015<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Energy use per capita: 1628.21 energy per capita<br>Period: 2016<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Energy use per capita: 1628.21 energy per capita<br>Period: 2017<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Energy use per capita: 1628.21 energy per capita<br>Period: 2018<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Energy use per capita: 1628.21 energy per capita<br>Period: 2019<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Energy use per capita: 1628.21 energy per capita<br>Period: 2020<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Energy use per capita: 1628.21 energy per capita<br>Period: 2021<br>REMIND_54 region code: TUR<br>Countries in region: Turkey"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(161,217,155,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [477.44, 477.80000000000007, 475.89999999999992, 476.64000000000004, 477.77000000000004, 478.44999999999999, 478.19000000000005, 477.98000000000002, 480.23999999999995, 480.26000000000005, 483.53000000000003, 484.95999999999998, 484.95999999999998, 484.96000000000004, 484.96000000000004, 484.95999999999998, 484.95999999999998, 484.96000000000004, 484.96000000000004],
+      "text": ["Energy use per capita: 477.44 energy per capita<br>Period: 2003<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Energy use per capita: 477.8 energy per capita<br>Period: 2004<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Energy use per capita: 475.9 energy per capita<br>Period: 2005<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Energy use per capita: 476.64 energy per capita<br>Period: 2006<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Energy use per capita: 477.77 energy per capita<br>Period: 2007<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Energy use per capita: 478.45 energy per capita<br>Period: 2008<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Energy use per capita: 478.19 energy per capita<br>Period: 2009<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Energy use per capita: 477.98 energy per capita<br>Period: 2010<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Energy use per capita: 480.24 energy per capita<br>Period: 2011<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Energy use per capita: 480.26 energy per capita<br>Period: 2012<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Energy use per capita: 483.53 energy per capita<br>Period: 2013<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Energy use per capita: 484.96 energy per capita<br>Period: 2014<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Energy use per capita: 484.96 energy per capita<br>Period: 2015<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Energy use per capita: 484.96 energy per capita<br>Period: 2016<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Energy use per capita: 484.96 energy per capita<br>Period: 2017<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Energy use per capita: 484.96 energy per capita<br>Period: 2018<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Energy use per capita: 484.96 energy per capita<br>Period: 2019<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Energy use per capita: 484.96 energy per capita<br>Period: 2020<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Energy use per capita: 484.96 energy per capita<br>Period: 2021<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(174,1,126,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [2218.2973503430239, 2201.224434090816, 2271.7081032428332, 2318.0887565397611, 2321.204810337817, 2331.3790832401928, 2124.4497096377199, 2166.8209253302084, 2202.1237691888105, 2119.5857638315588, 1992.6648044849676, 2012.5748187781312, 2037.0980105554479, 2037.6790171015659, 2038.3418713909402, 2039.2848214503356, 2040.3400780717961, 2041.3451643058336, 2042.197764797897],
+      "text": ["Energy use per capita: 2218.3 energy per capita<br>Period: 2003<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Energy use per capita: 2201.22 energy per capita<br>Period: 2004<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Energy use per capita: 2271.71 energy per capita<br>Period: 2005<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Energy use per capita: 2318.09 energy per capita<br>Period: 2006<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Energy use per capita: 2321.2 energy per capita<br>Period: 2007<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Energy use per capita: 2331.38 energy per capita<br>Period: 2008<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Energy use per capita: 2124.45 energy per capita<br>Period: 2009<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Energy use per capita: 2166.82 energy per capita<br>Period: 2010<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Energy use per capita: 2202.12 energy per capita<br>Period: 2011<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Energy use per capita: 2119.59 energy per capita<br>Period: 2012<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Energy use per capita: 1992.66 energy per capita<br>Period: 2013<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Energy use per capita: 2012.57 energy per capita<br>Period: 2014<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Energy use per capita: 2037.1 energy per capita<br>Period: 2015<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Energy use per capita: 2037.68 energy per capita<br>Period: 2016<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Energy use per capita: 2038.34 energy per capita<br>Period: 2017<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Energy use per capita: 2039.28 energy per capita<br>Period: 2018<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Energy use per capita: 2040.34 energy per capita<br>Period: 2019<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Energy use per capita: 2041.35 energy per capita<br>Period: 2020<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Energy use per capita: 2042.2 energy per capita<br>Period: 2021<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(217,72,1,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [2099.4499999999998, 2252.8600000000001, 2460.2700000000004, 2531.8899999999999, 2640.2199999999998, 2790.8299999999999, 2747.8400000000001, 2710.2599999999998, 2728.6599999999999, 2803.1100000000001, 2816.3099999999999, 2964.8600000000001, 2964.8600000000006, 2964.8600000000001, 2964.8600000000001, 2964.8600000000001, 2964.8600000000001, 2964.8600000000001, 2964.8599999999997],
+      "text": ["Energy use per capita: 2099.45 energy per capita<br>Period: 2003<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Energy use per capita: 2252.86 energy per capita<br>Period: 2004<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Energy use per capita: 2460.27 energy per capita<br>Period: 2005<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Energy use per capita: 2531.89 energy per capita<br>Period: 2006<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Energy use per capita: 2640.22 energy per capita<br>Period: 2007<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Energy use per capita: 2790.83 energy per capita<br>Period: 2008<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Energy use per capita: 2747.84 energy per capita<br>Period: 2009<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Energy use per capita: 2710.26 energy per capita<br>Period: 2010<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Energy use per capita: 2728.66 energy per capita<br>Period: 2011<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Energy use per capita: 2803.11 energy per capita<br>Period: 2012<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Energy use per capita: 2816.31 energy per capita<br>Period: 2013<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Energy use per capita: 2964.86 energy per capita<br>Period: 2014<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Energy use per capita: 2964.86 energy per capita<br>Period: 2015<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Energy use per capita: 2964.86 energy per capita<br>Period: 2016<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Energy use per capita: 2964.86 energy per capita<br>Period: 2017<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Energy use per capita: 2964.86 energy per capita<br>Period: 2018<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Energy use per capita: 2964.86 energy per capita<br>Period: 2019<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Energy use per capita: 2964.86 energy per capita<br>Period: 2020<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Energy use per capita: 2964.86 energy per capita<br>Period: 2021<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(217,72,1,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [422.06, 437.13, 447.02999999999997, 463.39999999999998, 482.46000000000004, 499.04000000000002, 541.99000000000001, 558.78999999999996, 574.62, 595.05999999999995, 600.97000000000003, 630.89999999999998, 630.89999999999998, 630.89999999999998, 630.89999999999998, 630.89999999999998, 630.89999999999998, 630.89999999999998, 630.89999999999998],
+      "text": ["Energy use per capita: 422.06 energy per capita<br>Period: 2003<br>REMIND_54 region code: IND<br>Countries in region: India", "Energy use per capita: 437.13 energy per capita<br>Period: 2004<br>REMIND_54 region code: IND<br>Countries in region: India", "Energy use per capita: 447.03 energy per capita<br>Period: 2005<br>REMIND_54 region code: IND<br>Countries in region: India", "Energy use per capita: 463.4 energy per capita<br>Period: 2006<br>REMIND_54 region code: IND<br>Countries in region: India", "Energy use per capita: 482.46 energy per capita<br>Period: 2007<br>REMIND_54 region code: IND<br>Countries in region: India", "Energy use per capita: 499.04 energy per capita<br>Period: 2008<br>REMIND_54 region code: IND<br>Countries in region: India", "Energy use per capita: 541.99 energy per capita<br>Period: 2009<br>REMIND_54 region code: IND<br>Countries in region: India", "Energy use per capita: 558.79 energy per capita<br>Period: 2010<br>REMIND_54 region code: IND<br>Countries in region: India", "Energy use per capita: 574.62 energy per capita<br>Period: 2011<br>REMIND_54 region code: IND<br>Countries in region: India", "Energy use per capita: 595.06 energy per capita<br>Period: 2012<br>REMIND_54 region code: IND<br>Countries in region: India", "Energy use per capita: 600.97 energy per capita<br>Period: 2013<br>REMIND_54 region code: IND<br>Countries in region: India", "Energy use per capita: 630.9 energy per capita<br>Period: 2014<br>REMIND_54 region code: IND<br>Countries in region: India", "Energy use per capita: 630.9 energy per capita<br>Period: 2015<br>REMIND_54 region code: IND<br>Countries in region: India", "Energy use per capita: 630.9 energy per capita<br>Period: 2016<br>REMIND_54 region code: IND<br>Countries in region: India", "Energy use per capita: 630.9 energy per capita<br>Period: 2017<br>REMIND_54 region code: IND<br>Countries in region: India", "Energy use per capita: 630.9 energy per capita<br>Period: 2018<br>REMIND_54 region code: IND<br>Countries in region: India", "Energy use per capita: 630.9 energy per capita<br>Period: 2019<br>REMIND_54 region code: IND<br>Countries in region: India", "Energy use per capita: 630.9 energy per capita<br>Period: 2020<br>REMIND_54 region code: IND<br>Countries in region: India", "Energy use per capita: 630.9 energy per capita<br>Period: 2021<br>REMIND_54 region code: IND<br>Countries in region: India"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(220,0,5,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [7794.2400000000007, 7881.5799999999999, 7846.5, 7697.6499999999987, 7758.1699999999992, 7488.0799999999999, 7056.7799999999988, 7161.4300000000003, 7029.9500000000007, 6872.0300000000007, 6905.6000000000004, 6960.6800000000003, 6804.0000000000009, 6804.0000000000009, 6804.0000000000009, 6804, 6803.9999999999991, 6804, 6803.9999999999991],
+      "text": ["Energy use per capita: 7794.24 energy per capita<br>Period: 2003<br>REMIND_54 region code: USA<br>Countries in region: United States", "Energy use per capita: 7881.58 energy per capita<br>Period: 2004<br>REMIND_54 region code: USA<br>Countries in region: United States", "Energy use per capita: 7846.5 energy per capita<br>Period: 2005<br>REMIND_54 region code: USA<br>Countries in region: United States", "Energy use per capita: 7697.65 energy per capita<br>Period: 2006<br>REMIND_54 region code: USA<br>Countries in region: United States", "Energy use per capita: 7758.17 energy per capita<br>Period: 2007<br>REMIND_54 region code: USA<br>Countries in region: United States", "Energy use per capita: 7488.08 energy per capita<br>Period: 2008<br>REMIND_54 region code: USA<br>Countries in region: United States", "Energy use per capita: 7056.78 energy per capita<br>Period: 2009<br>REMIND_54 region code: USA<br>Countries in region: United States", "Energy use per capita: 7161.43 energy per capita<br>Period: 2010<br>REMIND_54 region code: USA<br>Countries in region: United States", "Energy use per capita: 7029.95 energy per capita<br>Period: 2011<br>REMIND_54 region code: USA<br>Countries in region: United States", "Energy use per capita: 6872.03 energy per capita<br>Period: 2012<br>REMIND_54 region code: USA<br>Countries in region: United States", "Energy use per capita: 6905.6 energy per capita<br>Period: 2013<br>REMIND_54 region code: USA<br>Countries in region: United States", "Energy use per capita: 6960.68 energy per capita<br>Period: 2014<br>REMIND_54 region code: USA<br>Countries in region: United States", "Energy use per capita: 6804 energy per capita<br>Period: 2015<br>REMIND_54 region code: USA<br>Countries in region: United States", "Energy use per capita: 6804 energy per capita<br>Period: 2016<br>REMIND_54 region code: USA<br>Countries in region: United States", "Energy use per capita: 6804 energy per capita<br>Period: 2017<br>REMIND_54 region code: USA<br>Countries in region: United States", "Energy use per capita: 6804 energy per capita<br>Period: 2018<br>REMIND_54 region code: USA<br>Countries in region: United States", "Energy use per capita: 6804 energy per capita<br>Period: 2019<br>REMIND_54 region code: USA<br>Countries in region: United States", "Energy use per capita: 6804 energy per capita<br>Period: 2020<br>REMIND_54 region code: USA<br>Countries in region: United States", "Energy use per capita: 6804 energy per capita<br>Period: 2021<br>REMIND_54 region code: USA<br>Countries in region: United States"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(220,0,5,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [289.97000000000008, 292.66999999999996, 294.66999999999996, 296.23000000000008, 297.30000000000001, 298.56999999999994, 297.86000000000001, 298.95999999999998, 307.02999999999997, 368.37, 374.14999999999998, 377.72000000000003, 377.71999999999997, 377.72000000000003, 377.72000000000003, 377.72000000000008, 377.72000000000003, 377.72000000000003, 377.72000000000003],
+      "text": ["Energy use per capita: 289.97 energy per capita<br>Period: 2003<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Energy use per capita: 292.67 energy per capita<br>Period: 2004<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Energy use per capita: 294.67 energy per capita<br>Period: 2005<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Energy use per capita: 296.23 energy per capita<br>Period: 2006<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Energy use per capita: 297.3 energy per capita<br>Period: 2007<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Energy use per capita: 298.57 energy per capita<br>Period: 2008<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Energy use per capita: 297.86 energy per capita<br>Period: 2009<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Energy use per capita: 298.96 energy per capita<br>Period: 2010<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Energy use per capita: 307.03 energy per capita<br>Period: 2011<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Energy use per capita: 368.37 energy per capita<br>Period: 2012<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Energy use per capita: 374.15 energy per capita<br>Period: 2013<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Energy use per capita: 377.72 energy per capita<br>Period: 2014<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Energy use per capita: 377.72 energy per capita<br>Period: 2015<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Energy use per capita: 377.72 energy per capita<br>Period: 2016<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Energy use per capita: 377.72 energy per capita<br>Period: 2017<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Energy use per capita: 377.72 energy per capita<br>Period: 2018<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Energy use per capita: 377.72 energy per capita<br>Period: 2019<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Energy use per capita: 377.72 energy per capita<br>Period: 2020<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Energy use per capita: 377.72 energy per capita<br>Period: 2021<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(221,52,151,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [3157.23, 3238.5, 3251.4000000000001, 3194.0799999999995, 3180.0299999999997, 3026.3400000000006, 2757.6900000000001, 2742.8800000000001, 2689.6799999999998, 2683.3699999999999, 2512.1100000000001, 2464.6399999999999, 2571.3400000000001, 2571.3400000000001, 2571.3400000000001, 2571.3400000000001, 2571.3399999999997, 2571.3400000000001, 2571.3400000000001],
+      "text": ["Energy use per capita: 3157.23 energy per capita<br>Period: 2003<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Energy use per capita: 3238.5 energy per capita<br>Period: 2004<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Energy use per capita: 3251.4 energy per capita<br>Period: 2005<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Energy use per capita: 3194.08 energy per capita<br>Period: 2006<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Energy use per capita: 3180.03 energy per capita<br>Period: 2007<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Energy use per capita: 3026.34 energy per capita<br>Period: 2008<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Energy use per capita: 2757.69 energy per capita<br>Period: 2009<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Energy use per capita: 2742.88 energy per capita<br>Period: 2010<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Energy use per capita: 2689.68 energy per capita<br>Period: 2011<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Energy use per capita: 2683.37 energy per capita<br>Period: 2012<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Energy use per capita: 2512.11 energy per capita<br>Period: 2013<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Energy use per capita: 2464.64 energy per capita<br>Period: 2014<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Energy use per capita: 2571.34 energy per capita<br>Period: 2015<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Energy use per capita: 2571.34 energy per capita<br>Period: 2016<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Energy use per capita: 2571.34 energy per capita<br>Period: 2017<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Energy use per capita: 2571.34 energy per capita<br>Period: 2018<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Energy use per capita: 2571.34 energy per capita<br>Period: 2019<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Energy use per capita: 2571.34 energy per capita<br>Period: 2020<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Energy use per capita: 2571.34 energy per capita<br>Period: 2021<br>REMIND_54 region code: ESP<br>Countries in region: Spain"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(241,105,19,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [2375.0100000000002, 2383.0599999999999, 2414.1599999999999, 2536.98, 2527.4099999999999, 2564.7800000000002, 2466.52, 2640.2399999999993, 2653.4000000000001, 2566.5700000000002, 2565.6700000000001, 2473.4099999999999, 2490.21, 2490.21, 2490.21, 2490.21, 2490.21, 2490.21, 2490.21],
+      "text": ["Energy use per capita: 2375.01 energy per capita<br>Period: 2003<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Energy use per capita: 2383.06 energy per capita<br>Period: 2004<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Energy use per capita: 2414.16 energy per capita<br>Period: 2005<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Energy use per capita: 2536.98 energy per capita<br>Period: 2006<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Energy use per capita: 2527.41 energy per capita<br>Period: 2007<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Energy use per capita: 2564.78 energy per capita<br>Period: 2008<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Energy use per capita: 2466.52 energy per capita<br>Period: 2009<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Energy use per capita: 2640.24 energy per capita<br>Period: 2010<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Energy use per capita: 2653.4 energy per capita<br>Period: 2011<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Energy use per capita: 2566.57 energy per capita<br>Period: 2012<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Energy use per capita: 2565.67 energy per capita<br>Period: 2013<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Energy use per capita: 2473.41 energy per capita<br>Period: 2014<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Energy use per capita: 2490.21 energy per capita<br>Period: 2015<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Energy use per capita: 2490.21 energy per capita<br>Period: 2016<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Energy use per capita: 2490.21 energy per capita<br>Period: 2017<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Energy use per capita: 2490.21 energy per capita<br>Period: 2018<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Energy use per capita: 2490.21 energy per capita<br>Period: 2019<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Energy use per capita: 2490.21 energy per capita<br>Period: 2020<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Energy use per capita: 2490.21 energy per capita<br>Period: 2021<br>REMIND_54 region code: POL<br>Countries in region: Poland"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(241,105,19,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [740.17999999999984, 740.87999999999988, 749.59000000000003, 735.69000000000005, 741.27999999999997, 742.80999999999995, 711.35000000000002, 744.84000000000003, 766.33000000000004, 785.25999999999999, 766.91999999999996, 750.97000000000003, 750.97000000000003, 750.97000000000003, 750.97000000000014, 750.96999999999991, 750.97000000000014, 750.97000000000003, 750.97000000000003],
+      "text": ["Energy use per capita: 740.18 energy per capita<br>Period: 2003<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Energy use per capita: 740.88 energy per capita<br>Period: 2004<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Energy use per capita: 749.59 energy per capita<br>Period: 2005<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Energy use per capita: 735.69 energy per capita<br>Period: 2006<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Energy use per capita: 741.28 energy per capita<br>Period: 2007<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Energy use per capita: 742.81 energy per capita<br>Period: 2008<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Energy use per capita: 711.35 energy per capita<br>Period: 2009<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Energy use per capita: 744.84 energy per capita<br>Period: 2010<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Energy use per capita: 766.33 energy per capita<br>Period: 2011<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Energy use per capita: 785.26 energy per capita<br>Period: 2012<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Energy use per capita: 766.92 energy per capita<br>Period: 2013<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Energy use per capita: 750.97 energy per capita<br>Period: 2014<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Energy use per capita: 750.97 energy per capita<br>Period: 2015<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Energy use per capita: 750.97 energy per capita<br>Period: 2016<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Energy use per capita: 750.97 energy per capita<br>Period: 2017<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Energy use per capita: 750.97 energy per capita<br>Period: 2018<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Energy use per capita: 750.97 energy per capita<br>Period: 2019<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Energy use per capita: 750.97 energy per capita<br>Period: 2020<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Energy use per capita: 750.97 energy per capita<br>Period: 2021<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(247,104,161,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [2445.8299999999999, 2645.5599999999999, 2616.4499999999998, 2572.6199999999994, 2726.96, 2904.2800000000002, 2813.4299999999998, 2737.7399999999998, 2693.9099999999999, 2621.1900000000001, 2593.8400000000006, 2686.3800000000001, 2686.3800000000001, 2686.3800000000006, 2686.3800000000001, 2686.3800000000006, 2686.3800000000001, 2686.3800000000006, 2686.3800000000001],
+      "text": ["Energy use per capita: 2445.83 energy per capita<br>Period: 2003<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Energy use per capita: 2645.56 energy per capita<br>Period: 2004<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Energy use per capita: 2616.45 energy per capita<br>Period: 2005<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Energy use per capita: 2572.62 energy per capita<br>Period: 2006<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Energy use per capita: 2726.96 energy per capita<br>Period: 2007<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Energy use per capita: 2904.28 energy per capita<br>Period: 2008<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Energy use per capita: 2813.43 energy per capita<br>Period: 2009<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Energy use per capita: 2737.74 energy per capita<br>Period: 2010<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Energy use per capita: 2693.91 energy per capita<br>Period: 2011<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Energy use per capita: 2621.19 energy per capita<br>Period: 2012<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Energy use per capita: 2593.84 energy per capita<br>Period: 2013<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Energy use per capita: 2686.38 energy per capita<br>Period: 2014<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Energy use per capita: 2686.38 energy per capita<br>Period: 2015<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Energy use per capita: 2686.38 energy per capita<br>Period: 2016<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Energy use per capita: 2686.38 energy per capita<br>Period: 2017<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Energy use per capita: 2686.38 energy per capita<br>Period: 2018<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Energy use per capita: 2686.38 energy per capita<br>Period: 2019<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Energy use per capita: 2686.38 energy per capita<br>Period: 2020<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Energy use per capita: 2686.38 energy per capita<br>Period: 2021<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(252,197,192,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [4084.5, 4114.3900000000003, 4086.4999999999995, 4204.6499999999996, 3985.8099999999999, 4036.8300000000004, 3790.5000000000005, 3997.0799999999999, 3869.8199999999997, 3876.9499999999998, 3939.5300000000002, 3779.4599999999996, 3817.5500000000002, 3817.5499999999997, 3817.5500000000002, 3817.5500000000006, 3817.5500000000002, 3817.5499999999997, 3817.5500000000002],
+      "text": ["Energy use per capita: 4084.5 energy per capita<br>Period: 2003<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Energy use per capita: 4114.39 energy per capita<br>Period: 2004<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Energy use per capita: 4086.5 energy per capita<br>Period: 2005<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Energy use per capita: 4204.65 energy per capita<br>Period: 2006<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Energy use per capita: 3985.81 energy per capita<br>Period: 2007<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Energy use per capita: 4036.83 energy per capita<br>Period: 2008<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Energy use per capita: 3790.5 energy per capita<br>Period: 2009<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Energy use per capita: 3997.08 energy per capita<br>Period: 2010<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Energy use per capita: 3869.82 energy per capita<br>Period: 2011<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Energy use per capita: 3876.95 energy per capita<br>Period: 2012<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Energy use per capita: 3939.53 energy per capita<br>Period: 2013<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Energy use per capita: 3779.46 energy per capita<br>Period: 2014<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Energy use per capita: 3817.55 energy per capita<br>Period: 2015<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Energy use per capita: 3817.55 energy per capita<br>Period: 2016<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Energy use per capita: 3817.55 energy per capita<br>Period: 2017<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Energy use per capita: 3817.55 energy per capita<br>Period: 2018<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Energy use per capita: 3817.55 energy per capita<br>Period: 2019<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Energy use per capita: 3817.55 energy per capita<br>Period: 2020<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Energy use per capita: 3817.55 energy per capita<br>Period: 2021<br>REMIND_54 region code: DEU<br>Countries in region: Germany"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(253,141,60,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [3614.7700211860997, 3675.4842441288652, 3660.137746858295, 3702.9284351906604, 3734.1437867629188, 3687.6724199030468, 3422.8205151396287, 3545.7061934762851, 3466.367376434996, 3439.9795265342486, 3434.6460865858921, 3359.6924726926541, 3325.9313985088397, 3328.8219022886733, 3332.0291310276493, 3334.8724614088069, 3336.9566682342943, 3338.2654838561489, 3334.5196759793675],
+      "text": ["Energy use per capita: 3614.77 energy per capita<br>Period: 2003<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Energy use per capita: 3675.48 energy per capita<br>Period: 2004<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Energy use per capita: 3660.14 energy per capita<br>Period: 2005<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Energy use per capita: 3702.93 energy per capita<br>Period: 2006<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Energy use per capita: 3734.14 energy per capita<br>Period: 2007<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Energy use per capita: 3687.67 energy per capita<br>Period: 2008<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Energy use per capita: 3422.82 energy per capita<br>Period: 2009<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Energy use per capita: 3545.71 energy per capita<br>Period: 2010<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Energy use per capita: 3466.37 energy per capita<br>Period: 2011<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Energy use per capita: 3439.98 energy per capita<br>Period: 2012<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Energy use per capita: 3434.65 energy per capita<br>Period: 2013<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Energy use per capita: 3359.69 energy per capita<br>Period: 2014<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Energy use per capita: 3325.93 energy per capita<br>Period: 2015<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Energy use per capita: 3328.82 energy per capita<br>Period: 2016<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Energy use per capita: 3332.03 energy per capita<br>Period: 2017<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Energy use per capita: 3334.87 energy per capita<br>Period: 2018<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Energy use per capita: 3336.96 energy per capita<br>Period: 2019<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Energy use per capita: 3338.27 energy per capita<br>Period: 2020<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Energy use per capita: 3334.52 energy per capita<br>Period: 2021<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(253,141,60,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [3515.0899999999997, 3558.0900000000001, 3503.6399999999999, 3424.1599999999999, 3416.0300000000002, 3293.8800000000006, 3149.5700000000002, 3152, 2865.3699999999999, 2853.0599999999999, 2814.98, 2741.5700000000002, 2819.8800000000001, 2819.8800000000001, 2819.8800000000001, 2819.8800000000001, 2819.8800000000001, 2819.8800000000001, 2819.8800000000001],
+      "text": ["Energy use per capita: 3515.09 energy per capita<br>Period: 2003<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Energy use per capita: 3558.09 energy per capita<br>Period: 2004<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Energy use per capita: 3503.64 energy per capita<br>Period: 2005<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Energy use per capita: 3424.16 energy per capita<br>Period: 2006<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Energy use per capita: 3416.03 energy per capita<br>Period: 2007<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Energy use per capita: 3293.88 energy per capita<br>Period: 2008<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Energy use per capita: 3149.57 energy per capita<br>Period: 2009<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Energy use per capita: 3152 energy per capita<br>Period: 2010<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Energy use per capita: 2865.37 energy per capita<br>Period: 2011<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Energy use per capita: 2853.06 energy per capita<br>Period: 2012<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Energy use per capita: 2814.98 energy per capita<br>Period: 2013<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Energy use per capita: 2741.57 energy per capita<br>Period: 2014<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Energy use per capita: 2819.88 energy per capita<br>Period: 2015<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Energy use per capita: 2819.88 energy per capita<br>Period: 2016<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Energy use per capita: 2819.88 energy per capita<br>Period: 2017<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Energy use per capita: 2819.88 energy per capita<br>Period: 2018<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Energy use per capita: 2819.88 energy per capita<br>Period: 2019<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Energy use per capita: 2819.88 energy per capita<br>Period: 2020<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Energy use per capita: 2819.88 energy per capita<br>Period: 2021<br>REMIND_54 region code: IRL<br>Countries in region: Ireland"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(253,141,60,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [2400.7700000000004, 2462.9899999999998, 2519, 2390.3200000000002, 2402.4299999999998, 2337.2699999999995, 2304.0299999999997, 2222.6300000000001, 2163.98, 2039.01, 2057.8599999999997, 2034.51, 2131.6799999999998, 2131.6799999999998, 2131.6799999999998, 2131.6799999999998, 2131.6799999999994, 2131.6799999999998, 2131.6799999999998],
+      "text": ["Energy use per capita: 2400.77 energy per capita<br>Period: 2003<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Energy use per capita: 2462.99 energy per capita<br>Period: 2004<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Energy use per capita: 2519 energy per capita<br>Period: 2005<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Energy use per capita: 2390.32 energy per capita<br>Period: 2006<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Energy use per capita: 2402.43 energy per capita<br>Period: 2007<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Energy use per capita: 2337.27 energy per capita<br>Period: 2008<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Energy use per capita: 2304.03 energy per capita<br>Period: 2009<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Energy use per capita: 2222.63 energy per capita<br>Period: 2010<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Energy use per capita: 2163.98 energy per capita<br>Period: 2011<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Energy use per capita: 2039.01 energy per capita<br>Period: 2012<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Energy use per capita: 2057.86 energy per capita<br>Period: 2013<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Energy use per capita: 2034.51 energy per capita<br>Period: 2014<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Energy use per capita: 2131.68 energy per capita<br>Period: 2015<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Energy use per capita: 2131.68 energy per capita<br>Period: 2016<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Energy use per capita: 2131.68 energy per capita<br>Period: 2017<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Energy use per capita: 2131.68 energy per capita<br>Period: 2018<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Energy use per capita: 2131.68 energy per capita<br>Period: 2019<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Energy use per capita: 2131.68 energy per capita<br>Period: 2020<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Energy use per capita: 2131.68 energy per capita<br>Period: 2021<br>REMIND_54 region code: PRT<br>Countries in region: Portugal"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(253,141,60,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [4862.6300000000001, 5063.1199999999999, 5022.9700000000003, 5349.8900000000003, 5315.1899999999987, 5705.3700000000008, 5850.4499999999998, 6306.5900000000001, 5907.6899999999996, 6500.2799999999997, 6104.3800000000001, 6645.9599999999991, 6645.96, 6645.9599999999991, 6645.96, 6645.96, 6645.96, 6645.96, 6645.96],
+      "text": ["Energy use per capita: 4862.63 energy per capita<br>Period: 2003<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Energy use per capita: 5063.12 energy per capita<br>Period: 2004<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Energy use per capita: 5022.97 energy per capita<br>Period: 2005<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Energy use per capita: 5349.89 energy per capita<br>Period: 2006<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Energy use per capita: 5315.19 energy per capita<br>Period: 2007<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Energy use per capita: 5705.37 energy per capita<br>Period: 2008<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Energy use per capita: 5850.45 energy per capita<br>Period: 2009<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Energy use per capita: 6306.59 energy per capita<br>Period: 2010<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Energy use per capita: 5907.69 energy per capita<br>Period: 2011<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Energy use per capita: 6500.28 energy per capita<br>Period: 2012<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Energy use per capita: 6104.38 energy per capita<br>Period: 2013<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Energy use per capita: 6645.96 energy per capita<br>Period: 2014<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Energy use per capita: 6645.96 energy per capita<br>Period: 2015<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Energy use per capita: 6645.96 energy per capita<br>Period: 2016<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Energy use per capita: 6645.96 energy per capita<br>Period: 2017<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Energy use per capita: 6645.96 energy per capita<br>Period: 2018<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Energy use per capita: 6645.96 energy per capita<br>Period: 2019<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Energy use per capita: 6645.96 energy per capita<br>Period: 2020<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Energy use per capita: 6645.96 energy per capita<br>Period: 2021<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(253,141,60,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [4270.1199999999999, 4300.9499999999998, 4286.54, 4188.3900000000003, 4115.170000000001, 4110.2799999999997, 3913.2299999999996, 4016.6599999999994, 3846.9299999999994, 3836.5099999999993, 3833.3199999999997, 3659.0900000000001, 3692.0199999999991, 3692.0199999999995, 3692.0199999999995, 3692.0199999999991, 3692.0199999999991, 3692.0199999999995, 3692.0199999999995],
+      "text": ["Energy use per capita: 4270.12 energy per capita<br>Period: 2003<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Energy use per capita: 4300.95 energy per capita<br>Period: 2004<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Energy use per capita: 4286.54 energy per capita<br>Period: 2005<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Energy use per capita: 4188.39 energy per capita<br>Period: 2006<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Energy use per capita: 4115.17 energy per capita<br>Period: 2007<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Energy use per capita: 4110.28 energy per capita<br>Period: 2008<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Energy use per capita: 3913.23 energy per capita<br>Period: 2009<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Energy use per capita: 4016.66 energy per capita<br>Period: 2010<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Energy use per capita: 3846.93 energy per capita<br>Period: 2011<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Energy use per capita: 3836.51 energy per capita<br>Period: 2012<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Energy use per capita: 3833.32 energy per capita<br>Period: 2013<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Energy use per capita: 3659.09 energy per capita<br>Period: 2014<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Energy use per capita: 3692.02 energy per capita<br>Period: 2015<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Energy use per capita: 3692.02 energy per capita<br>Period: 2016<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Energy use per capita: 3692.02 energy per capita<br>Period: 2017<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Energy use per capita: 3692.02 energy per capita<br>Period: 2018<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Energy use per capita: 3692.02 energy per capita<br>Period: 2019<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Energy use per capita: 3692.02 energy per capita<br>Period: 2020<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Energy use per capita: 3692.02 energy per capita<br>Period: 2021<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,178,76,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [3731.9496697020377, 3694.9839500620865, 3686.9197726000389, 3599.4859572994583, 3442.3702154929001, 3362.7724355268456, 3146.6694666377066, 3231.638799858194, 2973.1999439197612, 3043.9018863525539, 2988.9447685371151, 2778.8673643145789, 2766.0912023481642, 2766.1025361886527, 2766.1209047157404, 2766.1412249637515, 2766.163445131469, 2766.1905718327257, 2766.2253846415597],
+      "text": ["Energy use per capita: 3731.95 energy per capita<br>Period: 2003<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Energy use per capita: 3694.98 energy per capita<br>Period: 2004<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Energy use per capita: 3686.92 energy per capita<br>Period: 2005<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Energy use per capita: 3599.49 energy per capita<br>Period: 2006<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Energy use per capita: 3442.37 energy per capita<br>Period: 2007<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Energy use per capita: 3362.77 energy per capita<br>Period: 2008<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Energy use per capita: 3146.67 energy per capita<br>Period: 2009<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Energy use per capita: 3231.64 energy per capita<br>Period: 2010<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Energy use per capita: 2973.2 energy per capita<br>Period: 2011<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Energy use per capita: 3043.9 energy per capita<br>Period: 2012<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Energy use per capita: 2988.94 energy per capita<br>Period: 2013<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Energy use per capita: 2778.87 energy per capita<br>Period: 2014<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Energy use per capita: 2766.09 energy per capita<br>Period: 2015<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Energy use per capita: 2766.1 energy per capita<br>Period: 2016<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Energy use per capita: 2766.12 energy per capita<br>Period: 2017<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Energy use per capita: 2766.14 energy per capita<br>Period: 2018<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Energy use per capita: 2766.16 energy per capita<br>Period: 2019<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Energy use per capita: 2766.19 energy per capita<br>Period: 2020<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Energy use per capita: 2766.23 energy per capita<br>Period: 2021<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,178,76,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [3973.6199999999999, 4007.5700000000002, 4085.5700000000002, 4078.8099999999999, 4019.5900000000001, 4032.1500000000005, 3798.1500000000001, 4051.1999999999998, 3921.9000000000005, 3886.77, 3919.04, 3763.3299999999995, 3800.3000000000002, 3800.3000000000006, 3800.3000000000002, 3800.3000000000002, 3800.3000000000002, 3800.3000000000002, 3800.3000000000002],
+      "text": ["Energy use per capita: 3973.62 energy per capita<br>Period: 2003<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Energy use per capita: 4007.57 energy per capita<br>Period: 2004<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Energy use per capita: 4085.57 energy per capita<br>Period: 2005<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Energy use per capita: 4078.81 energy per capita<br>Period: 2006<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Energy use per capita: 4019.59 energy per capita<br>Period: 2007<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Energy use per capita: 4032.15 energy per capita<br>Period: 2008<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Energy use per capita: 3798.15 energy per capita<br>Period: 2009<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Energy use per capita: 4051.2 energy per capita<br>Period: 2010<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Energy use per capita: 3921.9 energy per capita<br>Period: 2011<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Energy use per capita: 3886.77 energy per capita<br>Period: 2012<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Energy use per capita: 3919.04 energy per capita<br>Period: 2013<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Energy use per capita: 3763.33 energy per capita<br>Period: 2014<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Energy use per capita: 3800.3 energy per capita<br>Period: 2015<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Energy use per capita: 3800.3 energy per capita<br>Period: 2016<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Energy use per capita: 3800.3 energy per capita<br>Period: 2017<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Energy use per capita: 3800.3 energy per capita<br>Period: 2018<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Energy use per capita: 3800.3 energy per capita<br>Period: 2019<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Energy use per capita: 3800.3 energy per capita<br>Period: 2020<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Energy use per capita: 3800.3 energy per capita<br>Period: 2021<br>REMIND_54 region code: AUT<br>Countries in region: Austria"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,196,79,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1123.0594392288408, 1271.2765737760471, 1396.0336190399448, 1517.3435600034329, 1632.4066753482202, 1674.6420458259342, 1780.1439266292086, 1954.6778463128487, 2085.0911400299356, 2148.786531353921, 2202.8759544727527, 2223.0191558705942, 2223.015580076953, 2223.0149651422312, 2223.0127951560839, 2223.0083643047865, 2223.0032226339194, 2223.0111963151908, 2223.0244616467239],
+      "text": ["Energy use per capita: 1123.06 energy per capita<br>Period: 2003<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Energy use per capita: 1271.28 energy per capita<br>Period: 2004<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Energy use per capita: 1396.03 energy per capita<br>Period: 2005<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Energy use per capita: 1517.34 energy per capita<br>Period: 2006<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Energy use per capita: 1632.41 energy per capita<br>Period: 2007<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Energy use per capita: 1674.64 energy per capita<br>Period: 2008<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Energy use per capita: 1780.14 energy per capita<br>Period: 2009<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Energy use per capita: 1954.68 energy per capita<br>Period: 2010<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Energy use per capita: 2085.09 energy per capita<br>Period: 2011<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Energy use per capita: 2148.79 energy per capita<br>Period: 2012<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Energy use per capita: 2202.88 energy per capita<br>Period: 2013<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Energy use per capita: 2223.02 energy per capita<br>Period: 2014<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Energy use per capita: 2223.02 energy per capita<br>Period: 2015<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Energy use per capita: 2223.01 energy per capita<br>Period: 2016<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Energy use per capita: 2223.01 energy per capita<br>Period: 2017<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Energy use per capita: 2223.01 energy per capita<br>Period: 2018<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Energy use per capita: 2223 energy per capita<br>Period: 2019<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Energy use per capita: 2223.01 energy per capita<br>Period: 2020<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Energy use per capita: 2223.02 energy per capita<br>Period: 2021<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,196,79,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1874.0900185547487, 1929.4223596963061, 1983.1193749712754, 2006.4443694456324, 2022.4017317374323, 2080.5182720698217, 2070.3470056387755, 2105.1654645186482, 2118.4141065930944, 2217.3036786280131, 2212.2866546329169, 2211.237178353445, 2258.0610351627138, 2291.4388686533562, 2307.3100104410973, 2301.2889078848593, 2286.761087170973, 2270.8567953263628, 2216.0353425365465],
+      "text": ["Energy use per capita: 1874.09 energy per capita<br>Period: 2003<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; Lebanon; United Arab Emirates; Palestine, State of; Oman; Kuwait; Bahrain; Qatar", "Energy use per capita: 1929.42 energy per capita<br>Period: 2004<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; Lebanon; United Arab Emirates; Palestine, State of; Oman; Kuwait; Bahrain; Qatar", "Energy use per capita: 1983.12 energy per capita<br>Period: 2005<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; Lebanon; United Arab Emirates; Palestine, State of; Oman; Kuwait; Bahrain; Qatar", "Energy use per capita: 2006.44 energy per capita<br>Period: 2006<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Energy use per capita: 2022.4 energy per capita<br>Period: 2007<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Energy use per capita: 2080.52 energy per capita<br>Period: 2008<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Kuwait; Oman; Qatar; Bahrain", "Energy use per capita: 2070.35 energy per capita<br>Period: 2009<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Kuwait; Oman; Qatar; Bahrain", "Energy use per capita: 2105.17 energy per capita<br>Period: 2010<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Kuwait; Oman; Qatar; Bahrain", "Energy use per capita: 2118.41 energy per capita<br>Period: 2011<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Kuwait; Oman; Qatar; Bahrain", "Energy use per capita: 2217.3 energy per capita<br>Period: 2012<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Energy use per capita: 2212.29 energy per capita<br>Period: 2013<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Energy use per capita: 2211.24 energy per capita<br>Period: 2014<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; Israel; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Energy use per capita: 2258.06 energy per capita<br>Period: 2015<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Energy use per capita: 2291.44 energy per capita<br>Period: 2016<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Oman; Palestine, State of; Kuwait; Qatar; Bahrain", "Energy use per capita: 2307.31 energy per capita<br>Period: 2017<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Oman; Palestine, State of; Kuwait; Qatar; Bahrain", "Energy use per capita: 2301.29 energy per capita<br>Period: 2018<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Oman; Palestine, State of; Kuwait; Qatar; Bahrain", "Energy use per capita: 2286.76 energy per capita<br>Period: 2019<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Energy use per capita: 2270.86 energy per capita<br>Period: 2020<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Energy use per capita: 2216.04 energy per capita<br>Period: 2021<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,196,79,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [5650.4399999999996, 5847.3400000000001, 5711.1300000000001, 5529.0799999999999, 5472.1400000000003, 5379.96, 4883.1999999999998, 5427.9200000000001, 5274.6400000000003, 5269.4899999999998, 5146.5299999999997, 4966.4399999999996, 5102.79, 5102.79, 5102.79, 5102.79, 5102.79, 5102.79, 5102.79],
+      "text": ["Energy use per capita: 5650.44 energy per capita<br>Period: 2003<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Energy use per capita: 5847.34 energy per capita<br>Period: 2004<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Energy use per capita: 5711.13 energy per capita<br>Period: 2005<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Energy use per capita: 5529.08 energy per capita<br>Period: 2006<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Energy use per capita: 5472.14 energy per capita<br>Period: 2007<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Energy use per capita: 5379.96 energy per capita<br>Period: 2008<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Energy use per capita: 4883.2 energy per capita<br>Period: 2009<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Energy use per capita: 5427.92 energy per capita<br>Period: 2010<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Energy use per capita: 5274.64 energy per capita<br>Period: 2011<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Energy use per capita: 5269.49 energy per capita<br>Period: 2012<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Energy use per capita: 5146.53 energy per capita<br>Period: 2013<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Energy use per capita: 4966.44 energy per capita<br>Period: 2014<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Energy use per capita: 5102.79 energy per capita<br>Period: 2015<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Energy use per capita: 5102.79 energy per capita<br>Period: 2016<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Energy use per capita: 5102.79 energy per capita<br>Period: 2017<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Energy use per capita: 5102.79 energy per capita<br>Period: 2018<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Energy use per capita: 5102.79 energy per capita<br>Period: 2019<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Energy use per capita: 5102.79 energy per capita<br>Period: 2020<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Energy use per capita: 5102.79 energy per capita<br>Period: 2021<br>REMIND_54 region code: SWE<br>Countries in region: Sweden"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,196,79,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [3727.829999999999, 3597.1699999999992, 3487.6300000000001, 3728.1700000000005, 3622.6000000000004, 3501.5100000000002, 3329.21, 3510.7999999999993, 3230.1900000000001, 3091.5800000000008, 3125.3400000000006, 2872.5699999999997, 2816.6100000000001, 2816.6100000000001, 2816.6099999999997, 2816.6100000000006, 2816.6100000000001, 2816.6100000000001, 2816.6100000000006],
+      "text": ["Energy use per capita: 3727.83 energy per capita<br>Period: 2003<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Energy use per capita: 3597.17 energy per capita<br>Period: 2004<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Energy use per capita: 3487.63 energy per capita<br>Period: 2005<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Energy use per capita: 3728.17 energy per capita<br>Period: 2006<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Energy use per capita: 3622.6 energy per capita<br>Period: 2007<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Energy use per capita: 3501.51 energy per capita<br>Period: 2008<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Energy use per capita: 3329.21 energy per capita<br>Period: 2009<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Energy use per capita: 3510.8 energy per capita<br>Period: 2010<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Energy use per capita: 3230.19 energy per capita<br>Period: 2011<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Energy use per capita: 3091.58 energy per capita<br>Period: 2012<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Energy use per capita: 3125.34 energy per capita<br>Period: 2013<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Energy use per capita: 2872.57 energy per capita<br>Period: 2014<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Energy use per capita: 2816.61 energy per capita<br>Period: 2015<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Energy use per capita: 2816.61 energy per capita<br>Period: 2016<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Energy use per capita: 2816.61 energy per capita<br>Period: 2017<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Energy use per capita: 2816.61 energy per capita<br>Period: 2018<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Energy use per capita: 2816.61 energy per capita<br>Period: 2019<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Energy use per capita: 2816.61 energy per capita<br>Period: 2020<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Energy use per capita: 2816.61 energy per capita<br>Period: 2021<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,217,118,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [3160.9534467629101, 3162.3079479964354, 3207.5199086856774, 3168.0460277974012, 3142.716463027959, 3080.3546705133067, 2863.1083028552775, 2924.2134212389701, 2822.5866585735566, 2704.9644323707516, 2574.0189349363582, 2409.9871886895821, 2476.655678326837, 2476.5298274291508, 2476.3780162549097, 2476.1781354140344, 2475.8899469142762, 2475.73104994609, 2475.6629181697035],
+      "text": ["Energy use per capita: 3160.95 energy per capita<br>Period: 2003<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Energy use per capita: 3162.31 energy per capita<br>Period: 2004<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Energy use per capita: 3207.52 energy per capita<br>Period: 2005<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Energy use per capita: 3168.05 energy per capita<br>Period: 2006<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Energy use per capita: 3142.72 energy per capita<br>Period: 2007<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Energy use per capita: 3080.35 energy per capita<br>Period: 2008<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Energy use per capita: 2863.11 energy per capita<br>Period: 2009<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Energy use per capita: 2924.21 energy per capita<br>Period: 2010<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Energy use per capita: 2822.59 energy per capita<br>Period: 2011<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Energy use per capita: 2704.96 energy per capita<br>Period: 2012<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Energy use per capita: 2574.02 energy per capita<br>Period: 2013<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Energy use per capita: 2409.99 energy per capita<br>Period: 2014<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Energy use per capita: 2476.66 energy per capita<br>Period: 2015<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Energy use per capita: 2476.53 energy per capita<br>Period: 2016<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Energy use per capita: 2476.38 energy per capita<br>Period: 2017<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Energy use per capita: 2476.18 energy per capita<br>Period: 2018<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Energy use per capita: 2475.89 energy per capita<br>Period: 2019<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Energy use per capita: 2475.73 energy per capita<br>Period: 2020<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Energy use per capita: 2475.66 energy per capita<br>Period: 2021<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,217,118,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [5020.3800000000001, 5085.8900000000012, 4989.4700000000003, 4925.1099999999988, 4908.8999999999996, 4848.0100000000002, 4722.1099999999988, 5025.3199999999997, 4636.6999999999998, 4646.2600000000002, 4600.1800000000003, 4325.5200000000004, 4233.04, 4233.0399999999991, 4233.04, 4233.04, 4233.04, 4233.04, 4233.04],
+      "text": ["Energy use per capita: 5020.38 energy per capita<br>Period: 2003<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Energy use per capita: 5085.89 energy per capita<br>Period: 2004<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Energy use per capita: 4989.47 energy per capita<br>Period: 2005<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Energy use per capita: 4925.11 energy per capita<br>Period: 2006<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Energy use per capita: 4908.9 energy per capita<br>Period: 2007<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Energy use per capita: 4848.01 energy per capita<br>Period: 2008<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Energy use per capita: 4722.11 energy per capita<br>Period: 2009<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Energy use per capita: 5025.32 energy per capita<br>Period: 2010<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Energy use per capita: 4636.7 energy per capita<br>Period: 2011<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Energy use per capita: 4646.26 energy per capita<br>Period: 2012<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Energy use per capita: 4600.18 energy per capita<br>Period: 2013<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Energy use per capita: 4325.52 energy per capita<br>Period: 2014<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Energy use per capita: 4233.04 energy per capita<br>Period: 2015<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Energy use per capita: 4233.04 energy per capita<br>Period: 2016<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Energy use per capita: 4233.04 energy per capita<br>Period: 2017<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Energy use per capita: 4233.04 energy per capita<br>Period: 2018<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Energy use per capita: 4233.04 energy per capita<br>Period: 2019<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Energy use per capita: 4233.04 energy per capita<br>Period: 2020<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Energy use per capita: 4233.04 energy per capita<br>Period: 2021<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,217,118,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [5713.4705884299456, 5752.7640146317308, 5720.2474081859318, 5629.1725217222829, 5485.5060782519377, 5592.4495907586133, 5318.0098158306037, 5663.5128942650408, 5225.2674510961733, 4976.7314821842947, 5104.9311611706862, 4810.0181585892369, 4777.2728175484217, 4778.687948222494, 4780.4730593007025, 4781.7794933977584, 4783.0569973319798, 4784.1798416314941, 4785.1964004107867],
+      "text": ["Energy use per capita: 5713.47 energy per capita<br>Period: 2003<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Energy use per capita: 5752.76 energy per capita<br>Period: 2004<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Energy use per capita: 5720.25 energy per capita<br>Period: 2005<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Energy use per capita: 5629.17 energy per capita<br>Period: 2006<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Energy use per capita: 5485.51 energy per capita<br>Period: 2007<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Energy use per capita: 5592.45 energy per capita<br>Period: 2008<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Energy use per capita: 5318.01 energy per capita<br>Period: 2009<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Energy use per capita: 5663.51 energy per capita<br>Period: 2010<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Energy use per capita: 5225.27 energy per capita<br>Period: 2011<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Energy use per capita: 4976.73 energy per capita<br>Period: 2012<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Energy use per capita: 5104.93 energy per capita<br>Period: 2013<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Energy use per capita: 4810.02 energy per capita<br>Period: 2014<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Energy use per capita: 4777.27 energy per capita<br>Period: 2015<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Energy use per capita: 4778.69 energy per capita<br>Period: 2016<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Energy use per capita: 4780.47 energy per capita<br>Period: 2017<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Energy use per capita: 4781.78 energy per capita<br>Period: 2018<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Energy use per capita: 4783.06 energy per capita<br>Period: 2019<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Energy use per capita: 4784.18 energy per capita<br>Period: 2020<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Energy use per capita: 4785.2 energy per capita<br>Period: 2021<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(255,237,160,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [7077.0299999999997, 7134.8499999999995, 6562.0200000000004, 7111.8599999999997, 6974.9000000000005, 6669.170000000001, 6268.3000000000002, 6828.7799999999997, 6537.6400000000003, 6275.7700000000004, 6116.2299999999996, 6213.3599999999988, 5924.6999999999989, 5924.6999999999998, 5924.6999999999998, 5924.6999999999989, 5924.6999999999998, 5924.6999999999998, 5924.6999999999998],
+      "text": ["Energy use per capita: 7077.03 energy per capita<br>Period: 2003<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Energy use per capita: 7134.85 energy per capita<br>Period: 2004<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Energy use per capita: 6562.02 energy per capita<br>Period: 2005<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Energy use per capita: 7111.86 energy per capita<br>Period: 2006<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Energy use per capita: 6974.9 energy per capita<br>Period: 2007<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Energy use per capita: 6669.17 energy per capita<br>Period: 2008<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Energy use per capita: 6268.3 energy per capita<br>Period: 2009<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Energy use per capita: 6828.78 energy per capita<br>Period: 2010<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Energy use per capita: 6537.64 energy per capita<br>Period: 2011<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Energy use per capita: 6275.77 energy per capita<br>Period: 2012<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Energy use per capita: 6116.23 energy per capita<br>Period: 2013<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Energy use per capita: 6213.36 energy per capita<br>Period: 2014<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Energy use per capita: 5924.7 energy per capita<br>Period: 2015<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Energy use per capita: 5924.7 energy per capita<br>Period: 2016<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Energy use per capita: 5924.7 energy per capita<br>Period: 2017<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Energy use per capita: 5924.7 energy per capita<br>Period: 2018<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Energy use per capita: 5924.7 energy per capita<br>Period: 2019<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Energy use per capita: 5924.7 energy per capita<br>Period: 2020<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Energy use per capita: 5924.7 energy per capita<br>Period: 2021<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(255,237,160,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [2638.3277684558411, 2663.2338583085498, 2700.2206660658971, 2694.1232685614154, 2693.6769531762857, 2711.3691763588176, 2615.4654696650109, 2452.651260169986, 2375.9669162573532, 2357.617828293698, 2081.8600336526824, 2079.4130833892968, 2130.8343225926742, 2129.9763387541739, 2129.2354607470397, 2128.5182320856738, 2127.867661653198, 2127.1776476258428, 2126.0086670795718],
+      "text": ["Energy use per capita: 2638.33 energy per capita<br>Period: 2003<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Energy use per capita: 2663.23 energy per capita<br>Period: 2004<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Energy use per capita: 2700.22 energy per capita<br>Period: 2005<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Energy use per capita: 2694.12 energy per capita<br>Period: 2006<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Energy use per capita: 2693.68 energy per capita<br>Period: 2007<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Energy use per capita: 2711.37 energy per capita<br>Period: 2008<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Energy use per capita: 2615.47 energy per capita<br>Period: 2009<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Energy use per capita: 2452.65 energy per capita<br>Period: 2010<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Energy use per capita: 2375.97 energy per capita<br>Period: 2011<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Energy use per capita: 2357.62 energy per capita<br>Period: 2012<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Energy use per capita: 2081.86 energy per capita<br>Period: 2013<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Energy use per capita: 2079.41 energy per capita<br>Period: 2014<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Energy use per capita: 2130.83 energy per capita<br>Period: 2015<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Energy use per capita: 2129.98 energy per capita<br>Period: 2016<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Energy use per capita: 2129.24 energy per capita<br>Period: 2017<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Energy use per capita: 2128.52 energy per capita<br>Period: 2018<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Energy use per capita: 2127.87 energy per capita<br>Period: 2019<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Energy use per capita: 2127.18 energy per capita<br>Period: 2020<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Energy use per capita: 2126.01 energy per capita<br>Period: 2021<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(255,237,160,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "visible": false,
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    }
+  ],
+  "layout": {
+    "margin": {
+      "t": 33.534246575342465,
+      "r": 0,
+      "b": 27.031963470319649,
+      "l": 47.488584474885855
+    },
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.611872146118724
+    },
+    "title": {
+      "text": "Energy use per capita (REMIND_54)",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 17.534246575342468
+      },
+      "x": 0,
+      "xref": "paper"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [2002.0999999999999, 2021.9000000000001],
+      "tickmode": "array",
+      "ticktext": ["2005", "2010", "2015", "2020"],
+      "tickvals": [2005, 2010, 2015, 2020],
+      "categoryorder": "array",
+      "categoryarray": ["2005", "2010", "2015", "2020"],
+      "nticks": null,
+      "ticks": "",
+      "tickcolor": null,
+      "ticklen": 3.6529680365296811,
+      "tickwidth": 0,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716894984
+      },
+      "tickangle": -90,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(235,235,235,1)",
+      "gridwidth": 0.66417600664176002,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.611872146118724
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [0, 18178.139999999999],
+      "tickmode": "array",
+      "ticktext": ["0", "5000", "10000", "15000"],
+      "tickvals": [0, 5000, 10000, 15000],
+      "categoryorder": "array",
+      "categoryarray": ["0", "5000", "10000", "15000"],
+      "nticks": null,
+      "ticks": "",
+      "tickcolor": null,
+      "ticklen": 3.6529680365296811,
+      "tickwidth": 0,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.68949771689498
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(235,235,235,1)",
+      "gridwidth": 0.66417600664176002,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "energy per capita",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.611872146118724
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "layer": "below",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": false,
+    "legend": {
+      "bgcolor": null,
+      "bordercolor": null,
+      "borderwidth": 0,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716894984
+      },
+      "title": {
+        "text": "",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.611872146118724
+        }
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  "config": {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  "source": "A",
+  "attrs": {
+    "b55c64557b14": {
+      "x": {},
+      "colour": {},
+      "text": {},
+      "y": {},
+      "type": "scatter"
+    },
+    "b55c6b6e4bf": {
+      "y": {}
+    }
+  },
+  "cur_data": "b55c64557b14",
+  "visdat": {
+    "b55c64557b14": ["function (y) ", "x"],
+    "b55c6b6e4bf": ["function (y) ", "x"]
+  },
+  "highlight": {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.20000000000000001,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  "shinyEvents": ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  "base_url": "https://plot.ly"
+}
+           
+
+                  ); 
+
+           }()); 
+
+  

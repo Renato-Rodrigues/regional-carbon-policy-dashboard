@@ -1,0 +1,78 @@
+---
+output:
+  html_document:
+    theme: paper
+    toc: false
+    self_contained: false
+    lib_dir: ../output/iframe/libs
+params:
+  mappingsVector: ""
+  charts: ""
+---
+
+
+<style>
+  .main-container {
+    max-width: 95% !important;
+  }
+  .toc-content {
+    padding-left: 0px !important;
+  }
+  .svg-container {
+    margin: auto !important;
+  }
+  img {
+    max-width: 100% !important;
+    <!-- display: block !important; -->
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .hideChart {
+    display: none;
+  }
+  .plotly {
+    width: 100% !important;
+  }
+  
+</style>
+
+
+```{r chunk_options, echo=FALSE}
+
+# setting global R chunk options (https://yihui.name/knitr/options/#chunk_options)
+  knitr::opts_chunk$set(dev='svglite', # svg, png,...
+                        fig.ext = ".svg",
+                        #fig.asp = .8 # default aspect ratio
+                        fig.width = 12,
+                        fig.height = 6.5,
+                        dpi=100
+                        )
+```  
+
+
+
+# World Maps {.tabset}
+
+```{r creating_chunks_for_maps_display, include=FALSE}
+
+result = ""
+
+for (mapRegion in params$mappingsVector){
+  result = paste0(result,knitr::knit_expand(text=paste0("\n\n")))
+  result = paste0(result,knitr::knit_expand(text=paste0("## ", mapRegion, ifelse(mapRegion == "REMIND_62", " {.active}", ""), "\n\n")))
+  result = paste0(result,knitr::knit_expand(text=paste0("<div style='width:100%; display:flex; justify-content:center;'><div style='width:100%; max-width:1200px;'>", "\n\n")))
+  result = paste0(result,"```{r ", "Map_", mapRegion, ", echo=FALSE}\n\n")
+  result = paste0(result, "params[['charts']][['", mapRegion, "']][['WorldMap']]\n\n")  
+  result = paste0(result,"```\n\n")
+  result = paste0(result,knitr::knit_expand(text=paste0("</div></div>", "\n\n")))
+}
+
+# fileConn<-file("output.txt")
+# writeLines(result, fileConn)
+# close(fileConn)
+
+```
+
+  
+`r paste(knitr::knit(text = paste(result, collapse = '\n')))`
+

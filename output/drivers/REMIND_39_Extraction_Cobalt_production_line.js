@@ -1,0 +1,929 @@
+(function(){ 
+
+        window.PLOTLYENV={'BASE_URL': 'https://plotly.com'}; 
+
+        
+
+        var gd = document.getElementById('REMIND_39_Extraction_Cobalt_production_line') 
+
+        var resizeDebounce = null; 
+
+
+        function resizePlot() { 
+
+          var bb = gd.getBoundingClientRect(); 
+
+          Plotly.relayout(gd, { 
+
+            width: bb.width, 
+
+              height: bb.height 
+
+            }); 
+
+          } 
+
+
+          Plotly.plot(gd,  
+
+              {
+  "data": [
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Cobalt production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Cobalt production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Cobalt production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Cobalt production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Cobalt production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Cobalt production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Cobalt production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Cobalt production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Cobalt production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Cobalt production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Cobalt production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Cobalt production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Cobalt production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Cobalt production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Cobalt production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Cobalt production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Cobalt production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Cobalt production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Cobalt production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,109,44,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [141.60570718593348, 152.15857272384252, 159.69808863429657, 146.76911077111546, 157.60848778710633, 164.06737524019218, 186.59382106682716, 192.59497572067508, 202.46136420776574, 192.41410919602527, 155.31543833945202, 141.9905282708612, 151.74103565223564, 146.2788493061999, 144.58693731929532, 128.34310816576317, 137.85371393480949, 136.46306692496884, 134.9323001658847],
+      "text": ["Cobalt production: 141.61 metric tons<br>Period: 2003<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Martinique; Guadeloupe; Bahamas; Barbados; Belize; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Saint Kitts and Nevis; Cayman Islands; Saint Martin (French part); Sint Maarten (Dutch part); Virgin Islands, British; Turks and Caicos Islands; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Cobalt production: 152.16 metric tons<br>Period: 2004<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Martinique; Guadeloupe; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Saint Kitts and Nevis; Cayman Islands; Saint Martin (French part); Sint Maarten (Dutch part); Virgin Islands, British; Turks and Caicos Islands; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Cobalt production: 159.7 metric tons<br>Period: 2005<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Cobalt production: 146.77 metric tons<br>Period: 2006<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Cobalt production: 157.61 metric tons<br>Period: 2007<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Cobalt production: 164.07 metric tons<br>Period: 2008<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Cobalt production: 186.59 metric tons<br>Period: 2009<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Cobalt production: 192.59 metric tons<br>Period: 2010<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Cobalt production: 202.46 metric tons<br>Period: 2011<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Nicaragua; Paraguay; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Cobalt production: 192.41 metric tons<br>Period: 2012<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Nicaragua; Paraguay; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Cobalt production: 155.32 metric tons<br>Period: 2013<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Haiti; Dominican Republic; Honduras; El Salvador; Nicaragua; Paraguay; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Cobalt production: 141.99 metric tons<br>Period: 2014<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Haiti; Dominican Republic; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Cobalt production: 151.74 metric tons<br>Period: 2015<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Haiti; Dominican Republic; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Martinique; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Sint Maarten (Dutch part); Saint Martin (French part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Cobalt production: 146.28 metric tons<br>Period: 2016<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Haiti; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Martinique; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Saint Martin (French part); Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Cobalt production: 144.59 metric tons<br>Period: 2017<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Cuba; Haiti; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Martinique; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Cayman Islands; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Saint Martin (French part); Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Cobalt production: 128.34 metric tons<br>Period: 2018<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Cuba; Haiti; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Belize; Martinique; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Cayman Islands; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Saint Martin (French part); Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Cobalt production: 137.85 metric tons<br>Period: 2019<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Cuba; Haiti; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Belize; Martinique; French Guiana; Barbados; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Cayman Islands; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Virgin Islands, British; Saint Martin (French part); Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Cobalt production: 136.46 metric tons<br>Period: 2020<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Haiti; Cuba; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Bahamas; Guadeloupe; Belize; Martinique; French Guiana; Barbados; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Cayman Islands; Dominica; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Virgin Islands, British; Saint Martin (French part); Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Cobalt production: 134.93 metric tons<br>Period: 2021<br>REMIND_39 region code: OLA<br>Countries in region: Argentina; Chile; Colombia; Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Haiti; Dominican Republic; Cuba; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Bahamas; Guadeloupe; Belize; Martinique; French Guiana; Barbados; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Cayman Islands; Dominica; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Virgin Islands, British; Saint Martin (French part); Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,109,44,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [4327, 5060, 5767, 7115, 8261, 8953, 3919.0000000000005, 4636, 6836, 6625, 4005, 3906.9999999999995, 4339, 4216, 3703.9999999999995, 3279, 3336, 3336, 3335.9999999999995],
+      "text": ["Cobalt production: 4327 metric tons<br>Period: 2003<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Cobalt production: 5060 metric tons<br>Period: 2004<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Cobalt production: 5767 metric tons<br>Period: 2005<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Cobalt production: 7115 metric tons<br>Period: 2006<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Cobalt production: 8261 metric tons<br>Period: 2007<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Cobalt production: 8953 metric tons<br>Period: 2008<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Cobalt production: 3919 metric tons<br>Period: 2009<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Cobalt production: 4636 metric tons<br>Period: 2010<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Cobalt production: 6836 metric tons<br>Period: 2011<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Cobalt production: 6625 metric tons<br>Period: 2012<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Cobalt production: 4005 metric tons<br>Period: 2013<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Cobalt production: 3907 metric tons<br>Period: 2014<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Cobalt production: 4339 metric tons<br>Period: 2015<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Cobalt production: 4216 metric tons<br>Period: 2016<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Cobalt production: 3704 metric tons<br>Period: 2017<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Cobalt production: 3279 metric tons<br>Period: 2018<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Cobalt production: 3336 metric tons<br>Period: 2019<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Cobalt production: 3336 metric tons<br>Period: 2020<br>REMIND_39 region code: CAN<br>Countries in region: Canada", "Cobalt production: 3336 metric tons<br>Period: 2021<br>REMIND_39 region code: CAN<br>Countries in region: Canada"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(8,81,156,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [184.23291511019195, 210.19633774303284, 208.60556086813278, 194.14269659076734, 192.69393530324581, 216.62793433610929, 277.90825157611374, 389.64366528375291, 268.53813445807356, 222.08503882414331, 244.27563837381791, 259.66264109878477, 179.11538687135351, 188.98190176937158, 268.58989556449524, 265.45544723131542, 262.60725204720615, 260.05393080000391, 257.60593910032293],
+      "text": ["Cobalt production: 184.23 metric tons<br>Period: 2003<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Algeria; Sudan; Morocco; Niger; Mali; Tunisia; Chad; Libya; Mauritania; Western Sahara", "Cobalt production: 210.2 metric tons<br>Period: 2004<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Algeria; Sudan; Morocco; Niger; Mali; Tunisia; Chad; Libya; Mauritania; Western Sahara", "Cobalt production: 208.61 metric tons<br>Period: 2005<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Cobalt production: 194.14 metric tons<br>Period: 2006<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Cobalt production: 192.69 metric tons<br>Period: 2007<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Cobalt production: 216.63 metric tons<br>Period: 2008<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Cobalt production: 277.91 metric tons<br>Period: 2009<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Cobalt production: 389.64 metric tons<br>Period: 2010<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Cobalt production: 268.54 metric tons<br>Period: 2011<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Cobalt production: 222.09 metric tons<br>Period: 2012<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Cobalt production: 244.28 metric tons<br>Period: 2013<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Cobalt production: 259.66 metric tons<br>Period: 2014<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Cobalt production: 179.12 metric tons<br>Period: 2015<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Cobalt production: 188.98 metric tons<br>Period: 2016<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Cobalt production: 268.59 metric tons<br>Period: 2017<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Cobalt production: 265.46 metric tons<br>Period: 2018<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Cobalt production: 262.61 metric tons<br>Period: 2019<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Cobalt production: 260.05 metric tons<br>Period: 2020<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Cobalt production: 257.61 metric tons<br>Period: 2021<br>REMIND_39 region code: NAF<br>Countries in region: Egypt; Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(8,81,156,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [4981.9886703740103, 4646.5704103304479, 4647.2774863726445, 4980.3384551198696, 4904.7458863396032, 3985.5585690553071, 3625.4683366531508, 3216.4730697800032, 3216.4524078527697, 4926.252460717943, 5368.3596653831846, 5200.0233218299372, 4792.8830395796176, 4301.3568363395298, 4209.6173664929402, 4077.196183310542, 4798.4666714825307, 4790.7910813036488, 4788.6258865015652],
+      "text": ["Cobalt production: 4981.99 metric tons<br>Period: 2003<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Cobalt production: 4646.57 metric tons<br>Period: 2004<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Cobalt production: 4647.28 metric tons<br>Period: 2005<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Cobalt production: 4980.34 metric tons<br>Period: 2006<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Cobalt production: 4904.75 metric tons<br>Period: 2007<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Cobalt production: 3985.56 metric tons<br>Period: 2008<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Cobalt production: 3625.47 metric tons<br>Period: 2009<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Cobalt production: 3216.47 metric tons<br>Period: 2010<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Cobalt production: 3216.45 metric tons<br>Period: 2011<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Cobalt production: 4926.25 metric tons<br>Period: 2012<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Cobalt production: 5368.36 metric tons<br>Period: 2013<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Cobalt production: 5200.02 metric tons<br>Period: 2014<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Cobalt production: 4792.88 metric tons<br>Period: 2015<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Cobalt production: 4301.36 metric tons<br>Period: 2016<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Cobalt production: 4209.62 metric tons<br>Period: 2017<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Cobalt production: 4077.2 metric tons<br>Period: 2018<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Cobalt production: 4798.47 metric tons<br>Period: 2019<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Cobalt production: 4790.79 metric tons<br>Period: 2020<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Cobalt production: 4788.63 metric tons<br>Period: 2021<br>REMIND_39 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(33,113,181,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [980, 980, 979.99999999999989, 980, 980, 979.99999999999989, 979.99999999999989, 980.00000000000011, 980.00000000000011, 980, 980, 979.99999999999989, 980.00000000000011, 980.00000000000011, 999.99999999999989, 1399.9999999999998, 1099.9999999999998, 1100, 1100],
+      "text": ["Cobalt production: 980 metric tons<br>Period: 2003<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Cobalt production: 980 metric tons<br>Period: 2004<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Cobalt production: 980 metric tons<br>Period: 2005<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Cobalt production: 980 metric tons<br>Period: 2006<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Cobalt production: 980 metric tons<br>Period: 2007<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Cobalt production: 980 metric tons<br>Period: 2008<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Cobalt production: 980 metric tons<br>Period: 2009<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Cobalt production: 980 metric tons<br>Period: 2010<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Cobalt production: 980 metric tons<br>Period: 2011<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Cobalt production: 980 metric tons<br>Period: 2012<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Cobalt production: 980 metric tons<br>Period: 2013<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Cobalt production: 980 metric tons<br>Period: 2014<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Cobalt production: 980 metric tons<br>Period: 2015<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Cobalt production: 980 metric tons<br>Period: 2016<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Cobalt production: 1000 metric tons<br>Period: 2017<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Cobalt production: 1400 metric tons<br>Period: 2018<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Cobalt production: 1100 metric tons<br>Period: 2019<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Cobalt production: 1100 metric tons<br>Period: 2020<br>REMIND_39 region code: MEX<br>Countries in region: Mexico", "Cobalt production: 1100 metric tons<br>Period: 2021<br>REMIND_39 region code: MEX<br>Countries in region: Mexico"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(35,139,69,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Cobalt production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Cobalt production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Cobalt production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Cobalt production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Cobalt production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Cobalt production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Cobalt production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Cobalt production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Cobalt production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Cobalt production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Cobalt production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Cobalt production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Cobalt production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Cobalt production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Cobalt production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Cobalt production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Cobalt production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Cobalt production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Cobalt production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(35,139,69,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1300, 1400, 1400, 1099.9999999999998, 1400, 2631, 2075.0000000000005, 3139, 3623, 3900, 3499.9999999999995, 3827.9999999999995, 2771, 851.99999999999989, 184.99999999999997, 107.5, 30, 30, 29.999999999999996],
+      "text": ["Cobalt production: 1300 metric tons<br>Period: 2003<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Cobalt production: 1400 metric tons<br>Period: 2004<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Cobalt production: 1400 metric tons<br>Period: 2005<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Cobalt production: 1100 metric tons<br>Period: 2006<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Cobalt production: 1400 metric tons<br>Period: 2007<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Cobalt production: 2631 metric tons<br>Period: 2008<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Cobalt production: 2075 metric tons<br>Period: 2009<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Cobalt production: 3139 metric tons<br>Period: 2010<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Cobalt production: 3623 metric tons<br>Period: 2011<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Cobalt production: 3900 metric tons<br>Period: 2012<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Cobalt production: 3500 metric tons<br>Period: 2013<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Cobalt production: 3828 metric tons<br>Period: 2014<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Cobalt production: 2771 metric tons<br>Period: 2015<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Cobalt production: 852 metric tons<br>Period: 2016<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Cobalt production: 185 metric tons<br>Period: 2017<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Cobalt production: 107.5 metric tons<br>Period: 2018<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Cobalt production: 30 metric tons<br>Period: 2019<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Cobalt production: 30 metric tons<br>Period: 2020<br>REMIND_39 region code: BRA<br>Countries in region: Brazil", "Cobalt production: 30 metric tons<br>Period: 2021<br>REMIND_39 region code: BRA<br>Countries in region: Brazil"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(65,171,93,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Cobalt production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Cobalt production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Cobalt production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Cobalt production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Cobalt production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Cobalt production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Cobalt production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; San Marino; Monaco; Holy See (Vatican City State)", "Cobalt production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; San Marino; Monaco; Holy See (Vatican City State)", "Cobalt production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Cobalt production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Cobalt production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Cobalt production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Cobalt production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Cobalt production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Cobalt production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Cobalt production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Cobalt production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Cobalt production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Cobalt production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(65,171,93,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Cobalt production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Cobalt production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Cobalt production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Cobalt production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Cobalt production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Cobalt production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Cobalt production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Cobalt production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Cobalt production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Cobalt production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Cobalt production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Cobalt production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Cobalt production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Cobalt production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Cobalt production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Cobalt production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Cobalt production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Cobalt production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of", "Cobalt production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: KOR<br>Countries in region: Korea, Republic of"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(77,0,75,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Cobalt production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Cobalt production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Cobalt production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Cobalt production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Cobalt production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Cobalt production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Cobalt production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Cobalt production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Cobalt production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Cobalt production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Cobalt production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Cobalt production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Cobalt production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Cobalt production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Cobalt production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Cobalt production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Cobalt production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Tajikistan; Belarus; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Cobalt production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Tajikistan; Belarus; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Cobalt production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Tajikistan; Belarus; Turkmenistan; Kyrgyzstan; Mongolia; Armenia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(105,105,105,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [6099.9999999999991, 6000, 6300, 6300, 6300, 6199.9999999999991, 6100, 6200, 6100, 6300, 6300, 6300.0000000000009, 6200, 5499.9999999999991, 5900, 6100, 6300, 6300.0000000000009, 6299.9999999999991],
+      "text": ["Cobalt production: 6100 metric tons<br>Period: 2003<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Cobalt production: 6000 metric tons<br>Period: 2004<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Cobalt production: 6300 metric tons<br>Period: 2005<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Cobalt production: 6300 metric tons<br>Period: 2006<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Cobalt production: 6300 metric tons<br>Period: 2007<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Cobalt production: 6200 metric tons<br>Period: 2008<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Cobalt production: 6100 metric tons<br>Period: 2009<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Cobalt production: 6200 metric tons<br>Period: 2010<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Cobalt production: 6100 metric tons<br>Period: 2011<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Cobalt production: 6300 metric tons<br>Period: 2012<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Cobalt production: 6300 metric tons<br>Period: 2013<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Cobalt production: 6300 metric tons<br>Period: 2014<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Cobalt production: 6200 metric tons<br>Period: 2015<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Cobalt production: 5500 metric tons<br>Period: 2016<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Cobalt production: 5900 metric tons<br>Period: 2017<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Cobalt production: 6100 metric tons<br>Period: 2018<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Cobalt production: 6300 metric tons<br>Period: 2019<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Cobalt production: 6300 metric tons<br>Period: 2020<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation", "Cobalt production: 6300 metric tons<br>Period: 2021<br>REMIND_39 region code: RUS<br>Countries in region: Russian Federation"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(128,128,128,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [39.414177065663438, 39.79290521191632, 39.431063214616728, 185.42420367263949, 210.43134100546155, 309.31824142675447, 384.38973611164135, 560.9329793161719, 564.85845750279566, 668.35139586259208, 735.68091336743612, 1263.6726319135, 1211.2149957690599, 1098.5341921076745, 1277.9022619988646, 1318.3988445458788, 1403.8778637092382, 1408.0587410186947, 1410.7090978105825],
+      "text": ["Cobalt production: 39.41 metric tons<br>Period: 2003<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Norfolk Island; Niue; Tokelau; United States Minor Outlying Islands; Pitcairn", "Cobalt production: 39.79 metric tons<br>Period: 2004<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Norfolk Island; Niue; Tokelau; United States Minor Outlying Islands; Pitcairn", "Cobalt production: 39.43 metric tons<br>Period: 2005<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Cobalt production: 185.42 metric tons<br>Period: 2006<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Cobalt production: 210.43 metric tons<br>Period: 2007<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Cobalt production: 309.32 metric tons<br>Period: 2008<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Cobalt production: 384.39 metric tons<br>Period: 2009<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Cobalt production: 560.93 metric tons<br>Period: 2010<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Cobalt production: 564.86 metric tons<br>Period: 2011<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Cobalt production: 668.35 metric tons<br>Period: 2012<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Cook Islands; Palau; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Cobalt production: 735.68 metric tons<br>Period: 2013<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Cook Islands; Palau; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Cobalt production: 1263.67 metric tons<br>Period: 2014<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Cook Islands; Palau; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Cobalt production: 1211.21 metric tons<br>Period: 2015<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Cobalt production: 1098.53 metric tons<br>Period: 2016<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Cobalt production: 1277.9 metric tons<br>Period: 2017<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Cobalt production: 1318.4 metric tons<br>Period: 2018<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; Vanuatu; New Caledonia; French Polynesia; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Cobalt production: 1403.88 metric tons<br>Period: 2019<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; Vanuatu; New Caledonia; French Polynesia; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Cobalt production: 1408.06 metric tons<br>Period: 2020<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; Vanuatu; New Caledonia; French Polynesia; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Tokelau; Norfolk Island; United States Minor Outlying Islands; Pitcairn", "Cobalt production: 1410.71 metric tons<br>Period: 2021<br>REMIND_39 region code: SEA<br>Countries in region: Viet Nam; Philippines; Thailand; Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; Vanuatu; New Caledonia; French Polynesia; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Nauru; Wallis and Futuna; Tuvalu; Niue; Tokelau; Norfolk Island; United States Minor Outlying Islands; Pitcairn"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(136,65,157,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1299.9999999999998, 1300.0000000000002, 1299.9999999999998, 1300, 1300, 1300, 1200.0000000000002, 1599.9999999999998, 1600, 1700, 1700, 1300, 1300, 1200, 1200, 1200, 1100, 1100, 1100],
+      "text": ["Cobalt production: 1300 metric tons<br>Period: 2003<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Cobalt production: 1300 metric tons<br>Period: 2004<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Cobalt production: 1300 metric tons<br>Period: 2005<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Cobalt production: 1300 metric tons<br>Period: 2006<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Cobalt production: 1300 metric tons<br>Period: 2007<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Cobalt production: 1300 metric tons<br>Period: 2008<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Cobalt production: 1200 metric tons<br>Period: 2009<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Cobalt production: 1600 metric tons<br>Period: 2010<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Cobalt production: 1600 metric tons<br>Period: 2011<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Cobalt production: 1700 metric tons<br>Period: 2012<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Cobalt production: 1700 metric tons<br>Period: 2013<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Cobalt production: 1300 metric tons<br>Period: 2014<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Cobalt production: 1300 metric tons<br>Period: 2015<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Cobalt production: 1200 metric tons<br>Period: 2016<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Cobalt production: 1200 metric tons<br>Period: 2017<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Cobalt production: 1200 metric tons<br>Period: 2018<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Cobalt production: 1100 metric tons<br>Period: 2019<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Cobalt production: 1100 metric tons<br>Period: 2020<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia", "Cobalt production: 1100 metric tons<br>Period: 2021<br>REMIND_39 region code: IDN<br>Countries in region: Indonesia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(140,107,177,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Cobalt production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Nepal; Afghanistan; Bhutan", "Cobalt production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Nepal; Afghanistan; Bhutan", "Cobalt production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Nepal; Afghanistan; Bhutan", "Cobalt production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Nepal; Afghanistan; Bhutan", "Cobalt production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Nepal; Afghanistan; Bhutan", "Cobalt production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Nepal; Afghanistan; Bhutan", "Cobalt production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Afghanistan; Nepal; Bhutan", "Cobalt production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Afghanistan; Nepal; Bhutan", "Cobalt production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Afghanistan; Nepal; Bhutan", "Cobalt production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Afghanistan; Nepal; Bhutan", "Cobalt production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Afghanistan; Nepal; Bhutan", "Cobalt production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Afghanistan; Nepal; Bhutan", "Cobalt production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Afghanistan; Nepal; Bhutan", "Cobalt production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Afghanistan; Nepal; Bhutan", "Cobalt production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Afghanistan; Nepal; Bhutan", "Cobalt production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Afghanistan; Nepal; Bhutan", "Cobalt production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Afghanistan; Nepal; Bhutan", "Cobalt production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Afghanistan; Nepal; Bhutan", "Cobalt production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: OAS_central<br>Countries in region: Bangladesh; Pakistan; Afghanistan; Nepal; Bhutan"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(140,150,198,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Cobalt production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Cobalt production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Cobalt production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Cobalt production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Cobalt production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Cobalt production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Cobalt production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Cobalt production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Cobalt production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Cobalt production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Cobalt production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Cobalt production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Cobalt production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Cobalt production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Cobalt production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Cobalt production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Cobalt production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Cobalt production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: JPN<br>Countries in region: Japan", "Cobalt production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: JPN<br>Countries in region: Japan"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(152,0,67,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [99.999999999999986, 100, 100, 100.00000000000001, 100, 100, 100.00000000000001, 100, 100, 100, 100, 100, 100.00000000000001, 100, 219.99999999999997, 259.00000000000006, 120.00000000000001, 119.99999999999999, 120],
+      "text": ["Cobalt production: 100 metric tons<br>Period: 2003<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Cobalt production: 100 metric tons<br>Period: 2004<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Cobalt production: 100 metric tons<br>Period: 2005<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Cobalt production: 100 metric tons<br>Period: 2006<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Cobalt production: 100 metric tons<br>Period: 2007<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Cobalt production: 100 metric tons<br>Period: 2008<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Cobalt production: 100 metric tons<br>Period: 2009<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Cobalt production: 100 metric tons<br>Period: 2010<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Cobalt production: 100 metric tons<br>Period: 2011<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Cobalt production: 100 metric tons<br>Period: 2012<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Cobalt production: 100 metric tons<br>Period: 2013<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Cobalt production: 100 metric tons<br>Period: 2014<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Cobalt production: 100 metric tons<br>Period: 2015<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Cobalt production: 100 metric tons<br>Period: 2016<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Cobalt production: 220 metric tons<br>Period: 2017<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Cobalt production: 259 metric tons<br>Period: 2018<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Cobalt production: 120 metric tons<br>Period: 2019<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Cobalt production: 120 metric tons<br>Period: 2020<br>REMIND_39 region code: TUR<br>Countries in region: Turkey", "Cobalt production: 120 metric tons<br>Period: 2021<br>REMIND_39 region code: TUR<br>Countries in region: Turkey"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(161,217,155,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Cobalt production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Cobalt production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Cobalt production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Cobalt production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Cobalt production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Cobalt production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Cobalt production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Cobalt production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Cobalt production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Cobalt production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Cobalt production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Cobalt production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Cobalt production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Cobalt production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Cobalt production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Cobalt production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Cobalt production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Cobalt production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Cobalt production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(217,72,1,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Cobalt production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Cobalt production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Cobalt production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Cobalt production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Cobalt production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Cobalt production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Cobalt production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Cobalt production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Cobalt production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Cobalt production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Cobalt production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Cobalt production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Cobalt production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Cobalt production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Cobalt production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Cobalt production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Cobalt production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Cobalt production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal", "Cobalt production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: ESW<br>Countries in region: Spain; Portugal"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(217,72,1,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Cobalt production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Cobalt production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Cobalt production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Cobalt production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Cobalt production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Cobalt production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Cobalt production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Cobalt production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Cobalt production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Cobalt production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Cobalt production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Cobalt production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Cobalt production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Cobalt production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Cobalt production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Cobalt production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Cobalt production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Cobalt production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Cobalt production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: IRN<br>Countries in region: Iran, Islamic Republic of"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(217,72,1,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Cobalt production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: IND<br>Countries in region: India", "Cobalt production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: IND<br>Countries in region: India", "Cobalt production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: IND<br>Countries in region: India", "Cobalt production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: IND<br>Countries in region: India", "Cobalt production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: IND<br>Countries in region: India", "Cobalt production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: IND<br>Countries in region: India", "Cobalt production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: IND<br>Countries in region: India", "Cobalt production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: IND<br>Countries in region: India", "Cobalt production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: IND<br>Countries in region: India", "Cobalt production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: IND<br>Countries in region: India", "Cobalt production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: IND<br>Countries in region: India", "Cobalt production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: IND<br>Countries in region: India", "Cobalt production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: IND<br>Countries in region: India", "Cobalt production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: IND<br>Countries in region: India", "Cobalt production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: IND<br>Countries in region: India", "Cobalt production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: IND<br>Countries in region: India", "Cobalt production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: IND<br>Countries in region: India", "Cobalt production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: IND<br>Countries in region: India", "Cobalt production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: IND<br>Countries in region: India"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(220,0,5,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [119.99999999999999, 119.99999999999999, 120.00000000000001, 119.99999999999999, 120, 119.99999999999999, 120, 119.99999999999999, 120.00000000000001, 120, 120, 120, 760, 690, 640, 480, 500, 499.99999999999994, 499.99999999999994],
+      "text": ["Cobalt production: 120 metric tons<br>Period: 2003<br>REMIND_39 region code: USA<br>Countries in region: United States", "Cobalt production: 120 metric tons<br>Period: 2004<br>REMIND_39 region code: USA<br>Countries in region: United States", "Cobalt production: 120 metric tons<br>Period: 2005<br>REMIND_39 region code: USA<br>Countries in region: United States", "Cobalt production: 120 metric tons<br>Period: 2006<br>REMIND_39 region code: USA<br>Countries in region: United States", "Cobalt production: 120 metric tons<br>Period: 2007<br>REMIND_39 region code: USA<br>Countries in region: United States", "Cobalt production: 120 metric tons<br>Period: 2008<br>REMIND_39 region code: USA<br>Countries in region: United States", "Cobalt production: 120 metric tons<br>Period: 2009<br>REMIND_39 region code: USA<br>Countries in region: United States", "Cobalt production: 120 metric tons<br>Period: 2010<br>REMIND_39 region code: USA<br>Countries in region: United States", "Cobalt production: 120 metric tons<br>Period: 2011<br>REMIND_39 region code: USA<br>Countries in region: United States", "Cobalt production: 120 metric tons<br>Period: 2012<br>REMIND_39 region code: USA<br>Countries in region: United States", "Cobalt production: 120 metric tons<br>Period: 2013<br>REMIND_39 region code: USA<br>Countries in region: United States", "Cobalt production: 120 metric tons<br>Period: 2014<br>REMIND_39 region code: USA<br>Countries in region: United States", "Cobalt production: 760 metric tons<br>Period: 2015<br>REMIND_39 region code: USA<br>Countries in region: United States", "Cobalt production: 690 metric tons<br>Period: 2016<br>REMIND_39 region code: USA<br>Countries in region: United States", "Cobalt production: 640 metric tons<br>Period: 2017<br>REMIND_39 region code: USA<br>Countries in region: United States", "Cobalt production: 480 metric tons<br>Period: 2018<br>REMIND_39 region code: USA<br>Countries in region: United States", "Cobalt production: 500 metric tons<br>Period: 2019<br>REMIND_39 region code: USA<br>Countries in region: United States", "Cobalt production: 500 metric tons<br>Period: 2020<br>REMIND_39 region code: USA<br>Countries in region: United States", "Cobalt production: 500 metric tons<br>Period: 2021<br>REMIND_39 region code: USA<br>Countries in region: United States"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(220,0,5,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Cobalt production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Cobalt production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Cobalt production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Cobalt production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Cobalt production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Cobalt production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Cobalt production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Cobalt production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Cobalt production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Cobalt production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Cobalt production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Cobalt production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Cobalt production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Cobalt production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Cobalt production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Cobalt production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Cobalt production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Cobalt production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: POL<br>Countries in region: Poland", "Cobalt production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: POL<br>Countries in region: Poland"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(241,105,19,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1519.8033062683799, 1978.7536011626953, 2353.7742370533224, 2569.1225076339883, 2406.0451752448753, 3026.973249326697, 3688.7070308603684, 5528.2915143154314, 5548.238159978253, 4740.7087572693727, 5251.4948548490829, 5864.3957973669894, 6834.0883966610445, 6490.4437731347198, 7689.0028276737739, 10014.814487971586, 9682.5733698763834, 9743.6031700133808, 9811.2456663212197],
+      "text": ["Cobalt production: 1519.8 metric tons<br>Period: 2003<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Madagascar; Angola; Cameroon; Burkina Faso; Zimbabwe; Malawi; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Lesotho; Namibia; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Reunion; Djibouti; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Cobalt production: 1978.75 metric tons<br>Period: 2004<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Madagascar; Angola; Cameroon; Burkina Faso; Malawi; Zimbabwe; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Lesotho; Namibia; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Cobalt production: 2353.77 metric tons<br>Period: 2005<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Angola; Madagascar; Cameroon; Burkina Faso; Malawi; Zimbabwe; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Lesotho; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Cobalt production: 2569.12 metric tons<br>Period: 2006<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Angola; Madagascar; Cameroon; Burkina Faso; Malawi; Zimbabwe; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Lesotho; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Cobalt production: 2406.05 metric tons<br>Period: 2007<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Angola; Madagascar; Cameroon; Burkina Faso; Malawi; Zimbabwe; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Lesotho; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Cobalt production: 3026.97 metric tons<br>Period: 2008<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Angola; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Lesotho; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Cobalt production: 3688.71 metric tons<br>Period: 2009<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Botswana; Lesotho; Gambia; Gabon; Guinea-Bissau; Mauritius; Equatorial Guinea; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Cobalt production: 5528.29 metric tons<br>Period: 2010<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Botswana; Lesotho; Gambia; Gabon; Guinea-Bissau; Mauritius; Equatorial Guinea; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Cobalt production: 5548.24 metric tons<br>Period: 2011<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; South Sudan; Benin; Burundi; Togo; Sierra Leone; Congo; Central African Republic; Liberia; Eritrea; Namibia; Botswana; Lesotho; Gambia; Gabon; Guinea-Bissau; Mauritius; Equatorial Guinea; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Cobalt production: 4740.71 metric tons<br>Period: 2012<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; South Sudan; Benin; Burundi; Togo; Sierra Leone; Congo; Central African Republic; Liberia; Eritrea; Namibia; Botswana; Gambia; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Cobalt production: 5251.49 metric tons<br>Period: 2013<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; South Sudan; Rwanda; Benin; Burundi; Togo; Sierra Leone; Congo; Central African Republic; Liberia; Eritrea; Namibia; Botswana; Gambia; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Cobalt production: 5864.4 metric tons<br>Period: 2014<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; South Sudan; Benin; Burundi; Togo; Sierra Leone; Congo; Central African Republic; Liberia; Eritrea; Namibia; Botswana; Gambia; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Cobalt production: 6834.09 metric tons<br>Period: 2015<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Zimbabwe; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Cobalt production: 6490.44 metric tons<br>Period: 2016<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Zimbabwe; Somalia; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Cobalt production: 7689 metric tons<br>Period: 2017<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Somalia; Zimbabwe; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Cobalt production: 10014.81 metric tons<br>Period: 2018<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Somalia; Zimbabwe; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Gabon; Lesotho; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Cobalt production: 9682.57 metric tons<br>Period: 2019<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Somalia; Zimbabwe; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Gabon; Lesotho; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Cobalt production: 9743.6 metric tons<br>Period: 2020<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Somalia; Zimbabwe; Guinea; Benin; Rwanda; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Gabon; Lesotho; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Cobalt production: 9811.25 metric tons<br>Period: 2021<br>REMIND_39 region code: AFC<br>Countries in region: Nigeria; Congo, the Democratic Republic of the; Ethiopia; Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Somalia; Senegal; Zimbabwe; Guinea; Benin; Rwanda; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Gabon; Lesotho; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(250,159,181,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [479.99999999999994, 610, 620.00000000000011, 600, 600, 590, 610, 1800, 1599.9999999999998, 2500, 3000, 2999.9999999999995, 3000.0000000000005, 2300.0000000000005, 2300, 2300, 2100, 2100, 2100],
+      "text": ["Cobalt production: 480 metric tons<br>Period: 2003<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Cobalt production: 610 metric tons<br>Period: 2004<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Cobalt production: 620 metric tons<br>Period: 2005<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Cobalt production: 600 metric tons<br>Period: 2006<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Cobalt production: 600 metric tons<br>Period: 2007<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Cobalt production: 590 metric tons<br>Period: 2008<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Cobalt production: 610 metric tons<br>Period: 2009<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Cobalt production: 1800 metric tons<br>Period: 2010<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Cobalt production: 1600 metric tons<br>Period: 2011<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Cobalt production: 2500 metric tons<br>Period: 2012<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Cobalt production: 3000 metric tons<br>Period: 2013<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Cobalt production: 3000 metric tons<br>Period: 2014<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Cobalt production: 3000 metric tons<br>Period: 2015<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Cobalt production: 2300 metric tons<br>Period: 2016<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Cobalt production: 2300 metric tons<br>Period: 2017<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Cobalt production: 2300 metric tons<br>Period: 2018<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Cobalt production: 2100 metric tons<br>Period: 2019<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Cobalt production: 2100 metric tons<br>Period: 2020<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa", "Cobalt production: 2100 metric tons<br>Period: 2021<br>REMIND_39 region code: ZAF<br>Countries in region: South Africa"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(252,197,192,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Cobalt production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Cobalt production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Cobalt production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Cobalt production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Cobalt production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Cobalt production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Cobalt production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Cobalt production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Cobalt production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Cobalt production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Cobalt production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Cobalt production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Cobalt production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Cobalt production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Cobalt production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Cobalt production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Cobalt production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Cobalt production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: DEU<br>Countries in region: Germany", "Cobalt production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: DEU<br>Countries in region: Germany"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(253,141,60,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Cobalt production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Cobalt production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Cobalt production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Cobalt production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Cobalt production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Cobalt production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Cobalt production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Cobalt production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Cobalt production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Cobalt production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Cobalt production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Cobalt production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Cobalt production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Cobalt production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Cobalt production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Cobalt production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Cobalt production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Cobalt production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Cobalt production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(253,141,60,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Cobalt production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Cobalt production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Cobalt production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Cobalt production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Cobalt production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Cobalt production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Cobalt production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Cobalt production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Cobalt production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Cobalt production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Cobalt production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Cobalt production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Cobalt production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Cobalt production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Cobalt production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Cobalt production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Cobalt production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Cobalt production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: IRL<br>Countries in region: Ireland", "Cobalt production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: IRL<br>Countries in region: Ireland"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(253,141,60,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Cobalt production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Cobalt production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Cobalt production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Cobalt production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Cobalt production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Cobalt production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Cobalt production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Cobalt production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Cobalt production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Cobalt production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Cobalt production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Cobalt production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Cobalt production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Cobalt production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Cobalt production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Cobalt production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Cobalt production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Cobalt production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia", "Cobalt production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: SAU<br>Countries in region: Saudi Arabia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(253,141,60,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [26.471541579819799, 26.461055173452987, 26.459297357618954, 26.44233620140254, 30.36410770907197, 27.675444249382132, 7.1033333820523934, 36.766596838775712, 131.15664536541664, 166.41930765529818, 196.24053303229732, 200.88976377839913, 114.29171893397351, 178.18484506449485, 256.61234457748355, 351.3013611886102, 369.10885619594973, 367.94117750431809, 367.02163497544581],
+      "text": ["Cobalt production: 26.47 metric tons<br>Period: 2003<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Cobalt production: 26.46 metric tons<br>Period: 2004<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Cobalt production: 26.46 metric tons<br>Period: 2005<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Cobalt production: 26.44 metric tons<br>Period: 2006<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Cobalt production: 30.36 metric tons<br>Period: 2007<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Cobalt production: 27.68 metric tons<br>Period: 2008<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Cobalt production: 7.1 metric tons<br>Period: 2009<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Cobalt production: 36.77 metric tons<br>Period: 2010<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Cobalt production: 131.16 metric tons<br>Period: 2011<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Cobalt production: 166.42 metric tons<br>Period: 2012<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Cobalt production: 196.24 metric tons<br>Period: 2013<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Cobalt production: 200.89 metric tons<br>Period: 2014<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Cobalt production: 114.29 metric tons<br>Period: 2015<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Cobalt production: 178.18 metric tons<br>Period: 2016<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Cobalt production: 256.61 metric tons<br>Period: 2017<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Cobalt production: 351.3 metric tons<br>Period: 2018<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Cobalt production: 369.11 metric tons<br>Period: 2019<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Cobalt production: 367.94 metric tons<br>Period: 2020<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands", "Cobalt production: 367.02 metric tons<br>Period: 2021<br>REMIND_39 region code: ENC<br>Countries in region: Sweden; Denmark; Greenland; Faroe Islands; Finland; Aland Islands"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,178,76,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Cobalt production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Cobalt production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Cobalt production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Cobalt production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Cobalt production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Cobalt production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Cobalt production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Cobalt production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Cobalt production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Cobalt production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Cobalt production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Cobalt production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Cobalt production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Cobalt production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Cobalt production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Cobalt production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Cobalt production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Cobalt production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Cobalt production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,178,76,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Cobalt production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Cobalt production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Cobalt production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Cobalt production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Cobalt production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Cobalt production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Cobalt production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Cobalt production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Cobalt production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Cobalt production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Cobalt production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Cobalt production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Cobalt production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Cobalt production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Cobalt production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Cobalt production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Cobalt production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Cobalt production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Cobalt production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,178,76,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Cobalt production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Cobalt production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Cobalt production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Cobalt production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Cobalt production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Cobalt production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Cobalt production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Cobalt production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Cobalt production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Cobalt production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Cobalt production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Cobalt production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Cobalt production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Cobalt production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Cobalt production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Cobalt production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Cobalt production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Cobalt production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: AUT<br>Countries in region: Austria", "Cobalt production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: AUT<br>Countries in region: Austria"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,196,79,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [684.19195776293418, 1231.5493416118256, 2052.6359497498388, 1798.5275283019002, 1954.9353879621165, 6480.7961123939622, 5865.3916194865451, 6237.1194322601623, 6647.9450862595868, 6843.5796471773938, 2542.0063389387201, 2737.5922663535889, 2542.0675226608159, 2248.8209342598784, 2444.4881577057763, 1955.6144753030135, 2444.5065309536876, 2444.5843436028699, 2444.68744582728],
+      "text": ["Cobalt production: 684.19 metric tons<br>Period: 2003<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Cobalt production: 1231.55 metric tons<br>Period: 2004<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Cobalt production: 2052.64 metric tons<br>Period: 2005<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Cobalt production: 1798.53 metric tons<br>Period: 2006<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Cobalt production: 1954.94 metric tons<br>Period: 2007<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Cobalt production: 6480.8 metric tons<br>Period: 2008<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Cobalt production: 5865.39 metric tons<br>Period: 2009<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Cobalt production: 6237.12 metric tons<br>Period: 2010<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Cobalt production: 6647.95 metric tons<br>Period: 2011<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Cobalt production: 6843.58 metric tons<br>Period: 2012<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Cobalt production: 2542.01 metric tons<br>Period: 2013<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Cobalt production: 2737.59 metric tons<br>Period: 2014<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Cobalt production: 2542.07 metric tons<br>Period: 2015<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Cobalt production: 2248.82 metric tons<br>Period: 2016<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Cobalt production: 2444.49 metric tons<br>Period: 2017<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Cobalt production: 1955.61 metric tons<br>Period: 2018<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Cobalt production: 2444.51 metric tons<br>Period: 2019<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Cobalt production: 2444.58 metric tons<br>Period: 2020<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Cobalt production: 2444.69 metric tons<br>Period: 2021<br>REMIND_39 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,196,79,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Cobalt production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; Lebanon; United Arab Emirates; Palestine, State of; Oman; Kuwait; Bahrain; Qatar", "Cobalt production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; Lebanon; United Arab Emirates; Palestine, State of; Oman; Kuwait; Bahrain; Qatar", "Cobalt production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; Lebanon; United Arab Emirates; Palestine, State of; Oman; Kuwait; Bahrain; Qatar", "Cobalt production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Cobalt production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Cobalt production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Kuwait; Oman; Qatar; Bahrain", "Cobalt production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Kuwait; Oman; Qatar; Bahrain", "Cobalt production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Kuwait; Oman; Qatar; Bahrain", "Cobalt production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Kuwait; Oman; Qatar; Bahrain", "Cobalt production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Cobalt production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Cobalt production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; Israel; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Cobalt production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Cobalt production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Oman; Palestine, State of; Kuwait; Qatar; Bahrain", "Cobalt production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Oman; Palestine, State of; Kuwait; Qatar; Bahrain", "Cobalt production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Oman; Palestine, State of; Kuwait; Qatar; Bahrain", "Cobalt production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Cobalt production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Cobalt production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,196,79,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Cobalt production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Cobalt production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Cobalt production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Cobalt production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Cobalt production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Cobalt production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Cobalt production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Cobalt production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Cobalt production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Cobalt production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Cobalt production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Cobalt production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Cobalt production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Cobalt production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Cobalt production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Cobalt production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Cobalt production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Cobalt production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta", "Cobalt production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: ITA<br>Countries in region: Italy; Malta"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,217,118,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Cobalt production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Cobalt production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Cobalt production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Cobalt production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Cobalt production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Cobalt production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Cobalt production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Cobalt production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Cobalt production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Cobalt production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Cobalt production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Cobalt production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Cobalt production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Cobalt production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Cobalt production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Cobalt production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Cobalt production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Cobalt production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands", "Cobalt production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: NLD<br>Countries in region: Netherlands"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,217,118,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Cobalt production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Cobalt production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Cobalt production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Cobalt production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Cobalt production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Cobalt production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Cobalt production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Cobalt production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Cobalt production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Cobalt production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Cobalt production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Cobalt production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Cobalt production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Cobalt production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Cobalt production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Cobalt production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Cobalt production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Cobalt production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Cobalt production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: BELUX<br>Countries in region: Belgium; Luxembourg"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(255,237,160,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "text": ["Cobalt production: 0 metric tons<br>Period: 2003<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Cobalt production: 0 metric tons<br>Period: 2004<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Cobalt production: 0 metric tons<br>Period: 2005<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Cobalt production: 0 metric tons<br>Period: 2006<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Cobalt production: 0 metric tons<br>Period: 2007<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Cobalt production: 0 metric tons<br>Period: 2008<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Cobalt production: 0 metric tons<br>Period: 2009<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Cobalt production: 0 metric tons<br>Period: 2010<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Cobalt production: 0 metric tons<br>Period: 2011<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Cobalt production: 0 metric tons<br>Period: 2012<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Cobalt production: 0 metric tons<br>Period: 2013<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Cobalt production: 0 metric tons<br>Period: 2014<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Cobalt production: 0 metric tons<br>Period: 2015<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Cobalt production: 0 metric tons<br>Period: 2016<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Cobalt production: 0 metric tons<br>Period: 2017<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Cobalt production: 0 metric tons<br>Period: 2018<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Cobalt production: 0 metric tons<br>Period: 2019<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Cobalt production: 0 metric tons<br>Period: 2020<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus", "Cobalt production: 0 metric tons<br>Period: 2021<br>REMIND_39 region code: GRC<br>Countries in region: Greece; Cyprus"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(255,237,160,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "visible": false,
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    }
+  ],
+  "layout": {
+    "margin": {
+      "t": 33.534246575342465,
+      "r": 0,
+      "b": 27.031963470319649,
+      "l": 53.333333333333343
+    },
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.611872146118724
+    },
+    "title": {
+      "text": "Cobalt production (REMIND_39)",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 17.534246575342468
+      },
+      "x": 0,
+      "xref": "paper"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [2002.0999999999999, 2021.9000000000001],
+      "tickmode": "array",
+      "ticktext": ["2005", "2010", "2015", "2020"],
+      "tickvals": [2005, 2010, 2015, 2020],
+      "categoryorder": "array",
+      "categoryarray": ["2005", "2010", "2015", "2020"],
+      "nticks": null,
+      "ticks": "",
+      "tickcolor": null,
+      "ticklen": 3.6529680365296811,
+      "tickwidth": 0,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716894984
+      },
+      "tickangle": -90,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(235,235,235,1)",
+      "gridwidth": 0.66417600664176002,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.611872146118724
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [0, 104000],
+      "tickmode": "array",
+      "ticktext": ["0", "25000", "50000", "75000", "100000"],
+      "tickvals": [0, 25000.000000000004, 50000, 75000, 100000],
+      "categoryorder": "array",
+      "categoryarray": ["0", "25000", "50000", "75000", "100000"],
+      "nticks": null,
+      "ticks": "",
+      "tickcolor": null,
+      "ticklen": 3.6529680365296811,
+      "tickwidth": 0,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.68949771689498
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(235,235,235,1)",
+      "gridwidth": 0.66417600664176002,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "metric tons",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.611872146118724
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "layer": "below",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": false,
+    "legend": {
+      "bgcolor": null,
+      "bordercolor": null,
+      "borderwidth": 0,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716894984
+      },
+      "title": {
+        "text": "",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.611872146118724
+        }
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  "config": {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  "source": "A",
+  "attrs": {
+    "b55c41143149": {
+      "x": {},
+      "colour": {},
+      "text": {},
+      "y": {},
+      "type": "scatter"
+    },
+    "b55c24e9702d": {
+      "y": {}
+    }
+  },
+  "cur_data": "b55c41143149",
+  "visdat": {
+    "b55c41143149": ["function (y) ", "x"],
+    "b55c24e9702d": ["function (y) ", "x"]
+  },
+  "highlight": {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.20000000000000001,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  "shinyEvents": ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  "base_url": "https://plot.ly"
+}
+           
+
+                  ); 
+
+           }()); 
+
+  

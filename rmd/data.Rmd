@@ -1,0 +1,176 @@
+---
+output:
+  html_document:
+    theme: paper
+    toc: false
+    self_contained: false
+    lib_dir: ../output/iframe/libs
+params:
+  mappingsVector: ""
+  table: ""
+---
+
+
+<style>
+  .main-container {
+    max-width: 95% !important;
+  }
+  .toc-content {
+    padding-left: 0px !important;
+  }
+  .svg-container {
+    margin: auto !important;
+  }
+  img {
+    max-width: 100% !important;
+    <!-- display: block !important; -->
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .hideChart {
+    display: none;
+  }
+  .plotly {
+    width: 100% !important;
+  }
+  thead tr:first-child th { text-align:left; position: sticky; top: 0px; background: #d9d9d9; z-index: 3; }
+  thead tr:nth-child(2) th { position: sticky; top: 32px; background: #d9d9d9; z-index: 2; }
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 99; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    /*max-width: 700px;*/
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+</style>
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+</div>
+
+```{r chunk_options, echo=FALSE}
+
+# setting global R chunk options (https://yihui.name/knitr/options/#chunk_options)
+  knitr::opts_chunk$set(dev='svglite', # svg, png,...
+                        fig.ext = ".svg",
+                        #fig.asp = .8 # default aspect ratio
+                        fig.width = 12,
+                        fig.height = 6,
+                        dpi=100
+                        )
+```  
+
+
+# Data {.tabset}
+
+## Regional aggregation
+
+```{r country_data_display, echo=FALSE}
+
+  params[["table"]][["countryData"]]
+
+  library(dplyr)
+
+```  
+
+```{r text_display, echo=FALSE, results='asis'}
+
+  cat(params[["table"]][["countryDataText"]])
+
+``` 
+
+## Missing top ranked countries
+
+```{r missing_ranked, echo=FALSE}
+
+  params[["table"]][["missingRanks"]]
+
+```  
+
+
+## Missing geopolitical countries {.tabset}
+
+```{r creating_chunks_for_drivers_display, include=FALSE}
+
+  result = ""
+
+  for (region in params$mappingsVector){
+    result = paste0(result,knitr::knit_expand(text=paste0("\n\n")))
+    result = paste0(result,knitr::knit_expand(text=paste0("### ", region, ifelse(region == "REMIND_62", " {.active}", ""), "\n\n")))
+    result = paste0(result,"```{r ", region, ", echo=FALSE}\n\n")
+    result = paste0(result,"params[['table']][['geoGroup']][['member']][['", region , "']]\n\n")
+    #result = paste0(result,"params[['table']][['geoGroup']][['candidate']][['", region , "']]\n\n")
+    result = paste0(result,"```\n\n")
+  }
+
+```
+
+`r paste(knitr::knit(text = paste(result, collapse = '\n')))`
+
+<script>
+  
+  // Get the modal and the image placeholder
+  var modal = document.getElementById("myModal");
+  var modalImg = document.getElementById("img01");
+  
+  // Get all elements with the class "myImages"
+  var images = document.getElementsByClassName("myImages");
+  
+  // Loop through the images and add an onclick event listener to each one
+  for (let i = 0; i < images.length; i++) {
+    images[i].onclick = function() {
+      modal.style.display = "block";
+      modalImg.src = this.src; // `this` refers to the clicked image
+    };
+  }
+  
+  // Get the close button and the window
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  };
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+</script>
+

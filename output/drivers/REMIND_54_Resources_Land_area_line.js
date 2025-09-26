@@ -1,0 +1,1199 @@
+(function(){ 
+
+        window.PLOTLYENV={'BASE_URL': 'https://plotly.com'}; 
+
+        
+
+        var gd = document.getElementById('REMIND_54_Resources_Land_area_line') 
+
+        var resizeDebounce = null; 
+
+
+        function resizePlot() { 
+
+          var bb = gd.getBoundingClientRect(); 
+
+          Plotly.relayout(gd, { 
+
+            width: bb.width, 
+
+              height: bb.height 
+
+            }); 
+
+          } 
+
+
+          Plotly.plot(gd,  
+
+              {
+  "data": [
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [2736690, 2736690, 2736690, 2736690, 2736689.9999999995, 2736690, 2736690, 2736690, 2736690, 2736690, 2736690, 2736690, 2736690, 2736690, 2736690, 2736690, 2736690, 2736690, 2736690],
+      "text": ["Land area: 2736690 sq  km<br>Period: 2003<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Land area: 2736690 sq  km<br>Period: 2004<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Land area: 2736690 sq  km<br>Period: 2005<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Land area: 2736690 sq  km<br>Period: 2006<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Land area: 2736690 sq  km<br>Period: 2007<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Land area: 2736690 sq  km<br>Period: 2008<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Land area: 2736690 sq  km<br>Period: 2009<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Land area: 2736690 sq  km<br>Period: 2010<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Land area: 2736690 sq  km<br>Period: 2011<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Land area: 2736690 sq  km<br>Period: 2012<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Land area: 2736690 sq  km<br>Period: 2013<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Land area: 2736690 sq  km<br>Period: 2014<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Land area: 2736690 sq  km<br>Period: 2015<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Land area: 2736690 sq  km<br>Period: 2016<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Land area: 2736690 sq  km<br>Period: 2017<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Land area: 2736690 sq  km<br>Period: 2018<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Land area: 2736690 sq  km<br>Period: 2019<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Land area: 2736690 sq  km<br>Period: 2020<br>REMIND_54 region code: ARG<br>Countries in region: Argentina", "Land area: 2736690 sq  km<br>Period: 2021<br>REMIND_54 region code: ARG<br>Countries in region: Argentina"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,68,27,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [41639.549339708537, 41642.099617477434, 41660.728331172068, 41698.221503861874, 41735.226274049761, 41749.149513496683, 41729.066079432239, 41701.451366626512, 41683.726451681257, 41671.039613206907, 41665.975342522826, 41664.483312314107, 41662.230852861125, 41669.773095342323, 41702.218778649025, 41769.764483965497, 41804.555105931242, 41825.550951282188, 41846.609831149828],
+      "text": ["Land area: 41639.55 sq  km<br>Period: 2003<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Land area: 41642.1 sq  km<br>Period: 2004<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Land area: 41660.73 sq  km<br>Period: 2005<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Land area: 41698.22 sq  km<br>Period: 2006<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Land area: 41735.23 sq  km<br>Period: 2007<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Land area: 41749.15 sq  km<br>Period: 2008<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Land area: 41729.07 sq  km<br>Period: 2009<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Land area: 41701.45 sq  km<br>Period: 2010<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Land area: 41683.73 sq  km<br>Period: 2011<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Land area: 41671.04 sq  km<br>Period: 2012<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Land area: 41665.98 sq  km<br>Period: 2013<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Land area: 41664.48 sq  km<br>Period: 2014<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Land area: 41662.23 sq  km<br>Period: 2015<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Land area: 41669.77 sq  km<br>Period: 2016<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Land area: 41702.22 sq  km<br>Period: 2017<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Land area: 41769.76 sq  km<br>Period: 2018<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Land area: 41804.56 sq  km<br>Period: 2019<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Land area: 41825.55 sq  km<br>Period: 2020<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland", "Land area: 41846.61 sq  km<br>Period: 2021<br>REMIND_54 region code: NEN_other<br>Countries in region: Switzerland; Liechtenstein; Iceland"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,109,44,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [554702.45118746965, 553092.05898448336, 551693.89540535246, 549948.2131528348, 548045.55284169933, 545986.16384957777, 543891.25391675148, 542028.8128646129, 540427.07703229261, 538805.00660511875, 537284.94017412642, 535966.25650667981, 534907.73258536251, 533977.49745952862, 532589.67236808187, 530848.49398007547, 528452.99405918538, 526049.91757042473, 524266.50884901092],
+      "text": ["Land area: 554702.45 sq  km<br>Period: 2003<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Martinique; Guadeloupe; Bahamas; Barbados; Belize; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Saint Kitts and Nevis; Cayman Islands; Saint Martin (French part); Sint Maarten (Dutch part); Virgin Islands, British; Turks and Caicos Islands; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Land area: 553092.06 sq  km<br>Period: 2004<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Martinique; Guadeloupe; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Saint Kitts and Nevis; Cayman Islands; Saint Martin (French part); Sint Maarten (Dutch part); Virgin Islands, British; Turks and Caicos Islands; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Land area: 551693.9 sq  km<br>Period: 2005<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Land area: 549948.21 sq  km<br>Period: 2006<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Land area: 548045.55 sq  km<br>Period: 2007<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Land area: 545986.16 sq  km<br>Period: 2008<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Saint Vincent and the Grenadines; Grenada; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Land area: 543891.25 sq  km<br>Period: 2009<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Land area: 542028.81 sq  km<br>Period: 2010<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Puerto Rico; Panama; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Land area: 540427.08 sq  km<br>Period: 2011<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Nicaragua; Paraguay; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Land area: 538805.01 sq  km<br>Period: 2012<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Dominican Republic; Haiti; Honduras; El Salvador; Nicaragua; Paraguay; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Land area: 537284.94 sq  km<br>Period: 2013<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Haiti; Dominican Republic; Honduras; El Salvador; Nicaragua; Paraguay; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Saint Vincent and the Grenadines; Virgin Islands, U.S.; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Land area: 535966.26 sq  km<br>Period: 2014<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Haiti; Dominican Republic; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Martinique; Bahamas; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Aruba; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Saint Martin (French part); Sint Maarten (Dutch part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Land area: 534907.73 sq  km<br>Period: 2015<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Haiti; Dominican Republic; Honduras; El Salvador; Paraguay; Nicaragua; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Martinique; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Sint Maarten (Dutch part); Saint Martin (French part); Turks and Caicos Islands; Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Land area: 533977.5 sq  km<br>Period: 2016<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Cuba; Bolivia, Plurinational State of; Haiti; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Martinique; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Bermuda; Cayman Islands; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Saint Martin (French part); Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Land area: 532589.67 sq  km<br>Period: 2017<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Cuba; Haiti; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Martinique; Belize; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Cayman Islands; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Saint Martin (French part); Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Land area: 530848.49 sq  km<br>Period: 2018<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Cuba; Haiti; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Belize; Martinique; Barbados; French Guiana; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Cayman Islands; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Saint Martin (French part); Virgin Islands, British; Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Land area: 528452.99 sq  km<br>Period: 2019<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Cuba; Haiti; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Guadeloupe; Bahamas; Belize; Martinique; French Guiana; Barbados; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Dominica; Cayman Islands; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Virgin Islands, British; Saint Martin (French part); Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Land area: 526049.92 sq  km<br>Period: 2020<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Haiti; Cuba; Dominican Republic; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Bahamas; Guadeloupe; Belize; Martinique; French Guiana; Barbados; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Cayman Islands; Dominica; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Virgin Islands, British; Saint Martin (French part); Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island", "Land area: 524266.51 sq  km<br>Period: 2021<br>REMIND_54 region code: OLA<br>Countries in region: Venezuela, Bolivarian Republic of; Uruguay; Peru; Ecuador; Guatemala; Bolivia, Plurinational State of; Haiti; Dominican Republic; Cuba; Honduras; Paraguay; Nicaragua; El Salvador; Costa Rica; Panama; Puerto Rico; Jamaica; Trinidad and Tobago; Guyana; Suriname; Bahamas; Guadeloupe; Belize; Martinique; French Guiana; Barbados; Saint Lucia; Curacao; Grenada; Aruba; Virgin Islands, U.S.; Saint Vincent and the Grenadines; Antigua and Barbuda; Cayman Islands; Dominica; Bermuda; Saint Kitts and Nevis; Turks and Caicos Islands; Sint Maarten (Dutch part); Virgin Islands, British; Saint Martin (French part); Bonaire, Sint Eustatius and Saba; Anguilla; Saint Barthelemy; Montserrat; Falkland Islands (Malvinas); Antarctica; South Georgia and the South Sandwich Islands; Bouvet Island"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,109,44,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [995450, 995449.99999999988, 995450, 995450, 995450, 995450, 995450, 995450, 995450, 995449.99999999988, 995450, 995450.00000000012, 995449.99999999988, 995450, 995450, 995450, 995450, 995450.00000000012, 995450],
+      "text": ["Land area: 995450 sq  km<br>Period: 2003<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Land area: 995450 sq  km<br>Period: 2004<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Land area: 995450 sq  km<br>Period: 2005<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Land area: 995450 sq  km<br>Period: 2006<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Land area: 995450 sq  km<br>Period: 2007<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Land area: 995450 sq  km<br>Period: 2008<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Land area: 995450 sq  km<br>Period: 2009<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Land area: 995450 sq  km<br>Period: 2010<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Land area: 995450 sq  km<br>Period: 2011<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Land area: 995450 sq  km<br>Period: 2012<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Land area: 995450 sq  km<br>Period: 2013<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Land area: 995450 sq  km<br>Period: 2014<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Land area: 995450 sq  km<br>Period: 2015<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Land area: 995450 sq  km<br>Period: 2016<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Land area: 995450 sq  km<br>Period: 2017<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Land area: 995450 sq  km<br>Period: 2018<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Land area: 995450 sq  km<br>Period: 2019<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Land area: 995450 sq  km<br>Period: 2020<br>REMIND_54 region code: EGY<br>Countries in region: Egypt", "Land area: 995450 sq  km<br>Period: 2021<br>REMIND_54 region code: EGY<br>Countries in region: Egypt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(8,48,107,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [8965590, 8965590, 8965590, 8965590, 8965590, 8965590, 8965590, 8965590.0000000019, 8965590, 8965590, 8965590, 8965590, 8965590, 8965590, 8965590, 8965590, 8965590, 8965590, 8788699.9999999981],
+      "text": ["Land area: 8965590 sq  km<br>Period: 2003<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Land area: 8965590 sq  km<br>Period: 2004<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Land area: 8965590 sq  km<br>Period: 2005<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Land area: 8965590 sq  km<br>Period: 2006<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Land area: 8965590 sq  km<br>Period: 2007<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Land area: 8965590 sq  km<br>Period: 2008<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Land area: 8965590 sq  km<br>Period: 2009<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Land area: 8965590 sq  km<br>Period: 2010<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Land area: 8965590 sq  km<br>Period: 2011<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Land area: 8965590 sq  km<br>Period: 2012<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Land area: 8965590 sq  km<br>Period: 2013<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Land area: 8965590 sq  km<br>Period: 2014<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Land area: 8965590 sq  km<br>Period: 2015<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Land area: 8965590 sq  km<br>Period: 2016<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Land area: 8965590 sq  km<br>Period: 2017<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Land area: 8965590 sq  km<br>Period: 2018<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Land area: 8965590 sq  km<br>Period: 2019<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Land area: 8965590 sq  km<br>Period: 2020<br>REMIND_54 region code: CAN<br>Countries in region: Canada", "Land area: 8788700 sq  km<br>Period: 2021<br>REMIND_54 region code: CAN<br>Countries in region: Canada"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(8,81,156,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [6423503.0048518777, 6419150.4735070746, 6420087.6374897631, 6421463.7796277395, 6430785.9165268131, 6442766.1953203119, 6453691.0430032061, 6458244.522487551, 6464644.6626257878, 6476788.1652994389, 6486381.498649721, 6484690.2210225603, 6478695.7852926692, 6479928.3523008581, 6475450.7771309242, 6472453.7354745269, 6471302.9775924888, 6461372.9789159223, 6458571.7978845071],
+      "text": ["Land area: 6423503 sq  km<br>Period: 2003<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Land area: 6419150.47 sq  km<br>Period: 2004<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Land area: 6420087.64 sq  km<br>Period: 2005<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Land area: 6421463.78 sq  km<br>Period: 2006<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Land area: 6430785.92 sq  km<br>Period: 2007<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Land area: 6442766.2 sq  km<br>Period: 2008<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Land area: 6453691.04 sq  km<br>Period: 2009<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Land area: 6458244.52 sq  km<br>Period: 2010<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Land area: 6464644.66 sq  km<br>Period: 2011<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Land area: 6476788.17 sq  km<br>Period: 2012<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Land area: 6486381.5 sq  km<br>Period: 2013<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Land area: 6484690.22 sq  km<br>Period: 2014<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Land area: 6478695.79 sq  km<br>Period: 2015<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Land area: 6479928.35 sq  km<br>Period: 2016<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Land area: 6475450.78 sq  km<br>Period: 2017<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Land area: 6472453.74 sq  km<br>Period: 2018<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Land area: 6471302.98 sq  km<br>Period: 2019<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Land area: 6461372.98 sq  km<br>Period: 2020<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand", "Land area: 6458571.8 sq  km<br>Period: 2021<br>REMIND_54 region code: ANZ<br>Countries in region: Australia; Christmas Island; Cocos (Keeling) Islands; Heard Island and McDonald Islands; New Zealand"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(33,113,181,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1943950, 1943950, 1943950, 1943949.9999999998, 1943950.0000000002, 1943949.9999999998, 1943949.9999999998, 1943950.0000000002, 1943950, 1943950, 1943950, 1943949.9999999998, 1943950, 1943950.0000000002, 1943949.9999999998, 1943950, 1943950, 1943950, 1943949.9999999998],
+      "text": ["Land area: 1943950 sq  km<br>Period: 2003<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Land area: 1943950 sq  km<br>Period: 2004<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Land area: 1943950 sq  km<br>Period: 2005<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Land area: 1943950 sq  km<br>Period: 2006<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Land area: 1943950 sq  km<br>Period: 2007<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Land area: 1943950 sq  km<br>Period: 2008<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Land area: 1943950 sq  km<br>Period: 2009<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Land area: 1943950 sq  km<br>Period: 2010<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Land area: 1943950 sq  km<br>Period: 2011<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Land area: 1943950 sq  km<br>Period: 2012<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Land area: 1943950 sq  km<br>Period: 2013<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Land area: 1943950 sq  km<br>Period: 2014<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Land area: 1943950 sq  km<br>Period: 2015<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Land area: 1943950 sq  km<br>Period: 2016<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Land area: 1943950 sq  km<br>Period: 2017<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Land area: 1943950 sq  km<br>Period: 2018<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Land area: 1943950 sq  km<br>Period: 2019<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Land area: 1943950 sq  km<br>Period: 2020<br>REMIND_54 region code: MEX<br>Countries in region: Mexico", "Land area: 1943950 sq  km<br>Period: 2021<br>REMIND_54 region code: MEX<br>Countries in region: Mexico"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(35,139,69,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [365051.8532072893, 365051.87289476424, 365052.07191706623, 365051.42019946646, 365051.23341152701, 365051.47822810902, 365051.77493291005, 365052.06476461084, 365054.53588019829, 365057.00557440287, 364938.31191601936, 364925.38843961066, 365010.15367320587, 364966.76040792227, 364945.21204131341, 364931.38786173187, 364918.58167063631, 364110.99686405872, 364096.93114493409],
+      "text": ["Land area: 365051.85 sq  km<br>Period: 2003<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Land area: 365051.87 sq  km<br>Period: 2004<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Land area: 365052.07 sq  km<br>Period: 2005<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Land area: 365051.42 sq  km<br>Period: 2006<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Land area: 365051.23 sq  km<br>Period: 2007<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Land area: 365051.48 sq  km<br>Period: 2008<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Land area: 365051.77 sq  km<br>Period: 2009<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Land area: 365052.06 sq  km<br>Period: 2010<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Land area: 365054.54 sq  km<br>Period: 2011<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Land area: 365057.01 sq  km<br>Period: 2012<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Land area: 364938.31 sq  km<br>Period: 2013<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Land area: 364925.39 sq  km<br>Period: 2014<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Land area: 365010.15 sq  km<br>Period: 2015<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Land area: 364966.76 sq  km<br>Period: 2016<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Land area: 364945.21 sq  km<br>Period: 2017<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Land area: 364931.39 sq  km<br>Period: 2018<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Land area: 364918.58 sq  km<br>Period: 2019<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Land area: 364111 sq  km<br>Period: 2020<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen", "Land area: 364096.93 sq  km<br>Period: 2021<br>REMIND_54 region code: NOR<br>Countries in region: Norway; Svalbard and Jan Mayen"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(35,139,69,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [8358139.9999999991, 8358140.0000000009, 8358139.9999999991, 8358140, 8358139.9999999991, 8358140, 8358140.0000000009, 8358139.9999999991, 8358140, 8358140, 8358140, 8358140, 8358140, 8358140, 8358140, 8358140.0000000009, 8358139.9999999991, 8358140.0000000009, 8358139.9999999991],
+      "text": ["Land area: 8358140 sq  km<br>Period: 2003<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Land area: 8358140 sq  km<br>Period: 2004<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Land area: 8358140 sq  km<br>Period: 2005<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Land area: 8358140 sq  km<br>Period: 2006<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Land area: 8358140 sq  km<br>Period: 2007<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Land area: 8358140 sq  km<br>Period: 2008<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Land area: 8358140 sq  km<br>Period: 2009<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Land area: 8358140 sq  km<br>Period: 2010<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Land area: 8358140 sq  km<br>Period: 2011<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Land area: 8358140 sq  km<br>Period: 2012<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Land area: 8358140 sq  km<br>Period: 2013<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Land area: 8358140 sq  km<br>Period: 2014<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Land area: 8358140 sq  km<br>Period: 2015<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Land area: 8358140 sq  km<br>Period: 2016<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Land area: 8358140 sq  km<br>Period: 2017<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Land area: 8358140 sq  km<br>Period: 2018<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Land area: 8358140 sq  km<br>Period: 2019<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Land area: 8358140 sq  km<br>Period: 2020<br>REMIND_54 region code: BRA<br>Countries in region: Brazil", "Land area: 8358140 sq  km<br>Period: 2021<br>REMIND_54 region code: BRA<br>Countries in region: Brazil"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(65,171,93,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [396609.77857291215, 396244.17289056402, 395865.35002353799, 395657.30934041186, 395750.04433217691, 395836.67546734295, 396134.66313273547, 396471.48459864059, 396899.52530457987, 397271.35724273714, 397577.61405248957, 397625.78060089366, 397797.49117835023, 398011.44088372466, 398163.92296550068, 398323.65245058859, 398463.57593459025, 398080.68474809063, 398195.57449159859],
+      "text": ["Land area: 396609.78 sq  km<br>Period: 2003<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Land area: 396244.17 sq  km<br>Period: 2004<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Land area: 395865.35 sq  km<br>Period: 2005<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Land area: 395657.31 sq  km<br>Period: 2006<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Land area: 395750.04 sq  km<br>Period: 2007<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Land area: 395836.68 sq  km<br>Period: 2008<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Land area: 396134.66 sq  km<br>Period: 2009<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; San Marino; Monaco; Holy See (Vatican City State)", "Land area: 396471.48 sq  km<br>Period: 2010<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Bosnia and Herzegovina; Georgia; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; San Marino; Monaco; Holy See (Vatican City State)", "Land area: 396899.53 sq  km<br>Period: 2011<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Land area: 397271.36 sq  km<br>Period: 2012<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Land area: 397577.61 sq  km<br>Period: 2013<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Land area: 397625.78 sq  km<br>Period: 2014<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Land area: 397797.49 sq  km<br>Period: 2015<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Land area: 398011.44 sq  km<br>Period: 2016<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Land area: 398163.92 sq  km<br>Period: 2017<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Land area: 398323.65 sq  km<br>Period: 2018<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Land area: 398463.58 sq  km<br>Period: 2019<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Land area: 398080.68 sq  km<br>Period: 2020<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)", "Land area: 398195.57 sq  km<br>Period: 2021<br>REMIND_54 region code: NES_EU<br>Countries in region: Ukraine; Albania; Serbia; Georgia; Bosnia and Herzegovina; Moldova, Republic of; Macedonia, the former Yugoslav Republic of; Montenegro; Andorra; Monaco; San Marino; Holy See (Vatican City State)"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(65,171,93,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [96800, 96820, 96850.000000000015, 96880.000000000015, 96920, 96990, 97060, 97199.999999999985, 97190, 97309.999999999985, 97426, 97430, 97445, 97489, 97510, 97520.000000000015, 97600, 97600.000000000015, 97600],
+      "text": ["Land area: 96800 sq  km<br>Period: 2003<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Land area: 96820 sq  km<br>Period: 2004<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Land area: 96850 sq  km<br>Period: 2005<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Land area: 96880 sq  km<br>Period: 2006<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Land area: 96920 sq  km<br>Period: 2007<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Land area: 96990 sq  km<br>Period: 2008<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Land area: 97060 sq  km<br>Period: 2009<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Land area: 97200 sq  km<br>Period: 2010<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Land area: 97190 sq  km<br>Period: 2011<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Land area: 97310 sq  km<br>Period: 2012<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Land area: 97426 sq  km<br>Period: 2013<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Land area: 97430 sq  km<br>Period: 2014<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Land area: 97445 sq  km<br>Period: 2015<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Land area: 97489 sq  km<br>Period: 2016<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Land area: 97510 sq  km<br>Period: 2017<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Land area: 97520 sq  km<br>Period: 2018<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Land area: 97600 sq  km<br>Period: 2019<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Land area: 97600 sq  km<br>Period: 2020<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of", "Land area: 97600 sq  km<br>Period: 2021<br>REMIND_54 region code: KOR<br>Countries in region: Korea, Republic of"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(77,0,75,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [298170, 298170, 298170, 298170, 298170, 298170, 298170, 298170, 298170, 298170.00000000006, 298170, 298170, 298170, 298170, 298170, 298170, 298170, 298170, 298170],
+      "text": ["Land area: 298170 sq  km<br>Period: 2003<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Land area: 298170 sq  km<br>Period: 2004<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Land area: 298170 sq  km<br>Period: 2005<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Land area: 298170 sq  km<br>Period: 2006<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Land area: 298170 sq  km<br>Period: 2007<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Land area: 298170 sq  km<br>Period: 2008<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Land area: 298170 sq  km<br>Period: 2009<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Land area: 298170 sq  km<br>Period: 2010<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Land area: 298170 sq  km<br>Period: 2011<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Land area: 298170 sq  km<br>Period: 2012<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Land area: 298170 sq  km<br>Period: 2013<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Land area: 298170 sq  km<br>Period: 2014<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Land area: 298170 sq  km<br>Period: 2015<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Land area: 298170 sq  km<br>Period: 2016<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Land area: 298170 sq  km<br>Period: 2017<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Land area: 298170 sq  km<br>Period: 2018<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Land area: 298170 sq  km<br>Period: 2019<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Land area: 298170 sq  km<br>Period: 2020<br>REMIND_54 region code: PHL<br>Countries in region: Philippines", "Land area: 298170 sq  km<br>Period: 2021<br>REMIND_54 region code: PHL<br>Countries in region: Philippines"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(77,0,75,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [637190.79957790719, 636986.67437855608, 637121.19643718202, 637677.45902261161, 638440.09579491615, 638934.96659538534, 639719.44511873915, 641212.58971677872, 642755.75158435991, 644204.23786567873, 645602.12605989166, 646968.59174682805, 649610.41466379119, 651194.39754540881, 653030.81471055956, 654725.82903290435, 656220.08386280492, 657800.44950663764, 659351.54984743882],
+      "text": ["Land area: 637190.8 sq  km<br>Period: 2003<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Land area: 636986.67 sq  km<br>Period: 2004<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Land area: 637121.2 sq  km<br>Period: 2005<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Land area: 637677.46 sq  km<br>Period: 2006<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Land area: 638440.1 sq  km<br>Period: 2007<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Kyrgyzstan; Turkmenistan; Armenia; Mongolia", "Land area: 638934.97 sq  km<br>Period: 2008<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Land area: 639719.45 sq  km<br>Period: 2009<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Land area: 641212.59 sq  km<br>Period: 2010<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Land area: 642755.75 sq  km<br>Period: 2011<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Land area: 644204.24 sq  km<br>Period: 2012<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Land area: 645602.13 sq  km<br>Period: 2013<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Belarus; Azerbaijan; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Land area: 646968.59 sq  km<br>Period: 2014<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Armenia; Mongolia", "Land area: 649610.41 sq  km<br>Period: 2015<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Land area: 651194.4 sq  km<br>Period: 2016<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Land area: 653030.81 sq  km<br>Period: 2017<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Land area: 654725.83 sq  km<br>Period: 2018<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Belarus; Tajikistan; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Land area: 656220.08 sq  km<br>Period: 2019<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Tajikistan; Belarus; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Land area: 657800.45 sq  km<br>Period: 2020<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Tajikistan; Belarus; Turkmenistan; Kyrgyzstan; Mongolia; Armenia", "Land area: 659351.55 sq  km<br>Period: 2021<br>REMIND_54 region code: CAS<br>Countries in region: Kazakhstan; Uzbekistan; Korea, Democratic People's Republic of; Azerbaijan; Tajikistan; Belarus; Turkmenistan; Kyrgyzstan; Mongolia; Armenia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(105,105,105,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1109500, 1109500, 1109500, 1109500, 1109500, 1109500, 1109500, 1109500, 1109500, 1109500, 1109500, 1109500, 1109500, 1109499.9999999998, 1109500, 1109500, 1109500, 1109500, 1109500],
+      "text": ["Land area: 1109500 sq  km<br>Period: 2003<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Land area: 1109500 sq  km<br>Period: 2004<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Land area: 1109500 sq  km<br>Period: 2005<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Land area: 1109500 sq  km<br>Period: 2006<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Land area: 1109500 sq  km<br>Period: 2007<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Land area: 1109500 sq  km<br>Period: 2008<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Land area: 1109500 sq  km<br>Period: 2009<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Land area: 1109500 sq  km<br>Period: 2010<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Land area: 1109500 sq  km<br>Period: 2011<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Land area: 1109500 sq  km<br>Period: 2012<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Land area: 1109500 sq  km<br>Period: 2013<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Land area: 1109500 sq  km<br>Period: 2014<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Land area: 1109500 sq  km<br>Period: 2015<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Land area: 1109500 sq  km<br>Period: 2016<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Land area: 1109500 sq  km<br>Period: 2017<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Land area: 1109500 sq  km<br>Period: 2018<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Land area: 1109500 sq  km<br>Period: 2019<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Land area: 1109500 sq  km<br>Period: 2020<br>REMIND_54 region code: COL<br>Countries in region: Colombia", "Land area: 1109500 sq  km<br>Period: 2021<br>REMIND_54 region code: COL<br>Countries in region: Colombia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(116,196,118,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [458386.04734564089, 459089.31091233221, 459710.56313034747, 460353.20023845375, 461020.7594902803, 461634.78765665501, 462035.13126016653, 462664.99784615322, 463468.36879003345, 464269.95449962397, 465206.52317496028, 465788.87286979205, 466341.57632111601, 466952.28354483994, 467369.48598426947, 467936.02637139522, 468610.10146631533, 469317.69869047374, 470007.8476153654],
+      "text": ["Land area: 458386.05 sq  km<br>Period: 2003<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Madagascar; Angola; Cameroon; Burkina Faso; Zimbabwe; Malawi; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Lesotho; Namibia; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Reunion; Djibouti; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Land area: 459089.31 sq  km<br>Period: 2004<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Madagascar; Angola; Cameroon; Burkina Faso; Malawi; Zimbabwe; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Lesotho; Namibia; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Land area: 459710.56 sq  km<br>Period: 2005<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Angola; Madagascar; Cameroon; Burkina Faso; Malawi; Zimbabwe; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Lesotho; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Land area: 460353.2 sq  km<br>Period: 2006<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Angola; Madagascar; Cameroon; Burkina Faso; Malawi; Zimbabwe; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Lesotho; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Land area: 461020.76 sq  km<br>Period: 2007<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Cote d Ivoire; Angola; Madagascar; Cameroon; Burkina Faso; Malawi; Zimbabwe; Zambia; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Lesotho; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Land area: 461634.79 sq  km<br>Period: 2008<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Mozambique; Angola; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Lesotho; Botswana; Gambia; Gabon; Guinea-Bissau; Mauritius; Swaziland; Equatorial Guinea; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Land area: 462035.13 sq  km<br>Period: 2009<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Botswana; Lesotho; Gambia; Gabon; Guinea-Bissau; Mauritius; Equatorial Guinea; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Land area: 462665 sq  km<br>Period: 2010<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Central African Republic; Congo; Liberia; Eritrea; Namibia; Botswana; Lesotho; Gambia; Gabon; Guinea-Bissau; Mauritius; Equatorial Guinea; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Land area: 463468.37 sq  km<br>Period: 2011<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; South Sudan; Benin; Burundi; Togo; Sierra Leone; Congo; Central African Republic; Liberia; Eritrea; Namibia; Botswana; Lesotho; Gambia; Gabon; Guinea-Bissau; Mauritius; Equatorial Guinea; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Land area: 464269.95 sq  km<br>Period: 2012<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Cote d Ivoire; Madagascar; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; South Sudan; Benin; Burundi; Togo; Sierra Leone; Congo; Central African Republic; Liberia; Eritrea; Namibia; Botswana; Gambia; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Land area: 465206.52 sq  km<br>Period: 2013<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; South Sudan; Rwanda; Benin; Burundi; Togo; Sierra Leone; Congo; Central African Republic; Liberia; Eritrea; Namibia; Botswana; Gambia; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Land area: 465788.87 sq  km<br>Period: 2014<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Zimbabwe; Senegal; Somalia; Guinea; Rwanda; South Sudan; Benin; Burundi; Togo; Sierra Leone; Congo; Central African Republic; Liberia; Eritrea; Namibia; Botswana; Gambia; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Land area: 466341.58 sq  km<br>Period: 2015<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Zimbabwe; Somalia; Guinea; Rwanda; Benin; South Sudan; Burundi; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Land area: 466952.28 sq  km<br>Period: 2016<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Ghana; Angola; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Zimbabwe; Somalia; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Land area: 467369.49 sq  km<br>Period: 2017<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Somalia; Zimbabwe; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Lesotho; Gabon; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Land area: 467936.03 sq  km<br>Period: 2018<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Somalia; Zimbabwe; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Gabon; Lesotho; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Land area: 468610.1 sq  km<br>Period: 2019<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Somalia; Zimbabwe; Guinea; Rwanda; Benin; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Gabon; Lesotho; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Land area: 469317.7 sq  km<br>Period: 2020<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Senegal; Somalia; Zimbabwe; Guinea; Benin; Rwanda; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Gabon; Lesotho; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha", "Land area: 470007.85 sq  km<br>Period: 2021<br>REMIND_54 region code: AFC_other<br>Countries in region: Tanzania, United Republic of; Kenya; Uganda; Angola; Ghana; Mozambique; Madagascar; Cote d Ivoire; Cameroon; Burkina Faso; Malawi; Zambia; Somalia; Senegal; Zimbabwe; Guinea; Benin; Rwanda; Burundi; South Sudan; Togo; Sierra Leone; Congo; Liberia; Central African Republic; Eritrea; Namibia; Gambia; Botswana; Gabon; Lesotho; Guinea-Bissau; Equatorial Guinea; Mauritius; Swaziland; Djibouti; Reunion; Comoros; Cape Verde; Mayotte; Sao Tome and Principe; Seychelles; Saint Helena, Ascension and Tristan da Cunha"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(122,1,119,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [16380980, 16381230, 16381390, 16377739.999999998, 16377740, 16376870, 16376870, 16376869.999999998, 16376870.000000002, 16376870, 16376870.000000002, 16376870, 16376870, 16376869.999999998, 16376870.000000002, 16376870, 16376870, 16376870.000000002, 16376869.999999998],
+      "text": ["Land area: 16380980 sq  km<br>Period: 2003<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Land area: 16381230 sq  km<br>Period: 2004<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Land area: 16381390 sq  km<br>Period: 2005<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Land area: 16377740 sq  km<br>Period: 2006<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Land area: 16377740 sq  km<br>Period: 2007<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Land area: 16376870 sq  km<br>Period: 2008<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Land area: 16376870 sq  km<br>Period: 2009<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Land area: 16376870 sq  km<br>Period: 2010<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Land area: 16376870 sq  km<br>Period: 2011<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Land area: 16376870 sq  km<br>Period: 2012<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Land area: 16376870 sq  km<br>Period: 2013<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Land area: 16376870 sq  km<br>Period: 2014<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Land area: 16376870 sq  km<br>Period: 2015<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Land area: 16376870 sq  km<br>Period: 2016<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Land area: 16376870 sq  km<br>Period: 2017<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Land area: 16376870 sq  km<br>Period: 2018<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Land area: 16376870 sq  km<br>Period: 2019<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Land area: 16376870 sq  km<br>Period: 2020<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation", "Land area: 16376870 sq  km<br>Period: 2021<br>REMIND_54 region code: RUS<br>Countries in region: Russian Federation"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(128,128,128,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [377807.56693804485, 380690.16011848726, 383722.40066138026, 387693.81052452052, 389028.73321070871, 390848.06003796961, 394626.59587186866, 397565.5854736623, 401684.55957804981, 406491.00327763468, 410556.8833210459, 414769.00066088728, 418020.93385706976, 420616.16743634536, 423889.24581978167, 427234.6816213298, 429525.17932219565, 431123.40072565939, 431941.83006973413],
+      "text": ["Land area: 377807.57 sq  km<br>Period: 2003<br>REMIND_54 region code: OAS_other<br>Countries in region: Nepal; Afghanistan; Bhutan", "Land area: 380690.16 sq  km<br>Period: 2004<br>REMIND_54 region code: OAS_other<br>Countries in region: Nepal; Afghanistan; Bhutan", "Land area: 383722.4 sq  km<br>Period: 2005<br>REMIND_54 region code: OAS_other<br>Countries in region: Nepal; Afghanistan; Bhutan", "Land area: 387693.81 sq  km<br>Period: 2006<br>REMIND_54 region code: OAS_other<br>Countries in region: Nepal; Afghanistan; Bhutan", "Land area: 389028.73 sq  km<br>Period: 2007<br>REMIND_54 region code: OAS_other<br>Countries in region: Nepal; Afghanistan; Bhutan", "Land area: 390848.06 sq  km<br>Period: 2008<br>REMIND_54 region code: OAS_other<br>Countries in region: Nepal; Afghanistan; Bhutan", "Land area: 394626.6 sq  km<br>Period: 2009<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Land area: 397565.59 sq  km<br>Period: 2010<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Land area: 401684.56 sq  km<br>Period: 2011<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Land area: 406491 sq  km<br>Period: 2012<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Land area: 410556.88 sq  km<br>Period: 2013<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Land area: 414769 sq  km<br>Period: 2014<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Land area: 418020.93 sq  km<br>Period: 2015<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Land area: 420616.17 sq  km<br>Period: 2016<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Land area: 423889.25 sq  km<br>Period: 2017<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Land area: 427234.68 sq  km<br>Period: 2018<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Land area: 429525.18 sq  km<br>Period: 2019<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Land area: 431123.4 sq  km<br>Period: 2020<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan", "Land area: 431941.83 sq  km<br>Period: 2021<br>REMIND_54 region code: OAS_other<br>Countries in region: Afghanistan; Nepal; Bhutan"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(129,15,124,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [310070, 310070, 312836.99999999994, 312795, 312558, 312792, 312762, 313293.99999999994, 313284, 313456.99999999994, 313007, 313371, 313383, 313387, 313403, 313429.00000000006, 313428.99999999994, 313429, 313429],
+      "text": ["Land area: 310070 sq  km<br>Period: 2003<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Land area: 310070 sq  km<br>Period: 2004<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Land area: 312837 sq  km<br>Period: 2005<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Land area: 312795 sq  km<br>Period: 2006<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Land area: 312558 sq  km<br>Period: 2007<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Land area: 312792 sq  km<br>Period: 2008<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Land area: 312762 sq  km<br>Period: 2009<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Land area: 313294 sq  km<br>Period: 2010<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Land area: 313284 sq  km<br>Period: 2011<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Land area: 313457 sq  km<br>Period: 2012<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Land area: 313007 sq  km<br>Period: 2013<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Land area: 313371 sq  km<br>Period: 2014<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Land area: 313383 sq  km<br>Period: 2015<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Land area: 313387 sq  km<br>Period: 2016<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Land area: 313403 sq  km<br>Period: 2017<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Land area: 313429 sq  km<br>Period: 2018<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Land area: 313429 sq  km<br>Period: 2019<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Land area: 313429 sq  km<br>Period: 2020<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam", "Land area: 313429 sq  km<br>Period: 2021<br>REMIND_54 region code: VNM<br>Countries in region: Viet Nam"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(129,15,124,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [770880, 770880.00000000012, 770880, 770880, 770880, 770880.00000000012, 770879.99999999988, 770880.00000000012, 770880, 770880, 770880, 770880, 770880.00000000012, 770879.99999999988, 770880.00000000012, 770880, 770880, 770880, 770880],
+      "text": ["Land area: 770880 sq  km<br>Period: 2003<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Land area: 770880 sq  km<br>Period: 2004<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Land area: 770880 sq  km<br>Period: 2005<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Land area: 770880 sq  km<br>Period: 2006<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Land area: 770880 sq  km<br>Period: 2007<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Land area: 770880 sq  km<br>Period: 2008<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Land area: 770880 sq  km<br>Period: 2009<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Land area: 770880 sq  km<br>Period: 2010<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Land area: 770880 sq  km<br>Period: 2011<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Land area: 770880 sq  km<br>Period: 2012<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Land area: 770880 sq  km<br>Period: 2013<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Land area: 770880 sq  km<br>Period: 2014<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Land area: 770880 sq  km<br>Period: 2015<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Land area: 770880 sq  km<br>Period: 2016<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Land area: 770880 sq  km<br>Period: 2017<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Land area: 770880 sq  km<br>Period: 2018<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Land area: 770880 sq  km<br>Period: 2019<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Land area: 770880 sq  km<br>Period: 2020<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan", "Land area: 770880 sq  km<br>Period: 2021<br>REMIND_54 region code: PAK<br>Countries in region: Pakistan"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(136,65,157,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [130170, 130170, 130170, 130169.99999999999, 130169.99999999999, 130170, 130170.00000000001, 130170, 130169.99999999999, 130170, 130170.00000000001, 130170, 130170.00000000001, 130170, 130170, 130170, 130169.99999999999, 130169.99999999999, 130169.99999999999],
+      "text": ["Land area: 130170 sq  km<br>Period: 2003<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Land area: 130170 sq  km<br>Period: 2004<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Land area: 130170 sq  km<br>Period: 2005<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Land area: 130170 sq  km<br>Period: 2006<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Land area: 130170 sq  km<br>Period: 2007<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Land area: 130170 sq  km<br>Period: 2008<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Land area: 130170 sq  km<br>Period: 2009<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Land area: 130170 sq  km<br>Period: 2010<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Land area: 130170 sq  km<br>Period: 2011<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Land area: 130170 sq  km<br>Period: 2012<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Land area: 130170 sq  km<br>Period: 2013<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Land area: 130170 sq  km<br>Period: 2014<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Land area: 130170 sq  km<br>Period: 2015<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Land area: 130170 sq  km<br>Period: 2016<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Land area: 130170 sq  km<br>Period: 2017<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Land area: 130170 sq  km<br>Period: 2018<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Land area: 130170 sq  km<br>Period: 2019<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Land area: 130170 sq  km<br>Period: 2020<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh", "Land area: 130170 sq  km<br>Period: 2021<br>REMIND_54 region code: BGD<br>Countries in region: Bangladesh"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(140,107,177,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1877519, 1877519.0000000002, 1877519, 1877519, 1877519, 1877519, 1877519.0000000002, 1877518.9999999998, 1877519, 1877519, 1877519, 1877519, 1877519, 1877519, 1877519, 1877518.9999999998, 1877519.0000000002, 1877519, 1892556],
+      "text": ["Land area: 1877519 sq  km<br>Period: 2003<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Land area: 1877519 sq  km<br>Period: 2004<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Land area: 1877519 sq  km<br>Period: 2005<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Land area: 1877519 sq  km<br>Period: 2006<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Land area: 1877519 sq  km<br>Period: 2007<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Land area: 1877519 sq  km<br>Period: 2008<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Land area: 1877519 sq  km<br>Period: 2009<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Land area: 1877519 sq  km<br>Period: 2010<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Land area: 1877519 sq  km<br>Period: 2011<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Land area: 1877519 sq  km<br>Period: 2012<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Land area: 1877519 sq  km<br>Period: 2013<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Land area: 1877519 sq  km<br>Period: 2014<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Land area: 1877519 sq  km<br>Period: 2015<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Land area: 1877519 sq  km<br>Period: 2016<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Land area: 1877519 sq  km<br>Period: 2017<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Land area: 1877519 sq  km<br>Period: 2018<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Land area: 1877519 sq  km<br>Period: 2019<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Land area: 1877519 sq  km<br>Period: 2020<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia", "Land area: 1892556 sq  km<br>Period: 2021<br>REMIND_54 region code: IDN<br>Countries in region: Indonesia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(140,107,177,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [371440.77057322866, 371199.23847255611, 370782.42583026283, 370234.42557804182, 369501.08357495326, 368364.55607967643, 367632.6029570594, 367263.44690674375, 366926.10038856545, 366462.76207664242, 367755.02002620546, 367414.77248383075, 366951.04252306873, 366378.04717129498, 366078.21697456675, 365727.89218290098, 365495.75788641238, 365462.97777196713, 365694.22244698647],
+      "text": ["Land area: 371440.77 sq  km<br>Period: 2003<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Norfolk Island; Niue; Tokelau; United States Minor Outlying Islands; Pitcairn", "Land area: 371199.24 sq  km<br>Period: 2004<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Norfolk Island; Niue; Tokelau; United States Minor Outlying Islands; Pitcairn", "Land area: 370782.43 sq  km<br>Period: 2005<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Land area: 370234.43 sq  km<br>Period: 2006<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Land area: 369501.08 sq  km<br>Period: 2007<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Land area: 368364.56 sq  km<br>Period: 2008<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; Northern Mariana Islands; American Samoa; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Land area: 367632.6 sq  km<br>Period: 2009<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Micronesia, Federated States of; Tonga; Kiribati; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Land area: 367263.45 sq  km<br>Period: 2010<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Land area: 366926.1 sq  km<br>Period: 2011<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Land area: 366462.76 sq  km<br>Period: 2012<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; French Polynesia; New Caledonia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Cook Islands; Palau; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Land area: 367755.02 sq  km<br>Period: 2013<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Cook Islands; Palau; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Land area: 367414.77 sq  km<br>Period: 2014<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Brunei Darussalam; Maldives; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Cook Islands; Palau; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Land area: 366951.04 sq  km<br>Period: 2015<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Tuvalu; Nauru; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Land area: 366378.05 sq  km<br>Period: 2016<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Land area: 366078.22 sq  km<br>Period: 2017<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; New Caledonia; French Polynesia; Vanuatu; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Land area: 365727.89 sq  km<br>Period: 2018<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; Vanuatu; New Caledonia; French Polynesia; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Land area: 365495.76 sq  km<br>Period: 2019<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; Vanuatu; New Caledonia; French Polynesia; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Norfolk Island; Tokelau; United States Minor Outlying Islands; Pitcairn", "Land area: 365462.98 sq  km<br>Period: 2020<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; Vanuatu; New Caledonia; French Polynesia; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Wallis and Futuna; Nauru; Tuvalu; Niue; Tokelau; Norfolk Island; United States Minor Outlying Islands; Pitcairn", "Land area: 365694.22 sq  km<br>Period: 2021<br>REMIND_54 region code: SEA_other<br>Countries in region: Singapore; Myanmar; Malaysia; Sri Lanka; Cambodia; Papua New Guinea; Lao People's Democratic Republic; Timor-Leste; Fiji; Solomon Islands; Maldives; Brunei Darussalam; Vanuatu; New Caledonia; French Polynesia; Samoa; Guam; Kiribati; Micronesia, Federated States of; Tonga; American Samoa; Northern Mariana Islands; Marshall Islands; Palau; Cook Islands; Nauru; Wallis and Futuna; Tuvalu; Niue; Tokelau; Norfolk Island; United States Minor Outlying Islands; Pitcairn"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(140,107,177,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [510890.00000000006, 510889.99999999994, 510890, 510890, 510890, 510890, 510890, 510890.00000000006, 510890.00000000006, 510890.00000000006, 510890, 510890, 510890, 510890, 510890.00000000006, 510890, 510890, 510890, 510889.99999999994],
+      "text": ["Land area: 510890 sq  km<br>Period: 2003<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Land area: 510890 sq  km<br>Period: 2004<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Land area: 510890 sq  km<br>Period: 2005<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Land area: 510890 sq  km<br>Period: 2006<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Land area: 510890 sq  km<br>Period: 2007<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Land area: 510890 sq  km<br>Period: 2008<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Land area: 510890 sq  km<br>Period: 2009<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Land area: 510890 sq  km<br>Period: 2010<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Land area: 510890 sq  km<br>Period: 2011<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Land area: 510890 sq  km<br>Period: 2012<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Land area: 510890 sq  km<br>Period: 2013<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Land area: 510890 sq  km<br>Period: 2014<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Land area: 510890 sq  km<br>Period: 2015<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Land area: 510890 sq  km<br>Period: 2016<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Land area: 510890 sq  km<br>Period: 2017<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Land area: 510890 sq  km<br>Period: 2018<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Land area: 510890 sq  km<br>Period: 2019<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Land area: 510890 sq  km<br>Period: 2020<br>REMIND_54 region code: THA<br>Countries in region: Thailand", "Land area: 510890 sq  km<br>Period: 2021<br>REMIND_54 region code: THA<br>Countries in region: Thailand"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(140,150,198,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [364500, 364500.00000000006, 364500, 364500, 364500, 364500, 364500, 364500, 364500, 364500, 364500.00000000006, 364500, 364500, 364500.00000000006, 364500.00000000006, 364499.99999999994, 364500, 364500, 364500],
+      "text": ["Land area: 364500 sq  km<br>Period: 2003<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Land area: 364500 sq  km<br>Period: 2004<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Land area: 364500 sq  km<br>Period: 2005<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Land area: 364500 sq  km<br>Period: 2006<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Land area: 364500 sq  km<br>Period: 2007<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Land area: 364500 sq  km<br>Period: 2008<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Land area: 364500 sq  km<br>Period: 2009<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Land area: 364500 sq  km<br>Period: 2010<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Land area: 364500 sq  km<br>Period: 2011<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Land area: 364500 sq  km<br>Period: 2012<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Land area: 364500 sq  km<br>Period: 2013<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Land area: 364500 sq  km<br>Period: 2014<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Land area: 364500 sq  km<br>Period: 2015<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Land area: 364500 sq  km<br>Period: 2016<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Land area: 364500 sq  km<br>Period: 2017<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Land area: 364500 sq  km<br>Period: 2018<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Land area: 364500 sq  km<br>Period: 2019<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Land area: 364500 sq  km<br>Period: 2020<br>REMIND_54 region code: JPN<br>Countries in region: Japan", "Land area: 364500 sq  km<br>Period: 2021<br>REMIND_54 region code: JPN<br>Countries in region: Japan"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(152,0,67,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1504976.5536767936, 1505526.0841371054, 1506323.8819345376, 1507310.903846337, 1508645.7049902326, 1510533.2782585453, 1512815.8223203258, 1514394.8275465837, 1514793.6136437263, 1409669.3671302726, 1411171.4489246286, 1413148.9489950542, 1415620.0267214314, 1418019.8734816927, 1420775.0166860097, 1423578.8811377175, 1425831.9387915416, 1427654.1420350051, 1429414.1932322744],
+      "text": ["Land area: 1504976.55 sq  km<br>Period: 2003<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Tunisia; Chad; Libya; Mauritania; Western Sahara", "Land area: 1505526.08 sq  km<br>Period: 2004<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Tunisia; Chad; Libya; Mauritania; Western Sahara", "Land area: 1506323.88 sq  km<br>Period: 2005<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Land area: 1507310.9 sq  km<br>Period: 2006<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Land area: 1508645.7 sq  km<br>Period: 2007<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Land area: 1510533.28 sq  km<br>Period: 2008<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Land area: 1512815.82 sq  km<br>Period: 2009<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Land area: 1514394.83 sq  km<br>Period: 2010<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Land area: 1514793.61 sq  km<br>Period: 2011<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Land area: 1409669.37 sq  km<br>Period: 2012<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Land area: 1411171.45 sq  km<br>Period: 2013<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Land area: 1413148.95 sq  km<br>Period: 2014<br>REMIND_54 region code: NAF_other<br>Countries in region: Algeria; Sudan; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Land area: 1415620.03 sq  km<br>Period: 2015<br>REMIND_54 region code: NAF_other<br>Countries in region: Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Land area: 1418019.87 sq  km<br>Period: 2016<br>REMIND_54 region code: NAF_other<br>Countries in region: Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Land area: 1420775.02 sq  km<br>Period: 2017<br>REMIND_54 region code: NAF_other<br>Countries in region: Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Land area: 1423578.88 sq  km<br>Period: 2018<br>REMIND_54 region code: NAF_other<br>Countries in region: Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Land area: 1425831.94 sq  km<br>Period: 2019<br>REMIND_54 region code: NAF_other<br>Countries in region: Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Land area: 1427654.14 sq  km<br>Period: 2020<br>REMIND_54 region code: NAF_other<br>Countries in region: Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara", "Land area: 1429414.19 sq  km<br>Period: 2021<br>REMIND_54 region code: NAF_other<br>Countries in region: Sudan; Algeria; Morocco; Niger; Mali; Chad; Tunisia; Libya; Mauritania; Western Sahara"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(158,202,225,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [743532, 743532, 743532, 743532, 743532, 743532, 743532, 743532, 743532, 743531.99999999988, 743532, 743532, 743532, 743532, 743532, 743532, 743532, 743532, 743532],
+      "text": ["Land area: 743532 sq  km<br>Period: 2003<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Land area: 743532 sq  km<br>Period: 2004<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Land area: 743532 sq  km<br>Period: 2005<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Land area: 743532 sq  km<br>Period: 2006<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Land area: 743532 sq  km<br>Period: 2007<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Land area: 743532 sq  km<br>Period: 2008<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Land area: 743532 sq  km<br>Period: 2009<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Land area: 743532 sq  km<br>Period: 2010<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Land area: 743532 sq  km<br>Period: 2011<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Land area: 743532 sq  km<br>Period: 2012<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Land area: 743532 sq  km<br>Period: 2013<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Land area: 743532 sq  km<br>Period: 2014<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Land area: 743532 sq  km<br>Period: 2015<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Land area: 743532 sq  km<br>Period: 2016<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Land area: 743532 sq  km<br>Period: 2017<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Land area: 743532 sq  km<br>Period: 2018<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Land area: 743532 sq  km<br>Period: 2019<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Land area: 743532 sq  km<br>Period: 2020<br>REMIND_54 region code: CHL<br>Countries in region: Chile", "Land area: 743532 sq  km<br>Period: 2021<br>REMIND_54 region code: CHL<br>Countries in region: Chile"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(161,217,155,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [769630, 769630, 769630, 769630, 769630, 769630, 769630, 769630, 769630, 769630, 769630, 769630, 769630, 769630, 769630, 769630, 769630, 769630, 769630],
+      "text": ["Land area: 769630 sq  km<br>Period: 2003<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Land area: 769630 sq  km<br>Period: 2004<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Land area: 769630 sq  km<br>Period: 2005<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Land area: 769630 sq  km<br>Period: 2006<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Land area: 769630 sq  km<br>Period: 2007<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Land area: 769630 sq  km<br>Period: 2008<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Land area: 769630 sq  km<br>Period: 2009<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Land area: 769630 sq  km<br>Period: 2010<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Land area: 769630 sq  km<br>Period: 2011<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Land area: 769630 sq  km<br>Period: 2012<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Land area: 769630 sq  km<br>Period: 2013<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Land area: 769630 sq  km<br>Period: 2014<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Land area: 769630 sq  km<br>Period: 2015<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Land area: 769630 sq  km<br>Period: 2016<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Land area: 769630 sq  km<br>Period: 2017<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Land area: 769630 sq  km<br>Period: 2018<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Land area: 769630 sq  km<br>Period: 2019<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Land area: 769630 sq  km<br>Period: 2020<br>REMIND_54 region code: TUR<br>Countries in region: Turkey", "Land area: 769630 sq  km<br>Period: 2021<br>REMIND_54 region code: TUR<br>Countries in region: Turkey"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(161,217,155,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1000000, 1128597, 1128599.9999999998, 1128613, 1128631, 1128568, 1128589, 1128571, 1128575, 1128582, 1128572, 1128538, 1128539, 1128559, 1128553, 1128561, 1128571, 1128571, 1128571],
+      "text": ["Land area: 1e+06 sq  km<br>Period: 2003<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Land area: 1128597 sq  km<br>Period: 2004<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Land area: 1128600 sq  km<br>Period: 2005<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Land area: 1128613 sq  km<br>Period: 2006<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Land area: 1128631 sq  km<br>Period: 2007<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Land area: 1128568 sq  km<br>Period: 2008<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Land area: 1128589 sq  km<br>Period: 2009<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Land area: 1128571 sq  km<br>Period: 2010<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Land area: 1128575 sq  km<br>Period: 2011<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Land area: 1128582 sq  km<br>Period: 2012<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Land area: 1128572 sq  km<br>Period: 2013<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Land area: 1128538 sq  km<br>Period: 2014<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Land area: 1128539 sq  km<br>Period: 2015<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Land area: 1128559 sq  km<br>Period: 2016<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Land area: 1128553 sq  km<br>Period: 2017<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Land area: 1128561 sq  km<br>Period: 2018<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Land area: 1128571 sq  km<br>Period: 2019<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Land area: 1128571 sq  km<br>Period: 2020<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia", "Land area: 1128571 sq  km<br>Period: 2021<br>REMIND_54 region code: ETH<br>Countries in region: Ethiopia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(174,1,126,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [152814.16876253064, 152709.8475633717, 152515.0798335635, 152354.73093703881, 151816.068284701, 151281.75691823661, 151276.048988364, 151128.65446307472, 151109.36974466915, 151022.10760887645, 151018.52500762907, 151214.07599733752, 151226.97421939025, 151203.97263005827, 151224.35116709248, 151174.58621875208, 151083.07225499375, 150990.59653649945, 150896.44565283056],
+      "text": ["Land area: 152814.17 sq  km<br>Period: 2003<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Land area: 152709.85 sq  km<br>Period: 2004<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Land area: 152515.08 sq  km<br>Period: 2005<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Land area: 152354.73 sq  km<br>Period: 2006<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Land area: 151816.07 sq  km<br>Period: 2007<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Land area: 151281.76 sq  km<br>Period: 2008<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Land area: 151276.05 sq  km<br>Period: 2009<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Land area: 151128.65 sq  km<br>Period: 2010<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Land area: 151109.37 sq  km<br>Period: 2011<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Land area: 151022.11 sq  km<br>Period: 2012<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Land area: 151018.53 sq  km<br>Period: 2013<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Land area: 151214.08 sq  km<br>Period: 2014<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Land area: 151226.97 sq  km<br>Period: 2015<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Land area: 151203.97 sq  km<br>Period: 2016<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Land area: 151224.35 sq  km<br>Period: 2017<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Land area: 151174.59 sq  km<br>Period: 2018<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Land area: 151083.07 sq  km<br>Period: 2019<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Land area: 150990.6 sq  km<br>Period: 2020<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia", "Land area: 150896.45 sq  km<br>Period: 2021<br>REMIND_54 region code: ECS<br>Countries in region: Romania; Hungary; Bulgaria; Croatia; Slovenia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(217,72,1,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1628760, 1628759.9999999998, 1628760, 1628759.9999999998, 1628760, 1628760, 1628760.0000000002, 1628760, 1628760, 1628760, 1628760.0000000002, 1628760, 1628760, 1628760, 1622500.0000000002, 1622500, 1622500, 1622500.0000000002, 1622500],
+      "text": ["Land area: 1628760 sq  km<br>Period: 2003<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Land area: 1628760 sq  km<br>Period: 2004<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Land area: 1628760 sq  km<br>Period: 2005<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Land area: 1628760 sq  km<br>Period: 2006<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Land area: 1628760 sq  km<br>Period: 2007<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Land area: 1628760 sq  km<br>Period: 2008<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Land area: 1628760 sq  km<br>Period: 2009<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Land area: 1628760 sq  km<br>Period: 2010<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Land area: 1628760 sq  km<br>Period: 2011<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Land area: 1628760 sq  km<br>Period: 2012<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Land area: 1628760 sq  km<br>Period: 2013<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Land area: 1628760 sq  km<br>Period: 2014<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Land area: 1628760 sq  km<br>Period: 2015<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Land area: 1628760 sq  km<br>Period: 2016<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Land area: 1622500 sq  km<br>Period: 2017<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Land area: 1622500 sq  km<br>Period: 2018<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Land area: 1622500 sq  km<br>Period: 2019<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Land area: 1622500 sq  km<br>Period: 2020<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of", "Land area: 1622500 sq  km<br>Period: 2021<br>REMIND_54 region code: IRN<br>Countries in region: Iran, Islamic Republic of"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(217,72,1,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [2973189.9999999995, 2973190, 2973190, 2973190, 2973190, 2973190, 2973190, 2973190, 2973190, 2973190, 2973190, 2973190, 2973190, 2973190, 2973189.9999999995, 2973190, 2973190, 2973190, 2973190],
+      "text": ["Land area: 2973190 sq  km<br>Period: 2003<br>REMIND_54 region code: IND<br>Countries in region: India", "Land area: 2973190 sq  km<br>Period: 2004<br>REMIND_54 region code: IND<br>Countries in region: India", "Land area: 2973190 sq  km<br>Period: 2005<br>REMIND_54 region code: IND<br>Countries in region: India", "Land area: 2973190 sq  km<br>Period: 2006<br>REMIND_54 region code: IND<br>Countries in region: India", "Land area: 2973190 sq  km<br>Period: 2007<br>REMIND_54 region code: IND<br>Countries in region: India", "Land area: 2973190 sq  km<br>Period: 2008<br>REMIND_54 region code: IND<br>Countries in region: India", "Land area: 2973190 sq  km<br>Period: 2009<br>REMIND_54 region code: IND<br>Countries in region: India", "Land area: 2973190 sq  km<br>Period: 2010<br>REMIND_54 region code: IND<br>Countries in region: India", "Land area: 2973190 sq  km<br>Period: 2011<br>REMIND_54 region code: IND<br>Countries in region: India", "Land area: 2973190 sq  km<br>Period: 2012<br>REMIND_54 region code: IND<br>Countries in region: India", "Land area: 2973190 sq  km<br>Period: 2013<br>REMIND_54 region code: IND<br>Countries in region: India", "Land area: 2973190 sq  km<br>Period: 2014<br>REMIND_54 region code: IND<br>Countries in region: India", "Land area: 2973190 sq  km<br>Period: 2015<br>REMIND_54 region code: IND<br>Countries in region: India", "Land area: 2973190 sq  km<br>Period: 2016<br>REMIND_54 region code: IND<br>Countries in region: India", "Land area: 2973190 sq  km<br>Period: 2017<br>REMIND_54 region code: IND<br>Countries in region: India", "Land area: 2973190 sq  km<br>Period: 2018<br>REMIND_54 region code: IND<br>Countries in region: India", "Land area: 2973190 sq  km<br>Period: 2019<br>REMIND_54 region code: IND<br>Countries in region: India", "Land area: 2973190 sq  km<br>Period: 2020<br>REMIND_54 region code: IND<br>Countries in region: India", "Land area: 2973190 sq  km<br>Period: 2021<br>REMIND_54 region code: IND<br>Countries in region: India"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(220,0,5,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [9161920, 9161920, 9161920, 9161920, 9161920, 9147420, 9147420, 9147420, 9147420, 9147420, 9147420, 9147420, 9147420, 9147420, 9147420, 9147420, 9147420, 9147420, 9147420],
+      "text": ["Land area: 9161920 sq  km<br>Period: 2003<br>REMIND_54 region code: USA<br>Countries in region: United States", "Land area: 9161920 sq  km<br>Period: 2004<br>REMIND_54 region code: USA<br>Countries in region: United States", "Land area: 9161920 sq  km<br>Period: 2005<br>REMIND_54 region code: USA<br>Countries in region: United States", "Land area: 9161920 sq  km<br>Period: 2006<br>REMIND_54 region code: USA<br>Countries in region: United States", "Land area: 9161920 sq  km<br>Period: 2007<br>REMIND_54 region code: USA<br>Countries in region: United States", "Land area: 9147420 sq  km<br>Period: 2008<br>REMIND_54 region code: USA<br>Countries in region: United States", "Land area: 9147420 sq  km<br>Period: 2009<br>REMIND_54 region code: USA<br>Countries in region: United States", "Land area: 9147420 sq  km<br>Period: 2010<br>REMIND_54 region code: USA<br>Countries in region: United States", "Land area: 9147420 sq  km<br>Period: 2011<br>REMIND_54 region code: USA<br>Countries in region: United States", "Land area: 9147420 sq  km<br>Period: 2012<br>REMIND_54 region code: USA<br>Countries in region: United States", "Land area: 9147420 sq  km<br>Period: 2013<br>REMIND_54 region code: USA<br>Countries in region: United States", "Land area: 9147420 sq  km<br>Period: 2014<br>REMIND_54 region code: USA<br>Countries in region: United States", "Land area: 9147420 sq  km<br>Period: 2015<br>REMIND_54 region code: USA<br>Countries in region: United States", "Land area: 9147420 sq  km<br>Period: 2016<br>REMIND_54 region code: USA<br>Countries in region: United States", "Land area: 9147420 sq  km<br>Period: 2017<br>REMIND_54 region code: USA<br>Countries in region: United States", "Land area: 9147420 sq  km<br>Period: 2018<br>REMIND_54 region code: USA<br>Countries in region: United States", "Land area: 9147420 sq  km<br>Period: 2019<br>REMIND_54 region code: USA<br>Countries in region: United States", "Land area: 9147420 sq  km<br>Period: 2020<br>REMIND_54 region code: USA<br>Countries in region: United States", "Land area: 9147420 sq  km<br>Period: 2021<br>REMIND_54 region code: USA<br>Countries in region: United States"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(220,0,5,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [2267050, 2267049.9999999995, 2267050, 2267050, 2267050.0000000005, 2267050, 2267050, 2267050, 2267050, 2267050, 2267050, 2267050, 2267049.9999999995, 2267050, 2267050, 2267050, 2267050, 2267050, 2267050],
+      "text": ["Land area: 2267050 sq  km<br>Period: 2003<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Land area: 2267050 sq  km<br>Period: 2004<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Land area: 2267050 sq  km<br>Period: 2005<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Land area: 2267050 sq  km<br>Period: 2006<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Land area: 2267050 sq  km<br>Period: 2007<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Land area: 2267050 sq  km<br>Period: 2008<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Land area: 2267050 sq  km<br>Period: 2009<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Land area: 2267050 sq  km<br>Period: 2010<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Land area: 2267050 sq  km<br>Period: 2011<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Land area: 2267050 sq  km<br>Period: 2012<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Land area: 2267050 sq  km<br>Period: 2013<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Land area: 2267050 sq  km<br>Period: 2014<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Land area: 2267050 sq  km<br>Period: 2015<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Land area: 2267050 sq  km<br>Period: 2016<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Land area: 2267050 sq  km<br>Period: 2017<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Land area: 2267050 sq  km<br>Period: 2018<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Land area: 2267050 sq  km<br>Period: 2019<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Land area: 2267050 sq  km<br>Period: 2020<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the", "Land area: 2267050 sq  km<br>Period: 2021<br>REMIND_54 region code: COD<br>Countries in region: Congo, the Democratic Republic of the"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(221,52,151,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [499210, 499179.99999999994, 499090, 498979.99999999994, 499110, 498800.00000000006, 498660, 500010, 499880, 500210.00000000006, 500210, 500210, 499661, 499564, 499546.99999999994, 499603, 499570, 499557, 499733],
+      "text": ["Land area: 499210 sq  km<br>Period: 2003<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Land area: 499180 sq  km<br>Period: 2004<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Land area: 499090 sq  km<br>Period: 2005<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Land area: 498980 sq  km<br>Period: 2006<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Land area: 499110 sq  km<br>Period: 2007<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Land area: 498800 sq  km<br>Period: 2008<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Land area: 498660 sq  km<br>Period: 2009<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Land area: 500010 sq  km<br>Period: 2010<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Land area: 499880 sq  km<br>Period: 2011<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Land area: 500210 sq  km<br>Period: 2012<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Land area: 500210 sq  km<br>Period: 2013<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Land area: 500210 sq  km<br>Period: 2014<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Land area: 499661 sq  km<br>Period: 2015<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Land area: 499564 sq  km<br>Period: 2016<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Land area: 499547 sq  km<br>Period: 2017<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Land area: 499603 sq  km<br>Period: 2018<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Land area: 499570 sq  km<br>Period: 2019<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Land area: 499557 sq  km<br>Period: 2020<br>REMIND_54 region code: ESP<br>Countries in region: Spain", "Land area: 499733 sq  km<br>Period: 2021<br>REMIND_54 region code: ESP<br>Countries in region: Spain"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(241,105,19,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [306240, 306330, 306330, 306320, 306320, 306300, 306280, 306280, 306230, 306220, 306210, 306190, 306190, 306190, 306190, 306169.99999999994, 306110, 306130, 306100],
+      "text": ["Land area: 306240 sq  km<br>Period: 2003<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Land area: 306330 sq  km<br>Period: 2004<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Land area: 306330 sq  km<br>Period: 2005<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Land area: 306320 sq  km<br>Period: 2006<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Land area: 306320 sq  km<br>Period: 2007<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Land area: 306300 sq  km<br>Period: 2008<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Land area: 306280 sq  km<br>Period: 2009<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Land area: 306280 sq  km<br>Period: 2010<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Land area: 306230 sq  km<br>Period: 2011<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Land area: 306220 sq  km<br>Period: 2012<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Land area: 306210 sq  km<br>Period: 2013<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Land area: 306190 sq  km<br>Period: 2014<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Land area: 306190 sq  km<br>Period: 2015<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Land area: 306190 sq  km<br>Period: 2016<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Land area: 306190 sq  km<br>Period: 2017<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Land area: 306170 sq  km<br>Period: 2018<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Land area: 306110 sq  km<br>Period: 2019<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Land area: 306130 sq  km<br>Period: 2020<br>REMIND_54 region code: POL<br>Countries in region: Poland", "Land area: 306100 sq  km<br>Period: 2021<br>REMIND_54 region code: POL<br>Countries in region: Poland"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(241,105,19,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [910770, 910769.99999999988, 910770, 910769.99999999988, 910769.99999999988, 910770, 910770.00000000012, 910770, 910770.00000000012, 910769.99999999988, 910770.00000000012, 910770.00000000012, 910770, 910770.00000000012, 910770.00000000012, 910770.00000000012, 910770.00000000012, 910770.00000000012, 910770],
+      "text": ["Land area: 910770 sq  km<br>Period: 2003<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Land area: 910770 sq  km<br>Period: 2004<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Land area: 910770 sq  km<br>Period: 2005<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Land area: 910770 sq  km<br>Period: 2006<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Land area: 910770 sq  km<br>Period: 2007<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Land area: 910770 sq  km<br>Period: 2008<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Land area: 910770 sq  km<br>Period: 2009<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Land area: 910770 sq  km<br>Period: 2010<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Land area: 910770 sq  km<br>Period: 2011<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Land area: 910770 sq  km<br>Period: 2012<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Land area: 910770 sq  km<br>Period: 2013<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Land area: 910770 sq  km<br>Period: 2014<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Land area: 910770 sq  km<br>Period: 2015<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Land area: 910770 sq  km<br>Period: 2016<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Land area: 910770 sq  km<br>Period: 2017<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Land area: 910770 sq  km<br>Period: 2018<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Land area: 910770 sq  km<br>Period: 2019<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Land area: 910770 sq  km<br>Period: 2020<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria", "Land area: 910770 sq  km<br>Period: 2021<br>REMIND_54 region code: NGA<br>Countries in region: Nigeria"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(247,104,161,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [1213090, 1213090, 1213090, 1213090, 1213090, 1213090, 1213090, 1213090, 1213090, 1213090, 1213090, 1213090, 1213090, 1213090, 1213090, 1213090, 1213089.9999999998, 1213090, 1213090],
+      "text": ["Land area: 1213090 sq  km<br>Period: 2003<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Land area: 1213090 sq  km<br>Period: 2004<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Land area: 1213090 sq  km<br>Period: 2005<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Land area: 1213090 sq  km<br>Period: 2006<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Land area: 1213090 sq  km<br>Period: 2007<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Land area: 1213090 sq  km<br>Period: 2008<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Land area: 1213090 sq  km<br>Period: 2009<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Land area: 1213090 sq  km<br>Period: 2010<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Land area: 1213090 sq  km<br>Period: 2011<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Land area: 1213090 sq  km<br>Period: 2012<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Land area: 1213090 sq  km<br>Period: 2013<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Land area: 1213090 sq  km<br>Period: 2014<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Land area: 1213090 sq  km<br>Period: 2015<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Land area: 1213090 sq  km<br>Period: 2016<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Land area: 1213090 sq  km<br>Period: 2017<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Land area: 1213090 sq  km<br>Period: 2018<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Land area: 1213090 sq  km<br>Period: 2019<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Land area: 1213090 sq  km<br>Period: 2020<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa", "Land area: 1213090 sq  km<br>Period: 2021<br>REMIND_54 region code: ZAF<br>Countries in region: South Africa"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(252,197,192,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [348810, 348769.99999999994, 348760, 348720, 348670, 348630, 348610.00000000006, 348570, 348559.99999999994, 348540, 348880, 348900, 348860.00000000006, 349360, 349370, 349380, 349390, 349390, 349390],
+      "text": ["Land area: 348810 sq  km<br>Period: 2003<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Land area: 348770 sq  km<br>Period: 2004<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Land area: 348760 sq  km<br>Period: 2005<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Land area: 348720 sq  km<br>Period: 2006<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Land area: 348670 sq  km<br>Period: 2007<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Land area: 348630 sq  km<br>Period: 2008<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Land area: 348610 sq  km<br>Period: 2009<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Land area: 348570 sq  km<br>Period: 2010<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Land area: 348560 sq  km<br>Period: 2011<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Land area: 348540 sq  km<br>Period: 2012<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Land area: 348880 sq  km<br>Period: 2013<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Land area: 348900 sq  km<br>Period: 2014<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Land area: 348860 sq  km<br>Period: 2015<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Land area: 349360 sq  km<br>Period: 2016<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Land area: 349370 sq  km<br>Period: 2017<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Land area: 349380 sq  km<br>Period: 2018<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Land area: 349390 sq  km<br>Period: 2019<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Land area: 349390 sq  km<br>Period: 2020<br>REMIND_54 region code: DEU<br>Countries in region: Germany", "Land area: 349390 sq  km<br>Period: 2021<br>REMIND_54 region code: DEU<br>Countries in region: Germany"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(253,141,60,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [64517.001086732795, 64526.283895519278, 64548.498176032357, 64573.792561422903, 64617.684983245606, 64666.019626072222, 64701.089114407034, 64723.833032245675, 64744.565396899605, 64757.313850123297, 64824.402620039837, 64829.35193027262, 64836.545160067108, 64846.426093940718, 64817.212649703077, 64829.819848095074, 64841.889043455601, 64848.607559411677, 64742.328588556382],
+      "text": ["Land area: 64517 sq  km<br>Period: 2003<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Land area: 64526.28 sq  km<br>Period: 2004<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Land area: 64548.5 sq  km<br>Period: 2005<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Land area: 64573.79 sq  km<br>Period: 2006<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Land area: 64617.68 sq  km<br>Period: 2007<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Land area: 64666.02 sq  km<br>Period: 2008<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Land area: 64701.09 sq  km<br>Period: 2009<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Land area: 64723.83 sq  km<br>Period: 2010<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Land area: 64744.57 sq  km<br>Period: 2011<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Land area: 64757.31 sq  km<br>Period: 2012<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Land area: 64824.4 sq  km<br>Period: 2013<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Land area: 64829.35 sq  km<br>Period: 2014<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Land area: 64836.55 sq  km<br>Period: 2015<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Land area: 64846.43 sq  km<br>Period: 2016<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Land area: 64817.21 sq  km<br>Period: 2017<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Land area: 64829.82 sq  km<br>Period: 2018<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Land area: 64841.89 sq  km<br>Period: 2019<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Land area: 64848.61 sq  km<br>Period: 2020<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia", "Land area: 64742.33 sq  km<br>Period: 2021<br>REMIND_54 region code: ECE_other<br>Countries in region: Czech Republic; Slovakia; Lithuania; Latvia; Estonia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(253,141,60,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [68890, 68890, 68890, 68890, 68890, 68890, 68890, 68890, 68890, 68890, 68890, 68890, 68890, 68890, 68890, 68890, 68890.000000000015, 68890, 68890],
+      "text": ["Land area: 68890 sq  km<br>Period: 2003<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Land area: 68890 sq  km<br>Period: 2004<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Land area: 68890 sq  km<br>Period: 2005<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Land area: 68890 sq  km<br>Period: 2006<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Land area: 68890 sq  km<br>Period: 2007<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Land area: 68890 sq  km<br>Period: 2008<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Land area: 68890 sq  km<br>Period: 2009<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Land area: 68890 sq  km<br>Period: 2010<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Land area: 68890 sq  km<br>Period: 2011<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Land area: 68890 sq  km<br>Period: 2012<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Land area: 68890 sq  km<br>Period: 2013<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Land area: 68890 sq  km<br>Period: 2014<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Land area: 68890 sq  km<br>Period: 2015<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Land area: 68890 sq  km<br>Period: 2016<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Land area: 68890 sq  km<br>Period: 2017<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Land area: 68890 sq  km<br>Period: 2018<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Land area: 68890 sq  km<br>Period: 2019<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Land area: 68890 sq  km<br>Period: 2020<br>REMIND_54 region code: IRL<br>Countries in region: Ireland", "Land area: 68890 sq  km<br>Period: 2021<br>REMIND_54 region code: IRL<br>Countries in region: Ireland"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(253,141,60,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [91500, 91500, 91470, 91470, 91470, 91469.999999999985, 91590, 91590.000000000015, 91590, 91589.999999999985, 91605, 91606, 91606, 91606, 91606, 91606, 91606, 91606, 91606],
+      "text": ["Land area: 91500 sq  km<br>Period: 2003<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Land area: 91500 sq  km<br>Period: 2004<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Land area: 91470 sq  km<br>Period: 2005<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Land area: 91470 sq  km<br>Period: 2006<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Land area: 91470 sq  km<br>Period: 2007<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Land area: 91470 sq  km<br>Period: 2008<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Land area: 91590 sq  km<br>Period: 2009<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Land area: 91590 sq  km<br>Period: 2010<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Land area: 91590 sq  km<br>Period: 2011<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Land area: 91590 sq  km<br>Period: 2012<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Land area: 91605 sq  km<br>Period: 2013<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Land area: 91606 sq  km<br>Period: 2014<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Land area: 91606 sq  km<br>Period: 2015<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Land area: 91606 sq  km<br>Period: 2016<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Land area: 91606 sq  km<br>Period: 2017<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Land area: 91606 sq  km<br>Period: 2018<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Land area: 91606 sq  km<br>Period: 2019<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Land area: 91606 sq  km<br>Period: 2020<br>REMIND_54 region code: PRT<br>Countries in region: Portugal", "Land area: 91606 sq  km<br>Period: 2021<br>REMIND_54 region code: PRT<br>Countries in region: Portugal"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(253,141,60,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [2149690, 2149690, 2149690, 2149690, 2149690, 2149690, 2149690, 2149690, 2149690, 2149690, 2149690, 2149690, 2149690, 2149689.9999999995, 2149690, 2149690, 2149690, 2149690, 2149690],
+      "text": ["Land area: 2149690 sq  km<br>Period: 2003<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Land area: 2149690 sq  km<br>Period: 2004<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Land area: 2149690 sq  km<br>Period: 2005<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Land area: 2149690 sq  km<br>Period: 2006<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Land area: 2149690 sq  km<br>Period: 2007<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Land area: 2149690 sq  km<br>Period: 2008<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Land area: 2149690 sq  km<br>Period: 2009<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Land area: 2149690 sq  km<br>Period: 2010<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Land area: 2149690 sq  km<br>Period: 2011<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Land area: 2149690 sq  km<br>Period: 2012<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Land area: 2149690 sq  km<br>Period: 2013<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Land area: 2149690 sq  km<br>Period: 2014<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Land area: 2149690 sq  km<br>Period: 2015<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Land area: 2149690 sq  km<br>Period: 2016<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Land area: 2149690 sq  km<br>Period: 2017<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Land area: 2149690 sq  km<br>Period: 2018<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Land area: 2149690 sq  km<br>Period: 2019<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Land area: 2149690 sq  km<br>Period: 2020<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia", "Land area: 2149690 sq  km<br>Period: 2021<br>REMIND_54 region code: SAU<br>Countries in region: Saudi Arabia"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(253,141,60,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [547811.20336982224, 547511.98568168865, 547502.77553314483, 547503.46230206452, 547503.89138039341, 547504.22596562677, 547504.5223574799, 547504.78542344354, 547505.09124201618, 547505.49590467825, 547505.94385898381, 547506.31774746347, 547506.58808024332, 547506.82754543796, 547507.03834638325, 547507.31898251886, 547507.64230121381, 547507.96009829745, 547508.32034734276],
+      "text": ["Land area: 547811.2 sq  km<br>Period: 2003<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Land area: 547511.99 sq  km<br>Period: 2004<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Land area: 547502.78 sq  km<br>Period: 2005<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Land area: 547503.46 sq  km<br>Period: 2006<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Land area: 547503.89 sq  km<br>Period: 2007<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Land area: 547504.23 sq  km<br>Period: 2008<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Land area: 547504.52 sq  km<br>Period: 2009<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Land area: 547504.79 sq  km<br>Period: 2010<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Land area: 547505.09 sq  km<br>Period: 2011<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Land area: 547505.5 sq  km<br>Period: 2012<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Land area: 547505.94 sq  km<br>Period: 2013<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Land area: 547506.32 sq  km<br>Period: 2014<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Land area: 547506.59 sq  km<br>Period: 2015<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Land area: 547506.83 sq  km<br>Period: 2016<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Land area: 547507.04 sq  km<br>Period: 2017<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Land area: 547507.32 sq  km<br>Period: 2018<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Land area: 547507.64 sq  km<br>Period: 2019<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Land area: 547507.96 sq  km<br>Period: 2020<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories", "Land area: 547508.32 sq  km<br>Period: 2021<br>REMIND_54 region code: FRA<br>Countries in region: France; Saint Pierre and Miquelon; French Southern Territories"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,178,76,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [240643.94071020657, 240641.66831553393, 240640.93560999597, 240640.69455706599, 240640.78060713413, 240640.89711380552, 240640.49229305179, 240640.37533033264, 240642.04056552832, 240644.91438165752, 240648.29088007889, 240652.98572147914, 240659.69703896897, 240666.57691680346, 240670.79855484271, 240672.17460512096, 240672.19771593562, 240670.31612479154, 240663.94277250633],
+      "text": ["Land area: 240643.94 sq  km<br>Period: 2003<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Land area: 240641.67 sq  km<br>Period: 2004<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Land area: 240640.94 sq  km<br>Period: 2005<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Land area: 240640.69 sq  km<br>Period: 2006<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Land area: 240640.78 sq  km<br>Period: 2007<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Land area: 240640.9 sq  km<br>Period: 2008<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Land area: 240640.49 sq  km<br>Period: 2009<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Land area: 240640.38 sq  km<br>Period: 2010<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Land area: 240642.04 sq  km<br>Period: 2011<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Land area: 240644.91 sq  km<br>Period: 2012<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Land area: 240648.29 sq  km<br>Period: 2013<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Land area: 240652.99 sq  km<br>Period: 2014<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Land area: 240659.7 sq  km<br>Period: 2015<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Land area: 240666.58 sq  km<br>Period: 2016<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Land area: 240670.8 sq  km<br>Period: 2017<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Land area: 240672.17 sq  km<br>Period: 2018<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Land area: 240672.2 sq  km<br>Period: 2019<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Land area: 240670.32 sq  km<br>Period: 2020<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory", "Land area: 240663.94 sq  km<br>Period: 2021<br>REMIND_54 region code: GBR<br>Countries in region: United Kingdom; Jersey; Isle of Man; Guernsey; Gibraltar; British Indian Ocean Territory"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,178,76,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [82520, 82520, 82519.999999999985, 82520, 82520, 82520, 82520, 82520, 82520.000000000015, 82520, 82520, 82520, 82520, 82520, 82520, 82520, 82520, 82520, 82520],
+      "text": ["Land area: 82520 sq  km<br>Period: 2003<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Land area: 82520 sq  km<br>Period: 2004<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Land area: 82520 sq  km<br>Period: 2005<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Land area: 82520 sq  km<br>Period: 2006<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Land area: 82520 sq  km<br>Period: 2007<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Land area: 82520 sq  km<br>Period: 2008<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Land area: 82520 sq  km<br>Period: 2009<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Land area: 82520 sq  km<br>Period: 2010<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Land area: 82520 sq  km<br>Period: 2011<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Land area: 82520 sq  km<br>Period: 2012<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Land area: 82520 sq  km<br>Period: 2013<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Land area: 82520 sq  km<br>Period: 2014<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Land area: 82520 sq  km<br>Period: 2015<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Land area: 82520 sq  km<br>Period: 2016<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Land area: 82520 sq  km<br>Period: 2017<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Land area: 82520 sq  km<br>Period: 2018<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Land area: 82520 sq  km<br>Period: 2019<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Land area: 82520 sq  km<br>Period: 2020<br>REMIND_54 region code: AUT<br>Countries in region: Austria", "Land area: 82520 sq  km<br>Period: 2021<br>REMIND_54 region code: AUT<br>Countries in region: Austria"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,196,79,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [9184577.2162617091, 9184585.9148100037, 9184796.4281674847, 9184899.7937434055, 9184928.0522359665, 9185146.2088159304, 9185751.9334429502, 9186073.3306825776, 9186346.7427341286, 9186443.5847374052, 9186783.8301717956, 9186903.5781392343, 9186935.0243789386, 9187180.1536690928, 9187573.9137095436, 9187653.3811962306, 9187588.0896576159, 9187872.4424042795, 9188271.9313090239],
+      "text": ["Land area: 9184577.22 sq  km<br>Period: 2003<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Land area: 9184585.91 sq  km<br>Period: 2004<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Land area: 9184796.43 sq  km<br>Period: 2005<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Land area: 9184899.79 sq  km<br>Period: 2006<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Land area: 9184928.05 sq  km<br>Period: 2007<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Land area: 9185146.21 sq  km<br>Period: 2008<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Land area: 9185751.93 sq  km<br>Period: 2009<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Land area: 9186073.33 sq  km<br>Period: 2010<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Land area: 9186346.74 sq  km<br>Period: 2011<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Land area: 9186443.58 sq  km<br>Period: 2012<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Land area: 9186783.83 sq  km<br>Period: 2013<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Land area: 9186903.58 sq  km<br>Period: 2014<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Land area: 9186935.02 sq  km<br>Period: 2015<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Land area: 9187180.15 sq  km<br>Period: 2016<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Land area: 9187573.91 sq  km<br>Period: 2017<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Land area: 9187653.38 sq  km<br>Period: 2018<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Land area: 9187588.09 sq  km<br>Period: 2019<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Land area: 9187872.44 sq  km<br>Period: 2020<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao", "Land area: 9188271.93 sq  km<br>Period: 2021<br>REMIND_54 region code: CHA<br>Countries in region: China; Taiwan, Province of China; Hong Kong; Macao"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,196,79,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [291677.85089795396, 291885.77894852776, 292078.65377118404, 290043.45535439887, 286295.84258451348, 284739.1225064735, 284101.70538764563, 284966.88491587143, 285998.1795629579, 287404.68806318124, 288157.96994886734, 287798.95278657466, 287778.59189936524, 288326.7778346992, 289357.00530769542, 290575.29524959222, 291650.50542277022, 292882.82860380178, 294360.56167507969],
+      "text": ["Land area: 291677.85 sq  km<br>Period: 2003<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; Lebanon; United Arab Emirates; Palestine, State of; Oman; Kuwait; Bahrain; Qatar", "Land area: 291885.78 sq  km<br>Period: 2004<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; Lebanon; United Arab Emirates; Palestine, State of; Oman; Kuwait; Bahrain; Qatar", "Land area: 292078.65 sq  km<br>Period: 2005<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; Lebanon; United Arab Emirates; Palestine, State of; Oman; Kuwait; Bahrain; Qatar", "Land area: 290043.46 sq  km<br>Period: 2006<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Land area: 286295.84 sq  km<br>Period: 2007<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Land area: 284739.12 sq  km<br>Period: 2008<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Kuwait; Oman; Qatar; Bahrain", "Land area: 284101.71 sq  km<br>Period: 2009<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Kuwait; Oman; Qatar; Bahrain", "Land area: 284966.88 sq  km<br>Period: 2010<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Kuwait; Oman; Qatar; Bahrain", "Land area: 285998.18 sq  km<br>Period: 2011<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Kuwait; Oman; Qatar; Bahrain", "Land area: 287404.69 sq  km<br>Period: 2012<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Land area: 288157.97 sq  km<br>Period: 2013<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Israel; Jordan; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Land area: 287798.95 sq  km<br>Period: 2014<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; Israel; United Arab Emirates; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Land area: 287778.59 sq  km<br>Period: 2015<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Land area: 288326.78 sq  km<br>Period: 2016<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Oman; Palestine, State of; Kuwait; Qatar; Bahrain", "Land area: 289357.01 sq  km<br>Period: 2017<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Oman; Palestine, State of; Kuwait; Qatar; Bahrain", "Land area: 290575.3 sq  km<br>Period: 2018<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Oman; Palestine, State of; Kuwait; Qatar; Bahrain", "Land area: 291650.51 sq  km<br>Period: 2019<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Land area: 292882.83 sq  km<br>Period: 2020<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain", "Land area: 294360.56 sq  km<br>Period: 2021<br>REMIND_54 region code: MEA_other<br>Countries in region: Iraq; Yemen; Syrian Arab Republic; Jordan; United Arab Emirates; Israel; Lebanon; Palestine, State of; Oman; Kuwait; Qatar; Bahrain"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,196,79,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [407340, 407340, 407340, 407340, 407340, 407340, 407340, 407340, 407340, 407340, 407340, 407340, 407311, 407310.99999999994, 407311, 407311, 407284, 407284, 407284],
+      "text": ["Land area: 407340 sq  km<br>Period: 2003<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Land area: 407340 sq  km<br>Period: 2004<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Land area: 407340 sq  km<br>Period: 2005<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Land area: 407340 sq  km<br>Period: 2006<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Land area: 407340 sq  km<br>Period: 2007<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Land area: 407340 sq  km<br>Period: 2008<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Land area: 407340 sq  km<br>Period: 2009<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Land area: 407340 sq  km<br>Period: 2010<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Land area: 407340 sq  km<br>Period: 2011<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Land area: 407340 sq  km<br>Period: 2012<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Land area: 407340 sq  km<br>Period: 2013<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Land area: 407340 sq  km<br>Period: 2014<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Land area: 407311 sq  km<br>Period: 2015<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Land area: 407311 sq  km<br>Period: 2016<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Land area: 407311 sq  km<br>Period: 2017<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Land area: 407311 sq  km<br>Period: 2018<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Land area: 407284 sq  km<br>Period: 2019<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Land area: 407284 sq  km<br>Period: 2020<br>REMIND_54 region code: SWE<br>Countries in region: Sweden", "Land area: 407284 sq  km<br>Period: 2021<br>REMIND_54 region code: SWE<br>Countries in region: Sweden"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,196,79,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [39257.951296334759, 39256.391905109522, 39258.383590793324, 39262.000052477844, 39266.355484722975, 39270.908426835384, 39273.075017216128, 39273.22214184847, 39276.980885316814, 39281.822114132956, 39287.176033967422, 39290.710234394755, 39293.641937014218, 39294.851485367442, 39294.698678992238, 39293.7992409418, 39289.862142447688, 39285.75118046713, 39282.248020910636],
+      "text": ["Land area: 39257.95 sq  km<br>Period: 2003<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Land area: 39256.39 sq  km<br>Period: 2004<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Land area: 39258.38 sq  km<br>Period: 2005<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Land area: 39262 sq  km<br>Period: 2006<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Land area: 39266.36 sq  km<br>Period: 2007<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Land area: 39270.91 sq  km<br>Period: 2008<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Land area: 39273.08 sq  km<br>Period: 2009<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Land area: 39273.22 sq  km<br>Period: 2010<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Land area: 39276.98 sq  km<br>Period: 2011<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Land area: 39281.82 sq  km<br>Period: 2012<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Land area: 39287.18 sq  km<br>Period: 2013<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Land area: 39290.71 sq  km<br>Period: 2014<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Land area: 39293.64 sq  km<br>Period: 2015<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Land area: 39294.85 sq  km<br>Period: 2016<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Land area: 39294.7 sq  km<br>Period: 2017<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Land area: 39293.8 sq  km<br>Period: 2018<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Land area: 39289.86 sq  km<br>Period: 2019<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Land area: 39285.75 sq  km<br>Period: 2020<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands", "Land area: 39282.25 sq  km<br>Period: 2021<br>REMIND_54 region code: DNK<br>Countries in region: Denmark; Greenland; Faroe Islands"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,217,118,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [293677.85645503772, 293677.36111138901, 293674.3992587846, 293673.10451589274, 293676.27365564957, 293676.51317984925, 293670.45673929836, 293666.72029702511, 293661.58624942985, 293648.68781156419, 293643.65156304627, 293621.30267074029, 293568.97831687407, 293515.88855825237, 293451.84754825814, 293367.52851843624, 293244.96558177285, 293177.93568143528, 293149.19462845568],
+      "text": ["Land area: 293677.86 sq  km<br>Period: 2003<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Land area: 293677.36 sq  km<br>Period: 2004<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Land area: 293674.4 sq  km<br>Period: 2005<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Land area: 293673.1 sq  km<br>Period: 2006<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Land area: 293676.27 sq  km<br>Period: 2007<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Land area: 293676.51 sq  km<br>Period: 2008<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Land area: 293670.46 sq  km<br>Period: 2009<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Land area: 293666.72 sq  km<br>Period: 2010<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Land area: 293661.59 sq  km<br>Period: 2011<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Land area: 293648.69 sq  km<br>Period: 2012<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Land area: 293643.65 sq  km<br>Period: 2013<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Land area: 293621.3 sq  km<br>Period: 2014<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Land area: 293568.98 sq  km<br>Period: 2015<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Land area: 293515.89 sq  km<br>Period: 2016<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Land area: 293451.85 sq  km<br>Period: 2017<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Land area: 293367.53 sq  km<br>Period: 2018<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Land area: 293244.97 sq  km<br>Period: 2019<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Land area: 293177.94 sq  km<br>Period: 2020<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta", "Land area: 293149.19 sq  km<br>Period: 2021<br>REMIND_54 region code: ITA<br>Countries in region: Italy; Malta"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,217,118,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [33760, 33760, 33760, 33760, 33760, 33760, 33730, 33730, 33720, 33720, 33690, 33690, 33670, 33670, 33669.999999999993, 33670, 33670, 33670, 33670],
+      "text": ["Land area: 33760 sq  km<br>Period: 2003<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Land area: 33760 sq  km<br>Period: 2004<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Land area: 33760 sq  km<br>Period: 2005<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Land area: 33760 sq  km<br>Period: 2006<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Land area: 33760 sq  km<br>Period: 2007<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Land area: 33760 sq  km<br>Period: 2008<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Land area: 33730 sq  km<br>Period: 2009<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Land area: 33730 sq  km<br>Period: 2010<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Land area: 33720 sq  km<br>Period: 2011<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Land area: 33720 sq  km<br>Period: 2012<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Land area: 33690 sq  km<br>Period: 2013<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Land area: 33690 sq  km<br>Period: 2014<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Land area: 33670 sq  km<br>Period: 2015<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Land area: 33670 sq  km<br>Period: 2016<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Land area: 33670 sq  km<br>Period: 2017<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Land area: 33670 sq  km<br>Period: 2018<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Land area: 33670 sq  km<br>Period: 2019<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Land area: 33670 sq  km<br>Period: 2020<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands", "Land area: 33670 sq  km<br>Period: 2021<br>REMIND_54 region code: NLD<br>Countries in region: Netherlands"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(254,217,118,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [29124.372491344704, 29113.37536418012, 29102.374587562339, 29091.780968087474, 29082.534334597578, 29071.053426836497, 29058.888013893054, 29048.200677235134, 29037.3067933151, 29015.990369034629, 28993.609169523752, 28969.937812952176, 28947.535045846769, 28926.462709498748, 28899.881092869447, 28880.427328482816, 28861.404355494484, 28844.684378195358, 28829.547070448938],
+      "text": ["Land area: 29124.37 sq  km<br>Period: 2003<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Land area: 29113.38 sq  km<br>Period: 2004<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Land area: 29102.37 sq  km<br>Period: 2005<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Land area: 29091.78 sq  km<br>Period: 2006<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Land area: 29082.53 sq  km<br>Period: 2007<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Land area: 29071.05 sq  km<br>Period: 2008<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Land area: 29058.89 sq  km<br>Period: 2009<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Land area: 29048.2 sq  km<br>Period: 2010<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Land area: 29037.31 sq  km<br>Period: 2011<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Land area: 29015.99 sq  km<br>Period: 2012<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Land area: 28993.61 sq  km<br>Period: 2013<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Land area: 28969.94 sq  km<br>Period: 2014<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Land area: 28947.54 sq  km<br>Period: 2015<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Land area: 28926.46 sq  km<br>Period: 2016<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Land area: 28899.88 sq  km<br>Period: 2017<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Land area: 28880.43 sq  km<br>Period: 2018<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Land area: 28861.4 sq  km<br>Period: 2019<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Land area: 28844.68 sq  km<br>Period: 2020<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg", "Land area: 28829.55 sq  km<br>Period: 2021<br>REMIND_54 region code: BELUX<br>Countries in region: Belgium; Luxembourg"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(255,237,160,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [303069.59819809848, 303063.60537447874, 303058.44740327424, 302572.81908993958, 302545.60032217915, 302349.95579925075, 302343.63682089833, 302337.09265558748, 302334.29729489784, 302341.60585832433, 302348.6503224856, 302354.946640498, 302379.84248946852, 302384.18962610798, 302397.67977177398, 302399.67726045067, 302411.28473439289, 302423.39279480313, 302434.46186154516],
+      "text": ["Land area: 303069.6 sq  km<br>Period: 2003<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Land area: 303063.61 sq  km<br>Period: 2004<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Land area: 303058.45 sq  km<br>Period: 2005<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Land area: 302572.82 sq  km<br>Period: 2006<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Land area: 302545.6 sq  km<br>Period: 2007<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Land area: 302349.96 sq  km<br>Period: 2008<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Land area: 302343.64 sq  km<br>Period: 2009<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Land area: 302337.09 sq  km<br>Period: 2010<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Land area: 302334.3 sq  km<br>Period: 2011<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Land area: 302341.61 sq  km<br>Period: 2012<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Land area: 302348.65 sq  km<br>Period: 2013<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Land area: 302354.95 sq  km<br>Period: 2014<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Land area: 302379.84 sq  km<br>Period: 2015<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Land area: 302384.19 sq  km<br>Period: 2016<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Land area: 302397.68 sq  km<br>Period: 2017<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Land area: 302399.68 sq  km<br>Period: 2018<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Land area: 302411.28 sq  km<br>Period: 2019<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Land area: 302423.39 sq  km<br>Period: 2020<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands", "Land area: 302434.46 sq  km<br>Period: 2021<br>REMIND_54 region code: FIN<br>Countries in region: Finland; Aland Islands"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(255,237,160,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+      "y": [118871.96940556656, 118727.21458820402, 118588.01184517109, 118450.81103920736, 118310.1990803376, 118171.62478150186, 118033.66750794099, 117882.55099840749, 117702.14163582392, 117479.3001331323, 117239.48146472672, 117009.39614099768, 116780.32032862735, 116577.36625810378, 116402.11329812738, 116232.45453558631, 116078.56362120285, 115915.34241669296, 115638.82280224081],
+      "text": ["Land area: 118871.97 sq  km<br>Period: 2003<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Land area: 118727.21 sq  km<br>Period: 2004<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Land area: 118588.01 sq  km<br>Period: 2005<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Land area: 118450.81 sq  km<br>Period: 2006<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Land area: 118310.2 sq  km<br>Period: 2007<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Land area: 118171.62 sq  km<br>Period: 2008<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Land area: 118033.67 sq  km<br>Period: 2009<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Land area: 117882.55 sq  km<br>Period: 2010<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Land area: 117702.14 sq  km<br>Period: 2011<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Land area: 117479.3 sq  km<br>Period: 2012<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Land area: 117239.48 sq  km<br>Period: 2013<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Land area: 117009.4 sq  km<br>Period: 2014<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Land area: 116780.32 sq  km<br>Period: 2015<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Land area: 116577.37 sq  km<br>Period: 2016<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Land area: 116402.11 sq  km<br>Period: 2017<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Land area: 116232.45 sq  km<br>Period: 2018<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Land area: 116078.56 sq  km<br>Period: 2019<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Land area: 115915.34 sq  km<br>Period: 2020<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus", "Land area: 115638.82 sq  km<br>Period: 2021<br>REMIND_54 region code: GRC<br>Countries in region: Greece; Cyprus"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(255,237,160,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "visible": false,
+      "showlegend": false,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    }
+  ],
+  "layout": {
+    "margin": {
+      "t": 33.534246575342465,
+      "r": 0,
+      "b": 27.031963470319649,
+      "l": 59.178082191780831
+    },
+    "font": {
+      "color": "rgba(0,0,0,1)",
+      "family": "",
+      "size": 14.611872146118724
+    },
+    "title": {
+      "text": "Land area (REMIND_54)",
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 17.534246575342468
+      },
+      "x": 0,
+      "xref": "paper"
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [2002.0999999999999, 2021.9000000000001],
+      "tickmode": "array",
+      "ticktext": ["2005", "2010", "2015", "2020"],
+      "tickvals": [2005, 2010, 2015, 2020],
+      "categoryorder": "array",
+      "categoryarray": ["2005", "2010", "2015", "2020"],
+      "nticks": null,
+      "ticks": "",
+      "tickcolor": null,
+      "ticklen": 3.6529680365296811,
+      "tickwidth": 0,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.689497716894984
+      },
+      "tickangle": -90,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(235,235,235,1)",
+      "gridwidth": 0.66417600664176002,
+      "zeroline": false,
+      "anchor": "y",
+      "title": {
+        "text": "",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.611872146118724
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "type": "linear",
+      "autorange": false,
+      "range": [0, 16381390],
+      "tickmode": "array",
+      "ticktext": ["0.0e+00", "5.0e+06", "1.0e+07", "1.5e+07"],
+      "tickvals": [0, 5000000, 10000000, 15000000],
+      "categoryorder": "array",
+      "categoryarray": ["0.0e+00", "5.0e+06", "1.0e+07", "1.5e+07"],
+      "nticks": null,
+      "ticks": "",
+      "tickcolor": null,
+      "ticklen": 3.6529680365296811,
+      "tickwidth": 0,
+      "showticklabels": true,
+      "tickfont": {
+        "color": "rgba(77,77,77,1)",
+        "family": "",
+        "size": 11.68949771689498
+      },
+      "tickangle": -0,
+      "showline": false,
+      "linecolor": null,
+      "linewidth": 0,
+      "showgrid": true,
+      "gridcolor": "rgba(235,235,235,1)",
+      "gridwidth": 0.66417600664176002,
+      "zeroline": false,
+      "anchor": "x",
+      "title": {
+        "text": "sq  km",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.611872146118724
+        }
+      },
+      "hoverformat": ".2f"
+    },
+    "shapes": [
+      {
+        "type": "rect",
+        "fillcolor": null,
+        "line": {
+          "color": null,
+          "width": 0,
+          "linetype": []
+        },
+        "yref": "paper",
+        "xref": "paper",
+        "layer": "below",
+        "x0": 0,
+        "x1": 1,
+        "y0": 0,
+        "y1": 1
+      }
+    ],
+    "showlegend": false,
+    "legend": {
+      "bgcolor": null,
+      "bordercolor": null,
+      "borderwidth": 0,
+      "font": {
+        "color": "rgba(0,0,0,1)",
+        "family": "",
+        "size": 11.689497716894984
+      },
+      "title": {
+        "text": "",
+        "font": {
+          "color": "rgba(0,0,0,1)",
+          "family": "",
+          "size": 14.611872146118724
+        }
+      }
+    },
+    "hovermode": "closest",
+    "barmode": "relative"
+  },
+  "config": {
+    "doubleClick": "reset",
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  "source": "A",
+  "attrs": {
+    "b55cee56adf": {
+      "x": {},
+      "colour": {},
+      "text": {},
+      "y": {},
+      "type": "scatter"
+    },
+    "b55c6f4f3542": {
+      "y": {}
+    }
+  },
+  "cur_data": "b55cee56adf",
+  "visdat": {
+    "b55cee56adf": ["function (y) ", "x"],
+    "b55c6f4f3542": ["function (y) ", "x"]
+  },
+  "highlight": {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.20000000000000001,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  "shinyEvents": ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  "base_url": "https://plot.ly"
+}
+           
+
+                  ); 
+
+           }()); 
+
+  
