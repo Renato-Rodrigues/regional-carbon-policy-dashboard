@@ -1,5 +1,5 @@
 
-forceDataCreation <- FALSE 
+forceDataCreation <- TRUE 
 forceGeoMapsCreation <- FALSE
 
 outputFolder <- ("./output")

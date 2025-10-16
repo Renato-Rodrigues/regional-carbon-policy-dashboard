@@ -1827,7 +1827,9 @@ for(driver in out[["drivers"]][["drivers_df"]] %>% filter(exclude != "charts") %
     ungroup() %>%
     mutate(currentDriver = if_else((currentDriver * 100) %% 1 != 0, round(currentDriver, 2), currentDriver)) %>% # round if more than 2 decimals
     mutate(currentDriver = ifelse(currentDriver == 0, 0.00001, currentDriver)) %>%
-    mutate(currentDriver = ifelse(is.na(currentDriver), 0, currentDriver))
+    mutate(currentDriver = ifelse(is.na(currentDriver), 0, currentDriver)) %>%
+    mutate(period = as.character(period)) %>%
+    mutate(period = factor(period, levels = rev(sort(unique(period)))))
   
   max <- mapData %>% pull(currentDriver) %>% max()
   max <- round(max / 10 + 1) * 10
