@@ -61,7 +61,7 @@ for (mapRegion in params$mappingsVector){
   result = paste0(result,knitr::knit_expand(text=paste0("\n\n")))
   result = paste0(result,knitr::knit_expand(text=paste0("## ", mapRegion, ifelse(mapRegion == "REMIND_62", " {.active}", ""), "\n\n")))
   result = paste0(result,knitr::knit_expand(text=paste0("<div style='width:100%; display:flex; justify-content:center;'><div style='width:100%; max-width:1200px;'>", "\n\n")))
-  result = paste0(result,"```{r ", "Map_", mapRegion, ", echo=FALSE}\n\n")
+  result = paste0(result,"```{r ", "Map_", mapRegion, ", echo=FALSE, message=FALSE}\n\n")
   result = paste0(result, "params[['charts']][['", mapRegion, "']][['WorldMap']]\n\n")  
   result = paste0(result,"```\n\n")
   result = paste0(result,knitr::knit_expand(text=paste0("</div></div>", "\n\n")))

@@ -113,14 +113,23 @@ params:
 
 ``` 
 
-## Missing top ranked countries
+## Missing top ranked countries {.tabset}
 
 ```{r missing_ranked, echo=FALSE}
 
-  params[["table"]][["missingRanks"]]
+  result = ""
+
+  for (region in params$mappingsVector){
+    result = paste0(result,knitr::knit_expand(text=paste0("\n\n")))
+    result = paste0(result,knitr::knit_expand(text=paste0("### ", region, ifelse(region == "REMIND_12", " {.active}", ""), "\n\n")))
+    result = paste0(result,"```{r ", region, ", echo=FALSE}\n\n")
+    result = paste0(result,"params[['table']][['missingRanks']][['", region , "']]\n\n")
+    result = paste0(result,"```\n\n")
+  }  
 
 ```  
 
+`r paste(knitr::knit(text = paste(result, collapse = '\n')))`
 
 ## Missing geopolitical countries {.tabset}
 
@@ -130,7 +139,7 @@ params:
 
   for (region in params$mappingsVector){
     result = paste0(result,knitr::knit_expand(text=paste0("\n\n")))
-    result = paste0(result,knitr::knit_expand(text=paste0("### ", region, ifelse(region == "REMIND_62", " {.active}", ""), "\n\n")))
+    result = paste0(result,knitr::knit_expand(text=paste0("### ", region, ifelse(region == "REMIND_12", " {.active}", ""), "\n\n")))
     result = paste0(result,"```{r ", region, ", echo=FALSE}\n\n")
     result = paste0(result,"params[['table']][['geoGroup']][['member']][['", region , "']]\n\n")
     #result = paste0(result,"params[['table']][['geoGroup']][['candidate']][['", region , "']]\n\n")

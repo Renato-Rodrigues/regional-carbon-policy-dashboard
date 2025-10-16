@@ -11,7 +11,14 @@ plotly2js <- function(plotly.object, div.id = 'plot1', output.html = FALSE, outp
   if(is.null(output.dir)) js.filename <- paste0(getwd(), "/", output.file) else js.filename <- paste0(output.dir, "/", output.file)
   if(is.null(output.url)) output.url <- paste0(div.id,".html")
   
-  json <- plotly_json(plotly.object,FALSE)
+  #json <- plotly_json(plotly.object %>% layout(
+  #  yaxis = list(
+  #    tickformat = ".2f" # Forces 2 decimal places in the label
+  #  )
+  #), FALSE, jsonlite = TRUE, pretty = FALSE, digits = 4)
+  #plotly.object$x$data[[1]]$y <- round(plotly.object$x$data[[1]]$y, 2) 
+  
+  json <- plotly_json(plotly.object, jsonedit = FALSE, jsonlite = TRUE, pretty = FALSE, digits = I(2))
   
   js.output <-
     "(function(){ \n

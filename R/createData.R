@@ -7,8 +7,16 @@ packages <- suppressWarnings(suppressMessages(lapply(packagesList, function(x){ 
 #install.packages("webshot")
 #webshot::install_phantomjs()
 library(htmlwidgets)
-library(webshot)
+#library(webshot2)
 library(jsonlite)
+
+library(chromote)
+#chromote::find_chrome()
+Sys.setenv(CHROMOTE_CHROME = "C:/Users/renatoro/AppData/Local/Google/Chrome/Application/chrome.exe")
+#Sys.setenv(CHROMOTE_CHROME = "C:/Users/%USERNAME%/AppData/Local/Google/Chrome/Application/chrome.exe")
+
+library(xml2)
+library(stringr)
 
 ### 
 print("Defining data to create and aesthetics...")
@@ -52,7 +60,7 @@ out[["drivers"]][["driversList"]] <- list(
     "Coal reserves"                  = list("var" = "Coal reserves",                                "type" = "rank",                "exclude" = "")
   ),
   "Trade" = list(
-    "Trade freedom index"            = list("var" = "Trade freedom",                                "type" = "rank",                "exclude" = ""),
+    "Trade freedom index"            = list("var" = "Trade freedom index",                          "type" = "rank",                "exclude" = ""),
     "Trade openness - exports plus imports" = list("var" = "Trade openness  exports plus imports",  "type" = "%",                   "exclude" = ""),
     "Exports"                        = list("var" = "Exports",                                      "type" = "rank",                "exclude" = ""),
     "Exports - coal"                = list("var" = "Coal exports",                                  "type" = "rank",                "exclude" = ""),
@@ -88,8 +96,8 @@ out[["drivers"]][["driversList"]] <- list(
     "Bank credit interest rates - to the private sector " = list("var" = "Interest rates on bank credit to the private sector", "type" = "%", "exclude" = ""),
     "Bank credit - to the private sector" = list("var" = "Bank credit to the private sector",       "type" = "%",                   "exclude" = ""),
     "Foreign Direct Investment"      = list("var" = "Foreign Direct Investment",                    "type" = "%",                   "exclude" = ""),
-    "Credit information - sharing index" = list("var" = "Credit information sharing",               "type" = "rank",                "exclude" = ""),
-    "Business freedom index"         = list("var" = "Business freedom",                             "type" = "rank",                "exclude" = "")
+    "Credit information - sharing index" = list("var" = "Credit information sharing index",         "type" = "rank",                "exclude" = ""),
+    "Business freedom index"         = list("var" = "Business freedom index",                       "type" = "rank",                "exclude" = "")
   ),
   "Geopolitical Groups" = list(
     "European Union"                 = list("var" = "EU",                                           "type" = "membership",          "exclude" = "charts"),      
@@ -612,45 +620,75 @@ out[["table"]][["countryDataText"]] <- paste0(
   "   - OIC (Organization of the Islamic Cooperation): Group to strengthen cooperation and solidarity, and to protect the rights and interests of the Islamic World.</br></br>"
   )
 
-#  Missing top ranked countries
-missingRanks <- 
-  lapply(out[["drivers"]][["drivers_df"]] %>%
-           filter(type %in% c("rank", "reverseRank")) %>%
-           mutate(variableWithType = paste0(Variable, " ", type)) %>%
-           pull("variableWithType"),
-         function(col_name) {
-           vals <- displayData %>% # REMIND 62 countries with data
-             filter(CountryCode %in% c(out[["mapping"]][["regionMapping"]] %>% filter(CountryCode %in% REMIND_62) %>% pull(REMIND_62), "CHN", "HKG", "MAC", "TWN", "ATF", "SPM", "MLT", "CYP", "BEL", "LUX", "FRO", "GRL", "ALA", "IOT", "GIB", "GGY", "IMN", "JEY", "SJM", "LIE", "CXR", "CCK", "HMD")) %>%
-             pull(!!sym(col_name)) %>% 
-             na_if("") %>% 
-             na.omit()
-            
-           max_val <- displayData %>% pull(!!sym(col_name)) %>% as.numeric() %>% na.omit() %>% max()
-           
-           missing_vals <- setdiff(1:max_val, vals[!is.na(vals)]) # index of countries not in data
-           
-           missing_countries <- displayData %>% # countries not in data
-             filter(!!sym(col_name) %in% missing_vals) %>%
-             pull(countryName) %>%
-             paste(collapse = "; ")
-           
-           tibble(
-             rank_type = out[["drivers"]][["drivers_df"]] %>% filter(finalVariableName == col_name) %>% pull(DisplayName),
-             #rank_type = gsub(" rank", "", col_name),
-             missing_rank = if(length(missing_vals) == 0) "All present" else paste(missing_vals, collapse = ", "),
-             missing_countries = if(length(missing_countries) == 0) "All present" else paste(missing_countries, collapse = ", "),
-             max_ranking = max_val
-           )
-         }) %>% bind_rows()
 
-out[["table"]][["missingRanks"]] <- missingRanks %>%
-  kbl(caption = "Missing country data in the REMIND_62 mapping",
-      align = "c",
-      booktabs = TRUE) %>%
-  kable_styling(full_width = FALSE, 
-                position = "center",
-                bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
-  row_spec(0, bold = TRUE, background = "#f2f2f2")
+#  Missing top ranked countries
+extraCountryRegions <- list( 
+  "CHA" = c("CHN", "HKG", "MAC", "TWN"),
+  "FRA" = c("ATF", "SPM"),
+  "ITA" = c("MLT"),
+  "GRC" = c("CYP"),
+  "BELUX" = c("BEL", "LUX"),
+  "DNK" = c("FRO", "GRL"),
+  "FIN" = c("ALA"),
+  "GBR" = c("IOT", "GIB", "GGY", "IMN", "JEY"),
+  "NOR" = c("SJM"),
+  "CHE" = c("LIE"),
+  "AUS" = c("CXR", "CCK", "HMD")
+  )
+
+missingRanks <- list()
+out[["table"]][["missingRanks"]] <- list()
+for(currRegion in out[["mapping"]][["mappingsVector"]]){
+  
+  countriesInRegion <- c( 
+    out[["mapping"]][["regionMapping"]] %>%
+      filter(CountryCode %in% !!sym(currRegion)) %>%
+      pull(!!sym(currRegion)), 
+    unlist(extraCountryRegions[
+      out[["mapping"]][["regionMapping"]] %>%
+        pull(!!sym(currRegion)) %>%
+        unique()],
+      use.names = FALSE))
+  
+  missingRanks[[currRegion]] <- 
+    lapply(out[["drivers"]][["drivers_df"]] %>%
+             filter(type %in% c("rank", "reverseRank")) %>%
+             mutate(variableWithType = paste0(Variable, " ", type)) %>%
+             pull("variableWithType"),
+           function(col_name) {
+             vals <- displayData %>% 
+               filter(CountryCode %in% countriesInRegion) %>%
+               pull(!!sym(col_name)) %>% 
+               na_if("") %>% 
+               na.omit()
+              
+             max_val <- displayData %>% pull(!!sym(col_name)) %>% as.numeric() %>% na.omit() %>% max()
+             
+             missing_vals <- setdiff(1:max_val, vals[!is.na(vals)]) # index of countries not in data
+             
+             missing_countries <- displayData %>% # countries not in data
+               filter(!!sym(col_name) %in% missing_vals) %>%
+               pull(countryName) %>%
+               paste(collapse = "; ")
+             
+             tibble(
+               rank_type = out[["drivers"]][["drivers_df"]] %>% filter(finalVariableName == col_name) %>% pull(DisplayName),
+               #rank_type = gsub(" rank", "", col_name),
+               missing_rank = if(length(missing_vals) == 0) "All present" else paste(missing_vals, collapse = ", "),
+               missing_countries = if(length(missing_countries) == 0) "All present" else paste(missing_countries, collapse = ", "),
+               max_ranking = max_val
+             )
+           }) %>% bind_rows()
+  
+  out[["table"]][["missingRanks"]][[currRegion]] <- missingRanks[[currRegion]] %>%
+    kbl(caption = paste0("Missing country data in the ", currRegion, " mapping"),
+        align = "c",
+        booktabs = TRUE) %>%
+    kable_styling(full_width = FALSE, 
+                  position = "center",
+                  bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+    row_spec(0, bold = TRUE, background = "#f2f2f2")
+}
 
 
 # geopolitical groups
@@ -849,22 +887,6 @@ find_best_regions_greedy <- function(group, membership_statuses, region_col_name
     ) %>% unique()
   }
 
-  full_geo_group_raw <- out[["data"]][["country"]][["Raw"]][["geopoliticalMemberships"]] %>%
-    left_join(out[["mapping"]][["regionMapping"]] %>% select(CountryCode, !!sym(region_col_name)), by = "CountryCode") %>%
-    select(CountryCode, 
-           Region_Group = !!sym(region_col_name),
-           Geopolitical_Status = !!sym(group)) %>%
-    filter(Geopolitical_Status %in% membership_statuses) %>%
-    pull(CountryCode)
-  full_geo_group <- c(full_geo_group_raw, out[["mapping"]][["regionMapping"]] %>% filter(REMIND_62 %in% full_geo_group_raw) %>% pull(CountryCode)) %>% unique()
-  full_selected <- out[["mapping"]][["regionMapping"]] %>%
-    select(CountryCode, region = !!sym(region_col_name)) %>%
-    filter(region %in% best_regions) %>% 
-    pull(CountryCode)
-  full_covered_members     <- full_geo_group[full_geo_group %in% full_selected]
-  full_missing_members     <- full_geo_group[!(full_geo_group %in% full_selected)]
-  full_non_member_included <- full_selected[!(full_selected %in% full_geo_group)]
-  
   # Step 3b: Check for population/oil coverage and filter selected regions
   regions_to_keep <- regions_data %>%
     filter(Region_Group %in% best_regions) %>%
@@ -880,6 +902,22 @@ find_best_regions_greedy <- function(group, membership_statuses, region_col_name
     pull(Region_Group)
   
   best_regions <- regions_to_keep
+  
+  full_geo_group_raw <- out[["data"]][["country"]][["Raw"]][["geopoliticalMemberships"]] %>%
+    left_join(out[["mapping"]][["regionMapping"]] %>% select(CountryCode, !!sym(region_col_name)), by = "CountryCode") %>%
+    select(CountryCode, 
+           Region_Group = !!sym(region_col_name),
+           Geopolitical_Status = !!sym(group)) %>%
+    filter(Geopolitical_Status %in% membership_statuses) %>%
+    pull(CountryCode) # target
+  full_geo_group <- c(full_geo_group_raw, out[["mapping"]][["regionMapping"]] %>% filter(REMIND_62 %in% full_geo_group_raw) %>% pull(CountryCode)) %>% unique()
+  full_selected <- out[["mapping"]][["regionMapping"]] %>%
+    select(CountryCode, region = !!sym(region_col_name)) %>%
+    filter(region %in% best_regions) %>% 
+    pull(CountryCode) # selected
+  full_covered_members     <- full_geo_group[full_geo_group %in% full_selected]
+  full_missing_members     <- full_geo_group[!(full_geo_group %in% full_selected)]
+  full_non_member_included <- full_selected[!(full_selected %in% full_geo_group)]
   
   # Re-calculate covered_members_codes based on the new, filtered list of regions
   covered_members_codes <- regions_data %>%
@@ -1105,81 +1143,143 @@ worldMapLowres <- readRDS("./maps/world_map_lowres.rds")
 
 print("Creating geopolitical maps...")
 
+save_hc_svg_with_titles <- function(hc, outfile) {
+  # 1. Save Highcharter widget to temporary HTML
+  tmpfile <- tempfile(fileext = ".html")
+  saveWidget(hc, tmpfile, selfcontained = FALSE)
+  
+  # 2. Render in Chromote
+  b <- ChromoteSession$new()
+  url <- paste0("file:///", normalizePath(tmpfile))
+  b$Page$navigate(url)
+  Sys.sleep(1)
+  
+  res <- b$Runtime$evaluate("document.querySelector('svg.highcharts-root').outerHTML")
+  svg_text <- res$result$value
+  b$close()
+  
+  # 3. Parse SVG
+  doc <- read_xml(svg_text)
+  ns <- c(svg = "http://www.w3.org/2000/svg")
+  paths <- xml_find_all(doc, ".//svg:path", ns)
+  
+  # 4. Extract country names from class
+  classes <- xml_attr(paths, "class")
+  country_names <- str_extract(classes, "highcharts-name-[^ ]+")
+  country_names <- str_remove(country_names, "highcharts-name-")
+  country_names <- str_to_title(country_names)
+  
+  # 5. Remove any existing title attributes and add <title> as first child
+  for (i in seq_along(paths)) {
+    nm <- country_names[i]
+    if (!is.na(nm)) {
+      # remove title attribute
+      xml_attr(paths[[i]], "title") <- NULL
+      
+      # remove existing <title> child if present
+      existing_title <- xml_find_first(paths[[i]], ".//svg:title", ns)
+      if (!is.na(existing_title)) xml_remove(existing_title)
+      
+      # add new <title> as first child
+      xml_add_child(paths[[i]], "title", .where = 0) -> title_node
+      xml_text(title_node) <- nm
+    }
+  }
+  
+  # 6. Save the cleaned SVG
+  write_xml(doc, outfile)
+  #message("SVG saved with <title> as first child of <path>: ", outfile)
+}
+
 out[["table"]][["maps"]] <- NULL
 
 for(currRegion in out[["mapping"]][["mappingsVector"]]){
   for(group in unique(expanded_df$Group)){
     
-    mapFile <- paste0("./output/img/geoMaps/", currRegion, "_", group, ".png")
+    #mapFile <- paste0("./output/img/geoMaps/", currRegion, "_", group, ".png")
+    #mapFile <- paste0("./output/img/geoMaps/", currRegion, "_", group, ".svg")
     
-    if(forceGeoMapsCreation | (!(file.exists(mapFile)))){
-      print(paste0("Creating file ", mapFile, " ..."))
-      
-      mapData <- expanded_df %>%
-        filter(Region_Group_Type == currRegion, Group == group) %>%
-        select(CountryCode, color) %>%
-        mutate(category = nameColorVector[color],
-               value = value_map[category]
-        )
-      
-      data_classes <- imap(colorVector, ~list(from = .y, to = .y, name = .y, color = . )) %>%
-        set_names(NULL) # Unname the list for highcharter
-      
-      out[["table"]][["maps"]][[currRegion]][[group]] <- 
-        highchart(type = "map") %>%
-          hc_add_series_map(
-            map = worldMapLowres,
-            df = mapData,
-            joinBy = c("iso-a3", "CountryCode"), # Joins map's 'iso-a3' with our 'CountryCode'
-            value = "value", # The numeric column we created
-            name = "Status",
-            allAreas = FALSE,
-            borderWidth = 0.03,
-            borderColor = "#FAFAFA",
-            nullColor = "#f0f0f0"
-        ) %>%
-          hc_colorAxis(
-            # Use dataClasses to create a categorical legend
-            dataClasses = data_classes,
-            # Set a color for countries with no data (value = 0)
-            naColor = "#E0E0E0"
-          ) %>%
-          hc_legend(
-            enabled = TRUE,
-            layout = "horizontal",
-            align = "center",
-            verticalAlign = "bottom",
-            itemStyle = list(
-              fontSize = "20px"  # Set the desired font size
-            )
-          ) %>%
-          hc_tooltip(
-            useHTML = TRUE,
-            headerFormat = "",
-            pointFormat = "<b>{point.name}</b>: {point.category}"
-          ) %>%
-          hc_mapNavigation(
-            enabled = FALSE
-          )
-      temp_file <- tempfile(fileext = ".html")
-      saveWidget(out[["table"]][["maps"]][[currRegion]][[group]], temp_file)
-      webshot(
-        url = temp_file, # Pass the path of the saved file
-        file = mapFile,
-        delay = 5,
-        vwidth = 1920,
-        vheight = 960
+    print(paste0("Creating map ", currRegion, "_", group))
+    
+    mapData <- expanded_df %>%
+      filter(Region_Group_Type == currRegion, Group == group) %>%
+      select(CountryCode, color) %>%
+      mutate(category = nameColorVector[color],
+             value = value_map[category]
       )
     
-    }
+    data_classes <- imap(colorVector, ~list(from = .y, to = .y, name = .y, color = . )) %>%
+      set_names(NULL) # Unname the list for highcharter
     
+    out[["table"]][["maps"]][[currRegion]][[group]] <- 
+      highchart(type = "map") %>%
+        hc_add_series_map(
+          map = worldMapLowres,
+          df = mapData,
+          joinBy = c("iso-a3", "CountryCode"), # Joins map's 'iso-a3' with our 'CountryCode'
+          value = "value", # The numeric column we created
+          name = "Status",
+          allAreas = FALSE,
+          borderWidth = 0.03,
+          borderColor = "#FAFAFA",
+          nullColor = "#f0f0f0"
+      ) %>%
+        hc_colorAxis(
+          # Use dataClasses to create a categorical legend
+          dataClasses = data_classes,
+          # Set a color for countries with no data (value = 0)
+          naColor = "#E0E0E0"
+        ) %>%
+        hc_legend(
+          enabled = TRUE,
+          layout = "horizontal",
+          align = "center",
+          verticalAlign = "bottom",
+          itemStyle = list(
+            fontSize = "20px"  # Set the desired font size
+          )
+        ) %>%
+        hc_tooltip(
+          useHTML = TRUE,
+          headerFormat = "",
+          pointFormat = "<b>{point.name}</b>: {point.category}"
+        ) %>%
+        hc_mapNavigation(
+          enabled = FALSE
+        )
+      
+    #temp_file <- tempfile(fileext = ".html")
+    # saveWidget(out[["table"]][["maps"]][[currRegion]][[group]], temp_file)
+    # webshot(
+    #   url = temp_file, # Pass the path of the saved file
+    #   file = mapFile,
+    #   delay = 5,
+    #   vwidth = 1920,
+    #   vheight = 960
+    # )
+    
+    #save_hc_svg_with_titles(out[["table"]][["maps"]][[currRegion]][[group]] %>%
+    #                          hc_chart(width = 1920, height = 960), "world_map_tooltips.svg")
+  
+  }
+}
+
+
+for(currRegion in out[["mapping"]][["mappingsVector"]]){
+  for(group in unique(expanded_df$Group)){
+    mapFile <- paste0("./output/img/geoMaps/", currRegion, "_", group, ".svg")
+    if(forceGeoMapsCreation | (!(file.exists(mapFile)))){
+      print(paste0("Creating file ", mapFile, " ..."))
+      save_hc_svg_with_titles(out[["table"]][["maps"]][[currRegion]][[group]] %>%
+                                hc_chart(width = 1920, height = 960), mapFile)
+    }
   }
 }
 
 for(currRegion in out[["mapping"]][["mappingsVector"]]){
   out[["table"]][["geoGroup"]][["member"]][[currRegion]] <- efficient_combinations %>%
     filter(Region_Group_Type == currRegion, Member_Status == "member") %>%
-    mutate(geoMaps = paste0("../img/geoMaps/", Region_Group_Type, "_", Group, ".png")) %>%
+    mutate(geoMaps = paste0("../img/geoMaps/", Region_Group_Type, "_", Group, ".svg")) %>%
     select(`Geopolitical Group` = Group,  `Regions Selected` = Members_Included_Countries, `Coverage Variable` = Driver, `Coverage` = Coverage_Ratio, `Non Members Included` = Unwanted_Non_Members_Included, `Countries Missing` = Members_Missing_Countries, Maps = geoMaps) %>%
     mutate(`Coverage` = paste0(round(`Coverage`*100,1), "%")) %>%
     mutate(Maps = paste0('<img src="', Maps, '" width="200" class="myImages"/>')) %>%
@@ -1189,13 +1289,40 @@ for(currRegion in out[["mapping"]][["mappingsVector"]]){
         escape = FALSE) %>%
     kable_styling(full_width = FALSE,
                   position = "center",
-                  bootstrap_options = c("striped", "hover", "condensed", "responsive"), 
+                  bootstrap_options = c("striped", "hover", "condensed", "responsive"),
                   fixed_thead = TRUE) %>%
     row_spec(0, bold = TRUE, background = "#f2f2f2") %>%
     kable_paper("hover", full_width = F)
   #column_spec(2, width = "40%")
-  
+
 }
+
+# for(currRegion in out[["mapping"]][["mappingsVector"]]){
+#   out[["table"]][["geoGroup"]][["member"]][[currRegion]] <- efficient_combinations %>%
+#     filter(Region_Group_Type == currRegion, Member_Status == "member") %>%
+#     mutate(geoMapsFile = paste0("./output/img/geoMaps/", Region_Group_Type, "_", Group, ".svg")) %>%
+#     rowwise() %>%
+#     mutate(Maps = paste(readLines(geoMapsFile, warn = FALSE), collapse = "\n")) %>%
+#     ungroup() %>%
+#     select(`Geopolitical Group` = Group,
+#            `Regions Selected` = Members_Included_Countries,
+#            `Coverage Variable` = Driver,
+#            `Coverage` = Coverage_Ratio,
+#            `Non Members Included` = Unwanted_Non_Members_Included,
+#            `Countries Missing` = Members_Missing_Countries,
+#            Maps) %>%
+#     mutate(`Coverage` = paste0(round(`Coverage`*100,1), "%")) %>%
+#     kbl(caption = "Correspondence between geopolitical group members and remind regions.",
+#         align = c("l", "l", "c", "l"),
+#         booktabs = TRUE,
+#         escape = FALSE) %>%  
+#     kable_styling(full_width = FALSE,
+#                   position = "center",
+#                   bootstrap_options = c("striped", "hover", "condensed", "responsive"), 
+#                   fixed_thead = TRUE) %>%
+#     row_spec(0, bold = TRUE, background = "#f2f2f2") %>%
+#     kable_paper("hover", full_width = F)
+# }
 
 saveRDS(out[["table"]], file = "./data/table.rds")
 
@@ -1559,7 +1686,6 @@ plots <- lapply(plots_by_sector, function(df) {
     )
 })
 
-# The rest of your code remains the same
 out[["charts"]][["carbonPrice"]] <- 
   subplot(plots, nrows = 2, shareX = TRUE, shareY = FALSE, titleY = TRUE) %>%
     layout(
@@ -1602,11 +1728,13 @@ for(driver in out[["drivers"]][["drivers_df"]] %>% filter(exclude != "charts") %
     }
     
     d[[currRegion]][[driver]][["latest"]] <- out[["data"]][[currRegion]][["latest"]] %>%
-      mutate(currentDriver = !!sym(driver),
-             tooltip = paste0(
+      mutate(currentDriver = !!sym(driver)) %>%
+      mutate(currentDriver = if_else((currentDriver * 100) %% 1 != 0, round(currentDriver, 2), currentDriver)) %>% # round if more than 2 decimals
+      mutate(tooltip = paste0(
                out[["drivers"]][["drivers_df"]] %>% filter(Variable == driver, exclude != "charts") %>% pull(DisplayName), ": ",
                round(currentDriver, digits = 2),
-               " ", out$drivers$units[[driver]], "<br>", currRegion, " region code: ", region, "<br>Countries in region: ", countries))
+               " ", out$drivers$units[[driver]], "<br>", currRegion, " region code: ", region, "<br>Countries in region: ", countries)) %>%
+      select(region, currentDriver, tooltip)
     
     maxValue <- 0
     for(reg in out[["mapping"]][["mappingsVector"]]){
@@ -1646,10 +1774,13 @@ for(driver in out[["drivers"]][["drivers_df"]] %>% filter(exclude != "charts") %
       filter(!if_all(c(currentDriver), is.na)) %>%
       ungroup() %>%
       select(region, period, countries, currentDriver) %>%
+      mutate(currentDriver = if_else((currentDriver * 100) %% 1 != 0, round(currentDriver, 2), currentDriver)) %>% # round if more than 2 decimals
       mutate(tooltip = paste0(
                out[["drivers"]][["drivers_df"]] %>% filter(Variable == driver, exclude != "charts") %>% pull(DisplayName), ": ",
                round(currentDriver, digits = 2),
-               " ", out$drivers$units[[driver]], "<br>", "Period: ", period, "<br>", currRegion, " region code: ", region, "<br>Countries in region: ", countries))
+               " ", out$drivers$units[[driver]], "<br>", "Period: ", period, "<br>", currRegion, " region code: ", region, "<br>Countries in region: ", countries)) %>%
+      select(region, period, currentDriver, tooltip)
+      
     
     maxValue <- 0
     for(reg in out[["mapping"]][["mappingsVector"]]){
@@ -1694,6 +1825,7 @@ for(driver in out[["drivers"]][["drivers_df"]] %>% filter(exclude != "charts") %
     group_by(period) %>%
     filter(!if_all(c(currentDriver), is.na)) %>%
     ungroup() %>%
+    mutate(currentDriver = if_else((currentDriver * 100) %% 1 != 0, round(currentDriver, 2), currentDriver)) %>% # round if more than 2 decimals
     mutate(currentDriver = ifelse(currentDriver == 0, 0.00001, currentDriver)) %>%
     mutate(currentDriver = ifelse(is.na(currentDriver), 0, currentDriver))
   

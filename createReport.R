@@ -414,7 +414,7 @@ if((any(!file.exists(paste0("./data/", rdsFiles, ".rds")))) | (forceDataCreation
   # ---------- JS ----------
   indexHTML <- paste0(indexHTML,'\n    </div>')
   indexHTML <- paste0(indexHTML,'
-    <script type="text/javascript">
+        <script type="text/javascript">
       const loadedScripts = new Set();
       const loadedCharts = new Set();
       
@@ -528,6 +528,8 @@ if((any(!file.exists(paste0("./data/", rdsFiles, ".rds")))) | (forceDataCreation
             regionTopBarBtns.forEach(btn => btn.disabled = true);
           }
           document.querySelector(sideButton.getAttribute("href")).classList.remove("hide");
+          // Update URL hash after state change
+          updateUrlHash();
         });
       });
 
@@ -542,6 +544,8 @@ if((any(!file.exists(paste0("./data/", rdsFiles, ".rds")))) | (forceDataCreation
           // Add active class to the clicked button
           topButton.classList.add("active");
           updateActiveState();
+          // Update URL hash after state change
+          updateUrlHash();
         });
       });
 
@@ -564,6 +568,8 @@ if((any(!file.exists(paste0("./data/", rdsFiles, ".rds")))) | (forceDataCreation
           } else {
             regionTopBarBtns.forEach(btn => btn.disabled = false);
           }
+          // Update URL hash after state change
+          updateUrlHash(); 
         });
       });
 
@@ -574,12 +580,97 @@ if((any(!file.exists(paste0("./data/", rdsFiles, ".rds")))) | (forceDataCreation
           this.nextElementSibling.classList.toggle("show");
         });
       });
-	  
-	    // remove loader when page is loaded
+
+      // --- DEEP LINKING ---
+      function initializeFromUrlHash() {
+        const hash = window.location.hash.substring(1); 
+        
+        // ... (URL parsing logic remains the same) ...
+        const parts = hash.split(":");
+        const indicator = parts[0];
+        const region = parts[1] || "REMIND_12";
+        const view = parts[2] || "bar";     
+        
+        // 1. Select the Sidebar Link
+        const sideLink = document.querySelector(`.sidenav a[href="#${indicator}"]`);
+        if (sideLink) {
+          sideLink.click(); 
+
+          // -----------------------------------------------------------------
+          // FIX: Manually ensure buttons are enabled for content items (non-topItem)
+          const allTopBarBtns = document.querySelectorAll(".top-bar-btn");
+          if (!sideLink.classList.contains("topItem")) {
+            allTopBarBtns.forEach(btn => btn.disabled = false);
+          }
+          // -----------------------------------------------------------------
+          
+          // ... (dropdown logic remains the same) ...
+        } else {
+          // ... (fallback logic remains the same) ...
+          return;
+        }
+
+        // 2. Select the View Button
+        const viewButton = document.querySelector(`.top-bar-view-btn[data-view="${view}"]`);
+        if (viewButton && !viewButton.classList.contains("active")) {
+          viewButton.click(); 
+        }
+        
+        // 3. Select the Region Button (only if not "map" view)
+        if (view !== "map") {
+            const regionButton = document.querySelector(`.top-bar-left .top-bar-btn[data-reg="${region}"]`);
+            if (regionButton && !regionButton.classList.contains("active")) {
+              regionButton.click(); 
+            }
+        }
+        
+        // The state should now be set. Final URL update.
+        updateUrlHash();
+      }
+
+      // --- HELPER TO UPDATE URL HASH (RECOMMENDED FOR file://) ---
+      function updateUrlHash() {
+        // ... (existing logic to determine indicator, region, viewType)
+
+        // 1. Get the current indicator ID
+        const sideLink = document.querySelector(".sidenavLink.selected");
+        if (!sideLink) return;
+        const indicator = sideLink.getAttribute("href").replace("#", "");
+
+        // Only update hash for content pages (non-topItem)
+        if (sideLink.classList.contains("topItem")) {
+            // For top items, update hash directly
+            window.location.hash = indicator; // Use window.location.hash
+            return;
+        }
+
+        // 2. Get the active region
+        const activeRegionBtn = document.querySelector(".top-bar-left .top-bar-btn.active");
+        const region = activeRegionBtn ? activeRegionBtn.dataset.reg : "REMIND_12";
+
+        // 3. Get the active view
+        const activeViewButton = document.querySelector(".top-bar-view-btn.active");
+        const viewType = activeViewButton ? activeViewButton.dataset.view : "bar";
+
+        // Construct the new hash: #INDICATOR:REGION:VIEW
+        const newHash = `#${indicator}:${region}:${viewType}`;
+        
+        // Update the URL hash directly to ensure it works on file:// protocol
+        window.location.hash = newHash; // Use window.location.hash
+      }
+
+      // remove loader when page is loaded and initialize state
       document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("loader").classList.add("hidden");
-		  });
+		    initializeFromUrlHash();
+	    });
 	  
+      // Listen for the browsers back/forward button events to update UI
+      window.addEventListener("popstate", () => {
+          // Re-initialize the state based on the new URL hash
+          initializeFromUrlHash();
+      });
+
 	  </script>
     <script defer src="libs/plotly-latest.min.js"></script>
   </body>
